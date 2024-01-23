@@ -177,6 +177,7 @@ ul, ol, dl {
 	margin-top: 0.2em;
 	padding-top: 0;
 	margin-bottom: 0.8em;
+	
 }
 
 dt {
@@ -218,9 +219,6 @@ li p, dd p {
 	margin-bottom: 0.3em;
 }
 
-li {
-    text-indent: -20px;  /* 负值会向左移动文本 */
-}
 
 ol ol {
 	list-style-type: lower-alpha;
