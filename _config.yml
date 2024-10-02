@@ -21,10 +21,10 @@ repository               : "wuqian-tang/wuqian-tang.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Wuqian Tang"
   pronouns         : # example: "she/her"  
-  bio              : "PhD Student at Dept. of Computer Science, National Tsing Hua Univesrity"
+  bio              : "PhD Student at Dept. of Computer Science, , National Tsing Hua Univesrity"
   location         : "Hsinchu, Taiwan"
   employer         : "National Tsing Hua University"
   uri              : # URL
