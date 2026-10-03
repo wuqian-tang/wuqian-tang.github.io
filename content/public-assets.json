@@ -1356,5 +1356,15 @@
     "height": 630,
     "encoding": "PNG, Chromium render at 1200×630, device scale factor 1",
     "revision": "2026-10-03 v2: larger portrait and typography, English name, department above university, single-line Electronic Design Automation · AI for EDA, 84px text gap, portrait left 68px, 32px Homepage label, 30px footer"
+  },
+  {
+    "path": "assets/images/social-preview-20261003-v3.jpg",
+    "sha256": "190a402fe0c9dc0eef49441e9ca7028ac6bd7146471fe18efad8051038d12850",
+    "source": "site/assets/images/social-preview-20261003-v2.png; approved design in content/social-preview.html",
+    "source_sha256": "7631defbcf77f3c13decacc4db1e69a41ca481306555662c2cdfb29ef6c8f864",
+    "width": 1200,
+    "height": 630,
+    "encoding": "JPEG RGB, quality 95, 4:4:4 chroma, optimized; no EXIF",
+    "revision": "2026-10-03 v3: same approved artwork, JPEG share asset with versioned internal image URL; public homepage URL unchanged"
   }
 ]

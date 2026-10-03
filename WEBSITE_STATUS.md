@@ -61,6 +61,16 @@
 - 手机／平板菜单布局（999px 及以下）删除可见 Menu，只留三横线；按钮 46×46px，Open / Close navigation menu 的 aria-label 随状态更新。向上滑动阅读页面下方时隐藏整条页首导航，往下拖动返回上方时显示；260ms 缓动平移、不改变正文布局，12px 累积阈值避免微小滑动导致闪动。展开菜单时固定显示，关闭后恢复自动收放；靠近页面顶部、键盘焦点进入页首时也显示。减少动态效果时取消动画；桌面保持显示，相册页首采用相同手机收放行为。
 - 首页和相册的 CSS / JS 地址加版本参数 `20261003-mobile-nav`，使新 HTML 请求本轮样式与脚本。
 
+## 原网址分享兼容性补充（2026-10-03）
+
+- 正常分享地址始终为 `https://wuqian-tang.github.io/`，不带查询参数；`?share=...` 仅用于诊断平台缓存。用户确认上一轮部署后原网址在 Android LINE 新发消息仍只有文字、没有图片，而之前新参数地址可出图。两者 HTTP 200，原始 HTML 与分享信息逐字节相同；这支持旧网址的预览缓存是主要原因，不能把参数写成网站的永久分享要求。
+- 首页与全部 31 个相册改用同一份绝对 HTTPS 图片 `assets/images/social-preview-20261003-v3.jpg`，尺寸 1200×630、122,843 bytes。从用户已确认的 v2 PNG 编码为 RGB JPEG、quality 95、4:4:4、optimized，无 EXIF；画面和布局不变，体积减少 22.59%。两份 PNG 保留访问，既有 205 份 manifest 资产 SHA-256 均不变，新增 JPEG 后清单 206 份。
+- Open Graph / Twitter Card 使用相同图片，增加 `og:image:secure_url`、`og:locale`、OG 命名空间和一致的 `image_src` 回退；尺寸、MIME、alt 均明确写入静态 head，不依赖 JS / cookie / 登录。分享对外地址、canonical 和 og:url 均维持干净的原网址，不能用 JS 重定向或永久查询参数制造缓存刷新假象。
+- 浏览器标签页标题按用户追加要求改为 `Wuqian Tang | Homepage`，与首页 Open Graph / Twitter 标题一致。Homepage 按英文单词格式仅 H 大写；搜索 description 继续保留研究简介。
+- 已核对 [LINE 官方 FAQ](https://developers.line.biz/en/faq/)：LINE 仅读 og:title、og:description、og:image；[Slack 官方文档](https://docs.slack.dev/messaging/unfurling-links-in-messages/)读取 OG / Twitter Card；[OG 规范](https://ogp.me/)定义 HTTPS 图片、类型、宽高和 alt。Meta [网站管理员文档](https://developers.facebook.com/documentation/sharing/webmasters)说明图片缓存与更新图片 URL、提供分享偵錯工具；JPEG、PNG 均为支持格式，不能称原 PNG 无法兼容。
+- 以爬虫 User-Agent 请求只能核对本站响应，不等于已在各平台真实发送或显示卡片。LINE 历史 Page Poker 域名在当前环境无法 DNS 解析，未找到可用的公开刷新入口；不承诺固定更新时间。Meta Sharing Debugger 的匿名页面要求登录 Facebook，LinkedIn Post Inspector 也须用户自己的平台登录；没有执行平台缓存刷新，且刷新 Meta / LinkedIn 不能声称清除了 LINE 缓存。
+- 最新静态元数据、图片格式与匿名网络响应验收保存于 `preview/social-compatibility-validation.json`。后续实际平台测试应新发原网址、记录平台与设备，明确区分网站抓取通过和用户看到卡片；不要一直推荐参数地址替代正式网址。
+
 ## BibTeX 引用复制（2026-10-03）
 
 - 21 篇论文全部提供 BibTeX，Selected Publications 与 More Publications 均覆盖。按钮统一位于每篇资源行末尾，包括甲骨文论文 Journal 之后；不调整原有链接顺序。
@@ -131,7 +141,7 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 14. **公开范围**：允许本次明确授权的奖状、奖杯、奖牌、照片和具体最终论文；不公开身份证件、成绩单、申请表、推荐信、录取通知、学生奖惩记录、未授权稿件或整个资料目录。公开 CV 不含电话号码。
 15. **引用复制**：BibTeX 控件始终位于每篇论文所有其他资源之后；字号、边框与内边距采用 DOI / PDF 的公共样式，图标间距 0.2rem，不设置造成额外留白的固定最小宽度。复制成功后仅在按钮内显示勾号与 Copied 2 秒，不弹提示框或新分页，标签预留两种状态的宽度，保持按钮尺寸。失败时提供选中代码的弹窗和手动复制；无 JS 使用原生展开文本。引用来自 `content/citations.json`，记录来源，按正式元数据保存作者、题名、刊会、年份与已核实的卷期/页码/DOI；不把共同一作星号、网页粗体或页面状态当作作者名。待刊用 To appear note，不补造字段；甲骨文论文用正式英文题名、作者和 In Chinese note。
 16. **图片性能**：所有相册媒体必须有本地 WebP preview；首页活动照片复用这些预览。View Original 始终指向原 JPG / PDF，禁止把原图替换成有损预览。用 `scripts/optimize_images.py` 处理 manifest 已审核的公开图，不从私人档案批量读取；保留 `preview_source` 以便重复生成，更新 `content/image-previews.json` 与派生资产 SHA-256。新增照片后先生成预览，再 build。首页羽毛球原图只在用户点击后请求，其余奖项弹窗优先使用预览；不提前加载全部 87 张媒体。
-17. **分享与导航**：导航顺序为 About / Research / Publications / Awards / Experience / Teaching / Hobbies。首页和相册保留绝对 URL 的 og:image、图片宽高与 alt、Twitter summary_large_image。分享图固定 1200×630，只显示英文姓名，学校上方写系所，研究方向单行为 Electronic Design Automation · AI for EDA；文字与头像间距 84px，照片左侧起点 68px，左上 Homepage 32px，底部网址与地名 30px。当前首页分享标题 Wuqian Tang | Homepage、摘要 CS Ph.D. Candidate at National Tsing Hua University.，不追加 Learning 或研究描述。头像、姓名、学校或研究方向改变后，从 `content/social-preview.html` 用 Chromium 按 1200×630、设备倍率 1 重渲染 PNG，等待图片和字体加载，使用新版本文件名、更新两套分享标签与 manifest；旧图片地址保留可访问。ORCID 等身份链接须由正式个人记录及论文匹配核对，不能只凭同名猜测；与 Person sameAs 同步。
+17. **分享与导航**：导航顺序为 About / Research / Publications / Awards / Experience / Teaching / Hobbies。首页和相册保留绝对 URL 的 og:image、图片宽高与 alt、Twitter summary_large_image。分享图固定 1200×630，只显示英文姓名，学校上方写系所，研究方向单行为 Electronic Design Automation · AI for EDA；文字与头像间距 84px，照片左侧起点 68px，左上 Homepage 32px，底部网址与地名 30px。当前浏览器与首页分享标题 Wuqian Tang | Homepage、摘要 CS Ph.D. Candidate at National Tsing Hua University.，不追加 Learning 或研究描述。头像、姓名、学校或研究方向改变后，从 `content/social-preview.html` 用 Chromium 按 1200×630、设备倍率 1 重渲染 PNG，等待图片和字体加载，保留 PNG，并以 JPEG RGB quality 95、4:4:4、optimized 导出分享版；更新新版本图片文件名、全部分享标签与 manifest，旧图片地址保留可访问。正式分享直接使用原网址，参数仅用于诊断缓存；各平台真实卡片效果不能由本站爬虫 UA 检查替代。ORCID 等身份链接须由正式个人记录及论文匹配核对，不能只凭同名猜测；与 Person sameAs 同步。
 
 Hobbies 用词参考了 [Siyuan Jiang 的学术主页](https://siyuanj.github.io/) 中同名栏目；它直接表达爱好，适合当前内容。网站不需要附上这条用词参考。
 

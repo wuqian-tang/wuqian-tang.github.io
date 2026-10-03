@@ -1,0 +1,722 @@
+{
+  "testedBase": "http://127.0.0.1:8765",
+  "scope": "Static parsing and HTTP requests with crawler User-Agent strings; not actual platform rendering or cache purge",
+  "pages": [
+    {
+      "url": "http://127.0.0.1:8765/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 116000,
+      "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/badminton-2025.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/badminton-2025.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 7480,
+      "sha256": "3932b8e565319bc573a284d5a045115f0190afa5455c7e3894a277fea23ad5ab"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/cadathlon-2024.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/cadathlon-2024.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 7666,
+      "sha256": "5889153e53ab01f9bde57cfacbcd139c34db9bf9ba1e6d02c5fedff31ffbe43d"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/cadathlon-2025.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/cadathlon-2025.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 7417,
+      "sha256": "e0b051ce9ef1929b3a83912480480c696eea2bc6c248f60e6104b48a7b7af268"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/central-taiwan-2020.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/central-taiwan-2020.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 6293,
+      "sha256": "a8a6e87bcb3f0ae68ded0ae9caa03780644d3d264fdf3de80edcc2d17e3b2b24"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/edathon-2023.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/edathon-2023.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 7048,
+      "sha256": "056f9d4ff017d21a26e539f729f390daac6c92afc2745868658bb39487fb7e38"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/freshman-cup-2018.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/freshman-cup-2018.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 6357,
+      "sha256": "c84888efa0d04659f793be40f10378e7e5a06321ecafaf207edb6d45f6305ad0"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/hsinchu-youth-2026.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/hsinchu-youth-2026.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 10573,
+      "sha256": "2707d86f436ac967369cb7ffad5fa136001a59efe2d2f0803dd84620c0ec54b1"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/hsing-chien-2025.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/hsing-chien-2025.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 10093,
+      "sha256": "5f34a7bb22be1bc8459d2415c796be6e8a6f4b39b1150d78647938c206c94353"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/iccad-contest-2022.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/iccad-contest-2022.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 8226,
+      "sha256": "14f6bec32fcb92649a134fb1905c7b406a1985525fc8710f5e63779035062b28"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/iccad-contest-2023.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/iccad-contest-2023.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 9720,
+      "sha256": "365130f95a4ab5bda253d80f4b13cd557f64be0ff7c8fc22b27e6f095a7f6fb9"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/iccad-contest-2024.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/iccad-contest-2024.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 14356,
+      "sha256": "018f3c640168c95b150abea831fdc6dcf8c91c4a2b65911974f2acf869af058e"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/iccad-contest-2025.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/iccad-contest-2025.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 16330,
+      "sha256": "8ccaeb66cff23be1c103780da1fc546eca570c678d61d222f7a03699f90b5bce"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/iccad-ssp-2025.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/iccad-ssp-2025.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 6018,
+      "sha256": "28dfd74cb423c36d732b903ce3a956b8176bb4486fbf9cda549e9c6a1e8c97af"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/icpc-2019.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/icpc-2019.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 9800,
+      "sha256": "9e5b2d31372ecf1295de96c4339e2e7eeedb9ecff48a0fcce2a6e642e0ce49f8"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/icpc-2020.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/icpc-2020.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 9844,
+      "sha256": "82d763103f1ead74a6779998ec50bf1bbbbde2e6664a42c5d8d8d2d0340f97fa"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/ispd-2026.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/ispd-2026.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 6236,
+      "sha256": "d003be59b8f9939ef6b61ba16f28ae3814a05ab5e749a247d074ef31b8192119"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/iwls-2026.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/iwls-2026.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 8688,
+      "sha256": "a5105a7189b778d8042f893fe668776f398df9019450c588be8f10d5d9f68d9f"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/mcu-alumnus-2026.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/mcu-alumnus-2026.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 7006,
+      "sha256": "c965c5afb3a58af55fa6bfdbe3ca0e602c55f86802da71f2d1bdbf7b5aef8cb6"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/mcu-contribution-2021.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/mcu-contribution-2021.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 5990,
+      "sha256": "895b7ea27fe65138cbb1e8bcb24c454fccab243b9bfb00dd75df7baf0d6e2c8c"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/mcu-programming-2019-2020.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/mcu-programming-2019-2020.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 7375,
+      "sha256": "2e8f6a28cc98b73c4b975b0092329587b8a59757a2c2a83fed9073567ec8b805"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/mlcad-2026.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/mlcad-2026.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 6460,
+      "sha256": "414940f2a302a1b22fcb9cd49c99c2ca5710e91635e0e7265f58baa2885ca051"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/ncpc-2018-2020.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/ncpc-2018-2020.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 7995,
+      "sha256": "2f21d1f1fd7732fdfa3395a8d141b53a637ca2cd7ed9ff5b15311aeb30139fb0"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/ncpu-2019.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/ncpu-2019.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 8615,
+      "sha256": "a51b7f4b56d8366dcb9d5500c95e333425f1cce753f80a094de50764201e0478"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/nthu-scholarship-2021.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/nthu-scholarship-2021.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 7240,
+      "sha256": "fb900cad582622fbf37689dbe0f181b15638bd2d71e997782f602368a2cd5d2e"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/qilin-cup-2023.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/qilin-cup-2023.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 10196,
+      "sha256": "d1cc8a74fbf242185cabc69c0ef1b37fe9307a539f96216e5202cd618f294373"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/software-innovation-2018.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/software-innovation-2018.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 8130,
+      "sha256": "5a4067538e474d2715efd19e0a238ceeefc1857baf87fdb1f369097115d87a6e"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/synopsys-scholarship-2024.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/synopsys-scholarship-2024.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 10509,
+      "sha256": "9c1a9991671fb5db334119121c038bd0f03150da6468388468a53600a12eb45d"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/teaching-excellent-2026.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/teaching-excellent-2026.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 6126,
+      "sha256": "91c11ebbde2abf90806bfa6a89dfb8bff0689ad98406e517855f415ba6c55df1"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/teaching-outstanding-2025-2026.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/teaching-outstanding-2025-2026.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 13199,
+      "sha256": "07b69413861fe543c0f9b2fd8f5d10e4a4e5e574b7d1f2a28565b3d7ec800b08"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/topc-2019.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/topc-2019.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 7976,
+      "sha256": "008c1e7475a12ecc14da77be484069077e98254e631512ddea04e5849bc22e20"
+    },
+    {
+      "url": "http://127.0.0.1:8765/awards/topc-2020.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:8765/awards/topc-2020.html",
+      "mime": "text/html",
+      "cacheControl": null,
+      "contentEncoding": null,
+      "bytes": 5876,
+      "sha256": "5944f91e2a83e5162e6fbbb2f2fa32256a41c056ae2c57aff327c83cea8f9cc1"
+    }
+  ],
+  "crawlerRequests": [
+    {
+      "platformUserAgent": "LINE",
+      "userAgent": "Linespider",
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "mime": "image/jpeg",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 122843,
+          "sha256": "190a402fe0c9dc0eef49441e9ca7028ac6bd7146471fe18efad8051038d12850"
+        },
+        {
+          "url": "http://127.0.0.1:8765/robots.txt",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/robots.txt",
+          "mime": "text/plain",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 74,
+          "sha256": "6a9e4a5321227e1f448df1a43ceb0eb11ac2ae030f49159ad530a6a798649b58"
+        }
+      ]
+    },
+    {
+      "platformUserAgent": "Meta",
+      "userAgent": "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)",
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "mime": "image/jpeg",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 122843,
+          "sha256": "190a402fe0c9dc0eef49441e9ca7028ac6bd7146471fe18efad8051038d12850"
+        },
+        {
+          "url": "http://127.0.0.1:8765/robots.txt",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/robots.txt",
+          "mime": "text/plain",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 74,
+          "sha256": "6a9e4a5321227e1f448df1a43ceb0eb11ac2ae030f49159ad530a6a798649b58"
+        }
+      ]
+    },
+    {
+      "platformUserAgent": "X",
+      "userAgent": "Twitterbot/1.0",
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "mime": "image/jpeg",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 122843,
+          "sha256": "190a402fe0c9dc0eef49441e9ca7028ac6bd7146471fe18efad8051038d12850"
+        },
+        {
+          "url": "http://127.0.0.1:8765/robots.txt",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/robots.txt",
+          "mime": "text/plain",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 74,
+          "sha256": "6a9e4a5321227e1f448df1a43ceb0eb11ac2ae030f49159ad530a6a798649b58"
+        }
+      ]
+    },
+    {
+      "platformUserAgent": "LinkedIn",
+      "userAgent": "LinkedInBot/1.0",
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "mime": "image/jpeg",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 122843,
+          "sha256": "190a402fe0c9dc0eef49441e9ca7028ac6bd7146471fe18efad8051038d12850"
+        },
+        {
+          "url": "http://127.0.0.1:8765/robots.txt",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/robots.txt",
+          "mime": "text/plain",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 74,
+          "sha256": "6a9e4a5321227e1f448df1a43ceb0eb11ac2ae030f49159ad530a6a798649b58"
+        }
+      ]
+    },
+    {
+      "platformUserAgent": "Slack",
+      "userAgent": "Slackbot-LinkExpanding 1.0 (+https://api.slack.com/robots)",
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "mime": "image/jpeg",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 122843,
+          "sha256": "190a402fe0c9dc0eef49441e9ca7028ac6bd7146471fe18efad8051038d12850"
+        },
+        {
+          "url": "http://127.0.0.1:8765/robots.txt",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/robots.txt",
+          "mime": "text/plain",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 74,
+          "sha256": "6a9e4a5321227e1f448df1a43ceb0eb11ac2ae030f49159ad530a6a798649b58"
+        }
+      ]
+    },
+    {
+      "platformUserAgent": "Discord",
+      "userAgent": "Discordbot/2.0",
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "mime": "image/jpeg",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 122843,
+          "sha256": "190a402fe0c9dc0eef49441e9ca7028ac6bd7146471fe18efad8051038d12850"
+        },
+        {
+          "url": "http://127.0.0.1:8765/robots.txt",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/robots.txt",
+          "mime": "text/plain",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 74,
+          "sha256": "6a9e4a5321227e1f448df1a43ceb0eb11ac2ae030f49159ad530a6a798649b58"
+        }
+      ]
+    },
+    {
+      "platformUserAgent": "Telegram",
+      "userAgent": "TelegramBot (like TwitterBot)",
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "mime": "image/jpeg",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 122843,
+          "sha256": "190a402fe0c9dc0eef49441e9ca7028ac6bd7146471fe18efad8051038d12850"
+        },
+        {
+          "url": "http://127.0.0.1:8765/robots.txt",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/robots.txt",
+          "mime": "text/plain",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 74,
+          "sha256": "6a9e4a5321227e1f448df1a43ceb0eb11ac2ae030f49159ad530a6a798649b58"
+        }
+      ]
+    },
+    {
+      "platformUserAgent": "WhatsApp",
+      "userAgent": "WhatsApp/2.0",
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/?share=line-20261003-v2",
+          "mime": "text/html",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 116000,
+          "sha256": "fc293176cd5c4ec6560c32fdb0b69f86f9e24817f092e90a0b22c73a6041607f"
+        },
+        {
+          "url": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/assets/images/social-preview-20261003-v3.jpg",
+          "mime": "image/jpeg",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 122843,
+          "sha256": "190a402fe0c9dc0eef49441e9ca7028ac6bd7146471fe18efad8051038d12850"
+        },
+        {
+          "url": "http://127.0.0.1:8765/robots.txt",
+          "status": 200,
+          "finalUrl": "http://127.0.0.1:8765/robots.txt",
+          "mime": "text/plain",
+          "cacheControl": null,
+          "contentEncoding": null,
+          "bytes": 74,
+          "sha256": "6a9e4a5321227e1f448df1a43ceb0eb11ac2ae030f49159ad530a6a798649b58"
+        }
+      ]
+    }
+  ],
+  "lineOwnerObservations": {
+    "device": "Android",
+    "priorFreshQueryShowsImage": true,
+    "plainUrlAfterPriorDeployment": "title/description present; image missing",
+    "sameWebsiteResponse": "plain and query URLs returned identical HTML before this change",
+    "interpretation": "Old URL preview cache is likely; platform cache not observable from website"
+  },
+  "sources": [
+    "https://developers.line.biz/en/faq/",
+    "https://ogp.me/",
+    "https://docs.slack.dev/messaging/unfurling-links-in-messages/",
+    "https://www.linkedin.com/help/linkedin/answer/a6269011",
+    "https://developers.facebook.com/documentation/sharing/webmasters"
+  ],
+  "preservedExistingAssets": 205,
+  "sharingImage": {
+    "path": "assets/images/social-preview-20261003-v3.jpg",
+    "bytes": 122843,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "colorMode": "RGB",
+    "exif": false,
+    "pngDesignRetained": true
+  }
+}
