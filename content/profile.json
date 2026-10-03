@@ -28,6 +28,13 @@
       "label": "LinkedIn",
       "url": "https://www.linkedin.com/in/wqtang/",
       "icon": "linkedin"
+    },
+    {
+      "label": "ORCID",
+      "url": "https://orcid.org/0009-0008-5042-5062",
+      "icon": "orcid",
+      "verified_on": "2026-10-03",
+      "verification": "ORCID public record: Wuqian Tang; CB-EVO DOI 10.1145/3779431 and GLSVLSI DOI 10.1145/3716368.3735193 match; ACM-deposited Crossref author metadata agrees."
     }
   ],
   "research": [
@@ -660,9 +667,10 @@
           "kind": "certificate",
           "url": "assets/awards/mlcad-2026/certificate-1.pdf",
           "caption": "Certificate · 2026-09-07 · English",
-          "preview": "assets/awards/mlcad-2026/certificate-1-preview.jpg",
+          "preview": "assets/awards/mlcad-2026/certificate-1-preview.webp",
           "width": 1800,
-          "height": 1273
+          "height": 1273,
+          "preview_source": "assets/awards/mlcad-2026/certificate-1-preview.jpg"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -678,8 +686,10 @@
           "kind": "trophy",
           "url": "assets/awards/teaching-excellent-2026/trophy-1.jpg",
           "caption": "Trophy · Spring 2026 · Awarded Aug 2026",
-          "width": 3000,
-          "height": 3000
+          "width": 1600,
+          "height": 1600,
+          "preview_source": "assets/awards/teaching-excellent-2026/trophy-1.jpg",
+          "preview": "assets/awards/teaching-excellent-2026/trophy-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates",
@@ -710,45 +720,55 @@
           "kind": "certificate",
           "url": "assets/awards/teaching-outstanding-2025-2026/certificate-1.pdf",
           "caption": "Certificate · Spring 2025 · Awarded Aug 2025 · Chinese",
-          "preview": "assets/awards/teaching-outstanding-2025-2026/certificate-1-preview.jpg",
-          "width": 1800,
-          "height": 2546
+          "preview": "assets/awards/teaching-outstanding-2025-2026/certificate-1-preview.webp",
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/teaching-outstanding-2025-2026/certificate-1-preview.jpg"
         },
         {
           "kind": "photo",
           "url": "assets/awards/teaching-outstanding-2025-2026/photo-1.jpg",
           "caption": "Photo · Spring 2025 · Awarded Aug 2025",
           "width": 1477,
-          "height": 1108
+          "height": 1108,
+          "preview_source": "assets/awards/teaching-outstanding-2025-2026/photo-1.jpg",
+          "preview": "assets/awards/teaching-outstanding-2025-2026/photo-1-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/teaching-outstanding-2025-2026/photo-2.jpg",
           "caption": "Photo · Spring 2025 · Awarded Aug 2025",
           "width": 1477,
-          "height": 1108
+          "height": 1108,
+          "preview_source": "assets/awards/teaching-outstanding-2025-2026/photo-2.jpg",
+          "preview": "assets/awards/teaching-outstanding-2025-2026/photo-2-preview.webp"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/teaching-outstanding-2025-2026/certificate-2.jpg",
           "caption": "Certificate · Fall 2025 · Awarded Feb 2026 · Chinese",
-          "width": 2481,
-          "height": 3508
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/teaching-outstanding-2025-2026/certificate-2.jpg",
+          "preview": "assets/awards/teaching-outstanding-2025-2026/certificate-2-preview.webp"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/teaching-outstanding-2025-2026/certificate-3.pdf",
           "caption": "Certificate · Spring 2026 · Awarded Aug 2026 · Chinese",
-          "preview": "assets/awards/teaching-outstanding-2025-2026/certificate-3-preview.jpg",
-          "width": 1800,
-          "height": 2546
+          "preview": "assets/awards/teaching-outstanding-2025-2026/certificate-3-preview.webp",
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/teaching-outstanding-2025-2026/certificate-3-preview.jpg"
         },
         {
           "kind": "photo",
           "url": "assets/awards/teaching-outstanding-2025-2026/photo-3.jpg",
           "caption": "Photo · Spring 2026 · Awarded Aug 2026",
-          "width": 3432,
-          "height": 3002
+          "width": 1600,
+          "height": 1400,
+          "preview_source": "assets/awards/teaching-outstanding-2025-2026/photo-3.jpg",
+          "preview": "assets/awards/teaching-outstanding-2025-2026/photo-3-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates",
@@ -770,15 +790,19 @@
           "kind": "certificate",
           "url": "assets/awards/mcu-alumnus-2026/certificate-1.jpg",
           "caption": "Certificate · 2026-06-18 · English",
-          "width": 3508,
-          "height": 2481
+          "width": 1800,
+          "height": 1273,
+          "preview_source": "assets/awards/mcu-alumnus-2026/certificate-1.jpg",
+          "preview": "assets/awards/mcu-alumnus-2026/certificate-1-preview.webp"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/mcu-alumnus-2026/certificate-2.jpg",
           "caption": "Certificate · 2026-06-18 · Chinese",
-          "width": 2481,
-          "height": 3508
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/mcu-alumnus-2026/certificate-2.jpg",
+          "preview": "assets/awards/mcu-alumnus-2026/certificate-2-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -805,22 +829,28 @@
           "kind": "certificate",
           "url": "assets/awards/iwls-2026/certificate-1.jpg",
           "caption": "Certificate · 2026-05-29 · English",
-          "width": 1810,
-          "height": 1279
+          "width": 1800,
+          "height": 1272,
+          "preview_source": "assets/awards/iwls-2026/certificate-1.jpg",
+          "preview": "assets/awards/iwls-2026/certificate-1-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/iwls-2026/photo-1.jpg",
           "caption": "Photo · 2026-05-29",
-          "width": 1706,
-          "height": 1279
+          "width": 1600,
+          "height": 1200,
+          "preview_source": "assets/awards/iwls-2026/photo-1.jpg",
+          "preview": "assets/awards/iwls-2026/photo-1-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/iwls-2026/photo-2.jpg",
           "caption": "Photo · 2026-05-29",
-          "width": 1920,
-          "height": 1280
+          "width": 1600,
+          "height": 1067,
+          "preview_source": "assets/awards/iwls-2026/photo-2.jpg",
+          "preview": "assets/awards/iwls-2026/photo-2-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -842,36 +872,46 @@
           "kind": "certificate",
           "url": "assets/awards/hsinchu-youth-2026/certificate-1.jpg",
           "caption": "Certificate · 2026-03-28 · Chinese",
-          "width": 2481,
-          "height": 3508
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/hsinchu-youth-2026/certificate-1.jpg",
+          "preview": "assets/awards/hsinchu-youth-2026/certificate-1-preview.webp"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/hsinchu-youth-2026/certificate-2.jpg",
           "caption": "Certificate · 2026-03-28 · Chinese",
-          "width": 2824,
-          "height": 3766
+          "width": 1350,
+          "height": 1800,
+          "preview_source": "assets/awards/hsinchu-youth-2026/certificate-2.jpg",
+          "preview": "assets/awards/hsinchu-youth-2026/certificate-2-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/hsinchu-youth-2026/photo-1.jpg",
           "caption": "Photo · 2026-03-28",
-          "width": 1706,
-          "height": 1279
+          "width": 1600,
+          "height": 1200,
+          "preview_source": "assets/awards/hsinchu-youth-2026/photo-1.jpg",
+          "preview": "assets/awards/hsinchu-youth-2026/photo-1-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/hsinchu-youth-2026/photo-2.jpg",
           "caption": "Photo · 2026-03-28",
-          "width": 1706,
-          "height": 1279
+          "width": 1600,
+          "height": 1200,
+          "preview_source": "assets/awards/hsinchu-youth-2026/photo-2.jpg",
+          "preview": "assets/awards/hsinchu-youth-2026/photo-2-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/hsinchu-youth-2026/photo-3.jpg",
           "caption": "Photo · 2026-03-28",
-          "width": 1706,
-          "height": 1279
+          "width": 1600,
+          "height": 1200,
+          "preview_source": "assets/awards/hsinchu-youth-2026/photo-3.jpg",
+          "preview": "assets/awards/hsinchu-youth-2026/photo-3-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -893,9 +933,10 @@
           "kind": "certificate",
           "url": "assets/awards/ispd-2026/certificate-1.pdf",
           "caption": "Certificate · 2026-03-18 · English",
-          "preview": "assets/awards/ispd-2026/certificate-1-preview.jpg",
+          "preview": "assets/awards/ispd-2026/certificate-1-preview.webp",
           "width": 1800,
-          "height": 1273
+          "height": 1273,
+          "preview_source": "assets/awards/ispd-2026/certificate-1-preview.jpg"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -932,59 +973,73 @@
           "kind": "certificate",
           "url": "assets/awards/iccad-contest-2025/certificate-1.pdf",
           "caption": "Certificate · 2025-10-26 · Problem A · English",
-          "preview": "assets/awards/iccad-contest-2025/certificate-1-preview.jpg",
+          "preview": "assets/awards/iccad-contest-2025/certificate-1-preview.webp",
           "width": 1800,
-          "height": 1391
+          "height": 1391,
+          "preview_source": "assets/awards/iccad-contest-2025/certificate-1-preview.jpg"
         },
         {
           "kind": "photo",
           "url": "assets/awards/iccad-contest-2025/photo-1.jpg",
           "caption": "Photo · 2025-10-26 · Problem A",
           "width": 1477,
-          "height": 1108
+          "height": 1108,
+          "preview_source": "assets/awards/iccad-contest-2025/photo-1.jpg",
+          "preview": "assets/awards/iccad-contest-2025/photo-1-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/iccad-contest-2025/photo-2.jpg",
           "caption": "Photo · 2025-10-26 · Problem A",
-          "width": 1706,
-          "height": 1279
+          "width": 1600,
+          "height": 1200,
+          "preview_source": "assets/awards/iccad-contest-2025/photo-2.jpg",
+          "preview": "assets/awards/iccad-contest-2025/photo-2-preview.webp"
         },
         {
           "kind": "plaque",
           "url": "assets/awards/iccad-contest-2025/plaque-1.jpg",
           "caption": "Award plaque · 2025-10-26 · Problem A",
-          "width": 4000,
-          "height": 3000
+          "width": 1200,
+          "height": 1600,
+          "preview_source": "assets/awards/iccad-contest-2025/plaque-1.jpg",
+          "preview": "assets/awards/iccad-contest-2025/plaque-1-preview.webp"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/iccad-contest-2025/certificate-2.pdf",
           "caption": "Certificate · 2025-10-26 · Problem C · English",
-          "preview": "assets/awards/iccad-contest-2025/certificate-2-preview.jpg",
+          "preview": "assets/awards/iccad-contest-2025/certificate-2-preview.webp",
           "width": 1800,
-          "height": 1391
+          "height": 1391,
+          "preview_source": "assets/awards/iccad-contest-2025/certificate-2-preview.jpg"
         },
         {
           "kind": "photo",
           "url": "assets/awards/iccad-contest-2025/photo-3.jpg",
           "caption": "Photo · 2025-10-26 · Problem C",
           "width": 1477,
-          "height": 1108
+          "height": 1108,
+          "preview_source": "assets/awards/iccad-contest-2025/photo-3.jpg",
+          "preview": "assets/awards/iccad-contest-2025/photo-3-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/iccad-contest-2025/photo-4.jpg",
           "caption": "Photo · 2025-10-26 · Problem C",
-          "width": 5712,
-          "height": 4284
+          "width": 1600,
+          "height": 1200,
+          "preview_source": "assets/awards/iccad-contest-2025/photo-4.jpg",
+          "preview": "assets/awards/iccad-contest-2025/photo-4-preview.webp"
         },
         {
           "kind": "plaque",
           "url": "assets/awards/iccad-contest-2025/plaque-2.jpg",
           "caption": "Award plaque · 2025-10-26 · Problem C",
-          "width": 3000,
-          "height": 3899
+          "width": 1231,
+          "height": 1600,
+          "preview_source": "assets/awards/iccad-contest-2025/plaque-2.jpg",
+          "preview": "assets/awards/iccad-contest-2025/plaque-2-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1006,15 +1061,19 @@
           "kind": "photo",
           "url": "assets/awards/cadathlon-2025/photo-1.jpg",
           "caption": "Photo · 2025-10",
-          "width": 5712,
-          "height": 4284
+          "width": 1600,
+          "height": 1200,
+          "preview_source": "assets/awards/cadathlon-2025/photo-1.jpg",
+          "preview": "assets/awards/cadathlon-2025/photo-1-preview.webp"
         },
         {
           "kind": "trophy",
           "url": "assets/awards/cadathlon-2025/trophy-1.jpg",
           "caption": "Trophy · 2025-10",
-          "width": 2562,
-          "height": 3087
+          "width": 1328,
+          "height": 1600,
+          "preview_source": "assets/awards/cadathlon-2025/trophy-1.jpg",
+          "preview": "assets/awards/cadathlon-2025/trophy-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1030,9 +1089,10 @@
           "kind": "certificate",
           "url": "assets/awards/iccad-ssp-2025/certificate-1.pdf",
           "caption": "Certificate · 2025-10-26 · English",
-          "preview": "assets/awards/iccad-ssp-2025/certificate-1-preview.jpg",
+          "preview": "assets/awards/iccad-ssp-2025/certificate-1-preview.webp",
           "width": 1800,
-          "height": 1391
+          "height": 1391,
+          "preview_source": "assets/awards/iccad-ssp-2025/certificate-1-preview.jpg"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1059,29 +1119,37 @@
           "kind": "certificate",
           "url": "assets/awards/hsing-chien-2025/certificate-1.jpg",
           "caption": "Certificate · 2025-05-09 · English",
-          "width": 2352,
-          "height": 3216
+          "width": 1316,
+          "height": 1800,
+          "preview_source": "assets/awards/hsing-chien-2025/certificate-1.jpg",
+          "preview": "assets/awards/hsing-chien-2025/certificate-1-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/hsing-chien-2025/photo-1.jpg",
           "caption": "Photo · 2025-05-09",
           "width": 1477,
-          "height": 1108
+          "height": 1108,
+          "preview_source": "assets/awards/hsing-chien-2025/photo-1.jpg",
+          "preview": "assets/awards/hsing-chien-2025/photo-1-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/hsing-chien-2025/photo-2.jpg",
           "caption": "Photo · 2025-05-09",
-          "width": 4080,
-          "height": 3072
+          "width": 1600,
+          "height": 1205,
+          "preview_source": "assets/awards/hsing-chien-2025/photo-2.jpg",
+          "preview": "assets/awards/hsing-chien-2025/photo-2-preview.webp"
         },
         {
           "kind": "trophy",
           "url": "assets/awards/hsing-chien-2025/trophy-1.jpg",
           "caption": "Trophy · 2025-05-09",
-          "width": 4000,
-          "height": 3000
+          "width": 1200,
+          "height": 1600,
+          "preview_source": "assets/awards/hsing-chien-2025/trophy-1.jpg",
+          "preview": "assets/awards/hsing-chien-2025/trophy-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1118,44 +1186,55 @@
           "kind": "certificate",
           "url": "assets/awards/iccad-contest-2024/certificate-1.pdf",
           "caption": "Certificate · 2024-10-27 · Problem A · English",
-          "preview": "assets/awards/iccad-contest-2024/certificate-1-preview.jpg",
+          "preview": "assets/awards/iccad-contest-2024/certificate-1-preview.webp",
           "width": 1800,
-          "height": 1391
+          "height": 1391,
+          "preview_source": "assets/awards/iccad-contest-2024/certificate-1-preview.jpg"
         },
         {
           "kind": "photo",
           "url": "assets/awards/iccad-contest-2024/photo-1.jpg",
           "caption": "Photo · 2024-10-27 · Problem A",
           "width": 1439,
-          "height": 1080
+          "height": 1080,
+          "preview_source": "assets/awards/iccad-contest-2024/photo-1.jpg",
+          "preview": "assets/awards/iccad-contest-2024/photo-1-preview.webp"
         },
         {
           "kind": "plaque",
           "url": "assets/awards/iccad-contest-2024/plaque-1.jpg",
           "caption": "Award plaque · 2024-10-27 · Problem A",
           "width": 802,
-          "height": 1117
+          "height": 1117,
+          "preview_source": "assets/awards/iccad-contest-2024/plaque-1.jpg",
+          "preview": "assets/awards/iccad-contest-2024/plaque-1-preview.webp"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/iccad-contest-2024/certificate-2.jpg",
           "caption": "Certificate · 2024-10-27 · Problem B · English",
-          "width": 3300,
-          "height": 2550
+          "width": 1800,
+          "height": 1391,
+          "preview_source": "assets/awards/iccad-contest-2024/certificate-2.jpg",
+          "preview": "assets/awards/iccad-contest-2024/certificate-2-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/iccad-contest-2024/photo-2.jpg",
           "caption": "Photo · 2024-10-27 · Problem B",
           "width": 1440,
-          "height": 1080
+          "height": 1080,
+          "preview_source": "assets/awards/iccad-contest-2024/photo-2.jpg",
+          "preview": "assets/awards/iccad-contest-2024/photo-2-preview.webp"
         },
         {
           "kind": "plaque",
           "url": "assets/awards/iccad-contest-2024/plaque-2.jpg",
           "caption": "Award plaque · 2024-10-27 · Problem B",
-          "width": 2308,
-          "height": 3016
+          "width": 1224,
+          "height": 1600,
+          "preview_source": "assets/awards/iccad-contest-2024/plaque-2.jpg",
+          "preview": "assets/awards/iccad-contest-2024/plaque-2-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1183,14 +1262,18 @@
           "url": "assets/awards/cadathlon-2024/photo-1.jpg",
           "caption": "Photo · 2024-10",
           "width": 1166,
-          "height": 875
+          "height": 875,
+          "preview_source": "assets/awards/cadathlon-2024/photo-1.jpg",
+          "preview": "assets/awards/cadathlon-2024/photo-1-preview.webp"
         },
         {
           "kind": "trophy",
           "url": "assets/awards/cadathlon-2024/trophy-1.jpg",
           "caption": "Trophy · 2024-10",
           "width": 983,
-          "height": 994
+          "height": 994,
+          "preview_source": "assets/awards/cadathlon-2024/trophy-1.jpg",
+          "preview": "assets/awards/cadathlon-2024/trophy-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1217,30 +1300,37 @@
           "kind": "certificate",
           "url": "assets/awards/synopsys-scholarship-2024/certificate-1.pdf",
           "caption": "Certificate · 2024-09-13 · English",
-          "preview": "assets/awards/synopsys-scholarship-2024/certificate-1-preview.jpg",
+          "preview": "assets/awards/synopsys-scholarship-2024/certificate-1-preview.webp",
           "width": 1800,
-          "height": 1273
+          "height": 1273,
+          "preview_source": "assets/awards/synopsys-scholarship-2024/certificate-1-preview.jpg"
         },
         {
           "kind": "photo",
           "url": "assets/awards/synopsys-scholarship-2024/photo-1.jpg",
           "caption": "Photo · 2024-09-13",
-          "width": 4032,
-          "height": 3024
+          "width": 1600,
+          "height": 1200,
+          "preview_source": "assets/awards/synopsys-scholarship-2024/photo-1.jpg",
+          "preview": "assets/awards/synopsys-scholarship-2024/photo-1-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/synopsys-scholarship-2024/photo-2.jpg",
           "caption": "Photo · 2024-09-13",
-          "width": 4032,
-          "height": 3024
+          "width": 1600,
+          "height": 1200,
+          "preview_source": "assets/awards/synopsys-scholarship-2024/photo-2.jpg",
+          "preview": "assets/awards/synopsys-scholarship-2024/photo-2-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/synopsys-scholarship-2024/photo-3.jpg",
           "caption": "Photo · 2024-09-13",
-          "width": 4032,
-          "height": 3024
+          "width": 1600,
+          "height": 1200,
+          "preview_source": "assets/awards/synopsys-scholarship-2024/photo-3.jpg",
+          "preview": "assets/awards/synopsys-scholarship-2024/photo-3-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1263,28 +1353,36 @@
           "url": "assets/awards/qilin-cup-2023/certificate-1.jpg",
           "caption": "Certificate · 2023-12 · Chinese",
           "width": 1160,
-          "height": 820
+          "height": 820,
+          "preview_source": "assets/awards/qilin-cup-2023/certificate-1.jpg",
+          "preview": "assets/awards/qilin-cup-2023/certificate-1-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/qilin-cup-2023/photo-1.jpg",
           "caption": "Photo · 2023-12",
           "width": 1151,
-          "height": 785
+          "height": 785,
+          "preview_source": "assets/awards/qilin-cup-2023/photo-1.jpg",
+          "preview": "assets/awards/qilin-cup-2023/photo-1-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/qilin-cup-2023/photo-2.jpg",
           "caption": "Photo · 2023-12",
           "width": 800,
-          "height": 600
+          "height": 600,
+          "preview_source": "assets/awards/qilin-cup-2023/photo-2.jpg",
+          "preview": "assets/awards/qilin-cup-2023/photo-2-preview.webp"
         },
         {
           "kind": "trophy",
           "url": "assets/awards/qilin-cup-2023/trophy-1.jpg",
           "caption": "Trophy · 2023-12",
-          "width": 1279,
-          "height": 1706
+          "width": 1200,
+          "height": 1600,
+          "preview_source": "assets/awards/qilin-cup-2023/trophy-1.jpg",
+          "preview": "assets/awards/qilin-cup-2023/trophy-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1311,22 +1409,28 @@
           "kind": "certificate",
           "url": "assets/awards/iccad-contest-2023/certificate-1.jpg",
           "caption": "Certificate · 2023-10-29 · Problem A · English",
-          "width": 3220,
-          "height": 2456
+          "width": 1800,
+          "height": 1373,
+          "preview_source": "assets/awards/iccad-contest-2023/certificate-1.jpg",
+          "preview": "assets/awards/iccad-contest-2023/certificate-1-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/iccad-contest-2023/photo-1.jpg",
           "caption": "Photo · 2023-10-29 · Problem A",
-          "width": 1918,
-          "height": 1080
+          "width": 1600,
+          "height": 901,
+          "preview_source": "assets/awards/iccad-contest-2023/photo-1.jpg",
+          "preview": "assets/awards/iccad-contest-2023/photo-1-preview.webp"
         },
         {
           "kind": "plaque",
           "url": "assets/awards/iccad-contest-2023/plaque-1.jpg",
           "caption": "Award plaque · 2023-10-29 · Problem A",
           "width": 1080,
-          "height": 1492
+          "height": 1492,
+          "preview_source": "assets/awards/iccad-contest-2023/plaque-1.jpg",
+          "preview": "assets/awards/iccad-contest-2023/plaque-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1343,14 +1447,18 @@
           "url": "assets/awards/edathon-2023/certificate-1.jpg",
           "caption": "Certificate · 2023-08 · English",
           "width": 1280,
-          "height": 854
+          "height": 854,
+          "preview_source": "assets/awards/edathon-2023/certificate-1.jpg",
+          "preview": "assets/awards/edathon-2023/certificate-1-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/edathon-2023/photo-1.jpg",
           "caption": "Photo · 2023-08",
           "width": 1280,
-          "height": 1083
+          "height": 1083,
+          "preview_source": "assets/awards/edathon-2023/photo-1.jpg",
+          "preview": "assets/awards/edathon-2023/photo-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1377,16 +1485,19 @@
           "kind": "certificate",
           "url": "assets/awards/iccad-contest-2022/certificate-1.pdf",
           "caption": "Certificate · 2022-10-30 · Problem A · English",
-          "preview": "assets/awards/iccad-contest-2022/certificate-1-preview.jpg",
+          "preview": "assets/awards/iccad-contest-2022/certificate-1-preview.webp",
           "width": 1800,
-          "height": 1391
+          "height": 1391,
+          "preview_source": "assets/awards/iccad-contest-2022/certificate-1-preview.jpg"
         },
         {
           "kind": "plaque",
           "url": "assets/awards/iccad-contest-2022/plaque-1.jpg",
           "caption": "Award plaque · 2022-10-30 · Problem A",
-          "width": 2139,
-          "height": 2705
+          "width": 1265,
+          "height": 1600,
+          "preview_source": "assets/awards/iccad-contest-2022/plaque-1.jpg",
+          "preview": "assets/awards/iccad-contest-2022/plaque-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1402,16 +1513,19 @@
           "kind": "certificate",
           "url": "assets/awards/nthu-scholarship-2021/certificate-1.jpg",
           "caption": "Certificate · 2021-09 · English",
-          "width": 2480,
-          "height": 3505
+          "width": 1274,
+          "height": 1800,
+          "preview_source": "assets/awards/nthu-scholarship-2021/certificate-1.jpg",
+          "preview": "assets/awards/nthu-scholarship-2021/certificate-1-preview.webp"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/nthu-scholarship-2021/certificate-2.pdf",
           "caption": "Certificate · 2021-09 · Chinese",
-          "preview": "assets/awards/nthu-scholarship-2021/certificate-2-preview.jpg",
-          "width": 1800,
-          "height": 2545
+          "preview": "assets/awards/nthu-scholarship-2021/certificate-2-preview.webp",
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/nthu-scholarship-2021/certificate-2-preview.jpg"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1433,32 +1547,37 @@
           "kind": "certificate",
           "url": "assets/awards/icpc-2020/certificate-1.pdf",
           "caption": "Certificate · 2020-11-07 · English",
-          "preview": "assets/awards/icpc-2020/certificate-1-preview.jpg",
+          "preview": "assets/awards/icpc-2020/certificate-1-preview.webp",
           "width": 1800,
-          "height": 1272
+          "height": 1272,
+          "preview_source": "assets/awards/icpc-2020/certificate-1-preview.jpg"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/icpc-2020/certificate-2.pdf",
           "caption": "Certificate · 2020-11-07 · English",
-          "preview": "assets/awards/icpc-2020/certificate-2-preview.jpg",
+          "preview": "assets/awards/icpc-2020/certificate-2-preview.webp",
           "width": 1800,
-          "height": 1272
+          "height": 1272,
+          "preview_source": "assets/awards/icpc-2020/certificate-2-preview.jpg"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/icpc-2020/certificate-3.pdf",
           "caption": "Certificate · 2020-11-07 · English",
-          "preview": "assets/awards/icpc-2020/certificate-3-preview.jpg",
+          "preview": "assets/awards/icpc-2020/certificate-3-preview.webp",
           "width": 1800,
-          "height": 1272
+          "height": 1272,
+          "preview_source": "assets/awards/icpc-2020/certificate-3-preview.jpg"
         },
         {
           "kind": "plaque",
           "url": "assets/awards/icpc-2020/plaque-1.jpg",
           "caption": "Award plaque · 2020-11-07",
-          "width": 2496,
-          "height": 3396
+          "width": 1176,
+          "height": 1600,
+          "preview_source": "assets/awards/icpc-2020/plaque-1.jpg",
+          "preview": "assets/awards/icpc-2020/plaque-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1476,8 +1595,10 @@
           "kind": "plaque",
           "url": "assets/awards/mcu-contribution-2021/plaque-1.jpg",
           "caption": "Award plaque · 2021-05-29",
-          "width": 2177,
-          "height": 3083
+          "width": 1130,
+          "height": 1600,
+          "preview_source": "assets/awards/mcu-contribution-2021/plaque-1.jpg",
+          "preview": "assets/awards/mcu-contribution-2021/plaque-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1493,15 +1614,19 @@
           "kind": "certificate",
           "url": "assets/awards/mcu-programming-2019-2020/certificate-1.jpg",
           "caption": "Certificate · 2019-12-25 · Chinese",
-          "width": 2481,
-          "height": 3508
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/mcu-programming-2019-2020/certificate-1.jpg",
+          "preview": "assets/awards/mcu-programming-2019-2020/certificate-1-preview.webp"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/mcu-programming-2019-2020/certificate-2.jpg",
           "caption": "Certificate · 2020-12-25 · Chinese",
-          "width": 2481,
-          "height": 3508
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/mcu-programming-2019-2020/certificate-2.jpg",
+          "preview": "assets/awards/mcu-programming-2019-2020/certificate-2-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1517,8 +1642,10 @@
           "kind": "certificate",
           "url": "assets/awards/central-taiwan-2020/certificate-1.jpg",
           "caption": "Certificate · 2020-12-05 · Chinese",
-          "width": 4962,
-          "height": 7016
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/central-taiwan-2020/certificate-1.jpg",
+          "preview": "assets/awards/central-taiwan-2020/certificate-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1534,9 +1661,10 @@
           "kind": "certificate",
           "url": "assets/awards/topc-2020/certificate-1.pdf",
           "caption": "Certificate · 2020-10-07 · English",
-          "preview": "assets/awards/topc-2020/certificate-1-preview.jpg",
+          "preview": "assets/awards/topc-2020/certificate-1-preview.webp",
           "width": 1800,
-          "height": 1272
+          "height": 1272,
+          "preview_source": "assets/awards/topc-2020/certificate-1-preview.jpg"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1558,32 +1686,37 @@
           "kind": "certificate",
           "url": "assets/awards/icpc-2019/certificate-1.pdf",
           "caption": "Certificate · 2019-11-23 · English",
-          "preview": "assets/awards/icpc-2019/certificate-1-preview.jpg",
+          "preview": "assets/awards/icpc-2019/certificate-1-preview.webp",
           "width": 1800,
-          "height": 1272
+          "height": 1272,
+          "preview_source": "assets/awards/icpc-2019/certificate-1-preview.jpg"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/icpc-2019/certificate-2.pdf",
           "caption": "Certificate · 2019-11-23 · English",
-          "preview": "assets/awards/icpc-2019/certificate-2-preview.jpg",
+          "preview": "assets/awards/icpc-2019/certificate-2-preview.webp",
           "width": 1800,
-          "height": 1272
+          "height": 1272,
+          "preview_source": "assets/awards/icpc-2019/certificate-2-preview.jpg"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/icpc-2019/certificate-3.pdf",
           "caption": "Certificate · 2019-11-23 · English",
-          "preview": "assets/awards/icpc-2019/certificate-3-preview.jpg",
+          "preview": "assets/awards/icpc-2019/certificate-3-preview.webp",
           "width": 1800,
-          "height": 1272
+          "height": 1272,
+          "preview_source": "assets/awards/icpc-2019/certificate-3-preview.jpg"
         },
         {
           "kind": "plaque",
           "url": "assets/awards/icpc-2019/plaque-1.jpg",
           "caption": "Award plaque · 2019-11-23",
           "width": 1032,
-          "height": 1557
+          "height": 1557,
+          "preview_source": "assets/awards/icpc-2019/plaque-1.jpg",
+          "preview": "assets/awards/icpc-2019/plaque-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1605,25 +1738,28 @@
           "kind": "certificate",
           "url": "assets/awards/topc-2019/certificate-1.pdf",
           "caption": "Certificate · 2019-10-05 · English",
-          "preview": "assets/awards/topc-2019/certificate-1-preview.jpg",
+          "preview": "assets/awards/topc-2019/certificate-1-preview.webp",
           "width": 1800,
-          "height": 1272
+          "height": 1272,
+          "preview_source": "assets/awards/topc-2019/certificate-1-preview.jpg"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/topc-2019/certificate-2.pdf",
           "caption": "Certificate · 2019-10-05 · English",
-          "preview": "assets/awards/topc-2019/certificate-2-preview.jpg",
+          "preview": "assets/awards/topc-2019/certificate-2-preview.webp",
           "width": 1800,
-          "height": 1272
+          "height": 1272,
+          "preview_source": "assets/awards/topc-2019/certificate-2-preview.jpg"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/topc-2019/certificate-3.pdf",
           "caption": "Certificate · 2019-10-05 · English",
-          "preview": "assets/awards/topc-2019/certificate-3-preview.jpg",
+          "preview": "assets/awards/topc-2019/certificate-3-preview.webp",
           "width": 1800,
-          "height": 1272
+          "height": 1272,
+          "preview_source": "assets/awards/topc-2019/certificate-3-preview.jpg"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1639,32 +1775,37 @@
           "kind": "certificate",
           "url": "assets/awards/ncpu-2019/certificate-1.pdf",
           "caption": "Certificate · 2019-07-10 · English",
-          "preview": "assets/awards/ncpu-2019/certificate-1-preview.jpg",
+          "preview": "assets/awards/ncpu-2019/certificate-1-preview.webp",
           "width": 1800,
-          "height": 1391
+          "height": 1391,
+          "preview_source": "assets/awards/ncpu-2019/certificate-1-preview.jpg"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/ncpu-2019/certificate-2.pdf",
           "caption": "Certificate · 2019-07-10 · English",
-          "preview": "assets/awards/ncpu-2019/certificate-2-preview.jpg",
+          "preview": "assets/awards/ncpu-2019/certificate-2-preview.webp",
           "width": 1800,
-          "height": 1272
+          "height": 1272,
+          "preview_source": "assets/awards/ncpu-2019/certificate-2-preview.jpg"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/ncpu-2019/certificate-3.pdf",
           "caption": "Certificate · 2019-07-10 · English",
-          "preview": "assets/awards/ncpu-2019/certificate-3-preview.jpg",
+          "preview": "assets/awards/ncpu-2019/certificate-3-preview.webp",
           "width": 1800,
-          "height": 1272
+          "height": 1272,
+          "preview_source": "assets/awards/ncpu-2019/certificate-3-preview.jpg"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/ncpu-2019/certificate-4.jpg",
           "caption": "Certificate · 2019-07-10 · English",
-          "width": 3468,
-          "height": 2439
+          "width": 1800,
+          "height": 1266,
+          "preview_source": "assets/awards/ncpu-2019/certificate-4.jpg",
+          "preview": "assets/awards/ncpu-2019/certificate-4-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1680,22 +1821,28 @@
           "kind": "certificate",
           "url": "assets/awards/ncpc-2018-2020/certificate-1.jpg",
           "caption": "Certificate · 2018-11-11 · Chinese",
-          "width": 2481,
-          "height": 3508
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/ncpc-2018-2020/certificate-1.jpg",
+          "preview": "assets/awards/ncpc-2018-2020/certificate-1-preview.webp"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/ncpc-2018-2020/certificate-2.jpg",
           "caption": "Certificate · 2019-11-24 · Chinese",
-          "width": 2481,
-          "height": 3508
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/ncpc-2018-2020/certificate-2.jpg",
+          "preview": "assets/awards/ncpc-2018-2020/certificate-2-preview.webp"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/ncpc-2018-2020/certificate-3.jpg",
           "caption": "Certificate · 2020-11-08 · Chinese",
-          "width": 2481,
-          "height": 3508
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/ncpc-2018-2020/certificate-3.jpg",
+          "preview": "assets/awards/ncpc-2018-2020/certificate-3-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1711,8 +1858,10 @@
           "kind": "certificate",
           "url": "assets/awards/freshman-cup-2018/certificate-1.jpg",
           "caption": "Certificate · 2018-06-22 · Chinese",
-          "width": 2473,
-          "height": 3483
+          "width": 1278,
+          "height": 1800,
+          "preview_source": "assets/awards/freshman-cup-2018/certificate-1.jpg",
+          "preview": "assets/awards/freshman-cup-2018/certificate-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1728,15 +1877,19 @@
           "kind": "certificate",
           "url": "assets/awards/software-innovation-2018/certificate-1.jpg",
           "caption": "Certificate · 2018-01-13 · Chinese",
-          "width": 2467,
-          "height": 3483
+          "width": 1275,
+          "height": 1800,
+          "preview_source": "assets/awards/software-innovation-2018/certificate-1.jpg",
+          "preview": "assets/awards/software-innovation-2018/certificate-1-preview.webp"
         },
         {
           "kind": "certificate",
           "url": "assets/awards/software-innovation-2018/certificate-2.jpg",
           "caption": "Certificate · 2018-01-13 · Chinese",
-          "width": 2442,
-          "height": 3460
+          "width": 1270,
+          "height": 1800,
+          "preview_source": "assets/awards/software-innovation-2018/certificate-2.jpg",
+          "preview": "assets/awards/software-innovation-2018/certificate-2-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1754,16 +1907,20 @@
           "kind": "medal",
           "url": "assets/awards/badminton-2025/medal-1.jpg",
           "caption": "Medal · 2025-05",
-          "width": 3000,
-          "height": 3423
+          "width": 1227,
+          "height": 1400,
+          "preview_source": "assets/awards/badminton-2025/medal-1.jpg",
+          "preview": "assets/awards/badminton-2025/medal-1-preview.webp"
         },
         {
           "kind": "photo",
           "url": "assets/awards/badminton-2025/photo-1.jpg",
           "caption": "Photo · 2025-05",
-          "width": 3213,
-          "height": 5712,
-          "crop_top": 0.25
+          "width": 787,
+          "height": 1400,
+          "crop_top": 0.25,
+          "preview_source": "assets/awards/badminton-2025/photo-1.jpg",
+          "preview": "assets/awards/badminton-2025/photo-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1774,5 +1931,25 @@
     "url": "assets/awards/hsinchu-youth-2026/photo-2.jpg",
     "title": "Hsinchu City Outstanding Youth",
     "detail": "College / University Division · 2026"
+  },
+  "homepage_images": {
+    "hsinchu": {
+      "original": "assets/awards/hsinchu-youth-2026/photo-2.jpg",
+      "preview": "assets/awards/hsinchu-youth-2026/photo-2-preview.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    "hsing_chien": {
+      "original": "assets/images/hsing-chien-2025.jpg",
+      "preview": "assets/awards/hsing-chien-2025/photo-1-preview.webp",
+      "width": 1477,
+      "height": 1108
+    },
+    "badminton": {
+      "original": "assets/images/badminton-2025.jpg",
+      "preview": "assets/awards/badminton-2025/photo-1-preview.webp",
+      "width": 787,
+      "height": 1400
+    }
   }
 }

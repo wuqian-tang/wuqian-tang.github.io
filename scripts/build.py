@@ -12,7 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'site'
 ALLOWED_FILES = {
     'index.html', '404.html', '.nojekyll', 'robots.txt', 'sitemap.xml',
-    'assets/favicon.svg', 'assets/css/main.css', 'assets/js/main.js',
+    'assets/favicon.svg', 'assets/favicon-16.png', 'assets/favicon-32.png',
+    'assets/brand.svg', 'assets/css/main.css', 'assets/js/main.js',
     'assets/images/profile.jpg',
     'assets/images/hsing-chien-2025.jpg', 'assets/images/badminton-2025.jpg',
     'files/Wuqian_Tang_CV.pdf',
@@ -69,6 +70,7 @@ def icon(name):
         'github': '<path d="M9 19c-4 1-4-2-6-2M15 22v-4a3.5 3.5 0 0 0-1-2.7c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.3 4a5 5 0 0 0-.1-3.2s-1.3-.4-4.2 1.6a14.5 14.5 0 0 0-7.5 0C4.6.4 3.3.8 3.3.8A5 5 0 0 0 3.2 4a5.4 5.4 0 0 0-1.5 3.8c0 5.4 3.5 6.6 6.8 7A3.5 3.5 0 0 0 7.5 18v4"/>',
         'book': '<path d="M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1ZM12 5v15"/>',
         'linkedin': '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M11 17v-7M11 13c0-4 6-4 6 0v4"/><circle cx="7" cy="7" r=".6"/>',
+        'orcid': '<circle cx="12" cy="12" r="9"/><circle cx="8" cy="8" r=".65"/><path d="M8 11v6M12 11v6h2a3 3 0 0 0 0-6h-2Z"/>',
         'badminton': '<ellipse cx="9" cy="8" rx="5" ry="6" transform="rotate(-35 9 8)"/><path d="m12 13 7 8M6 4l6 8M4 8l7-4M7 13l7-5"/>',
         'swim': '<path d="M2 19c2-2 4 2 6 0s4 2 6 0 4 2 8 0M2 15c2-2 4 2 6 0s4 2 6 0 4 2 8 0M5 11l5-5 6 4 3 3M10 6l-4-3"/><circle cx="18" cy="6" r="2"/>',
         'tabletennis': '<path d="M15 16 6 7M6 7a7 7 0 1 1 9 9l-4 5-4-4 4-4"/><circle cx="20" cy="20" r="2"/>',
@@ -132,7 +134,7 @@ def gallery(a, profile):
             crop = item.get('crop_top', 0)
             cards += f'''<figure class="gallery-card"><a class="gallery-image-link" href="{esc(preview)}" data-media="{esc(a['id'] + ':' + kind)}" data-media-index="{i-1}" aria-label="View {esc(caption)} {i} for {esc(a['title'])}"><img src="{esc(preview)}" alt="{esc(caption + ' for ' + a['title'])}" data-display-rotation="{rotation}" data-display-crop="{crop}" loading="lazy" decoding="async" width="{item['width']}" height="{item['height']}"></a><figcaption><span>{esc(caption)}</span><a href="{esc(original)}" target="_blank" rel="noopener noreferrer">View Original</a></figcaption></figure>'''
         sections += f'<section class="gallery-section" id="{group}" aria-labelledby="{group}-title"><h2 id="{group}-title">{plural}<span class="gallery-count">{len(items)}</span></h2><div class="award-gallery-grid">{cards}</div></section>'
-    values = dict(NAME=esc(profile['name']), TITLE=esc(a['title']), DATE=date_range(a['date']), DETAIL=esc(a['detail']),
+    values = dict(NAME=esc(profile['name']), SITE_URL=esc(profile['site_url']), TITLE=esc(a['title']), DATE=date_range(a['date']), DETAIL=esc(a['detail']),
         CANONICAL=esc(profile['site_url'] + '/awards/' + a['id'] + '.html'),
         HOME=esc('../#award-' + a['id']), LINKS=award_links(a, local_gallery=True), SECTIONS=sections,
         MEDIA_DATA=json.dumps(media_data([a], '../'), ensure_ascii=False).replace('<', '\\u003c'))
@@ -191,6 +193,10 @@ def render():
         other_html += ''.join(publication(paper, citations[paper['id']]) for paper in others if paper['year'] == year)
     profile_links = ''.join(f'<a href="{esc(link["url"])}">{icon(link["icon"])}<span>{esc(link["label"])}</span></a>' for link in p['profiles'])
     all_awards = p['awards'] + p['earlier_awards'] + p['personal_awards']
+    for award_record in all_awards:
+        for item in award_record['media']:
+            if not re.fullmatch(r'assets/awards/[A-Za-z0-9_-]+/[A-Za-z0-9_-]+-preview\.webp', item.get('preview', '')):
+                raise ValueError(f'Award media requires a local WebP preview: {award_record["id"]}')
     awards_by_id = {a['id']: a for a in all_awards}
     registry = media_data(all_awards)
     news = ''
@@ -220,6 +226,12 @@ def render():
     research = ''.join(f'<article class="research-item"><span class="research-number" aria-hidden="true">{i:02d}</span><div><h3>{esc(r["title"])}</h3><p>{esc(r["description"])}</p><a href="#paper-{esc(r["paper"])}">{esc(r["work"])}</a></div></article>' for i, r in enumerate(p['research'], 1))
     structured = json.dumps({'@context':'https://schema.org','@type':'Person','name':p['name'],'alternateName':p['chinese_name'],'url':p['site_url'],'jobTitle':p['role'],'affiliation':{'@type':'CollegeOrUniversity','name':p['university']},'sameAs':[link['url'] for link in p['profiles']]}, ensure_ascii=False).replace('<', '\\u003c')
     values = {key.upper(): esc(p[key]) for key in ['name','chinese_name','role','department','university','location','email','updated','site_url']}
+    for key, image in p['homepage_images'].items():
+        if not image['preview'].endswith('.webp'):
+            raise ValueError(f'Homepage photograph requires a WebP preview: {key}')
+        values[key.upper() + '_PREVIEW'] = esc(image['preview'])
+        values[key.upper() + '_WIDTH'] = image['width']
+        values[key.upper() + '_HEIGHT'] = image['height']
     values.update(STRUCTURED_DATA=structured, LOCATION_ICON=icon('location'), MAIL_ICON=icon('mail'), DOCUMENT_ICON=icon('document'), PROFILE_LINKS=profile_links, NEWS=news, RESEARCH=research,
         SELECTED_PUBLICATIONS=''.join(publication(paper, citations[paper['id']]) for paper in selected), OTHER_PUBLICATIONS=other_html, MORE_PUBLICATIONS_COUNT=str(len(others)),
         AWARDS=''.join(award(a) for a in p['awards']), EARLIER_AWARDS=''.join(award(a) for a in p['earlier_awards']),
@@ -232,7 +244,7 @@ def render():
     missing = re.findall(r'\$\{\w+\}', index)
     if missing:
         raise ValueError(f'Unrendered content: {missing}')
-    not_found = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Wuqian Tang</title><link rel="icon" href="/assets/favicon.svg?v=20261003-tang"><link rel="stylesheet" href="/assets/css/main.css"></head><body><main style="max-width:600px;margin:15vh auto;padding:24px"><p class="eyebrow">404</p><h1 style="margin:16px 0">Page not found</h1><p>The page may have moved. You can find my research, publications, and contact details on my homepage.</p><p style="margin-top:24px"><a href="/">Return to homepage</a></p></main></body></html>\n'
+    not_found = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Wuqian Tang</title><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png?v=20261003-small-tang"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=20261003-small-tang"><link rel="icon" type="image/svg+xml" sizes="any" href="/assets/favicon.svg?v=20261003-small-tang"><link rel="stylesheet" href="/assets/css/main.css"></head><body><main style="max-width:600px;margin:15vh auto;padding:24px"><p class="eyebrow">404</p><h1 style="margin:16px 0">Page not found</h1><p>The page may have moved. You can find my research, publications, and contact details on my homepage.</p><p style="margin-top:24px"><a href="/">Return to homepage</a></p></main></body></html>\n'
     sitemap = f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{esc(p["site_url"])}/</loc><lastmod>{esc(p["updated"])}</lastmod></url></urlset>\n'
     pages = {'index.html':index, '404.html':not_found, '.nojekyll':'', 'robots.txt':f'User-agent: *\nAllow: /\nSitemap: {p["site_url"]}/sitemap.xml\n', 'sitemap.xml':sitemap}
     for a in p['awards'] + p['earlier_awards'] + p['personal_awards']:

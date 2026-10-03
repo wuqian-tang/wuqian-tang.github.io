@@ -40,7 +40,17 @@
 - 分组标题采用 Materials / Announcements，保留现有资源顺序、方括号和浅灰竖线。
 - 甲骨文论文原有链接顺序为 DOI、PDF、Journal，新加的 BibTeX 复制按钮在最后；正式题名仍为 The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions。
 - 经历子标题改为 Work Experience，覆盖研究助理与企业实习。Education / Work Experience 日期在电脑和平板上靠右、手机上靠左，均单行显示。博士时间为 Sep 2023 – Expected Jul 2027，下方仅保留导师信息。
-- 首页、相册和浏览器 favicon 统一使用经典繁方篆「唐」浅蓝色方印，采用真实字体原始轮廓，保存为 SVG，不依赖设备字体或远程字体请求；无白色内框。来源信息见 `THIRD_PARTY_NOTICES.md`，最新预览见 `preview/brand-preview.png`。
+- 首页、相册页首使用经典繁方篆「唐」原始字形，浏览器 favicon 使用用户确认的小尺寸 B 版本。两者均为浅蓝色方印，无白色内框、不依赖设备字体或远程字体请求。来源信息见 `THIRD_PARTY_NOTICES.md`。
+
+## 小尺寸图标、图片性能与分享卡片（2026-10-03）
+
+- 用户已确认部署本地预览中推荐的 B 图标。原版页首 35px 字形另存 `site/assets/brand.svg`，字节与上一版本完全相同；浏览器改用 16px 网格优化的 `favicon.svg`，同时提供原生 16×16 / 32×32 PNG。背景继续 `#4E7DC3`，白字、无内框；首页、31 个相册与 404 同步更新版本参数 `20261003-small-tang`。
+- 为全部 87 份相册媒体生成 WebP，包括普通 JPEG 与 24 张 PDF 预览。普通图片最长边 1600px、质量 86，奖状 1800px、质量 90，羽毛球 1400px；预览应用正确 EXIF 方向，不携带原 EXIF 信息。公开 manifest 新增 87 个派生文件，记录来源、来源 SHA-256、尺寸与编码参数。
+- 可展示的预览资源合计从 109,521,049 bytes 降为 16,000,228 bytes，减少 85.39%。羽毛球从 4,796,730 bytes 降为 137,866 bytes（787×1400）。这些是预览资源大小；原图和 PDF 仍保留，网站文件总量会因新增预览增加，不能写成部署目录减少 85%。
+- 首页三张活动照片复用相册 WebP，不重复生成文件；首页羽毛球点击后才加载原 JPEG，并继续裁掉上方窗帘。奖项弹窗和相册默认显示 WebP，View Original 查看原 JPEG / PDF。上一版本 manifest 中 116 份已有资产的 SHA-256 均保持不变。
+- 新增 `site/assets/images/social-preview.png`，固定 1200×630、118,428 bytes，包含原头像、Wuqian Tang、National Tsing Hua University (NTHU) 与 Electronic Design Automation · Logic Synthesis · AI for EDA；编辑源是 `content/social-preview.html`。首页及全部相册补齐 Open Graph 图片尺寸、替代文本和 Twitter summary_large_image。
+- ORCID 已通过官方公开记录核对：姓名 Wuqian Tang、CB-EVO 的 `10.1145/3779431` 与 GLSVLSI 的 `10.1145/3716368.3735193` 均匹配，出版方提交的 Crossref 作者记录也一致。链接 `https://orcid.org/0009-0008-5042-5062` 加入个人链接和 Person `sameAs`；来源为 `https://pub.orcid.org/v3.0/0009-0008-5042-5062/record`，核对日期 2026-10-03。
+- Teaching 导航位于 Experience 与 Hobbies 之间，复用已有桌面导航和手机菜单。修复手机横屏的当前栏目高亮：观察区域改按屏幕高度计算像素，同时包含锚点留白，窗口尺寸改变后重新计算；百分比 rootMargin 按宽度解析的依据见 [Intersection Observer 规范](https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-rootmargin)。
 
 ## BibTeX 引用复制（2026-10-03）
 
@@ -107,10 +117,12 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 9. **论文 PDF**：优先正式官方全文或作者提供的可公开最终稿；下载后核对内容，存放 `site/files/papers/`。查看链接用 `files/papers/文件名.pdf`，不得链接其他人的个人网页、远程 PDF 或临时下载 token。保留 PDF 内容，在 manifest 记录来源与 SHA-256；如用户授权修改页面方向，还需记录 normalization。
 10. **照片**：沿用真实照片，不生成或改写人物。原始照片字节保持不变；PDF 如需转正，必须得到用户明确授权，只调整页面方向而不改扫描内容，并更新公开清单中的 SHA-256。首页羽毛球照片使用 4:3、`object-position: 50% 53%` 半身裁切；弹窗使用 `crop_top: 0.25` 只裁上方窗帘。方向先遵循正确 EXIF；2022 ICCAD 源 PDF 设置 270° 页面方向并重新生成正向预览，页面不再叠加旋转。图片有准确英文 alt，惰性加载，不在首页提前请求所有奖项图片。媒体点击直接在当前页弹窗，支持电脑两侧 / 手机图下的图标翻页、左右键、双向触控滑动、右上角图标关闭、Escape、焦点返回；翻页先解码新图，再用 100ms 淡出与 180ms 淡入配合 16px 水平位移，图框高度过渡 200ms；系统开启减少动态效果时取消这些动画；保留原相册作为无 JS / Ctrl 或 Cmd 点击回退。只有 View Original 查看链接，不添加下载按钮或 download 属性。
 11. **Teaching**：每门课程包含正式英文课程名、教师、所属系所或学院和学期；教师在前，系所在后，以 · 分隔。不同学院课程不能统一写成 CS。助教奖项括号采用 `Spring 2025` / `Fall 2025` 格式，表示教学对应学期；证书学年度第 1 学期转换为该学年开始公历年的 Fall，第 2 学期转换为下一公历年的 Spring。不得把次年 2 月或暑假颁发日期当成教学学期。Awards 日期列为颁发月份，说明与相册另注明实际学期。
-12. **图标**：使用经典繁方篆「唐」，保留原始笔画与比例，以 SVG 路径渲染；字体白色、背景 `#4E7DC3`，无白色内框。页首 35px、favicon 使用同一个 SVG。不得放大低清截图作为正式图标；完整字体不进公开仓库，来源元数据和 SHA-256 见 `THIRD_PARTY_NOTICES.md`。
+12. **图标**：使用经典繁方篆「唐」，字体白色、背景 `#4E7DC3`，无白色内框。页首 35px 用 `brand.svg` 原始字形；favicon 用已确认的 B 小尺寸版本，保留所有轮廓并调整至 16px 网格，同时提供 SVG 与 16×16 / 32×32 PNG。页面明确填写 sizes，修改时更新版本参数。不得放大低清截图作为正式图标；完整字体不进公开仓库，来源元数据和 SHA-256 见 `THIRD_PARTY_NOTICES.md`。
 13. **响应式与可访问性**：电脑两列，手机单列，导航可展开；320px 起无横向溢出。600px 及以下的简介区先显示邮箱，再显示下一行的 Hsinchu, Taiwan；两行横跨简介宽度，图标与正文分别左对齐。保留语义标题、可见键盘焦点、跳转链接、对话框标签，以及无 JavaScript 的基本阅读和图片链接。
 14. **公开范围**：允许本次明确授权的奖状、奖杯、奖牌、照片和具体最终论文；不公开身份证件、成绩单、申请表、推荐信、录取通知、学生奖惩记录、未授权稿件或整个资料目录。公开 CV 不含电话号码。
 15. **引用复制**：BibTeX 控件始终位于每篇论文所有其他资源之后；复制成功后仅在按钮内显示勾号与 Copied 2 秒，不弹提示框或新分页，保持按钮尺寸。失败时提供选中代码的弹窗和手动复制；无 JS 使用原生展开文本。引用来自 `content/citations.json`，记录来源，按正式元数据保存作者、题名、刊会、年份与已核实的卷期/页码/DOI；不把共同一作星号、网页粗体或页面状态当作作者名。待刊用 To appear note，不补造字段；甲骨文论文用正式英文题名、作者和 In Chinese note。
+16. **图片性能**：所有相册媒体必须有本地 WebP preview；首页活动照片复用这些预览。View Original 始终指向原 JPG / PDF，禁止把原图替换成有损预览。用 `scripts/optimize_images.py` 处理 manifest 已审核的公开图，不从私人档案批量读取；保留 `preview_source` 以便重复生成，更新 `content/image-previews.json` 与派生资产 SHA-256。新增照片后先生成预览，再 build。首页羽毛球原图只在用户点击后请求，其余奖项弹窗优先使用预览；不提前加载全部 87 张媒体。
+17. **分享与导航**：导航顺序为 About / Research / Publications / Awards / Experience / Teaching / Hobbies。首页和相册保留绝对 URL 的 og:image、图片宽高与 alt、Twitter summary_large_image。分享图固定 1200×630；头像、姓名、学校或研究方向改变后，从 `content/social-preview.html` 用 Chromium 按 1200×630、设备倍率 1 重渲染 PNG，等待图片和字体加载，再更新 manifest。ORCID 等身份链接须由正式个人记录及论文匹配核对，不能只凭同名猜测；与 Person sameAs 同步。
 
 Hobbies 用词参考了 [Siyuan Jiang 的学术主页](https://siyuanj.github.io/) 中同名栏目；它直接表达爱好，适合当前内容。网站不需要附上这条用词参考。
 
@@ -123,13 +135,18 @@ Hobbies 用词参考了 [Siyuan Jiang 的学术主页](https://siyuanj.github.io
 | `content/homepage.html` | 首页结构和 About Me / Hobbies 文案 |
 | `content/award-gallery.html` | 相册模板 |
 | `content/public-assets.json` | 明确审核的公开文件路径、来源和 SHA-256 |
+| `content/image-previews.json` | 87 张 WebP 的大小、来源 SHA-256、尺寸与编码记录 |
+| `content/social-preview.html` | 1200×630 社交分享图的可编辑设计源 |
 | `site/assets/css/main.css` | 响应式布局、字体、颜色、照片展示裁切 |
 | `site/assets/js/main.js` | 导航、首页/相册弹窗、预览方向与裁切、触控翻页、折叠条目与返回定位 |
 | `scripts/build.py` | 生成页面并检查公开目录、DOI 和本地 PDF 链接规范 |
+| `scripts/optimize_images.py` | 从已审核公开 JPEG / PDF 预览生成 WebP；需要 Pillow 的 WebP 编码支持 |
 | `content/Wuqian_Tang_Public_CV.tex` | 公开 CV 可编辑源文件 |
 | `preview/` | 设备预览、浏览器与可访问性验证结果，未部署到网站 |
 
 更新流程：修改数据或模板 → 只复制审核过的公开文件并更新 manifest → 生成页面 → 检查 → 预览 → 只提交本网页仓库的变更 → 推送 master → 检查 GitHub Actions 与线上版本。
+
+照片变更时，在 build 前额外运行 `python3 scripts/optimize_images.py`；日常构建及部署直接使用提交的 WebP，无需安装 Pillow。分享图只在其内容变化时重渲染，不能在每次构建里下载字体或访问私人资料。
 
 ```sh
 python3 scripts/build.py
@@ -147,12 +164,16 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory site
 
 本轮新增验证涵盖首页所有 86 份资源链接的预览（另单独检查内嵌羽毛球照片）、资源顺序、所有外部链接的新分页属性与实际打开行为、助教新闻学期筛选、Awards 时间范围固定换行、Education / Work Experience 单行日期与博士预计毕业时间、两种羽毛球裁切、手机横屏弹窗边界、键盘/触控翻页和无 JavaScript 相册回退。四种尺寸的补充检查核对头像双角线（右上 29px、左下 58px）、日期的电脑/平板右对齐与手机左对齐、篆体 SVG 图标、Materials / Announcements、Journal 链接末位、原生正向奖状与句末 [Medal]；390px 和 320px 另核对邮箱下一行的地点及左对齐。桌面与手机首页/相册及打开的桌面弹窗 WCAG 自动扫描均无报告项。33 个本地 HTML 页面的 556 处本地链接与图片引用、95 个外部锚点的新分页属性、公开文件清单及原始 SHA-256 均验证通过。
 
-结果见 `preview/validation.json`、`preview/gallery-validation.json`、`preview/revision-validation.json`、`preview/followup-validation.json`、`preview/accessibility.json`、`preview/viewer-motion-validation.json`、`preview/layout-refinement-validation.json`；设备截图与裁切/奖状弹窗截图位于 `preview/`。部署后另用匿名访问核对首页、样式、脚本、方篆 SVG、转正奖状及预览、31 个相册、5 份论文 PDF 和所有 116 份 manifest 资产。屏幕尺寸模拟与自动扫描不能替代真实设备或人工阅读。
+结果见 `preview/validation.json`、`preview/gallery-validation.json`、`preview/revision-validation.json`、`preview/followup-validation.json`、`preview/accessibility.json`、`preview/viewer-motion-validation.json`、`preview/layout-refinement-validation.json`；设备截图与裁切/奖状弹窗截图位于 `preview/`。上一版部署已匿名核对首页、样式、脚本、方篆 SVG、转正奖状及预览、31 个相册、5 份论文 PDF 和当时全部 116 份 manifest 资产；本轮新增 87 张 WebP 与分享图后，manifest 为 204 份资产。屏幕尺寸模拟与自动扫描不能替代真实设备或人工阅读。
 
 最新布局补充验证覆盖 1440px、820px、390px、320px、600px 和 601px：五条教育/工作日期均为单行，600px 及以下左对齐，以上右对齐；右上角线宽高为左下角的一半，颜色和线宽一致；所有尺寸无横向溢出。已刷新电脑、平板、手机首页及 Education & Experience 截图，并人工查看手机日期与头像装饰。
 
 本轮动效验收另覆盖电脑、平板、手机、320px 手机和手机横屏的动画帧、控件位置、连续翻页、双向滑动、键盘 Enter 激活、关闭重开、相册页、慢速加载和减少动态效果；电脑 / 手机打开的弹窗可访问性扫描通过。
 
 BibTeX 验收结果见 `preview/bibtex-validation.json`，截图为 `preview/bibtex-*.png`。覆盖 1440×1000、820×1180、390×844、320×568 和 844×390：电脑逐篇读取实际剪贴板核对全部 21 篇，其他尺寸核对 TAPCO、甲骨文与待刊记录；全部按钮在原有链接最后、反馈后尺寸不变；复制拒绝和 API 不可用时回退正确，弹窗重试、手动选择、Escape、关闭与焦点返回正常；重新打开不会保留前一篇的 Copied；窄屏无横向溢出。无 JS 原生展开文本通过。电脑和手机首页及引用弹窗的 WCAG 自动扫描没有报告项。独立使用 BibTeX 0.99d / plain.bst 处理 21 条引用无错误；只有甲骨文期刊实际仅有期号、没有卷号，因此标准样式给出 number without volume 提示，不为消除提示伪造卷号。
+
+图片与分享验收见 `preview/performance-sharing-validation.json`：覆盖 1440×1000、1024×768、1000×768、820×1180、390×844、320×568、844×390，无横向溢出；Teaching 导航定位及当前栏目高亮正常，另验证连续调整手机竖屏、横屏、桌面与 320px 时重新计算观察区域。首页三张活动照片只请求 WebP，除头像外不请求原 JPEG；桌面和手机羽毛球点击后才请求原图，其他奖项弹窗保持使用预览；View Original 指向原 JPEG / PDF。全部 31 个相册的 87 张 WebP 均实际解码成功，页面浏览不会请求原始文件。首页与相册的分享元数据、ORCID 和 sameAs、16/32px favicon 尺寸与原版页首图标均核对；电脑/手机首页可访问性扫描通过，并读取一次真实 BibTeX 剪贴板作回归检查。全部原有 116 份 manifest 文件的 SHA-256 保持不变，87 张 WebP 的实际格式、尺寸与无 EXIF 状态核对通过；分享 PNG 尺寸为 1200×630。
+
+WebP 弹窗回归再次覆盖五种尺寸、实际动画帧、双向滑动、键盘、连续翻页、关闭重开、相册页、慢速加载和减少动态效果；桌面/手机弹窗可访问性扫描通过。电脑、平板、手机及 Hobbies 截图已刷新；分享图已人工查看姓名、学校、研究文字无截断。
 
 部署结果可在 [GitHub Pages 工作流](https://github.com/wuqian-tang/wuqian-tang.github.io/actions/workflows/pages.yml) 查看；本记录随此次 master 提交发布。以后继续更新时，以最新成功工作流和线上实际文件为准。

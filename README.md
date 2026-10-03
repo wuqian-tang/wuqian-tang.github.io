@@ -30,6 +30,17 @@ Edit `content/profile.json` for publications, awards, links, and experience. Edi
 
 Award rows use one compact resource line: `Materials: [Certificate] [Plaques] [Trophy] [Medal] [Photos] │ Announcements: [Official] [News] [University] [College] [Department]`. Include only available items, in that order, with correct singular/plural labels. The pale vertical divider separates the groups; narrow screens may wrap naturally. Media links open a viewer directly on the homepage, with icon-only circular arrows beside the photo on desktop and below it on phones, an icon-only close control, directional fade-and-slide transitions, arrow keys, touch swipes in either direction, Escape, and View Original. The viewer decodes the next photo before switching, keeps the current photo visible while loading, cancels superseded requests, and respects reduced-motion preferences. PDF certificates have image previews. Gallery pages remain as the fallback for visitors without JavaScript. External web links open a new tab; event/program introduction links are omitted. There are no download buttons or download attributes.
 
+All 87 award media items use locally stored WebP previews in the gallery and viewer. The three homepage activity photos reuse those previews; the badminton original is fetched only after clicking its photo. View Original continues to open the original JPEG or PDF. Previews total 16,000,228 bytes instead of 109,521,049 bytes (85.39% less); the badminton preview is 787 × 1400 pixels and 137,866 bytes instead of 4,796,730 bytes. These measurements describe preview resources, not the deployment size: originals remain in the repository. Encoding records are in `content/image-previews.json`.
+
+When adding or changing reviewed public photos, generate their previews before building:
+
+```sh
+python3 scripts/optimize_images.py
+python3 scripts/build.py
+```
+
+The optimizer requires Pillow with WebP support, checks source files against the public manifest, applies EXIF orientation to preview pixels, and records derivative hashes. It uses a 1600px maximum edge and quality 86 for ordinary images, 1800px and quality 90 for certificate legibility, and 1400px for badminton. Original bytes are preserved. GitHub Actions uses the committed previews and does not require Pillow.
+
 Date ranges in awards and galleries break immediately after the en dash. Education and work dates stay on one line: right-aligned on desktop and tablet, left-aligned above the entry on phones (600px and below). The Ph.D. date reads Sep 2023 – Expected Jul 2027, and the detail line contains only the advisors. The work subsection is titled Work Experience. Teaching lists the instructors before the department or college, and teaching awards refer to the course semester. Recent News contains only 2026 entries, with bracketed resources and a Latest Updates note. Its teaching resources are filtered to Spring 2026.
 
 On phone layouts (600px and below), Hsinchu, Taiwan appears on the line below the email address. Their icons and text are left-aligned with each other.
@@ -61,7 +72,9 @@ The profile uses the original photograph from `images/profile.jpg`. Activity pho
 
 For the oracle-bone paper, the website uses the formally published English title and marks the article **In Chinese**. The original title, `甲骨卜辭定年月差演算法`, is retained in the content record. Citation information was checked against the [National Central Library](https://tpl.ncl.edu.tw/NclService/JournalContentDetail?SysId=A2026000044&directQuery=true) and the [journal's issue announcement](https://tadh.org.tw/2025/09/14/jdadh_v15/).
 
-The LinkedIn link is [linkedin.com/in/wqtang](https://www.linkedin.com/in/wqtang/); education and competition records match the CV. The Google Scholar link was retained from the previous homepage configuration.
+The LinkedIn link is [linkedin.com/in/wqtang](https://www.linkedin.com/in/wqtang/); education and competition records match the CV. The Google Scholar link was retained from the previous homepage configuration. [ORCID 0009-0008-5042-5062](https://orcid.org/0009-0008-5042-5062) was verified against the official public record, matching the name and CB-EVO/GLSVLSI DOIs; it appears in the profile links and Person JSON-LD `sameAs`.
+
+Navigation follows About, Research, Publications, Awards, Experience, Teaching, Hobbies. The homepage and all award pages have Open Graph and Twitter large-card metadata pointing to `site/assets/images/social-preview.png` (1200 × 630, 118,428 bytes). Its editable design is `content/social-preview.html`; render it in Chromium at exactly 1200 × 630 with device scale factor 1, after images and fonts have loaded. If the portrait, name, affiliation, or research line changes, regenerate this PNG and update its SHA-256 in `content/public-assets.json`.
 
 ## Validation
 
@@ -71,7 +84,9 @@ Results are saved in `preview/validation.json`, `preview/gallery-validation.json
 
 `preview/bibtex-validation.json` covers actual clipboard contents for all 21 citations, button order and feedback, keyboard operation, five screen sizes, clipboard denial/unavailability, dialog retry and focus return, the no-JavaScript disclosure, and desktop/phone accessibility scans. BibTeX 0.99d with the standard plain style processed all 21 entries without errors; the issue-only oracle-bone journal produces a number-without-volume warning, preserving its actual bibliographic fields.
 
-The header and browser icon use 唐 from the owner-selected 经典繁方篆 typeface, rendered from its original outline as an SVG. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the source and font metadata. The icon has a solid softer-blue background (#4E7DC3), a white glyph, and no inner frame. Full font files and local comparison previews are excluded from the public repository and deployment. The portrait’s upper-right corner accent is half the size of the lower-left accent (29px versus 58px), with the same color and line weight. The oracle-bone paper’s controls are ordered DOI, PDF, Journal, BibTeX.
+The header uses the original 唐 outline from the owner-selected 经典繁方篆 typeface in `site/assets/brand.svg`. The browser icon uses the approved small-size B variant, with its strokes and gaps optically adjusted to a 16px grid, in `favicon.svg` and explicitly sized 16px/32px PNGs. Both use a solid softer-blue background (#4E7DC3), a white glyph, and no inner frame. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for source metadata. Full font files and local font comparison previews are excluded from the public repository and deployment. The portrait’s upper-right corner accent is half the size of the lower-left accent (29px versus 58px), with the same color and line weight. The oracle-bone paper’s controls are ordered DOI, PDF, Journal, BibTeX.
+
+`preview/performance-sharing-validation.json` records seven viewport checks, Teaching navigation, favicon sizes, ORCID and sharing metadata, image request checks, all 31 galleries and 87 decoded WebP previews, original-view links, and desktop/phone accessibility scans. Original asset hashes are checked against the previous manifest; all 116 existing manifest assets are unchanged by this optimization.
 
 ## GitHub Pages
 

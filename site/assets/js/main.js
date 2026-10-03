@@ -49,7 +49,8 @@
     });
     if ('IntersectionObserver' in window) {
       const links = [...nav.querySelectorAll('a')];
-      const observer = new IntersectionObserver(entries => {
+      const sections = links.map(link => document.querySelector(link.hash)).filter(Boolean);
+      const updateCurrentSection = entries => {
         entries.forEach(entry => {
           if (!entry.isIntersecting) return;
           links.forEach(link => {
@@ -57,11 +58,22 @@
             else link.removeAttribute('aria-current');
           });
         });
-      }, { rootMargin: '-15% 0px -60% 0px' });
-      links.forEach(link => {
-        const section = document.querySelector(link.hash);
-        if (section) observer.observe(section);
-      });
+      };
+      let observer;
+      const observeSections = () => {
+        observer?.disconnect();
+        // Percentage root margins use viewport width; use height-based pixels
+        // and include the anchor offset so landscape navigation can activate.
+        const anchorOffset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) +
+          parseFloat(getComputedStyle(sections[0]).scrollMarginTop);
+        const bandEnd = Math.min(window.innerHeight, Math.max(window.innerHeight * .4, anchorOffset + 24));
+        observer = new IntersectionObserver(updateCurrentSection, {
+          rootMargin: `-${Math.round(window.innerHeight * .15)}px 0px -${Math.round(window.innerHeight - bandEnd)}px 0px`
+        });
+        sections.forEach(section => observer.observe(section));
+      };
+      observeSections();
+      window.addEventListener('resize', observeSections);
     }
   }
 
@@ -291,7 +303,7 @@
       link.addEventListener('click', event => {
         if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
         const items = link.dataset.media ? registry[link.dataset.media] : [{
-          src: link.href, original: link.href, caption: link.dataset.photo,
+          src: link.dataset.preview || link.href, original: link.href, caption: link.dataset.photo,
           rotation: Number(link.dataset.rotation || 0), cropTop: Number(link.dataset.cropTop || 0)
         }];
         if (!items?.length) return;

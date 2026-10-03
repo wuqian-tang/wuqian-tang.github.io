@@ -1,0 +1,446 @@
+{
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "noOverflow": true,
+      "teachingNavigation": true,
+      "headerUsesOriginalSeal": true,
+      "smallFaviconSizes": [
+        16,
+        32
+      ],
+      "orcidAndSameAs": true,
+      "homepageImagesBeforeClick": [
+        "/assets/brand.svg",
+        "/assets/images/profile.jpg",
+        "/assets/awards/hsinchu-youth-2026/photo-2-preview.webp",
+        "/assets/awards/hsing-chien-2025/photo-1-preview.webp",
+        "/assets/awards/badminton-2025/photo-1-preview.webp"
+      ],
+      "originalBadmintonLoadedOnlyAfterClick": true,
+      "accessibility": "passed"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "noOverflow": true,
+      "teachingNavigation": true,
+      "headerUsesOriginalSeal": true,
+      "smallFaviconSizes": [
+        16,
+        32
+      ],
+      "orcidAndSameAs": true,
+      "homepageImagesBeforeClick": [
+        "/assets/brand.svg",
+        "/assets/images/profile.jpg",
+        "/assets/awards/hsinchu-youth-2026/photo-2-preview.webp",
+        "/assets/awards/hsing-chien-2025/photo-1-preview.webp",
+        "/assets/awards/badminton-2025/photo-1-preview.webp"
+      ],
+      "originalBadmintonLoadedOnlyAfterClick": "checked at desktop and phone",
+      "accessibility": "not scanned"
+    },
+    {
+      "width": 1000,
+      "height": 768,
+      "noOverflow": true,
+      "teachingNavigation": true,
+      "headerUsesOriginalSeal": true,
+      "smallFaviconSizes": [
+        16,
+        32
+      ],
+      "orcidAndSameAs": true,
+      "homepageImagesBeforeClick": [
+        "/assets/brand.svg",
+        "/assets/images/profile.jpg",
+        "/assets/awards/hsinchu-youth-2026/photo-2-preview.webp",
+        "/assets/awards/hsing-chien-2025/photo-1-preview.webp",
+        "/assets/awards/badminton-2025/photo-1-preview.webp"
+      ],
+      "originalBadmintonLoadedOnlyAfterClick": "checked at desktop and phone",
+      "accessibility": "not scanned"
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "noOverflow": true,
+      "teachingNavigation": true,
+      "headerUsesOriginalSeal": true,
+      "smallFaviconSizes": [
+        16,
+        32
+      ],
+      "orcidAndSameAs": true,
+      "homepageImagesBeforeClick": [
+        "/assets/brand.svg",
+        "/assets/images/profile.jpg",
+        "/assets/awards/hsinchu-youth-2026/photo-2-preview.webp",
+        "/assets/awards/hsing-chien-2025/photo-1-preview.webp",
+        "/assets/awards/badminton-2025/photo-1-preview.webp"
+      ],
+      "originalBadmintonLoadedOnlyAfterClick": "checked at desktop and phone",
+      "accessibility": "not scanned"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "noOverflow": true,
+      "teachingNavigation": true,
+      "headerUsesOriginalSeal": true,
+      "smallFaviconSizes": [
+        16,
+        32
+      ],
+      "orcidAndSameAs": true,
+      "homepageImagesBeforeClick": [
+        "/assets/brand.svg",
+        "/assets/images/profile.jpg",
+        "/assets/awards/hsinchu-youth-2026/photo-2-preview.webp",
+        "/assets/awards/hsing-chien-2025/photo-1-preview.webp",
+        "/assets/awards/badminton-2025/photo-1-preview.webp"
+      ],
+      "originalBadmintonLoadedOnlyAfterClick": true,
+      "accessibility": "passed"
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "noOverflow": true,
+      "teachingNavigation": true,
+      "headerUsesOriginalSeal": true,
+      "smallFaviconSizes": [
+        16,
+        32
+      ],
+      "orcidAndSameAs": true,
+      "homepageImagesBeforeClick": [
+        "/assets/brand.svg",
+        "/assets/images/profile.jpg",
+        "/assets/awards/hsinchu-youth-2026/photo-2-preview.webp",
+        "/assets/awards/hsing-chien-2025/photo-1-preview.webp",
+        "/assets/awards/badminton-2025/photo-1-preview.webp"
+      ],
+      "originalBadmintonLoadedOnlyAfterClick": "checked at desktop and phone",
+      "accessibility": "not scanned"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "noOverflow": true,
+      "teachingNavigation": true,
+      "headerUsesOriginalSeal": true,
+      "smallFaviconSizes": [
+        16,
+        32
+      ],
+      "orcidAndSameAs": true,
+      "homepageImagesBeforeClick": [
+        "/assets/brand.svg",
+        "/assets/images/profile.jpg",
+        "/assets/awards/hsinchu-youth-2026/photo-2-preview.webp",
+        "/assets/awards/hsing-chien-2025/photo-1-preview.webp",
+        "/assets/awards/badminton-2025/photo-1-preview.webp"
+      ],
+      "originalBadmintonLoadedOnlyAfterClick": "checked at desktop and phone",
+      "accessibility": "not scanned"
+    }
+  ],
+  "galleries": [
+    {
+      "id": "mlcad-2026",
+      "previews": 1,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "teaching-excellent-2026",
+      "previews": 1,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "teaching-outstanding-2025-2026",
+      "previews": 6,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "mcu-alumnus-2026",
+      "previews": 2,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "iwls-2026",
+      "previews": 3,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "hsinchu-youth-2026",
+      "previews": 5,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "ispd-2026",
+      "previews": 1,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "iccad-contest-2025",
+      "previews": 8,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "cadathlon-2025",
+      "previews": 2,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "iccad-ssp-2025",
+      "previews": 1,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "hsing-chien-2025",
+      "previews": 4,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "iccad-contest-2024",
+      "previews": 6,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "cadathlon-2024",
+      "previews": 2,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "synopsys-scholarship-2024",
+      "previews": 4,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "qilin-cup-2023",
+      "previews": 4,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "iccad-contest-2023",
+      "previews": 3,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "edathon-2023",
+      "previews": 2,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "iccad-contest-2022",
+      "previews": 2,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "nthu-scholarship-2021",
+      "previews": 2,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "icpc-2020",
+      "previews": 4,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "mcu-contribution-2021",
+      "previews": 1,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "mcu-programming-2019-2020",
+      "previews": 2,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "central-taiwan-2020",
+      "previews": 1,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "topc-2020",
+      "previews": 1,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "icpc-2019",
+      "previews": 4,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "topc-2019",
+      "previews": 3,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "ncpu-2019",
+      "previews": 4,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "ncpc-2018-2020",
+      "previews": 3,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "freshman-cup-2018",
+      "previews": 1,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "software-innovation-2018",
+      "previews": 2,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    },
+    {
+      "id": "badminton-2025",
+      "previews": 2,
+      "allImagesDecoded": true,
+      "originalsNotRequested": true,
+      "viewOriginalLink": true,
+      "sharingMetadata": true
+    }
+  ],
+  "errors": [],
+  "optimization": {
+    "count": 87,
+    "beforeBytes": 109521049,
+    "afterBytes": 16000228,
+    "reductionPercent": 85.39,
+    "badminton": {
+      "path": "assets/awards/badminton-2025/photo-1-preview.webp",
+      "source": "assets/awards/badminton-2025/photo-1.jpg",
+      "source_sha256": "e5ea5fd546b1d5138a4b6d8154e4d3d5176bce9b8f228f62ebf8dd4b120dbbff",
+      "source_bytes": 4796730,
+      "bytes": 137866,
+      "width": 787,
+      "height": 1400,
+      "max_edge": 1400,
+      "quality": 86
+    },
+    "scope": "Preview resources; originals remain stored unchanged"
+  },
+  "unchangedOriginalAssets": {
+    "baseCommit": "7baf87150140202048fa9712256b9273a4502105",
+    "files": 116,
+    "sha256": "all verified unchanged"
+  },
+  "navigationResize": {
+    "sizes": [
+      [
+        390,
+        844
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        1440,
+        1000
+      ],
+      [
+        320,
+        568
+      ]
+    ],
+    "status": "passed"
+  }
+}
