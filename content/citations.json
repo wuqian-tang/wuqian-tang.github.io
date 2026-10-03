@@ -1,0 +1,151 @@
+{
+  "j1": {
+    "bibtex": "@article{Liu2026CBEVO,\n  author = {Liu, Fangzhou and Tang, Wuqian and Pei, Zehua and Yu, Ziyang and Zheng, Haisheng and He, Zhuolun and Dai, Mengjia and Chen, Tinghuan and Yu, Bei},\n  title = {{CB-EVO: Contextual Bandit Tuning with Evolutionary Search for Logic Synthesis}},\n  journal = {ACM Transactions on Design Automation of Electronic Systems},\n  year = {2026},\n  volume = {31},\n  number = {6},\n  pages = {119:1--119:26},\n  articleno = {119},\n  numpages = {26},\n  doi = {10.1145/3779431},\n  url = {https://doi.org/10.1145/3779431},\n  publisher = {Association for Computing Machinery (ACM)}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3779431",
+      "site/files/papers/J1-CB-EVO.pdf"
+    ]
+  },
+  "c19": {
+    "bibtex": "@inproceedings{He2026TrojanDetection,\n  author = {He, Yu-Cheng and Tsao, Han-Wen and Chen, Yung-Chih and Li, Yi-Ting and Tang, Wuqian and Yang, Jian-Meng and Wang, Chun-Yao},\n  title = {{Observability-Aware Pattern Generation for Hardware Trojan Detection}},\n  booktitle = {IEEE International Conference on Computer Design},\n  year = {2026},\n  note = {To appear}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "Author-reviewed publication record in content/profile.json: c19"
+    ]
+  },
+  "c18": {
+    "bibtex": "@inproceedings{Wang2026ElectromigrationECO,\n  author = {Wang, Bo-Ying and Chang, Yong-Fong and Pao, Hsun-Wei and Chen, Yung-Chih and Peng, Tien-Hsin and Hung, Yu-Ting and Cheng, Tsai-Chieh and Li, Yi-Ting and Tang, Wuqian and Wang, Chun-Yao and Chang, Shih-Chieh},\n  title = {{A Design Rule-Aware Post-Route ECO Framework for Fixing Electromigration Violations}},\n  booktitle = {ACM/IEEE International Conference on Computer-Aided Design},\n  year = {2026},\n  note = {To appear}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "Author-reviewed publication record in content/profile.json: c18"
+    ]
+  },
+  "c17": {
+    "bibtex": "@inproceedings{Tang2026TAPCO,\n  author = {Tang, Wuqian and Wang, Zixiao and Lin, Che-Chien and Fu, Fong-Hua and Shion-Korsak, Laura Ang{\\'e}lica and Zhang, Xinyun and Yu, Bei and Wang, Chun-Yao},\n  title = {{TAPCO: LLM-Guided Design-Adaptive Timing and Power Co-Optimization}},\n  booktitle = {2026 ACM/IEEE International Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2026},\n  numpages = {8},\n  publisher = {Association for Computing Machinery},\n  doi = {10.1145/3831599.3840364},\n  url = {https://doi.org/10.1145/3831599.3840364}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "site/files/papers/C17-TAPCO.pdf"
+    ]
+  },
+  "c16": {
+    "bibtex": "@inproceedings{Huang2026QUBO,\n  author = {Huang, Tao-Chun and Tsai, Hao-Yu and Lin, You-Cheng and Li, Yi-Ting and Tang, Wuqian and Chen, Yung-Chih and Yang, Jian-Meng and Wang, Chun-Yao},\n  title = {{Late Breaking Results: QUBO Approaches to Logic Equivalence Checking and Testing}},\n  booktitle = {ACM/IEEE Design Automation Conference},\n  year = {2026},\n  note = {To appear}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "Author-reviewed publication record in content/profile.json: c16",
+      "https://63dac.conference-program.com/presentation/?id=LBR082&sess=sess306"
+    ]
+  },
+  "c15": {
+    "bibtex": "@inproceedings{Liu2026HyPAS,\n  author = {Liu, Fangzhou and Tang, Wuqian and Wang, Bo-Ying and Shen, An-Chieh and Tsao, Han-Wen and Ye, Yuyang and Shao, Yun and Wang, Chun-Yao and Yu, Bei},\n  title = {{HyPAS: A Hybrid Optimization Framework for Placement and Sizing Co-Optimization}},\n  booktitle = {Proceedings of the 63rd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2026},\n  publisher = {Association for Computing Machinery},\n  doi = {10.1145/3770743.3804137},\n  url = {https://doi.org/10.1145/3770743.3804137}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "site/files/papers/C15-HyPAS.pdf"
+    ]
+  },
+  "c14": {
+    "bibtex": "@inproceedings{Chen2026ApproximateLogicSynthesis,\n  author = {Chen, Chi-Wei and Li, Yi-Ting and Tang, Wuqian and Chen, Yung-Chih and Yang, Jian-Meng and Wang, Chun-Yao},\n  title = {{Learning to Approximate: Circuit Learning and Deep Reinforcement Learning for Approximate Logic Synthesis with an Error Rate Guarantee}},\n  booktitle = {2026 Design, Automation \\& Test in Europe Conference (DATE)},\n  year = {2026},\n  pages = {1--7},\n  doi = {10.23919/DATE69613.2026.11539729},\n  url = {https://doi.org/10.23919/DATE69613.2026.11539729},\n  publisher = {IEEE}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.23919/DATE69613.2026.11539729"
+    ]
+  },
+  "c13": {
+    "bibtex": "@inproceedings{Lin2026QuantumEquivalence,\n  author = {Lin, You-Cheng and Li, Yi-Ting and Tang, Wuqian and Chen, Yung-Chih and Chu, Chia-Chieh and Wang, Chun-Yao},\n  title = {{A Mathematical Exploration to Equivalence Checking of Quantum Circuits}},\n  booktitle = {2026 Design, Automation \\& Test in Europe Conference (DATE)},\n  year = {2026},\n  pages = {1--3},\n  doi = {10.23919/DATE69613.2026.11539441},\n  url = {https://doi.org/10.23919/DATE69613.2026.11539441},\n  publisher = {IEEE}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.23919/DATE69613.2026.11539441"
+    ]
+  },
+  "c12": {
+    "bibtex": "@inproceedings{Huang2026ChipletProcessSelection,\n  author = {Huang, Zi-Wei and Li, Yi-Ting and Tang, Wuqian and Cheng, Liang-Chia and Chen, Yung-Chih and Wang, Chun-Yao},\n  title = {{Process Selection Strategy for Chiplet-Based 2.5D Systems under Design Constraints}},\n  booktitle = {2026 International VLSI Symposium on Technology, Systems and Applications (VLSI TSA)},\n  year = {2026},\n  pages = {1--4},\n  doi = {10.1109/VLSITSA69131.2026.11527556},\n  url = {https://doi.org/10.1109/VLSITSA69131.2026.11527556},\n  publisher = {IEEE}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/VLSITSA69131.2026.11527556"
+    ]
+  },
+  "c11": {
+    "bibtex": "@inproceedings{Shen2026PadDefectClassification,\n  author = {Shen, Yi-Ting and Liu, Yan-Hsiu and Li, Yi-Ting and Tang, Wuqian and Chen, Yung-Chih and Shao, Hao-Chiang and Lin, Chia-Wen and Wang, Chun-Yao},\n  title = {{Integrating Automatic Prompt Engineering and Vision-Language Model for Pad Defect Classification}},\n  booktitle = {2026 27th International Symposium on Quality Electronic Design (ISQED)},\n  year = {2026},\n  pages = {1--7},\n  doi = {10.1109/ISQED69900.2026.11534705},\n  url = {https://doi.org/10.1109/ISQED69900.2026.11534705},\n  publisher = {IEEE}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/ISQED69900.2026.11534705"
+    ]
+  },
+  "c10": {
+    "bibtex": "@inproceedings{Hsu2026NP3Matching,\n  author = {Hsu, Kai-Po and Li, Yi-Ting and Cai, Fu-Cheng and Chien, Chia-Feng and Tang, Wuqian and Ku, Ting-Yu and Cheng, Yu-Chen and Lai, Tsung-Han and Wang, Cheng-Lung and Shen, Yi-Ting and Chou, Kuan-Ling and Huang, Zi-Wei and Huang, Tao-Chun and Hsu, Tzu-Li and Chen, Yung-Chih and Chang, Shih-Chieh and Wang, Ting-Chi and Hwang, TingTing and Wang, Chun-Yao},\n  title = {{An Efficient Approach to NP3-Boolean Matching: Leveraging Multi-bit Ports and Reverse Engineering to Minimize Search Space}},\n  booktitle = {2026 27th International Symposium on Quality Electronic Design (ISQED)},\n  year = {2026},\n  pages = {1--8},\n  doi = {10.1109/ISQED69900.2026.11534659},\n  url = {https://doi.org/10.1109/ISQED69900.2026.11534659},\n  publisher = {IEEE}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/ISQED69900.2026.11534659"
+    ]
+  },
+  "c9": {
+    "bibtex": "@inproceedings{Yen2026ThresholdLogic,\n  author = {Yen, Yu-Chuan and Cai, Fu-Cheng and Li, Yi-Ting and Tang, Wuqian and Chen, Yung-Chih and Chen, Ihao and Wang, Chun-Yao},\n  title = {{Area-Oriented Threshold Logic Circuit Synthesis Using Negative Weights}},\n  booktitle = {2026 27th International Symposium on Quality Electronic Design (ISQED)},\n  year = {2026},\n  pages = {1--8},\n  doi = {10.1109/ISQED69900.2026.11534711},\n  url = {https://doi.org/10.1109/ISQED69900.2026.11534711},\n  publisher = {IEEE}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/ISQED69900.2026.11534711"
+    ]
+  },
+  "c8": {
+    "bibtex": "@inproceedings{Chien2025PadDefectClassification,\n  author = {Chien, Chia-Feng and Chen, Ming-Wei and Chang, Yin-Chen and Chen, Yung-Chih and Liu, Yan-Hsiu and Shao, Hao-Chiang and Lin, Chia-Wen and Li, Yi-Ting and Tang, Wuqian and Wang, Chun-Yao},\n  title = {{Improving CNN-based Pad Defect Classification with Enhanced Preprocessing Techniques}},\n  booktitle = {2025 22nd International SoC Design Conference (ISOCC)},\n  year = {2025},\n  pages = {1--2},\n  doi = {10.1109/ISOCC66390.2025.11330128},\n  url = {https://doi.org/10.1109/ISOCC66390.2025.11330128},\n  publisher = {IEEE}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/ISOCC66390.2025.11330128"
+    ]
+  },
+  "c7": {
+    "bibtex": "@inproceedings{Chou2025CNNOptimization,\n  author = {Chou, Kuan-Ling and Wang, Cheng-Lung and Chen, Yung-Chih and Tang, Wuqian and Li, Yi-Ting and Chang, Shih-Chieh and Wang, Chun-Yao},\n  title = {{CNN Model Optimization Using a Hybrid Approach of Genetic Algorithm-based Pruning and Retraining with Knowledge Distillation}},\n  booktitle = {Proceedings of the Great Lakes Symposium on VLSI 2025},\n  year = {2025},\n  pages = {667--672},\n  doi = {10.1145/3716368.3735193},\n  url = {https://doi.org/10.1145/3716368.3735193},\n  publisher = {ACM}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3716368.3735193"
+    ]
+  },
+  "c6": {
+    "bibtex": "@inproceedings{Lee2025IRDrop,\n  author = {Lee, Yu-Che and Chen, Yu-Hsuan and Cheng, Yu-Chen and Chang, Yong-Fong and Lin, Jia-Wei and Pao, Hsun-Wei and Chen, Yung-Chih and Li, Yi-Ting and Tang, Wuqian and Chang, Shih-Chieh and Wang, Chun-Yao},\n  title = {{Real-Time Dynamic IR-drop Prediction for IR ECO}},\n  booktitle = {2025 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025},\n  pages = {1--7},\n  doi = {10.1109/DAC63849.2025.11133331},\n  url = {https://doi.org/10.1109/DAC63849.2025.11133331},\n  publisher = {IEEE}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/DAC63849.2025.11133331"
+    ]
+  },
+  "c5": {
+    "bibtex": "@inproceedings{Hsu2025IMUTrajectory,\n  author = {Hsu, Kai-Po and Lai, Tsung-Han and Li, Yi-Ting and Tang, Wuqian and Lee, Yun-Ju and Chen, Yung-Chih and Chiu, Wen-Hsin and Wang, Chun-Yao},\n  title = {{IMU-Based Motion Trajectory Reconstruction and Recognition with Dynamic Calibration on Embedded System Platform}},\n  booktitle = {2025 26th International Symposium on Quality Electronic Design (ISQED)},\n  year = {2025},\n  pages = {1--8},\n  doi = {10.1109/ISQED65160.2025.11014473},\n  url = {https://doi.org/10.1109/ISQED65160.2025.11014473},\n  publisher = {IEEE}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/ISQED65160.2025.11014473"
+    ]
+  },
+  "c4": {
+    "bibtex": "@inproceedings{Lee2024BoxerPunch,\n  author = {Lee, Yu-Cheng and Hsu, Kai-Po and Lee, Yun-Ju and Li, Yi-Ting and Tang, Wuqian and Chen, Yung-Chih and Chiu, Wen-Hsin and Wang, Chun-Yao},\n  title = {{On Construction of Trajectory of Boxer's Punch using a single IMU}},\n  booktitle = {2024 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS)},\n  year = {2024},\n  pages = {1--5},\n  doi = {10.1109/ISPACS62486.2024.10868933},\n  url = {https://doi.org/10.1109/ISPACS62486.2024.10868933},\n  publisher = {IEEE}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/ISPACS62486.2024.10868933"
+    ]
+  },
+  "c3": {
+    "bibtex": "@inproceedings{Tang2024ModelReduction,\n  author = {Tang, Wuqian and Huang, Chuan-Shun and Chen, Yung-Chih and Li, Yi-Ting and Chang, Shih-Chieh and Wang, Chun-Yao},\n  title = {{Model Reduction Using a Hybrid Approach of Genetic Algorithm and Rule-based Method}},\n  booktitle = {2024 IEEE 37th International System-on-Chip Conference (SOCC)},\n  year = {2024},\n  pages = {1--6},\n  doi = {10.1109/SOCC62300.2024.10737843},\n  url = {https://doi.org/10.1109/SOCC62300.2024.10737843},\n  publisher = {IEEE}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/SOCC62300.2024.10737843"
+    ]
+  },
+  "c2": {
+    "bibtex": "@inproceedings{Huang2024NetworkPruning,\n  author = {Huang, Chuan-Shun and Tang, Wuqian and Chen, Yung-Chih and Li, Yi-Ting and Chang, Shih-Chieh and Wang, Chun-Yao},\n  title = {{An Efficient Approach to Iterative Network Pruning}},\n  booktitle = {2024 International VLSI Symposium on Technology, Systems and Applications (VLSI TSA)},\n  year = {2024},\n  pages = {1--4},\n  doi = {10.1109/VLSITSA60681.2024.10546442},\n  url = {https://doi.org/10.1109/VLSITSA60681.2024.10546442},\n  publisher = {IEEE}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/VLSITSA60681.2024.10546442"
+    ]
+  },
+  "c1": {
+    "bibtex": "@inproceedings{Tang2024ReverseEngineering,\n  author = {Tang, Wuqian and Li, Yi-Ting and Hsu, Kai-Po and Chou, Kuan-Ling and Lin, You-Cheng and Chien, Chia-Feng and Hsu, Tzu-Li and Chen, Yung-Chih and Wang, Ting-Chi and Chang, Shih-Chieh and Hwang, TingTing and Wang, Chun-Yao},\n  title = {{A Hybrid Approach to Reverse Engineering on Combinational Circuits}},\n  booktitle = {2024 Design, Automation \\& Test in Europe Conference \\& Exhibition (DATE)},\n  year = {2024},\n  pages = {1--2},\n  doi = {10.23919/DATE58400.2024.10546559},\n  url = {https://doi.org/10.23919/DATE58400.2024.10546559},\n  publisher = {IEEE}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "https://api.crossref.org/works/10.23919/DATE58400.2024.10546559"
+    ]
+  },
+  "j2": {
+    "bibtex": "@article{Shieh2025OracleBone,\n  author = {Shieh, Yuh-Pyng and Hsu, Shao-Hang and Tang, Wuqian and Ke, Wei-Ying and Ou, Po-sheng and Chang, Yu-wei and Hwang, Ming-chorng},\n  title = {{The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions}},\n  journal = {Journal of Digital Archives and Digital Humanities},\n  year = {2025},\n  number = {15},\n  pages = {1--35},\n  month = {April},\n  note = {In Chinese},\n  doi = {10.6853/DADH.202504_(15).0001},\n  url = {https://doi.org/10.6853/DADH.202504_(15).0001}\n}\n",
+    "verified_on": "2026-10-03",
+    "sources": [
+      "site/files/papers/J2-Oracle-Bone.pdf"
+    ]
+  }
+}

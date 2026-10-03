@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-03",
+  "citationCount": 21,
+  "results": [
+    {
+      "viewport": "desktop",
+      "buttonsLast": "passed",
+      "correctClipboardContents": "21 citations checked",
+      "feedbackAndKeyboard": "passed",
+      "stableButtonSize": "passed",
+      "deniedAndUnavailableClipboard": "passed",
+      "fallbackRetry": "passed",
+      "dialogBoundsAndFocusReturn": "passed",
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "tablet",
+      "buttonsLast": "passed",
+      "correctClipboardContents": "3 citations checked",
+      "feedbackAndKeyboard": "passed",
+      "stableButtonSize": "passed",
+      "deniedAndUnavailableClipboard": "passed",
+      "fallbackRetry": "passed",
+      "dialogBoundsAndFocusReturn": "passed",
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "buttonsLast": "passed",
+      "correctClipboardContents": "3 citations checked",
+      "feedbackAndKeyboard": "passed",
+      "stableButtonSize": "passed",
+      "deniedAndUnavailableClipboard": "passed",
+      "fallbackRetry": "passed",
+      "dialogBoundsAndFocusReturn": "passed",
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile-small",
+      "buttonsLast": "passed",
+      "correctClipboardContents": "3 citations checked",
+      "feedbackAndKeyboard": "passed",
+      "stableButtonSize": "passed",
+      "deniedAndUnavailableClipboard": "passed",
+      "fallbackRetry": "passed",
+      "dialogBoundsAndFocusReturn": "passed",
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile-landscape",
+      "buttonsLast": "passed",
+      "correctClipboardContents": "3 citations checked",
+      "feedbackAndKeyboard": "passed",
+      "stableButtonSize": "passed",
+      "deniedAndUnavailableClipboard": "passed",
+      "fallbackRetry": "passed",
+      "dialogBoundsAndFocusReturn": "passed",
+      "horizontalOverflow": false
+    }
+  ],
+  "noJavaScriptDisclosure": "passed",
+  "accessibility": [
+    {
+      "viewport": "desktop",
+      "state": "homepage",
+      "violations": []
+    },
+    {
+      "viewport": "desktop",
+      "state": "citation dialog",
+      "violations": []
+    },
+    {
+      "viewport": "mobile",
+      "state": "homepage",
+      "violations": []
+    },
+    {
+      "viewport": "mobile",
+      "state": "citation dialog",
+      "violations": []
+    }
+  ],
+  "errors": []
+}

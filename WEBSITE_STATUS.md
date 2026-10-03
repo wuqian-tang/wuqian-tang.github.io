@@ -38,9 +38,19 @@
 - 原头像右上角新增与左下角相同颜色和线宽的角线；最新调整将右上角缩短至左下角的一半，宽高分别为 29px / 58px。
 - 手机（600px 及以下）将 Hsinchu, Taiwan 放到邮箱下一行，地点图标与邮件图标、地点文字与邮箱文字分别左对齐；姓名与院校信息仍在头像右侧。
 - 分组标题采用 Materials / Announcements，保留现有资源顺序、方括号和浅灰竖线。
-- 甲骨文论文链接顺序改为 DOI、PDF、Journal；正式题名仍为 The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions。
+- 甲骨文论文原有链接顺序为 DOI、PDF、Journal，新加的 BibTeX 复制按钮在最后；正式题名仍为 The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions。
 - 经历子标题改为 Work Experience，覆盖研究助理与企业实习。Education / Work Experience 日期在电脑和平板上靠右、手机上靠左，均单行显示。博士时间为 Sep 2023 – Expected Jul 2027，下方仅保留导师信息。
 - 首页、相册和浏览器 favicon 统一使用经典繁方篆「唐」浅蓝色方印，采用真实字体原始轮廓，保存为 SVG，不依赖设备字体或远程字体请求；无白色内框。来源信息见 `THIRD_PARTY_NOTICES.md`，最新预览见 `preview/brand-preview.png`。
+
+## BibTeX 引用复制（2026-10-03）
+
+- 21 篇论文全部提供 BibTeX，Selected Publications 与 More Publications 均覆盖。按钮统一位于每篇资源行末尾，包括甲骨文论文 Journal 之后；不调整原有链接顺序。
+- 按钮沿用蓝色细边框、小圆角，左侧 14px 细线叠纸 SVG。成功复制后显示勾号与 Copied，2 秒后恢复，宽高固定；手机端资源控件至少 44px 高。复制直接使用内嵌引用文本，不发起外部请求、不跳转、不提供下载按钮。
+- 复制失败或浏览器缺少 Clipboard API 时，展示与现有弹窗配色一致的 BibTeX Citation 窗口，列出论文题名与只读引用文本，自动选中代码，提供 Copy 重试、圆形关闭按钮与 Escape；关闭后焦点返回该篇按钮。更换论文或关闭窗口时清除旧的复制反馈，防止新引用显示上一次的 Copied。
+- 禁用 JavaScript 时通过原生 details 展开代码，不展示失效的复制按钮。缺少原生 dialog 支持时也回退到条目中的引用文本。
+- 数据保存于 `content/citations.json`，每篇包含完整 BibTeX、核对日期和来源。15 篇根据出版方提交的 Crossref 元数据核对作者、题名、刊会名及页码；J1 的 Article 119 补查正式 PDF。TAPCO、HyPAS 与甲骨文论文使用仓库中的最终 PDF；3 篇 To appear 使用作者已核对的列表，不补造 DOI 或页码。
+- 作者用 `Family, Given and ...`，删除 equal-contribution 星号，保留作者顺序与真实拼写；重音用 LaTeX 转义，标题加括号保护原大小写。甲骨文论文采用 PDF 中正式英文题名与英文作者名，注明 In Chinese；期刊第 15 期保存为 number，不虚构 volume。待刊论文统一 `note = {To appear}`。TAPCO 只确认 8 pages，不把篇幅当成全刊页码。
+- 后续论文正式上线时，同步更新 `content/profile.json` 与 `content/citations.json`，重新核对 DOI、页码、文章编号及待刊说明。构建要求引用与 21 个论文 ID 完全对应、引用键唯一、必需字段完整、DOI 一致、来源与核对日期存在。
 
 ## 图标候选与弹窗动效（2026-10-03）
 
@@ -100,6 +110,7 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 12. **图标**：使用经典繁方篆「唐」，保留原始笔画与比例，以 SVG 路径渲染；字体白色、背景 `#4E7DC3`，无白色内框。页首 35px、favicon 使用同一个 SVG。不得放大低清截图作为正式图标；完整字体不进公开仓库，来源元数据和 SHA-256 见 `THIRD_PARTY_NOTICES.md`。
 13. **响应式与可访问性**：电脑两列，手机单列，导航可展开；320px 起无横向溢出。600px 及以下的简介区先显示邮箱，再显示下一行的 Hsinchu, Taiwan；两行横跨简介宽度，图标与正文分别左对齐。保留语义标题、可见键盘焦点、跳转链接、对话框标签，以及无 JavaScript 的基本阅读和图片链接。
 14. **公开范围**：允许本次明确授权的奖状、奖杯、奖牌、照片和具体最终论文；不公开身份证件、成绩单、申请表、推荐信、录取通知、学生奖惩记录、未授权稿件或整个资料目录。公开 CV 不含电话号码。
+15. **引用复制**：BibTeX 控件始终位于每篇论文所有其他资源之后；复制成功后仅在按钮内显示勾号与 Copied 2 秒，不弹提示框或新分页，保持按钮尺寸。失败时提供选中代码的弹窗和手动复制；无 JS 使用原生展开文本。引用来自 `content/citations.json`，记录来源，按正式元数据保存作者、题名、刊会、年份与已核实的卷期/页码/DOI；不把共同一作星号、网页粗体或页面状态当作作者名。待刊用 To appear note，不补造字段；甲骨文论文用正式英文题名、作者和 In Chinese note。
 
 Hobbies 用词参考了 [Siyuan Jiang 的学术主页](https://siyuanj.github.io/) 中同名栏目；它直接表达爱好，适合当前内容。网站不需要附上这条用词参考。
 
@@ -108,6 +119,7 @@ Hobbies 用词参考了 [Siyuan Jiang 的学术主页](https://siyuanj.github.io
 | 文件 | 用途 |
 | --- | --- |
 | `content/profile.json` | 论文、奖项、月份、官方链接、课程和经历数据 |
+| `content/citations.json` | 21 篇 BibTeX 引用、来源与核对日期；需与论文数据同步维护 |
 | `content/homepage.html` | 首页结构和 About Me / Hobbies 文案 |
 | `content/award-gallery.html` | 相册模板 |
 | `content/public-assets.json` | 明确审核的公开文件路径、来源和 SHA-256 |
@@ -140,5 +152,7 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory site
 最新布局补充验证覆盖 1440px、820px、390px、320px、600px 和 601px：五条教育/工作日期均为单行，600px 及以下左对齐，以上右对齐；右上角线宽高为左下角的一半，颜色和线宽一致；所有尺寸无横向溢出。已刷新电脑、平板、手机首页及 Education & Experience 截图，并人工查看手机日期与头像装饰。
 
 本轮动效验收另覆盖电脑、平板、手机、320px 手机和手机横屏的动画帧、控件位置、连续翻页、双向滑动、键盘 Enter 激活、关闭重开、相册页、慢速加载和减少动态效果；电脑 / 手机打开的弹窗可访问性扫描通过。
+
+BibTeX 验收结果见 `preview/bibtex-validation.json`，截图为 `preview/bibtex-*.png`。覆盖 1440×1000、820×1180、390×844、320×568 和 844×390：电脑逐篇读取实际剪贴板核对全部 21 篇，其他尺寸核对 TAPCO、甲骨文与待刊记录；全部按钮在原有链接最后、反馈后尺寸不变；复制拒绝和 API 不可用时回退正确，弹窗重试、手动选择、Escape、关闭与焦点返回正常；重新打开不会保留前一篇的 Copied；窄屏无横向溢出。无 JS 原生展开文本通过。电脑和手机首页及引用弹窗的 WCAG 自动扫描没有报告项。独立使用 BibTeX 0.99d / plain.bst 处理 21 条引用无错误；只有甲骨文期刊实际仅有期号、没有卷号，因此标准样式给出 number without volume 提示，不为消除提示伪造卷号。
 
 部署结果可在 [GitHub Pages 工作流](https://github.com/wuqian-tang/wuqian-tang.github.io/actions/workflows/pages.yml) 查看；本记录随此次 master 提交发布。以后继续更新时，以最新成功工作流和线上实际文件为准。

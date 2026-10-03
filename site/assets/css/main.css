@@ -30,6 +30,7 @@ h1, h2, h3, p, figure { margin: 0; }
 h1, h2, h3 { font-weight: 650; line-height: 1.3; letter-spacing: -.025em; }
 strong { font-weight: 600; }
 [hidden] { display: none !important; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
 .skip-link { position: fixed; z-index: 100; top: .6rem; left: 1rem; padding: .6rem 1rem; background: var(--blue); color: #fff; transform: translateY(-150%); }
 .skip-link:focus { transform: translateY(0); }
 .site-header { position: sticky; z-index: 20; top: 0; border-bottom: 1px solid var(--line); background: rgba(255,255,255,.96); backdrop-filter: blur(14px); }
@@ -103,9 +104,28 @@ main { min-width: 0; }
 .publication-authors { margin-top: .45rem; font-size: .875rem; color: var(--muted); line-height: 1.7; }
 .publication-authors strong { color: var(--ink); font-weight: 650; }
 .publication-venue { margin-top: .35rem; font-size: .8125rem; color: var(--muted); line-height: 1.65; }
-.paper-links { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: .65rem; }
-.paper-links a { font-size: .8125rem; padding: .04rem .45rem; border: 1px solid #cbd9ed; border-radius: 4px; }
-.paper-links a:hover { text-decoration: none; background: var(--tint); }
+.paper-links { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem; margin-top: .65rem; }
+.paper-links a, .bibtex-button { font-size: .8125rem; line-height: 1.75; padding: .04rem .45rem; border: 1px solid #cbd9ed; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; color: var(--blue); background: var(--surface); white-space: nowrap; }
+.paper-links a:hover, .bibtex-button:hover { text-decoration: none; color: var(--blue-dark); background: var(--tint); }
+.bibtex-button { gap: .35rem; min-width: 88px; }
+.bibtex-button svg { width: 14px; height: 14px; }
+.bibtex-button.is-copied { color: var(--blue-dark); background: var(--tint); }
+.citation-fallback { min-width: 0; max-width: 100%; }
+.citation-fallback summary { cursor: pointer; list-style: none; }
+.citation-fallback summary::-webkit-details-marker { display: none; }
+.citation-fallback[open] { flex-basis: 100%; }
+.citation-fallback pre { max-width: 100%; padding: 1rem; overflow: auto; background: var(--tint); border-radius: 6px; font: .75rem/1.65 ui-monospace, "SFMono-Regular", Consolas, monospace; }
+.citation-dialog { width: min(680px,94vw); max-width: 94vw; max-height: 94dvh; padding: 1.4rem; border: 1px solid var(--line); border-radius: 12px; color: var(--ink); background: var(--surface); box-shadow: 0 20px 80px rgba(17,31,52,.2); }
+.citation-dialog::backdrop { background: rgba(12,23,40,.62); backdrop-filter: blur(3px); }
+.citation-dialog h2 { font-size: 1.15rem; }
+.citation-paper-title { margin-top: .75rem; font-size: .875rem; line-height: 1.5; font-weight: 550; }
+#citation-help { margin: .6rem 0 .85rem; font-size: .8125rem; color: var(--muted); }
+#citation-code { display: block; width: 100%; height: min(320px,42dvh); padding: .9rem; border: 1px solid var(--line); border-radius: 6px; background: var(--tint); color: var(--ink); font: .75rem/1.65 ui-monospace, "SFMono-Regular", Consolas, monospace; resize: vertical; }
+#citation-code:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.citation-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-top: 1rem; }
+.citation-copy { min-height: 44px; }
+.citation-dialog-status { font-size: .8125rem; color: var(--muted); }
+body.citation-open { overflow: hidden; }
 .more-details { margin-top: 1rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .more-details summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: .7rem; padding: .9rem 0; min-height: 48px; color: var(--blue); font-size: .875rem; font-weight: 550; }
 .more-details summary::-webkit-details-marker { display: none; }
@@ -275,6 +295,8 @@ body.viewer-open { overflow: hidden; }
   .research-item p { font-size: .875rem; }
   .publication h3 { font-size: 1rem; }
   .publication-authors { font-size: .8125rem; }
+  .paper-links a, .paper-links .bibtex-button { min-height: 44px; }
+  .citation-dialog { padding: 1rem; }
   .award-list li { grid-template-columns: 4.9rem minmax(0,1fr); column-gap: .65rem; }
   .award-date { font-size: .75rem; }
   .award-title { font-size: .875rem; }

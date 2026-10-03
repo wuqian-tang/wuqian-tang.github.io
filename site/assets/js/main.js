@@ -96,6 +96,104 @@
   window.addEventListener('resize', fitGalleryImages);
   fitGalleryImages();
 
+  const citationDialog = document.querySelector('.citation-dialog');
+  const citationStatus = document.getElementById('citation-status');
+  const citationCode = document.getElementById('citation-code');
+  const citationHelp = document.getElementById('citation-help');
+  const citationCopy = citationDialog?.querySelector('.citation-copy');
+  const citationTimers = new WeakMap();
+  let citationAttempt = 0;
+  let activeCitation;
+  const resetCitationButton = button => {
+    clearTimeout(citationTimers.get(button));
+    button.classList.remove('is-copied');
+    button.querySelector('span').textContent = button.dataset.defaultLabel;
+    button.querySelector('svg').innerHTML = '<rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/>';
+  };
+  const markCopied = button => {
+    clearTimeout(citationTimers.get(button));
+    button.classList.add('is-copied');
+    button.querySelector('span').textContent = 'Copied';
+    button.querySelector('svg').innerHTML = '<path d="m5 12 4 4L19 6"/>';
+    citationTimers.set(button, setTimeout(() => resetCitationButton(button), 2000));
+  };
+  const showCitation = entry => {
+    if (!citationDialog || typeof citationDialog.showModal !== 'function') {
+      entry.fallback.hidden = false;
+      entry.fallback.open = true;
+      entry.fallback.querySelector('pre').focus();
+      return;
+    }
+    activeCitation = entry;
+    resetCitationButton(citationCopy);
+    citationCode.value = entry.code;
+    citationDialog.querySelector('.citation-paper-title').textContent = entry.title;
+    citationDialog.querySelector('.citation-dialog-status').textContent = '';
+    citationHelp.textContent = 'Select the citation below to copy it, or try Copy again.';
+    document.body.classList.add('citation-open');
+    if (!citationDialog.open) citationDialog.showModal();
+    citationCode.focus({preventScroll: true});
+    citationCode.select();
+  };
+  const copyCitation = async (entry, button) => {
+    const attempt = ++citationAttempt;
+    button.disabled = true;
+    citationStatus.textContent = '';
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(entry.code);
+      if (attempt !== citationAttempt) return;
+      markCopied(button);
+      citationStatus.textContent = `BibTeX citation copied for ${entry.title}.`;
+      if (citationDialog?.open) citationDialog.querySelector('.citation-dialog-status').textContent = 'Citation copied.';
+    } catch {
+      if (attempt !== citationAttempt) return;
+      if (citationDialog?.open && button === citationCopy) {
+        citationDialog.querySelector('.citation-dialog-status').textContent = 'Please copy the selected text manually.';
+        citationCode.focus({preventScroll: true});
+        citationCode.select();
+      } else {
+        showCitation(entry);
+      }
+    } finally {
+      button.disabled = false;
+    }
+  };
+  document.querySelectorAll('.citation-fallback').forEach(fallback => {
+    const summary = fallback.querySelector('summary');
+    const title = fallback.closest('.publication').querySelector('h3').textContent;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'bibtex-button';
+    button.dataset.citation = fallback.dataset.citation;
+    button.dataset.defaultLabel = 'BibTeX';
+    button.setAttribute('aria-label', `Copy BibTeX citation for ${title}`);
+    button.innerHTML = summary.innerHTML;
+    const entry = {code: fallback.querySelector('code').textContent, title, button, fallback};
+    button.addEventListener('click', () => copyCitation(entry, button));
+    fallback.before(button);
+    fallback.hidden = true;
+  });
+  if (citationDialog && citationCopy) {
+    citationCopy.dataset.defaultLabel = 'Copy';
+    citationCopy.addEventListener('click', () => {
+      if (activeCitation) copyCitation(activeCitation, citationCopy);
+    });
+    citationDialog.querySelector('.dialog-close').addEventListener('click', () => citationDialog.close());
+    citationDialog.addEventListener('close', () => {
+      ++citationAttempt;
+      resetCitationButton(citationCopy);
+      document.body.classList.remove('citation-open');
+      activeCitation?.button.focus({preventScroll: true});
+      activeCitation = undefined;
+    });
+    citationDialog.addEventListener('click', event => {
+      if (event.target !== citationDialog) return;
+      const bounds = citationDialog.getBoundingClientRect();
+      if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) citationDialog.close();
+    });
+  }
+
   const dialog = document.querySelector('.photo-dialog');
   if (dialog && typeof dialog.showModal === 'function') {
     const registry = JSON.parse(document.getElementById('media-data')?.textContent || '{}');

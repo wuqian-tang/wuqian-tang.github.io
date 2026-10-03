@@ -78,8 +78,12 @@ def icon(name):
 def authors(text):
     return esc(text).replace('Wuqian Tang*', '<strong>Wuqian Tang*</strong>').replace('Wuqian Tang,', '<strong>Wuqian Tang</strong>,')
 
-def publication(p):
+def publication(p, citation):
     links = ''.join(f'<a href="{esc(link["url"])}" aria-label="{esc(link["label"])} for {esc(p["title"])}">{esc(link["label"])}</a>' for link in p['links'])
+    copy_icon = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg>'
+    # A native disclosure preserves access to citations without JavaScript.
+    # The browser script enhances it to a one-click copy button in the same position.
+    links += f'<details class="citation-fallback" data-citation="{esc(p["id"])}"><summary class="bibtex-button" aria-label="BibTeX citation for {esc(p["title"])}">{copy_icon}<span>BibTeX</span></summary><pre tabindex="0"><code>{esc(citation["bibtex"])}</code></pre></details>'
     status = f'<span class="publication-status">{esc(p["status"])}</span>' if p.get('status') else ''
     return f'''<article class="publication" id="paper-{esc(p['id'])}">
       <div class="publication-meta"><span class="venue-badge">{esc(p['acronym'])} {p['year']}</span><span class="publication-label">[{esc(p['label'])}]</span>{status}</div>
@@ -144,12 +148,35 @@ def render():
     if p['chinese_name'] != '唐梧遷':
         raise ValueError('Unexpected Chinese name')
     papers = p['publications']
+    citations = json.loads((ROOT / 'content/citations.json').read_text())
     if len({paper['id'] for paper in papers}) != len(papers):
         raise ValueError('Duplicate publication identifiers')
+    if set(citations) != {paper['id'] for paper in papers}:
+        raise ValueError('Citations must match the publication identifiers exactly')
+    citation_keys = set()
     for paper in papers:
+        citation = citations[paper['id']]
+        bibtex = citation['bibtex']
+        match = re.match(r'^@(article|inproceedings)\{([A-Za-z0-9:_-]+),\n', bibtex)
+        if not match or not bibtex.endswith('}\n') or bibtex.count('{') != bibtex.count('}'):
+            raise ValueError(f'Invalid BibTeX entry: {paper["id"]}')
+        if match[2] in citation_keys:
+            raise ValueError('Duplicate BibTeX citation key')
+        citation_keys.add(match[2])
+        for field in ['author', 'title', 'year', 'journal' if paper['id'].startswith('j') else 'booktitle']:
+            if not re.search(rf'^  {field} = \{{.+\}},?$', bibtex, re.MULTILINE):
+                raise ValueError(f'Missing citation field {field}: {paper["id"]}')
+        if not citation.get('sources') or not citation.get('verified_on'):
+            raise ValueError(f'Citation requires verification provenance: {paper["id"]}')
+        if paper['status'] == 'To appear' and 'note = {To appear}' not in bibtex:
+            raise ValueError(f'Unpublished citation requires a To appear note: {paper["id"]}')
         dois = [link for link in paper['links'] if link['label'] == 'DOI']
         if paper['status'] != 'To appear' and len(dois) != 1:
             raise ValueError(f'Published paper requires one verified DOI: {paper["id"]}')
+        citation_doi = re.search(r'^  doi = \{([^}]+)\}', bibtex, re.MULTILINE)
+        expected_doi = dois[0]['url'].removeprefix('https://doi.org/') if dois else None
+        if (citation_doi[1] if citation_doi else None) != expected_doi:
+            raise ValueError(f'Citation DOI does not match the publication: {paper["id"]}')
         for link in paper['links']:
             if link['label'] == 'DOI' and not re.match(r'^https://doi\.org/10\.\d{4,9}/\S+$', link['url']):
                 raise ValueError(f'Invalid DOI URL: {paper["id"]}')
@@ -161,7 +188,7 @@ def render():
     other_html = ''
     for year in sorted({paper['year'] for paper in others}, reverse=True):
         other_html += f'<h3 class="publication-year">{year}</h3>'
-        other_html += ''.join(publication(paper) for paper in others if paper['year'] == year)
+        other_html += ''.join(publication(paper, citations[paper['id']]) for paper in others if paper['year'] == year)
     profile_links = ''.join(f'<a href="{esc(link["url"])}">{icon(link["icon"])}<span>{esc(link["label"])}</span></a>' for link in p['profiles'])
     all_awards = p['awards'] + p['earlier_awards'] + p['personal_awards']
     awards_by_id = {a['id']: a for a in all_awards}
@@ -194,7 +221,7 @@ def render():
     structured = json.dumps({'@context':'https://schema.org','@type':'Person','name':p['name'],'alternateName':p['chinese_name'],'url':p['site_url'],'jobTitle':p['role'],'affiliation':{'@type':'CollegeOrUniversity','name':p['university']},'sameAs':[link['url'] for link in p['profiles']]}, ensure_ascii=False).replace('<', '\\u003c')
     values = {key.upper(): esc(p[key]) for key in ['name','chinese_name','role','department','university','location','email','updated','site_url']}
     values.update(STRUCTURED_DATA=structured, LOCATION_ICON=icon('location'), MAIL_ICON=icon('mail'), DOCUMENT_ICON=icon('document'), PROFILE_LINKS=profile_links, NEWS=news, RESEARCH=research,
-        SELECTED_PUBLICATIONS=''.join(publication(paper) for paper in selected), OTHER_PUBLICATIONS=other_html, MORE_PUBLICATIONS_COUNT=str(len(others)),
+        SELECTED_PUBLICATIONS=''.join(publication(paper, citations[paper['id']]) for paper in selected), OTHER_PUBLICATIONS=other_html, MORE_PUBLICATIONS_COUNT=str(len(others)),
         AWARDS=''.join(award(a) for a in p['awards']), EARLIER_AWARDS=''.join(award(a) for a in p['earlier_awards']),
         EDUCATION=''.join(timeline(item) for item in p['education']), EXPERIENCE=''.join(timeline(item) for item in p['experience']),
         COURSES=''.join(f'<li><div><p class="course-name">{esc(c["title"])}</p><p class="course-instructors">{esc(c["instructors"])} · <span class="course-department">{esc(c["department"])}</span></p></div><p class="course-terms">{esc(c["terms"])}</p></li>' for c in p['courses']),
