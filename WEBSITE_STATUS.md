@@ -10,10 +10,10 @@
 ## 公开 CV 联系方式更新（2026-10-03）
 
 - 用户确认公开 CV 继续不放电话号码，并明确授权在原邮箱后增加 `mark.wqtang@gmail.com`。
-- CV 顶部联系方式单行居中：`wqtang@cs.nthu.edu.tw | mark.wqtang@gmail.com`，字号与原版一致。
+- CV 顶部联系方式单行居中：`wqtang@cs.nthu.edu.tw | mark.wqtang@gmail.com`，字号与原版一致。按用户补充要求，对照原版「电话 | 邮箱」使用普通单空格，移除竖线两侧的 `\quad`；保持原版字号、字体与上下留白。
 - 修改 `content/Wuqian_Tang_Public_CV.tex` 后使用 LuaLaTeX 编译，更新 `site/files/Wuqian_Tang_CV.pdf`；仅修改公开 CV，网页简介邮箱保持原样。核对 PDF 仍为 3 页 A4，两邮箱顺序正确，除此之外提取文本与上一版一致。
-- 额外核对 PDF 渲染：第一页只有邮箱一行的像素变化，正文和第 2、3 页与线上上一版相同。首页 CV 链接增加 `v=20261003-email` 版本参数，使浏览器请求更新后的 PDF。
-- 工作期间同一 CV 源文件及本地 PDF 另出现奖项行距与 Work Experience 标题间距修改；这些本地修改保留。本次公开提交只包含邮箱变更，从上次发布的源文件单独编译并提交 PDF，不混入其他排版修改。
+- 首页 CV 链接使用最新版本参数 `v=20261003-email-spacing`，使浏览器请求更新后的 PDF。
+- 用户已明确确认保留本地的奖项行距与 Work Experience 标题间距修改并上线：完整 CV 的奖项行间距为 6.96bp，Work Experience 上方间距为 7.8bp，与其他主栏目一致，保持 3 页。两页版的原有条件分支保留。这次公开源文件与 PDF 同步包含邮箱及已确认的间距调整。
 
 ## 当前完成的内容
 

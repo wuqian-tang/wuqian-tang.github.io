@@ -25,7 +25,8 @@
     {\fontsize{12.96bp}{15.84bp}\selectfont\bfseries\color{heading}#2}}\dp0=0pt\box0
   \vskip3.72bp\nointerlineskip
   \hbox{\kern-1.44bp\vrule width526.3bp height.72bp depth0pt}\vskip7.85bp}
-\newcommand{\award}[2]{\row[7.416bp]{#1}{#2}}
+% Reclaim space between full-CV awards for a normal gap above Work Experience.
+\newcommand{\award}[2]{\row[\ifallpapers6.96bp\else7.416bp\fi]{#1}{#2}}
 % Word uses 11 bp type and tighter word spaces in the course rows.
 \newcommand{\course}[3]{\begingroup\frenchspacing\spaceskip=2.46bp
   \setbox2=\copy\strutbox\fontsize{11bp}{15.84bp}\selectfont\setbox\strutbox=\copy2
@@ -48,7 +49,7 @@
   {\fontsize{18bp}{27bp}\selectfont\bfseries
    \vrule width0pt height16.97bp depth4.75bp Wuqian Tang}\hfil}
 \vskip13.94bp\nointerlineskip
-\hbox to\textwidth{\hfil\strut wqtang@cs.nthu.edu.tw\quad|\quad mark.wqtang@gmail.com\hfil}
+\hbox to\textwidth{\hfil\strut wqtang@cs.nthu.edu.tw | mark.wqtang@gmail.com\hfil}
 \endgroup
 
 \cvsection[3.24bp]{Education}\vskip-1.08bp
@@ -208,7 +209,7 @@
 }
 \ifallpapers\else\publicationsection\fi
 
-\cvsection[.12bp]{Work Experience}
+\cvsection[\ifallpapers7.8bp\else.12bp\fi]{Work Experience}
 \row{\textbf{Giga Design Automation}}{Shanghai, Mainland China}
 \row{R\&D Intern in Logic Synthesis Group (SYN), PI: Dr. Yun Shao}{Jun. 2025 – Sep. 2025}
 \row[7.8bp]{\textbf{Shenzhen Research Institute, The Chinese University of Hong Kong}}{Shenzhen, Mainland China}
