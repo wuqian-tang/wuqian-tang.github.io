@@ -620,24 +620,28 @@
     {
       "date": "Aug 2026",
       "title": "Excellent Teaching Assistant Award",
-      "detail": "National Tsing Hua University",
+      "detail": "National Tsing Hua University · Spring 2026",
       "id": "teaching-excellent-2026",
       "links": [],
       "media": [
         {
           "kind": "trophy",
           "url": "assets/awards/teaching-excellent-2026/trophy-1.jpg",
-          "caption": "Trophy · 2026-08",
+          "caption": "Trophy · Spring 2026 · Awarded Aug 2026",
           "width": 3000,
           "height": 3000
         }
       ],
-      "date_source": "Reviewed original award file dates"
+      "date_source": "Reviewed original award file dates",
+      "academic_terms": [
+        "Spring 2026"
+      ],
+      "term_source": "Trophy inscription: 114 academic year, second semester; 2026 spring semester"
     },
     {
       "date": "Aug 2025–Aug 2026",
       "title": "Outstanding Teaching Assistant Award × 3",
-      "detail": "National Tsing Hua University · Aug 2025, Feb 2026, Aug 2026",
+      "detail": "National Tsing Hua University · Spring 2025, Fall 2025, Spring 2026",
       "id": "teaching-outstanding-2025-2026",
       "links": [
         {
@@ -655,7 +659,7 @@
         {
           "kind": "certificate",
           "url": "assets/awards/teaching-outstanding-2025-2026/certificate-1.pdf",
-          "caption": "Certificate · 2025-08 · Chinese",
+          "caption": "Certificate · Spring 2025 · Awarded Aug 2025 · Chinese",
           "preview": "assets/awards/teaching-outstanding-2025-2026/certificate-1-preview.jpg",
           "width": 1800,
           "height": 2546
@@ -663,28 +667,28 @@
         {
           "kind": "photo",
           "url": "assets/awards/teaching-outstanding-2025-2026/photo-1.jpg",
-          "caption": "Photo · 2025-08",
+          "caption": "Photo · Spring 2025 · Awarded Aug 2025",
           "width": 1477,
           "height": 1108
         },
         {
           "kind": "photo",
           "url": "assets/awards/teaching-outstanding-2025-2026/photo-2.jpg",
-          "caption": "Photo · 2025-08",
+          "caption": "Photo · Spring 2025 · Awarded Aug 2025",
           "width": 1477,
           "height": 1108
         },
         {
           "kind": "certificate",
           "url": "assets/awards/teaching-outstanding-2025-2026/certificate-2.jpg",
-          "caption": "Certificate · 2026-02 · Chinese",
+          "caption": "Certificate · Fall 2025 · Awarded Feb 2026 · Chinese",
           "width": 2481,
           "height": 3508
         },
         {
           "kind": "certificate",
           "url": "assets/awards/teaching-outstanding-2025-2026/certificate-3.pdf",
-          "caption": "Certificate · 2026-08 · Chinese",
+          "caption": "Certificate · Spring 2026 · Awarded Aug 2026 · Chinese",
           "preview": "assets/awards/teaching-outstanding-2025-2026/certificate-3-preview.jpg",
           "width": 1800,
           "height": 2546
@@ -692,12 +696,18 @@
         {
           "kind": "photo",
           "url": "assets/awards/teaching-outstanding-2025-2026/photo-3.jpg",
-          "caption": "Photo · 2026-08",
+          "caption": "Photo · Spring 2026 · Awarded Aug 2026",
           "width": 3432,
           "height": 3002
         }
       ],
-      "date_source": "Reviewed original award file dates"
+      "date_source": "Reviewed original award file dates",
+      "academic_terms": [
+        "Spring 2025",
+        "Fall 2025",
+        "Spring 2026"
+      ],
+      "term_source": "Certificate inscriptions: 113 academic year semester 2; 114 academic year semesters 1 and 2"
     },
     {
       "date": "Jun 2026",
