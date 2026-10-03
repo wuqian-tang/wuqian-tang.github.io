@@ -1,0 +1,621 @@
+{
+  "name": "Wuqian Tang",
+  "chinese_name": "唐梧遷",
+  "role": "Ph.D. Candidate",
+  "department": "Department of Computer Science",
+  "university": "National Tsing Hua University",
+  "location": "Hsinchu, Taiwan",
+  "email": "wqtang@cs.nthu.edu.tw",
+  "updated": "2026-10-03",
+  "site_url": "https://wuqian-tang.github.io",
+  "profiles": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=8Sash14AAAAJ",
+      "icon": "scholar"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/wuqian-tang",
+      "icon": "github"
+    },
+    {
+      "label": "DBLP",
+      "url": "https://dblp.org/pid/378/0274",
+      "icon": "book"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/wqtang/",
+      "icon": "linkedin"
+    }
+  ],
+  "research": [
+    {
+      "title": "LLMs for electronic design automation",
+      "description": "Using language models and learning methods to adapt circuit optimization to different designs and objectives.",
+      "work": "TAPCO · MLCAD 2026",
+      "paper": "c17"
+    },
+    {
+      "title": "Logic synthesis & circuit reverse engineering",
+      "description": "Recovering high-level circuit descriptions and developing search methods for logic synthesis, with correctness checked against the original circuit.",
+      "work": "CB-EVO · TODAES 2026; DATE 2024",
+      "paper": "j1"
+    },
+    {
+      "title": "Physical design optimization",
+      "description": "Combining learning and optimization for placement, gate sizing, timing, and power under practical design constraints.",
+      "work": "HyPAS · DAC 2026",
+      "paper": "c15"
+    }
+  ],
+  "news": [
+    {
+      "date": "Sep 2026",
+      "datetime": "2026-09",
+      "text": "Our team won Second Place in the MLCAD 2026 Contest. Our invited paper, TAPCO, was presented at MLCAD 2026.",
+      "link": {
+        "label": "TAPCO",
+        "url": "#paper-c17"
+      }
+    },
+    {
+      "date": "Aug 2026",
+      "datetime": "2026-08",
+      "text": "Received the Excellent Teaching Assistant Award and an Outstanding Teaching Assistant Award at National Tsing Hua University."
+    },
+    {
+      "date": "Jun 2026",
+      "datetime": "2026-06",
+      "text": "Received the Distinguished Alumnus Award from the Department of CSIE at Ming Chuan University."
+    },
+    {
+      "date": "May 2026",
+      "datetime": "2026-05",
+      "text": "Our team won Second Place in the IWLS 2026 Programming Contest."
+    },
+    {
+      "date": "Oct 2025",
+      "datetime": "2025-10",
+      "text": "Our teams won First Place in Problem C and Second Place in Problem A of the ICCAD CAD Contest. Also won First Place in the ICCAD CADathlon."
+    },
+    {
+      "date": "May 2025",
+      "datetime": "2025-05",
+      "text": "Received the Presidential Hsing Chien Award at National Tsing Hua University."
+    }
+  ],
+  "publications": [
+    {
+      "id": "j1",
+      "label": "J1",
+      "authors": "Fangzhou Liu, Wuqian Tang, Zehua Pei, Ziyang Yu, Haisheng Zheng, Zhuolun He, Mengjia Dai, Tinghuan Chen, Bei Yu",
+      "title": "CB-EVO: Contextual Bandit Tuning with Evolutionary Search for Logic Synthesis",
+      "venue": "ACM Transactions on Design Automation of Electronic Systems",
+      "acronym": "TODAES",
+      "year": 2026,
+      "details": "vol. 31, no. 6, pp. 119:1–119:26, 2026",
+      "status": "",
+      "selected": true,
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1145/3779431"
+        },
+        {
+          "label": "PDF",
+          "url": "https://www.cse.cuhk.edu.hk/~byu/papers/J173-TODAES2026-CV-EVO.pdf"
+        }
+      ]
+    },
+    {
+      "id": "c19",
+      "label": "C19",
+      "authors": "Yu-Cheng He, Han-Wen Tsao, Yung-Chih Chen, Yi-Ting Li, Wuqian Tang, Jian-Meng Yang, Chun-Yao Wang",
+      "title": "Observability-Aware Pattern Generation for Hardware Trojan Detection",
+      "venue": "IEEE International Conference on Computer Design",
+      "acronym": "ICCD",
+      "year": 2026,
+      "details": "Hong Kong SAR, China, Nov. 16–18, 2026",
+      "status": "To appear",
+      "selected": false,
+      "links": []
+    },
+    {
+      "id": "c18",
+      "label": "C18",
+      "authors": "Bo-Ying Wang, Yong-Fong Chang, Hsun-Wei Pao, Yung-Chih Chen, Tien-Hsin Peng, Yu-Ting Hung, Tsai-Chieh Cheng, Yi-Ting Li, Wuqian Tang, Chun-Yao Wang, Shih-Chieh Chang",
+      "title": "A Design Rule-Aware Post-Route ECO Framework for Fixing Electromigration Violations",
+      "venue": "ACM/IEEE International Conference on Computer-Aided Design",
+      "acronym": "ICCAD",
+      "year": 2026,
+      "details": "San Jose, California, USA, Nov. 8–12, 2026",
+      "status": "To appear",
+      "selected": false,
+      "links": []
+    },
+    {
+      "id": "c17",
+      "label": "C17",
+      "authors": "Wuqian Tang*, Zixiao Wang*, Che-Chien Lin, Fong-Hua Fu, Laura Angélica Shion-Korsak, Xinyun Zhang, Bei Yu, Chun-Yao Wang",
+      "title": "TAPCO: LLM-Guided Design-Adaptive Timing and Power Co-Optimization",
+      "venue": "ACM/IEEE International Symposium on Machine Learning for CAD",
+      "acronym": "MLCAD",
+      "year": 2026,
+      "details": "Jeju, South Korea, Sep. 7–9, 2026",
+      "status": "Invited paper",
+      "selected": true,
+      "links": []
+    },
+    {
+      "id": "c16",
+      "label": "C16",
+      "authors": "Tao-Chun Huang, Hao-Yu Tsai, You-Cheng Lin, Yi-Ting Li, Wuqian Tang, Yung-Chih Chen, Jian-Meng Yang, Chun-Yao Wang",
+      "title": "Late Breaking Results: QUBO Approaches to Logic Equivalence Checking and Testing",
+      "venue": "ACM/IEEE Design Automation Conference",
+      "acronym": "DAC",
+      "year": 2026,
+      "details": "Long Beach, California, USA, Jul. 26–29, 2026",
+      "status": "",
+      "selected": false,
+      "links": []
+    },
+    {
+      "id": "c15",
+      "label": "C15",
+      "authors": "Fangzhou Liu*, Wuqian Tang*, Bo-Ying Wang, An-Chieh Shen, Han-Wen Tsao, Yuyang Ye, Yun Shao, Chun-Yao Wang, Bei Yu",
+      "title": "HyPAS: A Hybrid Optimization Framework for Placement and Sizing Co-Optimization",
+      "venue": "ACM/IEEE Design Automation Conference",
+      "acronym": "DAC",
+      "year": 2026,
+      "details": "Long Beach, California, USA, Jul. 26–29, 2026",
+      "status": "",
+      "selected": true,
+      "links": [
+        {
+          "label": "PDF",
+          "url": "https://sallyliu921.github.io/pdf/C13-DAC2026-HyPAS.pdf"
+        }
+      ]
+    },
+    {
+      "id": "c14",
+      "label": "C14",
+      "authors": "Chi-Wei Chen, Yi-Ting Li, Wuqian Tang, Yung-Chih Chen, Jian-Meng Yang, Chun-Yao Wang",
+      "title": "Learning to Approximate: Circuit Learning and Deep Reinforcement Learning for Approximate Logic Synthesis with an Error Rate Guarantee",
+      "venue": "IEEE/ACM Design, Automation and Test in Europe",
+      "acronym": "DATE",
+      "year": 2026,
+      "details": "Verona, Italy, Apr. 20–22, 2026",
+      "status": "",
+      "selected": false,
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.23919/DATE69613.2026.11539729"
+        }
+      ]
+    },
+    {
+      "id": "c13",
+      "label": "C13",
+      "authors": "You-Cheng Lin, Yi-Ting Li, Wuqian Tang, Yung-Chih Chen, Chia-Chieh Chu, Chun-Yao Wang",
+      "title": "A Mathematical Exploration to Equivalence Checking of Quantum Circuits",
+      "venue": "IEEE/ACM Design, Automation and Test in Europe",
+      "acronym": "DATE",
+      "year": 2026,
+      "details": "Verona, Italy, Apr. 20–22, 2026",
+      "status": "",
+      "selected": false,
+      "links": []
+    },
+    {
+      "id": "c12",
+      "label": "C12",
+      "authors": "Zi-Wei Huang, Yi-Ting Li, Wuqian Tang, Liang-Chia Cheng, Yung-Chih Chen, Chun-Yao Wang",
+      "title": "Process Selection Strategy for Chiplet-Based 2.5D Systems under Design Constraints",
+      "venue": "IEEE International VLSI Symposium on Technology, Systems and Applications",
+      "acronym": "VLSI-TSA",
+      "year": 2026,
+      "details": "Hsinchu, Taiwan, Apr. 13–17, 2026",
+      "status": "",
+      "selected": false,
+      "links": []
+    },
+    {
+      "id": "c11",
+      "label": "C11",
+      "authors": "Yi-Ting Shen, Yan-Hsiu Liu, Yi-Ting Li, Wuqian Tang, Yung-Chih Chen, Hao-Chiang Shao, Chia-Wen Lin, Chun-Yao Wang",
+      "title": "Integrating Automatic Prompt Engineering and Vision-Language Model for Pad Defect Classification",
+      "venue": "IEEE International Symposium on Quality Electronic Design",
+      "acronym": "ISQED",
+      "year": 2026,
+      "details": "San Francisco, California, USA, Apr. 8–10, 2026",
+      "status": "",
+      "selected": false,
+      "links": []
+    },
+    {
+      "id": "c10",
+      "label": "C10",
+      "authors": "Kai-Po Hsu, Yi-Ting Li, Fu-Cheng Cai, Chia-Feng Chien, Wuqian Tang, Ting-Yu Ku, Yu-Chen Cheng, Tsung-Han Lai, Cheng-Lung Wang, Yi-Ting Shen, Kuan-Ling Chou, Zi-Wei Huang, Tao-Chun Huang, Tzu-Li Hsu, Yung-Chih Chen, Shih-Chieh Chang, Ting-Chi Wang, TingTing Hwang, Chun-Yao Wang",
+      "title": "An Efficient Approach to NP3-Boolean Matching: Leveraging Multi-bit Ports and Reverse Engineering to Minimize Search Space",
+      "venue": "IEEE International Symposium on Quality Electronic Design",
+      "acronym": "ISQED",
+      "year": 2026,
+      "details": "San Francisco, California, USA, Apr. 8–10, 2026",
+      "status": "",
+      "selected": false,
+      "links": []
+    },
+    {
+      "id": "c9",
+      "label": "C9",
+      "authors": "Yu-Chuan Yen, Fu-Cheng Cai, Yi-Ting Li, Wuqian Tang, Yung-Chih Chen, Ihao Chen, Chun-Yao Wang",
+      "title": "Area-Oriented Threshold Logic Circuit Synthesis Using Negative Weights",
+      "venue": "IEEE International Symposium on Quality Electronic Design",
+      "acronym": "ISQED",
+      "year": 2026,
+      "details": "San Francisco, California, USA, Apr. 8–10, 2026",
+      "status": "",
+      "selected": false,
+      "links": []
+    },
+    {
+      "id": "c8",
+      "label": "C8",
+      "authors": "Chia-Feng Chien, Ming-Wei Chen, Yin-Chen Chang, Yung-Chih Chen, Yan-Hsiu Liu, Hao-Chiang Shao, Chia-Wen Lin, Yi-Ting Li, Wuqian Tang, Chun-Yao Wang",
+      "title": "Improving CNN-based Pad Defect Classification with Enhanced Preprocessing Techniques",
+      "venue": "IEEE International SoC Design Conference",
+      "acronym": "ISOCC",
+      "year": 2025,
+      "details": "Busan, South Korea, Oct. 15–18, 2025",
+      "status": "",
+      "selected": false,
+      "links": []
+    },
+    {
+      "id": "c7",
+      "label": "C7",
+      "authors": "Kuan-Ling Chou, Cheng-Lung Wang, Yung-Chih Chen, Wuqian Tang, Yi-Ting Li, Shih-Chieh Chang, Chun-Yao Wang",
+      "title": "CNN Model Optimization Using a Hybrid Approach of Genetic Algorithm-based Pruning and Retraining with Knowledge Distillation",
+      "venue": "ACM Great Lakes Symposium on VLSI",
+      "acronym": "GLSVLSI",
+      "year": 2025,
+      "details": "New Orleans, Louisiana, USA, Jun. 30 – Jul. 2, 2025",
+      "status": "",
+      "selected": false,
+      "links": []
+    },
+    {
+      "id": "c6",
+      "label": "C6",
+      "authors": "Yu-Che Lee, Yu-Hsuan Chen, Yu-Chen Cheng, Yong-Fong Chang, Jia Wei Lin, Hsun-Wei Pao, Yung-Chih Chen, Yi-Ting Li, Wuqian Tang, Shih-Chieh Chang, Chun-Yao Wang",
+      "title": "Real-Time Dynamic IR-drop Prediction for IR ECO",
+      "venue": "ACM/IEEE Design Automation Conference",
+      "acronym": "DAC",
+      "year": 2025,
+      "details": "San Francisco, California, USA, Jun. 22–25, 2025",
+      "status": "",
+      "selected": false,
+      "links": []
+    },
+    {
+      "id": "c5",
+      "label": "C5",
+      "authors": "Kai-Po Hsu, Tsung-Han Lai, Yi-Ting Li, Wuqian Tang, Yun-Ju Lee, Yung-Chih Chen, Wen-Hsin Chiu, Chun-Yao Wang",
+      "title": "IMU-based Motion Trajectory Reconstruction and Recognition with Dynamic Calibration on Embedded System Platform",
+      "venue": "IEEE International Symposium on Quality Electronic Design",
+      "acronym": "ISQED",
+      "year": 2025,
+      "details": "San Francisco, California, USA, Apr. 23–25, 2025",
+      "status": "",
+      "selected": false,
+      "links": []
+    },
+    {
+      "id": "c4",
+      "label": "C4",
+      "authors": "Yu-Cheng Lee, Kai-Po Hsu, Yun-Ju Lee, Yi-Ting Li, Wuqian Tang, Yung-Chih Chen, Wen-Hsin Chiu, Chun-Yao Wang",
+      "title": "On Construction of Trajectory of Boxer’s Punch using a single IMU",
+      "venue": "IEEE International Symposium on Intelligent Signal Processing and Communication Systems",
+      "acronym": "ISPACS",
+      "year": 2024,
+      "details": "Kaohsiung, Taiwan, Dec. 10–13, 2024",
+      "status": "",
+      "selected": false,
+      "links": []
+    },
+    {
+      "id": "c3",
+      "label": "C3",
+      "authors": "Wuqian Tang, Chuan-Shun Huang, Yung-Chih Chen, Yi-Ting Li, Shih-Chieh Chang, Chun-Yao Wang",
+      "title": "Model Reduction Using a Hybrid Approach of Genetic Algorithm and Rule-based Method",
+      "venue": "IEEE International System-on-Chip Conference",
+      "acronym": "SOCC",
+      "year": 2024,
+      "details": "Dresden, Germany, Sep. 16–19, 2024",
+      "status": "",
+      "selected": true,
+      "links": []
+    },
+    {
+      "id": "c2",
+      "label": "C2",
+      "authors": "Chuan-Shun Huang, Wuqian Tang, Yung-Chih Chen, Yi-Ting Li, Shih-Chieh Chang, Chun-Yao Wang",
+      "title": "An Efficient Approach to Iterative Network Pruning",
+      "venue": "IEEE International VLSI Symposium on Technology, Systems and Applications",
+      "acronym": "VLSI-TSA",
+      "year": 2024,
+      "details": "Hsinchu, Taiwan, Apr. 22–25, 2024",
+      "status": "",
+      "selected": false,
+      "links": []
+    },
+    {
+      "id": "c1",
+      "label": "C1",
+      "authors": "Wuqian Tang, Yi-Ting Li, Kai-Po Hsu, Kuan-Ling Chou, You-Cheng Lin, Chia-Feng Chien, Tzu-Li Hsu, Yung-Chih Chen, Ting-Chi Wang, Shih-Chieh Chang, TingTing Hwang, Chun-Yao Wang",
+      "title": "A Hybrid Approach to Reverse Engineering on Combinational Circuits",
+      "venue": "IEEE/ACM Design, Automation and Test in Europe",
+      "acronym": "DATE",
+      "year": 2024,
+      "details": "Valencia, Spain, Mar. 25–27, 2024",
+      "status": "",
+      "selected": true,
+      "links": []
+    },
+    {
+      "id": "j2",
+      "label": "J2",
+      "authors": "Yuh-Pyng Shieh, Shao-Hang Hsu, Wuqian Tang, Wei-Ying Ke, Po-sheng Ou, Yu-wei Chang, Ming-chorng Hwang",
+      "title": "The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions",
+      "original_title": "甲骨卜辭定年月差演算法",
+      "venue": "Journal of Digital Archives and Digital Humanities",
+      "acronym": "DADH",
+      "year": 2025,
+      "details": "vol. 15, pp. 1–35, Apr 2025",
+      "status": "In Chinese",
+      "selected": true,
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.6853/DADH.202504_(15).0001"
+        },
+        {
+          "label": "Journal",
+          "url": "https://tadh.org.tw/2025/09/14/jdadh_v15/"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Ph.D. in Computer Science",
+      "institution": "National Tsing Hua University",
+      "date": "Sep 2023 – Present",
+      "detail": "Expected Jul 2027 · Advised by Prof. Chun-Yao Wang and Prof. Bei Yu (CUHK)"
+    },
+    {
+      "title": "M.S. in Computer Science",
+      "institution": "National Tsing Hua University",
+      "date": "Sep 2021 – Jul 2023",
+      "detail": "Advised by Prof. Chun-Yao Wang"
+    },
+    {
+      "title": "B.S. in Computer Science and Information Engineering",
+      "institution": "Ming Chuan University",
+      "date": "Sep 2017 – Jun 2021",
+      "detail": ""
+    }
+  ],
+  "experience": [
+    {
+      "title": "R&D Intern, Logic Synthesis Group",
+      "institution": "Giga Design Automation",
+      "date": "Jun – Sep 2025",
+      "detail": "Shanghai · PI: Dr. Yun Shao"
+    },
+    {
+      "title": "Assistant Researcher, Design Automation Laboratory",
+      "institution": "Shenzhen Research Institute, The Chinese University of Hong Kong",
+      "date": "Jan – Mar 2024",
+      "detail": "Shenzhen · PI: Prof. Bei Yu"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Introduction to Programming",
+      "instructors": "Prof. Yu-Guang Chen",
+      "terms": "Fall 2026"
+    },
+    {
+      "title": "Hardware Security",
+      "instructors": "Prof. Yu-Guang Chen and Prof. TingTing Hwang",
+      "terms": "Spring 2026"
+    },
+    {
+      "title": "Advanced Logic Synthesis",
+      "instructors": "Prof. TingTing Hwang",
+      "terms": "Spring 2025, Spring 2026"
+    },
+    {
+      "title": "Introduction to Integrated Circuit Design",
+      "instructors": "Prof. Yu-Guang Chen",
+      "terms": "Fall 2025"
+    },
+    {
+      "title": "Computer Architecture",
+      "instructors": "Prof. TingTing Hwang",
+      "terms": "Fall 2024, Fall 2025"
+    },
+    {
+      "title": "Design Automation (I)",
+      "instructors": "Prof. Jeong-Tyng Li",
+      "terms": "Spring 2025"
+    }
+  ],
+  "awards": [
+    {
+      "date": "2026",
+      "title": "Second Place, MLCAD Contest",
+      "detail": "Agentic algorithm discovery for timing optimization",
+      "highlight": true
+    },
+    {
+      "date": "2026",
+      "title": "Excellent Teaching Assistant Award",
+      "detail": "National Tsing Hua University",
+      "highlight": true
+    },
+    {
+      "date": "2025–2026",
+      "title": "Outstanding Teaching Assistant Award × 3",
+      "detail": "National Tsing Hua University · Aug 2025, Feb 2026, Aug 2026",
+      "highlight": false
+    },
+    {
+      "date": "2026",
+      "title": "Distinguished Alumnus Award",
+      "detail": "Department of CSIE, Ming Chuan University",
+      "highlight": false
+    },
+    {
+      "date": "2026",
+      "title": "Second Place, IWLS Programming Contest",
+      "detail": "International Workshop on Logic & Synthesis",
+      "highlight": true
+    },
+    {
+      "date": "2026",
+      "title": "Hsinchu City Outstanding Youth",
+      "detail": "College / University Division",
+      "highlight": false
+    },
+    {
+      "date": "2025",
+      "title": "First Place (Problem C) & Second Place (Problem A), ICCAD CAD Contest",
+      "detail": "International Conference on Computer-Aided Design",
+      "highlight": true
+    },
+    {
+      "date": "2025",
+      "title": "First Place, ICCAD CADathlon",
+      "detail": "Programming competition in electronic design automation",
+      "highlight": true
+    },
+    {
+      "date": "2025",
+      "title": "Presidential Hsing Chien Award",
+      "detail": "National Tsing Hua University · One of 13 university-wide recipients",
+      "highlight": true
+    },
+    {
+      "date": "2024",
+      "title": "Second Place (Problem A) & Honorable Mention (Problem B), ICCAD CAD Contest",
+      "detail": "International Conference on Computer-Aided Design",
+      "highlight": false
+    },
+    {
+      "date": "2024",
+      "title": "Second Place, ICCAD CADathlon",
+      "detail": "Programming competition in electronic design automation",
+      "highlight": false
+    },
+    {
+      "date": "2024–Present",
+      "title": "Synopsys – Prof. Chung Laung Liu Ph.D. Scholarship",
+      "detail": "Synopsys",
+      "highlight": false
+    },
+    {
+      "date": "2023",
+      "title": "Qilin Cup, Integrated Circuit EDA Elite Challenge",
+      "detail": "First among 400+ teams",
+      "highlight": true
+    },
+    {
+      "date": "2023",
+      "title": "Honorable Mention (Problem A), ICCAD CAD Contest",
+      "detail": "International Conference on Computer-Aided Design",
+      "highlight": false
+    },
+    {
+      "date": "2023",
+      "title": "Third Place, EDAthon",
+      "detail": "Electronic design automation competition",
+      "highlight": false
+    },
+    {
+      "date": "2022",
+      "title": "First Place (Problem A), ICCAD CAD Contest",
+      "detail": "Learning arithmetic operations from gate-level circuits",
+      "highlight": true
+    },
+    {
+      "date": "2021–Present",
+      "title": "Mainland China Student Scholarship",
+      "detail": "National Tsing Hua University",
+      "highlight": false
+    },
+    {
+      "date": "2020",
+      "title": "Silver Award, ICPC Asia Taipei–Hsinchu Regional",
+      "detail": "International Collegiate Programming Contest",
+      "highlight": false
+    }
+  ],
+  "earlier_awards": [
+    {
+      "date": "2021",
+      "title": "Outstanding Contribution Award",
+      "detail": "Department of CSIE, Ming Chuan University"
+    },
+    {
+      "date": "2019–2020",
+      "title": "First Place, MCU Programming Contest",
+      "detail": "Advanced Division · Two consecutive editions"
+    },
+    {
+      "date": "2020",
+      "title": "Honorable Mention, Central Taiwan Programming Contest",
+      "detail": ""
+    },
+    {
+      "date": "2020",
+      "title": "Honorable Mention, TOPC",
+      "detail": "Taiwan Online Programming Contest"
+    },
+    {
+      "date": "2019",
+      "title": "Bronze Award, ICPC Asia Taipei–Hsinchu Regional",
+      "detail": ""
+    },
+    {
+      "date": "2019",
+      "title": "Silver Award, TOPC",
+      "detail": "Taiwan Online Programming Contest"
+    },
+    {
+      "date": "2019",
+      "title": "Silver Prize, NCPU",
+      "detail": "National Collegiate Programming Contest for Universities"
+    },
+    {
+      "date": "2018–2020",
+      "title": "Honorable Mention, NCPC",
+      "detail": "National Collegiate Programming Contest · Three editions"
+    },
+    {
+      "date": "2018",
+      "title": "First Place, Intercollegiate Freshman Cup Programming Contest",
+      "detail": ""
+    },
+    {
+      "date": "2018",
+      "title": "Third Place & Popularity Award, Three-University Software Innovation Exhibition and Competition",
+      "detail": "Ministry of Education"
+    }
+  ]
+}

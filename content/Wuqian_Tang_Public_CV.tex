@@ -1,0 +1,231 @@
+% LuaLaTeX. Full CV; the 2Page wrapper reproduces the original CV with normal-size labels.
+\documentclass[11pt]{article}
+\usepackage[paperwidth=595.32bp,paperheight=841.92bp,left=36bp,right=36bp,
+            top=42.55bp,bottom=36bp]{geometry}
+\usepackage{fontspec,xcolor}
+\defaultfontfeatures{Renderer=HarfBuzz,RawFeature=-liga}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{TeX Gyre Termes}}
+\definecolor{heading}{HTML}{0070C0}
+\definecolor{muted}{HTML}{808080}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\newif\ifallpapers
+\ifdefined\twopagecv\else\allpaperstrue\fi
+\newcommand{\gray}[1]{\textcolor{muted}{#1}}
+\newcommand{\me}{\textbf{Wuqian Tang}}
+\newcommand{\forthcoming}{\nobreakspace\mbox{\textit{(to appear)}}}
+\newcommand{\br}{\ifallpapers\else\linebreak\fi\ignorespaces}
+\newcommand{\smalltitle}[1]{\ifallpapers#1\else{\fontsize{10.56bp}{15.84bp}\selectfont#1}\fi}
+% Shared rows and section rules reproduce the Word layout without a CV class.
+\newcommand{\row}[3][0bp]{\par\vskip#1\nointerlineskip
+  \hbox to\textwidth{\hskip10.56bp\strut#2\hfil\textit{#3}}}
+\newcommand{\cvsection}[2][7.8bp]{\par\vskip#1\nointerlineskip
+  \setbox0=\hbox{\vrule width0pt height12.17bp depth0pt
+    {\fontsize{12.96bp}{15.84bp}\selectfont\bfseries\color{heading}#2}}\dp0=0pt\box0
+  \vskip3.72bp\nointerlineskip
+  \hbox{\kern-1.44bp\vrule width526.3bp height.72bp depth0pt}\vskip7.85bp}
+\newcommand{\award}[2]{\row[7.416bp]{#1}{#2}}
+% Word uses 11 bp type and tighter word spaces in the course rows.
+\newcommand{\course}[3]{\begingroup\frenchspacing\spaceskip=2.46bp
+  \setbox2=\copy\strutbox\fontsize{11bp}{15.84bp}\selectfont\setbox\strutbox=\copy2
+  \row[3.888bp]{\makebox[10.92bp][l]{\textbullet}#1 \gray{(#2)}}{#3\kern-.1bp}\endgroup}
+% Label, authors, full title, full venue, acronym, complete publication details.
+% Justify both edges; the last line keeps natural spacing. All lines share the left edge.
+\newcommand{\publication}[6]{\par\nointerlineskip\moveright10.56bp\vbox{\hsize=\dimexpr\textwidth-10.56bp\relax
+  \ifallpapers\fontsize{11.04bp}{14.8bp}\selectfont\fi
+  \leftskip=0pt\rightskip=0pt\parfillskip=0pt plus1fil
+  \spaceskip=2.76bp plus3bp minus1.5bp\hyphenpenalty=10000
+  \ifallpapers\frenchspacing\emergencystretch=20bp\tolerance=3000\fi
+  \noindent\strut[#1]\ #2, “#3”, \textit{#4 (\textbf{#5})}, #6.\strut\par}
+  \vskip\ifallpapers5bp\else7.68bp\fi}
+
+\begin{document}
+\fontsize{11.04bp}{15.84bp}\selectfont
+\setbox\strutbox=\hbox{\vrule width0pt height10.37bp depth5.47bp}
+\begingroup\addfontfeatures{RawFeature=-kern}
+\nointerlineskip\hbox to\textwidth{\hfil
+  {\fontsize{18bp}{27bp}\selectfont\bfseries
+   \vrule width0pt height16.97bp depth4.75bp Wuqian Tang}\hfil}
+\vskip13.94bp\nointerlineskip
+\hbox to\textwidth{\hfil\strut wqtang@cs.nthu.edu.tw\hfil}
+\endgroup
+
+\cvsection[3.24bp]{Education}\vskip-1.08bp
+\row{\textbf{National Tsing Hua University}}{Hsinchu, Taiwan}
+\row{Ph.D. Candidate in Computer Science \gray{(GPA: 4.25/4.3)}}{Sep. 2023 – Jul. 2027 (Expected)}
+\row{Supervisors: Prof. Chun-Yao Wang and Prof. Bei Yu \gray{(The Chinese University of Hong Kong)}}{}
+\row[7.68bp]{\textbf{National Tsing Hua University}}{Hsinchu, Taiwan}
+\row{M.S. in Computer Science \gray{(GPA: 4.11/4.3)}}{Sep. 2021 – Jul. 2023}
+\row{Supervisor: Prof. Chun-Yao Wang}{}
+\row[7.83bp]{\textbf{Ming Chuan University}}{Taoyuan, Taiwan}
+\row{B.S. in Computer Science and Information Engineering}{Sep. 2017 – Jun. 2021}
+
+\cvsection{Selected Awards and Honors}
+\row{Second Place in MLCAD 2026 Contest}{Sep. 2026}
+\award{Excellent Teaching Assistant Award, National Tsing Hua University}{Aug. 2026}
+\award{Outstanding Teaching Assistant Award (3×), National Tsing Hua University}{Aug. 2025, Feb. 2026, Aug. 2026}
+\award{Distinguished Alumnus Award, Department of CSIE, Ming Chuan University}{Jun. 2026}
+\award{2nd Place in IWLS 2026 Programming Contest}{May 2026}
+\award{Hsinchu City Outstanding Youth \gray{(College/University Division)}}{Mar. 2026}
+\award{1st Place Award (Prob. C) \& 2nd Place Award (Prob. A) in ICCAD 2025 CAD Contest}{Oct. 2025}
+\award{First Place in ICCAD 2025 CADathlon Programming Contest}{Oct. 2025}
+\award{Presidential Hsing Chien Award, NTHU (1 of 13 university-wide recipients for holistic excellence)}{May 2025}
+\award{2nd Place Award (Prob. A) \& Honorable Mention (Prob. B) in ICCAD 2024 CAD Contest}{Oct. 2024}
+\award{Second Place in ICCAD 2024 CADathlon Programming Contest}{Oct. 2024}
+\award{Synopsys - Prof. Chung Laung Liu Ph.D. Scholarship}{Sep. 2024 – Present}
+\award{“Qilin Cup” (1st among 400+ teams) in Integrated Circuit EDA Elite Challenge}{Dec. 2023}
+\award{Honorable Mention (Prob. A) in ICCAD 2023 CAD Contest}{Oct. 2023}
+\award{Third Place in 2023 EDAthon}{Aug. 2023}
+\award{1st Place Award (Prob. A) in ICCAD 2022 CAD Contest}{Oct. 2022}
+\award{National Tsing Hua University Mainland China Student Scholarship}{Sep. 2021 – Present}
+\award{Silver Award in International Collegiate Programming Contest (ICPC Regional)}{Nov. 2020}
+
+% The full bibliography moves to the end; 2Page keeps the original order.
+\newcommand{\publicationsection}{%
+\cvsection[7.44bp]{\ifallpapers Publications\else Selected Publications\fi}\vskip-3.1bp
+\row{\gray{An asterisk (*) indicates equal contribution.}}{}
+\vskip7.68bp
+\publication{J1}
+  {Fangzhou Liu, \me, Zehua Pei, Ziyang Yu, Haisheng Zheng, Zhuolun He, Mengjia Dai, Tinghuan Chen, \br Bei Yu}
+  {CB-EVO: Contextual Bandit Tuning with Evolutionary Search for Logic Synthesis}
+  {ACM Transactions on \br Design Automation of Electronic Systems}{TODAES}
+  {vol. 31, no. 6, pp. 119:1–119:26, 2026}
+
+\publication{J2}
+  {Yuh-Pyng Shieh, Shao-Hang Hsu, \me, Wei-Ying Ke, Po-sheng Ou, Yu-wei Chang, Ming-chorng Hwang}
+  {The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions}
+  {Journal of Digital Archives and Digital Humanities}{DADH}
+  {vol. 15, pp. 1–35, Apr. 2025 (in Chinese)}
+
+% The 2Page version preserves the original page break.
+\ifallpapers\else\newpage\fi
+\ifallpapers
+\publication{C19}
+  {Yu-Cheng He, Han-Wen Tsao, Yung-Chih Chen, Yi-Ting Li, \me, Jian-Meng Yang, Chun-Yao Wang}
+  {Observability-Aware Pattern Generation for Hardware Trojan Detection}
+  {IEEE International Conference on Computer Design}{ICCD}
+  {Hong Kong SAR, China, Nov. 16–18, 2026\forthcoming}
+\publication{C18}
+  {Bo-Ying Wang, Yong-Fong Chang, Hsun-Wei Pao, Yung-Chih Chen, Tien-Hsin Peng, Yu-Ting Hung, Tsai-Chieh Cheng, Yi-Ting Li, \me, Chun-Yao Wang, Shih-Chieh Chang}
+  {A Design Rule-Aware Post-Route ECO Framework for Fixing Electromigration Violations}
+  {ACM/IEEE International Conference on Computer-Aided Design}{ICCAD}
+  {San Jose, California, USA, Nov. 8–12, 2026\forthcoming}
+\fi
+\publication{C\ifallpapers17\else7\fi}
+  {\me*, Zixiao Wang*, Che-Chien Lin, Fong-Hua Fu, Laura Angélica Shion-Korsak, Xinyun Zhang, \br Bei Yu, Chun-Yao Wang}
+  {TAPCO: LLM-Guided Design-Adaptive Timing and Power Co-Optimization}
+  {ACM/IEEE \br International Symposium on Machine Learning for CAD}{MLCAD}
+  {Jeju, South Korea, Sep. 7–9, 2026}
+\ifallpapers
+\publication{C16}
+  {Tao-Chun Huang, Hao-Yu Tsai, You-Cheng Lin, Yi-Ting Li, \me, Yung-Chih Chen, Jian-Meng Yang, Chun-Yao Wang}
+  {Late Breaking Results: QUBO Approaches to Logic Equivalence Checking and Testing}
+  {ACM/IEEE Design Automation Conference}{DAC}
+  {Long Beach, California, USA, Jul. 26–29, 2026}
+\fi
+\publication{C\ifallpapers15\else6\fi}
+  {Fangzhou Liu\textbf{*}, \me*, Bo-Ying Wang, An-Chieh Shen, Han-Wen Tsao, Yuyang Ye, Yun Shao, Chun-\br Yao Wang, Bei Yu}
+  {\smalltitle{HyPAS: A Hybrid Optimization Framework for Placement and Sizing Co-Optimization}}
+  {ACM/IEEE \br Design Automation Conference}{DAC}
+  {Long Beach, California, USA, Jul. 26–29, 2026}
+\publication{C\ifallpapers14\else5\fi}
+  {Chi-Wei Chen, Yi-Ting Li, \me, Yung-Chih Chen, Jian-Meng Yang, Chun-Yao Wang}
+  {Learning to \br Approximate: Circuit Learning and Deep Reinforcement Learning for Approximate Logic Synthesis with an Error \br Rate Guarantee}
+  {IEEE/ACM Design, Automation and Test in Europe}{DATE}
+  {Verona, Italy, Apr. 20–22, 2026}
+\publication{C\ifallpapers13\else4\fi}
+  {You-Cheng Lin, Yi-Ting Li, \me, Yung-Chih Chen, Chia-Chieh Chu, Chun-Yao Wang}
+  {A \br Mathematical Exploration to Equivalence Checking of Quantum Circuits}
+  {IEEE/ACM Design, Automation and Test \br in Europe}{DATE}
+  {Verona, Italy, Apr. 20–22, 2026}
+\ifallpapers
+\publication{C12}
+  {Zi-Wei Huang, Yi-Ting Li, \me, Liang-Chia Cheng, Yung-Chih Chen, Chun-Yao Wang}
+  {Process Selection Strategy for Chiplet-Based 2.5D Systems under Design Constraints}
+  {IEEE International VLSI Symposium on Technology, Systems and Applications}{VLSI-TSA}
+  {Hsinchu, Taiwan, Apr. 13–17, 2026}
+\publication{C11}
+  {Yi-Ting Shen, Yan-Hsiu Liu, Yi-Ting Li, \me, Yung-Chih Chen, Hao-Chiang Shao, Chia-Wen Lin, Chun-Yao Wang}
+  {Integrating Automatic Prompt Engineering and Vision-Language Model for Pad Defect Classification}
+  {IEEE International Symposium on Quality Electronic Design}{ISQED}
+  {San Francisco, California, USA, Apr. 8–10, 2026}
+\publication{C10}
+  {Kai-Po Hsu, Yi-Ting Li, Fu-Cheng Cai, Chia-Feng Chien, \me, Ting-Yu Ku, Yu-Chen Cheng, Tsung-Han Lai, Cheng-Lung Wang, Yi-Ting Shen, Kuan-Ling Chou, Zi-Wei Huang, Tao-Chun Huang, Tzu-Li Hsu, Yung-Chih Chen, Shih-Chieh Chang, Ting-Chi Wang, TingTing Hwang, Chun-Yao Wang}
+  {An Efficient Approach to NP3-Boolean Matching: Leveraging Multi-bit Ports and Reverse Engineering to Minimize Search Space}
+  {IEEE International Symposium on Quality Electronic Design}{ISQED}
+  {San Francisco, California, USA, Apr. 8–10, 2026}
+\publication{C9}
+  {Yu-Chuan Yen, Fu-Cheng Cai, Yi-Ting Li, \me, Yung-Chih Chen, Ihao Chen, Chun-Yao Wang}
+  {Area-Oriented Threshold Logic Circuit Synthesis Using Negative Weights}
+  {IEEE International Symposium on Quality Electronic Design}{ISQED}
+  {San Francisco, California, USA, Apr. 8–10, 2026}
+\publication{C8}
+  {Chia-Feng Chien, Ming-Wei Chen, Yin-Chen Chang, Yung-Chih Chen, Yan-Hsiu Liu, Hao-Chiang Shao, Chia-Wen Lin, Yi-Ting Li, \me, Chun-Yao Wang}
+  {Improving CNN-based Pad Defect Classification with Enhanced Preprocessing Techniques}
+  {IEEE International SoC Design Conference}{ISOCC}
+  {Busan, South Korea, Oct. 15–18, 2025}
+\publication{C7}
+  {Kuan-Ling Chou, Cheng-Lung Wang, Yung-Chih Chen, \me, Yi-Ting Li, Shih-Chieh Chang, Chun-Yao Wang}
+  {CNN Model Optimization Using a Hybrid Approach of Genetic Algorithm-based Pruning and Retraining with Knowledge Distillation}
+  {ACM Great Lakes Symposium on VLSI}{GLSVLSI}
+  {New Orleans, Louisiana, USA, Jun. 30 – Jul. 2, 2025}
+\fi
+\publication{C\ifallpapers6\else3\fi}
+  {Yu-Che Lee, Yu-Hsuan Chen, Yu-Chen Cheng, Yong-Fong Chang, Jia Wei Lin, Hsun-Wei Pao, Yung-Chih Chen, \br Yi-Ting Li, \me, Shih-Chieh Chang, Chun-Yao Wang}
+  {Real-Time Dynamic IR-drop Prediction for IR \br ECO}
+  {ACM/IEEE Design Automation Conference}{DAC}
+  {San Francisco, \ifallpapers California, \fi USA, Jun. 22–25, 2025}
+\ifallpapers
+\publication{C5}
+  {Kai-Po Hsu, Tsung-Han Lai, Yi-Ting Li, \me, Yun-Ju Lee, Yung-Chih Chen, Wen-Hsin Chiu, Chun-Yao Wang}
+  {IMU-based Motion Trajectory Reconstruction and Recognition with Dynamic Calibration on Embedded System Platform}
+  {IEEE International Symposium on Quality Electronic Design}{ISQED}
+  {San Francisco, California, USA, Apr. 23–25, 2025}
+\publication{C4}
+  {Yu-Cheng Lee, Kai-Po Hsu, Yun-Ju Lee, Yi-Ting Li, \me, Yung-Chih Chen, Wen-Hsin Chiu, Chun-Yao Wang}
+  {On Construction of Trajectory of Boxer’s Punch using a single IMU}
+  {IEEE International Symposium on Intelligent Signal Processing and Communication Systems}{ISPACS}
+  {Kaohsiung, Taiwan, Dec. 10–13, 2024}
+\fi
+\publication{C\ifallpapers3\else2\fi}
+  {\me, Chuan-Shun Huang, Yung-Chih Chen, Yi-Ting Li, Shih-Chieh Chang, Chun-Yao Wang}
+  {Model \br Reduction Using a Hybrid Approach of Genetic Algorithm and Rule-based Method}
+  {IEEE International System-on-\br Chip Conference}{SOCC}
+  {Dresden, Germany, Sep. 16–19, 2024}
+\ifallpapers
+\publication{C2}
+  {Chuan-Shun Huang, \me, Yung-Chih Chen, Yi-Ting Li, Shih-Chieh Chang, Chun-Yao Wang}
+  {An Efficient Approach to Iterative Network Pruning}
+  {IEEE International VLSI Symposium on Technology, Systems and Applications}{VLSI-TSA}
+  {Hsinchu, Taiwan, Apr. 22–25, 2024}
+\fi
+\publication{C1}
+  {\me, Yi-Ting Li, Kai-Po Hsu, Kuan-Ling Chou, You-Cheng Lin, Chia-Feng Chien, Tzu-Li Hsu, Yung-\br Chih Chen, Ting-Chi Wang, Shih-Chieh Chang, TingTing Hwang, Chun-Yao Wang}
+  {A Hybrid Approach to Reverse \br Engineering on Combinational Circuits}
+  {IEEE/ACM Design, Automation and Test in Europe}{DATE}
+  {Valencia, \br Spain, Mar. 25–27, 2024}
+}
+\ifallpapers\else\publicationsection\fi
+
+\cvsection[.12bp]{Work Experience}
+\row{\textbf{Giga Design Automation}}{Shanghai, Mainland China}
+\row{R\&D Intern in Logic Synthesis Group (SYN), PI: Dr. Yun Shao}{Jun. 2025 – Sep. 2025}
+\row[7.8bp]{\textbf{Shenzhen Research Institute, The Chinese University of Hong Kong}}{Shenzhen, Mainland China}
+\row{Assistant Researcher in Design Automation Laboratory, PI: Prof. Bei Yu}{Jan. 2024 – Mar. 2024}
+
+\cvsection{Teaching Experience}
+\row{\textbf{Teaching Assistant, National Tsing Hua University}}{Hsinchu, Taiwan}
+\course{Introduction to Programming}{Prof. Yu-Guang Chen, Department of Electrical Engineering}{Fall 2026}
+\course{Hardware Security}{Prof. Yu-Guang Chen and Prof. TingTing Hwang, Department of CS}{Spring 2026}
+\course{Advanced Logic Synthesis}{Prof. TingTing Hwang, Department of Computer Science}{Spring 2025, Spring 2026}
+\course{Introduction to Integrated Circuit Design}{Prof. Yu-Guang Chen, Department of Computer Science}{Fall 2025}
+\course{Computer Architecture}{Prof. TingTing Hwang, Department of Computer Science}{Fall 2024, Fall 2025}
+\course{Design Automation (I)}{Prof. Jeong-Tyng Li, College of Semiconductor Research}{Spring 2025}
+
+\cvsection[8.4bp]{Technical Skills}
+\row{\textbf{Programming:} Verilog, C/C++, CUDA, Python, Java, SQL, and MATLAB}{}
+\row[7.68bp]{\textbf{Certification:} Expert Level in Collegiate Programming Examination (certified by ACM-ICPC Taiwan Council)}{}
+\row[7.68bp]{\textbf{Language:} Fluent in English, Native in Mandarin (Proficient in Traditional and Simplified Chinese)}{}
+\ifallpapers\publicationsection\fi
+\end{document}

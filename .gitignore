@@ -11,3 +11,8 @@ Gemfile.lock
 # Ingore files created by npm
 node_modules
 package-lock.json
+
+# Local verification artifacts
+scripts/__pycache__/
+preview/external-links.json
+preview/text-200-percent.png

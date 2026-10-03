@@ -1,0 +1,77 @@
+{
+  "results": [
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "horizontalOverflow": false,
+      "navigation": "passed",
+      "bibliography": "passed",
+      "photoDialog": "passed",
+      "consoleErrors": 0
+    },
+    {
+      "viewport": "laptop",
+      "width": 1024,
+      "height": 768,
+      "horizontalOverflow": false,
+      "navigation": "passed",
+      "bibliography": "passed",
+      "photoDialog": "passed",
+      "consoleErrors": 0
+    },
+    {
+      "viewport": "tablet",
+      "width": 820,
+      "height": 1180,
+      "horizontalOverflow": false,
+      "navigation": "passed",
+      "bibliography": "passed",
+      "photoDialog": "passed",
+      "consoleErrors": 0
+    },
+    {
+      "viewport": "tablet-small",
+      "width": 768,
+      "height": 1024,
+      "horizontalOverflow": false,
+      "navigation": "passed",
+      "bibliography": "passed",
+      "photoDialog": "passed",
+      "consoleErrors": 0
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "horizontalOverflow": false,
+      "navigation": "passed",
+      "bibliography": "passed",
+      "photoDialog": "passed",
+      "consoleErrors": 0
+    },
+    {
+      "viewport": "mobile-small",
+      "width": 320,
+      "height": 568,
+      "horizontalOverflow": false,
+      "navigation": "passed",
+      "bibliography": "passed",
+      "photoDialog": "passed",
+      "consoleErrors": 0
+    },
+    {
+      "viewport": "mobile-landscape",
+      "width": 844,
+      "height": 390,
+      "horizontalOverflow": false,
+      "navigation": "passed",
+      "bibliography": "passed",
+      "photoDialog": "passed",
+      "consoleErrors": 0
+    }
+  ],
+  "textResize200Percent": "passed",
+  "noJavaScript": "passed",
+  "errors": []
+}
