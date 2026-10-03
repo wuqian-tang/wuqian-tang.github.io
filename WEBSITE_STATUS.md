@@ -20,7 +20,7 @@
 - 6 门助教课程先写教师，再写 Department of Computer Science、Department of Electrical Engineering 或 College of Semiconductor Research。
 - Teaching 中的助教获奖括号写获奖对应的学期，而不是颁发月份：Excellent 为 Spring 2026；Outstanding 为 Spring 2025、Fall 2025、Spring 2026。已逐张查看奖杯及三张奖状上的学期。
 - 31 个奖项相册，含 87 份原始奖状、照片、奖杯、奖牌及纪念牌文件，另有 24 张 PDF 奖状预览。所有原始文件按 SHA-256 校验；除用户授权转正的 2022 ICCAD PDF 外，其余原始字节保持不变，该 PDF 内嵌扫描图像也未重压缩。
-- 所有奖项均补上月份；合并条目展示时间范围，正文保留各次获奖月份。Awards 与相册的日期范围在 en dash 后固定换行；Education 和 Work Experience 的日期靠右、整段单行展示。实习经历补全起始年份。
+- 所有奖项均补上月份；合并条目展示时间范围，正文保留各次获奖月份。Awards 与相册的日期范围在 en dash 后固定换行；Education 和 Work Experience 的日期始终单行，电脑和平板靠右，手机（600px 及以下）放在条目上方靠左。实习经历补全起始年份。
 - 奖项标题字体、字号、字重、颜色一致。资源同行排列为 Materials: […] │ Announcements: […]，窄屏自然换行；删除比赛介绍与项目介绍，仅保留 31 个对应的公告链接（29 个不同 URL）。使用完整 Department 标签，多个题目/年份附简短区分。
 - Research 标题为 Research Interests，移除 Current Interests，导航仍为 Research；方向名称统一 Physical Design Automation，描述仍对应已有研究。最上方学科介绍全大写。
 - 首页奖项资源直接打开弹窗，电脑使用左右两侧圆形箭头，手机将箭头与张数放到照片下方；支持滑动淡入淡出动效、左右键、双向触控滑动、Escape 和焦点返回；右上角用圆形 × 图标关闭，没有 Previous / Next / Close 可见文字。PDF 奖状使用预览；保留相册页作为无 JavaScript 回退。2022 ICCAD 奖状的本地源 PDF、网站 PDF 和预览都已转正，删除了额外的页面旋转配置；其他图片遵循正确 EXIF 方向。
@@ -35,11 +35,11 @@
 - 本地奖状已提交并推送到 private 仓库 `wuqian-profile` 的 `main`，提交 `1337bbb`；该次提交只包含这一份奖状。网站副本和 JPEG 预览同步更新，公开 manifest 更新两个文件的 SHA-256。
 - 弹窗的翻页控制在电脑位于图片左右两侧，在手机位于图片下方，采用圆形轻描边按钮和细线 chevron SVG，只有箭头；关闭按钮采用同类圆形 X 图标。三个按钮都有英文 aria-label，手机触控区域至少 44px，支持左右滑动翻页。张数留在底部，单张图隐藏翻页控制及计数。
 - Hobbies 的 [Medal] 直接放在羽毛球获奖句末，不再使用单独的资源行。
-- 原头像右上角新增与左下角相同颜色、尺寸和线宽的角线。
+- 原头像右上角新增与左下角相同颜色和线宽的角线；最新调整将右上角缩短至左下角的一半，宽高分别为 29px / 58px。
 - 手机（600px 及以下）将 Hsinchu, Taiwan 放到邮箱下一行，地点图标与邮件图标、地点文字与邮箱文字分别左对齐；姓名与院校信息仍在头像右侧。
 - 分组标题采用 Materials / Announcements，保留现有资源顺序、方括号和浅灰竖线。
 - 甲骨文论文链接顺序改为 DOI、PDF、Journal；正式题名仍为 The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions。
-- 经历子标题改为 Work Experience，覆盖研究助理与企业实习。Education / Work Experience 日期在所有屏幕上靠右、单行显示。博士时间为 Sep 2023 – Expected Jul 2027，下方仅保留导师信息。
+- 经历子标题改为 Work Experience，覆盖研究助理与企业实习。Education / Work Experience 日期在电脑和平板上靠右、手机上靠左，均单行显示。博士时间为 Sep 2023 – Expected Jul 2027，下方仅保留导师信息。
 - 首页、相册和浏览器 favicon 统一使用经典繁方篆「唐」浅蓝色方印，采用真实字体原始轮廓，保存为 SVG，不依赖设备字体或远程字体请求；无白色内框。来源信息见 `THIRD_PARTY_NOTICES.md`，最新预览见 `preview/brand-preview.png`。
 
 ## 图标候选与弹窗动效（2026-10-03）
@@ -88,8 +88,8 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 
 1. **语言与姓名**：页面以英文为主，中文姓名只用繁体「唐梧遷」，置于姓名括号内。英文名统一 Wuqian Tang；引用作者名和正式机构名保持准确。
 2. **标题**：栏目与子标题采用 Title Case，例如 About Me、Recent News、Research Interests、Awards & Honors、Education & Experience、Work Experience、Hobbies。最上方学科介绍是唯一全大写的展示文字：COMPUTER SCIENCE · ELECTRONIC DESIGN AUTOMATION。导航保留 Research；方向名称用 Physical Design Automation。不得用 `text-transform: uppercase` 强制转换子标题。论文题名保持出版方原文，不为统一标题样式改写正式题名。
-3. **视觉**：白色背景、深色正文、蓝色链接，系统字体，无远程字体依赖。奖项标题统一 `--ink`、`.9375rem`、550 字重，不按获奖等级改成蓝色。
-4. **日期**：页面日期用英文三字母月份加年份，如 Sep 2026、May 2025；时间范围用 en dash（–），持续状态用 Present；Awards 和相册日期在 – 后固定换行，– 留在首行，两个日期段分别 nowrap，不将月份与年份拆开；Education / Work Experience 日期靠右单行显示，横杠两侧保留空格，不插入 br。资料保存完整的起止年份，如 Jun 2025–Sep 2025；多人次合并奖项在说明中列出实际月份。以证书、官方公告或经过核对的资料为依据。
+3. **视觉**：白色背景、深色正文、蓝色链接，系统字体，无远程字体依赖。奖项标题统一 `--ink`、`.9375rem`、550 字重，不按获奖等级改成蓝色。头像右上角线宽高均为 29px，左下角均为 58px；两处颜色均为 `#B5CBEA`、线宽均为 2px，形成非对称装饰。
+4. **日期**：页面日期用英文三字母月份加年份，如 Sep 2026、May 2025；时间范围用 en dash（–），持续状态用 Present；Awards 和相册日期在 – 后固定换行，– 留在首行，两个日期段分别 nowrap，不将月份与年份拆开；Education / Work Experience 日期在电脑和平板靠右、手机（600px 及以下）放在条目上方靠左，始终单行，横杠两侧保留空格，不插入 br。资料保存完整的起止年份，如 Jun 2025–Sep 2025；多人次合并奖项在说明中列出实际月份。以证书、官方公告或经过核对的资料为依据。
 5. **News**：当前只展示 2026 年，倒序排列，保持短句，右侧为 Latest Updates。句末使用方括号链接到具体图片/奖状或对应公告；媒体在首页弹窗展示，外部网页在新分页打开。不使用 TAPCO 正文跳转。助教新闻筛选正确学期，不把旧学期图片混入新新闻。
 6. **奖项**：标题保持普通深色文字。条目末尾同行展示 `Materials: [Certificate] [Plaques] [Trophy] [Medal] [Photos] │ Announcements: [Official] [News] [University] [College] [Department]`，只列实际存在的资源，按数量用正确单复数。同类多张合为一个链接；窄屏允许自然换行。Materials 表示可查看的奖状、奖杯、奖牌、纪念牌及活动照片；Announcements 表示与该奖项对应的官方结果、报道和公告。浅灰竖线分隔两组，不重复写 news 后缀。多个题目或年份使用 `[Department (A)]` / `[Department (2025)]`。删除 Contest Website / Program Details 类型的链接。Hobbies 只有句末的 [Medal]，不单独起一行；照片本身可点击，避免重复 [Photo]。
 7. **外部来源**：对应具体奖项与年份，确认本人姓名或队伍。优先官方结果、系所、学院、学校和政府；不把通用首页、其他团队的成绩或旧年份名单当获奖公告。全部 http/https 外部链接使用 `target="_blank" rel="noopener noreferrer"`，即使禁用 JavaScript 也保留此行为。内部锚点正常定位，邮件链接保持 mailto。
@@ -133,9 +133,11 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory site
 
 主页验证覆盖 1440×1000、1024×768、820×1180、768×1024、390×844、320×568、844×390；包含菜单、展开论文、图片弹窗、200% 字体和禁用 JavaScript。相册验证覆盖电脑、平板、手机和 320px 手机，包括 PDF 预览、左右键翻页、关闭、返回折叠奖项定位和无 JavaScript 原图访问。
 
-本轮新增验证涵盖首页所有 86 份资源链接的预览（另单独检查内嵌羽毛球照片）、资源顺序、所有外部链接的新分页属性与实际打开行为、助教新闻学期筛选、Awards 时间范围固定换行、Education / Work Experience 右侧单行日期与博士预计毕业时间、两种羽毛球裁切、手机横屏弹窗边界、键盘/触控翻页和无 JavaScript 相册回退。四种尺寸的补充检查核对头像双角线、篆体 SVG 图标、Materials / Announcements、Journal 链接末位、原生正向奖状与句末 [Medal]；390px 和 320px 另核对邮箱下一行的地点及左对齐。桌面与手机首页/相册及打开的桌面弹窗 WCAG 自动扫描均无报告项。33 个本地 HTML 页面的 556 处本地链接与图片引用、95 个外部锚点的新分页属性、公开文件清单及原始 SHA-256 均验证通过。
+本轮新增验证涵盖首页所有 86 份资源链接的预览（另单独检查内嵌羽毛球照片）、资源顺序、所有外部链接的新分页属性与实际打开行为、助教新闻学期筛选、Awards 时间范围固定换行、Education / Work Experience 单行日期与博士预计毕业时间、两种羽毛球裁切、手机横屏弹窗边界、键盘/触控翻页和无 JavaScript 相册回退。四种尺寸的补充检查核对头像双角线（右上 29px、左下 58px）、日期的电脑/平板右对齐与手机左对齐、篆体 SVG 图标、Materials / Announcements、Journal 链接末位、原生正向奖状与句末 [Medal]；390px 和 320px 另核对邮箱下一行的地点及左对齐。桌面与手机首页/相册及打开的桌面弹窗 WCAG 自动扫描均无报告项。33 个本地 HTML 页面的 556 处本地链接与图片引用、95 个外部锚点的新分页属性、公开文件清单及原始 SHA-256 均验证通过。
 
-结果见 `preview/validation.json`、`preview/gallery-validation.json`、`preview/revision-validation.json`、`preview/followup-validation.json`、`preview/accessibility.json`、`preview/viewer-motion-validation.json`；设备截图与裁切/奖状弹窗截图位于 `preview/`。部署后另用匿名访问核对首页、样式、脚本、方篆 SVG、转正奖状及预览、31 个相册、5 份论文 PDF 和所有 116 份 manifest 资产。屏幕尺寸模拟与自动扫描不能替代真实设备或人工阅读。
+结果见 `preview/validation.json`、`preview/gallery-validation.json`、`preview/revision-validation.json`、`preview/followup-validation.json`、`preview/accessibility.json`、`preview/viewer-motion-validation.json`、`preview/layout-refinement-validation.json`；设备截图与裁切/奖状弹窗截图位于 `preview/`。部署后另用匿名访问核对首页、样式、脚本、方篆 SVG、转正奖状及预览、31 个相册、5 份论文 PDF 和所有 116 份 manifest 资产。屏幕尺寸模拟与自动扫描不能替代真实设备或人工阅读。
+
+最新布局补充验证覆盖 1440px、820px、390px、320px、600px 和 601px：五条教育/工作日期均为单行，600px 及以下左对齐，以上右对齐；右上角线宽高为左下角的一半，颜色和线宽一致；所有尺寸无横向溢出。已刷新电脑、平板、手机首页及 Education & Experience 截图，并人工查看手机日期与头像装饰。
 
 本轮动效验收另覆盖电脑、平板、手机、320px 手机和手机横屏的动画帧、控件位置、连续翻页、双向滑动、键盘 Enter 激活、关闭重开、相册页、慢速加载和减少动态效果；电脑 / 手机打开的弹窗可访问性扫描通过。
 

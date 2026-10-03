@@ -1,0 +1,340 @@
+{
+  "date": "2026-10-03",
+  "timelineDatesSingleLine": "passed",
+  "phoneDatesLeftAligned": "passed",
+  "desktopAndTabletDatesRightAligned": "passed",
+  "upperRightPortraitCornerHalfLength": "passed",
+  "results": [
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "dateAlignment": "right",
+      "dates": [
+        {
+          "text": "Sep 2023 – Expected Jul 2027",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Sep 2021 – Jul 2023",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Sep 2017 – Jun 2021",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Jun 2025 – Sep 2025",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Jan 2024 – Mar 2024",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        }
+      ],
+      "portraitCorners": {
+        "upperRight": {
+          "width": "29px",
+          "height": "29px"
+        },
+        "lowerLeft": {
+          "width": "58px",
+          "height": "58px"
+        },
+        "matchingColor": true,
+        "matchingLineWeight": true
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "tablet",
+      "width": 820,
+      "dateAlignment": "right",
+      "dates": [
+        {
+          "text": "Sep 2023 – Expected Jul 2027",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Sep 2021 – Jul 2023",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Sep 2017 – Jun 2021",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Jun 2025 – Sep 2025",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Jan 2024 – Mar 2024",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        }
+      ],
+      "portraitCorners": {
+        "upperRight": {
+          "width": "29px",
+          "height": "29px"
+        },
+        "lowerLeft": {
+          "width": "58px",
+          "height": "58px"
+        },
+        "matchingColor": true,
+        "matchingLineWeight": true
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "dateAlignment": "left",
+      "dates": [
+        {
+          "text": "Sep 2023 – Expected Jul 2027",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Sep 2021 – Jul 2023",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Sep 2017 – Jun 2021",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Jun 2025 – Sep 2025",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Jan 2024 – Mar 2024",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        }
+      ],
+      "portraitCorners": {
+        "upperRight": {
+          "width": "29px",
+          "height": "29px"
+        },
+        "lowerLeft": {
+          "width": "58px",
+          "height": "58px"
+        },
+        "matchingColor": true,
+        "matchingLineWeight": true
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile-small",
+      "width": 320,
+      "dateAlignment": "left",
+      "dates": [
+        {
+          "text": "Sep 2023 – Expected Jul 2027",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Sep 2021 – Jul 2023",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Sep 2017 – Jun 2021",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Jun 2025 – Sep 2025",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Jan 2024 – Mar 2024",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        }
+      ],
+      "portraitCorners": {
+        "upperRight": {
+          "width": "29px",
+          "height": "29px"
+        },
+        "lowerLeft": {
+          "width": "58px",
+          "height": "58px"
+        },
+        "matchingColor": true,
+        "matchingLineWeight": true
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile-breakpoint",
+      "width": 600,
+      "dateAlignment": "left",
+      "dates": [
+        {
+          "text": "Sep 2023 – Expected Jul 2027",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Sep 2021 – Jul 2023",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Sep 2017 – Jun 2021",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Jun 2025 – Sep 2025",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Jan 2024 – Mar 2024",
+          "align": "left",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        }
+      ],
+      "portraitCorners": {
+        "upperRight": {
+          "width": "29px",
+          "height": "29px"
+        },
+        "lowerLeft": {
+          "width": "58px",
+          "height": "58px"
+        },
+        "matchingColor": true,
+        "matchingLineWeight": true
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "above-mobile-breakpoint",
+      "width": 601,
+      "dateAlignment": "right",
+      "dates": [
+        {
+          "text": "Sep 2023 – Expected Jul 2027",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Sep 2021 – Jul 2023",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Sep 2017 – Jun 2021",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Jun 2025 – Sep 2025",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        },
+        {
+          "text": "Jan 2024 – Mar 2024",
+          "align": "right",
+          "whiteSpace": "nowrap",
+          "edgeOffset": 0,
+          "lineCount": 1
+        }
+      ],
+      "portraitCorners": {
+        "upperRight": {
+          "width": "29px",
+          "height": "29px"
+        },
+        "lowerLeft": {
+          "width": "58px",
+          "height": "58px"
+        },
+        "matchingColor": true,
+        "matchingLineWeight": true
+      },
+      "horizontalOverflow": false
+    }
+  ],
+  "errors": []
+}
