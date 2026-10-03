@@ -153,6 +153,7 @@
         opener = link;
         currentPhotos = items;
         navigation.hidden = items.length < 2;
+        counter.hidden = items.length < 2;
         dialog.classList.toggle('has-gallery', items.length > 1);
         document.body.classList.add('viewer-open');
         dialog.showModal();

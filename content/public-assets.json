@@ -312,12 +312,13 @@
   },
   {
     "path": "assets/awards/iccad-contest-2022/certificate-1.pdf",
-    "sha256": "3454c8154f51fc3350df1428df89824561a5521fab30b93491d96cbc9e7c5491",
-    "source": "2022-10-30_ICCAD_CAD_Contest_Problem_A_1st_Place/Certificate_2022_ICCAD_CAD_Contest_Problem_A_1st_Place_EN.pdf"
+    "sha256": "f78a783aff1a8e4cb1604f385af33f49fd4692b376e1bd392a6853afbcee7aff",
+    "source": "2022-10-30_ICCAD_CAD_Contest_Problem_A_1st_Place/Certificate_2022_ICCAD_CAD_Contest_Problem_A_1st_Place_EN.pdf",
+    "normalization": "PDF page rotation set to 270 degrees to display upright; embedded image streams preserved; authorized 2026-10-03"
   },
   {
     "path": "assets/awards/iccad-contest-2022/certificate-1-preview.jpg",
-    "sha256": "5e345aeacad1594ec034021168c895ab9bf916a73c62766ffe6ab3fe651be40a"
+    "sha256": "2eb1c89714f1031dc370ad07ccfef03e4f681ec01fa2bf024189a5be141b1eca"
   },
   {
     "path": "assets/awards/iccad-contest-2022/plaque-1.jpg",

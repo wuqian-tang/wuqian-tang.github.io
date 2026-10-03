@@ -106,10 +106,10 @@ def award_links(a, local_gallery=False, kinds=None, headings=True):
         if count and (kinds is None or kind in kinds):
             href = f'#{group}' if local_gallery else f'awards/{a["id"]}.html#{group}'
             links.append(media_link(a, kind, count, href))
-    media = ('<span class="resource-label">Media:</span> ' if headings and links else '') + ' '.join(links)
+    media = ('<span class="resource-label">Materials:</span> ' if headings and links else '') + ' '.join(links)
     news = ' '.join(announcement_link(a, link) for link in a.get('links', []))
     if news and headings:
-        news = '<span class="resource-label">News:</span> ' + news
+        news = '<span class="resource-label">Announcements:</span> ' + news
     divider = ' <span class="resource-divider" aria-hidden="true">│</span> ' if media and news else ''
     return '<div class="award-links">' + media + divider + news + '</div>'
 
@@ -136,7 +136,8 @@ def gallery(a, profile):
 
 def timeline(item):
     detail = '<p class="timeline-detail">' + esc(item['detail']) + '</p>' if item.get('detail') else ''
-    return f'<article class="timeline-item"><div class="timeline-top"><h4>{esc(item["title"])}</h4><span class="timeline-date">{date_range(item["date"])}</span></div><p class="timeline-institution">{esc(item["institution"])}</p>{detail}</article>'
+    date = esc(re.sub(r'\s*–\s*', ' – ', item['date']))
+    return f'<article class="timeline-item"><div class="timeline-top"><h4>{esc(item["title"])}</h4><span class="timeline-date">{date}</span></div><p class="timeline-institution">{esc(item["institution"])}</p>{detail}</article>'
 
 def render():
     p = json.loads((ROOT / 'content/profile.json').read_text())
@@ -197,14 +198,14 @@ def render():
         AWARDS=''.join(award(a) for a in p['awards']), EARLIER_AWARDS=''.join(award(a) for a in p['earlier_awards']),
         EDUCATION=''.join(timeline(item) for item in p['education']), EXPERIENCE=''.join(timeline(item) for item in p['experience']),
         COURSES=''.join(f'<li><div><p class="course-name">{esc(c["title"])}</p><p class="course-instructors">{esc(c["instructors"])} · <span class="course-department">{esc(c["department"])}</span></p></div><p class="course-terms">{esc(c["terms"])}</p></li>' for c in p['courses']),
-        BADMINTON_LINKS=award_links(p['personal_awards'][0], kinds=['medal'], headings=False),
+        BADMINTON_LINKS=media_link(p['personal_awards'][0], 'medal', 1, 'awards/badminton-2025.html#medals'),
         MEDIA_DATA=json.dumps(registry, ensure_ascii=False).replace('<', '\\u003c'),
         BADMINTON_ICON=icon('badminton'), SWIM_ICON=icon('swim'), TABLE_TENNIS_ICON=icon('tabletennis'))
     index = Template((ROOT / 'content/homepage.html').read_text()).substitute(values)
     missing = re.findall(r'\$\{\w+\}', index)
     if missing:
         raise ValueError(f'Unrendered content: {missing}')
-    not_found = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Wuqian Tang</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/css/main.css"></head><body><main style="max-width:600px;margin:15vh auto;padding:24px"><p class="eyebrow">404</p><h1 style="margin:16px 0">Page not found</h1><p>The page may have moved. You can find my research, publications, and contact details on my homepage.</p><p style="margin-top:24px"><a href="/">Return to homepage</a></p></main></body></html>\n'
+    not_found = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Wuqian Tang</title><link rel="icon" href="/assets/favicon.svg?v=20261003-seal"><link rel="stylesheet" href="/assets/css/main.css"></head><body><main style="max-width:600px;margin:15vh auto;padding:24px"><p class="eyebrow">404</p><h1 style="margin:16px 0">Page not found</h1><p>The page may have moved. You can find my research, publications, and contact details on my homepage.</p><p style="margin-top:24px"><a href="/">Return to homepage</a></p></main></body></html>\n'
     sitemap = f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{esc(p["site_url"])}/</loc><lastmod>{esc(p["updated"])}</lastmod></url></urlset>\n'
     pages = {'index.html':index, '404.html':not_found, '.nojekyll':'', 'robots.txt':f'User-agent: *\nAllow: /\nSitemap: {p["site_url"]}/sitemap.xml\n', 'sitemap.xml':sitemap}
     for a in p['awards'] + p['earlier_awards'] + p['personal_awards']:

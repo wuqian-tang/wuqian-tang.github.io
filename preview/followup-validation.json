@@ -1,0 +1,55 @@
+{
+  "results": [
+    {
+      "viewport": "desktop",
+      "portraitCorners": "passed",
+      "sealBrandAndFavicon": "passed",
+      "journalLinkOrder": "passed",
+      "resourceHeadings": "passed",
+      "workExperienceHeading": "passed",
+      "nativeCertificateOrientation": "passed",
+      "timelineDatesAndExpectedGraduation": "passed",
+      "inlineMedal": "passed",
+      "mobileContactLayout": "not applicable"
+    },
+    {
+      "viewport": "tablet",
+      "portraitCorners": "passed",
+      "sealBrandAndFavicon": "passed",
+      "journalLinkOrder": "passed",
+      "resourceHeadings": "passed",
+      "workExperienceHeading": "passed",
+      "nativeCertificateOrientation": "passed",
+      "timelineDatesAndExpectedGraduation": "passed",
+      "inlineMedal": "passed",
+      "mobileContactLayout": "not applicable"
+    },
+    {
+      "viewport": "mobile",
+      "portraitCorners": "passed",
+      "sealBrandAndFavicon": "passed",
+      "journalLinkOrder": "passed",
+      "resourceHeadings": "passed",
+      "workExperienceHeading": "passed",
+      "nativeCertificateOrientation": "passed",
+      "timelineDatesAndExpectedGraduation": "passed",
+      "inlineMedal": "passed",
+      "mobileContactLayout": "passed"
+    },
+    {
+      "viewport": "mobile-small",
+      "portraitCorners": "passed",
+      "sealBrandAndFavicon": "passed",
+      "journalLinkOrder": "passed",
+      "resourceHeadings": "passed",
+      "workExperienceHeading": "passed",
+      "nativeCertificateOrientation": "passed",
+      "timelineDatesAndExpectedGraduation": "passed",
+      "inlineMedal": "passed",
+      "mobileContactLayout": "passed"
+    }
+  ],
+  "noJavaScriptNativeCertificate": "passed",
+  "desktopAwardLinksOneLine": "passed",
+  "errors": []
+}

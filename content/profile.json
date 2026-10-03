@@ -552,12 +552,12 @@
           "url": "https://doi.org/10.6853/DADH.202504_(15).0001"
         },
         {
-          "label": "Journal",
-          "url": "https://tadh.org.tw/2025/09/14/jdadh_v15/"
-        },
-        {
           "label": "PDF",
           "url": "files/papers/J2-Oracle-Bone.pdf"
+        },
+        {
+          "label": "Journal",
+          "url": "https://tadh.org.tw/2025/09/14/jdadh_v15/"
         }
       ],
       "doi_verified_on": "2026-10-03",
@@ -569,8 +569,8 @@
     {
       "title": "Ph.D. in Computer Science",
       "institution": "National Tsing Hua University",
-      "date": "Sep 2023 – Present",
-      "detail": "Expected Jul 2027 · Advised by Prof. Chun-Yao Wang and Prof. Bei Yu (CUHK)"
+      "date": "Sep 2023 – Expected Jul 2027",
+      "detail": "Advised by Prof. Chun-Yao Wang and Prof. Bei Yu (CUHK)"
     },
     {
       "title": "M.S. in Computer Science",
@@ -917,12 +917,12 @@
           "description": "College of Semiconductor Research announcement"
         },
         {
-          "label": "Department (Problem A)",
+          "label": "Department (A)",
           "url": "https://dcs.site.nthu.edu.tw/p/406-1174-298767,r109.php",
           "description": "Problem A department announcement"
         },
         {
-          "label": "Department (Problem C)",
+          "label": "Department (C)",
           "url": "https://dcs.site.nthu.edu.tw/p/406-1174-298768,r109.php",
           "description": "Problem C department announcement"
         }
@@ -1103,12 +1103,12 @@
           "description": "Official NTHU newsletter containing the college award announcement"
         },
         {
-          "label": "Department (Problem A)",
+          "label": "Department (A)",
           "url": "https://dcs.site.nthu.edu.tw/p/406-1174-278751,r109.php",
           "description": "Problem A department announcement"
         },
         {
-          "label": "Department (Problem B)",
+          "label": "Department (B)",
           "url": "https://dcs.site.nthu.edu.tw/p/406-1174-278744,r109.php",
           "description": "Problem B department announcement"
         }
@@ -1379,8 +1379,7 @@
           "caption": "Certificate · 2022-10-30 · Problem A · English",
           "preview": "assets/awards/iccad-contest-2022/certificate-1-preview.jpg",
           "width": 1800,
-          "height": 2330,
-          "rotation": -90
+          "height": 1391
         },
         {
           "kind": "plaque",
