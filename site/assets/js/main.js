@@ -6,6 +6,33 @@
 
   const profile = document.querySelector('.profile');
   const header = document.querySelector('.site-header');
+  let scrollAnchor = Math.max(0, window.scrollY);
+  const showHeader = () => {
+    header?.classList.remove('is-hidden');
+    scrollAnchor = Math.max(0, window.scrollY);
+  };
+  if (header) {
+    let scrollFramePending = false;
+    const updateHeader = () => {
+      scrollFramePending = false;
+      const currentY = Math.max(0, window.scrollY);
+      if (!smallScreen.matches || nav?.classList.contains('is-open') || currentY <= header.offsetHeight + 24) {
+        showHeader();
+        return;
+      }
+      // Accumulate small movements before changing direction to avoid flicker.
+      if (Math.abs(currentY - scrollAnchor) < 12) return;
+      header.classList.toggle('is-hidden', currentY > scrollAnchor);
+      scrollAnchor = currentY;
+    };
+    window.addEventListener('scroll', () => {
+      if (scrollFramePending) return;
+      scrollFramePending = true;
+      window.requestAnimationFrame(updateHeader);
+    }, { passive: true });
+    smallScreen.addEventListener('change', showHeader);
+    header.addEventListener('focusin', showHeader);
+  }
   if (profile && header && 'ResizeObserver' in window) {
     const syncProfile = () => profile.classList.toggle('is-tall', profile.scrollHeight + header.offsetHeight + 40 > window.innerHeight);
     const resizeObserver = new ResizeObserver(syncProfile);
@@ -20,6 +47,8 @@
     const closeMenu = () => {
       nav.classList.remove('is-open');
       toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open navigation menu');
+      showHeader();
     };
     const syncMenu = () => {
       toggle.hidden = !smallScreen.matches;
@@ -30,6 +59,8 @@
     toggle.addEventListener('click', () => {
       const open = nav.classList.toggle('is-open');
       toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+      showHeader();
     });
     nav.addEventListener('click', event => {
       const link = event.target.closest('a');

@@ -1,0 +1,102 @@
+{
+  "dimensions": [
+    1200,
+    630
+  ],
+  "nameOnOneLine": true,
+  "departmentAboveSchool": true,
+  "researchOnOneLine": true,
+  "portraitTextGap": 84,
+  "portraitLeft": 68,
+  "homepageFontSize": 32,
+  "footerFontSize": 30,
+  "layout": {
+    "heading": {
+      "x": 422,
+      "y": 160.859375,
+      "width": 730,
+      "height": 90.1875,
+      "right": 1152,
+      "bottom": 251.046875
+    },
+    "nameLine": {
+      "x": 422,
+      "y": 159.859375,
+      "width": 479.640625,
+      "height": 91,
+      "right": 901.640625,
+      "bottom": 250.859375
+    },
+    "portrait": {
+      "x": 68,
+      "y": 121,
+      "width": 270,
+      "height": 394,
+      "right": 338,
+      "bottom": 515
+    },
+    "copy": {
+      "x": 422,
+      "y": 160.859375,
+      "width": 730,
+      "height": 314.28125,
+      "right": 1152,
+      "bottom": 475.140625
+    },
+    "department": {
+      "x": 422,
+      "y": 316.046875,
+      "width": 730,
+      "height": 42,
+      "right": 1152,
+      "bottom": 358.046875
+    },
+    "school": {
+      "x": 422,
+      "y": 362.046875,
+      "width": 730,
+      "height": 47.59375,
+      "right": 1152,
+      "bottom": 409.640625
+    },
+    "research": {
+      "x": 422,
+      "y": 431.640625,
+      "width": 730,
+      "height": 43.5,
+      "right": 1152,
+      "bottom": 475.140625
+    },
+    "researchLine": {
+      "x": 422,
+      "y": 436.640625,
+      "width": 558.59375,
+      "height": 33,
+      "right": 980.59375,
+      "bottom": 469.640625
+    },
+    "footer": {
+      "x": 48,
+      "y": 547,
+      "width": 1104,
+      "height": 53,
+      "right": 1152,
+      "bottom": 600
+    },
+    "text": "Wuqian Tang",
+    "departmentText": "Department of Computer Science",
+    "researchText": "Electronic Design Automation · AI for EDA",
+    "homepageFontSize": "32px",
+    "footerFontSize": "30px",
+    "overflow": false
+  },
+  "lineTest": {
+    "device": "Android LINE",
+    "originalUrl": "title and description without image",
+    "freshUrl": "https://wuqian-tang.github.io/?share=line-20261003a",
+    "result": "User confirmed image appears before this image revision",
+    "inference": "Original URL preview cache is the likely cause"
+  },
+  "imageFile": "assets/images/social-preview-20261003-v2.png",
+  "imageBytes": 158689
+}

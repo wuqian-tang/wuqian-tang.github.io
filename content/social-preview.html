@@ -6,27 +6,28 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
 body { background: #fff; color: #1c283a; font-family: Arial, "Helvetica Neue", sans-serif; }
-.canvas { position: relative; width: 1200px; height: 630px; padding: 56px 72px; }
-.brand { display: flex; align-items: center; gap: 13px; color: #526174; font-size: 17px; }
-.brand img { width: 35px; height: 35px; }
-.content { display: flex; align-items: center; gap: 52px; margin-top: 57px; }
-.portrait-wrap { position: relative; flex: 0 0 228px; width: 228px; }
-.portrait { width: 228px; height: 333px; object-fit: cover; border-radius: 13px; display: block; }
+.canvas { position: relative; width: 1200px; height: 630px; padding: 40px 48px; }
+.brand { display: flex; align-items: center; gap: 15px; color: #526174; font-size: 32px; }
+.brand img { width: 48px; height: 48px; }
+.content { display: flex; align-items: center; gap: 84px; margin-top: 33px; padding-left: 20px; }
+.portrait-wrap { position: relative; flex: 0 0 270px; width: 270px; }
+.portrait { width: 270px; height: 394px; object-fit: cover; border-radius: 13px; display: block; }
 .portrait-wrap::before { content: ""; position: absolute; top: -11px; right: -11px; width: 29px; height: 29px; border-top: 2px solid #b5cbea; border-right: 2px solid #b5cbea; border-top-right-radius: 13px; }
 .portrait-wrap::after { content: ""; position: absolute; bottom: -11px; left: -11px; width: 58px; height: 58px; border-bottom: 2px solid #b5cbea; border-left: 2px solid #b5cbea; border-bottom-left-radius: 13px; }
 .copy { min-width: 0; flex: 1; }
-h1 { margin: 0 0 20px; font-size: 70px; font-weight: 700; letter-spacing: -2.5px; line-height: 1.1; }
-.role { margin: 0 0 11px; font-size: 24px; color: #2458ad; }
-.institution { margin: 0; font-size: 27px; line-height: 1.4; }
-.research { margin: 32px 0 0; font-size: 22px; line-height: 1.6; color: #526174; white-space: nowrap; }
-.footer { position: absolute; bottom: 47px; left: 72px; right: 72px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #e4e9f0; padding-top: 21px; font-size: 17px; color: #526174; }
+h1 { margin: 0 0 16px; font-size: 82px; font-weight: 700; letter-spacing: -2.5px; line-height: 1.1; white-space: nowrap; }
+.role { margin: 0 0 12px; font-size: 32px; color: #2458ad; }
+.department { margin: 0 0 4px; font-size: 30px; line-height: 1.4; color: #526174; }
+.institution { margin: 0; font-size: 34px; line-height: 1.4; }
+.research { margin: 22px 0 0; font-size: 30px; line-height: 1.45; color: #526174; white-space: nowrap; }
+.footer { position: absolute; bottom: 30px; left: 48px; right: 48px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #e4e9f0; padding-top: 18px; font-size: 30px; color: #526174; }
 .footer span:first-child { color: #2458ad; }
 </style>
 <div class="canvas">
-  <div class="brand"><img src="../site/assets/brand.svg" alt=""><span>Academic Homepage</span></div>
+  <div class="brand"><img src="../site/assets/brand.svg" alt=""><span>Homepage</span></div>
   <div class="content">
     <div class="portrait-wrap"><img class="portrait" src="../site/assets/images/profile.jpg" alt="Portrait of Wuqian Tang"></div>
-    <div class="copy"><h1>Wuqian Tang</h1><p class="role">Ph.D. Candidate</p><p class="institution">National Tsing Hua University (NTHU)</p><p class="research">Electronic Design Automation · Logic Synthesis · AI for EDA</p></div>
+    <div class="copy"><h1>Wuqian Tang</h1><p class="role">Ph.D. Candidate</p><p class="department">Department of Computer Science</p><p class="institution">National Tsing Hua University (NTHU)</p><p class="research">Electronic Design Automation · AI for EDA</p></div>
   </div>
   <div class="footer"><span>wuqian-tang.github.io</span><span>Hsinchu, Taiwan</span></div>
 </div>

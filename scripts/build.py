@@ -85,7 +85,7 @@ def publication(p, citation):
     copy_icon = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg>'
     # A native disclosure preserves access to citations without JavaScript.
     # The browser script enhances it to a one-click copy button in the same position.
-    links += f'<details class="citation-fallback" data-citation="{esc(p["id"])}"><summary class="bibtex-button" aria-label="BibTeX citation for {esc(p["title"])}">{copy_icon}<span>BibTeX</span></summary><pre tabindex="0"><code>{esc(citation["bibtex"])}</code></pre></details>'
+    links += f'<details class="citation-fallback" data-citation="{esc(p["id"])}"><summary class="bibtex-button" aria-label="BibTeX citation for {esc(p["title"])}">{copy_icon}<span data-default-label="BibTeX">BibTeX</span></summary><pre tabindex="0"><code>{esc(citation["bibtex"])}</code></pre></details>'
     status = f'<span class="publication-status">{esc(p["status"])}</span>' if p.get('status') else ''
     return f'''<article class="publication" id="paper-{esc(p['id'])}">
       <div class="publication-meta"><span class="venue-badge">{esc(p['acronym'])} {p['year']}</span><span class="publication-label">[{esc(p['label'])}]</span>{status}</div>
@@ -134,7 +134,7 @@ def gallery(a, profile):
             crop = item.get('crop_top', 0)
             cards += f'''<figure class="gallery-card"><a class="gallery-image-link" href="{esc(preview)}" data-media="{esc(a['id'] + ':' + kind)}" data-media-index="{i-1}" aria-label="View {esc(caption)} {i} for {esc(a['title'])}"><img src="{esc(preview)}" alt="{esc(caption + ' for ' + a['title'])}" data-display-rotation="{rotation}" data-display-crop="{crop}" loading="lazy" decoding="async" width="{item['width']}" height="{item['height']}"></a><figcaption><span>{esc(caption)}</span><a href="{esc(original)}" target="_blank" rel="noopener noreferrer">View Original</a></figcaption></figure>'''
         sections += f'<section class="gallery-section" id="{group}" aria-labelledby="{group}-title"><h2 id="{group}-title">{plural}<span class="gallery-count">{len(items)}</span></h2><div class="award-gallery-grid">{cards}</div></section>'
-    values = dict(NAME=esc(profile['name']), SITE_URL=esc(profile['site_url']), TITLE=esc(a['title']), DATE=date_range(a['date']), DETAIL=esc(a['detail']),
+    values = dict(NAME=esc(profile['name']), DEPARTMENT=esc(profile['department']), SITE_URL=esc(profile['site_url']), TITLE=esc(a['title']), DATE=date_range(a['date']), DETAIL=esc(a['detail']),
         CANONICAL=esc(profile['site_url'] + '/awards/' + a['id'] + '.html'),
         HOME=esc('../#award-' + a['id']), LINKS=award_links(a, local_gallery=True), SECTIONS=sections,
         MEDIA_DATA=json.dumps(media_data([a], '../'), ensure_ascii=False).replace('<', '\\u003c'))

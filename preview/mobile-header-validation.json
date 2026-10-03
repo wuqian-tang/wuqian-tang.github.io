@@ -1,0 +1,103 @@
+{
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "iconOnly": true,
+      "touchTarget": [
+        46,
+        46
+      ],
+      "swipeUpHidesAndSwipeDownShows": true,
+      "smoothSlide": true,
+      "noLayoutShift": true,
+      "smallScrollBuffer": true,
+      "expandedMenuRemainsVisible": true,
+      "closeResumesAutoHide": true,
+      "keyboardFocusRevealsHeader": true,
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "iconOnly": true,
+      "touchTarget": [
+        46,
+        46
+      ],
+      "swipeUpHidesAndSwipeDownShows": true,
+      "smoothSlide": true,
+      "noLayoutShift": true,
+      "smallScrollBuffer": true,
+      "expandedMenuRemainsVisible": true,
+      "closeResumesAutoHide": true,
+      "keyboardFocusRevealsHeader": true,
+      "noOverflow": true
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "iconOnly": true,
+      "touchTarget": [
+        46,
+        46
+      ],
+      "swipeUpHidesAndSwipeDownShows": true,
+      "smoothSlide": true,
+      "noLayoutShift": true,
+      "smallScrollBuffer": true,
+      "expandedMenuRemainsVisible": true,
+      "closeResumesAutoHide": true,
+      "keyboardFocusRevealsHeader": true,
+      "noOverflow": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "iconOnly": true,
+      "touchTarget": [
+        46,
+        46
+      ],
+      "swipeUpHidesAndSwipeDownShows": true,
+      "smoothSlide": true,
+      "noLayoutShift": true,
+      "smallScrollBuffer": true,
+      "expandedMenuRemainsVisible": true,
+      "closeResumesAutoHide": true,
+      "keyboardFocusRevealsHeader": true,
+      "noOverflow": true
+    },
+    {
+      "width": 999,
+      "height": 768,
+      "iconOnly": true,
+      "touchTarget": [
+        46,
+        46
+      ],
+      "swipeUpHidesAndSwipeDownShows": true,
+      "smoothSlide": true,
+      "noLayoutShift": true,
+      "smallScrollBuffer": true,
+      "expandedMenuRemainsVisible": true,
+      "closeResumesAutoHide": true,
+      "keyboardFocusRevealsHeader": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1000,
+      "height": 768,
+      "desktopHeaderRemainsVisible": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "desktopHeaderRemainsVisible": true
+    }
+  ],
+  "errors": [],
+  "reducedMotion": true,
+  "galleryHeader": true,
+  "noJavaScriptNavigation": true
+}

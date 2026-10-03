@@ -52,10 +52,19 @@
 - ORCID 已通过官方公开记录核对：姓名 Wuqian Tang、CB-EVO 的 `10.1145/3779431` 与 GLSVLSI 的 `10.1145/3716368.3735193` 均匹配，出版方提交的 Crossref 作者记录也一致。链接 `https://orcid.org/0009-0008-5042-5062` 加入个人链接和 Person `sameAs`；来源为 `https://pub.orcid.org/v3.0/0009-0008-5042-5062/record`，核对日期 2026-10-03。
 - Teaching 导航位于 Experience 与 Hobbies 之间，复用已有桌面导航和手机菜单。修复手机横屏的当前栏目高亮：观察区域改按屏幕高度计算像素，同时包含锚点留白，窗口尺寸改变后重新计算；百分比 rootMargin 按宽度解析的依据见 [Intersection Observer 规范](https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-rootmargin)。
 
+## LINE 预览、分享图及手机导航修订（2026-10-03）
+
+- 用户在 Android LINE 测试原主页地址时有标题和说明、没有图片；在本轮图片修订部署前，新发 `?share=line-20261003a` 后确认图片出现。网站静态 og:title / og:description / og:image 完整，模拟 Linespider 请求的主页、图片均返回 HTTP 200，PNG 为 RGB、1200×630、无透明通道。新地址与原地址返回同一份页面，这支持旧网址预览缓存是主要原因；不能声称已从 LINE 服务端清除原地址缓存或承诺固定刷新时间。
+- 根据用户最后补充，分享图只显示英文姓名 Wuqian Tang，不显示括号中文；网页简介中的中文姓名保留。学校上方增加 Department of Computer Science。头像由 228×333 放大到 270×394；英文姓名 70px → 82px、博士身份 32px、系所 30px、学校 34px、研究方向 30px；外侧留白收紧到左右 48px、顶部 40px。研究方向移除 Logic Synthesis，统一单行为 Electronic Design Automation · AI for EDA。照片与文字的间距从预览的 38px 增为 84px；照片向右移 20px，左侧起点为 68px。左上 Homepage 从 23px 增为 32px，底部网址和地名从 23px 增为 30px；全部文字无截断。
+- 分享标题为 `Wuqian Tang | Homepage`；摘要为 `CS Ph.D. Candidate at National Tsing Hua University.`。删除 Learning and optimization 及后续研究介绍；Open Graph 与 Twitter 描述一致。分享图左上角也简化为 Homepage。浏览器页面标题及搜索 description 保持原来的学术信息。
+- 首页和全部 31 个相册改用版本化图片 `assets/images/social-preview-20261003-v2.png`，1200×630、158,689 bytes；原 `social-preview.png` 同步为相同内容，保留旧地址可访问。两个文件的 SHA-256 更新到 manifest，清单目前 205 份。新版 LINE 测试地址为 `https://wuqian-tang.github.io/?share=line-20261003-v2`；平台已生成的旧消息卡片不一定追随网页立即更新。
+- 手机／平板菜单布局（999px 及以下）删除可见 Menu，只留三横线；按钮 46×46px，Open / Close navigation menu 的 aria-label 随状态更新。向上滑动阅读页面下方时隐藏整条页首导航，往下拖动返回上方时显示；260ms 缓动平移、不改变正文布局，12px 累积阈值避免微小滑动导致闪动。展开菜单时固定显示，关闭后恢复自动收放；靠近页面顶部、键盘焦点进入页首时也显示。减少动态效果时取消动画；桌面保持显示，相册页首采用相同手机收放行为。
+- 首页和相册的 CSS / JS 地址加版本参数 `20261003-mobile-nav`，使新 HTML 请求本轮样式与脚本。
+
 ## BibTeX 引用复制（2026-10-03）
 
 - 21 篇论文全部提供 BibTeX，Selected Publications 与 More Publications 均覆盖。按钮统一位于每篇资源行末尾，包括甲骨文论文 Journal 之后；不调整原有链接顺序。
-- 按钮沿用蓝色细边框、小圆角，左侧 14px 细线叠纸 SVG。成功复制后显示勾号与 Copied，2 秒后恢复，宽高固定；手机端资源控件至少 44px 高。复制直接使用内嵌引用文本，不发起外部请求、不跳转、不提供下载按钮。
+- 按钮沿用蓝色细边框、小圆角，左侧 14px 细线叠纸 SVG。最新样式将图标与文字间距缩至 0.2rem，内边距与 DOI / PDF 统一为上下 0.04rem、左右 0.45rem；移除 88px 最小宽度，仅在标签内为 BibTeX / Copied 保留所需文字宽度。成功复制后显示勾号与 Copied，2 秒后恢复，宽高不变；手机端资源控件至少 44px 高。复制直接使用内嵌引用文本，不发起外部请求、不跳转、不提供下载按钮。
 - 复制失败或浏览器缺少 Clipboard API 时，展示与现有弹窗配色一致的 BibTeX Citation 窗口，列出论文题名与只读引用文本，自动选中代码，提供 Copy 重试、圆形关闭按钮与 Escape；关闭后焦点返回该篇按钮。更换论文或关闭窗口时清除旧的复制反馈，防止新引用显示上一次的 Copied。
 - 禁用 JavaScript 时通过原生 details 展开代码，不展示失效的复制按钮。缺少原生 dialog 支持时也回退到条目中的引用文本。
 - 数据保存于 `content/citations.json`，每篇包含完整 BibTeX、核对日期和来源。15 篇根据出版方提交的 Crossref 元数据核对作者、题名、刊会名及页码；J1 的 Article 119 补查正式 PDF。TAPCO、HyPAS 与甲骨文论文使用仓库中的最终 PDF；3 篇 To appear 使用作者已核对的列表，不补造 DOI 或页码。
@@ -118,11 +127,11 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 10. **照片**：沿用真实照片，不生成或改写人物。原始照片字节保持不变；PDF 如需转正，必须得到用户明确授权，只调整页面方向而不改扫描内容，并更新公开清单中的 SHA-256。首页羽毛球照片使用 4:3、`object-position: 50% 53%` 半身裁切；弹窗使用 `crop_top: 0.25` 只裁上方窗帘。方向先遵循正确 EXIF；2022 ICCAD 源 PDF 设置 270° 页面方向并重新生成正向预览，页面不再叠加旋转。图片有准确英文 alt，惰性加载，不在首页提前请求所有奖项图片。媒体点击直接在当前页弹窗，支持电脑两侧 / 手机图下的图标翻页、左右键、双向触控滑动、右上角图标关闭、Escape、焦点返回；翻页先解码新图，再用 100ms 淡出与 180ms 淡入配合 16px 水平位移，图框高度过渡 200ms；系统开启减少动态效果时取消这些动画；保留原相册作为无 JS / Ctrl 或 Cmd 点击回退。只有 View Original 查看链接，不添加下载按钮或 download 属性。
 11. **Teaching**：每门课程包含正式英文课程名、教师、所属系所或学院和学期；教师在前，系所在后，以 · 分隔。不同学院课程不能统一写成 CS。助教奖项括号采用 `Spring 2025` / `Fall 2025` 格式，表示教学对应学期；证书学年度第 1 学期转换为该学年开始公历年的 Fall，第 2 学期转换为下一公历年的 Spring。不得把次年 2 月或暑假颁发日期当成教学学期。Awards 日期列为颁发月份，说明与相册另注明实际学期。
 12. **图标**：使用经典繁方篆「唐」，字体白色、背景 `#4E7DC3`，无白色内框。页首 35px 用 `brand.svg` 原始字形；favicon 用已确认的 B 小尺寸版本，保留所有轮廓并调整至 16px 网格，同时提供 SVG 与 16×16 / 32×32 PNG。页面明确填写 sizes，修改时更新版本参数。不得放大低清截图作为正式图标；完整字体不进公开仓库，来源元数据和 SHA-256 见 `THIRD_PARTY_NOTICES.md`。
-13. **响应式与可访问性**：电脑两列，手机单列，导航可展开；320px 起无横向溢出。600px 及以下的简介区先显示邮箱，再显示下一行的 Hsinchu, Taiwan；两行横跨简介宽度，图标与正文分别左对齐。保留语义标题、可见键盘焦点、跳转链接、对话框标签，以及无 JavaScript 的基本阅读和图片链接。
+13. **响应式与可访问性**：电脑两列，手机单列，导航可展开；320px 起无横向溢出。600px 及以下的简介区先显示邮箱，再显示下一行的 Hsinchu, Taiwan；两行横跨简介宽度，图标与正文分别左对齐。手机菜单按钮只留三横线、46px 触控区域，必须有随展开状态更新的 aria-label。菜单布局下，上滑页面（scrollY 增大）隐藏页首、下拉（scrollY 减小）显示，260ms 缓动平移、12px 累积阈值；展开菜单时始终显示，关闭才恢复；键盘焦点须能唤回页首，减少动态效果时不动画，桌面页首始终可见。修改样式或脚本交互后更新模板中的资源版本参数。保留语义标题、可见键盘焦点、跳转链接、对话框标签，以及无 JavaScript 的基本阅读和图片链接。
 14. **公开范围**：允许本次明确授权的奖状、奖杯、奖牌、照片和具体最终论文；不公开身份证件、成绩单、申请表、推荐信、录取通知、学生奖惩记录、未授权稿件或整个资料目录。公开 CV 不含电话号码。
-15. **引用复制**：BibTeX 控件始终位于每篇论文所有其他资源之后；复制成功后仅在按钮内显示勾号与 Copied 2 秒，不弹提示框或新分页，保持按钮尺寸。失败时提供选中代码的弹窗和手动复制；无 JS 使用原生展开文本。引用来自 `content/citations.json`，记录来源，按正式元数据保存作者、题名、刊会、年份与已核实的卷期/页码/DOI；不把共同一作星号、网页粗体或页面状态当作作者名。待刊用 To appear note，不补造字段；甲骨文论文用正式英文题名、作者和 In Chinese note。
+15. **引用复制**：BibTeX 控件始终位于每篇论文所有其他资源之后；字号、边框与内边距采用 DOI / PDF 的公共样式，图标间距 0.2rem，不设置造成额外留白的固定最小宽度。复制成功后仅在按钮内显示勾号与 Copied 2 秒，不弹提示框或新分页，标签预留两种状态的宽度，保持按钮尺寸。失败时提供选中代码的弹窗和手动复制；无 JS 使用原生展开文本。引用来自 `content/citations.json`，记录来源，按正式元数据保存作者、题名、刊会、年份与已核实的卷期/页码/DOI；不把共同一作星号、网页粗体或页面状态当作作者名。待刊用 To appear note，不补造字段；甲骨文论文用正式英文题名、作者和 In Chinese note。
 16. **图片性能**：所有相册媒体必须有本地 WebP preview；首页活动照片复用这些预览。View Original 始终指向原 JPG / PDF，禁止把原图替换成有损预览。用 `scripts/optimize_images.py` 处理 manifest 已审核的公开图，不从私人档案批量读取；保留 `preview_source` 以便重复生成，更新 `content/image-previews.json` 与派生资产 SHA-256。新增照片后先生成预览，再 build。首页羽毛球原图只在用户点击后请求，其余奖项弹窗优先使用预览；不提前加载全部 87 张媒体。
-17. **分享与导航**：导航顺序为 About / Research / Publications / Awards / Experience / Teaching / Hobbies。首页和相册保留绝对 URL 的 og:image、图片宽高与 alt、Twitter summary_large_image。分享图固定 1200×630；头像、姓名、学校或研究方向改变后，从 `content/social-preview.html` 用 Chromium 按 1200×630、设备倍率 1 重渲染 PNG，等待图片和字体加载，再更新 manifest。ORCID 等身份链接须由正式个人记录及论文匹配核对，不能只凭同名猜测；与 Person sameAs 同步。
+17. **分享与导航**：导航顺序为 About / Research / Publications / Awards / Experience / Teaching / Hobbies。首页和相册保留绝对 URL 的 og:image、图片宽高与 alt、Twitter summary_large_image。分享图固定 1200×630，只显示英文姓名，学校上方写系所，研究方向单行为 Electronic Design Automation · AI for EDA；文字与头像间距 84px，照片左侧起点 68px，左上 Homepage 32px，底部网址与地名 30px。当前首页分享标题 Wuqian Tang | Homepage、摘要 CS Ph.D. Candidate at National Tsing Hua University.，不追加 Learning 或研究描述。头像、姓名、学校或研究方向改变后，从 `content/social-preview.html` 用 Chromium 按 1200×630、设备倍率 1 重渲染 PNG，等待图片和字体加载，使用新版本文件名、更新两套分享标签与 manifest；旧图片地址保留可访问。ORCID 等身份链接须由正式个人记录及论文匹配核对，不能只凭同名猜测；与 Person sameAs 同步。
 
 Hobbies 用词参考了 [Siyuan Jiang 的学术主页](https://siyuanj.github.io/) 中同名栏目；它直接表达爱好，适合当前内容。网站不需要附上这条用词参考。
 
@@ -175,5 +184,11 @@ BibTeX 验收结果见 `preview/bibtex-validation.json`，截图为 `preview/bib
 图片与分享验收见 `preview/performance-sharing-validation.json`：覆盖 1440×1000、1024×768、1000×768、820×1180、390×844、320×568、844×390，无横向溢出；Teaching 导航定位及当前栏目高亮正常，另验证连续调整手机竖屏、横屏、桌面与 320px 时重新计算观察区域。首页三张活动照片只请求 WebP，除头像外不请求原 JPEG；桌面和手机羽毛球点击后才请求原图，其他奖项弹窗保持使用预览；View Original 指向原 JPEG / PDF。全部 31 个相册的 87 张 WebP 均实际解码成功，页面浏览不会请求原始文件。首页与相册的分享元数据、ORCID 和 sameAs、16/32px favicon 尺寸与原版页首图标均核对；电脑/手机首页可访问性扫描通过，并读取一次真实 BibTeX 剪贴板作回归检查。全部原有 116 份 manifest 文件的 SHA-256 保持不变，87 张 WebP 的实际格式、尺寸与无 EXIF 状态核对通过；分享 PNG 尺寸为 1200×630。
 
 WebP 弹窗回归再次覆盖五种尺寸、实际动画帧、双向滑动、键盘、连续翻页、关闭重开、相册页、慢速加载和减少动态效果；桌面/手机弹窗可访问性扫描通过。电脑、平板、手机及 Hobbies 截图已刷新；分享图已人工查看姓名、学校、研究文字无截断。
+
+分享图修订验收见 `preview/social-preview-validation.json`：仅显示英文名、系所在学校上方、研究方向在一行、文字与照片间距 84px、照片左侧起点 68px、Homepage 32px、底部网址与地名 30px，所有文字位于 1200×630 画布内，已人工查看。用户已确认 Android LINE 新测试地址能够显示修订前的 PNG，保留该事实与缓存推断。
+
+最新按钮间距及分享标签验收见 `preview/bibtex-spacing-sharing-validation.json`：电脑与手机 DOI / PDF / BibTeX 的左右内边距均为 7.2px、字号 13px、圆角 4px，电脑高度 26px、手机高度 44px；BibTeX 图标间距 3.2px，按钮宽度约 74.77px，Copied 状态尺寸与实际剪贴板核对通过。首页和全部 31 个相册的版本化图片标签及 CSS / JS 地址检查通过。
+
+手机导航验收见 `preview/mobile-header-validation.json`：覆盖 390×844、320×568、820×1180、844×390、999×768、1000×768、1440×1000。验证实际中间动画帧、上滑隐藏／下拉显示、微小滑动不闪动、正文无布局位移、展开菜单后连续双向滚动仍保持显示、关闭后恢复收放、键盘焦点显示与 Escape 关闭、顶部恢复显示、减少动态效果、相册页首、无 JS 导航回退；手机可访问性扫描通过，桌面保持导航可见。手机与平板截图、展开菜单截图已刷新。
 
 部署结果可在 [GitHub Pages 工作流](https://github.com/wuqian-tang/wuqian-tang.github.io/actions/workflows/pages.yml) 查看；本记录随此次 master 提交发布。以后继续更新时，以最新成功工作流和线上实际文件为准。

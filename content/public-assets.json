@@ -1341,10 +1341,20 @@
   },
   {
     "path": "assets/images/social-preview.png",
-    "sha256": "a74435d7d8064f35b2f75215838568731c5beb99e088e3f27d6e7cd2024f5431",
+    "sha256": "7631defbcf77f3c13decacc4db1e69a41ca481306555662c2cdfb29ef6c8f864",
     "source": "content/social-preview.html; original portrait site/assets/images/profile.jpg",
     "width": 1200,
     "height": 630,
-    "encoding": "PNG; HTML layout rendered in Chromium at 1×; original portrait"
+    "encoding": "PNG, Chromium render at 1200×630, device scale factor 1",
+    "revision": "2026-10-03 v2: larger portrait and typography, English name, department above university, single-line Electronic Design Automation · AI for EDA, 84px text gap, portrait left 68px, 32px Homepage label, 30px footer"
+  },
+  {
+    "path": "assets/images/social-preview-20261003-v2.png",
+    "sha256": "7631defbcf77f3c13decacc4db1e69a41ca481306555662c2cdfb29ef6c8f864",
+    "source": "content/social-preview.html; original portrait site/assets/images/profile.jpg",
+    "width": 1200,
+    "height": 630,
+    "encoding": "PNG, Chromium render at 1200×630, device scale factor 1",
+    "revision": "2026-10-03 v2: larger portrait and typography, English name, department above university, single-line Electronic Design Automation · AI for EDA, 84px text gap, portrait left 68px, 32px Homepage label, 30px footer"
   }
 ]

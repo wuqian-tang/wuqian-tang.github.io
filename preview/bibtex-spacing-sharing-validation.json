@@ -1,0 +1,108 @@
+{
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "styles": [
+        {
+          "text": "DOI",
+          "paddingLeft": "7.2px",
+          "paddingRight": "7.2px",
+          "paddingTop": "0.64px",
+          "paddingBottom": "0.64px",
+          "fontSize": "13px",
+          "lineHeight": "22.75px",
+          "borderRadius": "4px",
+          "gap": "normal",
+          "minWidth": "auto",
+          "width": 39.5,
+          "height": 26
+        },
+        {
+          "text": "PDF",
+          "paddingLeft": "7.2px",
+          "paddingRight": "7.2px",
+          "paddingTop": "0.64px",
+          "paddingBottom": "0.64px",
+          "fontSize": "13px",
+          "lineHeight": "22.75px",
+          "borderRadius": "4px",
+          "gap": "normal",
+          "minWidth": "auto",
+          "width": 42.375,
+          "height": 26
+        },
+        {
+          "text": "BibTeX",
+          "paddingLeft": "7.2px",
+          "paddingRight": "7.2px",
+          "paddingTop": "0.64px",
+          "paddingBottom": "0.64px",
+          "fontSize": "13px",
+          "lineHeight": "22.75px",
+          "borderRadius": "4px",
+          "gap": "3.2px",
+          "minWidth": "auto",
+          "width": 74.765625,
+          "height": 26
+        }
+      ],
+      "feedbackWidthUnchanged": true,
+      "exactClipboard": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "styles": [
+        {
+          "text": "DOI",
+          "paddingLeft": "7.2px",
+          "paddingRight": "7.2px",
+          "paddingTop": "0.64px",
+          "paddingBottom": "0.64px",
+          "fontSize": "13px",
+          "lineHeight": "22.75px",
+          "borderRadius": "4px",
+          "gap": "normal",
+          "minWidth": "auto",
+          "width": 39.5,
+          "height": 44
+        },
+        {
+          "text": "PDF",
+          "paddingLeft": "7.2px",
+          "paddingRight": "7.2px",
+          "paddingTop": "0.64px",
+          "paddingBottom": "0.64px",
+          "fontSize": "13px",
+          "lineHeight": "22.75px",
+          "borderRadius": "4px",
+          "gap": "normal",
+          "minWidth": "auto",
+          "width": 42.375,
+          "height": 44
+        },
+        {
+          "text": "BibTeX",
+          "paddingLeft": "7.2px",
+          "paddingRight": "7.2px",
+          "paddingTop": "0.64px",
+          "paddingBottom": "0.64px",
+          "fontSize": "13px",
+          "lineHeight": "22.75px",
+          "borderRadius": "4px",
+          "gap": "3.2px",
+          "minWidth": "auto",
+          "width": 74.765625,
+          "height": 44
+        }
+      ],
+      "feedbackWidthUnchanged": true,
+      "exactClipboard": true
+    }
+  ],
+  "metadata": {
+    "pages": 32
+  },
+  "errors": []
+}
