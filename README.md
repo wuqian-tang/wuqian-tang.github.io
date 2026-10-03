@@ -1,75 +1,60 @@
-# Academic Pages
-**Academic Pages is a Github Pages template for academic websites.**
+# Wuqian Tang's academic homepage
 
-# Getting Started
+A responsive academic homepage for Wuqian Tang (唐梧遷), with research interests, 21 publications, academic and teaching awards, education, experience, and personal interests.
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+**Live website: [wuqian-tang.github.io](https://wuqian-tang.github.io/)**
 
-See more info at https://academicpages.github.io/
+The website is in **`site/`**. It is plain HTML, CSS, and JavaScript; visitors do not need a framework runtime or third-party fonts. The older Academic Pages template remains in this repository for reference, but is excluded from the deployment artifact.
 
-## Running locally
+## Preview
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+Open `site/index.html` directly, or serve only the public directory:
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-Start by build the container:
-
-```bash
-docker build -t jekyll-site .
+```sh
+python3 -m http.server 8765 --bind 127.0.0.1 --directory site
 ```
 
-Next, run the container:
-```bash
-docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
+Then open `http://127.0.0.1:8765/`. When working through SSH, forward port 8765 in your editor or SSH connection.
+
+- [Desktop screenshot](preview/desktop.png)
+- [Tablet screenshot](preview/tablet.png)
+- [Phone screenshot](preview/mobile.png)
+- [Full desktop page](preview/desktop-full.png)
+- [Full phone page](preview/mobile-full.png)
+
+## Update content
+
+Edit `content/profile.json` for publications, awards, links, and experience. Edit `content/homepage.html` for the page structure or introduction. Styles and interactions are in `site/assets/`.
+
+Regenerate the static pages:
+
+```sh
+python3 scripts/build.py
 ```
 
-# Maintenance
+Verify generated content and the public-file allowlist:
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+```sh
+python3 scripts/build.py --check
+node --check site/assets/js/main.js
+```
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+The profile uses the original photograph from `images/profile.jpg`. Activity photos are explicitly selected from the private personal archive; their original files are preserved. The downloadable CV includes the oracle-bone paper and omits the personal telephone number. It does not contain identity documents, transcripts, recommendations, or application forms. Its editable source is `content/Wuqian_Tang_Public_CV.tex`; compile it with LuaLaTeX and copy the resulting PDF to `site/files/Wuqian_Tang_CV.pdf`.
 
-## Bugfixes and enhancements
+For the oracle-bone paper, the website uses the formally published English title and marks the article **In Chinese**. The original title, `甲骨卜辭定年月差演算法`, is retained in the content record. Citation information was checked against the [National Central Library](https://tpl.ncl.edu.tw/NclService/JournalContentDetail?SysId=A2026000044&directQuery=true) and the [journal's issue announcement](https://tadh.org.tw/2025/09/14/jdadh_v15/).
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+The LinkedIn link is [linkedin.com/in/wqtang](https://www.linkedin.com/in/wqtang/); education and competition records match the CV. The Google Scholar link was retained from the previous homepage configuration.
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+## Validation
 
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+Browser checks cover 1440 × 1000, 1024 × 768, 820 × 1180, 768 × 1024, 390 × 844, 320 × 568, and 844 × 390. They check horizontal overflow, navigation, expandable publications, the photo viewer, image loading, and JavaScript errors. Additional checks cover 200% text size, operation without JavaScript, local links, and accessibility scans on desktop and phone.
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+Results are saved in `preview/validation.json` and `preview/accessibility.json`. Viewport emulation checks layout and interactions; it does not replace testing on physical devices.
+
+## GitHub Pages
+
+The website address is `https://wuqian-tang.github.io/`. This repository is public and GitHub Pages uses GitHub Actions to deploy the reviewed site.
+
+The workflow in `.github/workflows/pages.yml` renders and audits the public directory, then uploads **only `site/`**. A pull request builds the public artifact but does not deploy it. Production deployment runs from `master`, after GitHub Pages is configured to use **GitHub Actions**.
+
+Keep `wuqian-profile` and all personal source archives private. No private archive is read by the deployment workflow. Only this website repository is public.
