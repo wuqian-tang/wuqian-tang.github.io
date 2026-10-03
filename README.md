@@ -2,6 +2,8 @@
 
 A responsive academic homepage for Wuqian Tang (唐梧遷), with research interests, 21 publications, academic and teaching awards, education, experience, and personal interests.
 
+**Live website: [wuqian-tang.github.io](https://wuqian-tang.github.io/)**
+
 The website is in **`site/`**. It is plain HTML, CSS, and JavaScript; visitors do not need a framework runtime or third-party fonts. The older Academic Pages template remains in this repository for reference, but is excluded from the deployment artifact.
 
 ## Preview
@@ -51,8 +53,8 @@ Results are saved in `preview/validation.json` and `preview/accessibility.json`.
 
 ## GitHub Pages
 
-The target address is `https://wuqian-tang.github.io/`. The repository is currently private and publishing is pending preview approval.
+The website address is `https://wuqian-tang.github.io/`. This repository is public and GitHub Pages uses GitHub Actions to deploy the reviewed site.
 
 The workflow in `.github/workflows/pages.yml` renders and audits the public directory, then uploads **only `site/`**. A pull request builds the public artifact but does not deploy it. Production deployment runs from `master`, after GitHub Pages is configured to use **GitHub Actions**.
 
-Keep `wuqian-profile` and all personal source archives private. No private archive is read by the deployment workflow. GitHub Pages from a private repository requires an eligible GitHub plan; otherwise only the website repository needs to be made public when publication is approved. Confirm the repository settings before changing visibility.
+Keep `wuqian-profile` and all personal source archives private. No private archive is read by the deployment workflow. Only this website repository is public.
