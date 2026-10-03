@@ -4,6 +4,8 @@ A responsive academic homepage for Wuqian Tang (唐梧遷), with research intere
 
 **Live website: [wuqian-tang.github.io](https://wuqian-tang.github.io/)**
 
+Read [WEBSITE_STATUS.md](WEBSITE_STATUS.md) before continuing maintenance. It records the latest changes, formatting rules, publication status, and dated follow-up checks.
+
 The website is in **`site/`**. It is plain HTML, CSS, and JavaScript; visitors do not need a framework runtime or third-party fonts. The older Academic Pages template remains in this repository for reference, but is excluded from the deployment artifact.
 
 ## Preview
@@ -25,6 +27,12 @@ Then open `http://127.0.0.1:8765/`. When working through SSH, forward port 8765 
 ## Update content
 
 Edit `content/profile.json` for publications, awards, links, and experience. Edit `content/homepage.html` for the page structure or introduction. Styles and interactions are in `site/assets/`.
+
+Award rows use compact resource links such as `[Photos]`, `[Certificate]`, `[Trophy]`, `[Dept.]`, and `[Official]`. Photo, certificate, trophy, plaque, and medal links open the corresponding award gallery. Each image can be viewed at full size, with previous/next controls for multiple images; scanned PDF certificates have previews and links to the original PDFs. Gallery pages also work without JavaScript.
+
+All 87 selected award files are preserved byte for byte. `content/public-assets.json` lists their exact public paths and SHA-256 hashes, together with certificate previews and five locally hosted paper PDFs. The build checks the manifest and refuses any additional files. Acceptance letters, student awards/disciplinary records, identity documents, transcripts, and application materials are excluded. News and announcement links belong to the corresponding award in `content/profile.json`; use a direct results/announcement URL rather than an institution's general homepage.
+
+Every paper except those marked **To appear** has a verified DOI. Store downloaded official or author-provided paper PDFs in `site/files/papers/` and use local PDF links; the build rejects external paper PDF links. Assigned DOIs for TAPCO and HyPAS are printed in the final PDFs, but their resolvers were not yet active on October 3, 2026. The progress file records the next checks.
 
 Regenerate the static pages:
 
@@ -49,7 +57,7 @@ The LinkedIn link is [linkedin.com/in/wqtang](https://www.linkedin.com/in/wqtang
 
 Browser checks cover 1440 × 1000, 1024 × 768, 820 × 1180, 768 × 1024, 390 × 844, 320 × 568, and 844 × 390. They check horizontal overflow, navigation, expandable publications, the photo viewer, image loading, and JavaScript errors. Additional checks cover 200% text size, operation without JavaScript, local links, and accessibility scans on desktop and phone.
 
-Results are saved in `preview/validation.json` and `preview/accessibility.json`. Viewport emulation checks layout and interactions; it does not replace testing on physical devices.
+Results are saved in `preview/validation.json`, `preview/gallery-validation.json`, and `preview/accessibility.json`. Award galleries additionally cover PDF previews, keyboard photo navigation, return links to collapsed awards, and use without JavaScript. Viewport emulation checks layout and interactions; it does not replace testing on physical devices.
 
 ## GitHub Pages
 

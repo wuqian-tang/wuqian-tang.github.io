@@ -76,30 +76,58 @@
   if (dialog && typeof dialog.showModal === 'function') {
     const image = dialog.querySelector('.dialog-image');
     const caption = document.getElementById('photo-caption');
-    document.querySelectorAll('[data-photo]').forEach(link => {
+    const navigation = dialog.querySelector('.dialog-navigation');
+    const counter = dialog.querySelector('.dialog-counter');
+    const photoLinks = [...document.querySelectorAll('[data-photo]')];
+    let currentPhotos = [];
+    let currentIndex = 0;
+    const showPhoto = index => {
+      currentIndex = (index + currentPhotos.length) % currentPhotos.length;
+      const link = currentPhotos[currentIndex];
+      image.src = link.href;
+      image.alt = link.querySelector('img')?.alt || link.dataset.photo;
+      caption.textContent = link.dataset.photo;
+      if (counter) counter.textContent = `${currentIndex + 1} / ${currentPhotos.length}`;
+    };
+    photoLinks.forEach(link => {
       link.addEventListener('click', event => {
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
         event.preventDefault();
-        image.src = link.href;
-        image.alt = link.querySelector('img').alt;
-        caption.textContent = link.dataset.photo;
+        currentPhotos = link.dataset.gallery ? photoLinks.filter(photo => photo.dataset.gallery === link.dataset.gallery) : [link];
+        if (navigation) navigation.hidden = currentPhotos.length < 2;
+        dialog.classList.toggle('has-gallery', Boolean(navigation) && currentPhotos.length > 1);
+        showPhoto(currentPhotos.indexOf(link));
         dialog.showModal();
       });
     });
     dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
+    if (navigation) {
+      navigation.querySelector('.dialog-previous').addEventListener('click', () => showPhoto(currentIndex - 1));
+      navigation.querySelector('.dialog-next').addEventListener('click', () => showPhoto(currentIndex + 1));
+      dialog.addEventListener('keydown', event => {
+        if (currentPhotos.length < 2) return;
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+          event.preventDefault();
+          showPhoto(currentIndex + (event.key === 'ArrowRight' ? 1 : -1));
+        }
+      });
+    }
     dialog.addEventListener('click', event => {
       const bounds = dialog.getBoundingClientRect();
       if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
     });
   }
 
-  // Research links reveal a paper when it is in the collapsed bibliography.
+  // Direct links reveal entries inside collapsed publications or earlier awards.
   const revealPaper = hash => {
-    if (!hash.startsWith('#paper-')) return;
+    if (!hash.startsWith('#paper-') && !hash.startsWith('#award-')) return;
     const paper = document.getElementById(hash.slice(1));
     if (!paper) return;
     const details = paper.closest('details');
-    if (details) details.open = true;
+    if (details && !details.open) {
+      details.open = true;
+      requestAnimationFrame(() => paper.scrollIntoView({ block: 'start' }));
+    }
   };
   revealPaper(location.hash);
   window.addEventListener('hashchange', () => revealPaper(location.hash));

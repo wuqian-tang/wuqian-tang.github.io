@@ -1,0 +1,54 @@
+{
+  "results": [
+    {
+      "viewport": "desktop",
+      "homepageContent": "passed",
+      "galleryLayout": "passed",
+      "pdfPreviews": "passed",
+      "keyboardNavigation": "passed",
+      "awardBackLink": "passed",
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "tablet",
+      "homepageContent": "passed",
+      "galleryLayout": "passed",
+      "pdfPreviews": "passed",
+      "keyboardNavigation": "passed",
+      "awardBackLink": "passed",
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "homepageContent": "passed",
+      "galleryLayout": "passed",
+      "pdfPreviews": "passed",
+      "keyboardNavigation": "passed",
+      "awardBackLink": "passed",
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile-small",
+      "homepageContent": "passed",
+      "galleryLayout": "passed",
+      "pdfPreviews": "passed",
+      "keyboardNavigation": "passed",
+      "awardBackLink": "passed",
+      "horizontalOverflow": false
+    }
+  ],
+  "noJavaScriptGallery": "passed",
+  "accessibility": [
+    {
+      "viewport": "desktop",
+      "page": "award-gallery",
+      "violations": []
+    },
+    {
+      "viewport": "mobile",
+      "page": "award-gallery",
+      "violations": []
+    }
+  ],
+  "errors": []
+}

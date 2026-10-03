@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>${TITLE} | ${NAME}</title>
+  <meta name="description" content="${TITLE}: photos, certificates, and award records for ${NAME}.">
+  <link rel="canonical" href="${CANONICAL}">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="header-inner gallery-header"><a class="brand" href="../"><span class="monogram" aria-hidden="true">WT<span></span></span><span>${NAME}</span></a><a class="gallery-back" href="${HOME}">Back to homepage</a></div></header>
+  <main class="gallery-main" id="main" tabindex="-1">
+    <div class="gallery-intro"><p class="eyebrow">Awards &amp; Honors · ${DATE}</p><h1>${TITLE}</h1><p class="gallery-description">${DETAIL}</p>${LINKS}</div>
+    ${SECTIONS}
+    <footer class="site-footer"><span>${NAME}</span><a href="${HOME}">Back to homepage</a></footer>
+  </main>
+  <dialog class="photo-dialog" aria-labelledby="photo-caption"><div class="dialog-toolbar"><p id="photo-caption"></p><button class="dialog-close" type="button" aria-label="Close full photo">Close <span aria-hidden="true">×</span></button></div><img class="dialog-image" alt=""><div class="dialog-navigation" hidden><button class="dialog-previous" type="button" aria-label="Previous photo">← Previous</button><span class="dialog-counter" aria-live="polite"></span><button class="dialog-next" type="button" aria-label="Next photo">Next →</button></div></dialog>
+</body>
+</html>

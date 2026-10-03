@@ -79,8 +79,6 @@ main { min-width: 0; }
 .about-section h2 { font-size: 2.25rem; margin: 1rem 0 1.4rem; }
 .about-section p:not(.eyebrow) { margin-top: 1rem; font-size: 1rem; }
 .about-section strong { color: #243449; }
-.research-tags { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.65rem; }
-.research-tags span { padding: .22rem .7rem; border: 1px solid #dee7f3; border-radius: 5px; background: #f7f9fd; color: #365780; font-size: .8125rem; }
 .news-list, .award-list, .course-list { padding: 0; margin: 0; list-style: none; }
 .news-list li { display: grid; grid-template-columns: 85px minmax(0,1fr); gap: 1.2rem; margin-top: 1rem; }
 .news-list li:first-child { margin-top: 0; }
@@ -123,7 +121,9 @@ main { min-width: 0; }
 .award-date { font-size: .8125rem; color: var(--muted); padding-top: .1rem; }
 .award-title { font-size: .9375rem; line-height: 1.6; font-weight: 550; }
 .award-detail { color: var(--muted); font-size: .8125rem; line-height: 1.6; margin-top: .2rem; }
-.award-highlight .award-title { color: #1e3f72; }
+.award-title { color: var(--ink); }
+.award-links { display: flex; flex-wrap: wrap; gap: .15rem .7rem; margin-top: .25rem; }
+.award-links a { font-size: .8125rem; line-height: 1.9; white-space: nowrap; }
 .photo-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.2rem; margin-top: 2rem; }
 .photo-link { display: block; overflow: hidden; border-radius: 8px; background: var(--tint); }
 .photo-grid img { width: 100%; aspect-ratio: 4/3; object-fit: cover; transition: transform .2s ease; }
@@ -131,7 +131,7 @@ main { min-width: 0; }
 figcaption { font-size: .8125rem; color: var(--muted); margin-top: .65rem; line-height: 1.6; }
 .photo-grid figcaption span { display: block; }
 .photo-grid figcaption span:first-child { color: var(--ink); font-weight: 550; }
-.subsection-title { font-size: .875rem; text-transform: uppercase; letter-spacing: .085em; color: var(--muted); margin: 1.7rem 0 1.4rem; font-weight: 550; }
+.subsection-title { font-size: .875rem; color: var(--muted); margin: 1.7rem 0 1.4rem; font-weight: 550; }
 .timeline { border-left: 1px solid #d4dfed; margin-left: 5px; padding-left: 1.45rem; }
 .timeline-item { position: relative; margin-bottom: 1.6rem; }
 .timeline-item:last-child { margin-bottom: 0; }
@@ -147,17 +147,13 @@ figcaption { font-size: .8125rem; color: var(--muted); margin-top: .65rem; line-
 .course-instructors { color: var(--muted); font-size: .8125rem; margin-top: .15rem; }
 .course-terms { font-size: .8125rem; color: var(--muted); text-align: right; }
 .teaching-recognition { margin-top: 1.2rem; font-size: .8125rem; color: #355782; background: var(--tint); border-left: 2px solid #9cb6dc; padding: .7rem 1rem; }
-.skills-block { margin-top: 2rem; }
-.skills-block h3 { font-size: .95rem; margin-bottom: .5rem; }
-.skills-block p { font-size: .875rem; }
-.skills-block .muted { margin-top: .45rem; }
 .muted { color: var(--muted); }
-.beyond-section { display: grid; grid-template-columns: minmax(0,1fr) 255px; gap: 2.5rem; align-items: center; }
-.beyond-copy h2 { margin-top: .7rem; font-size: 1.9rem; }
-.beyond-copy p:not(.eyebrow) { margin-top: 1rem; font-size: .9375rem; }
+.hobbies-layout { display: grid; grid-template-columns: minmax(0,1fr) 255px; gap: 2.5rem; align-items: center; }
+.beyond-copy p { margin-top: 1rem; font-size: .9375rem; }
+.beyond-copy p:first-child { margin-top: 0; }
 .hobby-list { display: flex; flex-wrap: wrap; gap: .65rem 1.1rem; margin-top: 1.2rem; }
 .hobby-list span { display: inline-flex; align-items: center; gap: .4rem; font-size: .8125rem; color: var(--muted); }
-.badminton-photo img { aspect-ratio: 4/5; object-fit: cover; object-position: 50% 45%; width: 100%; }
+.badminton-photo img { aspect-ratio: 4/5; object-fit: cover; object-position: 50% 85%; width: 100%; }
 .badminton-photo figcaption { font-size: .75rem; }
 .site-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .6rem 1.5rem; padding-bottom: 2.5rem; color: var(--muted); font-size: .8125rem; }
 .photo-dialog { border: 0; border-radius: 10px; padding: 1rem; width: max-content; max-width: min(95vw,1200px); max-height: 94vh; background: white; color: var(--ink); }
@@ -167,6 +163,32 @@ figcaption { font-size: .8125rem; color: var(--muted); margin-top: .65rem; line-
 .dialog-close { border: 1px solid var(--line); background: #f6f8fb; border-radius: 5px; padding: .4rem .6rem; display: inline-flex; align-items: center; gap: .5rem; font-size: .875rem; min-height: 42px; }
 .dialog-close span { font-size: 1.25rem; }
 .dialog-image { max-height: calc(94vh - 96px); width: auto; object-fit: contain; margin: auto; }
+.dialog-navigation { display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin-top: .8rem; }
+.dialog-navigation button { border: 1px solid var(--line); border-radius: 5px; background: var(--tint); padding: .5rem .75rem; font-size: .8125rem; min-height: 42px; }
+.dialog-counter { color: var(--muted); font-size: .8125rem; white-space: nowrap; }
+.photo-dialog.has-gallery .dialog-image { max-height: calc(94vh - 154px); }
+.gallery-header { gap: 1rem; }
+.gallery-back { font-size: .8125rem; text-align: right; }
+.gallery-main { max-width: 1120px; margin: 0 auto; padding: 3.5rem 28px 0; }
+.gallery-intro { padding-bottom: 2.5rem; border-bottom: 1px solid var(--line); }
+.gallery-intro h1 { font-size: clamp(1.6rem, 3.2vw, 2.4rem); margin-top: .8rem; overflow-wrap: anywhere; }
+.gallery-description { color: var(--muted); margin: .8rem 0 1rem; }
+.gallery-section { padding: 2.5rem 0; scroll-margin-top: 6rem; }
+.gallery-section h2 { font-size: 1.35rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: .7rem; }
+.gallery-count { color: var(--muted); font-size: .875rem; font-weight: 400; }
+.award-gallery-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 2rem 1.5rem; }
+.gallery-image-link { display: flex; align-items: center; justify-content: center; background: var(--tint); border: 1px solid var(--line); border-radius: 7px; overflow: hidden; height: 360px; }
+.gallery-image-link img { width: 100%; height: 100%; object-fit: contain; }
+.gallery-card figcaption { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .4rem 1rem; }
+.gallery-card figcaption a { white-space: nowrap; }
+.gallery-main > .site-footer { border-top: 1px solid var(--line); margin-top: 1rem; padding-top: 1.5rem; }
+@media (max-width: 600px) {
+  .gallery-main { padding: 2rem 22px 0; }
+  .award-gallery-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .gallery-image-link { height: 320px; }
+  .gallery-intro { padding-bottom: 1.8rem; }
+  .gallery-section { padding: 2rem 0; }
+}
 
 @media (min-width: 1000px) and (max-height: 830px) {
   .portrait-wrap, .portrait { width: 142px; }
@@ -179,7 +201,7 @@ figcaption { font-size: .8125rem; color: var(--muted); margin-top: .65rem; line-
   .header-inner { padding: 0 28px; gap: 1.25rem; }
   .site-nav { gap: 1.05rem; }
   .page-layout { padding: 48px 28px 0; grid-template-columns: 225px minmax(0,1fr); gap: 48px; }
-  .beyond-section { gap: 1.75rem; grid-template-columns: minmax(0,1fr) 210px; }
+  .hobbies-layout { gap: 1.75rem; grid-template-columns: minmax(0,1fr) 210px; }
 }
 @media (max-width: 999px) {
   .header-inner { min-height: 70px; flex-wrap: wrap; gap: 0; padding: 16px 28px; }
@@ -241,7 +263,7 @@ figcaption { font-size: .8125rem; color: var(--muted); margin-top: .65rem; line-
   .timeline-date { order: -1; }
   .course-list li { grid-template-columns: minmax(0,1fr); gap: .35rem; }
   .course-terms { text-align: left; }
-  .beyond-section { grid-template-columns: minmax(0,1fr); gap: 1.5rem; }
+  .hobbies-layout { grid-template-columns: minmax(0,1fr); gap: 1.5rem; }
   .badminton-photo { width: min(100%,340px); }
   .badminton-photo img { aspect-ratio: 4/5; }
   .photo-dialog { padding: .7rem; max-width: 96vw; }
@@ -265,5 +287,5 @@ figcaption { font-size: .8125rem; color: var(--muted); margin-top: .65rem; line-
   .profile-links, .cv-button { display: none; }
   .section { padding-bottom: 1rem; margin-bottom: 1rem; break-inside: auto; }
   .publication, .timeline-item, .award-list li { break-inside: avoid; }
-  .beyond-section { display: block; }
+  .hobbies-layout { display: block; }
 }
