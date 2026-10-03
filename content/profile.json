@@ -44,7 +44,7 @@
       "paper": "j1"
     },
     {
-      "title": "Physical Design Optimization",
+      "title": "Physical Design Automation",
       "description": "Combining learning and optimization for placement, gate sizing, timing, and power under practical design constraints.",
       "work": "HyPAS · DAC 2026",
       "paper": "c15"
@@ -55,25 +55,75 @@
       "date": "Sep 2026",
       "datetime": "2026-09",
       "text": "Our team won Second Place in the MLCAD 2026 Contest. Our invited paper, TAPCO, was presented at MLCAD 2026.",
-      "link": {
-        "label": "TAPCO",
-        "url": "#paper-c17"
-      }
+      "resources": [
+        {
+          "award": "mlcad-2026",
+          "kind": "certificate"
+        },
+        {
+          "award": "mlcad-2026",
+          "announcement": "Official"
+        },
+        {
+          "award": "mlcad-2026",
+          "announcement": "Department"
+        }
+      ]
     },
     {
       "date": "Aug 2026",
       "datetime": "2026-08",
-      "text": "Received the Excellent Teaching Assistant Award and an Outstanding Teaching Assistant Award at National Tsing Hua University."
+      "text": "Received the Excellent Teaching Assistant Award and an Outstanding Teaching Assistant Award at National Tsing Hua University.",
+      "resources": [
+        {
+          "award": "teaching-outstanding-2025-2026",
+          "kind": "certificate",
+          "term": "Spring 2026"
+        },
+        {
+          "award": "teaching-excellent-2026",
+          "kind": "trophy"
+        },
+        {
+          "award": "teaching-outstanding-2025-2026",
+          "kind": "photo",
+          "term": "Spring 2026"
+        }
+      ]
     },
     {
       "date": "Jun 2026",
       "datetime": "2026-06",
-      "text": "Received the Distinguished Alumnus Award from the Department of CSIE at Ming Chuan University."
+      "text": "Received the Distinguished Alumnus Award from the Department of CSIE at Ming Chuan University.",
+      "resources": [
+        {
+          "award": "mcu-alumnus-2026",
+          "kind": "certificate"
+        }
+      ]
     },
     {
       "date": "May 2026",
       "datetime": "2026-05",
-      "text": "Our team won Second Place in the IWLS 2026 Programming Contest."
+      "text": "Our team won Second Place in the IWLS 2026 Programming Contest.",
+      "resources": [
+        {
+          "award": "iwls-2026",
+          "kind": "certificate"
+        },
+        {
+          "award": "iwls-2026",
+          "kind": "photo"
+        },
+        {
+          "award": "iwls-2026",
+          "announcement": "Official"
+        },
+        {
+          "award": "iwls-2026",
+          "announcement": "Department"
+        }
+      ]
     }
   ],
   "publications": [
@@ -539,13 +589,13 @@
     {
       "title": "R&D Intern, Logic Synthesis Group",
       "institution": "Giga Design Automation",
-      "date": "Jun – Sep 2025",
+      "date": "Jun 2025–Sep 2025",
       "detail": "Shanghai · PI: Dr. Yun Shao"
     },
     {
       "title": "Assistant Researcher, Design Automation Laboratory",
       "institution": "Shenzhen Research Institute, The Chinese University of Hong Kong",
-      "date": "Jan – Mar 2024",
+      "date": "Jan 2024–Mar 2024",
       "detail": "Shenzhen · PI: Prof. Bei Yu"
     }
   ],
@@ -595,14 +645,14 @@
       "id": "mlcad-2026",
       "links": [
         {
-          "label": "Dept.",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-311787,r109.php",
-          "description": "Department of Computer Science announcement"
-        },
-        {
           "label": "Official",
           "url": "https://asu-vda-lab.github.io/MLCAD26-Contest/",
           "description": "Official contest results"
+        },
+        {
+          "label": "Department",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-311787,r109.php",
+          "description": "Department of Computer Science announcement"
         }
       ],
       "media": [
@@ -645,12 +695,12 @@
       "id": "teaching-outstanding-2025-2026",
       "links": [
         {
-          "label": "Dept. 2025",
+          "label": "Department (2025)",
           "url": "https://dcs.site.nthu.edu.tw/p/406-1174-295052,r109.php",
           "description": "August 2025 teaching award announcement"
         },
         {
-          "label": "Dept. 2026",
+          "label": "Department (2026)",
           "url": "https://dcs.site.nthu.edu.tw/p/406-1174-302444,r109.php",
           "description": "February 2026 teaching award announcement"
         }
@@ -740,14 +790,14 @@
       "id": "iwls-2026",
       "links": [
         {
-          "label": "Dept.",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-309857,r109.php",
-          "description": "Department of Computer Science announcement"
-        },
-        {
           "label": "Official",
           "url": "https://iwls.org/iwls2026/",
           "description": "Official IWLS contest results"
+        },
+        {
+          "label": "Department",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-309857,r109.php",
+          "description": "Department of Computer Science announcement"
         }
       ],
       "media": [
@@ -833,7 +883,7 @@
       "detail": "Post-placement buffering and sizing",
       "links": [
         {
-          "label": "Dept.",
+          "label": "Department",
           "url": "https://dcs.site.nthu.edu.tw/p/406-1174-305101,r109.php",
           "description": "Department of Computer Science announcement"
         }
@@ -857,14 +907,9 @@
       "id": "iccad-contest-2025",
       "links": [
         {
-          "label": "Dept. A",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-298767,r109.php",
-          "description": "Problem A department announcement"
-        },
-        {
-          "label": "Dept. C",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-298768,r109.php",
-          "description": "Problem C department announcement"
+          "label": "Official",
+          "url": "https://www.iccad-contest.org/2025/Winners.html",
+          "description": "Official contest results"
         },
         {
           "label": "College",
@@ -872,9 +917,14 @@
           "description": "College of Semiconductor Research announcement"
         },
         {
-          "label": "Official",
-          "url": "https://www.iccad-contest.org/2025/Winners.html",
-          "description": "Official contest results"
+          "label": "Department (Problem A)",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-298767,r109.php",
+          "description": "Problem A department announcement"
+        },
+        {
+          "label": "Department (Problem C)",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-298768,r109.php",
+          "description": "Problem C department announcement"
         }
       ],
       "media": [
@@ -946,14 +996,9 @@
       "id": "cadathlon-2025",
       "links": [
         {
-          "label": "Dept.",
+          "label": "Department",
           "url": "https://dcs.site.nthu.edu.tw/p/406-1174-297836,r109.php",
           "description": "Department of Computer Science announcement"
-        },
-        {
-          "label": "Contest",
-          "url": "https://2025.iccad.com/cadathlon-iccad-2025/",
-          "description": "Official CADathlon event announcement"
         }
       ],
       "media": [
@@ -979,13 +1024,7 @@
       "date": "Oct 2025",
       "title": "Student Scholar Program Award",
       "detail": "International Conference on Computer-Aided Design",
-      "links": [
-        {
-          "label": "Program",
-          "url": "https://2025.iccad.com/student-scholar-program/",
-          "description": "Official Student Scholar Program information"
-        }
-      ],
+      "links": [],
       "media": [
         {
           "kind": "certificate",
@@ -1005,14 +1044,14 @@
       "id": "hsing-chien-2025",
       "links": [
         {
-          "label": "Dept.",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-286596,r109.php",
-          "description": "Department of Computer Science announcement"
-        },
-        {
           "label": "University",
           "url": "https://dsa.site.nthu.edu.tw/p/406-1266-285854,r6887.php?Lang=zh-tw",
           "description": "National Tsing Hua University student affairs award announcement"
+        },
+        {
+          "label": "Department",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-286596,r109.php",
+          "description": "Department of Computer Science announcement"
         }
       ],
       "media": [
@@ -1054,14 +1093,9 @@
       "id": "iccad-contest-2024",
       "links": [
         {
-          "label": "Dept. A",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-278751,r109.php",
-          "description": "Problem A department announcement"
-        },
-        {
-          "label": "Dept. B",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-278744,r109.php",
-          "description": "Problem B department announcement"
+          "label": "Official",
+          "url": "https://www.iccad-contest.org/2024/Winners.html",
+          "description": "Official contest results"
         },
         {
           "label": "University",
@@ -1069,9 +1103,14 @@
           "description": "Official NTHU newsletter containing the college award announcement"
         },
         {
-          "label": "Official",
-          "url": "https://www.iccad-contest.org/2024/Winners.html",
-          "description": "Official contest results"
+          "label": "Department (Problem A)",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-278751,r109.php",
+          "description": "Problem A department announcement"
+        },
+        {
+          "label": "Department (Problem B)",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-278744,r109.php",
+          "description": "Problem B department announcement"
         }
       ],
       "media": [
@@ -1128,14 +1167,14 @@
       "id": "cadathlon-2024",
       "links": [
         {
-          "label": "Dept.",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-277587,r109.php",
-          "description": "Department of Computer Science announcement"
-        },
-        {
           "label": "University",
           "url": "https://my.nthu.edu.tw/~nthunews/NTHU1377.pdf#page=9",
           "description": "Official NTHU newsletter containing the college award announcement"
+        },
+        {
+          "label": "Department",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-277587,r109.php",
+          "description": "Department of Computer Science announcement"
         }
       ],
       "media": [
@@ -1163,14 +1202,14 @@
       "id": "synopsys-scholarship-2024",
       "links": [
         {
-          "label": "Dept.",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-276507,r109.php",
-          "description": "Department of Computer Science announcement"
-        },
-        {
           "label": "University",
           "url": "https://my.nthu.edu.tw/~nthunews/NTHU1377.pdf#page=9",
           "description": "Official NTHU newsletter containing the college award announcement"
+        },
+        {
+          "label": "Department",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-276507,r109.php",
+          "description": "Department of Computer Science announcement"
         }
       ],
       "media": [
@@ -1213,7 +1252,7 @@
       "id": "qilin-cup-2023",
       "links": [
         {
-          "label": "News",
+          "label": "Department",
           "url": "https://www.cse.cuhk.edu.hk/news/achievements/prof-yus-team-won-the-qilin-cup-from-the-integrated-circuit-eda-elite-challenge-2023/",
           "description": "Chinese University of Hong Kong award announcement"
         }
@@ -1257,14 +1296,14 @@
       "id": "iccad-contest-2023",
       "links": [
         {
-          "label": "Dept.",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-258612,r109.php",
-          "description": "Department of Computer Science announcement"
-        },
-        {
           "label": "Official",
           "url": "https://www.iccad-contest.org/2023/Winners.html",
           "description": "Official contest results"
+        },
+        {
+          "label": "Department",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-258612,r109.php",
+          "description": "Department of Computer Science announcement"
         }
       ],
       "media": [
@@ -1323,14 +1362,14 @@
       "id": "iccad-contest-2022",
       "links": [
         {
-          "label": "Dept.",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-238749,r109.php",
-          "description": "Department of Computer Science announcement"
-        },
-        {
           "label": "Official",
           "url": "https://www.iccad-contest.org/2022/Winners.html",
           "description": "Official contest results"
+        },
+        {
+          "label": "Department",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-238749,r109.php",
+          "description": "Department of Computer Science announcement"
         }
       ],
       "media": [
@@ -1340,7 +1379,8 @@
           "caption": "Certificate · 2022-10-30 · Problem A · English",
           "preview": "assets/awards/iccad-contest-2022/certificate-1-preview.jpg",
           "width": 1800,
-          "height": 2330
+          "height": 2330,
+          "rotation": -90
         },
         {
           "kind": "plaque",
@@ -1723,7 +1763,8 @@
           "url": "assets/awards/badminton-2025/photo-1.jpg",
           "caption": "Photo · 2025-05",
           "width": 3213,
-          "height": 5712
+          "height": 5712,
+          "crop_top": 0.25
         }
       ],
       "date_source": "Reviewed original award file dates"

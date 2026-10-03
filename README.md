@@ -28,7 +28,11 @@ Then open `http://127.0.0.1:8765/`. When working through SSH, forward port 8765 
 
 Edit `content/profile.json` for publications, awards, links, and experience. Edit `content/homepage.html` for the page structure or introduction. Styles and interactions are in `site/assets/`.
 
-Award rows use compact resource links such as `[Photos]`, `[Certificate]`, `[Trophy]`, `[Dept.]`, and `[Official]`. Photo, certificate, trophy, plaque, and medal links open the corresponding award gallery. Each image can be viewed at full size, with previous/next controls for multiple images; scanned PDF certificates have previews and links to the original PDFs. Gallery pages also work without JavaScript.
+Award rows use one compact resource line: `Media: [Certificate] [Plaques] [Trophy] [Medal] [Photos] │ News: [Official] [News] [University] [College] [Department]`. Include only available items, in that order, with correct singular/plural labels. The pale vertical divider separates the groups; narrow screens may wrap naturally. Media links open a viewer directly on the homepage, with previous/next controls, arrow keys, touch swipes, Escape, and View Original. PDF certificates have image previews. Gallery pages remain as the fallback for visitors without JavaScript. External web links open a new tab; event/program introduction links are omitted. There are no download buttons or download attributes.
+
+Date ranges in awards, education, experience, and galleries break immediately after the en dash. Teaching lists the instructors before the department or college, and teaching awards refer to the course semester. Recent News contains only 2026 entries, with bracketed resources and a Latest Updates note. Its teaching resources are filtered to Spring 2026.
+
+The homepage section is Research Interests; the navigation label remains Research. The physical design direction is Physical Design Automation. Hobbies displays a 4:3 upper-body crop with top-aligned text; its viewer trims only the top curtain area. The redundant photo link is omitted, while [Medal] remains. Crops and corrected preview orientation are implemented in presentation code and preserve the original asset bytes.
 
 All 87 selected award files are preserved byte for byte. `content/public-assets.json` lists their exact public paths and SHA-256 hashes, together with certificate previews and five locally hosted paper PDFs. The build checks the manifest and refuses any additional files. Acceptance letters, student awards/disciplinary records, identity documents, transcripts, and application materials are excluded. News and announcement links belong to the corresponding award in `content/profile.json`; use a direct results/announcement URL rather than an institution's general homepage.
 
@@ -47,7 +51,7 @@ python3 scripts/build.py --check
 node --check site/assets/js/main.js
 ```
 
-The profile uses the original photograph from `images/profile.jpg`. Activity photos are explicitly selected from the private personal archive; their original files are preserved. The downloadable CV includes the oracle-bone paper and omits the personal telephone number. It does not contain identity documents, transcripts, recommendations, or application forms. Its editable source is `content/Wuqian_Tang_Public_CV.tex`; compile it with LuaLaTeX and copy the resulting PDF to `site/files/Wuqian_Tang_CV.pdf`.
+The profile uses the original photograph from `images/profile.jpg`. Activity photos are explicitly selected from the private personal archive; their original files are preserved. The publicly viewable CV includes the oracle-bone paper and omits the personal telephone number. It does not contain identity documents, transcripts, recommendations, or application forms. Its editable source is `content/Wuqian_Tang_Public_CV.tex`; compile it with LuaLaTeX and copy the resulting PDF to `site/files/Wuqian_Tang_CV.pdf`.
 
 For the oracle-bone paper, the website uses the formally published English title and marks the article **In Chinese**. The original title, `甲骨卜辭定年月差演算法`, is retained in the content record. Citation information was checked against the [National Central Library](https://tpl.ncl.edu.tw/NclService/JournalContentDetail?SysId=A2026000044&directQuery=true) and the [journal's issue announcement](https://tadh.org.tw/2025/09/14/jdadh_v15/).
 
@@ -57,7 +61,7 @@ The LinkedIn link is [linkedin.com/in/wqtang](https://www.linkedin.com/in/wqtang
 
 Browser checks cover 1440 × 1000, 1024 × 768, 820 × 1180, 768 × 1024, 390 × 844, 320 × 568, and 844 × 390. They check horizontal overflow, navigation, expandable publications, the photo viewer, image loading, and JavaScript errors. Additional checks cover 200% text size, operation without JavaScript, local links, and accessibility scans on desktop and phone.
 
-Results are saved in `preview/validation.json`, `preview/gallery-validation.json`, and `preview/accessibility.json`. Award galleries additionally cover PDF previews, keyboard photo navigation, return links to collapsed awards, and use without JavaScript. Viewport emulation checks layout and interactions; it does not replace testing on physical devices.
+Results are saved in `preview/validation.json`, `preview/gallery-validation.json`, and `preview/accessibility.json`, and `preview/revision-validation.json`. Award galleries additionally cover PDF previews, keyboard photo navigation, return links to collapsed awards, and use without JavaScript. Viewport emulation checks layout and interactions; it does not replace testing on physical devices.
 
 ## GitHub Pages
 

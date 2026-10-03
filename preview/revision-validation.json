@@ -1,0 +1,86 @@
+{
+  "results": [
+    {
+      "viewport": "desktop",
+      "externalTabs": "passed",
+      "resourceOrder": "passed",
+      "dateRangeBreaks": "passed",
+      "homeMediaViewer": "passed",
+      "teachingNewsSemester": "passed",
+      "keyboardAndSwipe": "passed",
+      "photoCrops": "passed",
+      "modalFitsViewport": "passed"
+    },
+    {
+      "viewport": "laptop",
+      "externalTabs": "passed",
+      "resourceOrder": "passed",
+      "dateRangeBreaks": "passed",
+      "homeMediaViewer": "passed",
+      "teachingNewsSemester": "passed",
+      "keyboardAndSwipe": "passed",
+      "photoCrops": "passed",
+      "modalFitsViewport": "passed"
+    },
+    {
+      "viewport": "tablet",
+      "externalTabs": "passed",
+      "resourceOrder": "passed",
+      "dateRangeBreaks": "passed",
+      "homeMediaViewer": "passed",
+      "teachingNewsSemester": "passed",
+      "keyboardAndSwipe": "passed",
+      "photoCrops": "passed",
+      "modalFitsViewport": "passed"
+    },
+    {
+      "viewport": "tablet-small",
+      "externalTabs": "passed",
+      "resourceOrder": "passed",
+      "dateRangeBreaks": "passed",
+      "homeMediaViewer": "passed",
+      "teachingNewsSemester": "passed",
+      "keyboardAndSwipe": "passed",
+      "photoCrops": "passed",
+      "modalFitsViewport": "passed"
+    },
+    {
+      "viewport": "mobile",
+      "externalTabs": "passed",
+      "resourceOrder": "passed",
+      "dateRangeBreaks": "passed",
+      "homeMediaViewer": "passed",
+      "teachingNewsSemester": "passed",
+      "keyboardAndSwipe": "passed",
+      "photoCrops": "passed",
+      "modalFitsViewport": "passed"
+    },
+    {
+      "viewport": "mobile-small",
+      "externalTabs": "passed",
+      "resourceOrder": "passed",
+      "dateRangeBreaks": "passed",
+      "homeMediaViewer": "passed",
+      "teachingNewsSemester": "passed",
+      "keyboardAndSwipe": "passed",
+      "photoCrops": "passed",
+      "modalFitsViewport": "passed"
+    },
+    {
+      "viewport": "mobile-landscape",
+      "externalTabs": "passed",
+      "resourceOrder": "passed",
+      "dateRangeBreaks": "passed",
+      "homeMediaViewer": "passed",
+      "teachingNewsSemester": "passed",
+      "keyboardAndSwipe": "passed",
+      "photoCrops": "passed",
+      "modalFitsViewport": "passed"
+    }
+  ],
+  "allAwardPreviewsLoaded": 86,
+  "externalTabInteraction": "passed",
+  "noJavaScriptFallback": "passed",
+  "openModalAccessibility": "passed",
+  "errors": []
+}

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <title>${NAME} | Computer Science &amp; EDA</title>
-  <meta name="description" content="${NAME}, Ph.D. candidate at National Tsing Hua University. Research in LLMs for electronic design automation, logic synthesis, circuit reverse engineering, and physical design optimization.">
+  <meta name="description" content="${NAME}, Ph.D. candidate at National Tsing Hua University. Research in LLMs for electronic design automation, logic synthesis, circuit reverse engineering, and physical design automation.">
   <link rel="canonical" href="${SITE_URL}/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="${NAME} | Academic Homepage">
@@ -43,31 +43,31 @@
       <p class="profile-location">${LOCATION_ICON}<span>${LOCATION}</span></p>
       <a class="email-link" href="mailto:${EMAIL}">${MAIL_ICON}<span>${EMAIL}</span></a>
       <div class="profile-links">${PROFILE_LINKS}</div>
-      <a class="cv-button" href="files/Wuqian_Tang_CV.pdf">${DOCUMENT_ICON}<span>Curriculum Vitae</span><span class="file-type">PDF</span></a>
+      <a class="cv-link" target="_blank" rel="noopener noreferrer" href="files/Wuqian_Tang_CV.pdf">${DOCUMENT_ICON}<span>Curriculum Vitae</span><span class="file-type">PDF</span></a>
     </aside>
 
     <main id="main" tabindex="-1">
       <section class="section about-section" id="about" aria-labelledby="about-title">
-        <p class="eyebrow">Computer Science · Electronic Design Automation</p>
+        <p class="eyebrow">COMPUTER SCIENCE · ELECTRONIC DESIGN AUTOMATION</p>
         <h2 id="about-title">About Me</h2>
         <p>I am a Ph.D. candidate in Computer Science at <a href="https://www.nthu.edu.tw/">National Tsing Hua University</a>, advised by <a href="http://nthucad.cs.nthu.edu.tw/~wcyao/">Prof. Chun-Yao Wang</a> and <a href="https://www.cse.cuhk.edu.hk/~byu/">Prof. Bei Yu</a> at The Chinese University of Hong Kong.</p>
-        <p>My research focuses on electronic design automation (EDA). I work on learning and optimization methods for circuit design, with interests in <strong>LLMs for EDA</strong>, <strong>logic synthesis and circuit reverse engineering</strong>, and <strong>physical design optimization</strong>.</p>
+        <p>My research focuses on electronic design automation (EDA). I work on learning and optimization methods for circuit design, with interests in <strong>LLMs for EDA</strong>, <strong>logic synthesis and circuit reverse engineering</strong>, and <strong>physical design automation</strong>.</p>
         <p>I received my M.S. in Computer Science from National Tsing Hua University in 2023 and my B.S. in Computer Science and Information Engineering from Ming Chuan University in 2021.</p>
       </section>
 
       <section class="section news-section" id="news" aria-labelledby="news-title">
-        <div class="section-heading"><h2 id="news-title">Recent News</h2><span class="section-note">2026</span></div>
+        <div class="section-heading"><h2 id="news-title">Recent News</h2><span class="section-note">Latest Updates</span></div>
         <ul class="news-list">${NEWS}</ul>
       </section>
 
       <section class="section" id="research" aria-labelledby="research-title">
-        <div class="section-heading"><h2 id="research-title">Research</h2><span class="section-note">Current Interests</span></div>
+        <div class="section-heading"><h2 id="research-title">Research Interests</h2></div>
         <div class="research-list">${RESEARCH}</div>
       </section>
 
       <section class="section" id="publications" aria-labelledby="publications-title">
         <div class="section-heading"><h2 id="publications-title">Publications</h2><a class="section-link" href="https://scholar.google.com/citations?user=8Sash14AAAAJ">Google Scholar</a></div>
-        <p class="section-intro">Selected work. My name is highlighted; * denotes equal contribution.</p>
+        <p class="section-intro">Selected work. * denotes equal contribution.</p>
         <div class="publication-list">${SELECTED_PUBLICATIONS}</div>
         <details class="more-details" id="more-publications"><summary><span>More Publications</span><span class="detail-count">${MORE_PUBLICATIONS_COUNT} papers</span><span class="details-plus" aria-hidden="true"></span></summary><div class="details-content publication-list">${OTHER_PUBLICATIONS}</div></details>
       </section>
@@ -98,13 +98,14 @@
       <section class="section beyond-section" id="beyond" aria-labelledby="beyond-title">
         <div class="section-heading"><h2 id="beyond-title">Hobbies</h2></div>
         <div class="hobbies-layout"><div class="beyond-copy"><p>Outside research, I enjoy <strong>badminton</strong>, <strong>swimming</strong>, and <strong>table tennis</strong>.</p><p id="award-badminton-2025">In May 2025, I won first place in badminton doubles at National Tsing Hua University's Interdepartmental Cup.</p>${BADMINTON_LINKS}<div class="hobby-list"><span>${BADMINTON_ICON}Badminton</span><span>${SWIM_ICON}Swimming</span><span>${TABLE_TENNIS_ICON}Table tennis</span></div></div>
-        <figure class="badminton-photo"><a class="photo-link" href="assets/images/badminton-2025.jpg" data-photo="NTHU Interdepartmental Cup badminton doubles, 2025" aria-label="View full badminton doubles photo"><img src="assets/images/badminton-2025.jpg" alt="Badminton doubles partners holding their first-place medals and rackets at the 2025 NTHU Interdepartmental Cup" loading="lazy" decoding="async" width="3213" height="5712"></a><figcaption>Interdepartmental Cup · Doubles champions, May 2025</figcaption></figure></div>
+        <figure class="badminton-photo"><a class="photo-link" href="assets/images/badminton-2025.jpg" data-photo="NTHU Interdepartmental Cup badminton doubles, 2025" data-crop-top="0.25" aria-label="View full badminton doubles photo"><img src="assets/images/badminton-2025.jpg" alt="Badminton doubles partners holding their first-place medals and rackets at the 2025 NTHU Interdepartmental Cup" loading="lazy" decoding="async" width="3213" height="5712"></a><figcaption>Interdepartmental Cup · Doubles champions, May 2025</figcaption></figure></div>
       </section>
 
       <footer class="site-footer"><span>© 2026 ${NAME}</span><span>Updated <time datetime="${UPDATED}">October 2026</time></span><a href="#about">Back to Top</a></footer>
     </main>
   </div>
 
-  <dialog class="photo-dialog" aria-labelledby="photo-caption"><div class="dialog-toolbar"><p id="photo-caption"></p><button class="dialog-close" type="button" aria-label="Close full photo">Close <span aria-hidden="true">×</span></button></div><img class="dialog-image" alt=""></dialog>
+  <script id="media-data" type="application/json">${MEDIA_DATA}</script>
+  <dialog class="photo-dialog" aria-labelledby="photo-caption"><div class="dialog-toolbar"><p id="photo-caption"></p><button class="dialog-close" type="button" aria-label="Close image viewer">Close <span aria-hidden="true">×</span></button></div><div class="dialog-stage"><img class="dialog-image" alt=""><p class="dialog-message" role="status" hidden></p></div><div class="dialog-footer"><a class="dialog-original" target="_blank" rel="noopener noreferrer">View Original</a><div class="dialog-navigation" hidden><button class="dialog-previous" type="button" aria-label="Previous image">← Previous</button><span class="dialog-counter" aria-live="polite"></span><button class="dialog-next" type="button" aria-label="Next image">Next →</button></div></div></dialog>
 </body>
 </html>

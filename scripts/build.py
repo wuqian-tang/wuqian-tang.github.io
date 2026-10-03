@@ -21,6 +21,45 @@ ALLOWED_FILES = {
 def esc(value):
     return html.escape(str(value), quote=True)
 
+def date_range(value):
+    parts = re.split(r'\s*–\s*', value, maxsplit=1)
+    if len(parts) == 1:
+        return esc(value)
+    return f'<span class="date-segment">{esc(parts[0])}–</span><br><span class="date-segment">{esc(parts[1])}</span>'
+
+def external_tabs(page):
+    # Apply consistently to static template links and generated content, even without JS.
+    def update(match):
+        anchor = match.group(0)
+        if re.search(r'\bhref="https?://', anchor):
+            anchor = re.sub(r'\s+(?:target|rel)="[^"]*"', '', anchor)
+            anchor = anchor[:-1] + ' target="_blank" rel="noopener noreferrer">'
+        return anchor
+    return re.sub(r'<a\b[^>]*>', update, page)
+
+def media_data(awards, prefix=''):
+    registry = {}
+    for a in awards:
+        for kind, group, singular, plural in MEDIA_GROUPS:
+            items = [item for item in a['media'] if item['kind'] == kind]
+            if items:
+                registry[f'{a["id"]}:{kind}'] = [dict(
+                    src=prefix + item.get('preview', item['url']),
+                    original=prefix + item['url'],
+                    caption=item['caption'] + ' · ' + a['title'],
+                    rotation=item.get('rotation', 0), cropTop=item.get('crop_top', 0)
+                ) for item in items]
+    return registry
+
+def media_link(a, kind, count, href, key=None, index=0):
+    group, singular, plural = next(row[1:] for row in MEDIA_GROUPS if row[0] == kind)
+    label = singular if count == 1 else plural
+    key = key or f'{a["id"]}:{kind}'
+    return f'<a href="{esc(href)}" data-media="{esc(key)}" data-media-index="{index}" aria-label="{esc(label + " for " + a["title"])}">[{label}]</a>'
+
+def announcement_link(a, link):
+    return f'<a href="{esc(link["url"])}" aria-label="{esc(link.get("description", link["label"]) + " for " + a["title"])}">[{esc(link["label"])}]</a>'
+
 def icon(name):
     shapes = {
         'location': '<path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>',
@@ -50,27 +89,29 @@ def publication(p):
 
 def award(a):
     detail = '<p class="award-detail">' + esc(a['detail']) + '</p>' if a.get('detail') else ''
-    return f'<li id="award-{esc(a["id"])}"><span class="award-date">{esc(a["date"])}</span><div><p class="award-title">{esc(a["title"])}</p>{detail}{award_links(a)}</div></li>'
+    return f'<li id="award-{esc(a["id"])}"><span class="award-date">{date_range(a["date"])}</span><div><p class="award-title">{esc(a["title"])}</p>{detail}{award_links(a)}</div></li>'
 
 MEDIA_GROUPS = [
-    ('photo', 'photos', 'Photo', 'Photos'),
     ('certificate', 'certificates', 'Certificate', 'Certificates'),
-    ('trophy', 'trophies', 'Trophy', 'Trophies'),
     ('plaque', 'plaques', 'Plaque', 'Plaques'),
+    ('trophy', 'trophies', 'Trophy', 'Trophies'),
     ('medal', 'medals', 'Medal', 'Medals'),
+    ('photo', 'photos', 'Photo', 'Photos'),
 ]
 
-def award_links(a, local_gallery=False):
+def award_links(a, local_gallery=False, kinds=None, headings=True):
     links = []
     for kind, group, singular, plural in MEDIA_GROUPS:
         count = sum(item['kind'] == kind for item in a['media'])
-        if count:
+        if count and (kinds is None or kind in kinds):
             href = f'#{group}' if local_gallery else f'awards/{a["id"]}.html#{group}'
-            label = singular if count == 1 else plural
-            links.append(f'<a href="{esc(href)}" aria-label="{esc(label + " for " + a["title"])}">[{label}]</a>')
-    for link in a.get('links', []):
-        links.append(f'<a href="{esc(link["url"])}" aria-label="{esc(link.get("description", link["label"]) + " for " + a["title"])}">[{esc(link["label"])}]</a>')
-    return '<div class="award-links">' + ''.join(links) + '</div>'
+            links.append(media_link(a, kind, count, href))
+    media = ('<span class="resource-label">Media:</span> ' if headings and links else '') + ' '.join(links)
+    news = ' '.join(announcement_link(a, link) for link in a.get('links', []))
+    if news and headings:
+        news = '<span class="resource-label">News:</span> ' + news
+    divider = ' <span class="resource-divider" aria-hidden="true">│</span> ' if media and news else ''
+    return '<div class="award-links">' + media + divider + news + '</div>'
 
 def gallery(a, profile):
     sections = ''
@@ -83,17 +124,19 @@ def gallery(a, profile):
             preview = '../' + item.get('preview', item['url'])
             original = '../' + item['url']
             caption = item['caption']
-            open_label = 'Open PDF' if item['url'].endswith('.pdf') else 'Open original'
-            cards += f'''<figure class="gallery-card"><a class="gallery-image-link" href="{esc(preview)}" data-photo="{esc(caption)}" data-gallery="{group}" aria-label="View {esc(caption)} {i} for {esc(a['title'])}"><img src="{esc(preview)}" alt="{esc(caption + ' for ' + a['title'])}" loading="lazy" decoding="async" width="{item['width']}" height="{item['height']}"></a><figcaption><span>{esc(caption)}</span><a href="{esc(original)}">{open_label}</a></figcaption></figure>'''
+            rotation = item.get('rotation', 0)
+            crop = item.get('crop_top', 0)
+            cards += f'''<figure class="gallery-card"><a class="gallery-image-link" href="{esc(preview)}" data-media="{esc(a['id'] + ':' + kind)}" data-media-index="{i-1}" aria-label="View {esc(caption)} {i} for {esc(a['title'])}"><img src="{esc(preview)}" alt="{esc(caption + ' for ' + a['title'])}" data-display-rotation="{rotation}" data-display-crop="{crop}" loading="lazy" decoding="async" width="{item['width']}" height="{item['height']}"></a><figcaption><span>{esc(caption)}</span><a href="{esc(original)}" target="_blank" rel="noopener noreferrer">View Original</a></figcaption></figure>'''
         sections += f'<section class="gallery-section" id="{group}" aria-labelledby="{group}-title"><h2 id="{group}-title">{plural}<span class="gallery-count">{len(items)}</span></h2><div class="award-gallery-grid">{cards}</div></section>'
-    values = dict(NAME=esc(profile['name']), TITLE=esc(a['title']), DATE=esc(a['date']), DETAIL=esc(a['detail']),
+    values = dict(NAME=esc(profile['name']), TITLE=esc(a['title']), DATE=date_range(a['date']), DETAIL=esc(a['detail']),
         CANONICAL=esc(profile['site_url'] + '/awards/' + a['id'] + '.html'),
-        HOME=esc('../#award-' + a['id']), LINKS=award_links(a, local_gallery=True), SECTIONS=sections)
+        HOME=esc('../#award-' + a['id']), LINKS=award_links(a, local_gallery=True), SECTIONS=sections,
+        MEDIA_DATA=json.dumps(media_data([a], '../'), ensure_ascii=False).replace('<', '\\u003c'))
     return Template((ROOT / 'content/award-gallery.html').read_text()).substitute(values)
 
 def timeline(item):
     detail = '<p class="timeline-detail">' + esc(item['detail']) + '</p>' if item.get('detail') else ''
-    return f'<article class="timeline-item"><div class="timeline-top"><h4>{esc(item["title"])}</h4><span class="timeline-date">{esc(item["date"])}</span></div><p class="timeline-institution">{esc(item["institution"])}</p>{detail}</article>'
+    return f'<article class="timeline-item"><div class="timeline-top"><h4>{esc(item["title"])}</h4><span class="timeline-date">{date_range(item["date"])}</span></div><p class="timeline-institution">{esc(item["institution"])}</p>{detail}</article>'
 
 def render():
     p = json.loads((ROOT / 'content/profile.json').read_text())
@@ -119,10 +162,32 @@ def render():
         other_html += f'<h3 class="publication-year">{year}</h3>'
         other_html += ''.join(publication(paper) for paper in others if paper['year'] == year)
     profile_links = ''.join(f'<a href="{esc(link["url"])}">{icon(link["icon"])}<span>{esc(link["label"])}</span></a>' for link in p['profiles'])
+    all_awards = p['awards'] + p['earlier_awards'] + p['personal_awards']
+    awards_by_id = {a['id']: a for a in all_awards}
+    registry = media_data(all_awards)
     news = ''
-    for n in p['news']:
-        link = n.get('link')
-        suffix = f' <a href="{esc(link["url"])}">{esc(link["label"])}</a>' if link else ''
+    for ni, n in enumerate(p['news']):
+        if not n['datetime'].startswith('2026-'):
+            raise ValueError('Recent News currently includes only 2026')
+        resources = []
+        for ri, resource in enumerate(n.get('resources', [])):
+            a = awards_by_id[resource['award']]
+            if 'kind' in resource:
+                kind = resource['kind']
+                items = [item for item in a['media'] if item['kind'] == kind]
+                key = f'{a["id"]}:{kind}'
+                if resource.get('term'):
+                    key = f'news-{ni}-{ri}'
+                    registry[key] = [entry for item, entry in zip(items, registry[f'{a["id"]}:{kind}']) if resource['term'] in item['caption']]
+                    items = [item for item in items if resource['term'] in item['caption']]
+                if not items:
+                    raise ValueError('News media selection is empty')
+                group = next(row[1] for row in MEDIA_GROUPS if row[0] == kind)
+                resources.append(media_link(a, kind, len(items), f'awards/{a["id"]}.html#{group}', key))
+            else:
+                link = next(link for link in a['links'] if link['label'] == resource['announcement'])
+                resources.append(announcement_link(a, link))
+        suffix = ' <span class="news-resources">' + ' '.join(resources) + '</span>' if resources else ''
         news += f'<li><time datetime="{esc(n["datetime"])}">{esc(n["date"])}</time><p>{esc(n["text"])}{suffix}</p></li>'
     research = ''.join(f'<article class="research-item"><span class="research-number" aria-hidden="true">{i:02d}</span><div><h3>{esc(r["title"])}</h3><p>{esc(r["description"])}</p><a href="#paper-{esc(r["paper"])}">{esc(r["work"])}</a></div></article>' for i, r in enumerate(p['research'], 1))
     structured = json.dumps({'@context':'https://schema.org','@type':'Person','name':p['name'],'alternateName':p['chinese_name'],'url':p['site_url'],'jobTitle':p['role'],'affiliation':{'@type':'CollegeOrUniversity','name':p['university']},'sameAs':[link['url'] for link in p['profiles']]}, ensure_ascii=False).replace('<', '\\u003c')
@@ -131,8 +196,9 @@ def render():
         SELECTED_PUBLICATIONS=''.join(publication(paper) for paper in selected), OTHER_PUBLICATIONS=other_html, MORE_PUBLICATIONS_COUNT=str(len(others)),
         AWARDS=''.join(award(a) for a in p['awards']), EARLIER_AWARDS=''.join(award(a) for a in p['earlier_awards']),
         EDUCATION=''.join(timeline(item) for item in p['education']), EXPERIENCE=''.join(timeline(item) for item in p['experience']),
-        COURSES=''.join(f'<li><div><p class="course-name">{esc(c["title"])}</p><p class="course-instructors"><span class="course-department">{esc(c["department"])}</span> · {esc(c["instructors"])}</p></div><p class="course-terms">{esc(c["terms"])}</p></li>' for c in p['courses']),
-        BADMINTON_LINKS=award_links(p['personal_awards'][0]),
+        COURSES=''.join(f'<li><div><p class="course-name">{esc(c["title"])}</p><p class="course-instructors">{esc(c["instructors"])} · <span class="course-department">{esc(c["department"])}</span></p></div><p class="course-terms">{esc(c["terms"])}</p></li>' for c in p['courses']),
+        BADMINTON_LINKS=award_links(p['personal_awards'][0], kinds=['medal'], headings=False),
+        MEDIA_DATA=json.dumps(registry, ensure_ascii=False).replace('<', '\\u003c'),
         BADMINTON_ICON=icon('badminton'), SWIM_ICON=icon('swim'), TABLE_TENNIS_ICON=icon('tabletennis'))
     index = Template((ROOT / 'content/homepage.html').read_text()).substitute(values)
     missing = re.findall(r'\$\{\w+\}', index)
@@ -143,7 +209,7 @@ def render():
     pages = {'index.html':index, '404.html':not_found, '.nojekyll':'', 'robots.txt':f'User-agent: *\nAllow: /\nSitemap: {p["site_url"]}/sitemap.xml\n', 'sitemap.xml':sitemap}
     for a in p['awards'] + p['earlier_awards'] + p['personal_awards']:
         pages[f'awards/{a["id"]}.html'] = gallery(a, p)
-    return pages
+    return {name: external_tabs(contents) if name.endswith('.html') else contents for name, contents in pages.items()}
 
 def audit(generated_files):
     assets = json.loads((ROOT / 'content/public-assets.json').read_text())
