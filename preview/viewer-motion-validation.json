@@ -1,0 +1,67 @@
+{
+  "results": [
+    {
+      "viewport": "desktop",
+      "mobileControlsBelowPhoto": false,
+      "desktopControlsBesidePhoto": true,
+      "directionalFadeAndSlide": "passed",
+      "keyboardAndBidirectionalSwipe": "passed",
+      "rapidNavigationAndReopen": "passed",
+      "galleryViewer": "passed",
+      "keyboardButtonActivation": "passed",
+      "viewportBounds": "passed",
+      "accessibility": "passed"
+    },
+    {
+      "viewport": "tablet",
+      "mobileControlsBelowPhoto": false,
+      "desktopControlsBesidePhoto": true,
+      "directionalFadeAndSlide": "passed",
+      "keyboardAndBidirectionalSwipe": "passed",
+      "rapidNavigationAndReopen": "passed",
+      "galleryViewer": "passed",
+      "keyboardButtonActivation": "passed",
+      "viewportBounds": "passed",
+      "accessibility": "not scanned"
+    },
+    {
+      "viewport": "mobile",
+      "mobileControlsBelowPhoto": true,
+      "desktopControlsBesidePhoto": false,
+      "directionalFadeAndSlide": "passed",
+      "keyboardAndBidirectionalSwipe": "passed",
+      "rapidNavigationAndReopen": "passed",
+      "galleryViewer": "passed",
+      "keyboardButtonActivation": "passed",
+      "viewportBounds": "passed",
+      "accessibility": "passed"
+    },
+    {
+      "viewport": "mobile-small",
+      "mobileControlsBelowPhoto": true,
+      "desktopControlsBesidePhoto": false,
+      "directionalFadeAndSlide": "passed",
+      "keyboardAndBidirectionalSwipe": "passed",
+      "rapidNavigationAndReopen": "passed",
+      "galleryViewer": "passed",
+      "keyboardButtonActivation": "passed",
+      "viewportBounds": "passed",
+      "accessibility": "not scanned"
+    },
+    {
+      "viewport": "mobile-landscape",
+      "mobileControlsBelowPhoto": true,
+      "desktopControlsBesidePhoto": false,
+      "directionalFadeAndSlide": "passed",
+      "keyboardAndBidirectionalSwipe": "passed",
+      "rapidNavigationAndReopen": "passed",
+      "galleryViewer": "passed",
+      "keyboardButtonActivation": "passed",
+      "viewportBounds": "passed",
+      "accessibility": "not scanned"
+    }
+  ],
+  "reducedMotion": "passed",
+  "keepPreviousPhotoWhileLoading": "passed",
+  "errors": []
+}

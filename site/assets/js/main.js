@@ -109,34 +109,82 @@
     let currentPhotos = [];
     let currentIndex = 0;
     let opener;
+    let displayedItem;
+    let requestId = 0;
+    let photoAnimation;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const animatePhoto = async (frames, duration) => {
+      if (reducedMotion.matches || !image.animate) return;
+      photoAnimation?.cancel();
+      const animation = image.animate(frames, {
+        duration, easing: 'cubic-bezier(.22,.61,.36,1)', fill: 'forwards'
+      });
+      photoAnimation = animation;
+      try { await animation.finished; } catch { /* Superseded or closed. */ }
+      if (photoAnimation === animation) {
+        animation.cancel();
+        photoAnimation = undefined;
+      }
+    };
     const fitDialogImage = () => {
-      if (!dialog.open || !image.complete || !image.naturalWidth) return;
+      if (!dialog.open || !displayedItem || !image.complete || !image.naturalWidth) return;
       const style = getComputedStyle(dialog);
+      const navigationStyle = getComputedStyle(navigation);
+      const navigationHeight = !navigation.hidden && navigationStyle.position === 'static'
+        ? navigation.offsetHeight + parseFloat(navigationStyle.marginTop) : 0;
       const available = Math.max(60, window.innerHeight * .94 -
         parseFloat(style.paddingTop) - parseFloat(style.paddingBottom) -
         dialog.querySelector('.dialog-toolbar').offsetHeight -
-        dialog.querySelector('.dialog-footer').offsetHeight - 28);
-      const item = currentPhotos[currentIndex];
+        dialog.querySelector('.dialog-footer').offsetHeight - navigationHeight - 28);
+      const item = displayedItem;
       const turn = Math.abs(item.rotation || 0) % 180 === 90;
       const width = turn ? image.naturalHeight : image.naturalWidth;
       const height = (turn ? image.naturalWidth : image.naturalHeight) * (1 - (item.cropTop || 0));
-      stage.style.height = `${Math.min(available, stage.clientWidth * height / width)}px`;
-      fitImage(image, stage, item.rotation || 0, item.cropTop || 0, stage.clientHeight);
+      const stageHeight = Math.min(available, stage.clientWidth * height / width);
+      stage.style.height = `${stageHeight}px`;
+      fitImage(image, stage, item.rotation || 0, item.cropTop || 0, stageHeight);
       image.style.opacity = '1';
     };
-    const showPhoto = index => {
+    const showPhoto = async (index, direction = 0) => {
+      const request = ++requestId;
+      photoAnimation?.cancel();
       currentIndex = (index + currentPhotos.length) % currentPhotos.length;
       const item = currentPhotos[currentIndex];
-      image.style.opacity = '0';
       message.hidden = true;
+      const preview = new Image();
+      preview.src = item.src;
+      try { await preview.decode(); } catch {
+        if (request !== requestId || !dialog.open) return;
+        original.href = item.original;
+        message.textContent = 'Unable to load the preview. Please use View Original.';
+        message.hidden = false;
+        return;
+      }
+      if (request !== requestId || !dialog.open) return;
+      if (direction && displayedItem) {
+        await animatePhoto([
+          {opacity: 1, translate: '0 0'},
+          {opacity: 0, translate: `${-direction * 16}px 0`}
+        ], 100);
+      }
+      if (request !== requestId || !dialog.open) return;
+      image.style.opacity = '0';
       image.src = item.src;
+      try { await image.decode(); } catch { return; }
+      if (request !== requestId || !dialog.open) return;
+      displayedItem = item;
       image.alt = item.caption;
       caption.textContent = item.caption;
       original.href = item.original;
       counter.textContent = `${currentIndex + 1} / ${currentPhotos.length}`;
-      requestAnimationFrame(fitDialogImage);
+      fitDialogImage();
+      if (direction) {
+        await animatePhoto([
+          {opacity: 0, translate: `${direction * 16}px 0`},
+          {opacity: 1, translate: '0 0'}
+        ], 180);
+      }
     };
-    image.addEventListener('load', fitDialogImage);
     image.addEventListener('error', () => {
       message.textContent = 'Unable to load the preview. Please use View Original.';
       message.hidden = false;
@@ -152,6 +200,8 @@
         event.preventDefault();
         opener = link;
         currentPhotos = items;
+        displayedItem = undefined;
+        image.style.opacity = '0';
         navigation.hidden = items.length < 2;
         counter.hidden = items.length < 2;
         dialog.classList.toggle('has-gallery', items.length > 1);
@@ -162,16 +212,20 @@
     });
     dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
     dialog.addEventListener('close', () => {
+      ++requestId;
+      photoAnimation?.cancel();
+      displayedItem = undefined;
       document.body.classList.remove('viewer-open');
       opener?.focus({ preventScroll: true });
     });
-    navigation.querySelector('.dialog-previous').addEventListener('click', () => showPhoto(currentIndex - 1));
-    navigation.querySelector('.dialog-next').addEventListener('click', () => showPhoto(currentIndex + 1));
+    navigation.querySelector('.dialog-previous').addEventListener('click', () => showPhoto(currentIndex - 1, -1));
+    navigation.querySelector('.dialog-next').addEventListener('click', () => showPhoto(currentIndex + 1, 1));
     dialog.addEventListener('keydown', event => {
       if (currentPhotos.length < 2) return;
       if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
         event.preventDefault();
-        showPhoto(currentIndex + (event.key === 'ArrowRight' ? 1 : -1));
+        const direction = event.key === 'ArrowRight' ? 1 : -1;
+        showPhoto(currentIndex + direction, direction);
       }
     });
     let touchStart;
@@ -182,11 +236,15 @@
       if (!touchStart || currentPhotos.length < 2) return;
       const dx = event.changedTouches[0].clientX - touchStart.x;
       const dy = event.changedTouches[0].clientY - touchStart.y;
-      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) showPhoto(currentIndex + (dx < 0 ? 1 : -1));
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+        const direction = dx < 0 ? 1 : -1;
+        showPhoto(currentIndex + direction, direction);
+      }
       touchStart = null;
     }, {passive:true});
     window.addEventListener('resize', fitDialogImage);
     dialog.addEventListener('click', event => {
+      if (event.target !== dialog) return;
       const bounds = dialog.getBoundingClientRect();
       if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
     });
