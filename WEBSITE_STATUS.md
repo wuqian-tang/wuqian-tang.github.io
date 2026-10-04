@@ -7,7 +7,14 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 精选条目调整（2026-10-04，最新）
+## Google Search Console 所有权验证（2026-10-04，最新）
+
+- 用户提供了 Google Search Console 的 HTML 标签，已将 `google-site-verification` 加入 `content/homepage.html` 的 `<head>`，由构建脚本写入公开首页。后续更新必须保留此标签。
+- 构建和静态检查通过；模板及生成首页都恰有一个验证标签，位置与代码正确，除新增标签外页面内容与上一版一致。由 master 推送触发 GitHub Pages 发布，完成后核对匿名访问的线上首页。
+- 对应网址前缀资源为 `https://wuqian-tang.github.io/`。标签发布后，由用户回到 Search Console 点击 Verify；网站加入标签不代表 Google 已确认所有权或完成收录。
+- 验证成功后，由用户在 Search Console 提交 `https://wuqian-tang.github.io/sitemap.xml`，通过网址检查查看首页状态并请求编入索引。Google 的验证、抓取与收录状态以 Search Console 实际结果为准。
+
+## 精选条目调整（2026-10-04，上一版）
 
 - 甲骨文论文 `J2 · The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions` 移入 Publications → More 的 2025 年分组；当前为 5 篇精选论文、16 篇 More。
 - `Silver Award, ICPC Asia Taipei–Hsinchu Regional`（Nov 2020）移入 Awards & Honors → More，放在 Dec 2020 条目之后；当前为 17 项精选奖项、15 项 More。
