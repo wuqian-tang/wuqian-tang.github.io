@@ -6,7 +6,7 @@
   "university": "National Tsing Hua University",
   "location": "Hsinchu, Taiwan",
   "email": "wqtang@cs.nthu.edu.tw",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "site_url": "https://wuqian-tang.github.io",
   "profiles": [
     {
@@ -648,7 +648,7 @@
     {
       "date": "Sep 2026",
       "title": "Second Place, MLCAD Contest",
-      "detail": "Agentic algorithm discovery for timing optimization",
+      "detail": "ACM/IEEE International Symposium on Machine Learning for CAD · Agentic algorithm discovery for timing-power co-optimization",
       "id": "mlcad-2026",
       "links": [
         {
@@ -810,7 +810,7 @@
     {
       "date": "May 2026",
       "title": "Second Place, IWLS Programming Contest",
-      "detail": "International Workshop on Logic & Synthesis",
+      "detail": "International Workshop on Logic & Synthesis · Logic synthesis programming competition",
       "id": "iwls-2026",
       "links": [
         {
@@ -858,7 +858,7 @@
     {
       "date": "Mar 2026",
       "title": "Hsinchu City Outstanding Youth",
-      "detail": "College / University Division",
+      "detail": "Hsinchu City Government · College / University Division",
       "id": "hsinchu-youth-2026",
       "links": [
         {
@@ -920,7 +920,7 @@
       "id": "ispd-2026",
       "date": "Mar 2026",
       "title": "Second Place, ISPD Contest",
-      "detail": "Post-placement buffering and sizing",
+      "detail": "ACM International Symposium on Physical Design · Post-placement buffering and sizing",
       "links": [
         {
           "label": "Department",
@@ -943,9 +943,9 @@
     },
     {
       "date": "Oct 2025",
-      "title": "First Place (Problem C) & Second Place (Problem A), ICCAD CAD Contest",
-      "detail": "International Conference on Computer-Aided Design",
-      "id": "iccad-contest-2025",
+      "title": "First Place (Problem C), ICCAD CAD Contest",
+      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Incremental Placement Optimization Beyond Detailed Placement: Simultaneous Gate Sizing, Buffering, and Cell Relocation",
+      "id": "iccad-contest-2025-c",
       "links": [
         {
           "label": "Official",
@@ -958,14 +958,67 @@
           "description": "College of Semiconductor Research announcement"
         },
         {
-          "label": "Department (A)",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-298767,r109.php",
-          "description": "Problem A department announcement"
-        },
-        {
-          "label": "Department (C)",
+          "label": "Department",
           "url": "https://dcs.site.nthu.edu.tw/p/406-1174-298768,r109.php",
           "description": "Problem C department announcement"
+        }
+      ],
+      "media": [
+        {
+          "kind": "certificate",
+          "url": "assets/awards/iccad-contest-2025/certificate-2.pdf",
+          "caption": "Certificate · 2025-10-26 · Problem C · English",
+          "preview": "assets/awards/iccad-contest-2025/certificate-2-preview.webp",
+          "width": 1800,
+          "height": 1391,
+          "preview_source": "assets/awards/iccad-contest-2025/certificate-2-preview.jpg"
+        },
+        {
+          "kind": "photo",
+          "url": "assets/awards/iccad-contest-2025/photo-3.jpg",
+          "caption": "Photo · 2025-10-26 · Problem C",
+          "width": 1477,
+          "height": 1108,
+          "preview_source": "assets/awards/iccad-contest-2025/photo-3.jpg",
+          "preview": "assets/awards/iccad-contest-2025/photo-3-preview.webp"
+        },
+        {
+          "kind": "photo",
+          "url": "assets/awards/iccad-contest-2025/photo-4.jpg",
+          "caption": "Photo · 2025-10-26 · Problem C",
+          "width": 1600,
+          "height": 1200,
+          "preview_source": "assets/awards/iccad-contest-2025/photo-4.jpg",
+          "preview": "assets/awards/iccad-contest-2025/photo-4-preview.webp"
+        },
+        {
+          "kind": "plaque",
+          "url": "assets/awards/iccad-contest-2025/plaque-2.jpg",
+          "caption": "Award plaque · 2025-10-26 · Problem C",
+          "width": 1231,
+          "height": 1600,
+          "preview_source": "assets/awards/iccad-contest-2025/plaque-2.jpg",
+          "preview": "assets/awards/iccad-contest-2025/plaque-2-preview.webp"
+        }
+      ],
+      "date_source": "Reviewed original award file dates",
+      "problem": "C"
+    },
+    {
+      "date": "Oct 2025",
+      "title": "Second Place (Problem A), ICCAD CAD Contest",
+      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Hardware Trojan Detection on Gate Level Netlist",
+      "id": "iccad-contest-2025",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://www.iccad-contest.org/2025/Winners.html",
+          "description": "Official contest results"
+        },
+        {
+          "label": "Department",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-298767,r109.php",
+          "description": "Problem A department announcement"
         }
       ],
       "media": [
@@ -1004,50 +1057,15 @@
           "height": 1600,
           "preview_source": "assets/awards/iccad-contest-2025/plaque-1.jpg",
           "preview": "assets/awards/iccad-contest-2025/plaque-1-preview.webp"
-        },
-        {
-          "kind": "certificate",
-          "url": "assets/awards/iccad-contest-2025/certificate-2.pdf",
-          "caption": "Certificate · 2025-10-26 · Problem C · English",
-          "preview": "assets/awards/iccad-contest-2025/certificate-2-preview.webp",
-          "width": 1800,
-          "height": 1391,
-          "preview_source": "assets/awards/iccad-contest-2025/certificate-2-preview.jpg"
-        },
-        {
-          "kind": "photo",
-          "url": "assets/awards/iccad-contest-2025/photo-3.jpg",
-          "caption": "Photo · 2025-10-26 · Problem C",
-          "width": 1477,
-          "height": 1108,
-          "preview_source": "assets/awards/iccad-contest-2025/photo-3.jpg",
-          "preview": "assets/awards/iccad-contest-2025/photo-3-preview.webp"
-        },
-        {
-          "kind": "photo",
-          "url": "assets/awards/iccad-contest-2025/photo-4.jpg",
-          "caption": "Photo · 2025-10-26 · Problem C",
-          "width": 1600,
-          "height": 1200,
-          "preview_source": "assets/awards/iccad-contest-2025/photo-4.jpg",
-          "preview": "assets/awards/iccad-contest-2025/photo-4-preview.webp"
-        },
-        {
-          "kind": "plaque",
-          "url": "assets/awards/iccad-contest-2025/plaque-2.jpg",
-          "caption": "Award plaque · 2025-10-26 · Problem C",
-          "width": 1231,
-          "height": 1600,
-          "preview_source": "assets/awards/iccad-contest-2025/plaque-2.jpg",
-          "preview": "assets/awards/iccad-contest-2025/plaque-2-preview.webp"
         }
       ],
-      "date_source": "Reviewed original award file dates"
+      "date_source": "Reviewed original award file dates",
+      "problem": "A"
     },
     {
       "date": "Oct 2025",
       "title": "First Place, ICCAD CADathlon",
-      "detail": "Programming competition in electronic design automation",
+      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Programming competition in electronic design automation",
       "id": "cadathlon-2025",
       "links": [
         {
@@ -1074,25 +1092,6 @@
           "height": 1600,
           "preview_source": "assets/awards/cadathlon-2025/trophy-1.jpg",
           "preview": "assets/awards/cadathlon-2025/trophy-1-preview.webp"
-        }
-      ],
-      "date_source": "Reviewed original award file dates"
-    },
-    {
-      "id": "iccad-ssp-2025",
-      "date": "Oct 2025",
-      "title": "Student Scholar Program Award",
-      "detail": "International Conference on Computer-Aided Design",
-      "links": [],
-      "media": [
-        {
-          "kind": "certificate",
-          "url": "assets/awards/iccad-ssp-2025/certificate-1.pdf",
-          "caption": "Certificate · 2025-10-26 · English",
-          "preview": "assets/awards/iccad-ssp-2025/certificate-1-preview.webp",
-          "width": 1800,
-          "height": 1391,
-          "preview_source": "assets/awards/iccad-ssp-2025/certificate-1-preview.jpg"
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1156,8 +1155,8 @@
     },
     {
       "date": "Oct 2024",
-      "title": "Second Place (Problem A) & Honorable Mention (Problem B), ICCAD CAD Contest",
-      "detail": "International Conference on Computer-Aided Design",
+      "title": "Second Place (Problem A), ICCAD CAD Contest",
+      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Reinforcement Logic Optimization for a General Cost Function",
       "id": "iccad-contest-2024",
       "links": [
         {
@@ -1171,14 +1170,9 @@
           "description": "Official NTHU newsletter containing the college award announcement"
         },
         {
-          "label": "Department (A)",
+          "label": "Department",
           "url": "https://dcs.site.nthu.edu.tw/p/406-1174-278751,r109.php",
           "description": "Problem A department announcement"
-        },
-        {
-          "label": "Department (B)",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-278744,r109.php",
-          "description": "Problem B department announcement"
         }
       ],
       "media": [
@@ -1208,41 +1202,15 @@
           "height": 1117,
           "preview_source": "assets/awards/iccad-contest-2024/plaque-1.jpg",
           "preview": "assets/awards/iccad-contest-2024/plaque-1-preview.webp"
-        },
-        {
-          "kind": "certificate",
-          "url": "assets/awards/iccad-contest-2024/certificate-2.jpg",
-          "caption": "Certificate · 2024-10-27 · Problem B · English",
-          "width": 1800,
-          "height": 1391,
-          "preview_source": "assets/awards/iccad-contest-2024/certificate-2.jpg",
-          "preview": "assets/awards/iccad-contest-2024/certificate-2-preview.webp"
-        },
-        {
-          "kind": "photo",
-          "url": "assets/awards/iccad-contest-2024/photo-2.jpg",
-          "caption": "Photo · 2024-10-27 · Problem B",
-          "width": 1440,
-          "height": 1080,
-          "preview_source": "assets/awards/iccad-contest-2024/photo-2.jpg",
-          "preview": "assets/awards/iccad-contest-2024/photo-2-preview.webp"
-        },
-        {
-          "kind": "plaque",
-          "url": "assets/awards/iccad-contest-2024/plaque-2.jpg",
-          "caption": "Award plaque · 2024-10-27 · Problem B",
-          "width": 1224,
-          "height": 1600,
-          "preview_source": "assets/awards/iccad-contest-2024/plaque-2.jpg",
-          "preview": "assets/awards/iccad-contest-2024/plaque-2-preview.webp"
         }
       ],
-      "date_source": "Reviewed original award file dates"
+      "date_source": "Reviewed original award file dates",
+      "problem": "A"
     },
     {
       "date": "Oct 2024",
       "title": "Second Place, ICCAD CADathlon",
-      "detail": "Programming competition in electronic design automation",
+      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Programming competition in electronic design automation",
       "id": "cadathlon-2024",
       "links": [
         {
@@ -1281,7 +1249,7 @@
     {
       "date": "Sep 2024–Present",
       "title": "Synopsys – Prof. Chung Laung Liu Ph.D. Scholarship",
-      "detail": "Synopsys",
+      "detail": "Synopsys Taiwan & Taiwan IC Design Society",
       "id": "synopsys-scholarship-2024",
       "links": [
         {
@@ -1338,7 +1306,7 @@
     {
       "date": "Dec 2023",
       "title": "Qilin Cup, Integrated Circuit EDA Elite Challenge",
-      "detail": "First among 400+ teams",
+      "detail": "Chinese Institute of Electronics · First among 400+ teams",
       "id": "qilin-cup-2023",
       "links": [
         {
@@ -1388,57 +1356,9 @@
       "date_source": "Reviewed original award file dates"
     },
     {
-      "date": "Oct 2023",
-      "title": "Honorable Mention (Problem A), ICCAD CAD Contest",
-      "detail": "International Conference on Computer-Aided Design",
-      "id": "iccad-contest-2023",
-      "links": [
-        {
-          "label": "Official",
-          "url": "https://www.iccad-contest.org/2023/Winners.html",
-          "description": "Official contest results"
-        },
-        {
-          "label": "Department",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-258612,r109.php",
-          "description": "Department of Computer Science announcement"
-        }
-      ],
-      "media": [
-        {
-          "kind": "certificate",
-          "url": "assets/awards/iccad-contest-2023/certificate-1.jpg",
-          "caption": "Certificate · 2023-10-29 · Problem A · English",
-          "width": 1800,
-          "height": 1373,
-          "preview_source": "assets/awards/iccad-contest-2023/certificate-1.jpg",
-          "preview": "assets/awards/iccad-contest-2023/certificate-1-preview.webp"
-        },
-        {
-          "kind": "photo",
-          "url": "assets/awards/iccad-contest-2023/photo-1.jpg",
-          "caption": "Photo · 2023-10-29 · Problem A",
-          "width": 1600,
-          "height": 901,
-          "preview_source": "assets/awards/iccad-contest-2023/photo-1.jpg",
-          "preview": "assets/awards/iccad-contest-2023/photo-1-preview.webp"
-        },
-        {
-          "kind": "plaque",
-          "url": "assets/awards/iccad-contest-2023/plaque-1.jpg",
-          "caption": "Award plaque · 2023-10-29 · Problem A",
-          "width": 1080,
-          "height": 1492,
-          "preview_source": "assets/awards/iccad-contest-2023/plaque-1.jpg",
-          "preview": "assets/awards/iccad-contest-2023/plaque-1-preview.webp"
-        }
-      ],
-      "date_source": "Reviewed original award file dates"
-    },
-    {
       "date": "Aug 2023",
       "title": "Third Place, EDAthon",
-      "detail": "Electronic design automation competition",
+      "detail": "IEEE CEDA Hong Kong Chapter · Electronic design automation programming competition",
       "id": "edathon-2023",
       "links": [],
       "media": [
@@ -1466,7 +1386,7 @@
     {
       "date": "Oct 2022",
       "title": "First Place (Problem A), ICCAD CAD Contest",
-      "detail": "Learning arithmetic operations from gate-level circuits",
+      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Learning Arithmetic Operations from Gate-Level Circuit",
       "id": "iccad-contest-2022",
       "links": [
         {
@@ -1503,37 +1423,9 @@
       "date_source": "Reviewed original award file dates"
     },
     {
-      "date": "Sep 2021–Present",
-      "title": "Mainland China Student Scholarship",
-      "detail": "National Tsing Hua University",
-      "id": "nthu-scholarship-2021",
-      "links": [],
-      "media": [
-        {
-          "kind": "certificate",
-          "url": "assets/awards/nthu-scholarship-2021/certificate-1.jpg",
-          "caption": "Certificate · 2021-09 · English",
-          "width": 1274,
-          "height": 1800,
-          "preview_source": "assets/awards/nthu-scholarship-2021/certificate-1.jpg",
-          "preview": "assets/awards/nthu-scholarship-2021/certificate-1-preview.webp"
-        },
-        {
-          "kind": "certificate",
-          "url": "assets/awards/nthu-scholarship-2021/certificate-2.pdf",
-          "caption": "Certificate · 2021-09 · Chinese",
-          "preview": "assets/awards/nthu-scholarship-2021/certificate-2-preview.webp",
-          "width": 1273,
-          "height": 1800,
-          "preview_source": "assets/awards/nthu-scholarship-2021/certificate-2-preview.jpg"
-        }
-      ],
-      "date_source": "Reviewed original award file dates"
-    },
-    {
       "date": "Nov 2020",
       "title": "Silver Award, ICPC Asia Taipei–Hsinchu Regional",
-      "detail": "International Collegiate Programming Contest",
+      "detail": "ICPC Foundation · Asia Taipei–Hsinchu regional programming contest",
       "id": "icpc-2020",
       "links": [
         {
@@ -1585,6 +1477,155 @@
   ],
   "earlier_awards": [
     {
+      "id": "iccad-ssp-2025",
+      "date": "Oct 2025",
+      "title": "Student Scholar Program Award",
+      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Conference participation and travel support",
+      "links": [],
+      "media": [
+        {
+          "kind": "certificate",
+          "url": "assets/awards/iccad-ssp-2025/certificate-1.pdf",
+          "caption": "Certificate · 2025-10-26 · English",
+          "preview": "assets/awards/iccad-ssp-2025/certificate-1-preview.webp",
+          "width": 1800,
+          "height": 1391,
+          "preview_source": "assets/awards/iccad-ssp-2025/certificate-1-preview.jpg"
+        }
+      ],
+      "date_source": "Reviewed original award file dates"
+    },
+    {
+      "date": "Oct 2024",
+      "title": "Honorable Mention (Problem B), ICCAD CAD Contest",
+      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Power and Timing Optimization Using Multibit Flip-Flop",
+      "id": "iccad-contest-2024-b",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://www.iccad-contest.org/2024/Winners.html",
+          "description": "Official contest results"
+        },
+        {
+          "label": "University",
+          "url": "https://my.nthu.edu.tw/~nthunews/NTHU1379.pdf#page=13",
+          "description": "Official NTHU newsletter containing the college award announcement"
+        },
+        {
+          "label": "Department",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-278744,r109.php",
+          "description": "Problem B department announcement"
+        }
+      ],
+      "media": [
+        {
+          "kind": "certificate",
+          "url": "assets/awards/iccad-contest-2024/certificate-2.jpg",
+          "caption": "Certificate · 2024-10-27 · Problem B · English",
+          "width": 1800,
+          "height": 1391,
+          "preview_source": "assets/awards/iccad-contest-2024/certificate-2.jpg",
+          "preview": "assets/awards/iccad-contest-2024/certificate-2-preview.webp"
+        },
+        {
+          "kind": "photo",
+          "url": "assets/awards/iccad-contest-2024/photo-2.jpg",
+          "caption": "Photo · 2024-10-27 · Problem B",
+          "width": 1440,
+          "height": 1080,
+          "preview_source": "assets/awards/iccad-contest-2024/photo-2.jpg",
+          "preview": "assets/awards/iccad-contest-2024/photo-2-preview.webp"
+        },
+        {
+          "kind": "plaque",
+          "url": "assets/awards/iccad-contest-2024/plaque-2.jpg",
+          "caption": "Award plaque · 2024-10-27 · Problem B",
+          "width": 1224,
+          "height": 1600,
+          "preview_source": "assets/awards/iccad-contest-2024/plaque-2.jpg",
+          "preview": "assets/awards/iccad-contest-2024/plaque-2-preview.webp"
+        }
+      ],
+      "date_source": "Reviewed original award file dates",
+      "problem": "B"
+    },
+    {
+      "date": "Oct 2023",
+      "title": "Honorable Mention (Problem A), ICCAD CAD Contest",
+      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Multi-bit Large-scale Boolean Matching",
+      "id": "iccad-contest-2023",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://www.iccad-contest.org/2023/Winners.html",
+          "description": "Official contest results"
+        },
+        {
+          "label": "Department",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-258612,r109.php",
+          "description": "Department of Computer Science announcement"
+        }
+      ],
+      "media": [
+        {
+          "kind": "certificate",
+          "url": "assets/awards/iccad-contest-2023/certificate-1.jpg",
+          "caption": "Certificate · 2023-10-29 · Problem A · English",
+          "width": 1800,
+          "height": 1373,
+          "preview_source": "assets/awards/iccad-contest-2023/certificate-1.jpg",
+          "preview": "assets/awards/iccad-contest-2023/certificate-1-preview.webp"
+        },
+        {
+          "kind": "photo",
+          "url": "assets/awards/iccad-contest-2023/photo-1.jpg",
+          "caption": "Photo · 2023-10-29 · Problem A",
+          "width": 1600,
+          "height": 901,
+          "preview_source": "assets/awards/iccad-contest-2023/photo-1.jpg",
+          "preview": "assets/awards/iccad-contest-2023/photo-1-preview.webp"
+        },
+        {
+          "kind": "plaque",
+          "url": "assets/awards/iccad-contest-2023/plaque-1.jpg",
+          "caption": "Award plaque · 2023-10-29 · Problem A",
+          "width": 1080,
+          "height": 1492,
+          "preview_source": "assets/awards/iccad-contest-2023/plaque-1.jpg",
+          "preview": "assets/awards/iccad-contest-2023/plaque-1-preview.webp"
+        }
+      ],
+      "date_source": "Reviewed original award file dates"
+    },
+    {
+      "date": "Sep 2021–Present",
+      "title": "Mainland China Student Scholarship",
+      "detail": "National Tsing Hua University",
+      "id": "nthu-scholarship-2021",
+      "links": [],
+      "media": [
+        {
+          "kind": "certificate",
+          "url": "assets/awards/nthu-scholarship-2021/certificate-1.jpg",
+          "caption": "Certificate · 2021-09 · English",
+          "width": 1274,
+          "height": 1800,
+          "preview_source": "assets/awards/nthu-scholarship-2021/certificate-1.jpg",
+          "preview": "assets/awards/nthu-scholarship-2021/certificate-1-preview.webp"
+        },
+        {
+          "kind": "certificate",
+          "url": "assets/awards/nthu-scholarship-2021/certificate-2.pdf",
+          "caption": "Certificate · 2021-09 · Chinese",
+          "preview": "assets/awards/nthu-scholarship-2021/certificate-2-preview.webp",
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/nthu-scholarship-2021/certificate-2-preview.jpg"
+        }
+      ],
+      "date_source": "Reviewed original award file dates"
+    },
+    {
       "date": "May 2021",
       "title": "Outstanding Contribution Award",
       "detail": "Department of CSIE, Ming Chuan University",
@@ -1606,7 +1647,7 @@
     {
       "date": "Dec 2019–Dec 2020",
       "title": "First Place, MCU Programming Contest",
-      "detail": "Advanced Division · Dec 2019, Dec 2020",
+      "detail": "Ming Chuan University · Advanced Division (2019, 2020)",
       "id": "mcu-programming-2019-2020",
       "links": [],
       "media": [
@@ -1634,7 +1675,7 @@
     {
       "date": "Dec 2020",
       "title": "Honorable Mention, Central Taiwan Programming Contest",
-      "detail": "",
+      "detail": "National Changhua University of Education · Central Taiwan collegiate programming competition",
       "id": "central-taiwan-2020",
       "links": [],
       "media": [
@@ -1651,9 +1692,46 @@
       "date_source": "Reviewed original award file dates"
     },
     {
+      "date": "Nov 2018–Nov 2020",
+      "title": "Honorable Mention, NCPC",
+      "detail": "Ministry of Education, Taiwan · Collegiate programming competition (2018, 2019, 2020)",
+      "id": "ncpc-2018-2020",
+      "links": [],
+      "media": [
+        {
+          "kind": "certificate",
+          "url": "assets/awards/ncpc-2018-2020/certificate-1.jpg",
+          "caption": "Certificate · 2018-11-11 · Chinese",
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/ncpc-2018-2020/certificate-1.jpg",
+          "preview": "assets/awards/ncpc-2018-2020/certificate-1-preview.webp"
+        },
+        {
+          "kind": "certificate",
+          "url": "assets/awards/ncpc-2018-2020/certificate-2.jpg",
+          "caption": "Certificate · 2019-11-24 · Chinese",
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/ncpc-2018-2020/certificate-2.jpg",
+          "preview": "assets/awards/ncpc-2018-2020/certificate-2-preview.webp"
+        },
+        {
+          "kind": "certificate",
+          "url": "assets/awards/ncpc-2018-2020/certificate-3.jpg",
+          "caption": "Certificate · 2020-11-08 · Chinese",
+          "width": 1273,
+          "height": 1800,
+          "preview_source": "assets/awards/ncpc-2018-2020/certificate-3.jpg",
+          "preview": "assets/awards/ncpc-2018-2020/certificate-3-preview.webp"
+        }
+      ],
+      "date_source": "Reviewed original award file dates"
+    },
+    {
       "date": "Oct 2020",
       "title": "Honorable Mention, TOPC",
-      "detail": "Taiwan Online Programming Contest",
+      "detail": "ICPC Foundation · Taiwan Online Programming Contest",
       "id": "topc-2020",
       "links": [],
       "media": [
@@ -1672,7 +1750,7 @@
     {
       "date": "Nov 2019",
       "title": "Bronze Award, ICPC Asia Taipei–Hsinchu Regional",
-      "detail": "",
+      "detail": "ICPC Foundation · Asia Taipei–Hsinchu regional programming contest",
       "id": "icpc-2019",
       "links": [
         {
@@ -1724,7 +1802,7 @@
     {
       "date": "Oct 2019",
       "title": "Silver Award, TOPC",
-      "detail": "Taiwan Online Programming Contest",
+      "detail": "ICPC Foundation · Taiwan Online Programming Contest",
       "id": "topc-2019",
       "links": [
         {
@@ -1767,7 +1845,7 @@
     {
       "date": "Jul 2019",
       "title": "Silver Prize, NCPU",
-      "detail": "National Collegiate Programming Contest for Universities",
+      "detail": "ICPC Foundation · Taiwan National Contest for Private Universities",
       "id": "ncpu-2019",
       "links": [],
       "media": [
@@ -1811,46 +1889,9 @@
       "date_source": "Reviewed original award file dates"
     },
     {
-      "date": "Nov 2018–Nov 2020",
-      "title": "Honorable Mention, NCPC",
-      "detail": "National Collegiate Programming Contest · Nov 2018, Nov 2019, Nov 2020",
-      "id": "ncpc-2018-2020",
-      "links": [],
-      "media": [
-        {
-          "kind": "certificate",
-          "url": "assets/awards/ncpc-2018-2020/certificate-1.jpg",
-          "caption": "Certificate · 2018-11-11 · Chinese",
-          "width": 1273,
-          "height": 1800,
-          "preview_source": "assets/awards/ncpc-2018-2020/certificate-1.jpg",
-          "preview": "assets/awards/ncpc-2018-2020/certificate-1-preview.webp"
-        },
-        {
-          "kind": "certificate",
-          "url": "assets/awards/ncpc-2018-2020/certificate-2.jpg",
-          "caption": "Certificate · 2019-11-24 · Chinese",
-          "width": 1273,
-          "height": 1800,
-          "preview_source": "assets/awards/ncpc-2018-2020/certificate-2.jpg",
-          "preview": "assets/awards/ncpc-2018-2020/certificate-2-preview.webp"
-        },
-        {
-          "kind": "certificate",
-          "url": "assets/awards/ncpc-2018-2020/certificate-3.jpg",
-          "caption": "Certificate · 2020-11-08 · Chinese",
-          "width": 1273,
-          "height": 1800,
-          "preview_source": "assets/awards/ncpc-2018-2020/certificate-3.jpg",
-          "preview": "assets/awards/ncpc-2018-2020/certificate-3-preview.webp"
-        }
-      ],
-      "date_source": "Reviewed original award file dates"
-    },
-    {
       "date": "Jun 2018",
       "title": "First Place, Intercollegiate Freshman Cup Programming Contest",
-      "detail": "",
+      "detail": "Ming Chuan University · Programming competition for first-year students",
       "id": "freshman-cup-2018",
       "links": [],
       "media": [
@@ -1869,7 +1910,7 @@
     {
       "date": "Jan 2018",
       "title": "Third Place & Popularity Award, Three-University Software Innovation Exhibition and Competition",
-      "detail": "Ministry of Education",
+      "detail": "Fu Jen Catholic University · Software innovation competition under a Ministry of Education program",
       "id": "software-innovation-2018",
       "links": [],
       "media": [
@@ -1900,7 +1941,7 @@
       "id": "badminton-2025",
       "date": "May 2025",
       "title": "First Place, NTHU Interdepartmental Cup Badminton Doubles",
-      "detail": "National Tsing Hua University",
+      "detail": "National Tsing Hua University · Interdepartmental badminton doubles competition",
       "links": [],
       "media": [
         {

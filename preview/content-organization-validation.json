@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-04",
+  "baselineCommit": "8328a86169c8f44509d6c19073be908d2c36a438",
+  "static": {
+    "selectedAwards": 18,
+    "moreAwards": 14,
+    "awardGalleriesIncludingHobby": 33,
+    "uniqueMediaFiles": 87,
+    "announcementLinks": 34,
+    "uniqueAnnouncementUrls": 29,
+    "splitProblemCounts": {
+      "iccad-contest-2025-c": {
+        "cards": 4,
+        "photos": 2
+      },
+      "iccad-contest-2025": {
+        "cards": 4,
+        "photos": 2
+      },
+      "iccad-contest-2024": {
+        "cards": 3,
+        "photos": 1
+      },
+      "iccad-contest-2024-b": {
+        "cards": 3,
+        "photos": 1
+      }
+    },
+    "allOriginalMediaAndPreviewsPreserved": true,
+    "publicManifestUnchanged": true,
+    "publicationsAndCitationsUnchanged": true,
+    "cvBrandStylesScriptsAndShareImageUnchanged": true,
+    "localReferencesChecked": 750,
+    "externalNewTabAnchorsChecked": 101,
+    "htmlPagesChecked": 35,
+    "status": "passed"
+  },
+  "browser": {
+    "viewports": [
+      {
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000
+        },
+        "sectionAndNavigationOrder": "passed",
+        "selectedAndMoreLabels": "passed",
+        "disclosureCounts": "passed",
+        "longAwardTitlesAndUniformColor": "passed",
+        "experienceNavigation": "passed",
+        "problemSpecificPhotoViewer": "passed",
+        "newMoreGalleryReturn": "passed",
+        "horizontalOverflow": false,
+        "phoneSwipe": "not applicable"
+      },
+      {
+        "viewport": {
+          "name": "laptop",
+          "width": 1024,
+          "height": 768
+        },
+        "sectionAndNavigationOrder": "passed",
+        "selectedAndMoreLabels": "passed",
+        "disclosureCounts": "passed",
+        "longAwardTitlesAndUniformColor": "passed",
+        "experienceNavigation": "passed",
+        "problemSpecificPhotoViewer": "passed",
+        "newMoreGalleryReturn": "passed",
+        "horizontalOverflow": false,
+        "phoneSwipe": "not applicable"
+      },
+      {
+        "viewport": {
+          "name": "tablet",
+          "width": 820,
+          "height": 1180
+        },
+        "sectionAndNavigationOrder": "passed",
+        "selectedAndMoreLabels": "passed",
+        "disclosureCounts": "passed",
+        "longAwardTitlesAndUniformColor": "passed",
+        "experienceNavigation": "passed",
+        "problemSpecificPhotoViewer": "passed",
+        "newMoreGalleryReturn": "passed",
+        "horizontalOverflow": false,
+        "phoneSwipe": "not applicable"
+      },
+      {
+        "viewport": {
+          "name": "tablet-small",
+          "width": 768,
+          "height": 1024
+        },
+        "sectionAndNavigationOrder": "passed",
+        "selectedAndMoreLabels": "passed",
+        "disclosureCounts": "passed",
+        "longAwardTitlesAndUniformColor": "passed",
+        "experienceNavigation": "passed",
+        "problemSpecificPhotoViewer": "passed",
+        "newMoreGalleryReturn": "passed",
+        "horizontalOverflow": false,
+        "phoneSwipe": "not applicable"
+      },
+      {
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844
+        },
+        "sectionAndNavigationOrder": "passed",
+        "selectedAndMoreLabels": "passed",
+        "disclosureCounts": "passed",
+        "longAwardTitlesAndUniformColor": "passed",
+        "experienceNavigation": "passed",
+        "problemSpecificPhotoViewer": "passed",
+        "newMoreGalleryReturn": "passed",
+        "horizontalOverflow": false,
+        "phoneSwipe": "passed"
+      },
+      {
+        "viewport": {
+          "name": "mobile-small",
+          "width": 320,
+          "height": 568
+        },
+        "sectionAndNavigationOrder": "passed",
+        "selectedAndMoreLabels": "passed",
+        "disclosureCounts": "passed",
+        "longAwardTitlesAndUniformColor": "passed",
+        "experienceNavigation": "passed",
+        "problemSpecificPhotoViewer": "passed",
+        "newMoreGalleryReturn": "passed",
+        "horizontalOverflow": false,
+        "phoneSwipe": "passed"
+      },
+      {
+        "viewport": {
+          "name": "mobile-landscape",
+          "width": 844,
+          "height": 390
+        },
+        "sectionAndNavigationOrder": "passed",
+        "selectedAndMoreLabels": "passed",
+        "disclosureCounts": "passed",
+        "longAwardTitlesAndUniformColor": "passed",
+        "experienceNavigation": "passed",
+        "problemSpecificPhotoViewer": "passed",
+        "newMoreGalleryReturn": "passed",
+        "horizontalOverflow": false,
+        "phoneSwipe": "not applicable"
+      }
+    ],
+    "decodedPreviews": 87,
+    "galleriesChecked": 33,
+    "clipboardRegression": "passed",
+    "accessibility": [
+      {
+        "page": "desktop homepage with More expanded",
+        "violations": []
+      },
+      {
+        "page": "desktop new Problem B gallery",
+        "violations": []
+      },
+      {
+        "page": "desktop new Problem C gallery",
+        "violations": []
+      },
+      {
+        "page": "mobile homepage with More expanded",
+        "violations": []
+      },
+      {
+        "page": "mobile new Problem B gallery",
+        "violations": []
+      },
+      {
+        "page": "mobile new Problem C gallery",
+        "violations": []
+      }
+    ],
+    "errors": [],
+    "status": "passed",
+    "noJavaScriptDisclosureAndGallery": "passed",
+    "noJavaScriptPreviewMime": "image/webp (explicit local mapping; GitHub Pages header verified)"
+  }
+}

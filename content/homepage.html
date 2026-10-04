@@ -43,8 +43,8 @@
         <a href="#about" aria-current="location">About</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
-        <a href="#awards">Awards</a>
         <a href="#experience">Experience</a>
+        <a href="#awards">Awards</a>
         <a href="#teaching">Teaching</a>
         <a href="#beyond">Hobbies</a>
       </nav>
@@ -83,26 +83,26 @@
       </section>
 
       <section class="section" id="publications" aria-labelledby="publications-title">
-        <div class="section-heading"><h2 id="publications-title">Publications</h2><a class="section-link" href="https://scholar.google.com/citations?user=8Sash14AAAAJ">Google Scholar</a></div>
-        <p class="section-intro">Selected work. * denotes equal contribution.</p>
+        <div class="section-heading"><h2 id="publications-title">Publications</h2><span class="section-note">Selected</span></div>
+        <p class="section-intro">* denotes equal contribution.</p>
         <div class="publication-list">${SELECTED_PUBLICATIONS}</div>
-        <details class="more-details" id="more-publications"><summary><span>More Publications</span><span class="detail-count">${MORE_PUBLICATIONS_COUNT} papers</span><span class="details-plus" aria-hidden="true"></span></summary><div class="details-content publication-list">${OTHER_PUBLICATIONS}</div></details>
-      </section>
-
-      <section class="section" id="awards" aria-labelledby="awards-title">
-        <div class="section-heading"><h2 id="awards-title">Awards &amp; Honors</h2><span class="section-note">Selected Recognition</span></div>
-        <ul class="award-list">${AWARDS}</ul>
-        <details class="more-details"><summary><span>Earlier Awards</span><span class="details-plus" aria-hidden="true"></span></summary><ul class="award-list details-content">${EARLIER_AWARDS}</ul></details>
-        <div class="photo-grid">
-          <figure><a class="photo-link" href="assets/awards/hsinchu-youth-2026/photo-2.jpg" data-preview="${HSINCHU_PREVIEW}" data-photo="Hsinchu City Outstanding Youth, 2026" aria-label="View full photo: Hsinchu City Outstanding Youth"><img src="${HSINCHU_PREVIEW}" alt="Wuqian Tang holding his certificate at the Hsinchu City Outstanding Youth award ceremony" loading="lazy" decoding="async" width="${HSINCHU_WIDTH}" height="${HSINCHU_HEIGHT}"></a><figcaption><span>Hsinchu City Outstanding Youth</span><span>College / University Division · Mar 2026</span></figcaption></figure>
-          <figure><a class="photo-link" href="assets/images/hsing-chien-2025.jpg" data-preview="${HSING_CHIEN_PREVIEW}" data-photo="Presidential Hsing Chien Award, 2025" aria-label="View full photo: Presidential Hsing Chien Award"><img src="${HSING_CHIEN_PREVIEW}" alt="Group photo at the National Tsing Hua University Presidential Hsing Chien Award ceremony" loading="lazy" decoding="async" width="${HSING_CHIEN_WIDTH}" height="${HSING_CHIEN_HEIGHT}"></a><figcaption><span>Presidential Hsing Chien Award</span><span>National Tsing Hua University · May 2025</span></figcaption></figure>
-        </div>
+        <details class="more-details" id="more-publications"><summary aria-label="More publications"><span>More</span><span class="details-plus" aria-hidden="true"></span></summary><div class="details-content publication-list">${OTHER_PUBLICATIONS}</div></details>
       </section>
 
       <section class="section" id="experience" aria-labelledby="experience-title">
         <h2 id="experience-title">Education &amp; Experience</h2>
         <h3 class="subsection-title">Education</h3><div class="timeline">${EDUCATION}</div>
         <h3 class="subsection-title">Work Experience</h3><div class="timeline">${EXPERIENCE}</div>
+      </section>
+
+      <section class="section" id="awards" aria-labelledby="awards-title">
+        <div class="section-heading"><h2 id="awards-title">Awards &amp; Honors</h2><span class="section-note">Selected</span></div>
+        <ul class="award-list">${AWARDS}</ul>
+        <details class="more-details" id="more-awards"><summary aria-label="More awards and honors"><span>More</span><span class="details-plus" aria-hidden="true"></span></summary><ul class="award-list details-content">${EARLIER_AWARDS}</ul></details>
+        <div class="photo-grid">
+          <figure><a class="photo-link" href="assets/awards/hsinchu-youth-2026/photo-2.jpg" data-preview="${HSINCHU_PREVIEW}" data-photo="Hsinchu City Outstanding Youth, 2026" aria-label="View full photo: Hsinchu City Outstanding Youth"><img src="${HSINCHU_PREVIEW}" alt="Wuqian Tang holding his certificate at the Hsinchu City Outstanding Youth award ceremony" loading="lazy" decoding="async" width="${HSINCHU_WIDTH}" height="${HSINCHU_HEIGHT}"></a><figcaption><span>Hsinchu City Outstanding Youth</span><span>College / University Division · Mar 2026</span></figcaption></figure>
+          <figure><a class="photo-link" href="assets/images/hsing-chien-2025.jpg" data-preview="${HSING_CHIEN_PREVIEW}" data-photo="Presidential Hsing Chien Award, 2025" aria-label="View full photo: Presidential Hsing Chien Award"><img src="${HSING_CHIEN_PREVIEW}" alt="Group photo at the National Tsing Hua University Presidential Hsing Chien Award ceremony" loading="lazy" decoding="async" width="${HSING_CHIEN_WIDTH}" height="${HSING_CHIEN_HEIGHT}"></a><figcaption><span>Presidential Hsing Chien Award</span><span>National Tsing Hua University · May 2025</span></figcaption></figure>
+        </div>
       </section>
 
       <section class="section" id="teaching" aria-labelledby="teaching-title">
