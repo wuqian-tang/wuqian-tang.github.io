@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-04",
+  "static": {
+    "onlyApprovedProfileMoves": true,
+    "publications": {
+      "selected": 5,
+      "more": 16,
+      "oracleBonePaper": "More / 2025"
+    },
+    "awards": {
+      "selected": 17,
+      "more": 15,
+      "ICPCSilver": "More / Nov 2020"
+    },
+    "mediaCount": 87,
+    "uniqueMediaAssignments": true,
+    "citationsAndAssetsPreserved": true,
+    "ICPCGalleryUnchanged": true,
+    "stylesScriptsAndCVUnchanged": true
+  },
+  "browser": {
+    "base": "http://127.0.0.1:8765",
+    "results": [
+      {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000,
+        "selectedCounts": "5 publications / 17 awards",
+        "moreCounts": "16 publications / 15 awards",
+        "placement": "passed",
+        "labelsAndResources": "passed",
+        "directAnchorsAndGalleryReturn": "passed",
+        "horizontalOverflow": false,
+        "oracleBibTeXClipboard": "passed",
+        "ICPCViewerAndNavigation": "passed"
+      },
+      {
+        "name": "tablet",
+        "width": 820,
+        "height": 1180,
+        "selectedCounts": "5 publications / 17 awards",
+        "moreCounts": "16 publications / 15 awards",
+        "placement": "passed",
+        "labelsAndResources": "passed",
+        "directAnchorsAndGalleryReturn": "passed",
+        "horizontalOverflow": false
+      },
+      {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "selectedCounts": "5 publications / 17 awards",
+        "moreCounts": "16 publications / 15 awards",
+        "placement": "passed",
+        "labelsAndResources": "passed",
+        "directAnchorsAndGalleryReturn": "passed",
+        "horizontalOverflow": false,
+        "oracleBibTeXClipboard": "passed",
+        "ICPCViewerAndNavigation": "passed"
+      },
+      {
+        "name": "mobile-small",
+        "width": 320,
+        "height": 568,
+        "selectedCounts": "5 publications / 17 awards",
+        "moreCounts": "16 publications / 15 awards",
+        "placement": "passed",
+        "labelsAndResources": "passed",
+        "directAnchorsAndGalleryReturn": "passed",
+        "horizontalOverflow": false
+      },
+      {
+        "name": "mobile-no-JavaScript",
+        "nativeDisclosures": "passed",
+        "oracleCitationFallback": "passed",
+        "ICPCGalleryFallback": "passed",
+        "horizontalOverflow": false
+      }
+    ],
+    "errors": []
+  }
+}

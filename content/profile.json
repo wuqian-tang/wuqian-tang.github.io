@@ -552,7 +552,7 @@
       "year": 2025,
       "details": "vol. 15, pp. 1–35, Apr 2025",
       "status": "In Chinese",
-      "selected": true,
+      "selected": false,
       "links": [
         {
           "label": "DOI",
@@ -1421,58 +1421,6 @@
         }
       ],
       "date_source": "Reviewed original award file dates"
-    },
-    {
-      "date": "Nov 2020",
-      "title": "Silver Award, ICPC Asia Taipei–Hsinchu Regional",
-      "detail": "ICPC Foundation · Asia Taipei–Hsinchu regional programming contest",
-      "id": "icpc-2020",
-      "links": [
-        {
-          "label": "News",
-          "url": "https://www.week.mcu.edu.tw/37995/",
-          "description": "Ming Chuan University team award news"
-        }
-      ],
-      "media": [
-        {
-          "kind": "certificate",
-          "url": "assets/awards/icpc-2020/certificate-1.pdf",
-          "caption": "Certificate · 2020-11-07 · English",
-          "preview": "assets/awards/icpc-2020/certificate-1-preview.webp",
-          "width": 1800,
-          "height": 1272,
-          "preview_source": "assets/awards/icpc-2020/certificate-1-preview.jpg"
-        },
-        {
-          "kind": "certificate",
-          "url": "assets/awards/icpc-2020/certificate-2.pdf",
-          "caption": "Certificate · 2020-11-07 · English",
-          "preview": "assets/awards/icpc-2020/certificate-2-preview.webp",
-          "width": 1800,
-          "height": 1272,
-          "preview_source": "assets/awards/icpc-2020/certificate-2-preview.jpg"
-        },
-        {
-          "kind": "certificate",
-          "url": "assets/awards/icpc-2020/certificate-3.pdf",
-          "caption": "Certificate · 2020-11-07 · English",
-          "preview": "assets/awards/icpc-2020/certificate-3-preview.webp",
-          "width": 1800,
-          "height": 1272,
-          "preview_source": "assets/awards/icpc-2020/certificate-3-preview.jpg"
-        },
-        {
-          "kind": "plaque",
-          "url": "assets/awards/icpc-2020/plaque-1.jpg",
-          "caption": "Award plaque · 2020-11-07",
-          "width": 1176,
-          "height": 1600,
-          "preview_source": "assets/awards/icpc-2020/plaque-1.jpg",
-          "preview": "assets/awards/icpc-2020/plaque-1-preview.webp"
-        }
-      ],
-      "date_source": "Reviewed original award file dates"
     }
   ],
   "earlier_awards": [
@@ -1687,6 +1635,58 @@
           "height": 1800,
           "preview_source": "assets/awards/central-taiwan-2020/certificate-1.jpg",
           "preview": "assets/awards/central-taiwan-2020/certificate-1-preview.webp"
+        }
+      ],
+      "date_source": "Reviewed original award file dates"
+    },
+    {
+      "date": "Nov 2020",
+      "title": "Silver Award, ICPC Asia Taipei–Hsinchu Regional",
+      "detail": "ICPC Foundation · Asia Taipei–Hsinchu regional programming contest",
+      "id": "icpc-2020",
+      "links": [
+        {
+          "label": "News",
+          "url": "https://www.week.mcu.edu.tw/37995/",
+          "description": "Ming Chuan University team award news"
+        }
+      ],
+      "media": [
+        {
+          "kind": "certificate",
+          "url": "assets/awards/icpc-2020/certificate-1.pdf",
+          "caption": "Certificate · 2020-11-07 · English",
+          "preview": "assets/awards/icpc-2020/certificate-1-preview.webp",
+          "width": 1800,
+          "height": 1272,
+          "preview_source": "assets/awards/icpc-2020/certificate-1-preview.jpg"
+        },
+        {
+          "kind": "certificate",
+          "url": "assets/awards/icpc-2020/certificate-2.pdf",
+          "caption": "Certificate · 2020-11-07 · English",
+          "preview": "assets/awards/icpc-2020/certificate-2-preview.webp",
+          "width": 1800,
+          "height": 1272,
+          "preview_source": "assets/awards/icpc-2020/certificate-2-preview.jpg"
+        },
+        {
+          "kind": "certificate",
+          "url": "assets/awards/icpc-2020/certificate-3.pdf",
+          "caption": "Certificate · 2020-11-07 · English",
+          "preview": "assets/awards/icpc-2020/certificate-3-preview.webp",
+          "width": 1800,
+          "height": 1272,
+          "preview_source": "assets/awards/icpc-2020/certificate-3-preview.jpg"
+        },
+        {
+          "kind": "plaque",
+          "url": "assets/awards/icpc-2020/plaque-1.jpg",
+          "caption": "Award plaque · 2020-11-07",
+          "width": 1176,
+          "height": 1600,
+          "preview_source": "assets/awards/icpc-2020/plaque-1.jpg",
+          "preview": "assets/awards/icpc-2020/plaque-1-preview.webp"
         }
       ],
       "date_source": "Reviewed original award file dates"
