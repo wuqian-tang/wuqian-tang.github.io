@@ -45,8 +45,8 @@
       "paper": "c17"
     },
     {
-      "title": "Logic Synthesis & Circuit Reverse Engineering",
-      "description": "Recovering high-level circuit descriptions and developing search methods for logic synthesis, with correctness checked against the original circuit.",
+      "title": "Logic Synthesis & RTL Recovery",
+      "description": "Developing optimization methods for logic synthesis and recovering functionally equivalent RTL representations from gate-level circuits.",
       "work": "CB-EVO · TODAES 2026; DATE 2024",
       "paper": "j1"
     },
@@ -648,7 +648,7 @@
     {
       "date": "Sep 2026",
       "title": "Second Place, MLCAD Contest",
-      "detail": "ACM/IEEE International Symposium on Machine Learning for CAD · Agentic algorithm discovery for timing-power co-optimization",
+      "detail": "LLM-based Algorithm Discovery for Timing Optimization",
       "id": "mlcad-2026",
       "links": [
         {
@@ -810,7 +810,7 @@
     {
       "date": "May 2026",
       "title": "Second Place, IWLS Programming Contest",
-      "detail": "International Workshop on Logic & Synthesis · Logic synthesis programming competition",
+      "detail": "LLM-based heterogeneous portfolio of AIG seeds, refined by evolutionary multi-tool synthesis and Pareto search.",
       "id": "iwls-2026",
       "links": [
         {
@@ -920,7 +920,7 @@
       "id": "ispd-2026",
       "date": "Mar 2026",
       "title": "Second Place, ISPD Contest",
-      "detail": "ACM International Symposium on Physical Design · Post-placement buffering and sizing",
+      "detail": "Post-placement buffering and sizing",
       "links": [
         {
           "label": "Department",
@@ -944,7 +944,7 @@
     {
       "date": "Oct 2025",
       "title": "First Place (Problem C), ICCAD CAD Contest",
-      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Incremental Placement Optimization Beyond Detailed Placement: Simultaneous Gate Sizing, Buffering, and Cell Relocation",
+      "detail": "Incremental Placement Optimization Beyond Detailed Placement: Simultaneous Gate Sizing, Buffering, and Cell Relocation",
       "id": "iccad-contest-2025-c",
       "links": [
         {
@@ -1007,7 +1007,7 @@
     {
       "date": "Oct 2025",
       "title": "Second Place (Problem A), ICCAD CAD Contest",
-      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Hardware Trojan Detection on Gate Level Netlist",
+      "detail": "Hardware Trojan Detection on Gate Level Netlist",
       "id": "iccad-contest-2025",
       "links": [
         {
@@ -1065,7 +1065,7 @@
     {
       "date": "Oct 2025",
       "title": "First Place, ICCAD CADathlon",
-      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Programming competition in electronic design automation",
+      "detail": "ACM/SIGDA CADathlon Programming Contest · Olympic Games of EDA",
       "id": "cadathlon-2025",
       "links": [
         {
@@ -1156,7 +1156,7 @@
     {
       "date": "Oct 2024",
       "title": "Second Place (Problem A), ICCAD CAD Contest",
-      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Reinforcement Logic Optimization for a General Cost Function",
+      "detail": "Reinforcement Logic Optimization for a General Cost Function",
       "id": "iccad-contest-2024",
       "links": [
         {
@@ -1210,7 +1210,7 @@
     {
       "date": "Oct 2024",
       "title": "Second Place, ICCAD CADathlon",
-      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Programming competition in electronic design automation",
+      "detail": "ACM/SIGDA CADathlon Programming Contest · Olympic Games of EDA",
       "id": "cadathlon-2024",
       "links": [
         {
@@ -1386,7 +1386,7 @@
     {
       "date": "Oct 2022",
       "title": "First Place (Problem A), ICCAD CAD Contest",
-      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Learning Arithmetic Operations from Gate-Level Circuit",
+      "detail": "Learning Arithmetic Operations from Gate-Level Circuit",
       "id": "iccad-contest-2022",
       "links": [
         {
@@ -1480,7 +1480,7 @@
       "id": "iccad-ssp-2025",
       "date": "Oct 2025",
       "title": "Student Scholar Program Award",
-      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Conference participation and travel support",
+      "detail": "IEEE/ACM International Conference on Computer-Aided Design",
       "links": [],
       "media": [
         {
@@ -1498,7 +1498,7 @@
     {
       "date": "Oct 2024",
       "title": "Honorable Mention (Problem B), ICCAD CAD Contest",
-      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Power and Timing Optimization Using Multibit Flip-Flop",
+      "detail": "Power and Timing Optimization Using Multibit Flip-Flop",
       "id": "iccad-contest-2024-b",
       "links": [
         {
@@ -1552,7 +1552,7 @@
     {
       "date": "Oct 2023",
       "title": "Honorable Mention (Problem A), ICCAD CAD Contest",
-      "detail": "IEEE/ACM International Conference on Computer-Aided Design · Multi-bit Large-scale Boolean Matching",
+      "detail": "Multi-bit Large-scale Boolean Matching",
       "id": "iccad-contest-2023",
       "links": [
         {

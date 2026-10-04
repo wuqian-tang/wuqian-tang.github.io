@@ -134,6 +134,9 @@ body.citation-open { overflow: hidden; }
 .more-details { margin-top: 1rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .more-details summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: .7rem; padding: .9rem 0; min-height: 48px; color: var(--blue); font-size: .875rem; font-weight: 550; }
 .more-details summary::-webkit-details-marker { display: none; }
+.more-details > summary .details-label-less { display: none; }
+.more-details[open] > summary .details-label-more { display: none; }
+.more-details[open] > summary .details-label-less { display: inline; }
 .detail-count { color: var(--muted); font-weight: 400; font-size: .8125rem; }
 .details-plus { margin-left: auto; width: 14px; height: 14px; position: relative; }
 .details-plus::before, .details-plus::after { content: ""; position: absolute; background: currentColor; }

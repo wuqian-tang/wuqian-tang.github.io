@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <title>${NAME} | Homepage</title>
-  <meta name="description" content="${NAME}, Ph.D. candidate at National Tsing Hua University. Research in LLMs for electronic design automation, logic synthesis, circuit reverse engineering, and physical design automation.">
+  <meta name="description" content="${NAME}, Ph.D. candidate at National Tsing Hua University. Research in LLMs for electronic design automation, logic synthesis and RTL recovery, and physical design automation.">
   <link rel="canonical" href="${SITE_URL}/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="${NAME} | Homepage">
@@ -29,8 +29,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=20261003-small-tang">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=20261003-small-tang">
   <link rel="icon" type="image/svg+xml" sizes="any" href="assets/favicon.svg?v=20261003-small-tang">
-  <link rel="stylesheet" href="assets/css/main.css?v=20261003-mobile-nav">
-  <script src="assets/js/main.js?v=20261003-mobile-nav" defer></script>
+  <link rel="stylesheet" href="assets/css/main.css?v=20261004-wording-disclosures">
+  <script src="assets/js/main.js?v=20261004-wording-disclosures" defer></script>
   <script type="application/ld+json">${STRUCTURED_DATA}</script>
 </head>
 <body>
@@ -68,7 +68,7 @@
         <p class="eyebrow">COMPUTER SCIENCE · ELECTRONIC DESIGN AUTOMATION</p>
         <h2 id="about-title">About Me</h2>
         <p>I am a Ph.D. candidate in Computer Science at <a href="https://www.nthu.edu.tw/">National Tsing Hua University</a>, advised by <a href="http://nthucad.cs.nthu.edu.tw/~wcyao/">Prof. Chun-Yao Wang</a> and <a href="https://www.cse.cuhk.edu.hk/~byu/">Prof. Bei Yu</a> at The Chinese University of Hong Kong.</p>
-        <p>My research focuses on electronic design automation (EDA). I work on learning and optimization methods for circuit design, with interests in <strong>LLMs for EDA</strong>, <strong>logic synthesis and circuit reverse engineering</strong>, and <strong>physical design automation</strong>.</p>
+        <p>My research focuses on electronic design automation (EDA). I work on learning and optimization methods for circuit design, with interests in <strong>LLMs for EDA</strong>, <strong>logic synthesis and RTL recovery</strong>, and <strong>physical design automation</strong>.</p>
         <p>I received my M.S. in Computer Science from National Tsing Hua University in 2023 and my B.S. in Computer Science and Information Engineering from Ming Chuan University in 2021.</p>
       </section>
 
@@ -86,7 +86,7 @@
         <div class="section-heading"><h2 id="publications-title">Publications</h2><span class="section-note">Selected</span></div>
         <p class="section-intro">* denotes equal contribution.</p>
         <div class="publication-list">${SELECTED_PUBLICATIONS}</div>
-        <details class="more-details" id="more-publications"><summary aria-label="More publications"><span>More</span><span class="details-plus" aria-hidden="true"></span></summary><div class="details-content publication-list">${OTHER_PUBLICATIONS}</div></details>
+        <details class="more-details" id="more-publications"><summary><span class="details-label-more">More</span><span class="details-label-less">Less</span><span class="visually-hidden"> publications</span><span class="details-plus" aria-hidden="true"></span></summary><div class="details-content publication-list">${OTHER_PUBLICATIONS}</div></details>
       </section>
 
       <section class="section" id="experience" aria-labelledby="experience-title">
@@ -98,7 +98,7 @@
       <section class="section" id="awards" aria-labelledby="awards-title">
         <div class="section-heading"><h2 id="awards-title">Awards &amp; Honors</h2><span class="section-note">Selected</span></div>
         <ul class="award-list">${AWARDS}</ul>
-        <details class="more-details" id="more-awards"><summary aria-label="More awards and honors"><span>More</span><span class="details-plus" aria-hidden="true"></span></summary><ul class="award-list details-content">${EARLIER_AWARDS}</ul></details>
+        <details class="more-details" id="more-awards"><summary><span class="details-label-more">More</span><span class="details-label-less">Less</span><span class="visually-hidden"> awards and honors</span><span class="details-plus" aria-hidden="true"></span></summary><ul class="award-list details-content">${EARLIER_AWARDS}</ul></details>
         <div class="photo-grid">
           <figure><a class="photo-link" href="assets/awards/hsinchu-youth-2026/photo-2.jpg" data-preview="${HSINCHU_PREVIEW}" data-photo="Hsinchu City Outstanding Youth, 2026" aria-label="View full photo: Hsinchu City Outstanding Youth"><img src="${HSINCHU_PREVIEW}" alt="Wuqian Tang holding his certificate at the Hsinchu City Outstanding Youth award ceremony" loading="lazy" decoding="async" width="${HSINCHU_WIDTH}" height="${HSINCHU_HEIGHT}"></a><figcaption><span>Hsinchu City Outstanding Youth</span><span>College / University Division · Mar 2026</span></figcaption></figure>
           <figure><a class="photo-link" href="assets/images/hsing-chien-2025.jpg" data-preview="${HSING_CHIEN_PREVIEW}" data-photo="Presidential Hsing Chien Award, 2025" aria-label="View full photo: Presidential Hsing Chien Award"><img src="${HSING_CHIEN_PREVIEW}" alt="Group photo at the National Tsing Hua University Presidential Hsing Chien Award ceremony" loading="lazy" decoding="async" width="${HSING_CHIEN_WIDTH}" height="${HSING_CHIEN_HEIGHT}"></a><figcaption><span>Presidential Hsing Chien Award</span><span>National Tsing Hua University · May 2025</span></figcaption></figure>

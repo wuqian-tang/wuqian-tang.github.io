@@ -1,0 +1,197 @@
+{
+  "date": "2026-10-04",
+  "baselineCommit": "615f123c2b65cc1f51ae251a540bbad0f2a240b4",
+  "static": {
+    "awardDescriptionsUpdated": [
+      "mlcad-2026",
+      "iwls-2026",
+      "ispd-2026",
+      "iccad-contest-2025-c",
+      "iccad-contest-2025",
+      "cadathlon-2025",
+      "iccad-contest-2024",
+      "cadathlon-2024",
+      "iccad-contest-2022",
+      "iccad-ssp-2025",
+      "iccad-contest-2024-b",
+      "iccad-contest-2023"
+    ],
+    "exactApprovedWording": "passed",
+    "researchHighlightsIncludingDate2024Retained": true,
+    "publicationMetadataAndCitationsPreserved": true,
+    "allAwardMediaDatesTitlesAndAnnouncementsPreserved": true,
+    "originalsPreviewsManifestCvBrandAndShareImagePreserved": true,
+    "javascriptUnchanged": true,
+    "galleryCount": 33,
+    "uniqueMedia": 87,
+    "htmlPagesChecked": 35,
+    "localReferencesChecked": 750,
+    "externalNewTabAnchorsChecked": 101,
+    "cacheRevision": "20261004-wording-disclosures",
+    "status": "passed"
+  },
+  "browser": {
+    "viewports": [
+      {
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000
+        },
+        "researchWordingAndDate2024": "passed",
+        "mouseAndKeyboardMoreLess": "passed",
+        "accessibleNamesAndNativeStates": "passed",
+        "plusMinusSymbols": "passed",
+        "summaryDimensionsStable": true,
+        "directLinkAndGalleryReturnLess": "passed",
+        "horizontalOverflow": false
+      },
+      {
+        "viewport": {
+          "name": "laptop",
+          "width": 1024,
+          "height": 768
+        },
+        "researchWordingAndDate2024": "passed",
+        "mouseAndKeyboardMoreLess": "passed",
+        "accessibleNamesAndNativeStates": "passed",
+        "plusMinusSymbols": "passed",
+        "summaryDimensionsStable": true,
+        "directLinkAndGalleryReturnLess": "passed",
+        "horizontalOverflow": false
+      },
+      {
+        "viewport": {
+          "name": "tablet",
+          "width": 820,
+          "height": 1180
+        },
+        "researchWordingAndDate2024": "passed",
+        "mouseAndKeyboardMoreLess": "passed",
+        "accessibleNamesAndNativeStates": "passed",
+        "plusMinusSymbols": "passed",
+        "summaryDimensionsStable": true,
+        "directLinkAndGalleryReturnLess": "passed",
+        "horizontalOverflow": false
+      },
+      {
+        "viewport": {
+          "name": "tablet-small",
+          "width": 768,
+          "height": 1024
+        },
+        "researchWordingAndDate2024": "passed",
+        "mouseAndKeyboardMoreLess": "passed",
+        "accessibleNamesAndNativeStates": "passed",
+        "plusMinusSymbols": "passed",
+        "summaryDimensionsStable": true,
+        "directLinkAndGalleryReturnLess": "passed",
+        "horizontalOverflow": false
+      },
+      {
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844
+        },
+        "researchWordingAndDate2024": "passed",
+        "mouseAndKeyboardMoreLess": "passed",
+        "accessibleNamesAndNativeStates": "passed",
+        "plusMinusSymbols": "passed",
+        "summaryDimensionsStable": true,
+        "directLinkAndGalleryReturnLess": "passed",
+        "horizontalOverflow": false
+      },
+      {
+        "viewport": {
+          "name": "mobile-small",
+          "width": 320,
+          "height": 568
+        },
+        "researchWordingAndDate2024": "passed",
+        "mouseAndKeyboardMoreLess": "passed",
+        "accessibleNamesAndNativeStates": "passed",
+        "plusMinusSymbols": "passed",
+        "summaryDimensionsStable": true,
+        "directLinkAndGalleryReturnLess": "passed",
+        "horizontalOverflow": false
+      },
+      {
+        "viewport": {
+          "name": "mobile-landscape",
+          "width": 844,
+          "height": 390
+        },
+        "researchWordingAndDate2024": "passed",
+        "mouseAndKeyboardMoreLess": "passed",
+        "accessibleNamesAndNativeStates": "passed",
+        "plusMinusSymbols": "passed",
+        "summaryDimensionsStable": true,
+        "directLinkAndGalleryReturnLess": "passed",
+        "horizontalOverflow": false
+      }
+    ],
+    "changedGalleryLayoutChecks": 24,
+    "noJavaScript": [
+      {
+        "viewport": "desktop",
+        "moreLessLabelsAndKeyboard": "passed",
+        "accessibleNames": "passed",
+        "bibtexInlineDisclosureUnaffected": "passed",
+        "galleryFallback": "passed"
+      },
+      {
+        "viewport": "mobile",
+        "moreLessLabelsAndKeyboard": "passed",
+        "accessibleNames": "passed",
+        "bibtexInlineDisclosureUnaffected": "passed",
+        "galleryFallback": "passed"
+      },
+      {
+        "viewport": "mobile-small",
+        "moreLessLabelsAndKeyboard": "passed",
+        "accessibleNames": "passed",
+        "bibtexInlineDisclosureUnaffected": "passed",
+        "galleryFallback": "passed"
+      }
+    ],
+    "clipboardRegression": "passed",
+    "galleryViewerRegression": "passed",
+    "accessibility": [
+      {
+        "page": "desktop homepage collapsed",
+        "violations": []
+      },
+      {
+        "page": "desktop homepage expanded",
+        "violations": []
+      },
+      {
+        "page": "desktop iwls-2026 gallery",
+        "violations": []
+      },
+      {
+        "page": "desktop cadathlon-2025 gallery",
+        "violations": []
+      },
+      {
+        "page": "mobile homepage collapsed",
+        "violations": []
+      },
+      {
+        "page": "mobile homepage expanded",
+        "violations": []
+      },
+      {
+        "page": "mobile iwls-2026 gallery",
+        "violations": []
+      },
+      {
+        "page": "mobile cadathlon-2025 gallery",
+        "violations": []
+      }
+    ],
+    "errors": [],
+    "status": "passed"
+  }
+}

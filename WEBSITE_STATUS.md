@@ -7,7 +7,21 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 栏目与获奖条目整理（2026-10-04）
+## 获奖说明、RTL 表述与 More / Less 修订（2026-10-04，最新）
+
+- 用户已确认本轮方案并授权开始实施。会议比赛说明不再重复会议名称、ACM / IEEE 或会议简称，直接列题目或比赛内容。ICCAD CAD Contest 的 6 个 Problem 条目只保留原有完整题名；ISPD 仅写 Post-placement buffering and sizing。
+- MLCAD 描述改为 `LLM-based Algorithm Discovery for Timing Optimization`，与[官方比赛仓库](https://github.com/ASU-VDA-Lab/MLCAD26-Contest)题名一致。
+- IWLS 描述采用已查看的证书中团队方案题名：`LLM-based heterogeneous portfolio of AIG seeds, refined by evolutionary multi-tool synthesis and Pareto search.`，含句末句点。来源为 `site/assets/awards/iwls-2026/certificate-1.jpg`；这是本人团队的方案题名。
+- 2024 / 2025 CADathlon 描述统一为 `ACM/SIGDA CADathlon Programming Contest · Olympic Games of EDA`，Programming 按奖杯正确拼写；不加英文引号或「」。两年的奖杯均印有比赛全名，ACM/SIGDA 是该完整比赛名称的一部分，按用户要求保留。后半句采用 [ICCAD 官方介绍](https://iccad.com/2026/cadathlon-at-iccad-2026)对 CADathlon 的称呼。
+- Student Scholar Program Award 仍在 More，只写 `IEEE/ACM International Conference on Computer-Aided Design`，去掉参与及差旅支持描述。非会议比赛的奖项沿用机构及已确认的描述例外。共更新 12 个获奖记录，首页和相册说明同步生成，34 处公告引用及所有媒体归属保持一致。
+- Research Interests 第二个方向标题为 `Logic Synthesis & RTL Recovery`，不带 Optimization。说明为 `Developing optimization methods for logic synthesis and recovering functionally equivalent RTL representations from gate-level circuits.`。代表工作完整保留 `CB-EVO · TODAES 2026; DATE 2024`。About Me 与搜索 description 同步使用 `logic synthesis and RTL recovery`；正式论文题名、作者、DOI 和 BibTeX 保存出版原文。
+- Publications 和 Awards 的原生展开控件：收起显示 More ＋，展开显示 Less −；原位置、字号、留白保持一致，不显示数量。两个文本标签由原生 details 的 open 状态控制，从相册返回、直接访问折叠条目的锚点以及禁用 JS 时均可同步；可访问名称中附带隐藏的 publications / awards and honors 上下文，并随可见文字切换。
+- 首页和全部相册的 CSS / JS 缓存版本更新为 `20261004-wording-disclosures`。本次仅增加 3 条文本状态 CSS 规则，复用原有 +/- 图形与原生展开行为。
+- 当前栏目顺序、18 项主列表 / 14 项 More、33 个相册、87 份媒体与 206 项公开资产 manifest 均保持一致。最新验收记录为 `preview/wording-disclosure-validation.json`：7 种屏幕尺寸、12 个改动相册在桌面及 320px 手机的 24 次排版检查、8 次 WCAG 扫描、3 种无 JS 尺寸全部通过；More / Less 的点击、Enter / Space 键盘切换、控件宽高、加减符号、原生无障碍名称及展开状态、直接锚点和相册返回均通过。实际 BibTeX 剪贴板、无 JS 引文展开、图片弹窗及回退通过；35 个 HTML 页面的 750 处本地引用及 101 个外部新分页锚点核对通过。
+
+- 已刷新电脑、平板、手机首页，Awards 主列表及展开列表、Publications 展开列表，以及 IWLS / CADathlon 独立相册的电脑和手机预览。静态构建、JS 语法及 diff 空白检查通过；本轮随 master 提交经 GitHub Pages 工作流发布，后续维护仍须核对最新工作流及实际线上页面。
+
+## 栏目与获奖条目整理（2026-10-04，上一版）
 
 - 已按用户最终审核实施。正文顺序为 About Me → Recent News → Research Interests → Publications → Education & Experience → Awards & Honors → Teaching → Hobbies；Education & Experience 放在 Publications 之后。顶部导航同步为 About / Research / Publications / Experience / Awards / Teaching / Hobbies。
 - Publications 与 Awards & Honors 右侧统一显示 `Selected`，不带句点；Publications 下方仅显示 `* denotes equal contribution.`，不加括号。删除 Publications 右侧的 Google Scholar，侧栏链接保留。论文与奖项的展开控件均只显示 `More`，不显示数量；可访问名称分别是 More publications 与 More awards and honors。
@@ -156,13 +170,13 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 ## 格式规范
 
 1. **语言与姓名**：页面以英文为主，中文姓名只用繁体「唐梧遷」，置于姓名括号内。英文名统一 Wuqian Tang；引用作者名和正式机构名保持准确。
-2. **标题**：栏目与子标题采用 Title Case，例如 About Me、Recent News、Research Interests、Awards & Honors、Education & Experience、Work Experience、Hobbies。最上方学科介绍是唯一全大写的展示文字：COMPUTER SCIENCE · ELECTRONIC DESIGN AUTOMATION。导航保留 Research；方向名称用 Physical Design Automation。不得用 `text-transform: uppercase` 强制转换子标题。论文题名保持出版方原文，不为统一标题样式改写正式题名。
+2. **标题**：栏目与子标题采用 Title Case，例如 About Me、Recent News、Research Interests、Awards & Honors、Education & Experience、Work Experience、Hobbies。最上方学科介绍是唯一全大写的展示文字：COMPUTER SCIENCE · ELECTRONIC DESIGN AUTOMATION。导航保留 Research；方向名称用 Physical Design Automation。 第二个方向为 Logic Synthesis & RTL Recovery；About Me 和搜索摘要使用 logic synthesis and RTL recovery，保留 DATE 2024 代表工作。不得用 `text-transform: uppercase` 强制转换子标题。论文题名保持出版方原文，不为统一标题样式改写正式题名。
 3. **视觉**：白色背景、深色正文、蓝色链接，系统字体，无远程字体依赖。奖项标题统一 `--ink`、`.9375rem`、550 字重，不按获奖等级改成蓝色。头像右上角线宽高均为 29px，左下角均为 58px；两处颜色均为 `#B5CBEA`、线宽均为 2px，形成非对称装饰。
 4. **日期**：页面日期用英文三字母月份加年份，如 Sep 2026、May 2025；时间范围用 en dash（–），持续状态用 Present；Awards 和相册日期在 – 后固定换行，– 留在首行，两个日期段分别 nowrap，不将月份与年份拆开；Education / Work Experience 日期在电脑和平板靠右、手机（600px 及以下）放在条目上方靠左，始终单行，横杠两侧保留空格，不插入 br。资料保存完整的起止年份，如 Jun 2025–Sep 2025；多人次合并奖项在说明中列出实际月份。以证书、官方公告或经过核对的资料为依据。
 5. **News**：当前只展示 2026 年，倒序排列，保持短句，右侧为 Latest Updates。句末使用方括号链接到具体图片/奖状或对应公告；媒体在首页弹窗展示，外部网页在新分页打开。不使用 TAPCO 正文跳转。助教新闻筛选正确学期，不把旧学期图片混入新新闻。
-6. **奖项**：右侧标注 Selected，主列表显示精选条目，其余放入 More；More 中含所有 Honorable Mention、Student Scholar Program Award 和 Mainland China Student Scholarship，不限于较早年份。标题保持普通深色文字。说明采用 `机构 · 描述`，会议比赛用会议全名；CSIE 系友／贡献奖、Synopsys 奖学金、陆生奖学金按本页最新例外仅保留机构。CAD Contest Problem 独立成条，用完整官方题名；每份照片、奖状、纪念牌只归属正确的 Problem，禁止重复挂载。条目末尾同行展示 `Materials: [Certificate] [Plaques] [Trophy] [Medal] [Photos] │ Announcements: [Official] [News] [University] [College] [Department]`，只列实际存在的资源，按数量用正确单复数。同类多张合为一个链接；窄屏允许自然换行。Materials 表示可查看的奖状、奖杯、奖牌、纪念牌及活动照片；Announcements 表示与该奖项对应的官方结果、报道和公告。浅灰竖线分隔两组，不重复写 news 后缀。不同 CAD Contest Problem 已分条，使用 `[Department]` 即可；同一条目多个年份可用 `[Department (2025)]` 区分。删除 Contest Website / Program Details 类型的链接。Hobbies 只有句末的 [Medal]，不单独起一行；照片本身可点击，避免重复 [Photo]。
+6. **奖项**：展开控件收起为 More ＋、展开为 Less −，可访问名称与可见文字同步。右侧标注 Selected，主列表显示精选条目，其余放入 More；More 中含所有 Honorable Mention、Student Scholar Program Award 和 Mainland China Student Scholarship，不限于较早年份。标题保持普通深色文字。一般说明采用 `机构 · 描述`；会议比赛因标题已有简称，说明仅保留完整题目或比赛内容，不重复会议名称。MLCAD / IWLS 采用本页最新确认的题名；CADathlon 为 `ACM/SIGDA CADathlon Programming Contest · Olympic Games of EDA`，无引号；Student Scholar Program Award 只保留 IEEE/ACM ICCAD 会议全名。CSIE 系友／贡献奖、Synopsys 奖学金、陆生奖学金按本页例外仅保留机构。CAD Contest Problem 独立成条，用完整官方题名；每份照片、奖状、纪念牌只归属正确的 Problem，禁止重复挂载。条目末尾同行展示 `Materials: [Certificate] [Plaques] [Trophy] [Medal] [Photos] │ Announcements: [Official] [News] [University] [College] [Department]`，只列实际存在的资源，按数量用正确单复数。同类多张合为一个链接；窄屏允许自然换行。Materials 表示可查看的奖状、奖杯、奖牌、纪念牌及活动照片；Announcements 表示与该奖项对应的官方结果、报道和公告。浅灰竖线分隔两组，不重复写 news 后缀。不同 CAD Contest Problem 已分条，使用 `[Department]` 即可；同一条目多个年份可用 `[Department (2025)]` 区分。删除 Contest Website / Program Details 类型的链接。Hobbies 只有句末的 [Medal]，不单独起一行；照片本身可点击，避免重复 [Photo]。
 7. **外部来源**：对应具体奖项与年份，确认本人姓名或队伍。优先官方结果、系所、学院、学校和政府；不把通用首页、其他团队的成绩或旧年份名单当获奖公告。全部 http/https 外部链接使用 `target="_blank" rel="noopener noreferrer"`，即使禁用 JavaScript 也保留此行为。内部锚点正常定位，邮件链接保持 mailto。
-8. **论文**：右侧仅标注 Selected，侧栏保留 Google Scholar，不重复在栏目右侧出现。标题下说明严格为 `* denotes equal contribution.`，不加括号或 Selected work.；更多论文的原生展开按钮只显示 More，不显示篇数，可访问名称应能区分论文与奖项。编号 J1 / J2 / C1–C19 保持稳定，作者顺序完整，本人加粗，星号表示 equal contribution。Invited paper、In Chinese 与 To appear 分别按事实使用。除 To appear 外，每篇必须有一个经过核对的 DOI。查不到 DOI 时按用户要求标为 To appear；不得使用相似题目的 DOI。
+8. **论文**：右侧仅标注 Selected，侧栏保留 Google Scholar，不重复在栏目右侧出现。标题下说明严格为 `* denotes equal contribution.`，不加括号或 Selected work.；更多论文的原生展开按钮收起为 More ＋、展开为 Less −，不显示篇数，可访问名称应能区分论文与奖项并跟随状态。编号 J1 / J2 / C1–C19 保持稳定，作者顺序完整，本人加粗，星号表示 equal contribution。Invited paper、In Chinese 与 To appear 分别按事实使用。除 To appear 外，每篇必须有一个经过核对的 DOI。查不到 DOI 时按用户要求标为 To appear；不得使用相似题目的 DOI。
 9. **论文 PDF**：优先正式官方全文或作者提供的可公开最终稿；下载后核对内容，存放 `site/files/papers/`。查看链接用 `files/papers/文件名.pdf`，不得链接其他人的个人网页、远程 PDF 或临时下载 token。保留 PDF 内容，在 manifest 记录来源与 SHA-256；如用户授权修改页面方向，还需记录 normalization。
 10. **照片**：沿用真实照片，不生成或改写人物。原始照片字节保持不变；PDF 如需转正，必须得到用户明确授权，只调整页面方向而不改扫描内容，并更新公开清单中的 SHA-256。首页羽毛球照片使用 4:3、`object-position: 50% 53%` 半身裁切；弹窗使用 `crop_top: 0.25` 只裁上方窗帘。方向先遵循正确 EXIF；2022 ICCAD 源 PDF 设置 270° 页面方向并重新生成正向预览，页面不再叠加旋转。图片有准确英文 alt，惰性加载，不在首页提前请求所有奖项图片。媒体点击直接在当前页弹窗，支持电脑两侧 / 手机图下的图标翻页、左右键、双向触控滑动、右上角图标关闭、Escape、焦点返回；翻页先解码新图，再用 100ms 淡出与 180ms 淡入配合 16px 水平位移，图框高度过渡 200ms；系统开启减少动态效果时取消这些动画；保留原相册作为无 JS / Ctrl 或 Cmd 点击回退。只有 View Original 查看链接，不添加下载按钮或 download 属性。
 11. **Teaching**：每门课程包含正式英文课程名、教师、所属系所或学院和学期；教师在前，系所在后，以 · 分隔。不同学院课程不能统一写成 CS。助教奖项括号采用 `Spring 2025` / `Fall 2025` 格式，表示教学对应学期；证书学年度第 1 学期转换为该学年开始公历年的 Fall，第 2 学期转换为下一公历年的 Spring。不得把次年 2 月或暑假颁发日期当成教学学期。Awards 日期列为颁发月份，说明与相册另注明实际学期。
