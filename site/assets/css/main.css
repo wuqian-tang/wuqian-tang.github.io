@@ -202,7 +202,9 @@ figcaption { font-size: .8125rem; color: var(--muted); margin-top: .65rem; line-
 .dialog-viewer { position: relative; flex-shrink: 0; }
 .dialog-stage { position: relative; overflow: hidden; height: 260px; transition: height .2s ease; touch-action: pan-y pinch-zoom; }
 .dialog-image { position: absolute; max-width: none; opacity: 0; }
-.dialog-message { position: absolute; inset: 0; display: grid; place-items: center; font-size: .875rem; text-align: center; }
+.dialog-message { position: absolute; left: 50%; bottom: .8rem; transform: translateX(-50%); display: flex; align-items: center; gap: .5rem; width: max-content; max-width: calc(100% - 1.6rem); padding: .55rem .8rem; border: 1px solid var(--line); border-radius: 8px; background: rgba(255,255,255,.96); color: var(--muted); font-size: .8125rem; line-height: 1.5; text-align: center; pointer-events: none; }
+.dialog-message.is-loading::before { content: ''; flex-shrink: 0; width: 14px; height: 14px; border: 2px solid var(--line); border-top-color: var(--blue); border-radius: 50%; animation: preview-spin .8s linear infinite; }
+@keyframes preview-spin { to { transform: rotate(360deg); } }
 .dialog-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem 1rem; margin-top: .8rem; flex-shrink: 0; }
 .dialog-original { font-size: .8125rem; min-height: 42px; display: inline-flex; align-items: center; }
 .dialog-navigation { position: absolute; inset: 0; pointer-events: none; }
@@ -337,6 +339,7 @@ body.viewer-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
+  .dialog-message.is-loading::before { animation: none; }
 }
 @media print {
   .site-header, .menu-toggle, .photo-dialog, .skip-link, .photo-grid, .badminton-photo, .site-footer > a { display: none !important; }

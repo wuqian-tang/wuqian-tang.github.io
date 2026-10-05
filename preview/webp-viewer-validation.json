@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-05",
+  "checks": [
+    {
+      "name": "All 87 unique media previews decode in the viewer; no original requests",
+      "groups": 59,
+      "media": 87
+    },
+    {
+      "name": "Homepage WebP, quarter-top crop, cached paging, original button at 1440px",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "name": "Homepage WebP, quarter-top crop, cached paging, original button at 820px",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      }
+    },
+    {
+      "name": "Homepage WebP, quarter-top crop, cached paging, original button at 390px",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "Homepage WebP, quarter-top crop, cached paging, original button at 320px",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "name": "Slow paging keeps the current photo, shows delayed status, and switches smoothly"
+    },
+    {
+      "name": "Preview failure shows a message; only View Original requests the JPEG"
+    },
+    {
+      "name": "Close/reopen cancels stale loading; reduced-motion indicator is static"
+    },
+    {
+      "name": "Without JavaScript, photo links open WebP with image/webp MIME"
+    },
+    {
+      "name": "Standalone gallery and certificate viewer use WebP; PDF stays behind View Original"
+    }
+  ],
+  "screenshots": [
+    "webp-badminton-desktop.png",
+    "webp-badminton-mobile.png",
+    "webp-viewer-loading-desktop.png",
+    "webp-certificate-mobile.png"
+  ],
+  "status": "passed"
+}

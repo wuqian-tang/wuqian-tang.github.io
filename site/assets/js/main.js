@@ -240,7 +240,7 @@
   const dialog = document.querySelector('.photo-dialog');
   if (dialog && typeof dialog.showModal === 'function') {
     const registry = JSON.parse(document.getElementById('media-data')?.textContent || '{}');
-    const image = dialog.querySelector('.dialog-image');
+    let image = dialog.querySelector('.dialog-image');
     const stage = dialog.querySelector('.dialog-stage');
     const caption = document.getElementById('photo-caption');
     const original = dialog.querySelector('.dialog-original');
@@ -253,6 +253,45 @@
     let displayedItem;
     let requestId = 0;
     let photoAnimation;
+    let loadingTimer;
+    let preloadTimer;
+    const previewCache = new Map();
+    const loadPreview = src => {
+      if (!/\.webp(?:[?#]|$)/i.test(src)) return Promise.reject(new Error('A WebP preview is required.'));
+      if (previewCache.has(src)) {
+        const ready = previewCache.get(src);
+        previewCache.delete(src);
+        previewCache.set(src, ready);
+        return ready;
+      }
+      const preview = new Image();
+      preview.decoding = 'async';
+      preview.src = src;
+      const ready = preview.decode().then(() => preview);
+      previewCache.set(src, ready);
+      ready.catch(() => {
+        if (previewCache.get(src) === ready) previewCache.delete(src);
+      });
+      // Keep decoded images bounded as visitors browse different galleries.
+      while (previewCache.size > 6) previewCache.delete(previewCache.keys().next().value);
+      return ready;
+    };
+    const stopLoading = () => {
+      clearTimeout(loadingTimer);
+      stage.setAttribute('aria-busy', 'false');
+      message.hidden = true;
+      message.classList.remove('is-loading');
+    };
+    const preloadNeighbors = request => {
+      clearTimeout(preloadTimer);
+      if (currentPhotos.length < 2) return;
+      preloadTimer = setTimeout(() => {
+        if (!dialog.open || request !== requestId) return;
+        const count = currentPhotos.length;
+        const neighbors = new Set([(currentIndex + count - 1) % count, (currentIndex + 1) % count]);
+        neighbors.forEach(index => loadPreview(currentPhotos[index].src).catch(() => {}));
+      }, 160);
+    };
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     const animatePhoto = async (frames, duration) => {
       if (reducedMotion.matches || !image.animate) return;
@@ -289,19 +328,37 @@
     const showPhoto = async (index, direction = 0) => {
       const request = ++requestId;
       photoAnimation?.cancel();
+      clearTimeout(preloadTimer);
+      stopLoading();
       currentIndex = (index + currentPhotos.length) % currentPhotos.length;
       const item = currentPhotos[currentIndex];
-      message.hidden = true;
-      const preview = new Image();
-      preview.src = item.src;
-      try { await preview.decode(); } catch {
+      if (!displayedItem) {
+        caption.textContent = item.caption;
+        original.href = item.original;
+        counter.textContent = `${currentIndex + 1} / ${currentPhotos.length}`;
+      }
+      stage.setAttribute('aria-busy', 'true');
+      loadingTimer = setTimeout(() => {
         if (request !== requestId || !dialog.open) return;
+        message.textContent = 'Loading preview…';
+        message.classList.add('is-loading');
+        message.hidden = false;
+      }, 180);
+      let preview;
+      try { preview = await loadPreview(item.src); } catch {
+        if (request !== requestId || !dialog.open) return;
+        stopLoading();
+        image.style.opacity = '0';
+        displayedItem = undefined;
+        caption.textContent = item.caption;
+        counter.textContent = `${currentIndex + 1} / ${currentPhotos.length}`;
         original.href = item.original;
         message.textContent = 'Unable to load the preview. Please use View Original.';
         message.hidden = false;
         return;
       }
       if (request !== requestId || !dialog.open) return;
+      stopLoading();
       if (direction && displayedItem) {
         await animatePhoto([
           {opacity: 1, translate: '0 0'},
@@ -309,10 +366,11 @@
         ], 100);
       }
       if (request !== requestId || !dialog.open) return;
-      image.style.opacity = '0';
-      image.src = item.src;
-      try { await image.decode(); } catch { return; }
-      if (request !== requestId || !dialog.open) return;
+      // Insert the already decoded preview; the visible image never loads an original.
+      preview.className = 'dialog-image';
+      preview.style.opacity = '0';
+      if (preview !== image) image.replaceWith(preview);
+      image = preview;
       displayedItem = item;
       image.alt = item.caption;
       caption.textContent = item.caption;
@@ -325,16 +383,13 @@
           {opacity: 1, translate: '0 0'}
         ], 180);
       }
+      if (request === requestId && dialog.open) preloadNeighbors(request);
     };
-    image.addEventListener('error', () => {
-      message.textContent = 'Unable to load the preview. Please use View Original.';
-      message.hidden = false;
-    });
     document.querySelectorAll('[data-media], [data-photo]').forEach(link => {
       link.addEventListener('click', event => {
         if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
         const items = link.dataset.media ? registry[link.dataset.media] : [{
-          src: link.dataset.preview || link.href, original: link.href, caption: link.dataset.photo,
+          src: link.href, original: link.dataset.original, caption: link.dataset.photo,
           rotation: Number(link.dataset.rotation || 0), cropTop: Number(link.dataset.cropTop || 0)
         }];
         if (!items?.length) return;
@@ -353,8 +408,11 @@
     });
     dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
     dialog.addEventListener('close', () => {
+      if (dialog.open) return;
       ++requestId;
       photoAnimation?.cancel();
+      clearTimeout(preloadTimer);
+      stopLoading();
       displayedItem = undefined;
       document.body.classList.remove('viewer-open');
       opener?.focus({ preventScroll: true });

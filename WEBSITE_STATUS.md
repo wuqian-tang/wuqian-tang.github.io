@@ -7,7 +7,17 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 补充 CUHK 学院获奖公告（2026-10-05，最新）
+## 图片弹窗统一 WebP 与按需原图（2026-10-05，最新）
+
+- 用户审核并授权实施：首页三张活动照片、奖项与爱好相册、弹窗及翻页均使用现有 WebP 预览。补齐 Hobbies 羽毛球弹窗的遗漏，从约 4.8 MB 原 JPG 改为 137,866 bytes 的 787 × 1400 WebP；普通照片和奖状继续沿用现有预览尺寸与质量。
+- 首页照片锚点直接指向 WebP，原文件另存于 `data-original`；右键、新分页以及禁用 JavaScript 时也打开预览。只有 `View Original` 打开对应 JPEG 或奖状 PDF，新分页属性保持一致。构建脚本移除原文件回退，弹窗加载器仅接受 WebP；预览失败显示提示，不自动请求原图。
+- 弹窗直接插入已解码的预览，避免重复解码。最多缓存 6 张解码图片；当前图显示后仅预加载前后一张。翻页加载期间保留当前图，180 ms 后显示小型加载提示，准备好后沿用渐隐、位移动画。关闭或新请求会取消过期界面更新及尚未执行的预加载；快速关闭、重开不会被上一轮异步关闭事件清空。
+- 网页内羽毛球半身裁切继续由现有 CSS 控制，弹窗仍裁去顶部 25% 窗帘。手机箭头保持在照片下方，触摸滑动、键盘及 Escape 正常；加载提示和翻页尊重减少动态效果偏好。
+- 首页和 33 个相册的 CSS / JS 缓存版本更新为 `20261005-webp-viewer`。图片、PDF、公开 CV 及资产 manifest 没有重新编码或修改字节。
+- 验收见 `preview/webp-viewer-validation.json`：87 份唯一媒体均实际在弹窗解码，浏览与翻页无原文件请求；1440 / 820 / 390 / 320 px 下首页照片、裁切、边界、缓存翻页和原图按钮通过。另验证桌面键盘、手机真实触控、慢网保留当前图与加载提示、预览失败、关闭后重开、减少动态效果、无 JS WebP / MIME 回退及独立相册。3 次弹窗无障碍检查无报告项。35 个 HTML 页面的 90 个图片入口及全部媒体注册表仅指向 WebP，Google 验证标签及 Faculty 公告链接保留。
+- 新预览为 `preview/webp-badminton-desktop.png`、`webp-badminton-mobile.png`、`webp-viewer-loading-desktop.png` 和 `webp-certificate-mobile.png`；构建、JS 语法与 diff 检查通过后推送 master，由 GitHub Pages 发布，再核对匿名线上访问及实际图片请求。
+
+## 补充 CUHK 学院获奖公告（2026-10-05，上一版）
 
 - 用户指定将 [CUHK 工程学院公告](https://www.erg.cuhk.edu.hk/erg/node/2955)加入 `First Place (Problem C), ICCAD CAD Contest`（Oct 2025，`iccad-contest-2025-c`），紧接现有 `College`。随后确认按照官方 `Faculty of Engineering` 名称，将标签从 `College2` 改为 `Faculty`。
 - 首页和该奖项独立相册同步为 `Announcements: [Official] [College] [Faculty] [Department]`，外部链接继续在新分页打开；可访问名称注明 CUHK Faculty of Engineering。

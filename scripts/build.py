@@ -45,7 +45,7 @@ def media_data(awards, prefix=''):
             items = [item for item in a['media'] if item['kind'] == kind]
             if items:
                 registry[f'{a["id"]}:{kind}'] = [dict(
-                    src=prefix + item.get('preview', item['url']),
+                    src=prefix + item['preview'],
                     original=prefix + item['url'],
                     caption=item['caption'] + ' · ' + a['title'],
                     rotation=item.get('rotation', 0), cropTop=item.get('crop_top', 0)
@@ -127,7 +127,7 @@ def gallery(a, profile):
             continue
         cards = ''
         for i, item in enumerate(items, 1):
-            preview = '../' + item.get('preview', item['url'])
+            preview = '../' + item['preview']
             original = '../' + item['url']
             caption = item['caption']
             rotation = item.get('rotation', 0)
@@ -230,6 +230,7 @@ def render():
         if not image['preview'].endswith('.webp'):
             raise ValueError(f'Homepage photograph requires a WebP preview: {key}')
         values[key.upper() + '_PREVIEW'] = esc(image['preview'])
+        values[key.upper() + '_ORIGINAL'] = esc(image['original'])
         values[key.upper() + '_WIDTH'] = image['width']
         values[key.upper() + '_HEIGHT'] = image['height']
     values.update(STRUCTURED_DATA=structured, LOCATION_ICON=icon('location'), MAIL_ICON=icon('mail'), DOCUMENT_ICON=icon('document'), PROFILE_LINKS=profile_links, NEWS=news, RESEARCH=research,
