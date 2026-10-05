@@ -1,13 +1,20 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-10-04。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-10-05。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wuqian-tang.github.io](https://wuqian-tang.github.io/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## Google Search Console 所有权验证（2026-10-04，最新）
+## 补充 CUHK 学院获奖公告（2026-10-05，最新）
+
+- 用户指定将 [CUHK 工程学院公告](https://www.erg.cuhk.edu.hk/erg/node/2955)加入 `First Place (Problem C), ICCAD CAD Contest`（Oct 2025，`iccad-contest-2025-c`），标签使用 `College2`，紧接现有 `College`。
+- 首页和该奖项独立相册同步为 `Announcements: [Official] [College] [College2] [Department]`，外部链接继续在新分页打开；可访问名称注明 CUHK Faculty of Engineering。
+- 该公告报道 2025 Problem C 冠军，不关联 Problem A 亚军。获奖公告合计 35 处引用、30 个不同 URL；首页更新日期与 sitemap 日期同步到 2026-10-05。
+- 本轮通过构建、静态一致性和链接顺序检查后，推送 master 并核对 GitHub Pages 工作流及线上首页、相册。多语言方案仍暂存于本地 `MULTILINGUAL_NOTES.md`，未加入网站。
+
+## Google Search Console 所有权验证（2026-10-04，上一版）
 
 - 用户提供了 Google Search Console 的 HTML 标签，已将 `google-site-verification` 加入 `content/homepage.html` 的 `<head>`，由构建脚本写入公开首页。后续更新必须保留此标签。
 - 构建和静态检查通过；模板及生成首页都恰有一个验证标签，位置与代码正确，除新增标签外页面内容与上一版一致。由 master 推送触发 GitHub Pages 发布，完成后核对匿名访问的线上首页。

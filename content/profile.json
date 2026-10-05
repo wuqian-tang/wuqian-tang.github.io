@@ -6,7 +6,7 @@
   "university": "National Tsing Hua University",
   "location": "Hsinchu, Taiwan",
   "email": "wqtang@cs.nthu.edu.tw",
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "site_url": "https://wuqian-tang.github.io",
   "profiles": [
     {
@@ -956,6 +956,11 @@
           "label": "College",
           "url": "https://cosr.site.nthu.edu.tw/p/406-1536-299166,r11272.php?Lang=zh-tw",
           "description": "College of Semiconductor Research announcement"
+        },
+        {
+          "label": "College2",
+          "url": "https://www.erg.cuhk.edu.hk/erg/node/2955",
+          "description": "CUHK Faculty of Engineering announcement"
         },
         {
           "label": "Department",
