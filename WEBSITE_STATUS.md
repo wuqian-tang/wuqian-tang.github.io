@@ -9,8 +9,8 @@
 
 ## 补充 CUHK 学院获奖公告（2026-10-05，最新）
 
-- 用户指定将 [CUHK 工程学院公告](https://www.erg.cuhk.edu.hk/erg/node/2955)加入 `First Place (Problem C), ICCAD CAD Contest`（Oct 2025，`iccad-contest-2025-c`），标签使用 `College2`，紧接现有 `College`。
-- 首页和该奖项独立相册同步为 `Announcements: [Official] [College] [College2] [Department]`，外部链接继续在新分页打开；可访问名称注明 CUHK Faculty of Engineering。
+- 用户指定将 [CUHK 工程学院公告](https://www.erg.cuhk.edu.hk/erg/node/2955)加入 `First Place (Problem C), ICCAD CAD Contest`（Oct 2025，`iccad-contest-2025-c`），紧接现有 `College`。随后确认按照官方 `Faculty of Engineering` 名称，将标签从 `College2` 改为 `Faculty`。
+- 首页和该奖项独立相册同步为 `Announcements: [Official] [College] [Faculty] [Department]`，外部链接继续在新分页打开；可访问名称注明 CUHK Faculty of Engineering。
 - 该公告报道 2025 Problem C 冠军，不关联 Problem A 亚军。获奖公告合计 35 处引用、30 个不同 URL；首页更新日期与 sitemap 日期同步到 2026-10-05。
 - 本轮通过构建、静态一致性和链接顺序检查后，推送 master 并核对 GitHub Pages 工作流及线上首页、相册。多语言方案仍暂存于本地 `MULTILINGUAL_NOTES.md`，未加入网站。
 
