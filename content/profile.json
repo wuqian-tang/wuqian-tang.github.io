@@ -6,7 +6,7 @@
   "university": "National Tsing Hua University",
   "location": "Hsinchu, Taiwan",
   "email": "wqtang@cs.nthu.edu.tw",
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "site_url": "https://wuqian-tang.github.io",
   "profiles": [
     {
@@ -152,7 +152,7 @@
         },
         {
           "label": "PDF",
-          "url": "files/papers/J1-CB-EVO.pdf"
+          "url": "files/papers/2026-todaes-cb-evo.pdf"
         }
       ],
       "doi_verified_on": "2026-10-03",
@@ -203,7 +203,7 @@
         },
         {
           "label": "PDF",
-          "url": "files/papers/C17-TAPCO.pdf"
+          "url": "files/papers/2026-mlcad-tapco.pdf"
         }
       ],
       "doi_verified_on": "2026-10-03",
@@ -248,7 +248,7 @@
         },
         {
           "label": "PDF",
-          "url": "files/papers/C15-HyPAS.pdf"
+          "url": "files/papers/2026-dac-hypas.pdf"
         }
       ],
       "doi_verified_on": "2026-10-03",
@@ -534,7 +534,7 @@
         },
         {
           "label": "PDF",
-          "url": "files/papers/C1-Reverse-Engineering.pdf"
+          "url": "files/papers/2024-date-hybrid-approach.pdf"
         }
       ],
       "doi_verified_on": "2026-10-03",
@@ -560,7 +560,7 @@
         },
         {
           "label": "PDF",
-          "url": "files/papers/J2-Oracle-Bone.pdf"
+          "url": "files/papers/2025-dadh-oracle-bone.pdf"
         },
         {
           "label": "Journal",
@@ -665,12 +665,13 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/mlcad-2026/certificate-1.pdf",
+          "url": "assets/awards/mlcad-2026/2026-mlcad-contest-certificate-1.pdf",
           "caption": "Certificate · 2026-09-07 · English",
-          "preview": "assets/awards/mlcad-2026/certificate-1-preview.webp",
+          "preview": "assets/awards/mlcad-2026/2026-mlcad-contest-certificate-1-preview.webp",
           "width": 1800,
           "height": 1273,
-          "preview_source": "assets/awards/mlcad-2026/certificate-1-preview.jpg"
+          "preview_source": "assets/awards/mlcad-2026/2026-mlcad-contest-certificate-1-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Second Place, MLCAD Contest. 2026-09-07; English."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -684,12 +685,13 @@
       "media": [
         {
           "kind": "trophy",
-          "url": "assets/awards/teaching-excellent-2026/trophy-1.jpg",
+          "url": "assets/awards/teaching-excellent-2026/2026-08-nthu-excellent-ta-trophy.jpg",
           "caption": "Trophy · Spring 2026 · Awarded Aug 2026",
           "width": 1600,
           "height": 1600,
-          "preview_source": "assets/awards/teaching-excellent-2026/trophy-1.jpg",
-          "preview": "assets/awards/teaching-excellent-2026/trophy-1-preview.webp"
+          "preview_source": "assets/awards/teaching-excellent-2026/2026-08-nthu-excellent-ta-trophy.jpg",
+          "preview": "assets/awards/teaching-excellent-2026/2026-08-nthu-excellent-ta-trophy-preview.webp",
+          "alt": "Trophy for Wuqian Tang: Excellent Teaching Assistant Award. Spring 2026; Awarded Aug 2026."
         }
       ],
       "date_source": "Reviewed original award file dates",
@@ -718,57 +720,63 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/teaching-outstanding-2025-2026/certificate-1.pdf",
+          "url": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-certificate.pdf",
           "caption": "Certificate · Spring 2025 · Awarded Aug 2025 · Chinese",
-          "preview": "assets/awards/teaching-outstanding-2025-2026/certificate-1-preview.webp",
+          "preview": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-certificate-preview.webp",
           "width": 1273,
           "height": 1800,
-          "preview_source": "assets/awards/teaching-outstanding-2025-2026/certificate-1-preview.jpg"
+          "preview_source": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-certificate-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Outstanding Teaching Assistant Award × 3. Spring 2025; Awarded Aug 2025; Chinese."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/teaching-outstanding-2025-2026/photo-1.jpg",
-          "caption": "Photo · Spring 2025 · Awarded Aug 2025",
+          "url": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-photo-1.jpg",
+          "caption": "Award presentation · Spring 2025 · Awarded Aug 2025",
           "width": 1477,
           "height": 1108,
-          "preview_source": "assets/awards/teaching-outstanding-2025-2026/photo-1.jpg",
-          "preview": "assets/awards/teaching-outstanding-2025-2026/photo-1-preview.webp"
+          "preview_source": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-photo-1.jpg",
+          "preview": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-photo-1-preview.webp",
+          "alt": "Wuqian Tang receiving his Spring 2025 Outstanding Teaching Assistant Award certificate at NTHU in August 2025."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/teaching-outstanding-2025-2026/photo-2.jpg",
-          "caption": "Photo · Spring 2025 · Awarded Aug 2025",
+          "url": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-photo-2.jpg",
+          "caption": "Award recipients · Spring 2025 · Awarded Aug 2025",
           "width": 1477,
           "height": 1108,
-          "preview_source": "assets/awards/teaching-outstanding-2025-2026/photo-2.jpg",
-          "preview": "assets/awards/teaching-outstanding-2025-2026/photo-2-preview.webp"
+          "preview_source": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-photo-2.jpg",
+          "preview": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-photo-2-preview.webp",
+          "alt": "Wuqian Tang with fellow Outstanding Teaching Assistant Award recipients at NTHU in August 2025, recognizing their work in Spring 2025."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/teaching-outstanding-2025-2026/certificate-2.jpg",
+          "url": "assets/awards/teaching-outstanding-2025-2026/2026-02-nthu-outstanding-ta-certificate.jpg",
           "caption": "Certificate · Fall 2025 · Awarded Feb 2026 · Chinese",
           "width": 1273,
           "height": 1800,
-          "preview_source": "assets/awards/teaching-outstanding-2025-2026/certificate-2.jpg",
-          "preview": "assets/awards/teaching-outstanding-2025-2026/certificate-2-preview.webp"
+          "preview_source": "assets/awards/teaching-outstanding-2025-2026/2026-02-nthu-outstanding-ta-certificate.jpg",
+          "preview": "assets/awards/teaching-outstanding-2025-2026/2026-02-nthu-outstanding-ta-certificate-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Outstanding Teaching Assistant Award × 3. Fall 2025; Awarded Feb 2026; Chinese."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/teaching-outstanding-2025-2026/certificate-3.pdf",
+          "url": "assets/awards/teaching-outstanding-2025-2026/2026-08-nthu-outstanding-ta-certificate.pdf",
           "caption": "Certificate · Spring 2026 · Awarded Aug 2026 · Chinese",
-          "preview": "assets/awards/teaching-outstanding-2025-2026/certificate-3-preview.webp",
+          "preview": "assets/awards/teaching-outstanding-2025-2026/2026-08-nthu-outstanding-ta-certificate-preview.webp",
           "width": 1273,
           "height": 1800,
-          "preview_source": "assets/awards/teaching-outstanding-2025-2026/certificate-3-preview.jpg"
+          "preview_source": "assets/awards/teaching-outstanding-2025-2026/2026-08-nthu-outstanding-ta-certificate-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Outstanding Teaching Assistant Award × 3. Spring 2026; Awarded Aug 2026; Chinese."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/teaching-outstanding-2025-2026/photo-3.jpg",
-          "caption": "Photo · Spring 2026 · Awarded Aug 2026",
+          "url": "assets/awards/teaching-outstanding-2025-2026/2026-08-nthu-outstanding-ta-photo-1.jpg",
+          "caption": "Award presentation · Spring 2026 · Awarded Aug 2026",
           "width": 1600,
           "height": 1400,
-          "preview_source": "assets/awards/teaching-outstanding-2025-2026/photo-3.jpg",
-          "preview": "assets/awards/teaching-outstanding-2025-2026/photo-3-preview.webp"
+          "preview_source": "assets/awards/teaching-outstanding-2025-2026/2026-08-nthu-outstanding-ta-photo-1.jpg",
+          "preview": "assets/awards/teaching-outstanding-2025-2026/2026-08-nthu-outstanding-ta-photo-1-preview.webp",
+          "alt": "Wuqian Tang receiving his Spring 2026 Outstanding Teaching Assistant Award certificate at NTHU in August 2026."
         }
       ],
       "date_source": "Reviewed original award file dates",
@@ -788,21 +796,23 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/mcu-alumnus-2026/certificate-1.jpg",
+          "url": "assets/awards/mcu-alumnus-2026/2026-mcu-alumnus-certificate-1.jpg",
           "caption": "Certificate · 2026-06-18 · English",
           "width": 1800,
           "height": 1273,
-          "preview_source": "assets/awards/mcu-alumnus-2026/certificate-1.jpg",
-          "preview": "assets/awards/mcu-alumnus-2026/certificate-1-preview.webp"
+          "preview_source": "assets/awards/mcu-alumnus-2026/2026-mcu-alumnus-certificate-1.jpg",
+          "preview": "assets/awards/mcu-alumnus-2026/2026-mcu-alumnus-certificate-1-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Distinguished Alumnus Award. 2026-06-18; English."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/mcu-alumnus-2026/certificate-2.jpg",
+          "url": "assets/awards/mcu-alumnus-2026/2026-mcu-alumnus-certificate-2.jpg",
           "caption": "Certificate · 2026-06-18 · Chinese",
           "width": 1273,
           "height": 1800,
-          "preview_source": "assets/awards/mcu-alumnus-2026/certificate-2.jpg",
-          "preview": "assets/awards/mcu-alumnus-2026/certificate-2-preview.webp"
+          "preview_source": "assets/awards/mcu-alumnus-2026/2026-mcu-alumnus-certificate-2.jpg",
+          "preview": "assets/awards/mcu-alumnus-2026/2026-mcu-alumnus-certificate-2-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Distinguished Alumnus Award. 2026-06-18; Chinese."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -827,30 +837,33 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/iwls-2026/certificate-1.jpg",
+          "url": "assets/awards/iwls-2026/2026-iwls-contest-certificate-1.jpg",
           "caption": "Certificate · 2026-05-29 · English",
           "width": 1800,
           "height": 1272,
-          "preview_source": "assets/awards/iwls-2026/certificate-1.jpg",
-          "preview": "assets/awards/iwls-2026/certificate-1-preview.webp"
+          "preview_source": "assets/awards/iwls-2026/2026-iwls-contest-certificate-1.jpg",
+          "preview": "assets/awards/iwls-2026/2026-iwls-contest-certificate-1-preview.webp",
+          "alt": "Certificate awarded to Wuqian Tang for second place in the IWLS 2026 Programming Contest, dated May 29, 2026."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/iwls-2026/photo-1.jpg",
-          "caption": "Photo · 2026-05-29",
+          "url": "assets/awards/iwls-2026/2026-iwls-contest-photo-1.jpg",
+          "caption": "Team award presentation · 2026-05-29",
           "width": 1600,
           "height": 1200,
-          "preview_source": "assets/awards/iwls-2026/photo-1.jpg",
-          "preview": "assets/awards/iwls-2026/photo-1-preview.webp"
+          "preview_source": "assets/awards/iwls-2026/2026-iwls-contest-photo-1.jpg",
+          "preview": "assets/awards/iwls-2026/2026-iwls-contest-photo-1-preview.webp",
+          "alt": "Wuqian Tang and teammates receiving the second-place award at the IWLS 2026 Programming Contest."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/iwls-2026/photo-2.jpg",
-          "caption": "Photo · 2026-05-29",
+          "url": "assets/awards/iwls-2026/2026-iwls-contest-photo-2.jpg",
+          "caption": "Contest winners · 2026-05-29",
           "width": 1600,
           "height": 1067,
-          "preview_source": "assets/awards/iwls-2026/photo-2.jpg",
-          "preview": "assets/awards/iwls-2026/photo-2-preview.webp"
+          "preview_source": "assets/awards/iwls-2026/2026-iwls-contest-photo-2.jpg",
+          "preview": "assets/awards/iwls-2026/2026-iwls-contest-photo-2-preview.webp",
+          "alt": "Wuqian Tang with contest award recipients and organizers at IWLS 2026, holding the second-place Programming Contest certificate."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -870,48 +883,53 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/hsinchu-youth-2026/certificate-1.jpg",
+          "url": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-certificate-1.jpg",
           "caption": "Certificate · 2026-03-28 · Chinese",
           "width": 1273,
           "height": 1800,
-          "preview_source": "assets/awards/hsinchu-youth-2026/certificate-1.jpg",
-          "preview": "assets/awards/hsinchu-youth-2026/certificate-1-preview.webp"
+          "preview_source": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-certificate-1.jpg",
+          "preview": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-certificate-1-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Hsinchu City Outstanding Youth. 2026-03-28; Chinese."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/hsinchu-youth-2026/certificate-2.jpg",
+          "url": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-certificate-2.jpg",
           "caption": "Certificate · 2026-03-28 · Chinese",
           "width": 1350,
           "height": 1800,
-          "preview_source": "assets/awards/hsinchu-youth-2026/certificate-2.jpg",
-          "preview": "assets/awards/hsinchu-youth-2026/certificate-2-preview.webp"
+          "preview_source": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-certificate-2.jpg",
+          "preview": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-certificate-2-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Hsinchu City Outstanding Youth. 2026-03-28; Chinese."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/hsinchu-youth-2026/photo-1.jpg",
-          "caption": "Photo · 2026-03-28",
+          "url": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-1.jpg",
+          "caption": "Ceremony group photo · 2026-03-28",
           "width": 1600,
           "height": 1200,
-          "preview_source": "assets/awards/hsinchu-youth-2026/photo-1.jpg",
-          "preview": "assets/awards/hsinchu-youth-2026/photo-1-preview.webp"
+          "preview_source": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-1.jpg",
+          "preview": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-1-preview.webp",
+          "alt": "Group photo with Wuqian Tang holding his certificate at the 2026 Hsinchu City Outstanding Youth ceremony."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/hsinchu-youth-2026/photo-2.jpg",
-          "caption": "Photo · 2026-03-28",
+          "url": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-2.jpg",
+          "caption": "Certificate presentation · 2026-03-28",
           "width": 1600,
           "height": 1200,
-          "preview_source": "assets/awards/hsinchu-youth-2026/photo-2.jpg",
-          "preview": "assets/awards/hsinchu-youth-2026/photo-2-preview.webp"
+          "preview_source": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-2.jpg",
+          "preview": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-2-preview.webp",
+          "alt": "Wuqian Tang holding his certificate with guests at the 2026 Hsinchu City Outstanding Youth award ceremony."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/hsinchu-youth-2026/photo-3.jpg",
-          "caption": "Photo · 2026-03-28",
+          "url": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-3.jpg",
+          "caption": "Ceremony group photo · 2026-03-28",
           "width": 1600,
           "height": 1200,
-          "preview_source": "assets/awards/hsinchu-youth-2026/photo-3.jpg",
-          "preview": "assets/awards/hsinchu-youth-2026/photo-3-preview.webp"
+          "preview_source": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-3.jpg",
+          "preview": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-3-preview.webp",
+          "alt": "Wide group photo with Wuqian Tang and his certificate at the 2026 Hsinchu City Outstanding Youth ceremony."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -931,12 +949,13 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/ispd-2026/certificate-1.pdf",
+          "url": "assets/awards/ispd-2026/2026-ispd-contest-certificate-1.pdf",
           "caption": "Certificate · 2026-03-18 · English",
-          "preview": "assets/awards/ispd-2026/certificate-1-preview.webp",
+          "preview": "assets/awards/ispd-2026/2026-ispd-contest-certificate-1-preview.webp",
           "width": 1800,
           "height": 1273,
-          "preview_source": "assets/awards/ispd-2026/certificate-1-preview.jpg"
+          "preview_source": "assets/awards/ispd-2026/2026-ispd-contest-certificate-1-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Second Place, ISPD Contest. 2026-03-18; English."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -971,39 +990,43 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/iccad-contest-2025/certificate-2.pdf",
+          "url": "assets/awards/iccad-contest-2025/2025-iccad-contest-certificate-2.pdf",
           "caption": "Certificate · 2025-10-26 · Problem C · English",
-          "preview": "assets/awards/iccad-contest-2025/certificate-2-preview.webp",
+          "preview": "assets/awards/iccad-contest-2025/2025-iccad-contest-certificate-2-preview.webp",
           "width": 1800,
           "height": 1391,
-          "preview_source": "assets/awards/iccad-contest-2025/certificate-2-preview.jpg"
+          "preview_source": "assets/awards/iccad-contest-2025/2025-iccad-contest-certificate-2-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: First Place (Problem C), ICCAD CAD Contest. 2025-10-26; Problem C; English."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/iccad-contest-2025/photo-3.jpg",
-          "caption": "Photo · 2025-10-26 · Problem C",
+          "url": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-3.jpg",
+          "caption": "Problem C award recipients · 2025-10-26 · Problem C",
           "width": 1477,
           "height": 1108,
-          "preview_source": "assets/awards/iccad-contest-2025/photo-3.jpg",
-          "preview": "assets/awards/iccad-contest-2025/photo-3-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-3.jpg",
+          "preview": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-3-preview.webp",
+          "alt": "Award recipients holding plaques for Problem C at the ICCAD 2025 CAD Contest, won by Wuqian Tang's first-place team."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/iccad-contest-2025/photo-4.jpg",
-          "caption": "Photo · 2025-10-26 · Problem C",
+          "url": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-4.jpg",
+          "caption": "Problem C award presentation · 2025-10-26 · Problem C",
           "width": 1600,
           "height": 1200,
-          "preview_source": "assets/awards/iccad-contest-2025/photo-4.jpg",
-          "preview": "assets/awards/iccad-contest-2025/photo-4-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-4.jpg",
+          "preview": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-4-preview.webp",
+          "alt": "ICCAD 2025 CAD Contest Problem C award presentation, with Wuqian Tang's first-place team listed on the projection screen."
         },
         {
           "kind": "plaque",
-          "url": "assets/awards/iccad-contest-2025/plaque-2.jpg",
+          "url": "assets/awards/iccad-contest-2025/2025-iccad-contest-plaque-2.jpg",
           "caption": "Award plaque · 2025-10-26 · Problem C",
           "width": 1231,
           "height": 1600,
-          "preview_source": "assets/awards/iccad-contest-2025/plaque-2.jpg",
-          "preview": "assets/awards/iccad-contest-2025/plaque-2-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2025/2025-iccad-contest-plaque-2.jpg",
+          "preview": "assets/awards/iccad-contest-2025/2025-iccad-contest-plaque-2-preview.webp",
+          "alt": "Award plaque for Wuqian Tang: First Place (Problem C), ICCAD CAD Contest. 2025-10-26; Problem C."
         }
       ],
       "date_source": "Reviewed original award file dates",
@@ -1029,39 +1052,43 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/iccad-contest-2025/certificate-1.pdf",
+          "url": "assets/awards/iccad-contest-2025/2025-iccad-contest-certificate-1.pdf",
           "caption": "Certificate · 2025-10-26 · Problem A · English",
-          "preview": "assets/awards/iccad-contest-2025/certificate-1-preview.webp",
+          "preview": "assets/awards/iccad-contest-2025/2025-iccad-contest-certificate-1-preview.webp",
           "width": 1800,
           "height": 1391,
-          "preview_source": "assets/awards/iccad-contest-2025/certificate-1-preview.jpg"
+          "preview_source": "assets/awards/iccad-contest-2025/2025-iccad-contest-certificate-1-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Second Place (Problem A), ICCAD CAD Contest. 2025-10-26; Problem A; English."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/iccad-contest-2025/photo-1.jpg",
-          "caption": "Photo · 2025-10-26 · Problem A",
+          "url": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-1.jpg",
+          "caption": "Problem A team photo · 2025-10-26 · Problem A",
           "width": 1477,
           "height": 1108,
-          "preview_source": "assets/awards/iccad-contest-2025/photo-1.jpg",
-          "preview": "assets/awards/iccad-contest-2025/photo-1-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-1.jpg",
+          "preview": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-1-preview.webp",
+          "alt": "Team members holding second-place plaques for Wuqian Tang's team in the ICCAD 2025 CAD Contest Problem A."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/iccad-contest-2025/photo-2.jpg",
-          "caption": "Photo · 2025-10-26 · Problem A",
+          "url": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-2.jpg",
+          "caption": "Problem A award presentation · 2025-10-26 · Problem A",
           "width": 1600,
           "height": 1200,
-          "preview_source": "assets/awards/iccad-contest-2025/photo-2.jpg",
-          "preview": "assets/awards/iccad-contest-2025/photo-2-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-2.jpg",
+          "preview": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-2-preview.webp",
+          "alt": "ICCAD 2025 CAD Contest Problem A award presentation, with Wuqian Tang's second-place team listed on the projection screen."
         },
         {
           "kind": "plaque",
-          "url": "assets/awards/iccad-contest-2025/plaque-1.jpg",
+          "url": "assets/awards/iccad-contest-2025/2025-iccad-contest-plaque-1.jpg",
           "caption": "Award plaque · 2025-10-26 · Problem A",
           "width": 1200,
           "height": 1600,
-          "preview_source": "assets/awards/iccad-contest-2025/plaque-1.jpg",
-          "preview": "assets/awards/iccad-contest-2025/plaque-1-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2025/2025-iccad-contest-plaque-1.jpg",
+          "preview": "assets/awards/iccad-contest-2025/2025-iccad-contest-plaque-1-preview.webp",
+          "alt": "Award plaque for Wuqian Tang: Second Place (Problem A), ICCAD CAD Contest. 2025-10-26; Problem A."
         }
       ],
       "date_source": "Reviewed original award file dates",
@@ -1082,21 +1109,23 @@
       "media": [
         {
           "kind": "photo",
-          "url": "assets/awards/cadathlon-2025/photo-1.jpg",
-          "caption": "Photo · 2025-10",
+          "url": "assets/awards/cadathlon-2025/2025-cadathlon-photo-1.jpg",
+          "caption": "Award presentation · 2025-10",
           "width": 1600,
           "height": 1200,
-          "preview_source": "assets/awards/cadathlon-2025/photo-1.jpg",
-          "preview": "assets/awards/cadathlon-2025/photo-1-preview.webp"
+          "preview_source": "assets/awards/cadathlon-2025/2025-cadathlon-photo-1.jpg",
+          "preview": "assets/awards/cadathlon-2025/2025-cadathlon-photo-1-preview.webp",
+          "alt": "First-place CADathlon award presentation at ICCAD 2025, with Wuqian Tang and Bo-Ying Wang listed as Team 7 on screen."
         },
         {
           "kind": "trophy",
-          "url": "assets/awards/cadathlon-2025/trophy-1.jpg",
+          "url": "assets/awards/cadathlon-2025/2025-cadathlon-trophy-1.jpg",
           "caption": "Trophy · 2025-10",
           "width": 1328,
           "height": 1600,
-          "preview_source": "assets/awards/cadathlon-2025/trophy-1.jpg",
-          "preview": "assets/awards/cadathlon-2025/trophy-1-preview.webp"
+          "preview_source": "assets/awards/cadathlon-2025/2025-cadathlon-trophy-1.jpg",
+          "preview": "assets/awards/cadathlon-2025/2025-cadathlon-trophy-1-preview.webp",
+          "alt": "Trophy for Wuqian Tang: First Place, ICCAD CADathlon. 2025-10."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1121,39 +1150,43 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/hsing-chien-2025/certificate-1.jpg",
+          "url": "assets/awards/hsing-chien-2025/2025-hsing-chien-certificate-1.jpg",
           "caption": "Certificate · 2025-05-09 · English",
           "width": 1316,
           "height": 1800,
-          "preview_source": "assets/awards/hsing-chien-2025/certificate-1.jpg",
-          "preview": "assets/awards/hsing-chien-2025/certificate-1-preview.webp"
+          "preview_source": "assets/awards/hsing-chien-2025/2025-hsing-chien-certificate-1.jpg",
+          "preview": "assets/awards/hsing-chien-2025/2025-hsing-chien-certificate-1-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Presidential Hsing Chien Award. 2025-05-09; English."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/hsing-chien-2025/photo-1.jpg",
-          "caption": "Photo · 2025-05-09",
+          "url": "assets/awards/hsing-chien-2025/2025-hsing-chien-photo-1.jpg",
+          "caption": "Certificate presentation · 2025-05-09",
           "width": 1477,
           "height": 1108,
-          "preview_source": "assets/awards/hsing-chien-2025/photo-1.jpg",
-          "preview": "assets/awards/hsing-chien-2025/photo-1-preview.webp"
+          "preview_source": "assets/awards/hsing-chien-2025/2025-hsing-chien-photo-1.jpg",
+          "preview": "assets/awards/hsing-chien-2025/2025-hsing-chien-photo-1-preview.webp",
+          "alt": "Wuqian Tang holding his Presidential Hsing Chien Award certificate with guests at National Tsing Hua University in May 2025."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/hsing-chien-2025/photo-2.jpg",
-          "caption": "Photo · 2025-05-09",
+          "url": "assets/awards/hsing-chien-2025/2025-hsing-chien-photo-2.jpg",
+          "caption": "Award recipients · 2025-05-09",
           "width": 1600,
           "height": 1205,
-          "preview_source": "assets/awards/hsing-chien-2025/photo-2.jpg",
-          "preview": "assets/awards/hsing-chien-2025/photo-2-preview.webp"
+          "preview_source": "assets/awards/hsing-chien-2025/2025-hsing-chien-photo-2.jpg",
+          "preview": "assets/awards/hsing-chien-2025/2025-hsing-chien-photo-2-preview.webp",
+          "alt": "Wuqian Tang with fellow Presidential Hsing Chien Award recipients holding certificates at National Tsing Hua University in May 2025."
         },
         {
           "kind": "trophy",
-          "url": "assets/awards/hsing-chien-2025/trophy-1.jpg",
+          "url": "assets/awards/hsing-chien-2025/2025-hsing-chien-trophy-1.jpg",
           "caption": "Trophy · 2025-05-09",
           "width": 1200,
           "height": 1600,
-          "preview_source": "assets/awards/hsing-chien-2025/trophy-1.jpg",
-          "preview": "assets/awards/hsing-chien-2025/trophy-1-preview.webp"
+          "preview_source": "assets/awards/hsing-chien-2025/2025-hsing-chien-trophy-1.jpg",
+          "preview": "assets/awards/hsing-chien-2025/2025-hsing-chien-trophy-1-preview.webp",
+          "alt": "Trophy for Wuqian Tang: Presidential Hsing Chien Award. 2025-05-09."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1183,30 +1216,33 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/iccad-contest-2024/certificate-1.pdf",
+          "url": "assets/awards/iccad-contest-2024/2024-iccad-contest-certificate-1.pdf",
           "caption": "Certificate · 2024-10-27 · Problem A · English",
-          "preview": "assets/awards/iccad-contest-2024/certificate-1-preview.webp",
+          "preview": "assets/awards/iccad-contest-2024/2024-iccad-contest-certificate-1-preview.webp",
           "width": 1800,
           "height": 1391,
-          "preview_source": "assets/awards/iccad-contest-2024/certificate-1-preview.jpg"
+          "preview_source": "assets/awards/iccad-contest-2024/2024-iccad-contest-certificate-1-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Second Place (Problem A), ICCAD CAD Contest. 2024-10-27; Problem A; English."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/iccad-contest-2024/photo-1.jpg",
-          "caption": "Photo · 2024-10-27 · Problem A",
+          "url": "assets/awards/iccad-contest-2024/2024-iccad-contest-photo-1.jpg",
+          "caption": "Problem A team photo · 2024-10-27 · Problem A",
           "width": 1439,
           "height": 1080,
-          "preview_source": "assets/awards/iccad-contest-2024/photo-1.jpg",
-          "preview": "assets/awards/iccad-contest-2024/photo-1-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2024/2024-iccad-contest-photo-1.jpg",
+          "preview": "assets/awards/iccad-contest-2024/2024-iccad-contest-photo-1-preview.webp",
+          "alt": "Team members holding certificates for Wuqian Tang's second-place team in the ICCAD 2024 CAD Contest Problem A."
         },
         {
           "kind": "plaque",
-          "url": "assets/awards/iccad-contest-2024/plaque-1.jpg",
+          "url": "assets/awards/iccad-contest-2024/2024-iccad-contest-plaque-1.jpg",
           "caption": "Award plaque · 2024-10-27 · Problem A",
           "width": 802,
           "height": 1117,
-          "preview_source": "assets/awards/iccad-contest-2024/plaque-1.jpg",
-          "preview": "assets/awards/iccad-contest-2024/plaque-1-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2024/2024-iccad-contest-plaque-1.jpg",
+          "preview": "assets/awards/iccad-contest-2024/2024-iccad-contest-plaque-1-preview.webp",
+          "alt": "Award plaque for Wuqian Tang: Second Place (Problem A), ICCAD CAD Contest. 2024-10-27; Problem A."
         }
       ],
       "date_source": "Reviewed original award file dates",
@@ -1232,21 +1268,23 @@
       "media": [
         {
           "kind": "photo",
-          "url": "assets/awards/cadathlon-2024/photo-1.jpg",
-          "caption": "Photo · 2024-10",
+          "url": "assets/awards/cadathlon-2024/2024-cadathlon-photo-1.jpg",
+          "caption": "Award ceremony · 2024-10",
           "width": 1166,
           "height": 875,
-          "preview_source": "assets/awards/cadathlon-2024/photo-1.jpg",
-          "preview": "assets/awards/cadathlon-2024/photo-1-preview.webp"
+          "preview_source": "assets/awards/cadathlon-2024/2024-cadathlon-photo-1.jpg",
+          "preview": "assets/awards/cadathlon-2024/2024-cadathlon-photo-1-preview.webp",
+          "alt": "On-stage award presentation at the ICCAD 2024 CADathlon ceremony."
         },
         {
           "kind": "trophy",
-          "url": "assets/awards/cadathlon-2024/trophy-1.jpg",
+          "url": "assets/awards/cadathlon-2024/2024-cadathlon-trophy-1.jpg",
           "caption": "Trophy · 2024-10",
           "width": 983,
           "height": 994,
-          "preview_source": "assets/awards/cadathlon-2024/trophy-1.jpg",
-          "preview": "assets/awards/cadathlon-2024/trophy-1-preview.webp"
+          "preview_source": "assets/awards/cadathlon-2024/2024-cadathlon-trophy-1.jpg",
+          "preview": "assets/awards/cadathlon-2024/2024-cadathlon-trophy-1-preview.webp",
+          "alt": "Trophy for Wuqian Tang: Second Place, ICCAD CADathlon. 2024-10."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1271,39 +1309,43 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/synopsys-scholarship-2024/certificate-1.pdf",
+          "url": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1.pdf",
           "caption": "Certificate · 2024-09-13 · English",
-          "preview": "assets/awards/synopsys-scholarship-2024/certificate-1-preview.webp",
+          "preview": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.webp",
           "width": 1800,
           "height": 1273,
-          "preview_source": "assets/awards/synopsys-scholarship-2024/certificate-1-preview.jpg"
+          "preview_source": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Synopsys – Prof. Chung Laung Liu Ph.D. Scholarship. 2024-09-13; English."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/synopsys-scholarship-2024/photo-1.jpg",
-          "caption": "Photo · 2024-09-13",
+          "url": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-1.jpg",
+          "caption": "Scholarship ceremony group photo · 2024-09-13",
           "width": 1600,
           "height": 1200,
-          "preview_source": "assets/awards/synopsys-scholarship-2024/photo-1.jpg",
-          "preview": "assets/awards/synopsys-scholarship-2024/photo-1-preview.webp"
+          "preview_source": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-1.jpg",
+          "preview": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-1-preview.webp",
+          "alt": "Group photo at the 2024 Synopsys Prof. Chung Laung Liu Ph.D. Scholarship ceremony, where Wuqian Tang received the scholarship."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/synopsys-scholarship-2024/photo-2.jpg",
-          "caption": "Photo · 2024-09-13",
+          "url": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-2.jpg",
+          "caption": "Scholarship recipients · 2024-09-13",
           "width": 1600,
           "height": 1200,
-          "preview_source": "assets/awards/synopsys-scholarship-2024/photo-2.jpg",
-          "preview": "assets/awards/synopsys-scholarship-2024/photo-2-preview.webp"
+          "preview_source": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-2.jpg",
+          "preview": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-2-preview.webp",
+          "alt": "Wuqian Tang with fellow recipients holding certificates at the 2024 Synopsys Prof. Chung Laung Liu Ph.D. Scholarship ceremony."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/synopsys-scholarship-2024/photo-3.jpg",
-          "caption": "Photo · 2024-09-13",
+          "url": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-3.jpg",
+          "caption": "Certificate presentation · 2024-09-13",
           "width": 1600,
           "height": 1200,
-          "preview_source": "assets/awards/synopsys-scholarship-2024/photo-3.jpg",
-          "preview": "assets/awards/synopsys-scholarship-2024/photo-3-preview.webp"
+          "preview_source": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-3.jpg",
+          "preview": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-3-preview.webp",
+          "alt": "Wuqian Tang receiving his certificate at the 2024 Synopsys Prof. Chung Laung Liu Ph.D. Scholarship ceremony."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1323,39 +1365,43 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/qilin-cup-2023/certificate-1.jpg",
+          "url": "assets/awards/qilin-cup-2023/2023-qilin-cup-certificate-1.jpg",
           "caption": "Certificate · 2023-12 · Chinese",
           "width": 1160,
           "height": 820,
-          "preview_source": "assets/awards/qilin-cup-2023/certificate-1.jpg",
-          "preview": "assets/awards/qilin-cup-2023/certificate-1-preview.webp"
+          "preview_source": "assets/awards/qilin-cup-2023/2023-qilin-cup-certificate-1.jpg",
+          "preview": "assets/awards/qilin-cup-2023/2023-qilin-cup-certificate-1-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Qilin Cup, Integrated Circuit EDA Elite Challenge. 2023-12; Chinese."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/qilin-cup-2023/photo-1.jpg",
-          "caption": "Photo · 2023-12",
+          "url": "assets/awards/qilin-cup-2023/2023-qilin-cup-photo-1.jpg",
+          "caption": "Team award presentation · 2023-12",
           "width": 1151,
           "height": 785,
-          "preview_source": "assets/awards/qilin-cup-2023/photo-1.jpg",
-          "preview": "assets/awards/qilin-cup-2023/photo-1-preview.webp"
+          "preview_source": "assets/awards/qilin-cup-2023/2023-qilin-cup-photo-1.jpg",
+          "preview": "assets/awards/qilin-cup-2023/2023-qilin-cup-photo-1-preview.webp",
+          "alt": "Wuqian Tang's team receiving an award at the 2023 Qilin Cup Integrated Circuit EDA Elite Challenge."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/qilin-cup-2023/photo-2.jpg",
-          "caption": "Photo · 2023-12",
+          "url": "assets/awards/qilin-cup-2023/2023-qilin-cup-photo-2.jpg",
+          "caption": "Team photo · 2023-12",
           "width": 800,
           "height": 600,
-          "preview_source": "assets/awards/qilin-cup-2023/photo-2.jpg",
-          "preview": "assets/awards/qilin-cup-2023/photo-2-preview.webp"
+          "preview_source": "assets/awards/qilin-cup-2023/2023-qilin-cup-photo-2.jpg",
+          "preview": "assets/awards/qilin-cup-2023/2023-qilin-cup-photo-2-preview.webp",
+          "alt": "Wuqian Tang's team posing with their trophy and certificate from the 2023 Qilin Cup Integrated Circuit EDA Elite Challenge."
         },
         {
           "kind": "trophy",
-          "url": "assets/awards/qilin-cup-2023/trophy-1.jpg",
+          "url": "assets/awards/qilin-cup-2023/2023-qilin-cup-trophy-1.jpg",
           "caption": "Trophy · 2023-12",
           "width": 1200,
           "height": 1600,
-          "preview_source": "assets/awards/qilin-cup-2023/trophy-1.jpg",
-          "preview": "assets/awards/qilin-cup-2023/trophy-1-preview.webp"
+          "preview_source": "assets/awards/qilin-cup-2023/2023-qilin-cup-trophy-1.jpg",
+          "preview": "assets/awards/qilin-cup-2023/2023-qilin-cup-trophy-1-preview.webp",
+          "alt": "Trophy for Wuqian Tang: Qilin Cup, Integrated Circuit EDA Elite Challenge. 2023-12."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1369,21 +1415,23 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/edathon-2023/certificate-1.jpg",
+          "url": "assets/awards/edathon-2023/2023-edathon-certificate-1.jpg",
           "caption": "Certificate · 2023-08 · English",
           "width": 1280,
           "height": 854,
-          "preview_source": "assets/awards/edathon-2023/certificate-1.jpg",
-          "preview": "assets/awards/edathon-2023/certificate-1-preview.webp"
+          "preview_source": "assets/awards/edathon-2023/2023-edathon-certificate-1.jpg",
+          "preview": "assets/awards/edathon-2023/2023-edathon-certificate-1-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Third Place, EDAthon. 2023-08; English."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/edathon-2023/photo-1.jpg",
-          "caption": "Photo · 2023-08",
+          "url": "assets/awards/edathon-2023/2023-edathon-photo-1.jpg",
+          "caption": "Team photo · 2023-08",
           "width": 1280,
           "height": 1083,
-          "preview_source": "assets/awards/edathon-2023/photo-1.jpg",
-          "preview": "assets/awards/edathon-2023/photo-1-preview.webp"
+          "preview_source": "assets/awards/edathon-2023/2023-edathon-photo-1.jpg",
+          "preview": "assets/awards/edathon-2023/2023-edathon-photo-1-preview.webp",
+          "alt": "Wuqian Tang and teammates holding third-place certificates at EDAthon 2023."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1408,21 +1456,23 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/iccad-contest-2022/certificate-1.pdf",
+          "url": "assets/awards/iccad-contest-2022/2022-iccad-contest-certificate-1.pdf",
           "caption": "Certificate · 2022-10-30 · Problem A · English",
-          "preview": "assets/awards/iccad-contest-2022/certificate-1-preview.webp",
+          "preview": "assets/awards/iccad-contest-2022/2022-iccad-contest-certificate-1-preview.webp",
           "width": 1800,
           "height": 1391,
-          "preview_source": "assets/awards/iccad-contest-2022/certificate-1-preview.jpg"
+          "preview_source": "assets/awards/iccad-contest-2022/2022-iccad-contest-certificate-1-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: First Place (Problem A), ICCAD CAD Contest. 2022-10-30; Problem A; English."
         },
         {
           "kind": "plaque",
-          "url": "assets/awards/iccad-contest-2022/plaque-1.jpg",
+          "url": "assets/awards/iccad-contest-2022/2022-iccad-contest-plaque-1.jpg",
           "caption": "Award plaque · 2022-10-30 · Problem A",
           "width": 1265,
           "height": 1600,
-          "preview_source": "assets/awards/iccad-contest-2022/plaque-1.jpg",
-          "preview": "assets/awards/iccad-contest-2022/plaque-1-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2022/2022-iccad-contest-plaque-1.jpg",
+          "preview": "assets/awards/iccad-contest-2022/2022-iccad-contest-plaque-1-preview.webp",
+          "alt": "Award plaque for Wuqian Tang: First Place (Problem A), ICCAD CAD Contest. 2022-10-30; Problem A."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1438,12 +1488,13 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/iccad-ssp-2025/certificate-1.pdf",
+          "url": "assets/awards/iccad-ssp-2025/2025-iccad-ssp-certificate-1.pdf",
           "caption": "Certificate · 2025-10-26 · English",
-          "preview": "assets/awards/iccad-ssp-2025/certificate-1-preview.webp",
+          "preview": "assets/awards/iccad-ssp-2025/2025-iccad-ssp-certificate-1-preview.webp",
           "width": 1800,
           "height": 1391,
-          "preview_source": "assets/awards/iccad-ssp-2025/certificate-1-preview.jpg"
+          "preview_source": "assets/awards/iccad-ssp-2025/2025-iccad-ssp-certificate-1-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Student Scholar Program Award. 2025-10-26; English."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1473,30 +1524,33 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/iccad-contest-2024/certificate-2.jpg",
+          "url": "assets/awards/iccad-contest-2024/2024-iccad-contest-certificate-2.jpg",
           "caption": "Certificate · 2024-10-27 · Problem B · English",
           "width": 1800,
           "height": 1391,
-          "preview_source": "assets/awards/iccad-contest-2024/certificate-2.jpg",
-          "preview": "assets/awards/iccad-contest-2024/certificate-2-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2024/2024-iccad-contest-certificate-2.jpg",
+          "preview": "assets/awards/iccad-contest-2024/2024-iccad-contest-certificate-2-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Honorable Mention (Problem B), ICCAD CAD Contest. 2024-10-27; Problem B; English."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/iccad-contest-2024/photo-2.jpg",
-          "caption": "Photo · 2024-10-27 · Problem B",
+          "url": "assets/awards/iccad-contest-2024/2024-iccad-contest-photo-2.jpg",
+          "caption": "Problem B team photo · 2024-10-27 · Problem B",
           "width": 1440,
           "height": 1080,
-          "preview_source": "assets/awards/iccad-contest-2024/photo-2.jpg",
-          "preview": "assets/awards/iccad-contest-2024/photo-2-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2024/2024-iccad-contest-photo-2.jpg",
+          "preview": "assets/awards/iccad-contest-2024/2024-iccad-contest-photo-2-preview.webp",
+          "alt": "Team photo with the certificate and plaque for Wuqian Tang's Honorable Mention in the ICCAD 2024 CAD Contest Problem B."
         },
         {
           "kind": "plaque",
-          "url": "assets/awards/iccad-contest-2024/plaque-2.jpg",
+          "url": "assets/awards/iccad-contest-2024/2024-iccad-contest-plaque-2.jpg",
           "caption": "Award plaque · 2024-10-27 · Problem B",
           "width": 1224,
           "height": 1600,
-          "preview_source": "assets/awards/iccad-contest-2024/plaque-2.jpg",
-          "preview": "assets/awards/iccad-contest-2024/plaque-2-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2024/2024-iccad-contest-plaque-2.jpg",
+          "preview": "assets/awards/iccad-contest-2024/2024-iccad-contest-plaque-2-preview.webp",
+          "alt": "Award plaque for Wuqian Tang: Honorable Mention (Problem B), ICCAD CAD Contest. 2024-10-27; Problem B."
         }
       ],
       "date_source": "Reviewed original award file dates",
@@ -1522,30 +1576,33 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/iccad-contest-2023/certificate-1.jpg",
+          "url": "assets/awards/iccad-contest-2023/2023-iccad-contest-certificate-1.jpg",
           "caption": "Certificate · 2023-10-29 · Problem A · English",
           "width": 1800,
           "height": 1373,
-          "preview_source": "assets/awards/iccad-contest-2023/certificate-1.jpg",
-          "preview": "assets/awards/iccad-contest-2023/certificate-1-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2023/2023-iccad-contest-certificate-1.jpg",
+          "preview": "assets/awards/iccad-contest-2023/2023-iccad-contest-certificate-1-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Honorable Mention (Problem A), ICCAD CAD Contest. 2023-10-29; Problem A; English."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/iccad-contest-2023/photo-1.jpg",
-          "caption": "Photo · 2023-10-29 · Problem A",
+          "url": "assets/awards/iccad-contest-2023/2023-iccad-contest-photo-1.jpg",
+          "caption": "Certificate and plaque · 2023-10-29 · Problem A",
           "width": 1600,
           "height": 901,
-          "preview_source": "assets/awards/iccad-contest-2023/photo-1.jpg",
-          "preview": "assets/awards/iccad-contest-2023/photo-1-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2023/2023-iccad-contest-photo-1.jpg",
+          "preview": "assets/awards/iccad-contest-2023/2023-iccad-contest-photo-1-preview.webp",
+          "alt": "Wuqian Tang with the certificate and plaque for his team's Honorable Mention in the ICCAD 2023 CAD Contest Problem A."
         },
         {
           "kind": "plaque",
-          "url": "assets/awards/iccad-contest-2023/plaque-1.jpg",
+          "url": "assets/awards/iccad-contest-2023/2023-iccad-contest-plaque-1.jpg",
           "caption": "Award plaque · 2023-10-29 · Problem A",
           "width": 1080,
           "height": 1492,
-          "preview_source": "assets/awards/iccad-contest-2023/plaque-1.jpg",
-          "preview": "assets/awards/iccad-contest-2023/plaque-1-preview.webp"
+          "preview_source": "assets/awards/iccad-contest-2023/2023-iccad-contest-plaque-1.jpg",
+          "preview": "assets/awards/iccad-contest-2023/2023-iccad-contest-plaque-1-preview.webp",
+          "alt": "Award plaque for Wuqian Tang: Honorable Mention (Problem A), ICCAD CAD Contest. 2023-10-29; Problem A."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1559,21 +1616,23 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/nthu-scholarship-2021/certificate-1.jpg",
+          "url": "assets/awards/nthu-scholarship-2021/2021-nthu-scholarship-certificate-1.jpg",
           "caption": "Certificate · 2021-09 · English",
           "width": 1274,
           "height": 1800,
-          "preview_source": "assets/awards/nthu-scholarship-2021/certificate-1.jpg",
-          "preview": "assets/awards/nthu-scholarship-2021/certificate-1-preview.webp"
+          "preview_source": "assets/awards/nthu-scholarship-2021/2021-nthu-scholarship-certificate-1.jpg",
+          "preview": "assets/awards/nthu-scholarship-2021/2021-nthu-scholarship-certificate-1-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Mainland China Student Scholarship. 2021-09; English."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/nthu-scholarship-2021/certificate-2.pdf",
+          "url": "assets/awards/nthu-scholarship-2021/2021-nthu-scholarship-certificate-2.pdf",
           "caption": "Certificate · 2021-09 · Chinese",
-          "preview": "assets/awards/nthu-scholarship-2021/certificate-2-preview.webp",
+          "preview": "assets/awards/nthu-scholarship-2021/2021-nthu-scholarship-certificate-2-preview.webp",
           "width": 1273,
           "height": 1800,
-          "preview_source": "assets/awards/nthu-scholarship-2021/certificate-2-preview.jpg"
+          "preview_source": "assets/awards/nthu-scholarship-2021/2021-nthu-scholarship-certificate-2-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Mainland China Student Scholarship. 2021-09; Chinese."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1587,12 +1646,13 @@
       "media": [
         {
           "kind": "plaque",
-          "url": "assets/awards/mcu-contribution-2021/plaque-1.jpg",
+          "url": "assets/awards/mcu-contribution-2021/2021-mcu-contribution-plaque-1.jpg",
           "caption": "Award plaque · 2021-05-29",
           "width": 1130,
           "height": 1600,
-          "preview_source": "assets/awards/mcu-contribution-2021/plaque-1.jpg",
-          "preview": "assets/awards/mcu-contribution-2021/plaque-1-preview.webp"
+          "preview_source": "assets/awards/mcu-contribution-2021/2021-mcu-contribution-plaque-1.jpg",
+          "preview": "assets/awards/mcu-contribution-2021/2021-mcu-contribution-plaque-1-preview.webp",
+          "alt": "Award plaque for Wuqian Tang: Outstanding Contribution Award. 2021-05-29."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1606,21 +1666,23 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/mcu-programming-2019-2020/certificate-1.jpg",
+          "url": "assets/awards/mcu-programming-2019-2020/2019-mcu-programming-contest-certificate-1.jpg",
           "caption": "Certificate · 2019-12-25 · Chinese",
           "width": 1273,
           "height": 1800,
-          "preview_source": "assets/awards/mcu-programming-2019-2020/certificate-1.jpg",
-          "preview": "assets/awards/mcu-programming-2019-2020/certificate-1-preview.webp"
+          "preview_source": "assets/awards/mcu-programming-2019-2020/2019-mcu-programming-contest-certificate-1.jpg",
+          "preview": "assets/awards/mcu-programming-2019-2020/2019-mcu-programming-contest-certificate-1-preview.webp",
+          "alt": "Certificate for Wuqian Tang: First Place, MCU Programming Contest. 2019-12-25; Chinese."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/mcu-programming-2019-2020/certificate-2.jpg",
+          "url": "assets/awards/mcu-programming-2019-2020/2020-mcu-programming-contest-certificate-2.jpg",
           "caption": "Certificate · 2020-12-25 · Chinese",
           "width": 1273,
           "height": 1800,
-          "preview_source": "assets/awards/mcu-programming-2019-2020/certificate-2.jpg",
-          "preview": "assets/awards/mcu-programming-2019-2020/certificate-2-preview.webp"
+          "preview_source": "assets/awards/mcu-programming-2019-2020/2020-mcu-programming-contest-certificate-2.jpg",
+          "preview": "assets/awards/mcu-programming-2019-2020/2020-mcu-programming-contest-certificate-2-preview.webp",
+          "alt": "Certificate for Wuqian Tang: First Place, MCU Programming Contest. 2020-12-25; Chinese."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1634,12 +1696,13 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/central-taiwan-2020/certificate-1.jpg",
+          "url": "assets/awards/central-taiwan-2020/2020-central-taiwan-programming-contest-certificate-1.jpg",
           "caption": "Certificate · 2020-12-05 · Chinese",
           "width": 1273,
           "height": 1800,
-          "preview_source": "assets/awards/central-taiwan-2020/certificate-1.jpg",
-          "preview": "assets/awards/central-taiwan-2020/certificate-1-preview.webp"
+          "preview_source": "assets/awards/central-taiwan-2020/2020-central-taiwan-programming-contest-certificate-1.jpg",
+          "preview": "assets/awards/central-taiwan-2020/2020-central-taiwan-programming-contest-certificate-1-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Honorable Mention, Central Taiwan Programming Contest. 2020-12-05; Chinese."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1659,39 +1722,43 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/icpc-2020/certificate-1.pdf",
+          "url": "assets/awards/icpc-2020/2020-icpc-certificate-1.pdf",
           "caption": "Certificate · 2020-11-07 · English",
-          "preview": "assets/awards/icpc-2020/certificate-1-preview.webp",
+          "preview": "assets/awards/icpc-2020/2020-icpc-certificate-1-preview.webp",
           "width": 1800,
           "height": 1272,
-          "preview_source": "assets/awards/icpc-2020/certificate-1-preview.jpg"
+          "preview_source": "assets/awards/icpc-2020/2020-icpc-certificate-1-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Silver Award, ICPC Asia Taipei–Hsinchu Regional. 2020-11-07; English."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/icpc-2020/certificate-2.pdf",
+          "url": "assets/awards/icpc-2020/2020-icpc-certificate-2.pdf",
           "caption": "Certificate · 2020-11-07 · English",
-          "preview": "assets/awards/icpc-2020/certificate-2-preview.webp",
+          "preview": "assets/awards/icpc-2020/2020-icpc-certificate-2-preview.webp",
           "width": 1800,
           "height": 1272,
-          "preview_source": "assets/awards/icpc-2020/certificate-2-preview.jpg"
+          "preview_source": "assets/awards/icpc-2020/2020-icpc-certificate-2-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Silver Award, ICPC Asia Taipei–Hsinchu Regional. 2020-11-07; English."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/icpc-2020/certificate-3.pdf",
+          "url": "assets/awards/icpc-2020/2020-icpc-certificate-3.pdf",
           "caption": "Certificate · 2020-11-07 · English",
-          "preview": "assets/awards/icpc-2020/certificate-3-preview.webp",
+          "preview": "assets/awards/icpc-2020/2020-icpc-certificate-3-preview.webp",
           "width": 1800,
           "height": 1272,
-          "preview_source": "assets/awards/icpc-2020/certificate-3-preview.jpg"
+          "preview_source": "assets/awards/icpc-2020/2020-icpc-certificate-3-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Silver Award, ICPC Asia Taipei–Hsinchu Regional. 2020-11-07; English."
         },
         {
           "kind": "plaque",
-          "url": "assets/awards/icpc-2020/plaque-1.jpg",
+          "url": "assets/awards/icpc-2020/2020-icpc-plaque-1.jpg",
           "caption": "Award plaque · 2020-11-07",
           "width": 1176,
           "height": 1600,
-          "preview_source": "assets/awards/icpc-2020/plaque-1.jpg",
-          "preview": "assets/awards/icpc-2020/plaque-1-preview.webp"
+          "preview_source": "assets/awards/icpc-2020/2020-icpc-plaque-1.jpg",
+          "preview": "assets/awards/icpc-2020/2020-icpc-plaque-1-preview.webp",
+          "alt": "Award plaque for Wuqian Tang: Silver Award, ICPC Asia Taipei–Hsinchu Regional. 2020-11-07."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1705,30 +1772,33 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/ncpc-2018-2020/certificate-1.jpg",
+          "url": "assets/awards/ncpc-2018-2020/2018-ncpc-certificate-1.jpg",
           "caption": "Certificate · 2018-11-11 · Chinese",
           "width": 1273,
           "height": 1800,
-          "preview_source": "assets/awards/ncpc-2018-2020/certificate-1.jpg",
-          "preview": "assets/awards/ncpc-2018-2020/certificate-1-preview.webp"
+          "preview_source": "assets/awards/ncpc-2018-2020/2018-ncpc-certificate-1.jpg",
+          "preview": "assets/awards/ncpc-2018-2020/2018-ncpc-certificate-1-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Honorable Mention, NCPC. 2018-11-11; Chinese."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/ncpc-2018-2020/certificate-2.jpg",
+          "url": "assets/awards/ncpc-2018-2020/2019-ncpc-certificate-2.jpg",
           "caption": "Certificate · 2019-11-24 · Chinese",
           "width": 1273,
           "height": 1800,
-          "preview_source": "assets/awards/ncpc-2018-2020/certificate-2.jpg",
-          "preview": "assets/awards/ncpc-2018-2020/certificate-2-preview.webp"
+          "preview_source": "assets/awards/ncpc-2018-2020/2019-ncpc-certificate-2.jpg",
+          "preview": "assets/awards/ncpc-2018-2020/2019-ncpc-certificate-2-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Honorable Mention, NCPC. 2019-11-24; Chinese."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/ncpc-2018-2020/certificate-3.jpg",
+          "url": "assets/awards/ncpc-2018-2020/2020-ncpc-certificate-3.jpg",
           "caption": "Certificate · 2020-11-08 · Chinese",
           "width": 1273,
           "height": 1800,
-          "preview_source": "assets/awards/ncpc-2018-2020/certificate-3.jpg",
-          "preview": "assets/awards/ncpc-2018-2020/certificate-3-preview.webp"
+          "preview_source": "assets/awards/ncpc-2018-2020/2020-ncpc-certificate-3.jpg",
+          "preview": "assets/awards/ncpc-2018-2020/2020-ncpc-certificate-3-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Honorable Mention, NCPC. 2020-11-08; Chinese."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1742,12 +1812,13 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/topc-2020/certificate-1.pdf",
+          "url": "assets/awards/topc-2020/2020-topc-certificate-1.pdf",
           "caption": "Certificate · 2020-10-07 · English",
-          "preview": "assets/awards/topc-2020/certificate-1-preview.webp",
+          "preview": "assets/awards/topc-2020/2020-topc-certificate-1-preview.webp",
           "width": 1800,
           "height": 1272,
-          "preview_source": "assets/awards/topc-2020/certificate-1-preview.jpg"
+          "preview_source": "assets/awards/topc-2020/2020-topc-certificate-1-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Honorable Mention, TOPC. 2020-10-07; English."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1767,39 +1838,43 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/icpc-2019/certificate-1.pdf",
+          "url": "assets/awards/icpc-2019/2019-icpc-certificate-1.pdf",
           "caption": "Certificate · 2019-11-23 · English",
-          "preview": "assets/awards/icpc-2019/certificate-1-preview.webp",
+          "preview": "assets/awards/icpc-2019/2019-icpc-certificate-1-preview.webp",
           "width": 1800,
           "height": 1272,
-          "preview_source": "assets/awards/icpc-2019/certificate-1-preview.jpg"
+          "preview_source": "assets/awards/icpc-2019/2019-icpc-certificate-1-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Bronze Award, ICPC Asia Taipei–Hsinchu Regional. 2019-11-23; English."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/icpc-2019/certificate-2.pdf",
+          "url": "assets/awards/icpc-2019/2019-icpc-certificate-2.pdf",
           "caption": "Certificate · 2019-11-23 · English",
-          "preview": "assets/awards/icpc-2019/certificate-2-preview.webp",
+          "preview": "assets/awards/icpc-2019/2019-icpc-certificate-2-preview.webp",
           "width": 1800,
           "height": 1272,
-          "preview_source": "assets/awards/icpc-2019/certificate-2-preview.jpg"
+          "preview_source": "assets/awards/icpc-2019/2019-icpc-certificate-2-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Bronze Award, ICPC Asia Taipei–Hsinchu Regional. 2019-11-23; English."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/icpc-2019/certificate-3.pdf",
+          "url": "assets/awards/icpc-2019/2019-icpc-certificate-3.pdf",
           "caption": "Certificate · 2019-11-23 · English",
-          "preview": "assets/awards/icpc-2019/certificate-3-preview.webp",
+          "preview": "assets/awards/icpc-2019/2019-icpc-certificate-3-preview.webp",
           "width": 1800,
           "height": 1272,
-          "preview_source": "assets/awards/icpc-2019/certificate-3-preview.jpg"
+          "preview_source": "assets/awards/icpc-2019/2019-icpc-certificate-3-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Bronze Award, ICPC Asia Taipei–Hsinchu Regional. 2019-11-23; English."
         },
         {
           "kind": "plaque",
-          "url": "assets/awards/icpc-2019/plaque-1.jpg",
+          "url": "assets/awards/icpc-2019/2019-icpc-plaque-1.jpg",
           "caption": "Award plaque · 2019-11-23",
           "width": 1032,
           "height": 1557,
-          "preview_source": "assets/awards/icpc-2019/plaque-1.jpg",
-          "preview": "assets/awards/icpc-2019/plaque-1-preview.webp"
+          "preview_source": "assets/awards/icpc-2019/2019-icpc-plaque-1.jpg",
+          "preview": "assets/awards/icpc-2019/2019-icpc-plaque-1-preview.webp",
+          "alt": "Award plaque for Wuqian Tang: Bronze Award, ICPC Asia Taipei–Hsinchu Regional. 2019-11-23."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1819,30 +1894,33 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/topc-2019/certificate-1.pdf",
+          "url": "assets/awards/topc-2019/2019-topc-certificate-1.pdf",
           "caption": "Certificate · 2019-10-05 · English",
-          "preview": "assets/awards/topc-2019/certificate-1-preview.webp",
+          "preview": "assets/awards/topc-2019/2019-topc-certificate-1-preview.webp",
           "width": 1800,
           "height": 1272,
-          "preview_source": "assets/awards/topc-2019/certificate-1-preview.jpg"
+          "preview_source": "assets/awards/topc-2019/2019-topc-certificate-1-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Silver Award, TOPC. 2019-10-05; English."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/topc-2019/certificate-2.pdf",
+          "url": "assets/awards/topc-2019/2019-topc-certificate-2.pdf",
           "caption": "Certificate · 2019-10-05 · English",
-          "preview": "assets/awards/topc-2019/certificate-2-preview.webp",
+          "preview": "assets/awards/topc-2019/2019-topc-certificate-2-preview.webp",
           "width": 1800,
           "height": 1272,
-          "preview_source": "assets/awards/topc-2019/certificate-2-preview.jpg"
+          "preview_source": "assets/awards/topc-2019/2019-topc-certificate-2-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Silver Award, TOPC. 2019-10-05; English."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/topc-2019/certificate-3.pdf",
+          "url": "assets/awards/topc-2019/2019-topc-certificate-3.pdf",
           "caption": "Certificate · 2019-10-05 · English",
-          "preview": "assets/awards/topc-2019/certificate-3-preview.webp",
+          "preview": "assets/awards/topc-2019/2019-topc-certificate-3-preview.webp",
           "width": 1800,
           "height": 1272,
-          "preview_source": "assets/awards/topc-2019/certificate-3-preview.jpg"
+          "preview_source": "assets/awards/topc-2019/2019-topc-certificate-3-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Silver Award, TOPC. 2019-10-05; English."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1856,39 +1934,43 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/ncpu-2019/certificate-1.pdf",
+          "url": "assets/awards/ncpu-2019/2019-ncpu-certificate-1.pdf",
           "caption": "Certificate · 2019-07-10 · English",
-          "preview": "assets/awards/ncpu-2019/certificate-1-preview.webp",
+          "preview": "assets/awards/ncpu-2019/2019-ncpu-certificate-1-preview.webp",
           "width": 1800,
           "height": 1391,
-          "preview_source": "assets/awards/ncpu-2019/certificate-1-preview.jpg"
+          "preview_source": "assets/awards/ncpu-2019/2019-ncpu-certificate-1-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Silver Prize, NCPU. 2019-07-10; English."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/ncpu-2019/certificate-2.pdf",
+          "url": "assets/awards/ncpu-2019/2019-ncpu-certificate-2.pdf",
           "caption": "Certificate · 2019-07-10 · English",
-          "preview": "assets/awards/ncpu-2019/certificate-2-preview.webp",
+          "preview": "assets/awards/ncpu-2019/2019-ncpu-certificate-2-preview.webp",
           "width": 1800,
           "height": 1272,
-          "preview_source": "assets/awards/ncpu-2019/certificate-2-preview.jpg"
+          "preview_source": "assets/awards/ncpu-2019/2019-ncpu-certificate-2-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Silver Prize, NCPU. 2019-07-10; English."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/ncpu-2019/certificate-3.pdf",
+          "url": "assets/awards/ncpu-2019/2019-ncpu-certificate-3.pdf",
           "caption": "Certificate · 2019-07-10 · English",
-          "preview": "assets/awards/ncpu-2019/certificate-3-preview.webp",
+          "preview": "assets/awards/ncpu-2019/2019-ncpu-certificate-3-preview.webp",
           "width": 1800,
           "height": 1272,
-          "preview_source": "assets/awards/ncpu-2019/certificate-3-preview.jpg"
+          "preview_source": "assets/awards/ncpu-2019/2019-ncpu-certificate-3-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Silver Prize, NCPU. 2019-07-10; English."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/ncpu-2019/certificate-4.jpg",
+          "url": "assets/awards/ncpu-2019/2019-ncpu-certificate-4.jpg",
           "caption": "Certificate · 2019-07-10 · English",
           "width": 1800,
           "height": 1266,
-          "preview_source": "assets/awards/ncpu-2019/certificate-4.jpg",
-          "preview": "assets/awards/ncpu-2019/certificate-4-preview.webp"
+          "preview_source": "assets/awards/ncpu-2019/2019-ncpu-certificate-4.jpg",
+          "preview": "assets/awards/ncpu-2019/2019-ncpu-certificate-4-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Silver Prize, NCPU. 2019-07-10; English."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1902,12 +1984,13 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/freshman-cup-2018/certificate-1.jpg",
+          "url": "assets/awards/freshman-cup-2018/2018-freshman-cup-certificate-1.jpg",
           "caption": "Certificate · 2018-06-22 · Chinese",
           "width": 1278,
           "height": 1800,
-          "preview_source": "assets/awards/freshman-cup-2018/certificate-1.jpg",
-          "preview": "assets/awards/freshman-cup-2018/certificate-1-preview.webp"
+          "preview_source": "assets/awards/freshman-cup-2018/2018-freshman-cup-certificate-1.jpg",
+          "preview": "assets/awards/freshman-cup-2018/2018-freshman-cup-certificate-1-preview.webp",
+          "alt": "Certificate for Wuqian Tang: First Place, Intercollegiate Freshman Cup Programming Contest. 2018-06-22; Chinese."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1921,21 +2004,23 @@
       "media": [
         {
           "kind": "certificate",
-          "url": "assets/awards/software-innovation-2018/certificate-1.jpg",
+          "url": "assets/awards/software-innovation-2018/2018-software-innovation-certificate-1.jpg",
           "caption": "Certificate · 2018-01-13 · Chinese",
           "width": 1275,
           "height": 1800,
-          "preview_source": "assets/awards/software-innovation-2018/certificate-1.jpg",
-          "preview": "assets/awards/software-innovation-2018/certificate-1-preview.webp"
+          "preview_source": "assets/awards/software-innovation-2018/2018-software-innovation-certificate-1.jpg",
+          "preview": "assets/awards/software-innovation-2018/2018-software-innovation-certificate-1-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Third Place & Popularity Award, Three-University Software Innovation Exhibition and Competition. 2018-01-13; Chinese."
         },
         {
           "kind": "certificate",
-          "url": "assets/awards/software-innovation-2018/certificate-2.jpg",
+          "url": "assets/awards/software-innovation-2018/2018-software-innovation-certificate-2.jpg",
           "caption": "Certificate · 2018-01-13 · Chinese",
           "width": 1270,
           "height": 1800,
-          "preview_source": "assets/awards/software-innovation-2018/certificate-2.jpg",
-          "preview": "assets/awards/software-innovation-2018/certificate-2-preview.webp"
+          "preview_source": "assets/awards/software-innovation-2018/2018-software-innovation-certificate-2.jpg",
+          "preview": "assets/awards/software-innovation-2018/2018-software-innovation-certificate-2-preview.webp",
+          "alt": "Certificate for Wuqian Tang: Third Place & Popularity Award, Three-University Software Innovation Exhibition and Competition. 2018-01-13; Chinese."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1951,22 +2036,24 @@
       "media": [
         {
           "kind": "medal",
-          "url": "assets/awards/badminton-2025/medal-1.jpg",
+          "url": "assets/awards/badminton-2025/2025-badminton-medal-1.jpg",
           "caption": "Medal · 2025-05",
           "width": 1227,
           "height": 1400,
-          "preview_source": "assets/awards/badminton-2025/medal-1.jpg",
-          "preview": "assets/awards/badminton-2025/medal-1-preview.webp"
+          "preview_source": "assets/awards/badminton-2025/2025-badminton-medal-1.jpg",
+          "preview": "assets/awards/badminton-2025/2025-badminton-medal-1-preview.webp",
+          "alt": "Medal for Wuqian Tang: First Place, NTHU Interdepartmental Cup Badminton Doubles. 2025-05."
         },
         {
           "kind": "photo",
-          "url": "assets/awards/badminton-2025/photo-1.jpg",
-          "caption": "Photo · 2025-05",
+          "url": "assets/awards/badminton-2025/2025-badminton-photo-1.jpg",
+          "caption": "Doubles champions · 2025-05",
           "width": 787,
           "height": 1400,
           "crop_top": 0.25,
-          "preview_source": "assets/awards/badminton-2025/photo-1.jpg",
-          "preview": "assets/awards/badminton-2025/photo-1-preview.webp"
+          "preview_source": "assets/awards/badminton-2025/2025-badminton-photo-1.jpg",
+          "preview": "assets/awards/badminton-2025/2025-badminton-photo-1-preview.webp",
+          "alt": "Wuqian Tang and his doubles partner holding their first-place medals and rackets at the 2025 NTHU Interdepartmental Cup badminton competition."
         }
       ],
       "date_source": "Reviewed original award file dates"
@@ -1974,26 +2061,26 @@
   ],
   "gallery_highlight": {
     "award": "hsinchu-youth-2026",
-    "url": "assets/awards/hsinchu-youth-2026/photo-2.jpg",
+    "url": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-2.jpg",
     "title": "Hsinchu City Outstanding Youth",
     "detail": "College / University Division · 2026"
   },
   "homepage_images": {
     "hsinchu": {
-      "original": "assets/awards/hsinchu-youth-2026/photo-2.jpg",
-      "preview": "assets/awards/hsinchu-youth-2026/photo-2-preview.webp",
+      "original": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-2.jpg",
+      "preview": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-2-preview.webp",
       "width": 1600,
       "height": 1200
     },
     "hsing_chien": {
-      "original": "assets/images/hsing-chien-2025.jpg",
-      "preview": "assets/awards/hsing-chien-2025/photo-1-preview.webp",
+      "original": "assets/images/2025-hsing-chien-photo-1.jpg",
+      "preview": "assets/awards/hsing-chien-2025/2025-hsing-chien-photo-1-preview.webp",
       "width": 1477,
       "height": 1108
     },
     "badminton": {
-      "original": "assets/images/badminton-2025.jpg",
-      "preview": "assets/awards/badminton-2025/photo-1-preview.webp",
+      "original": "assets/images/2025-badminton-photo-1.jpg",
+      "preview": "assets/awards/badminton-2025/2025-badminton-photo-1-preview.webp",
       "width": 787,
       "height": 1400
     }

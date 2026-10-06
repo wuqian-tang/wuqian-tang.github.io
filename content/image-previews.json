@@ -4,8 +4,8 @@
   "image_count": 87,
   "images": [
     {
-      "path": "assets/awards/mlcad-2026/certificate-1-preview.webp",
-      "source": "assets/awards/mlcad-2026/certificate-1-preview.jpg",
+      "path": "assets/awards/mlcad-2026/2026-mlcad-contest-certificate-1-preview.webp",
+      "source": "assets/awards/mlcad-2026/2026-mlcad-contest-certificate-1-preview.jpg",
       "source_sha256": "4bfb7c80f808acf0f2f1663a355e4047470024e985ed3a1e5357a1f68dd79a39",
       "source_bytes": 273923,
       "bytes": 111450,
@@ -15,8 +15,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/teaching-excellent-2026/trophy-1-preview.webp",
-      "source": "assets/awards/teaching-excellent-2026/trophy-1.jpg",
+      "path": "assets/awards/teaching-excellent-2026/2026-08-nthu-excellent-ta-trophy-preview.webp",
+      "source": "assets/awards/teaching-excellent-2026/2026-08-nthu-excellent-ta-trophy.jpg",
       "source_sha256": "d062082f7e5c0e914a811009880519256dcc421506821266f3a6101a94245e02",
       "source_bytes": 2253248,
       "bytes": 345996,
@@ -26,8 +26,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/teaching-outstanding-2025-2026/certificate-1-preview.webp",
-      "source": "assets/awards/teaching-outstanding-2025-2026/certificate-1-preview.jpg",
+      "path": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-certificate-preview.webp",
+      "source": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-certificate-preview.jpg",
       "source_sha256": "2bc3dc187266c3ec60145df34ca222e0c5e53c67ce4ed6e11c1e76568810d368",
       "source_bytes": 617806,
       "bytes": 156144,
@@ -37,8 +37,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/teaching-outstanding-2025-2026/photo-1-preview.webp",
-      "source": "assets/awards/teaching-outstanding-2025-2026/photo-1.jpg",
+      "path": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-photo-1-preview.webp",
+      "source": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-photo-1.jpg",
       "source_sha256": "41ea4a38434c5f7a5074c49f4ceba206a34b7c8452c6e36e8a4eec340bac1a74",
       "source_bytes": 236461,
       "bytes": 105150,
@@ -48,8 +48,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/teaching-outstanding-2025-2026/photo-2-preview.webp",
-      "source": "assets/awards/teaching-outstanding-2025-2026/photo-2.jpg",
+      "path": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-photo-2-preview.webp",
+      "source": "assets/awards/teaching-outstanding-2025-2026/2025-08-nthu-outstanding-ta-photo-2.jpg",
       "source_sha256": "d82dd68fab0572eacaf7f641b108a0400c7d466bd76062ad77b47511114ed926",
       "source_bytes": 228846,
       "bytes": 110068,
@@ -59,8 +59,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/teaching-outstanding-2025-2026/certificate-2-preview.webp",
-      "source": "assets/awards/teaching-outstanding-2025-2026/certificate-2.jpg",
+      "path": "assets/awards/teaching-outstanding-2025-2026/2026-02-nthu-outstanding-ta-certificate-preview.webp",
+      "source": "assets/awards/teaching-outstanding-2025-2026/2026-02-nthu-outstanding-ta-certificate.jpg",
       "source_sha256": "e32c526e22256514f37dd40443b2025ba85906908d2d824bc941ca85277c93ec",
       "source_bytes": 639683,
       "bytes": 136928,
@@ -70,8 +70,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/teaching-outstanding-2025-2026/certificate-3-preview.webp",
-      "source": "assets/awards/teaching-outstanding-2025-2026/certificate-3-preview.jpg",
+      "path": "assets/awards/teaching-outstanding-2025-2026/2026-08-nthu-outstanding-ta-certificate-preview.webp",
+      "source": "assets/awards/teaching-outstanding-2025-2026/2026-08-nthu-outstanding-ta-certificate-preview.jpg",
       "source_sha256": "13bd338926a2e2452fed8b10406101964c3b7be28beaf25377a136b53efc20e3",
       "source_bytes": 624956,
       "bytes": 154994,
@@ -81,8 +81,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/teaching-outstanding-2025-2026/photo-3-preview.webp",
-      "source": "assets/awards/teaching-outstanding-2025-2026/photo-3.jpg",
+      "path": "assets/awards/teaching-outstanding-2025-2026/2026-08-nthu-outstanding-ta-photo-1-preview.webp",
+      "source": "assets/awards/teaching-outstanding-2025-2026/2026-08-nthu-outstanding-ta-photo-1.jpg",
       "source_sha256": "8b365c54eaf63b6a349cad625adfa57b3cad1599042d870789ae035ad5b52ae2",
       "source_bytes": 1532288,
       "bytes": 127388,
@@ -92,8 +92,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/mcu-alumnus-2026/certificate-1-preview.webp",
-      "source": "assets/awards/mcu-alumnus-2026/certificate-1.jpg",
+      "path": "assets/awards/mcu-alumnus-2026/2026-mcu-alumnus-certificate-1-preview.webp",
+      "source": "assets/awards/mcu-alumnus-2026/2026-mcu-alumnus-certificate-1.jpg",
       "source_sha256": "d4bf98ea16f95051eeafabb38b283239166427495691a10687b573577dcf9815",
       "source_bytes": 828700,
       "bytes": 165482,
@@ -103,8 +103,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/mcu-alumnus-2026/certificate-2-preview.webp",
-      "source": "assets/awards/mcu-alumnus-2026/certificate-2.jpg",
+      "path": "assets/awards/mcu-alumnus-2026/2026-mcu-alumnus-certificate-2-preview.webp",
+      "source": "assets/awards/mcu-alumnus-2026/2026-mcu-alumnus-certificate-2.jpg",
       "source_sha256": "a671b0e68d94f060651402b9efda97b9715a3cecc58d3acdabc8d184ab829511",
       "source_bytes": 827157,
       "bytes": 200322,
@@ -114,8 +114,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/iwls-2026/certificate-1-preview.webp",
-      "source": "assets/awards/iwls-2026/certificate-1.jpg",
+      "path": "assets/awards/iwls-2026/2026-iwls-contest-certificate-1-preview.webp",
+      "source": "assets/awards/iwls-2026/2026-iwls-contest-certificate-1.jpg",
       "source_sha256": "dfcfe0b67fabbfa91708c9b8a5172730518067b140ce048ef662dc54b6f55d65",
       "source_bytes": 310405,
       "bytes": 108894,
@@ -125,8 +125,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/iwls-2026/photo-1-preview.webp",
-      "source": "assets/awards/iwls-2026/photo-1.jpg",
+      "path": "assets/awards/iwls-2026/2026-iwls-contest-photo-1-preview.webp",
+      "source": "assets/awards/iwls-2026/2026-iwls-contest-photo-1.jpg",
       "source_sha256": "5ee4bae1b4ca3d1aa283fa32296cfcf7365ee81719caa1506e8a7a3995413d15",
       "source_bytes": 649270,
       "bytes": 196860,
@@ -136,8 +136,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/iwls-2026/photo-2-preview.webp",
-      "source": "assets/awards/iwls-2026/photo-2.jpg",
+      "path": "assets/awards/iwls-2026/2026-iwls-contest-photo-2-preview.webp",
+      "source": "assets/awards/iwls-2026/2026-iwls-contest-photo-2.jpg",
       "source_sha256": "843fcd68ac73f8f757206fad5ea43651f6adbe739ce1619d8c62a15e56b450c7",
       "source_bytes": 122641,
       "bytes": 142868,
@@ -147,8 +147,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/hsinchu-youth-2026/certificate-1-preview.webp",
-      "source": "assets/awards/hsinchu-youth-2026/certificate-1.jpg",
+      "path": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-certificate-1-preview.webp",
+      "source": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-certificate-1.jpg",
       "source_sha256": "4261d19e312391838fea54d3ed6e14a32a998046ae817bb1d8fd5611c06c059b",
       "source_bytes": 764027,
       "bytes": 172126,
@@ -158,8 +158,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/hsinchu-youth-2026/certificate-2-preview.webp",
-      "source": "assets/awards/hsinchu-youth-2026/certificate-2.jpg",
+      "path": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-certificate-2-preview.webp",
+      "source": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-certificate-2.jpg",
       "source_sha256": "f330f941210e2e8a85170d395d9e8a6545d29469b74e78e0d93ad4e78c8b1f1e",
       "source_bytes": 2627787,
       "bytes": 442716,
@@ -169,8 +169,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/hsinchu-youth-2026/photo-1-preview.webp",
-      "source": "assets/awards/hsinchu-youth-2026/photo-1.jpg",
+      "path": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-1-preview.webp",
+      "source": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-1.jpg",
       "source_sha256": "1ec4c9242759e864b37d152c2daddd6472899d0f196fbba188aff01b86486982",
       "source_bytes": 325890,
       "bytes": 147244,
@@ -180,8 +180,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/hsinchu-youth-2026/photo-2-preview.webp",
-      "source": "assets/awards/hsinchu-youth-2026/photo-2.jpg",
+      "path": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-2-preview.webp",
+      "source": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-2.jpg",
       "source_sha256": "03a3646b9ad7279af284fcd95aefdb4edba053fd56f53fca1af73583a679f4f1",
       "source_bytes": 298567,
       "bytes": 135448,
@@ -191,8 +191,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/hsinchu-youth-2026/photo-3-preview.webp",
-      "source": "assets/awards/hsinchu-youth-2026/photo-3.jpg",
+      "path": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-3-preview.webp",
+      "source": "assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-3.jpg",
       "source_sha256": "9ce90f0eece0916e5844ec1c11ae6d0a18e40bff83980ba849b0bc2a8d90cbbd",
       "source_bytes": 298105,
       "bytes": 134008,
@@ -202,8 +202,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/ispd-2026/certificate-1-preview.webp",
-      "source": "assets/awards/ispd-2026/certificate-1-preview.jpg",
+      "path": "assets/awards/ispd-2026/2026-ispd-contest-certificate-1-preview.webp",
+      "source": "assets/awards/ispd-2026/2026-ispd-contest-certificate-1-preview.jpg",
       "source_sha256": "390c7f44ead17f23669907b8f6bf9eecfcfb9395fc5b1b00062b8aef18099542",
       "source_bytes": 1170976,
       "bytes": 569048,
@@ -213,8 +213,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/iccad-contest-2025/certificate-1-preview.webp",
-      "source": "assets/awards/iccad-contest-2025/certificate-1-preview.jpg",
+      "path": "assets/awards/iccad-contest-2025/2025-iccad-contest-certificate-1-preview.webp",
+      "source": "assets/awards/iccad-contest-2025/2025-iccad-contest-certificate-1-preview.jpg",
       "source_sha256": "4f81e503b9604e6d40a23b27a10aa699a8510bdefb61a8c2716b6360d96d66b5",
       "source_bytes": 430116,
       "bytes": 164858,
@@ -224,8 +224,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/iccad-contest-2025/photo-1-preview.webp",
-      "source": "assets/awards/iccad-contest-2025/photo-1.jpg",
+      "path": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-1-preview.webp",
+      "source": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-1.jpg",
       "source_sha256": "0d748a0c0c222619c0312c700b3c4228b3b343764a0ee2626160ec4f79f06175",
       "source_bytes": 234656,
       "bytes": 194742,
@@ -235,8 +235,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/iccad-contest-2025/photo-2-preview.webp",
-      "source": "assets/awards/iccad-contest-2025/photo-2.jpg",
+      "path": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-2-preview.webp",
+      "source": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-2.jpg",
       "source_sha256": "a2737fecedf74870442779c9c711b573d5a95e3262a5c13037328bdeed9d5ccb",
       "source_bytes": 470935,
       "bytes": 146476,
@@ -246,8 +246,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/iccad-contest-2025/plaque-1-preview.webp",
-      "source": "assets/awards/iccad-contest-2025/plaque-1.jpg",
+      "path": "assets/awards/iccad-contest-2025/2025-iccad-contest-plaque-1-preview.webp",
+      "source": "assets/awards/iccad-contest-2025/2025-iccad-contest-plaque-1.jpg",
       "source_sha256": "9f1c34eabc956c4340a372a46cd7f70ed634c87380a1ad3ce107c62eff6f5ff6",
       "source_bytes": 3578029,
       "bytes": 251622,
@@ -257,8 +257,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/iccad-contest-2025/certificate-2-preview.webp",
-      "source": "assets/awards/iccad-contest-2025/certificate-2-preview.jpg",
+      "path": "assets/awards/iccad-contest-2025/2025-iccad-contest-certificate-2-preview.webp",
+      "source": "assets/awards/iccad-contest-2025/2025-iccad-contest-certificate-2-preview.jpg",
       "source_sha256": "3e96eb675f592cd1b3e72a71a2dd4e7c832cc0369839ebedd42a6c3a1f3071dc",
       "source_bytes": 434582,
       "bytes": 175186,
@@ -268,8 +268,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/iccad-contest-2025/photo-3-preview.webp",
-      "source": "assets/awards/iccad-contest-2025/photo-3.jpg",
+      "path": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-3-preview.webp",
+      "source": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-3.jpg",
       "source_sha256": "a6bf43114bc0419a947606e621daf3d59c5335adec784d27bf5e504c8cd0d8cb",
       "source_bytes": 379820,
       "bytes": 213548,
@@ -279,8 +279,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/iccad-contest-2025/photo-4-preview.webp",
-      "source": "assets/awards/iccad-contest-2025/photo-4.jpg",
+      "path": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-4-preview.webp",
+      "source": "assets/awards/iccad-contest-2025/2025-iccad-contest-photo-4.jpg",
       "source_sha256": "23af75137330c3d844223ca9968fc9ea3061987d5505eb2a4f4fa094b1fa2f13",
       "source_bytes": 4387125,
       "bytes": 244006,
@@ -290,8 +290,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/iccad-contest-2025/plaque-2-preview.webp",
-      "source": "assets/awards/iccad-contest-2025/plaque-2.jpg",
+      "path": "assets/awards/iccad-contest-2025/2025-iccad-contest-plaque-2-preview.webp",
+      "source": "assets/awards/iccad-contest-2025/2025-iccad-contest-plaque-2.jpg",
       "source_sha256": "ed3d5c804ea45ac4b73264ddb4390794016dd092420b5feb722197ceb2827f28",
       "source_bytes": 3194463,
       "bytes": 279396,
@@ -301,8 +301,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/cadathlon-2025/photo-1-preview.webp",
-      "source": "assets/awards/cadathlon-2025/photo-1.jpg",
+      "path": "assets/awards/cadathlon-2025/2025-cadathlon-photo-1-preview.webp",
+      "source": "assets/awards/cadathlon-2025/2025-cadathlon-photo-1.jpg",
       "source_sha256": "21b54efc151d57d6744da0dafc9393659dce77ca42f7d867bd31a92572959024",
       "source_bytes": 2931515,
       "bytes": 170974,
@@ -312,8 +312,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/cadathlon-2025/trophy-1-preview.webp",
-      "source": "assets/awards/cadathlon-2025/trophy-1.jpg",
+      "path": "assets/awards/cadathlon-2025/2025-cadathlon-trophy-1-preview.webp",
+      "source": "assets/awards/cadathlon-2025/2025-cadathlon-trophy-1.jpg",
       "source_sha256": "829415992ea3081062bd9a7d854d9db4834be1ac23422cbc4159ac4e835a3a97",
       "source_bytes": 1933678,
       "bytes": 238848,
@@ -323,8 +323,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/iccad-ssp-2025/certificate-1-preview.webp",
-      "source": "assets/awards/iccad-ssp-2025/certificate-1-preview.jpg",
+      "path": "assets/awards/iccad-ssp-2025/2025-iccad-ssp-certificate-1-preview.webp",
+      "source": "assets/awards/iccad-ssp-2025/2025-iccad-ssp-certificate-1-preview.jpg",
       "source_sha256": "e946e8b9a1499fa9e386c4b360f424190580bdb05ba189a7b1fc0708e364a089",
       "source_bytes": 364573,
       "bytes": 117160,
@@ -334,8 +334,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/hsing-chien-2025/certificate-1-preview.webp",
-      "source": "assets/awards/hsing-chien-2025/certificate-1.jpg",
+      "path": "assets/awards/hsing-chien-2025/2025-hsing-chien-certificate-1-preview.webp",
+      "source": "assets/awards/hsing-chien-2025/2025-hsing-chien-certificate-1.jpg",
       "source_sha256": "cd59d93ad3f2001a10be996bd32d163dcaa74e180369d8d9833217aa7ba5530d",
       "source_bytes": 4498812,
       "bytes": 305870,
@@ -345,8 +345,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/hsing-chien-2025/photo-1-preview.webp",
-      "source": "assets/awards/hsing-chien-2025/photo-1.jpg",
+      "path": "assets/awards/hsing-chien-2025/2025-hsing-chien-photo-1-preview.webp",
+      "source": "assets/awards/hsing-chien-2025/2025-hsing-chien-photo-1.jpg",
       "source_sha256": "c43b23b250c3a1ca6ad4d91d958dc90fba55143e8d5024555994daa0c6148f06",
       "source_bytes": 281286,
       "bytes": 121610,
@@ -356,8 +356,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/hsing-chien-2025/photo-2-preview.webp",
-      "source": "assets/awards/hsing-chien-2025/photo-2.jpg",
+      "path": "assets/awards/hsing-chien-2025/2025-hsing-chien-photo-2-preview.webp",
+      "source": "assets/awards/hsing-chien-2025/2025-hsing-chien-photo-2.jpg",
       "source_sha256": "389c789a55d4230740569be16e398ada0acf66fef932b6abc199f58a98c5825c",
       "source_bytes": 2490852,
       "bytes": 204042,
@@ -367,8 +367,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/hsing-chien-2025/trophy-1-preview.webp",
-      "source": "assets/awards/hsing-chien-2025/trophy-1.jpg",
+      "path": "assets/awards/hsing-chien-2025/2025-hsing-chien-trophy-1-preview.webp",
+      "source": "assets/awards/hsing-chien-2025/2025-hsing-chien-trophy-1.jpg",
       "source_sha256": "5298336b5f32daefbbe3c60ef70d9836236b0e3185a2c80500c10fb3833c82d9",
       "source_bytes": 2921777,
       "bytes": 149464,
@@ -378,8 +378,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/iccad-contest-2024/certificate-1-preview.webp",
-      "source": "assets/awards/iccad-contest-2024/certificate-1-preview.jpg",
+      "path": "assets/awards/iccad-contest-2024/2024-iccad-contest-certificate-1-preview.webp",
+      "source": "assets/awards/iccad-contest-2024/2024-iccad-contest-certificate-1-preview.jpg",
       "source_sha256": "39c566383b47d5483deaa2913f7e371324133e3c5d906d4c35417f54b6c01b9e",
       "source_bytes": 425641,
       "bytes": 170568,
@@ -389,8 +389,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/iccad-contest-2024/photo-1-preview.webp",
-      "source": "assets/awards/iccad-contest-2024/photo-1.jpg",
+      "path": "assets/awards/iccad-contest-2024/2024-iccad-contest-photo-1-preview.webp",
+      "source": "assets/awards/iccad-contest-2024/2024-iccad-contest-photo-1.jpg",
       "source_sha256": "c9b13fce48bacf9e510af5b47f28e9fb55b944ac821331859ca29aa35a2188bb",
       "source_bytes": 647840,
       "bytes": 119230,
@@ -400,8 +400,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/iccad-contest-2024/plaque-1-preview.webp",
-      "source": "assets/awards/iccad-contest-2024/plaque-1.jpg",
+      "path": "assets/awards/iccad-contest-2024/2024-iccad-contest-plaque-1-preview.webp",
+      "source": "assets/awards/iccad-contest-2024/2024-iccad-contest-plaque-1.jpg",
       "source_sha256": "6451e112f788f6479bef6ca954438411d0be99fa9c030064b60e5575f7ecfb79",
       "source_bytes": 307249,
       "bytes": 232318,
@@ -411,8 +411,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/iccad-contest-2024/certificate-2-preview.webp",
-      "source": "assets/awards/iccad-contest-2024/certificate-2.jpg",
+      "path": "assets/awards/iccad-contest-2024/2024-iccad-contest-certificate-2-preview.webp",
+      "source": "assets/awards/iccad-contest-2024/2024-iccad-contest-certificate-2.jpg",
       "source_sha256": "ec3eef31c32ea1937b42bbe87617a250cfbbfce461bc2c13698840df8d30c2bc",
       "source_bytes": 1690165,
       "bytes": 169248,
@@ -422,8 +422,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/iccad-contest-2024/photo-2-preview.webp",
-      "source": "assets/awards/iccad-contest-2024/photo-2.jpg",
+      "path": "assets/awards/iccad-contest-2024/2024-iccad-contest-photo-2-preview.webp",
+      "source": "assets/awards/iccad-contest-2024/2024-iccad-contest-photo-2.jpg",
       "source_sha256": "563e838b2fba1936258eeb5dfb96fa9b7e8c67ad2572cc5c91aeaf8a6fda259e",
       "source_bytes": 930938,
       "bytes": 241104,
@@ -433,8 +433,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/iccad-contest-2024/plaque-2-preview.webp",
-      "source": "assets/awards/iccad-contest-2024/plaque-2.jpg",
+      "path": "assets/awards/iccad-contest-2024/2024-iccad-contest-plaque-2-preview.webp",
+      "source": "assets/awards/iccad-contest-2024/2024-iccad-contest-plaque-2.jpg",
       "source_sha256": "917d4b627526fc7ea0d5565ea380927048b57eef9382bd98220163aa77d674be",
       "source_bytes": 5104193,
       "bytes": 475154,
@@ -444,8 +444,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/cadathlon-2024/photo-1-preview.webp",
-      "source": "assets/awards/cadathlon-2024/photo-1.jpg",
+      "path": "assets/awards/cadathlon-2024/2024-cadathlon-photo-1-preview.webp",
+      "source": "assets/awards/cadathlon-2024/2024-cadathlon-photo-1.jpg",
       "source_sha256": "d8384b0823be82ab224e9748b0292b0f7b5767f135e44996c261e5a891e47e7c",
       "source_bytes": 235172,
       "bytes": 129090,
@@ -455,8 +455,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/cadathlon-2024/trophy-1-preview.webp",
-      "source": "assets/awards/cadathlon-2024/trophy-1.jpg",
+      "path": "assets/awards/cadathlon-2024/2024-cadathlon-trophy-1-preview.webp",
+      "source": "assets/awards/cadathlon-2024/2024-cadathlon-trophy-1.jpg",
       "source_sha256": "d7e35605dea05cb3c21037d354d25bfb6173e6736d012a3c3436ddff00e07cd3",
       "source_bytes": 327238,
       "bytes": 255306,
@@ -466,8 +466,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/synopsys-scholarship-2024/certificate-1-preview.webp",
-      "source": "assets/awards/synopsys-scholarship-2024/certificate-1-preview.jpg",
+      "path": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.webp",
+      "source": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.jpg",
       "source_sha256": "8049fd7e2c0b8404666e4a1290417013b1652d15071aa85ada6249983515d8f2",
       "source_bytes": 454337,
       "bytes": 147026,
@@ -477,8 +477,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/synopsys-scholarship-2024/photo-1-preview.webp",
-      "source": "assets/awards/synopsys-scholarship-2024/photo-1.jpg",
+      "path": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-1-preview.webp",
+      "source": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-1.jpg",
       "source_sha256": "97f88184f99b1aae6a74bd5e31a78e761240b98e7f3746da9315d6a75da5b07a",
       "source_bytes": 1378509,
       "bytes": 219242,
@@ -488,8 +488,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/synopsys-scholarship-2024/photo-2-preview.webp",
-      "source": "assets/awards/synopsys-scholarship-2024/photo-2.jpg",
+      "path": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-2-preview.webp",
+      "source": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-2.jpg",
       "source_sha256": "e84ee4caff97ad46e9d3de3c3e61057d34453ab45d02e1eebcd375eea31c23fa",
       "source_bytes": 1053424,
       "bytes": 136872,
@@ -499,8 +499,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/synopsys-scholarship-2024/photo-3-preview.webp",
-      "source": "assets/awards/synopsys-scholarship-2024/photo-3.jpg",
+      "path": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-3-preview.webp",
+      "source": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-3.jpg",
       "source_sha256": "e1ac692d320ccc6fa711baf4b214fc57ad0b5d144f5b44fc28b32b7283c8bf21",
       "source_bytes": 1104815,
       "bytes": 123196,
@@ -510,8 +510,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/qilin-cup-2023/certificate-1-preview.webp",
-      "source": "assets/awards/qilin-cup-2023/certificate-1.jpg",
+      "path": "assets/awards/qilin-cup-2023/2023-qilin-cup-certificate-1-preview.webp",
+      "source": "assets/awards/qilin-cup-2023/2023-qilin-cup-certificate-1.jpg",
       "source_sha256": "d343f08a74d3a840344d8fa96150848eb077e89893a0f19203a831f5dc4b23db",
       "source_bytes": 221584,
       "bytes": 149784,
@@ -521,8 +521,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/qilin-cup-2023/photo-1-preview.webp",
-      "source": "assets/awards/qilin-cup-2023/photo-1.jpg",
+      "path": "assets/awards/qilin-cup-2023/2023-qilin-cup-photo-1-preview.webp",
+      "source": "assets/awards/qilin-cup-2023/2023-qilin-cup-photo-1.jpg",
       "source_sha256": "5574a3dbeb96c68b17a0c7bd32ad577ee387cdd77b5fba6ef78d8eab0f98ca8f",
       "source_bytes": 199876,
       "bytes": 97836,
@@ -532,8 +532,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/qilin-cup-2023/photo-2-preview.webp",
-      "source": "assets/awards/qilin-cup-2023/photo-2.jpg",
+      "path": "assets/awards/qilin-cup-2023/2023-qilin-cup-photo-2-preview.webp",
+      "source": "assets/awards/qilin-cup-2023/2023-qilin-cup-photo-2.jpg",
       "source_sha256": "03624ce9699b280033f115fa17e6da4572e91fade0f4c80f80a857d4afa9df41",
       "source_bytes": 555881,
       "bytes": 87966,
@@ -543,8 +543,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/qilin-cup-2023/trophy-1-preview.webp",
-      "source": "assets/awards/qilin-cup-2023/trophy-1.jpg",
+      "path": "assets/awards/qilin-cup-2023/2023-qilin-cup-trophy-1-preview.webp",
+      "source": "assets/awards/qilin-cup-2023/2023-qilin-cup-trophy-1.jpg",
       "source_sha256": "e1a7eeaf0705d9d4c57bfdc782f3063eea56b0dec5a407fda148c76e2c5b8d22",
       "source_bytes": 232038,
       "bytes": 82558,
@@ -554,8 +554,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/iccad-contest-2023/certificate-1-preview.webp",
-      "source": "assets/awards/iccad-contest-2023/certificate-1.jpg",
+      "path": "assets/awards/iccad-contest-2023/2023-iccad-contest-certificate-1-preview.webp",
+      "source": "assets/awards/iccad-contest-2023/2023-iccad-contest-certificate-1.jpg",
       "source_sha256": "c647dcdb1ab53ac494afa3a569443509ebad16a585323852d1713e00b498dba3",
       "source_bytes": 588382,
       "bytes": 135534,
@@ -565,8 +565,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/iccad-contest-2023/photo-1-preview.webp",
-      "source": "assets/awards/iccad-contest-2023/photo-1.jpg",
+      "path": "assets/awards/iccad-contest-2023/2023-iccad-contest-photo-1-preview.webp",
+      "source": "assets/awards/iccad-contest-2023/2023-iccad-contest-photo-1.jpg",
       "source_sha256": "a60f85c2d67d94fedfaa461c495c0436b373446711888893b275a952e92ee9cc",
       "source_bytes": 586870,
       "bytes": 75100,
@@ -576,8 +576,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/iccad-contest-2023/plaque-1-preview.webp",
-      "source": "assets/awards/iccad-contest-2023/plaque-1.jpg",
+      "path": "assets/awards/iccad-contest-2023/2023-iccad-contest-plaque-1-preview.webp",
+      "source": "assets/awards/iccad-contest-2023/2023-iccad-contest-plaque-1.jpg",
       "source_sha256": "e0b6b755f6812c2bc7b765e0a4c9ab67800888ee769a9527c3f6c81a790c902b",
       "source_bytes": 784061,
       "bytes": 168386,
@@ -587,8 +587,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/edathon-2023/certificate-1-preview.webp",
-      "source": "assets/awards/edathon-2023/certificate-1.jpg",
+      "path": "assets/awards/edathon-2023/2023-edathon-certificate-1-preview.webp",
+      "source": "assets/awards/edathon-2023/2023-edathon-certificate-1.jpg",
       "source_sha256": "9cf996b2ba034a20114ecd3ef5a68f2079807cf5fca87f34066a10f80dc12baf",
       "source_bytes": 203788,
       "bytes": 90546,
@@ -598,8 +598,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/edathon-2023/photo-1-preview.webp",
-      "source": "assets/awards/edathon-2023/photo-1.jpg",
+      "path": "assets/awards/edathon-2023/2023-edathon-photo-1-preview.webp",
+      "source": "assets/awards/edathon-2023/2023-edathon-photo-1.jpg",
       "source_sha256": "6fd1c69c048dc4ac39c28df28634e6d41c55186ce38b02bf5fb79d842b5a288f",
       "source_bytes": 226140,
       "bytes": 126792,
@@ -609,8 +609,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/iccad-contest-2022/certificate-1-preview.webp",
-      "source": "assets/awards/iccad-contest-2022/certificate-1-preview.jpg",
+      "path": "assets/awards/iccad-contest-2022/2022-iccad-contest-certificate-1-preview.webp",
+      "source": "assets/awards/iccad-contest-2022/2022-iccad-contest-certificate-1-preview.jpg",
       "source_sha256": "2eb1c89714f1031dc370ad07ccfef03e4f681ec01fa2bf024189a5be141b1eca",
       "source_bytes": 319650,
       "bytes": 117464,
@@ -620,8 +620,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/iccad-contest-2022/plaque-1-preview.webp",
-      "source": "assets/awards/iccad-contest-2022/plaque-1.jpg",
+      "path": "assets/awards/iccad-contest-2022/2022-iccad-contest-plaque-1-preview.webp",
+      "source": "assets/awards/iccad-contest-2022/2022-iccad-contest-plaque-1.jpg",
       "source_sha256": "8f5a3eb66ff34e12d0c2a578f1772cf9ddbc7cad9cb19aa1e80fe5e6c95c9df6",
       "source_bytes": 3936380,
       "bytes": 488032,
@@ -631,8 +631,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/nthu-scholarship-2021/certificate-1-preview.webp",
-      "source": "assets/awards/nthu-scholarship-2021/certificate-1.jpg",
+      "path": "assets/awards/nthu-scholarship-2021/2021-nthu-scholarship-certificate-1-preview.webp",
+      "source": "assets/awards/nthu-scholarship-2021/2021-nthu-scholarship-certificate-1.jpg",
       "source_sha256": "8f55c53099461c1e212ffc77bf89f9c9b8911624b896d22888e203a638e5be54",
       "source_bytes": 852561,
       "bytes": 79168,
@@ -642,8 +642,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/nthu-scholarship-2021/certificate-2-preview.webp",
-      "source": "assets/awards/nthu-scholarship-2021/certificate-2-preview.jpg",
+      "path": "assets/awards/nthu-scholarship-2021/2021-nthu-scholarship-certificate-2-preview.webp",
+      "source": "assets/awards/nthu-scholarship-2021/2021-nthu-scholarship-certificate-2-preview.jpg",
       "source_sha256": "49916f1ec3e059045903c69bc4e574595309c1d5532315ec503bd7e2b50066fa",
       "source_bytes": 278933,
       "bytes": 69130,
@@ -653,8 +653,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/icpc-2020/certificate-1-preview.webp",
-      "source": "assets/awards/icpc-2020/certificate-1-preview.jpg",
+      "path": "assets/awards/icpc-2020/2020-icpc-certificate-1-preview.webp",
+      "source": "assets/awards/icpc-2020/2020-icpc-certificate-1-preview.jpg",
       "source_sha256": "48d813dcbe41504f3e425f9a1221af21fda4073fcf925537e7395c90450aaf7e",
       "source_bytes": 232341,
       "bytes": 91736,
@@ -664,8 +664,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/icpc-2020/certificate-2-preview.webp",
-      "source": "assets/awards/icpc-2020/certificate-2-preview.jpg",
+      "path": "assets/awards/icpc-2020/2020-icpc-certificate-2-preview.webp",
+      "source": "assets/awards/icpc-2020/2020-icpc-certificate-2-preview.jpg",
       "source_sha256": "5e2e90813fd15a1ed479894a62b7302f9d84b03051459c8f0b0d9a9573c314b4",
       "source_bytes": 229892,
       "bytes": 91104,
@@ -675,8 +675,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/icpc-2020/certificate-3-preview.webp",
-      "source": "assets/awards/icpc-2020/certificate-3-preview.jpg",
+      "path": "assets/awards/icpc-2020/2020-icpc-certificate-3-preview.webp",
+      "source": "assets/awards/icpc-2020/2020-icpc-certificate-3-preview.jpg",
       "source_sha256": "716b8378cf00918aca1ff11ee52cf69ddc5e1520969d4b40a4c76c07729c835f",
       "source_bytes": 224345,
       "bytes": 87334,
@@ -686,8 +686,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/icpc-2020/plaque-1-preview.webp",
-      "source": "assets/awards/icpc-2020/plaque-1.jpg",
+      "path": "assets/awards/icpc-2020/2020-icpc-plaque-1-preview.webp",
+      "source": "assets/awards/icpc-2020/2020-icpc-plaque-1.jpg",
       "source_sha256": "97d7fe1d54bafd315d5c3c595b656f12b7b7b7f27b30105807553ad9840a5f0f",
       "source_bytes": 5055901,
       "bytes": 417410,
@@ -697,8 +697,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/mcu-contribution-2021/plaque-1-preview.webp",
-      "source": "assets/awards/mcu-contribution-2021/plaque-1.jpg",
+      "path": "assets/awards/mcu-contribution-2021/2021-mcu-contribution-plaque-1-preview.webp",
+      "source": "assets/awards/mcu-contribution-2021/2021-mcu-contribution-plaque-1.jpg",
       "source_sha256": "c19f6e854493cd83cabeaf0f3097435d2991c3fa05f9d72ee65f560e2f246a32",
       "source_bytes": 2505613,
       "bytes": 572026,
@@ -708,8 +708,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/mcu-programming-2019-2020/certificate-1-preview.webp",
-      "source": "assets/awards/mcu-programming-2019-2020/certificate-1.jpg",
+      "path": "assets/awards/mcu-programming-2019-2020/2019-mcu-programming-contest-certificate-1-preview.webp",
+      "source": "assets/awards/mcu-programming-2019-2020/2019-mcu-programming-contest-certificate-1.jpg",
       "source_sha256": "7a3eeea5539f23e7c88fa5080e14658c75bf11e01e64cd84004f1a48d9ed4df6",
       "source_bytes": 988169,
       "bytes": 209446,
@@ -719,8 +719,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/mcu-programming-2019-2020/certificate-2-preview.webp",
-      "source": "assets/awards/mcu-programming-2019-2020/certificate-2.jpg",
+      "path": "assets/awards/mcu-programming-2019-2020/2020-mcu-programming-contest-certificate-2-preview.webp",
+      "source": "assets/awards/mcu-programming-2019-2020/2020-mcu-programming-contest-certificate-2.jpg",
       "source_sha256": "7169f527dcd0c8f182c68156aa2340d7aac739bb4ef8d208767167cba799e8a9",
       "source_bytes": 1000453,
       "bytes": 209218,
@@ -730,8 +730,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/central-taiwan-2020/certificate-1-preview.webp",
-      "source": "assets/awards/central-taiwan-2020/certificate-1.jpg",
+      "path": "assets/awards/central-taiwan-2020/2020-central-taiwan-programming-contest-certificate-1-preview.webp",
+      "source": "assets/awards/central-taiwan-2020/2020-central-taiwan-programming-contest-certificate-1.jpg",
       "source_sha256": "37dd519cbb640ee0ad566338f9d1a1fcf664c41a16a07548b67627b46ea8f3bf",
       "source_bytes": 1474949,
       "bytes": 163740,
@@ -741,8 +741,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/topc-2020/certificate-1-preview.webp",
-      "source": "assets/awards/topc-2020/certificate-1-preview.jpg",
+      "path": "assets/awards/topc-2020/2020-topc-certificate-1-preview.webp",
+      "source": "assets/awards/topc-2020/2020-topc-certificate-1-preview.jpg",
       "source_sha256": "dd932fc088644b144087a96b2e4c2c0730e46eb02235afa2b7cdd50cfb001706",
       "source_bytes": 193226,
       "bytes": 75194,
@@ -752,8 +752,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/icpc-2019/certificate-1-preview.webp",
-      "source": "assets/awards/icpc-2019/certificate-1-preview.jpg",
+      "path": "assets/awards/icpc-2019/2019-icpc-certificate-1-preview.webp",
+      "source": "assets/awards/icpc-2019/2019-icpc-certificate-1-preview.jpg",
       "source_sha256": "25ad59ec8f24df6f06c53ae538a191228f5659f8fb40b1b53bbdb90ba975e4d9",
       "source_bytes": 194622,
       "bytes": 76456,
@@ -763,8 +763,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/icpc-2019/certificate-2-preview.webp",
-      "source": "assets/awards/icpc-2019/certificate-2-preview.jpg",
+      "path": "assets/awards/icpc-2019/2019-icpc-certificate-2-preview.webp",
+      "source": "assets/awards/icpc-2019/2019-icpc-certificate-2-preview.jpg",
       "source_sha256": "98e4c8306849b71d773db1661c88f9f6f0a8d6fbeb24f0d786e048148a6b050d",
       "source_bytes": 227263,
       "bytes": 88776,
@@ -774,8 +774,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/icpc-2019/certificate-3-preview.webp",
-      "source": "assets/awards/icpc-2019/certificate-3-preview.jpg",
+      "path": "assets/awards/icpc-2019/2019-icpc-certificate-3-preview.webp",
+      "source": "assets/awards/icpc-2019/2019-icpc-certificate-3-preview.jpg",
       "source_sha256": "a25e985a5d5a3afe25c3d5a7887eaf256d41afad34550f10ecfd673f4cf7cfef",
       "source_bytes": 230253,
       "bytes": 89530,
@@ -785,8 +785,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/icpc-2019/plaque-1-preview.webp",
-      "source": "assets/awards/icpc-2019/plaque-1.jpg",
+      "path": "assets/awards/icpc-2019/2019-icpc-plaque-1-preview.webp",
+      "source": "assets/awards/icpc-2019/2019-icpc-plaque-1.jpg",
       "source_sha256": "ea9530aafd1e8a696d9e30b4ca31e03dd372ca43754a06f12bd01cb565a11c6f",
       "source_bytes": 1286001,
       "bytes": 323296,
@@ -796,8 +796,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/topc-2019/certificate-1-preview.webp",
-      "source": "assets/awards/topc-2019/certificate-1-preview.jpg",
+      "path": "assets/awards/topc-2019/2019-topc-certificate-1-preview.webp",
+      "source": "assets/awards/topc-2019/2019-topc-certificate-1-preview.jpg",
       "source_sha256": "d96eab86830d6ced672dd46750b8e034f982bd2d7da58b9917b0206eee3b3327",
       "source_bytes": 235277,
       "bytes": 92044,
@@ -807,8 +807,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/topc-2019/certificate-2-preview.webp",
-      "source": "assets/awards/topc-2019/certificate-2-preview.jpg",
+      "path": "assets/awards/topc-2019/2019-topc-certificate-2-preview.webp",
+      "source": "assets/awards/topc-2019/2019-topc-certificate-2-preview.jpg",
       "source_sha256": "afd2b2682882bac838e1f7454d9baa24a4583d291bcc2e184bb74c0d90eedcc9",
       "source_bytes": 235663,
       "bytes": 92440,
@@ -818,8 +818,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/topc-2019/certificate-3-preview.webp",
-      "source": "assets/awards/topc-2019/certificate-3-preview.jpg",
+      "path": "assets/awards/topc-2019/2019-topc-certificate-3-preview.webp",
+      "source": "assets/awards/topc-2019/2019-topc-certificate-3-preview.jpg",
       "source_sha256": "2fb19bebbd21e283357199ebf85598edc5c3966ffcad083e88257008ac279b21",
       "source_bytes": 187055,
       "bytes": 72562,
@@ -829,8 +829,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/ncpu-2019/certificate-1-preview.webp",
-      "source": "assets/awards/ncpu-2019/certificate-1-preview.jpg",
+      "path": "assets/awards/ncpu-2019/2019-ncpu-certificate-1-preview.webp",
+      "source": "assets/awards/ncpu-2019/2019-ncpu-certificate-1-preview.jpg",
       "source_sha256": "ccefa486f7ef5219b333f4a468a87a4884f9cc74131c860bf7edab5fc8fce135",
       "source_bytes": 205158,
       "bytes": 77694,
@@ -840,8 +840,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/ncpu-2019/certificate-2-preview.webp",
-      "source": "assets/awards/ncpu-2019/certificate-2-preview.jpg",
+      "path": "assets/awards/ncpu-2019/2019-ncpu-certificate-2-preview.webp",
+      "source": "assets/awards/ncpu-2019/2019-ncpu-certificate-2-preview.jpg",
       "source_sha256": "bbe2909249d4889a847e4b4a7cd7d9b1c2275d14f963820c42dba5c34d8ce697",
       "source_bytes": 234653,
       "bytes": 91652,
@@ -851,8 +851,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/ncpu-2019/certificate-3-preview.webp",
-      "source": "assets/awards/ncpu-2019/certificate-3-preview.jpg",
+      "path": "assets/awards/ncpu-2019/2019-ncpu-certificate-3-preview.webp",
+      "source": "assets/awards/ncpu-2019/2019-ncpu-certificate-3-preview.jpg",
       "source_sha256": "aff2fa48892cf488fe77423beb5d9ef35e7801e91cf98d61c74ee80731ae982c",
       "source_bytes": 233604,
       "bytes": 91254,
@@ -862,8 +862,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/ncpu-2019/certificate-4-preview.webp",
-      "source": "assets/awards/ncpu-2019/certificate-4.jpg",
+      "path": "assets/awards/ncpu-2019/2019-ncpu-certificate-4-preview.webp",
+      "source": "assets/awards/ncpu-2019/2019-ncpu-certificate-4.jpg",
       "source_sha256": "cd2d2a52b830bf34a27d7bfcec5a845f1892b2120bc89ec3f70bad5e5927b091",
       "source_bytes": 5415990,
       "bytes": 170754,
@@ -873,8 +873,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/ncpc-2018-2020/certificate-1-preview.webp",
-      "source": "assets/awards/ncpc-2018-2020/certificate-1.jpg",
+      "path": "assets/awards/ncpc-2018-2020/2018-ncpc-certificate-1-preview.webp",
+      "source": "assets/awards/ncpc-2018-2020/2018-ncpc-certificate-1.jpg",
       "source_sha256": "084370cf79ebea0f8a511ea34e4c55264c5b1fd272f15a40e6f6798f51ab01fd",
       "source_bytes": 1036785,
       "bytes": 227970,
@@ -884,8 +884,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/ncpc-2018-2020/certificate-2-preview.webp",
-      "source": "assets/awards/ncpc-2018-2020/certificate-2.jpg",
+      "path": "assets/awards/ncpc-2018-2020/2019-ncpc-certificate-2-preview.webp",
+      "source": "assets/awards/ncpc-2018-2020/2019-ncpc-certificate-2.jpg",
       "source_sha256": "75a89d14591ea27a1aef2d16549100146014c197c1e12b393cd0858608b20834",
       "source_bytes": 1204450,
       "bytes": 250340,
@@ -895,8 +895,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/ncpc-2018-2020/certificate-3-preview.webp",
-      "source": "assets/awards/ncpc-2018-2020/certificate-3.jpg",
+      "path": "assets/awards/ncpc-2018-2020/2020-ncpc-certificate-3-preview.webp",
+      "source": "assets/awards/ncpc-2018-2020/2020-ncpc-certificate-3.jpg",
       "source_sha256": "5776cdcfddd3196e550b41104b21d568f333ac6d68ab0273ad1f2579a172ba4b",
       "source_bytes": 1508734,
       "bytes": 298300,
@@ -906,8 +906,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/freshman-cup-2018/certificate-1-preview.webp",
-      "source": "assets/awards/freshman-cup-2018/certificate-1.jpg",
+      "path": "assets/awards/freshman-cup-2018/2018-freshman-cup-certificate-1-preview.webp",
+      "source": "assets/awards/freshman-cup-2018/2018-freshman-cup-certificate-1.jpg",
       "source_sha256": "4ee0116722db7ca286e209f2a821e98bf31fdf73b3227f33d49b4a6c13cf5a77",
       "source_bytes": 4395764,
       "bytes": 190224,
@@ -917,8 +917,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/software-innovation-2018/certificate-1-preview.webp",
-      "source": "assets/awards/software-innovation-2018/certificate-1.jpg",
+      "path": "assets/awards/software-innovation-2018/2018-software-innovation-certificate-1-preview.webp",
+      "source": "assets/awards/software-innovation-2018/2018-software-innovation-certificate-1.jpg",
       "source_sha256": "ccf05a4473627a6180eba3290a8fec473db28ef31b99781519a247f4fcf4672b",
       "source_bytes": 3579553,
       "bytes": 254020,
@@ -928,8 +928,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/software-innovation-2018/certificate-2-preview.webp",
-      "source": "assets/awards/software-innovation-2018/certificate-2.jpg",
+      "path": "assets/awards/software-innovation-2018/2018-software-innovation-certificate-2-preview.webp",
+      "source": "assets/awards/software-innovation-2018/2018-software-innovation-certificate-2.jpg",
       "source_sha256": "6ce94f417800d89dfc4c39664c49718cb57d34a8778e675dadd8332e4180aeec",
       "source_bytes": 3353044,
       "bytes": 255484,
@@ -939,8 +939,8 @@
       "quality": 90
     },
     {
-      "path": "assets/awards/badminton-2025/medal-1-preview.webp",
-      "source": "assets/awards/badminton-2025/medal-1.jpg",
+      "path": "assets/awards/badminton-2025/2025-badminton-medal-1-preview.webp",
+      "source": "assets/awards/badminton-2025/2025-badminton-medal-1.jpg",
       "source_sha256": "57b57f564c9a325b096b7742b65ed5fc432df39973eb748163e2c75b5136a88b",
       "source_bytes": 3246941,
       "bytes": 374772,
@@ -950,8 +950,8 @@
       "quality": 86
     },
     {
-      "path": "assets/awards/badminton-2025/photo-1-preview.webp",
-      "source": "assets/awards/badminton-2025/photo-1.jpg",
+      "path": "assets/awards/badminton-2025/2025-badminton-photo-1-preview.webp",
+      "source": "assets/awards/badminton-2025/2025-badminton-photo-1.jpg",
       "source_sha256": "e5ea5fd546b1d5138a4b6d8154e4d3d5176bce9b8f228f62ebf8dd4b120dbbff",
       "source_bytes": 4796730,
       "bytes": 137866,

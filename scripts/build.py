@@ -5,6 +5,7 @@ import hashlib
 import html
 import json
 import re
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from string import Template
 
@@ -15,8 +16,8 @@ ALLOWED_FILES = {
     'assets/favicon.svg', 'assets/favicon-16.png', 'assets/favicon-32.png',
     'assets/brand.svg', 'assets/css/main.css', 'assets/js/main.js',
     'assets/images/profile.jpg',
-    'assets/images/hsing-chien-2025.jpg', 'assets/images/badminton-2025.jpg',
-    'files/Wuqian_Tang_CV.pdf',
+    'assets/images/2025-hsing-chien-photo-1.jpg', 'assets/images/2025-badminton-photo-1.jpg',
+    'files/cv.pdf',
 }
 
 def esc(value):
@@ -48,6 +49,7 @@ def media_data(awards, prefix=''):
                     src=prefix + item['preview'],
                     original=prefix + item['url'],
                     caption=item['caption'] + ' · ' + a['title'],
+                    alt=item['alt'],
                     rotation=item.get('rotation', 0), cropTop=item.get('crop_top', 0)
                 ) for item in items]
     return registry
@@ -132,7 +134,7 @@ def gallery(a, profile):
             caption = item['caption']
             rotation = item.get('rotation', 0)
             crop = item.get('crop_top', 0)
-            cards += f'''<figure class="gallery-card"><a class="gallery-image-link" href="{esc(preview)}" data-media="{esc(a['id'] + ':' + kind)}" data-media-index="{i-1}" aria-label="View {esc(caption)} {i} for {esc(a['title'])}"><img src="{esc(preview)}" alt="{esc(caption + ' for ' + a['title'])}" data-display-rotation="{rotation}" data-display-crop="{crop}" loading="lazy" decoding="async" width="{item['width']}" height="{item['height']}"></a><figcaption><span>{esc(caption)}</span><a href="{esc(original)}" target="_blank" rel="noopener noreferrer">View Original</a></figcaption></figure>'''
+            cards += f'''<figure class="gallery-card"><a class="gallery-image-link" href="{esc(preview)}" data-media="{esc(a['id'] + ':' + kind)}" data-media-index="{i-1}" aria-label="View {esc(caption)} {i} for {esc(a['title'])}"><img src="{esc(preview)}" alt="{esc(item['alt'])}" data-display-rotation="{rotation}" data-display-crop="{crop}" loading="lazy" decoding="async" width="{item['width']}" height="{item['height']}"></a><figcaption><span>{esc(caption)}</span><a href="{esc(original)}" target="_blank" rel="noopener noreferrer">View Original</a></figcaption></figure>'''
         sections += f'<section class="gallery-section" id="{group}" aria-labelledby="{group}-title"><h2 id="{group}-title">{plural}<span class="gallery-count">{len(items)}</span></h2><div class="award-gallery-grid">{cards}</div></section>'
     values = dict(NAME=esc(profile['name']), DEPARTMENT=esc(profile['department']), SITE_URL=esc(profile['site_url']), TITLE=esc(a['title']), DATE=date_range(a['date']), DETAIL=esc(a['detail']),
         CANONICAL=esc(profile['site_url'] + '/awards/' + a['id'] + '.html'),
@@ -144,6 +146,36 @@ def timeline(item):
     detail = '<p class="timeline-detail">' + esc(item['detail']) + '</p>' if item.get('detail') else ''
     date = esc(re.sub(r'\s*–\s*', ' – ', item['date']))
     return f'<article class="timeline-item"><div class="timeline-top"><h4>{esc(item["title"])}</h4><span class="timeline-date">{date}</span></div><p class="timeline-institution">{esc(item["institution"])}</p>{detail}</article>'
+
+def image_sitemap(profile):
+    namespace = 'http://www.sitemaps.org/schemas/sitemap/0.9'
+    image_namespace = 'http://www.google.com/schemas/sitemap-image/1.1'
+    ET.register_namespace('', namespace)
+    ET.register_namespace('image', image_namespace)
+    root = ET.Element(f'{{{namespace}}}urlset')
+    homepage_images = ['assets/images/profile.jpg'] + [
+        image['preview'] for image in profile['homepage_images'].values()]
+    entries = [('', homepage_images)] + [
+        (f'awards/{award["id"]}.html', [item['preview'] for item in award['media']])
+        for award in profile['awards'] + profile['earlier_awards'] + profile['personal_awards']]
+    for path, images in entries:
+        url = ET.SubElement(root, f'{{{namespace}}}url')
+        ET.SubElement(url, f'{{{namespace}}}loc').text = profile['site_url'] + '/' + path
+        ET.SubElement(url, f'{{{namespace}}}lastmod').text = profile['updated']
+        for image in dict.fromkeys(images):
+            node = ET.SubElement(url, f'{{{image_namespace}}}image')
+            ET.SubElement(node, f'{{{image_namespace}}}loc').text = profile['site_url'] + '/' + image
+    ET.indent(root, space='  ')
+    return ET.tostring(root, encoding='utf-8', xml_declaration=True).decode() + '\n'
+
+def asset_redirect_script():
+    # GitHub Pages has no configurable HTTP redirects. This only repairs direct
+    # browser visits to old award/image URLs; legacy paper/CV PDFs remain files.
+    renames = json.loads((ROOT / 'content/asset-renames.json').read_text())
+    targets = {entry['from']: entry['to'] for entry in renames['files']
+               if entry['compatibility'] == 'browser-redirect'}
+    data = json.dumps(targets, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
+    return '<script>const movedAssets=' + data + ';let oldAsset;try{oldAsset=decodeURIComponent(location.pathname.slice(1))}catch{}const newAsset=movedAssets[oldAsset];if(typeof newAsset==="string")location.replace("/"+newAsset+location.search+location.hash);</script>'
 
 def render():
     p = json.loads((ROOT / 'content/profile.json').read_text())
@@ -197,6 +229,8 @@ def render():
         for item in award_record['media']:
             if not re.fullmatch(r'assets/awards/[A-Za-z0-9_-]+/[A-Za-z0-9_-]+-preview\.webp', item.get('preview', '')):
                 raise ValueError(f'Award media requires a local WebP preview: {award_record["id"]}')
+            if not item.get('alt', '').strip():
+                raise ValueError(f'Award media requires an accurate image description: {award_record["id"]}')
     awards_by_id = {a['id']: a for a in all_awards}
     registry = media_data(all_awards)
     news = ''
@@ -233,6 +267,8 @@ def render():
         values[key.upper() + '_ORIGINAL'] = esc(image['original'])
         values[key.upper() + '_WIDTH'] = image['width']
         values[key.upper() + '_HEIGHT'] = image['height']
+        matching = next(item for a in all_awards for item in a['media'] if item['preview'] == image['preview'])
+        values[key.upper() + '_ALT'] = esc(matching['alt'])
     values.update(STRUCTURED_DATA=structured, LOCATION_ICON=icon('location'), MAIL_ICON=icon('mail'), DOCUMENT_ICON=icon('document'), PROFILE_LINKS=profile_links, NEWS=news, RESEARCH=research,
         SELECTED_PUBLICATIONS=''.join(publication(paper, citations[paper['id']]) for paper in selected), OTHER_PUBLICATIONS=other_html, MORE_PUBLICATIONS_COUNT=str(len(others)),
         AWARDS=''.join(award(a) for a in p['awards']), EARLIER_AWARDS=''.join(award(a) for a in p['earlier_awards']),
@@ -246,7 +282,8 @@ def render():
     if missing:
         raise ValueError(f'Unrendered content: {missing}')
     not_found = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Wuqian Tang</title><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png?v=20261003-small-tang"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=20261003-small-tang"><link rel="icon" type="image/svg+xml" sizes="any" href="/assets/favicon.svg?v=20261003-small-tang"><link rel="stylesheet" href="/assets/css/main.css"></head><body><main style="max-width:600px;margin:15vh auto;padding:24px"><p class="eyebrow">404</p><h1 style="margin:16px 0">Page not found</h1><p>The page may have moved. You can find my research, publications, and contact details on my homepage.</p><p style="margin-top:24px"><a href="/">Return to homepage</a></p></main></body></html>\n'
-    sitemap = f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{esc(p["site_url"])}/</loc><lastmod>{esc(p["updated"])}</lastmod></url></urlset>\n'
+    not_found = not_found.replace('</head>', asset_redirect_script() + '</head>')
+    sitemap = image_sitemap(p)
     pages = {'index.html':index, '404.html':not_found, '.nojekyll':'', 'robots.txt':f'User-agent: *\nAllow: /\nSitemap: {p["site_url"]}/sitemap.xml\n', 'sitemap.xml':sitemap}
     for a in p['awards'] + p['earlier_awards'] + p['personal_awards']:
         pages[f'awards/{a["id"]}.html'] = gallery(a, p)

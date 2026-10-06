@@ -1,13 +1,26 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-10-05。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-10-06。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wuqian-tang.github.io](https://wuqian-tang.github.io/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 图片弹窗统一 WebP 与按需原图（2026-10-05，最新）
+## 资料命名与图片搜索信息（2026-10-06，最新）
+
+- 用户审核并授权实施：文件名不加姓名，年份在最前面。活动、比赛资料使用 `年份-活动-资料类型-序号`，例如 `2026-iwls-contest-photo-1.jpg`、`2026-iwls-contest-certificate-1.jpg`；对应 WebP 使用同一主体加 `-preview.webp`。统一小写、连字符，现有相册目录、相册页面地址和奖项锚点保持稳定。
+- 206 个文件完成重命名，逐一核对新旧 SHA-256 一致；原图、PDF、WebP 和 PDF 用于生成预览的 JPEG 都没有重新编码。完整映射及迁移时摘要记录于 `content/asset-renames.json`；引用、公开 manifest、预览编码记录和 `optimize_images.py` 的原始图片入口同步更新。
+- 跨年合并条目按每份资料的实际年份分别命名。助教奖加颁奖月份：`2025-08-nthu-outstanding-ta-certificate.pdf` 对应 Spring 2025；`2026-02-nthu-outstanding-ta-certificate.jpg` 对应 Fall 2025；`2026-08-nthu-outstanding-ta-certificate.pdf` 对应 Spring 2026。Excellent 奖杯为 `2026-08-nthu-excellent-ta-trophy.jpg`。同次颁奖照片按 `photo-1`、`photo-2` 区分；说明保留学期和颁奖年月，不把颁奖年份直接当作教学学期。
+- 五篇论文分别改为 `2026-todaes-cb-evo.pdf`、`2026-mlcad-tapco.pdf`、`2026-dac-hypas.pdf`、`2024-date-hybrid-approach.pdf`、`2025-dadh-oracle-bone.pdf`。CV 主入口为 `files/cv.pdf`；头像、品牌和分享图继续使用功能或版本名称。论文编号、正式题名、作者、DOI、BibTeX 和 CV 内容保持现有记录。
+- 已查看 26 张活动照片，逐张区分团队颁奖、获奖者合照、证书展示等场景；全部 87 份媒体都有独立 `alt` 字段。相册、弹窗和首页三张活动照片统一使用同一份准确说明，可见图注保持简短。不能确认本人入镜的现场照仅描述实际活动，不强行写本人在照片中；CAD Contest 照片继续独立归属于对应 Problem。
+- sitemap 现在包含首页及全部 33 个相册，共 34 个页面 URL；采用当前的 `image:image` / `image:loc`，共 91 处图片引用、88 个不同图片 URL（头像加 87 张 WebP）。不使用已经废弃的图片 caption/title 标签。Google 验证标签和现有 sitemap 地址保持不变，页面更新日期为 2026-10-06。
+- 六个旧论文 / CV PDF 地址保留字节一致的兼容文件，不作为页面主入口，也不放入 sitemap；合计增加 11,624,478 bytes 的发布文件，不影响正常网页浏览的图片请求。以后更新对应 PDF 时同步旧兼容副本及 manifest 摘要。旧奖项图片、奖状和预览的直达链接由 Pages 404 页做客户端跳转；这不是 HTTP 301，也不能保证第三方旧图片内嵌地址继续有效。不能通过重新复制所有大图来兼容，否则会大量增加发布体积。
+- 首页和相册 JS / CSS 缓存版本为 `20261006-asset-names`。弹窗和页面仍请求 WebP，只有 `View Original` 打开原 JPEG / PDF。没有增加多语言或访问统计，本地 `MULTILINGUAL_NOTES.md` 仍不纳入本轮提交。
+- 本轮验收记录为 `preview/asset-naming-validation.json`，包括文件摘要、35 个 HTML 页面、全部本地引用、外部链接新分页、教学学期与日期、sitemap 结构，以及浏览器图片加载、相册、弹窗、手机滑动和旧链接检查。新截图为 `preview/naming-iwls-1440.png`、`naming-iwls-390.png`、`naming-teaching-mobile.png`。
+- 后续可在 2026-10-13 起通过 Search Console 复查 sitemap 处理情况和 IWLS 等相册页面的索引状态；图片搜索表现需待 Google 实际抓取、收录后查看。文件名仅提供轻微主题线索，不能承诺某个搜索词的排名或收录时间。参考 [Google 图片说明](https://developers.google.com/search/docs/appearance/google-images)与[图片 sitemap 文档](https://developers.google.com/search/docs/crawling-indexing/sitemaps/image-sitemaps)。已有论文 DOI 待激活等后续事项继续按下文记录跟进。
+
+## 图片弹窗统一 WebP 与按需原图（2026-10-05，上一版）
 
 - 用户审核并授权实施：首页三张活动照片、奖项与爱好相册、弹窗及翻页均使用现有 WebP 预览。补齐 Hobbies 羽毛球弹窗的遗漏，从约 4.8 MB 原 JPG 改为 137,866 bytes 的 787 × 1400 WebP；普通照片和奖状继续沿用现有预览尺寸与质量。
 - 首页照片锚点直接指向 WebP，原文件另存于 `data-original`；右键、新分页以及禁用 JavaScript 时也打开预览。只有 `View Original` 打开对应 JPEG 或奖状 PDF，新分页属性保持一致。构建脚本移除原文件回退，弹窗加载器仅接受 WebP；预览失败显示提示，不自动请求原图。

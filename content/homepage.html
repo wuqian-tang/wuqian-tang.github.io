@@ -30,8 +30,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=20261003-small-tang">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=20261003-small-tang">
   <link rel="icon" type="image/svg+xml" sizes="any" href="assets/favicon.svg?v=20261003-small-tang">
-  <link rel="stylesheet" href="assets/css/main.css?v=20261005-webp-viewer">
-  <script src="assets/js/main.js?v=20261005-webp-viewer" defer></script>
+  <link rel="stylesheet" href="assets/css/main.css?v=20261006-asset-names">
+  <script src="assets/js/main.js?v=20261006-asset-names" defer></script>
   <script type="application/ld+json">${STRUCTURED_DATA}</script>
 </head>
 <body>
@@ -61,7 +61,7 @@
       <p class="profile-location">${LOCATION_ICON}<span>${LOCATION}</span></p>
       <a class="email-link" href="mailto:${EMAIL}">${MAIL_ICON}<span>${EMAIL}</span></a>
       <div class="profile-links">${PROFILE_LINKS}</div>
-      <a class="cv-link" target="_blank" rel="noopener noreferrer" href="files/Wuqian_Tang_CV.pdf?v=20261003-email-spacing">${DOCUMENT_ICON}<span>Curriculum Vitae</span><span class="file-type">PDF</span></a>
+      <a class="cv-link" target="_blank" rel="noopener noreferrer" href="files/cv.pdf?v=20261003-email-spacing">${DOCUMENT_ICON}<span>Curriculum Vitae</span><span class="file-type">PDF</span></a>
     </aside>
 
     <main id="main" tabindex="-1">
@@ -101,8 +101,8 @@
         <ul class="award-list">${AWARDS}</ul>
         <details class="more-details" id="more-awards"><summary><span class="details-label-more">More</span><span class="details-label-less">Less</span><span class="visually-hidden"> awards and honors</span><span class="details-plus" aria-hidden="true"></span></summary><ul class="award-list details-content">${EARLIER_AWARDS}</ul></details>
         <div class="photo-grid">
-          <figure><a class="photo-link" href="${HSINCHU_PREVIEW}" data-original="${HSINCHU_ORIGINAL}" data-photo="Hsinchu City Outstanding Youth, 2026" aria-label="View full photo: Hsinchu City Outstanding Youth"><img src="${HSINCHU_PREVIEW}" alt="Wuqian Tang holding his certificate at the Hsinchu City Outstanding Youth award ceremony" loading="lazy" decoding="async" width="${HSINCHU_WIDTH}" height="${HSINCHU_HEIGHT}"></a><figcaption><span>Hsinchu City Outstanding Youth</span><span>College / University Division · Mar 2026</span></figcaption></figure>
-          <figure><a class="photo-link" href="${HSING_CHIEN_PREVIEW}" data-original="${HSING_CHIEN_ORIGINAL}" data-photo="Presidential Hsing Chien Award, 2025" aria-label="View full photo: Presidential Hsing Chien Award"><img src="${HSING_CHIEN_PREVIEW}" alt="Group photo at the National Tsing Hua University Presidential Hsing Chien Award ceremony" loading="lazy" decoding="async" width="${HSING_CHIEN_WIDTH}" height="${HSING_CHIEN_HEIGHT}"></a><figcaption><span>Presidential Hsing Chien Award</span><span>National Tsing Hua University · May 2025</span></figcaption></figure>
+          <figure><a class="photo-link" href="${HSINCHU_PREVIEW}" data-original="${HSINCHU_ORIGINAL}" data-photo="Hsinchu City Outstanding Youth, 2026" aria-label="View full photo: Hsinchu City Outstanding Youth"><img src="${HSINCHU_PREVIEW}" alt="${HSINCHU_ALT}" loading="lazy" decoding="async" width="${HSINCHU_WIDTH}" height="${HSINCHU_HEIGHT}"></a><figcaption><span>Hsinchu City Outstanding Youth</span><span>College / University Division · Mar 2026</span></figcaption></figure>
+          <figure><a class="photo-link" href="${HSING_CHIEN_PREVIEW}" data-original="${HSING_CHIEN_ORIGINAL}" data-photo="Presidential Hsing Chien Award, 2025" aria-label="View full photo: Presidential Hsing Chien Award"><img src="${HSING_CHIEN_PREVIEW}" alt="${HSING_CHIEN_ALT}" loading="lazy" decoding="async" width="${HSING_CHIEN_WIDTH}" height="${HSING_CHIEN_HEIGHT}"></a><figcaption><span>Presidential Hsing Chien Award</span><span>National Tsing Hua University · May 2025</span></figcaption></figure>
         </div>
       </section>
 
@@ -116,7 +116,7 @@
       <section class="section beyond-section" id="beyond" aria-labelledby="beyond-title">
         <div class="section-heading"><h2 id="beyond-title">Hobbies</h2></div>
         <div class="hobbies-layout"><div class="beyond-copy"><p>Outside research, I enjoy <strong>badminton</strong>, <strong>swimming</strong>, and <strong>table tennis</strong>.</p><p id="award-badminton-2025">In May 2025, I won first place in badminton doubles at National Tsing Hua University's Interdepartmental Cup. ${BADMINTON_LINKS}</p><div class="hobby-list"><span>${BADMINTON_ICON}Badminton</span><span>${SWIM_ICON}Swimming</span><span>${TABLE_TENNIS_ICON}Table tennis</span></div></div>
-        <figure class="badminton-photo"><a class="photo-link" href="${BADMINTON_PREVIEW}" data-original="${BADMINTON_ORIGINAL}" data-photo="NTHU Interdepartmental Cup badminton doubles, 2025" data-crop-top="0.25" aria-label="View full badminton doubles photo"><img src="${BADMINTON_PREVIEW}" alt="Badminton doubles partners holding their first-place medals and rackets at the 2025 NTHU Interdepartmental Cup" loading="lazy" decoding="async" width="${BADMINTON_WIDTH}" height="${BADMINTON_HEIGHT}"></a><figcaption>Interdepartmental Cup · Doubles champions, May 2025</figcaption></figure></div>
+        <figure class="badminton-photo"><a class="photo-link" href="${BADMINTON_PREVIEW}" data-original="${BADMINTON_ORIGINAL}" data-photo="NTHU Interdepartmental Cup badminton doubles, 2025" data-crop-top="0.25" aria-label="View full badminton doubles photo"><img src="${BADMINTON_PREVIEW}" alt="${BADMINTON_ALT}" loading="lazy" decoding="async" width="${BADMINTON_WIDTH}" height="${BADMINTON_HEIGHT}"></a><figcaption>Interdepartmental Cup · Doubles champions, May 2025</figcaption></figure></div>
       </section>
 
       <footer class="site-footer"><span>© 2026 ${NAME}</span><span>Updated <time datetime="${UPDATED}">October 2026</time></span><a href="#about">Back to Top</a></footer>

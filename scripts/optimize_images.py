@@ -57,9 +57,9 @@ def main():
             reviewed[target] = entry
     by_url = {item['url']: item for item in media}
     homepage = {
-        'hsinchu': ('assets/awards/hsinchu-youth-2026/photo-2.jpg', 'assets/awards/hsinchu-youth-2026/photo-2.jpg'),
-        'hsing_chien': ('assets/images/hsing-chien-2025.jpg', 'assets/awards/hsing-chien-2025/photo-1.jpg'),
-        'badminton': ('assets/images/badminton-2025.jpg', 'assets/awards/badminton-2025/photo-1.jpg'),
+        'hsinchu': ('assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-2.jpg', 'assets/awards/hsinchu-youth-2026/2026-hsinchu-outstanding-youth-photo-2.jpg'),
+        'hsing_chien': ('assets/images/2025-hsing-chien-photo-1.jpg', 'assets/awards/hsing-chien-2025/2025-hsing-chien-photo-1.jpg'),
+        'badminton': ('assets/images/2025-badminton-photo-1.jpg', 'assets/awards/badminton-2025/2025-badminton-photo-1.jpg'),
     }
     profile['homepage_images'] = {}
     for name, (original, alias) in homepage.items():
@@ -74,7 +74,7 @@ def main():
     (ROOT / 'content/image-previews.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
     print(f"Prepared {len(records)} previews: {report['before_preview_bytes']:,} → {report['after_preview_bytes']:,} bytes. Originals unchanged.")
     for r in records:
-        if 'badminton-2025/photo' in r['path']:
+        if 'assets/awards/badminton-2025/' in r['path'] and '-photo-' in r['path']:
             print(f"Badminton: {r['source_bytes']:,} → {r['bytes']:,} bytes; {r['width']}×{r['height']}")
 
 

@@ -372,7 +372,7 @@
       if (preview !== image) image.replaceWith(preview);
       image = preview;
       displayedItem = item;
-      image.alt = item.caption;
+      image.alt = item.alt || item.caption;
       caption.textContent = item.caption;
       original.href = item.original;
       counter.textContent = `${currentIndex + 1} / ${currentPhotos.length}`;
@@ -390,6 +390,7 @@
         if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
         const items = link.dataset.media ? registry[link.dataset.media] : [{
           src: link.href, original: link.dataset.original, caption: link.dataset.photo,
+          alt: link.querySelector('img')?.alt || link.dataset.photo,
           rotation: Number(link.dataset.rotation || 0), cropTop: Number(link.dataset.cropTop || 0)
         }];
         if (!items?.length) return;

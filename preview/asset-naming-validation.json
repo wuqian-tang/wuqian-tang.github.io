@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-06",
+  "static": {
+    "renamed_assets_with_identical_bytes": 206,
+    "legacy_paper_and_cv_pdf_copies": 6,
+    "legacy_pdf_bytes": 11624478,
+    "html_pages": 35,
+    "local_references": 753,
+    "external_new_tab_links": 103,
+    "gallery_pages": 33,
+    "unique_webp_previews": 87,
+    "distinct_photo_descriptions": 26,
+    "sitemap_pages": 34,
+    "sitemap_image_references": 91,
+    "sitemap_unique_images": 88,
+    "teaching_semesters_and_award_months": "passed",
+    "google_verification_and_existing_content": "preserved",
+    "optimizer_sources_and_preview_targets": "verified without re-encoding",
+    "brand_icons_css": "unchanged"
+  },
+  "browser": [
+    {
+      "name": "All 87 renamed previews decode in the popup with accurate alt and matching originals; no original downloads"
+    },
+    {
+      "name": "Homepage layout, three activity previews, IWLS navigation/swipes and BibTeX pass at 1440px"
+    },
+    {
+      "name": "Homepage layout, three activity previews, IWLS navigation/swipes and BibTeX pass at 820px"
+    },
+    {
+      "name": "Homepage layout, three activity previews, IWLS navigation/swipes and BibTeX pass at 390px"
+    },
+    {
+      "name": "Homepage layout, three activity previews, IWLS navigation/swipes and BibTeX pass at 320px"
+    },
+    {
+      "name": "All 33 galleries load 87 WebP images with accurate descriptions and no overflow at 1440px"
+    },
+    {
+      "name": "All 33 galleries load 87 WebP images with accurate descriptions and no overflow at 390px"
+    },
+    {
+      "name": "Without JavaScript, award link opens gallery and photo opens renamed WebP"
+    },
+    {
+      "name": "Six legacy PDF URLs retain exact bytes; old image links redirect; View Original opens the renamed JPEG"
+    },
+    {
+      "name": "Legacy image redirects preserve query/fragment; unrelated paths remain 404"
+    }
+  ],
+  "screenshots": [
+    "naming-iwls-1440.png",
+    "naming-teaching-mobile.png",
+    "naming-iwls-390.png"
+  ]
+}
