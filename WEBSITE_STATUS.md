@@ -19,6 +19,7 @@
 - 子页独立分享图为 1200×630，采用实际 FloorSet 布局、Trinity、大字号方法说明、Training / Refinement / Scoring、arXiv 编号与本站地址；JPEG 129,415 bytes，保留 PNG 和 `content/projects/trinity/social-preview.html` 源码。子页有独立 canonical、Open Graph / Twitter large-card 与 ScholarlyArticle JSON-LD；首页分享图和 Google 验证标签保持原值。
 - sitemap 增加项目页及 4 个研究图/分享图，现有 35 个页面 URL、95 处图片引用、92 个不同图片 URL。公开资产 manifest 共 261 条；发布仍仅限 `site/`，源页面快照、预览和本地翻译草案不发布。
 - 本轮验证记录在 `preview/trinity-browser-validation.json` 和 `preview/trinity-static-validation.json`，截图为 `preview/trinity-*.png`。六种尺寸（1440 / 1024 / 844 / 820 / 390 / 320px）无整页横向溢出，全部完成视频切换、实际播放、交互控制及复制检查；深色模式、减少动态效果、复制拒绝与无 JS 回退通过。5 次自动无障碍扫描无报告项；为本地适配提高深色说明文字、表格异常值的对比度，手机演示按钮至少 44px，宽表格可键盘聚焦滚动。静态验证确认 36 个 HTML 页、674 处本地引用、112 个外部新分页锚点及全部资产摘要。继续维护时先查看这两份报告、最新 Pages 工作流与实际线上内容。
+- 网站内容提交 `4eded7402a94f69b7d486368a69fb1f34629bc27` 已通过 Pages 工作流 [37434940463](https://github.com/wuqian-tang/wuqian-tang.github.io/actions/runs/37434940463) 上线。线上首页、子页、sitemap、PDF、JS / CSS、交互数据、字体和分享图均 HTTP 200 且字节与本地一致；三种视频均支持 HTTP 206 分段读取。实际 HTTPS 电脑和手机浏览器完成新闻跳转、引用复制、交互示例、100-block 视频播放及返回首页检查，无脚本错误。详情见 `preview/trinity-live-validation.json`；爬虫 UA 可读取分享元数据，但不等同于实际聊天平台卡片测试。
 - 后续论文出现新 arXiv 版本或正式发表时，分别核对 arXiv / 出版方元数据、PDF、`profile.json`、`citations.json`、项目页和 manifest；预印本正式录用后再更新 venue/status，保留已有 P1 引用锚点或明确兼容，不凭日期推断录用。原宣传页有后续变更时先比较固定版本再更新本地副本，不能盲目覆盖本站适配。
 
 ## 资料命名与图片搜索信息（2026-10-06，上一版）

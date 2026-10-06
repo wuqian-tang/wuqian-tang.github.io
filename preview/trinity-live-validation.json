@@ -1,0 +1,147 @@
+{
+  "checked_on": "2026-10-06",
+  "commit": "4eded7402a94f69b7d486368a69fb1f34629bc27",
+  "workflow_run": 37434940463,
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 135838,
+      "sha256": "cfbb67451eae63549fe7ff34ec4d0abea58013ff0efe7d9a41d32ceb5fafc03f"
+    },
+    {
+      "path": "projects/trinity/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 32577,
+      "sha256": "251588d1e4c14094e5bdbed226a1dd4187d216b7fa2a8b3474ef55b006166734"
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 20562,
+      "sha256": "41a38e4766723eff87ffdde8f2184017073e62ddb81f1f371cf1aac1113836ea"
+    },
+    {
+      "path": "files/papers/2026-arxiv-trinity.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 3395620,
+      "sha256": "2e812263f269d4f9c0d3b2cef5024da49a6ccb4cc2779ec5efcd3b7645badf63"
+    },
+    {
+      "path": "projects/trinity/assets/project.js?v=20261006-trinity",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 23291,
+      "sha256": "d32cc0f10299d315419365724dc817cc603da7f4994a50127395296b5bf54991"
+    },
+    {
+      "path": "projects/trinity/assets/project.css?v=20261006-trinity",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "bytes": 15849,
+      "sha256": "ffff3a7847e49d03f0f634ca47668659db56025cbcda9905d4988f25efdb52fb"
+    },
+    {
+      "path": "projects/trinity/assets/toy-data.json",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 733825,
+      "sha256": "1b07c2a66b3364da4dc0b1274ddda0383f71bbaee1144fb773601223ce271d72"
+    },
+    {
+      "path": "projects/trinity/assets/fonts/fonts.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "bytes": 7722,
+      "sha256": "d45e8f3397929e9994ca33214e17cbf6e40410756290f59936ee59eb878ba51e"
+    },
+    {
+      "path": "projects/trinity/assets/fonts/inter-7.woff2",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": 48256,
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
+    },
+    {
+      "path": "projects/trinity/assets/2026-trinity-social-preview.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 129415,
+      "sha256": "d5b1adb4673505f1cab9ec837cb3a1d621d1fac9b1f40219f61f25b083d7893f"
+    },
+    {
+      "path": "projects/trinity/assets/2026-trinity-teaser.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 74482,
+      "sha256": "d0bda7f17923c45a5d8fc7fe7eb4dc0572d29ab6fd97698a924be9613ce7b916"
+    },
+    {
+      "path": "projects/trinity/assets/2026-trinity-n60-poster.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 106298,
+      "sha256": "258ac47ef9f0617872606b989e59573bedb562297539b23c316cbf0ee5282b50"
+    },
+    {
+      "crawler_user_agent": "facebookexternalhit/1.1",
+      "status": 200,
+      "project_share_metadata": true
+    },
+    {
+      "crawler_user_agent": "Twitterbot/1.0",
+      "status": 200,
+      "project_share_metadata": true
+    },
+    {
+      "crawler_user_agent": "Line/14.0",
+      "status": 200,
+      "project_share_metadata": true
+    },
+    {
+      "video_blocks": 30,
+      "status": 206,
+      "range": "bytes 0-2047/1193726",
+      "range_bytes": 2048
+    },
+    {
+      "video_blocks": 60,
+      "status": 206,
+      "range": "bytes 0-2047/1675730",
+      "range_bytes": 2048
+    },
+    {
+      "video_blocks": 100,
+      "status": 206,
+      "range": "bytes 0-2047/2328777",
+      "range_bytes": 2048
+    }
+  ],
+  "workflow_conclusion": "success",
+  "browser_checks": [
+    {
+      "width": 1440,
+      "homepage_news_link": true,
+      "project_overflow": false,
+      "clipboard": true,
+      "toy": true,
+      "video_case_100": true,
+      "back_to_homepage": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "homepage_news_link": true,
+      "project_overflow": false,
+      "clipboard": true,
+      "toy": true,
+      "video_case_100": true,
+      "back_to_homepage": true,
+      "errors": []
+    }
+  ]
+}
