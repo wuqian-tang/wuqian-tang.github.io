@@ -1,0 +1,238 @@
+{
+  "checked_on": "2026-10-06",
+  "responsive": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "selected": 5,
+      "more": 17,
+      "p1_in_more_2026": true,
+      "deep_link_opens_more": true,
+      "body": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "26.25px"
+      },
+      "h1": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "32px",
+        "fontWeight": "650",
+        "lineHeight": "41.6px"
+      },
+      "h2": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "25.6px",
+        "fontWeight": "650",
+        "lineHeight": "33.28px"
+      },
+      "authors": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "24.5px"
+      },
+      "pitch": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "28px"
+      },
+      "homepage_font_match": true,
+      "clipboard": true,
+      "toy": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "selected": 5,
+      "more": 17,
+      "p1_in_more_2026": true,
+      "deep_link_opens_more": true,
+      "body": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "26.25px"
+      },
+      "h1": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "30.72px",
+        "fontWeight": "650",
+        "lineHeight": "39.936px"
+      },
+      "h2": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "25.6px",
+        "fontWeight": "650",
+        "lineHeight": "33.28px"
+      },
+      "authors": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "24.5px"
+      },
+      "pitch": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "28px"
+      },
+      "homepage_font_match": true,
+      "clipboard": true,
+      "toy": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "selected": 5,
+      "more": 17,
+      "p1_in_more_2026": true,
+      "deep_link_opens_more": true,
+      "body": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "26.25px"
+      },
+      "h1": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "26px",
+        "fontWeight": "650",
+        "lineHeight": "33.8px"
+      },
+      "h2": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "25.6px",
+        "fontWeight": "650",
+        "lineHeight": "33.28px"
+      },
+      "authors": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "24.5px"
+      },
+      "pitch": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "28px"
+      },
+      "homepage_font_match": true,
+      "clipboard": true,
+      "toy": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "selected": 5,
+      "more": 17,
+      "p1_in_more_2026": true,
+      "deep_link_opens_more": true,
+      "body": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "26.25px"
+      },
+      "h1": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "26px",
+        "fontWeight": "650",
+        "lineHeight": "33.8px"
+      },
+      "h2": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "23.2px",
+        "fontWeight": "650",
+        "lineHeight": "30.16px"
+      },
+      "authors": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "lineHeight": "22.75px"
+      },
+      "pitch": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "28px"
+      },
+      "homepage_font_match": true,
+      "clipboard": true,
+      "toy": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "selected": 5,
+      "more": 17,
+      "p1_in_more_2026": true,
+      "deep_link_opens_more": true,
+      "body": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "26.25px"
+      },
+      "h1": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "26px",
+        "fontWeight": "650",
+        "lineHeight": "33.8px"
+      },
+      "h2": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "23.2px",
+        "fontWeight": "650",
+        "lineHeight": "30.16px"
+      },
+      "authors": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "lineHeight": "22.75px"
+      },
+      "pitch": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "28px"
+      },
+      "homepage_font_match": true,
+      "clipboard": true,
+      "toy": true,
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 1440,
+      "colorScheme": "light",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "colorScheme": "light",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "colorScheme": "dark",
+      "violations": []
+    }
+  ],
+  "no_javascript": true
+}

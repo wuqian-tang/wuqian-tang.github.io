@@ -167,7 +167,7 @@
       "year": 2026,
       "details": "arXiv:2610.04957 · Submitted Oct. 4, 2026",
       "status": "Preprint",
-      "selected": true,
+      "selected": false,
       "links": [
         {
           "label": "arXiv",

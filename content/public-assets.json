@@ -1613,7 +1613,7 @@
   },
   {
     "path": "projects/trinity/assets/project.css",
-    "sha256": "ffff3a7847e49d03f0f634ca47668659db56025cbcda9905d4988f25efdb52fb",
+    "sha256": "d689f2ca5eaaaf8e8d656f9d6227a189f5132c6c1bdbf05abad19ae20dbc1129",
     "source": "Adapted from pinned Trinity gh-pages stylesheet; local navigation, accessibility and media layout"
   },
   {
