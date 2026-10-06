@@ -1,0 +1,69 @@
+{
+  "repository": "https://github.com/Kohaku-Lab/Trinity",
+  "page_url": "https://kohaku-lab.github.io/Trinity/",
+  "page_commit": "8ad62521a0f486a32db33e77255b5ae4d9aa3e43",
+  "code_commit": "51334c5701945fd31f7b7f6797c85f2cb7098a6a",
+  "retrieved_on": "2026-10-06",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets/fig_arch.png",
+      "bytes": 39263,
+      "sha256": "cb616221f99c673f87dfcbcc38e0f0982b8e0faea8248edd51fc333b3d5c63b5"
+    },
+    {
+      "path": "assets/fig_teaser.png",
+      "bytes": 74482,
+      "sha256": "d0bda7f17923c45a5d8fc7fe7eb4dc0572d29ab6fd97698a924be9613ce7b916"
+    },
+    {
+      "path": "assets/floorplan.svg",
+      "bytes": 45196,
+      "sha256": "4104b3309dcf344d3be278354e1a0cf6dc50cebc76974a3477ccb8cb820f91ed"
+    },
+    {
+      "path": "assets/n100_pipeline.av1.mp4",
+      "bytes": 2328777,
+      "sha256": "7bc2e00ad2b4882eb7bdda371d6bc55d2b97de869c710ebcd7d2902e645ef3c4"
+    },
+    {
+      "path": "assets/n100_pipeline.mp4",
+      "bytes": 3945149,
+      "sha256": "d239f286c5b415e4db1edcfcde500e9460709a2f2aa921be5f36b797123178f1"
+    },
+    {
+      "path": "assets/n30_pipeline.av1.mp4",
+      "bytes": 1193726,
+      "sha256": "b4159b090ac0894cdbbbde03b8d6c11c8e37cae4913d98a972989aa6060cb091"
+    },
+    {
+      "path": "assets/n30_pipeline.mp4",
+      "bytes": 2147717,
+      "sha256": "f157f6b371fd2fbc4e12d69b12d6842dbda36d092f7e5997187dccb9e7ca91d2"
+    },
+    {
+      "path": "assets/n60_pipeline.av1.mp4",
+      "bytes": 1675730,
+      "sha256": "58e59e2b9a9159850aafb3d4980a1997281cb06ef61025ce36bc935670f06676"
+    },
+    {
+      "path": "assets/n60_pipeline.mp4",
+      "bytes": 2900508,
+      "sha256": "20566d5f011a9b9c3d739f20bf21333a4243dc8130ba5e61d74b9d9001503429"
+    },
+    {
+      "path": "assets/trinity.pdf",
+      "bytes": 3449354,
+      "sha256": "5ed0e4f7dc27c73da8b05c73ce353c747a23e805d741db2caf0032eaa6aa7279"
+    },
+    {
+      "path": "index.html",
+      "bytes": 797534,
+      "sha256": "d4598df673cbc98a3451de874583a4fa325d9169b1176ab7cc6d62e9a2e46e66"
+    }
+  ]
+}

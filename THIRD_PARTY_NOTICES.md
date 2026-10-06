@@ -1,5 +1,13 @@
 # Third-party notices
 
+## Trinity research project
+
+`site/projects/trinity/` is a coauthor-approved local presentation of **Trinity: One Differentiable Physics for Training, Refining and Scoring Generative Floorplanners**, by Shih-Ying Yeh, Tzu-Sian Wang, Xuehai Wang, Jia-Hua Lee, Daniel Z. Kaplan, Ming-Qi Xu, Wuqian Tang, Chun-Yao Wang, Shang-Hong Lai, and Chun-Yi Lee. Its research text, figures, recorded model outputs, videos, and presentation derive from [Kohaku Lab's original project page](https://kohaku-lab.github.io/Trinity/), pinned to [gh-pages commit 8ad62521a0f486a32db33e77255b5ae4d9aa3e43](https://github.com/Kohaku-Lab/Trinity/tree/8ad62521a0f486a32db33e77255b5ae4d9aa3e43). Original author/affiliation/contribution statements and Kohaku Lab attribution remain on the page. Scientific image and video bytes are unchanged; WebP posters and the social card are documented derivatives of these actual figures/video frames.
+
+Trinity code is Apache-2.0; its original LICENSE and NOTICE from main commit `51334c5701945fd31f7b7f6797c85f2cb7098a6a` are distributed as `site/projects/trinity/LICENSE.txt` and `NOTICE.txt`. The paper is the official [arXiv v1](https://arxiv.org/abs/2610.04957) PDF, under CC BY 4.0, hosted locally at `site/files/papers/2026-arxiv-trinity.pdf`. Code licensing is not asserted as a blanket license for all research data or third-party assets; see the upstream NOTICE for its distinctions.
+
+Local fonts used only on the Trinity page are **Inter** (the Inter Project Authors), **JetBrains Mono** (the JetBrains Mono Project Authors), and **STIX Two Text** (The STIX Fonts Project Authors). Their WOFF2 files come from Google Fonts and use the **SIL Open Font License 1.1**. Unmodified license notices are retained alongside the fonts at `site/projects/trinity/assets/fonts/OFL-inter.txt`, `OFL-jetbrainsmono.txt`, and `OFL-stixtwotext.txt`. Asset source URLs and exact SHA-256 hashes are recorded in `content/public-assets.json`.
+
 ## Classic Traditional Square Seal character
 
 The character **唐** in `site/assets/brand.svg` is an unmodified rendered glyph outline from **经典繁方篆** (Classic Traditional Square Seal), Regular, **一九九五年八月 版本V1.00**. The browser favicon in `site/assets/favicon.svg` derives from the same outline, with all contours retained and their coordinates optically adjusted for a 16px pixel grid. `favicon-16.png` and `favicon-32.png` are direct rasterizations of this small-size variant. The original font metadata identifies its copyright as **经典字体** and its unique identifier as **经典字体 经典繁方篆 1995**. No individual designer is identified in the font metadata.

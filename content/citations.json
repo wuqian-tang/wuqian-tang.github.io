@@ -147,5 +147,14 @@
     "sources": [
       "site/files/papers/J2-Oracle-Bone.pdf"
     ]
+  },
+  "p1": {
+    "bibtex": "@misc{trinity2026,\n  author = {Yeh, Shih-Ying and Wang, Tzu-Sian and Wang, Xuehai and Lee, Jia-Hua and Kaplan, Daniel Z. and Xu, Ming-Qi and Tang, Wuqian and Wang, Chun-Yao and Lai, Shang-Hong and Lee, Chun-Yi},\n  title = {{Trinity: One Differentiable Physics for Training, Refining and Scoring Generative Floorplanners}},\n  year = {2026},\n  eprint = {2610.04957},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.LG},\n  url = {https://arxiv.org/abs/2610.04957},\n  note = {arXiv preprint}\n}\n",
+    "verified_on": "2026-10-06",
+    "sources": [
+      "https://arxiv.org/bibtex/2610.04957",
+      "https://arxiv.org/abs/2610.04957",
+      "site/files/papers/2026-arxiv-trinity.pdf"
+    ]
   }
 }

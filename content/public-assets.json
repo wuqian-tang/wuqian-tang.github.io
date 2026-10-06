@@ -1401,5 +1401,265 @@
     "sha256": "b03a2a43e881828c8e0ea6b6a361f0be16c59294d0836a9cd665135f1ecdec23",
     "source": "https://www.airitilibrary.com/Article/Detail/P20180801001-N202509170019-00001 (official OpenAccess full-text download)",
     "compatibility_alias_for": "files/papers/2025-dadh-oracle-bone.pdf"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-architecture.png",
+    "sha256": "cb616221f99c673f87dfcbcc38e0f0982b8e0faea8248edd51fc333b3d5c63b5",
+    "source": "https://raw.githubusercontent.com/Kohaku-Lab/Trinity/8ad62521a0f486a32db33e77255b5ae4d9aa3e43/assets/fig_arch.png"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-teaser.png",
+    "sha256": "d0bda7f17923c45a5d8fc7fe7eb4dc0572d29ab6fd97698a924be9613ce7b916",
+    "source": "https://raw.githubusercontent.com/Kohaku-Lab/Trinity/8ad62521a0f486a32db33e77255b5ae4d9aa3e43/assets/fig_teaser.png"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-floorplan.svg",
+    "sha256": "4104b3309dcf344d3be278354e1a0cf6dc50cebc76974a3477ccb8cb820f91ed",
+    "source": "https://raw.githubusercontent.com/Kohaku-Lab/Trinity/8ad62521a0f486a32db33e77255b5ae4d9aa3e43/assets/floorplan.svg"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-n30-pipeline.mp4",
+    "sha256": "f157f6b371fd2fbc4e12d69b12d6842dbda36d092f7e5997187dccb9e7ca91d2",
+    "source": "https://raw.githubusercontent.com/Kohaku-Lab/Trinity/8ad62521a0f486a32db33e77255b5ae4d9aa3e43/assets/n30_pipeline.mp4"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-n30-pipeline.av1.mp4",
+    "sha256": "b4159b090ac0894cdbbbde03b8d6c11c8e37cae4913d98a972989aa6060cb091",
+    "source": "https://raw.githubusercontent.com/Kohaku-Lab/Trinity/8ad62521a0f486a32db33e77255b5ae4d9aa3e43/assets/n30_pipeline.av1.mp4"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-n60-pipeline.mp4",
+    "sha256": "20566d5f011a9b9c3d739f20bf21333a4243dc8130ba5e61d74b9d9001503429",
+    "source": "https://raw.githubusercontent.com/Kohaku-Lab/Trinity/8ad62521a0f486a32db33e77255b5ae4d9aa3e43/assets/n60_pipeline.mp4"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-n60-pipeline.av1.mp4",
+    "sha256": "58e59e2b9a9159850aafb3d4980a1997281cb06ef61025ce36bc935670f06676",
+    "source": "https://raw.githubusercontent.com/Kohaku-Lab/Trinity/8ad62521a0f486a32db33e77255b5ae4d9aa3e43/assets/n60_pipeline.av1.mp4"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-n100-pipeline.mp4",
+    "sha256": "d239f286c5b415e4db1edcfcde500e9460709a2f2aa921be5f36b797123178f1",
+    "source": "https://raw.githubusercontent.com/Kohaku-Lab/Trinity/8ad62521a0f486a32db33e77255b5ae4d9aa3e43/assets/n100_pipeline.mp4"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-n100-pipeline.av1.mp4",
+    "sha256": "7bc2e00ad2b4882eb7bdda371d6bc55d2b97de869c710ebcd7d2902e645ef3c4",
+    "source": "https://raw.githubusercontent.com/Kohaku-Lab/Trinity/8ad62521a0f486a32db33e77255b5ae4d9aa3e43/assets/n100_pipeline.av1.mp4"
+  },
+  {
+    "path": "projects/trinity/LICENSE.txt",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "source": "https://raw.githubusercontent.com/Kohaku-Lab/Trinity/51334c5701945fd31f7b7f6797c85f2cb7098a6a/LICENSE"
+  },
+  {
+    "path": "projects/trinity/NOTICE.txt",
+    "sha256": "4b9710113ceb9405b7fc4c1baa81087896b921dd2b04fd1f02003ab8009cde52",
+    "source": "https://raw.githubusercontent.com/Kohaku-Lab/Trinity/51334c5701945fd31f7b7f6797c85f2cb7098a6a/NOTICE"
+  },
+  {
+    "path": "files/papers/2026-arxiv-trinity.pdf",
+    "sha256": "2e812263f269d4f9c0d3b2cef5024da49a6ccb4cc2779ec5efcd3b7645badf63",
+    "source": "https://arxiv.org/pdf/2610.04957",
+    "version": "2610.04957v1",
+    "retrieved_on": "2026-10-06"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/inter-1.woff2",
+    "sha256": "ca157063339ac4ad418f214f3abfed119b0798ab4d377386ce5c9e5a7a435ebd",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/inter-2.woff2",
+    "sha256": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/inter-3.woff2",
+    "sha256": "6e9e020a25f9b56d418f2c085b1d3c09725a4da23fe693a5b463064606732190",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/inter-4.woff2",
+    "sha256": "1be3448e292fbf05ffe176fe1e43f135013d50b1e7d324ad1a558f623d3bb6f6",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/inter-5.woff2",
+    "sha256": "5c66f9e07e90c6d4ac4922cc68d60de26c17b1858e677fb5e603fce3952b3ff2",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/inter-6.woff2",
+    "sha256": "34b9c504cab7a73e37b746343a449132e56cf7b5481af2cb81dc74dcff25c956",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/inter-7.woff2",
+    "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/jetbrainsmono-8.woff2",
+    "sha256": "62213be8a78b42f1e29d1452d91e2f8b3e745572a9dd98d3941e39fa00b37d76",
+    "source": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx3cwhsk.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/jetbrainsmono-9.woff2",
+    "sha256": "e17cfd15fb96909d64095015f958207063a0c07191da3512df7d560a781aebdf",
+    "source": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/jetbrainsmono-10.woff2",
+    "sha256": "0a557721b1f8b36d3f3f84442689a71ca4a744300abcb46a1953f51bfc663b66",
+    "source": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxPcwhsk.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/jetbrainsmono-11.woff2",
+    "sha256": "c89b9cc0bc6262bd4f8d8494b6961601f3aefa829d08c2e3635f4d501d3a47c2",
+    "source": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx_cwhsk.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/jetbrainsmono-12.woff2",
+    "sha256": "db5ff4db83e580426280e9337a58dc57d3a83784a1b03ad80914651594441d52",
+    "source": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx7cwhsk.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/jetbrainsmono-13.woff2",
+    "sha256": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "source": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/stixtwotext-14.woff2",
+    "sha256": "82726fc539d1018d80186891460b09b52b4986a733bff28235f9311e658a3af5",
+    "source": "https://fonts.gstatic.com/s/stixtwotext/v18/YA9Er02F12Xkf5whdwKf11l0p7uWhf8lJUzXZT2omsvbYR9kM3WD.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/stixtwotext-15.woff2",
+    "sha256": "5f79d6230a8b60ec98e88644a50b01365304446e3c540661fe4a363970df402d",
+    "source": "https://fonts.gstatic.com/s/stixtwotext/v18/YA9Er02F12Xkf5whdwKf11l0p7uWhf8lJUzXZT2omsvbYRZkM3WD.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/stixtwotext-16.woff2",
+    "sha256": "3aa23c0216f6627144e74feab57bb68edff09f6e987dda84e7c83a0123fd7d81",
+    "source": "https://fonts.gstatic.com/s/stixtwotext/v18/YA9Er02F12Xkf5whdwKf11l0p7uWhf8lJUzXZT2omsvbYRFkM3WD.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/stixtwotext-17.woff2",
+    "sha256": "c2f64b2ae8ef09ebc079ff0c1ae941cdb6c6eb0d35a46e52e4f12249af71c939",
+    "source": "https://fonts.gstatic.com/s/stixtwotext/v18/YA9Er02F12Xkf5whdwKf11l0p7uWhf8lJUzXZT2omsvbYR1kM3WD.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/stixtwotext-18.woff2",
+    "sha256": "7c3087a0f4fd17134c01ee7f39b7640e3bb6ca4c8cb5ee7a6a607b74dd25c3ad",
+    "source": "https://fonts.gstatic.com/s/stixtwotext/v18/YA9Er02F12Xkf5whdwKf11l0p7uWhf8lJUzXZT2omsvbYRxkM3WD.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/stixtwotext-19.woff2",
+    "sha256": "3d76ab92269582b8e11f3d969eaf93bb9609f1e08d5433fd18633e78e7900638",
+    "source": "https://fonts.gstatic.com/s/stixtwotext/v18/YA9Er02F12Xkf5whdwKf11l0p7uWhf8lJUzXZT2omsvbYRJkMw.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/stixtwotext-20.woff2",
+    "sha256": "86af162b83fdaf91392ccab3a9e89bae37e58b19e0201754130b1e28da396c4a",
+    "source": "https://fonts.gstatic.com/s/stixtwotext/v18/YA9Vr02F12Xkf5whdwKf11l0p7OMi8_Q.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/stixtwotext-21.woff2",
+    "sha256": "50e2436f9b6f6b8209ff76012c0a40e092a9904540c723c3821edcbfff7b6844",
+    "source": "https://fonts.gstatic.com/s/stixtwotext/v18/YA9Vr02F12Xkf5whdwKf11l0p7qMi8_Q.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/stixtwotext-22.woff2",
+    "sha256": "ffbb9cc7cb5ac55ffbf4acf47544162baaa991ff87fa61d82fa829da52462c40",
+    "source": "https://fonts.gstatic.com/s/stixtwotext/v18/YA9Vr02F12Xkf5whdwKf11l0p72Mi8_Q.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/stixtwotext-23.woff2",
+    "sha256": "c1628c052e280cdf70e0610fd70aea05774f35ccc20a611f64dead996b05b3c3",
+    "source": "https://fonts.gstatic.com/s/stixtwotext/v18/YA9Vr02F12Xkf5whdwKf11l0p7GMi8_Q.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/stixtwotext-24.woff2",
+    "sha256": "6e0e2770abbf3e444d122f23961324b3b739915beeb93e37c51c8b8d01409d5b",
+    "source": "https://fonts.gstatic.com/s/stixtwotext/v18/YA9Vr02F12Xkf5whdwKf11l0p7CMi8_Q.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/stixtwotext-25.woff2",
+    "sha256": "204888e44da6eecf702a33dc8324b367fb7548f1f6750a64d5860ea859715f83",
+    "source": "https://fonts.gstatic.com/s/stixtwotext/v18/YA9Vr02F12Xkf5whdwKf11l0p76Miw.woff2"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/OFL-inter.txt",
+    "sha256": "5dd548d31a85f756e01d63e00d7faf1e324103ed3e9102fcbbabf2cc2db6dd39",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt",
+    "normalization": "Removed trailing whitespace; license wording unchanged."
+  },
+  {
+    "path": "projects/trinity/assets/fonts/OFL-jetbrainsmono.txt",
+    "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/jetbrainsmono/OFL.txt"
+  },
+  {
+    "path": "projects/trinity/assets/fonts/OFL-stixtwotext.txt",
+    "sha256": "d5c9d7c06a8b9af840687f73fb94c431c1ecad6e1f29854e913af15fababe6e6",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/stixtwotext/OFL.txt",
+    "normalization": "Removed trailing whitespace; license wording unchanged."
+  },
+  {
+    "path": "projects/trinity/assets/fonts/fonts.css",
+    "sha256": "d45e8f3397929e9994ca33214e17cbf6e40410756290f59936ee59eb878ba51e",
+    "source": "Original project typography; Google Fonts CSS localized to reviewed WOFF2 files"
+  },
+  {
+    "path": "projects/trinity/assets/project.css",
+    "sha256": "ffff3a7847e49d03f0f634ca47668659db56025cbcda9905d4988f25efdb52fb",
+    "source": "Adapted from pinned Trinity gh-pages stylesheet; local navigation, accessibility and media layout"
+  },
+  {
+    "path": "projects/trinity/assets/toy-data.json",
+    "sha256": "1b07c2a66b3364da4dc0b1274ddda0383f71bbaee1144fb773601223ce271d72",
+    "source": "https://github.com/Kohaku-Lab/Trinity/blob/8ad62521a0f486a32db33e77255b5ae4d9aa3e43/index.html#toy-json",
+    "note": "Exact upstream recorded simulation data; extracted unchanged from inline JSON"
+  },
+  {
+    "path": "projects/trinity/assets/project.js",
+    "sha256": "d32cc0f10299d315419365724dc817cc603da7f4994a50127395296b5bf54991",
+    "source": "Adapted from pinned Trinity gh-pages interactions; deferred data/video loading, viewport-aware animation and shared BibTeX copying"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-n30-poster.webp",
+    "sha256": "d263891c929aafee1b0b696b250f6ffaeab72a4b4b22858090ce5dd8a32160cb",
+    "source": "projects/trinity/assets/2026-trinity-n30-pipeline.mp4",
+    "frame_seconds": 17.833333,
+    "encoding": "WebP quality 86; 1400px width"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-n60-poster.webp",
+    "sha256": "258ac47ef9f0617872606b989e59573bedb562297539b23c316cbf0ee5282b50",
+    "source": "projects/trinity/assets/2026-trinity-n60-pipeline.mp4",
+    "frame_seconds": 17.833333,
+    "encoding": "WebP quality 86; 1400px width"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-n100-poster.webp",
+    "sha256": "00e63469ed3204af5f4a427e6e2103b937b45f81f45e4131f784b54657fec309",
+    "source": "projects/trinity/assets/2026-trinity-n100-pipeline.mp4",
+    "frame_seconds": 17.833333,
+    "encoding": "WebP quality 86; 1400px width"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-social-preview.png",
+    "sha256": "be3c8d6e80e6306b935032f90de957160d3f756896318f2ee584196ddb5abb9a",
+    "source": "content/projects/trinity/social-preview.html",
+    "width": 1200,
+    "height": 630
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-social-preview.jpg",
+    "sha256": "d5b1adb4673505f1cab9ec837cb3a1d621d1fac9b1f40219f61f25b083d7893f",
+    "source": "content/projects/trinity/social-preview.html",
+    "width": 1200,
+    "height": 630
   }
 ]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "trinity",
+    "path": "projects/trinity/",
+    "template": "content/projects/trinity/index.html",
+    "citation": "p1",
+    "updated": "2026-10-06",
+    "images": [
+      "projects/trinity/assets/2026-trinity-floorplan.svg",
+      "projects/trinity/assets/2026-trinity-teaser.png",
+      "projects/trinity/assets/2026-trinity-architecture.png",
+      "projects/trinity/assets/2026-trinity-social-preview.jpg"
+    ],
+    "source": "https://kohaku-lab.github.io/Trinity/",
+    "source_commit": "8ad62521a0f486a32db33e77255b5ae4d9aa3e43"
+  }
+]

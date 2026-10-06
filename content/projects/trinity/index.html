@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="Trinity: shared differentiable physics for training, refining, and scoring generative chip floorplanners. arXiv preprint 2610.04957." name="description"/>
+<title>Trinity | Generative Floorplanning</title>
+
+
+
+<link href="assets/project.css?v=20261006-trinity" rel="stylesheet"/>
+<link href="assets/fonts/fonts.css" rel="stylesheet"/><link href="https://wuqian-tang.github.io/projects/trinity/" rel="canonical"/><meta content="website" property="og:type"/><meta content="Trinity | Generative Floorplanning" property="og:title"/><meta content="Trinity: shared differentiable physics for training, refining, and scoring generative chip floorplanners. arXiv preprint 2610.04957." property="og:description"/><meta content="https://wuqian-tang.github.io/projects/trinity/" property="og:url"/><meta content="Wuqian Tang" property="og:site_name"/><meta content="en_US" property="og:locale"/><meta content="https://wuqian-tang.github.io/projects/trinity/assets/2026-trinity-social-preview.jpg" property="og:image"/><meta content="https://wuqian-tang.github.io/projects/trinity/assets/2026-trinity-social-preview.jpg" property="og:image:secure_url"/><meta content="image/jpeg" property="og:image:type"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="Trinity: one differentiable physics for generative floorplanning. Training, refinement, and scoring; arXiv 2610.04957." property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="Trinity | Generative Floorplanning" name="twitter:title"/><meta content="Trinity: shared differentiable physics for training, refining, and scoring generative chip floorplanners. arXiv preprint 2610.04957." name="twitter:description"/><meta content="https://wuqian-tang.github.io/projects/trinity/assets/2026-trinity-social-preview.jpg" name="twitter:image"/><meta content="Trinity: training, refinement, and scoring for generative chip floorplanning." name="twitter:image:alt"/><link href="https://wuqian-tang.github.io/projects/trinity/assets/2026-trinity-social-preview.jpg" rel="image_src"/><link href="../../assets/favicon-16.png?v=20261003-small-tang" rel="icon" sizes="16x16" type="image/png"/><link href="../../assets/favicon-32.png?v=20261003-small-tang" rel="icon" sizes="32x32" type="image/png"/><link href="../../assets/favicon.svg?v=20261003-small-tang" rel="icon" sizes="any" type="image/svg+xml"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "Trinity: One Differentiable Physics for Training, Refining and Scoring Generative Floorplanners", "author": [{"@type": "Person", "name": "Shih-Ying Yeh"}, {"@type": "Person", "name": "Tzu-Sian Wang"}, {"@type": "Person", "name": "Xuehai Wang"}, {"@type": "Person", "name": "Jia-Hua Lee"}, {"@type": "Person", "name": "Daniel Z. Kaplan"}, {"@type": "Person", "name": "Ming-Qi Xu"}, {"@type": "Person", "name": "Wuqian Tang"}, {"@type": "Person", "name": "Chun-Yao Wang"}, {"@type": "Person", "name": "Shang-Hong Lai"}, {"@type": "Person", "name": "Chun-Yi Lee"}], "url": "https://wuqian-tang.github.io/projects/trinity/", "datePublished": "2026-10-04", "creativeWorkStatus": "Preprint", "identifier": "arXiv:2610.04957", "encoding": {"@type": "MediaObject", "contentUrl": "https://wuqian-tang.github.io/files/papers/2026-arxiv-trinity.pdf", "encodingFormat": "application/pdf"}, "sameAs": ["https://arxiv.org/abs/2610.04957", "https://kohaku-lab.github.io/Trinity/"]}</script></head>
+<body>
+<div class="container"><div class="project-topbar"><a class="project-back" href="../../"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m10 6-6 6 6 6M4 12h16"></path></svg>Back to Homepage</a><span class="project-status">arXiv Preprint · 2026</span></div>
+<header class="hero">
+<h1><span class="name">Trinity</span>: One Differentiable Physics for Training, Refining and Scoring Generative Floorplanners</h1>
+<div class="authors">
+<span><span class="au"><b>Shih-Ying Yeh</b><span class="mk"><span>♡♠</span><span>*†</span></span></span>, <span class="au"><b>Tzu-Sian Wang</b><span class="mk"><span>♡♠</span><span>*</span></span></span>, <span class="au"><b>Xuehai Wang</b><span class="m">♣△</span></span>, <span class="au"><b>Jia-Hua Lee</b><span class="m">★</span></span>, <span class="au"><b>Daniel Z. Kaplan</b><span class="m">◇</span></span>, <span class="au"><b>Ming-Qi Xu</b><span class="m">♡</span></span>, <span class="au"><b>Wuqian Tang</b><span class="m">♡</span></span>, <span class="au"><b>Chun-Yao Wang</b><span class="m">♡</span></span>, <span class="au"><b>Shang-Hong Lai</b><span class="m">♡</span></span>, <span class="au"><b>Chun-Yi Lee</b><span class="m">★</span></span></span>
+<span class="aff"><span class="m">♡</span>National Tsing Hua University · <span class="m">♠</span>Kohaku Lab · <span class="m">♣</span>Karolinska Institutet · <span class="m">△</span>Stockholm University · <span class="m">◇</span>realiz.ai · <span class="m">★</span>National Taiwan University</span>
+<span class="aff"><span class="m">*</span>Equal contribution · <span class="m">†</span>Corresponding author: kohaku@kblueleaf.net</span>
+</div>
+<nav aria-label="Paper links" class="links">
+<a class="btn" href="../../files/papers/2026-arxiv-trinity.pdf">Paper</a>
+<a class="btn" href="https://arxiv.org/abs/2610.04957">arXiv</a>
+<a class="btn" href="https://github.com/Kohaku-Lab/Trinity">Code</a>
+<a class="btn" href="https://huggingface.co/KBlueLeaf/Trinity">Models</a>
+<a class="btn" href="#citation" id="copy-bib-top">BibTeX</a>
+</nav>
+<p class="pitch">Existing generative floorplanners learn layouts and leave the rules of the chip to corrections bolted on afterwards. Trinity teaches the rules to the model itself, and uses the same rules to refine and to measure every stage.</p>
+</header>
+<main><noscript><p class="text">Interactive diagrams and video playback require JavaScript. The paper, figures, results, and citation remain available below.</p></noscript>
+<figure>
+<div class="plate"><video aria-label="Trinity generating, refining and legalizing a 60-block floorplan" controls="" loop="" muted="" playsinline="" poster="assets/2026-trinity-n60-poster.webp" preload="none"><source data-src="assets/2026-trinity-n60-pipeline.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'/><source data-src="assets/2026-trinity-n60-pipeline.mp4" type="video/mp4"/></video><noscript><p><a href="assets/2026-trinity-n60-pipeline.mp4">View the floorplanning demonstration video</a></p></noscript></div>
+<figcaption>A 60-block FloorSet chip from pure noise: the network's guess is already a floorplan at the first step, a refiner on the same physics clears the remaining overlaps (red), and one linear program makes it exactly legal. The result ties the reference layout. The video plays three stages. <b>Sampling</b>, 32 Euler steps with no guidance: the noisy state (left) and the network's clean prediction (right). <b>Refinement</b>, 400 steps of Adam on the same six functions: the raw sample (left) and the refined layout (right). <b>Legalization</b>, one linear program: the refined layout (left) and the legal floorplan (right).</figcaption>
+</figure>
+<!-- 1 -->
+<section aria-labelledby="s1">
+<span class="kicker">The problem</span>
+<h2 id="s1">A floorplan is a negotiation between opposing forces</h2>
+<div class="text">
+<p>Early in chip design, every functional block gets a place and a shape. The inputs are the blocks, each with a target area, and the netlist of wires between them. Two <strong>objectives</strong> pull the blocks together: short wires between connected blocks and a small chip outline. A set of <strong>constraints</strong> holds them apart and pins them down. Good floorplans live exactly where these forces balance, on the edge of what the rules allow.</p>
+</div>
+<div class="split">
+<figure>
+<div class="plate"><img alt="A 60-block reference floorplan from FloorSet, blocks coloured by the constraint each obeys, faint blue lines for wires." decoding="async" height="1120" loading="lazy" src="assets/2026-trinity-floorplan.svg" width="1570"/></div>
+<figcaption>A real 60-block FloorSet floorplan. Faint blue lines are wires between blocks.</figcaption>
+</figure>
+<ul class="legend-list">
+<li class="group-head">Hard rules, must hold</li>
+<li><span class="sw" style="background:#EFECE7"></span><span><b>Area and no overlap.</b> Every block keeps its area, and no two blocks may intersect.</span></li>
+<li><span class="sw" style="background:#E8D5ED"></span><span><b>Fixed shape.</b> Some blocks come with a width and height that cannot change.</span></li>
+<li><span class="sw" style="background:#6A645F"></span><span><b>Pre-placed.</b> Some blocks are already nailed to a spot.</span></li>
+<li class="group-head">Soft rules, counted and penalized</li>
+<li><span class="sw" style="background:#F5E6C8"></span><span><b>Clusters.</b> Blocks of a group should touch each other.</span></li>
+<li><span class="sw" style="background:#D4EDE8"></span><span><b>Multi-instance blocks.</b> Copies of one design should share one shape.</span></li>
+<li><span class="sw" style="background:#D6E3F8"></span><span><b>Boundary blocks.</b> Some blocks must sit on a given edge of the chip.</span></li>
+</ul>
+</div>
+<div class="text">
+<p>Classical solvers such as simulated annealing face all of this inside their search, at the price of starting from scratch on every chip. Learning promises to amortize that search into a model, and a <strong>generative</strong> model fits the task: a chip admits many good floorplans rather than one, and a generator drafts complete layouts from that distribution in milliseconds.</p>
+</div>
+</section>
+<!-- 2 -->
+<section aria-labelledby="s2">
+<span class="kicker">The catch</span>
+<h2 id="s2">Existing generative placers put the rules everywhere except where the model learns, and score only the end</h2>
+<div class="text">
+<p>Existing diffusion placers train their networks only to reproduce reference layouts. The rules of the chip arrive afterwards, three times and in three different forms: a hand-tuned <strong>guidance</strong> term inside the sampler, <strong>post-hoc optimization loops</strong> of 500 to 5,000 iterations, and a <strong>legalizer</strong>. Compared with classical solvers, where every move faces the rules and the objectives together, the rules have migrated from the core of the search to the tail of a correction chain.</p>
+<p>The way these pipelines are evaluated hides the consequences. Only the final legalized layout is scored, and every stage writes the rules in its own form, so the layouts in between have no common measure. <strong>A weak generator behind a strong correction looks identical to a strong generator behind a weak one</strong>, and nobody can tell what the generator contributes, or what each correction costs.</p>
+</div>
+<figure>
+<div class="plate"><img alt="Left: existing pipelines with different constraint forms per stage and no constraints in training. Middle: Trinity with one physics across training, refinement and scoring. Right: soft cost against refinement budget." decoding="async" height="504" loading="lazy" src="assets/2026-trinity-teaser.png" width="1800"/></div>
+<figcaption><b>Left:</b> existing pipelines, rules absent from training (dashed), different at every stage (≠), intermediate layouts never measured. <b>Middle:</b> Trinity, one physics through training, refinement and scoring. <b>Right:</b> soft cost along refinement for every generator.</figcaption>
+</figure>
+</section>
+<!-- 3 -->
+<section aria-labelledby="s3">
+<span class="kicker">The idea</span>
+<h2 id="s3">Write the rules once, as physics, and use them everywhere</h2>
+<div class="text">
+<p>Every rule of floorplanning is a geometric quantity of the layout, so each can be written as a smooth function of block positions and shapes that is zero when the rule holds: the overlap area of every pair, the gap inside each cluster, the shape spread of each multi-instance group, the distance of each boundary block to its edge, plus the wirelength and the outline area. Their weighted sum <span class="m">U</span> is one <strong>energy</strong>, a physics of the layout. Trinity uses that one energy three times, the middle of the figure above.</p>
+</div>
+<div class="cards">
+<div class="card">
+<span class="tag train">train</span>
+<h3>A term of the training loss</h3>
+<p>The energy is added to the flow-matching loss on the network's clean prediction, so the model learns the rules together with the data instead of having them imposed after it.</p>
+</div>
+<div class="card">
+<span class="tag refine">refine</span>
+<h3>The energy of the refiner</h3>
+<p>After sampling, Adam descends the same energy with every gradient in closed form, about a millisecond per layout, on any generator's samples.</p>
+</div>
+<div class="card">
+<span class="tag score">score</span>
+<h3>The base of a soft cost</h3>
+<p>The same quantities extend the contest's hard cost to layouts that still overlap, so raw, refined and legalized layouts finally share one scale.</p>
+</div>
+</div>
+<figure>
+<div class="plate"><img alt="Architecture and pipeline of Trinity." decoding="async" height="504" loading="lazy" src="assets/2026-trinity-architecture.png" width="1800"/></div>
+<figcaption><b>Left:</b> the network, a plain transformer with one token per block; the netlist enters through the attention, a light graph layer and spectral coordinates. <b>Right:</b> generator, refiner and legalizer, one physics term shared by the loss and the refiner.</figcaption>
+</figure>
+</section>
+<!-- 4 -->
+<section aria-labelledby="s4">
+<span class="kicker">Why in training</span>
+<h2 id="s4">The physics term is a self-supervised loss that carries the rules where the data stops</h2>
+<h3>1 · What we train</h3>
+<div class="math">
+<div class="eq"><span class="m">ℒ</span>(θ) = 𝔼<sub>(<span class="m">c</span>, <span class="m">x</span><sub>0</sub>) ∼ data</sub> ‖ <span class="m">v̂</span> − <span class="m">v</span>(<span class="m">x</span><sub>0</sub>) ‖² + <span class="hl">λ 𝔼 [ <span class="m">U</span>(<span class="m">x̂</span><sub>0</sub> ; <span class="m">c</span>) ]</span>,   <span class="m">x̂</span><sub>0</sub> = <span class="m">m</span><sub>θ</sub>(<span class="m">x<sub>t</sub></span>, <span class="m">t</span>, <span class="m">c</span>)</div>
+<div class="note">Rectified flow with <span class="m">x<sub>t</sub></span> = (1 − <span class="m">t</span>) <span class="m">x</span><sub>0</sub> + <span class="m">t x</span><sub>1</sub>. The first term needs the reference layout <span class="m">x</span><sub>0</sub>. The second reads only the model's own prediction <span class="m">x̂</span><sub>0</sub> and the rules of chip <span class="m">c</span>; its constraint part is zero on every legal reference.</div>
+</div>
+<h3>2 · A self-supervised term</h3>
+<div class="text">
+<p>The physics term has no label. Its target is the rule set of the chip, which exists for every chip, with or without an answer. On the training data its constraint part leaves the fitted data unchanged: a model trained on references alone predicts the posterior mean <span class="m">x̄</span><sub>0</sub>, and the mean of legal layouts is not legal, because legal layouts do not form a convex set. With the term, the best prediction is that mean pulled one proximal step toward the rules, strongest at high noise and gone at <span class="m">t</span> = 0.</p>
+</div>
+<div class="math">
+<div class="eq"><span class="m">x̂</span><sub>0</sub><sup>⋆</sup> = prox<sub><span class="m">γ<sub>t</sub> U</span></sub>(<span class="m">x̄</span><sub>0</sub>) = argmin<sub><span class="m">m</span></sub> ½‖<span class="m">m</span> − <span class="m">x̄</span><sub>0</sub>‖² + <span class="m">γ<sub>t</sub> U</span>(<span class="m">m</span>),   <span class="hl"><span class="m">γ<sub>t</sub></span> = λ<span class="m">t</span>²/2</span></div>
+</div>
+<h3>3 · What it does where the data is silent</h3>
+<div class="text">
+<p>On a chip without a reference the flow loss has no target. The physics term still acts there, through the weights every chip shares. One training step of the term on chip <span class="m">c</span> changes the violation on any other chip <span class="m">c</span>′ at the rate</p>
+</div>
+<div class="math">
+<div class="eq">d<span class="m">U</span>′(<span class="m">x̂</span><sub>0</sub>(<span class="m">c</span>′)) / d<span class="m">η</span> = <span class="hl">−λ ∇<span class="m">U</span>′<sup>⊤</sup> <span class="m">K</span> ∇<span class="m">U</span></span>,   <span class="m">K</span> = <span class="m">J</span><sub><span class="m">c</span>′</sub> <span class="m">J</span><sub><span class="m">c</span></sub><sup>⊤</sup></div>
+<div class="note"><span class="m">J</span> is the Jacobian of the prediction in the weights. The violation on <span class="m">c</span>′ falls whenever the kernel <span class="m">K</span> aligns the two rule gradients. This and the proximal step above are checked in Lean 4 (Appendix D).</div>
+</div>
+<div class="text">
+<p>The rules are local, sums over pairs of blocks and over single blocks, and the network applies the same weights to every block. That is the setting in which <span class="m">K</span> is expected to align them, so a repair learned on 60-block chips can carry to 200-block ones. The data shows legality only by example; the term states the rule, and a rule transfers where examples do not.</p>
+</div>
+<h3>4 · The effect, trained</h3>
+<div class="text">
+<p>A toy trained once per weight shows all three.</p>
+</div>
+<div class="toy">
+<h3>A trained toy: blocks as disks</h3>
+<div class="toy-story">
+<div><span class="toy-step">1 · The data</span><p>Each training layout is a set of equal disks, the blocks, inside a square outline that grows with their number. Every training layout is legal: no two disks overlap and all stay inside. On top of the rule the data has its own taste, a compact cluster around the center. Training covers 4 to 10 disks only.</p></div>
+<div><span class="toy-step">2 · Data alone</span><p>The flow-matching loss regresses the posterior mean. In one step the generator outputs that mean, and every disk lands on the center of the cloud, a pile of overlapping blocks. With 32 steps it reproduces the compact look, but the data shows non-overlap only by example and never states it: <b id="toy-txt-d6"></b> of draws are legal at 6 disks and <b id="toy-txt-d10"></b> at 10, inside its own training range.</p></div>
+<div><span class="toy-step">3 · Data + physics</span><p>The rule is a sum over pairs of disks, the same at 6 disks as at 18. The term checks every prediction against it without a reference, so the network learns the rule instead of its examples: <b id="toy-txt-p6"></b> legal at 6 disks, <b id="toy-txt-p10"></b> at 10, and <b id="toy-txt-p14"></b> at 14, a size no training layout has, against <b id="toy-txt-d14"></b> without it (λ = <span id="toy-txt-lam"></span>).</p></div>
+</div>
+<figure class="toy-data">
+<canvas aria-label="Four training layouts with 4, 6, 8 and 10 disks." height="400" id="toy-ex" width="1600"></canvas>
+<figcaption>Training layouts with 4, 6, 8 and 10 disks. Dashed square: the outline.</figcaption>
+</figure>
+<div class="toy-ctl">
+<div aria-label="Number of disks" class="seg" role="group">
+<span>disks</span>
+<button data-n="6" type="button">6</button><button data-n="10" type="button">10</button>
+<span class="in">in data</span>
+<button aria-pressed="true" data-n="14" type="button">14</button><button data-n="18" type="button">18</button>
+<span class="out">beyond</span>
+</div>
+<div aria-label="Sampling steps" class="seg" role="group">
+<span>steps</span>
+<button data-nfe="8" type="button">8</button><button data-nfe="16" type="button">16</button><button aria-pressed="true" data-nfe="32" type="button">32</button>
+</div>
+<div aria-label="Physics weights to compare (several can be on)" class="seg" role="group">
+<span>λ (pick several)</span>
+<button data-lam="0.1" type="button">0.1</button><button data-lam="0.3" type="button">0.3</button><button aria-pressed="true" data-lam="1" type="button">1</button><button aria-pressed="true" data-lam="3" type="button">3</button><button data-lam="10" type="button">10</button><button aria-pressed="true" data-lam="30" type="button">30</button><button data-lam="100" type="button">100</button>
+</div>
+<button class="replay" id="toy-replay" type="button">Replay</button>
+</div>
+<div class="toy-grid">
+<div class="toy-panel">
+<h3>Trained on data only</h3>
+<canvas aria-label="Six samples of the data-only model." height="640" id="toy-d" width="960"></canvas>
+<span class="readout" id="toy-d-r"></span>
+</div>
+<div class="toy-panel">
+<h3 class="hl">Trained with the physics term, <span id="toy-lam-h">λ = 30</span></h3>
+<canvas aria-label="Six samples of the model trained with the physics term." height="640" id="toy-p" width="960"></canvas>
+<span class="readout" id="toy-p-r"></span>
+</div>
+</div>
+<div class="chart">
+<h3>Legal draws against the number of disks</h3>
+<span class="sub" id="toy-chart-sub"></span>
+<svg aria-label="Share of legal draws against the number of disks for both models." id="toy-chart" role="img" viewbox="0 0 760 280"></svg>
+</div>
+<span class="readout">Six draws from the same noise for both models; red disks overlap another disk or leave the outline. Legal means no overlap or overhang deeper than 2% of a disk radius, counted over 1,000 draws per size. Both models are the same 0.8 M-parameter set transformer, trained by rectified flow for 30k steps on the same data and seed; the other adds λ U(x̂<sub>0</sub>), U the squared overlap and overhang, with λ from 0.1 to 100, one model per λ. Pick several λ to compare their curves; the panels show the λ picked last. Nothing here is hand-made: every frame is a model output.</span>
+</div>
+<div class="text">
+<p>The difference shows when the chips get bigger than anything in training. FloorSet chips have 21 to 120 blocks. On the GSRC benchmarks, soft blocks must fit a square outline with 10% dead space (red dashed square). Below are the best legalized layouts of the same model trained with and without the physics term, each the best of 4 seeds × 16 draws.</p>
+</div>
+<div class="tbl-wrap" tabindex="0" role="region" aria-label="GSRC floorplanning comparison table">
+<table class="tbl">
+<thead>
+<tr><th rowspan="2">GSRC case</th><th class="grp" colspan="4">With physics (Trinity)</th><th class="grp" colspan="4">Without physics (λ = 0)</th><th rowspan="2">PARSAC<br/>WL</th></tr>
+<tr><th>WL (mm)</th><th>W × H</th><th>Dead space</th><th>Draws fit</th><th>WL (mm)</th><th>W × H</th><th>Dead space</th><th>Draws fit</th></tr>
+</thead>
+<tbody>
+<tr><td>n100, outline 444 × 444 <span class="in">in range</span></td><td class="b">294.7</td><td>433 × 423</td><td>2.1%</td><td>36%</td><td>293.9</td><td>444 × 413</td><td>2.0%</td><td>80%</td><td>303.5</td></tr>
+<tr><td>n200, outline 440 × 440 <span class="out">beyond</span></td><td class="b">554.9</td><td>434 × 407</td><td>0.7%</td><td class="b">100%</td><td>560.1</td><td class="bad">440 × 498</td><td>19.8%</td><td class="bad">0%</td><td>576.0</td></tr>
+<tr><td>n300, outline 548 × 548 <span class="out">far beyond</span></td><td>681.3</td><td class="bad">708 × 448</td><td>13.8%</td><td class="bad">0%</td><td>679.8</td><td class="bad">648 × 503</td><td>16.2%</td><td class="bad">0%</td><td>705.2</td></tr>
+</tbody>
+</table>
+</div>
+<p class="tnote">Best legalized layout over 4 seeds × 16 draws (NFE 8, 400 refiner steps). W × H is its outline against the 10% dead-space square; red marks an outline that does not fit. At n300 no draw fits, so the row shows the best legal layout. FloorSet training chips have 21 to 120 blocks.</p>
+<div class="text">
+<p>Inside the training range the two models tie (n100: 294.7 against 293.9 mm), as expected when the data already covers the case. At 200 blocks, almost twice the largest training chip, the physics term is the difference between a floorplan that fits with 0.7% dead space and one that cannot fit at all, at shorter wirelength too. At 300 blocks neither fits. That residual is a known open problem of transformer generators on sizes far beyond training, not of the physics, and it is where we see the next step.</p>
+</div>
+<h3>5 · Beyond floorplans</h3>
+<div class="text">
+<p>Nothing in the argument is specific to chips. Any diffusion or flow model can add a reference-free term on its own prediction <span class="m">x̂</span><sub>0</sub>. It helps when the term is zero on the data, computable on <span class="m">x̂</span><sub>0</sub>, and built from local parts that shared weights can carry: collisions and valence for molecules, steric clashes for proteins, equation residuals for physical fields, foot contact for motion. Its weight needs tuning: in the toy, λ = 30 is best beyond the data at 16 and 32 steps, while λ = 100 overshoots there and helps only at 8.</p>
+</div>
+</section>
+<!-- 5 -->
+<section aria-labelledby="s5">
+<span class="kicker">Stage by stage</span>
+<h2 id="s5">With one scale, every stage shows what it contributes</h2>
+<div class="text">
+<p>We re-implemented four existing diffusion placers, FlowPlace, ChipDiffusion, MacroDiff+ and DiffPlace, on the same data and training recipe, and scored every model at every stage on 12,000 held-out FloorSet chips with the soft cost.</p>
+</div>
+<div class="charts2">
+<div class="chart">
+<h3>The physics term improves every rule of the raw samples</h3>
+<span class="sub">Same plain transformer, physics term on (λ = 0.01) versus off: reduction of each quantity</span>
+<svg aria-label="Reductions with the physics term: boundary distance 69 percent, multi-instance spread 60, soft cost 25, cluster gap 14, overlap 7." id="chart-terms" role="img" viewbox="0 0 460 250"></svg>
+</div>
+<div class="chart">
+<h3>A usable floorplan from one network call</h3>
+<span class="sub">Soft cost of raw samples against sampling steps (log scale, lower is better)</span>
+<svg aria-label="Raw soft cost against sampling steps for five generators." id="chart-nfe" role="img" viewbox="0 0 460 250"></svg>
+</div>
+</div>
+<div class="chart">
+<h3>Our refiner against each placer's own loop, from the same raw samples</h3>
+<span class="sub">Soft cost against refinement steps or loop iterations. Lines: our refiner on each generator. Triangles: each placer's own loop at its released iteration count. Log scales.</span>
+<svg aria-label="Soft cost along our refiner for five generators, and each placer's own loop endpoint." id="chart-ref" role="img" viewbox="0 0 900 340"></svg>
+</div>
+<div class="text">
+<p>Three things become visible. <strong>The training term governs the start:</strong> it lowers raw soft cost and keeps Trinity ahead at short refinement budgets. <strong>The refiner governs the end:</strong> after a few hundred steps every generator converges near one value, and each one ends below where its own loop leaves it, reaching that loop's cost 16 to 660 times sooner. So <strong>generators should be compared under one shared refiner</strong>; under their own loops, the loops drive most of the gap. And the soft cost ranks settings the way the contest's hard cost does (Spearman 0.94), so these budgets can be chosen without running the legalizer.</p>
+</div>
+</section>
+<!-- 6 -->
+<section aria-labelledby="s6">
+<span class="kicker">End to end</span>
+<h2 id="s6">Legal floorplans, fast</h2>
+<div class="charts2">
+<div class="chart">
+<h3>After legalization</h3>
+<span class="sub">Hard cost of the first legalized draw: each generator with its own loop versus with our refiner</span>
+<svg aria-label="Hard cost with own loop versus with our refiner for each generator." id="chart-loop" role="img" viewbox="0 0 460 250"></svg>
+</div>
+<div class="stats" style="grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: start">
+<div class="stat"><span class="num">1.014</span><p>mean hard cost on the FloorSet validation set, best of 48 draws</p></div>
+<div class="stat"><span class="num">1.63 s</span><p>per chip on one GPU, legalization in parallel</p></div>
+<div class="stat"><span class="num">−36%</span><p>refined soft cost against the best existing pipeline</p></div>
+<div class="stat"><span class="num">≈1 ms</span><p>per layout for 400 refiner steps in a batch</p></div>
+</div>
+</div>
+<div class="text"><p><strong>More chips.</strong> The full pipeline on three FloorSet validation chips.</p></div>
+<div aria-label="Choose a chip" class="cases" role="group">
+<button aria-pressed="false" data-case="30" type="button">30 blocks</button>
+<button aria-pressed="true" data-case="60" type="button">60 blocks</button>
+<button aria-pressed="false" data-case="100" type="button">100 blocks</button>
+</div>
+<figure>
+<div class="plate"><video aria-label="Pipeline video for the selected chip" controls="" id="vid-case" loop="" muted="" playsinline="" poster="assets/2026-trinity-n60-poster.webp" preload="none"><source data-src="assets/2026-trinity-n60-pipeline.av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'/><source data-src="assets/2026-trinity-n60-pipeline.mp4" type="video/mp4"/></video><noscript><p><a href="assets/2026-trinity-n60-pipeline.mp4">View the floorplanning demonstration video</a></p></noscript></div>
+<figcaption>The video plays three stages. <b>Sampling</b>, 32 Euler steps with no guidance: the noisy state (left) and the network's clean prediction (right). <b>Refinement</b>, 400 steps of Adam on the same six functions: the raw sample (left) and the refined layout (right). <b>Legalization</b>, one linear program: the refined layout (left) and the legal floorplan (right).</figcaption>
+</figure>
+</section>
+<!-- 7 -->
+<section aria-labelledby="s7">
+<span class="kicker">Takeaways</span>
+<h2 id="s7">What we hope carries over</h2>
+<div class="takeaways">
+<div class="take"><h3>Measure every stage, not just the end</h3><p>The endpoint of a correction chain hides who did the work. With one scale for raw, refined and legalized layouts, the generator's contribution becomes visible.</p></div>
+<div class="take"><h3>Put the physics where the model learns</h3><p>A rule in the training loss becomes a correction the network performs for free, strongest when noisy and gone when clean. A rule in the sampler is a cruder substitute that keeps pushing on good layouts.</p></div>
+<div class="take"><h3>Compare generators under one refiner</h3><p>Under a shared refiner generators converge, while their own loops differ widely. Most reported gaps between pipelines come from the loops.</p></div>
+<div class="take"><h3>Choose budgets before the expensive step</h3><p>The soft cost ranks settings the way the legal hard cost does, so sampling and refinement budgets can be tuned without running the legalizer.</p></div>
+</div>
+</section>
+<section aria-labelledby="cite-h" id="citation">
+<span class="kicker">Citation</span>
+<h2 id="cite-h">BibTeX</h2>
+<div class="bib">
+<button class="btn" id="copy-bib" type="button">Copy</button>
+<pre id="bibtex" tabindex="0">{{PROJECT_BIBTEX}}</pre>
+</div>
+<span aria-live="polite" class="sr-only" id="citation-status" role="status"></span></section>
+</main>
+</div>
+<footer>
+<span>Published by Kohaku Lab</span>
+<span>Code under Apache-2.0 · <a href="https://github.com/Kohaku-Lab/Trinity">Kohaku-Lab/Trinity</a></span>
+<span class="project-credit"><a href="https://kohaku-lab.github.io/Trinity/">Original Project Page</a><span>Hosted by <a href="../../">Wuqian Tang</a></span><a href="LICENSE.txt">Code License</a><a href="NOTICE.txt">Notices</a></span></footer>
+
+<script defer="" src="assets/project.js?v=20261006-trinity"></script>
+</body>
+</html>

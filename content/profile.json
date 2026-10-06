@@ -59,6 +59,28 @@
   ],
   "news": [
     {
+      "date": "Oct 2026",
+      "datetime": "2026-10-04",
+      "text": "Trinity, our new preprint on generative floorplanning, is now available on arXiv.",
+      "resources": [
+        {
+          "label": "Project",
+          "url": "projects/trinity/",
+          "description": "Trinity project page"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.04957",
+          "description": "Trinity arXiv preprint"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/Kohaku-Lab/Trinity",
+          "description": "Trinity official code repository"
+        }
+      ]
+    },
+    {
       "date": "Sep 2026",
       "datetime": "2026-09",
       "text": "Our team won Second Place in the MLCAD 2026 Contest. Our invited paper, TAPCO, was presented at MLCAD 2026.",
@@ -134,6 +156,40 @@
     }
   ],
   "publications": [
+    {
+      "id": "p1",
+      "label": "P1",
+      "type": "preprint",
+      "authors": "Shih-Ying Yeh*, Tzu-Sian Wang*, Xuehai Wang, Jia-Hua Lee, Daniel Z. Kaplan, Ming-Qi Xu, Wuqian Tang, Chun-Yao Wang, Shang-Hong Lai, Chun-Yi Lee",
+      "title": "Trinity: One Differentiable Physics for Training, Refining and Scoring Generative Floorplanners",
+      "venue": "arXiv",
+      "acronym": "arXiv",
+      "year": 2026,
+      "details": "arXiv:2610.04957 · Submitted Oct. 4, 2026",
+      "status": "Preprint",
+      "selected": true,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.04957"
+        },
+        {
+          "label": "PDF",
+          "url": "files/papers/2026-arxiv-trinity.pdf"
+        },
+        {
+          "label": "Project",
+          "url": "projects/trinity/"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/Kohaku-Lab/Trinity"
+        }
+      ],
+      "pdf_source": "https://arxiv.org/pdf/2610.04957",
+      "arxiv_id": "2610.04957",
+      "version": "v1"
+    },
     {
       "id": "j1",
       "label": "J1",

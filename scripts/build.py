@@ -147,7 +147,7 @@ def timeline(item):
     date = esc(re.sub(r'\s*–\s*', ' – ', item['date']))
     return f'<article class="timeline-item"><div class="timeline-top"><h4>{esc(item["title"])}</h4><span class="timeline-date">{date}</span></div><p class="timeline-institution">{esc(item["institution"])}</p>{detail}</article>'
 
-def image_sitemap(profile):
+def image_sitemap(profile, projects):
     namespace = 'http://www.sitemaps.org/schemas/sitemap/0.9'
     image_namespace = 'http://www.google.com/schemas/sitemap-image/1.1'
     ET.register_namespace('', namespace)
@@ -155,13 +155,14 @@ def image_sitemap(profile):
     root = ET.Element(f'{{{namespace}}}urlset')
     homepage_images = ['assets/images/profile.jpg'] + [
         image['preview'] for image in profile['homepage_images'].values()]
-    entries = [('', homepage_images)] + [
-        (f'awards/{award["id"]}.html', [item['preview'] for item in award['media']])
+    entries = [('', homepage_images, profile['updated'])] + [
+        (f'awards/{award["id"]}.html', [item['preview'] for item in award['media']], profile['updated'])
         for award in profile['awards'] + profile['earlier_awards'] + profile['personal_awards']]
-    for path, images in entries:
+    entries += [(project['path'], project['images'], project['updated']) for project in projects]
+    for path, images, updated in entries:
         url = ET.SubElement(root, f'{{{namespace}}}url')
         ET.SubElement(url, f'{{{namespace}}}loc').text = profile['site_url'] + '/' + path
-        ET.SubElement(url, f'{{{namespace}}}lastmod').text = profile['updated']
+        ET.SubElement(url, f'{{{namespace}}}lastmod').text = updated
         for image in dict.fromkeys(images):
             node = ET.SubElement(url, f'{{{image_namespace}}}image')
             ET.SubElement(node, f'{{{image_namespace}}}loc').text = profile['site_url'] + '/' + image
@@ -182,6 +183,7 @@ def render():
     if p['chinese_name'] != '唐梧遷':
         raise ValueError('Unexpected Chinese name')
     papers = p['publications']
+    projects = json.loads((ROOT / 'content/projects.json').read_text())
     citations = json.loads((ROOT / 'content/citations.json').read_text())
     if len({paper['id'] for paper in papers}) != len(papers):
         raise ValueError('Duplicate publication identifiers')
@@ -191,21 +193,33 @@ def render():
     for paper in papers:
         citation = citations[paper['id']]
         bibtex = citation['bibtex']
-        match = re.match(r'^@(article|inproceedings)\{([A-Za-z0-9:_-]+),\n', bibtex)
+        match = re.match(r'^@(article|inproceedings|misc)\{([A-Za-z0-9:_-]+),\n', bibtex)
         if not match or not bibtex.endswith('}\n') or bibtex.count('{') != bibtex.count('}'):
             raise ValueError(f'Invalid BibTeX entry: {paper["id"]}')
         if match[2] in citation_keys:
             raise ValueError('Duplicate BibTeX citation key')
         citation_keys.add(match[2])
-        for field in ['author', 'title', 'year', 'journal' if paper['id'].startswith('j') else 'booktitle']:
+        preprint = paper.get('type') == 'preprint'
+        fields = ['author', 'title', 'year']
+        fields += ['eprint', 'archivePrefix', 'primaryClass', 'url'] if preprint else ['journal' if paper['id'].startswith('j') else 'booktitle']
+        for field in fields:
             if not re.search(rf'^  {field} = \{{.+\}},?$', bibtex, re.MULTILINE):
                 raise ValueError(f'Missing citation field {field}: {paper["id"]}')
         if not citation.get('sources') or not citation.get('verified_on'):
             raise ValueError(f'Citation requires verification provenance: {paper["id"]}')
         if paper['status'] == 'To appear' and 'note = {To appear}' not in bibtex:
             raise ValueError(f'Unpublished citation requires a To appear note: {paper["id"]}')
+        if preprint:
+            arxiv_id = paper.get('arxiv_id', '')
+            if (match[1] != 'misc' or paper['status'] != 'Preprint'
+                    or not re.fullmatch(r'\d{4}\.\d{4,5}', arxiv_id)
+                    or f'eprint = {{{arxiv_id}}}' not in bibtex
+                    or 'archivePrefix = {arXiv}' not in bibtex
+                    or f'url = {{https://arxiv.org/abs/{arxiv_id}}}' not in bibtex
+                    or 'note = {arXiv preprint}' not in bibtex):
+                raise ValueError(f'Preprint requires verified arXiv metadata: {paper["id"]}')
         dois = [link for link in paper['links'] if link['label'] == 'DOI']
-        if paper['status'] != 'To appear' and len(dois) != 1:
+        if not preprint and paper['status'] != 'To appear' and len(dois) != 1:
             raise ValueError(f'Published paper requires one verified DOI: {paper["id"]}')
         citation_doi = re.search(r'^  doi = \{([^}]+)\}', bibtex, re.MULTILINE)
         expected_doi = dois[0]['url'].removeprefix('https://doi.org/') if dois else None
@@ -218,7 +232,7 @@ def render():
                 raise ValueError(f'Paper PDF must be hosted in this repository: {paper["id"]}')
     selected = [paper for paper in papers if paper['selected']]
     others = [paper for paper in papers if not paper['selected']]
-    selected.sort(key=lambda paper: ['c17','c15','j1','j2','c3','c1'].index(paper['id']))
+    selected.sort(key=lambda paper: ['p1','c17','c15','j1','j2','c3','c1'].index(paper['id']))
     other_html = ''
     for year in sorted({paper['year'] for paper in others}, reverse=True):
         other_html += f'<h3 class="publication-year">{year}</h3>'
@@ -239,6 +253,11 @@ def render():
             raise ValueError('Recent News currently includes only 2026')
         resources = []
         for ri, resource in enumerate(n.get('resources', [])):
+            if 'url' in resource:
+                if not (resource['url'].startswith('https://') or any(resource['url'] == project['path'] for project in projects)):
+                    raise ValueError('News links must use HTTPS or a reviewed local project')
+                resources.append(f'<a href="{esc(resource["url"])}" aria-label="{esc(resource.get("description", resource["label"]))}">[{esc(resource["label"])}]</a>')
+                continue
             a = awards_by_id[resource['award']]
             if 'kind' in resource:
                 kind = resource['kind']
@@ -283,10 +302,20 @@ def render():
         raise ValueError(f'Unrendered content: {missing}')
     not_found = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Wuqian Tang</title><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png?v=20261003-small-tang"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=20261003-small-tang"><link rel="icon" type="image/svg+xml" sizes="any" href="/assets/favicon.svg?v=20261003-small-tang"><link rel="stylesheet" href="/assets/css/main.css"></head><body><main style="max-width:600px;margin:15vh auto;padding:24px"><p class="eyebrow">404</p><h1 style="margin:16px 0">Page not found</h1><p>The page may have moved. You can find my research, publications, and contact details on my homepage.</p><p style="margin-top:24px"><a href="/">Return to homepage</a></p></main></body></html>\n'
     not_found = not_found.replace('</head>', asset_redirect_script() + '</head>')
-    sitemap = image_sitemap(p)
+    sitemap = image_sitemap(p, projects)
     pages = {'index.html':index, '404.html':not_found, '.nojekyll':'', 'robots.txt':f'User-agent: *\nAllow: /\nSitemap: {p["site_url"]}/sitemap.xml\n', 'sitemap.xml':sitemap}
     for a in p['awards'] + p['earlier_awards'] + p['personal_awards']:
         pages[f'awards/{a["id"]}.html'] = gallery(a, p)
+    for project in projects:
+        if not re.fullmatch(r'projects/[a-z0-9-]+/', project['path']):
+            raise ValueError('Project pages must use a reviewed projects subdirectory')
+        template_path = Path(project['template'])
+        if template_path.is_absolute() or '..' in template_path.parts or template_path.parts[:2] != ('content', 'projects'):
+            raise ValueError('Project template must be inside content/projects')
+        template = (ROOT / template_path).read_text()
+        if template.count('{{PROJECT_BIBTEX}}') != 1:
+            raise ValueError('Project template must have one shared citation placeholder')
+        pages[project['path'] + 'index.html'] = template.replace('{{PROJECT_BIBTEX}}', esc(citations[project['citation']]['bibtex']))
     return {name: external_tabs(contents) if name.endswith('.html') else contents for name, contents in pages.items()}
 
 def audit(generated_files):

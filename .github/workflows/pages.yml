@@ -23,7 +23,9 @@ jobs:
       - name: Render and audit public files
         run: python3 scripts/build.py
       - name: Check JavaScript syntax
-        run: node --check site/assets/js/main.js
+        run: |
+          node --check site/assets/js/main.js
+          node --check site/projects/trinity/assets/project.js
       - name: Upload only the public site
         uses: actions/upload-pages-artifact@v3
         with:

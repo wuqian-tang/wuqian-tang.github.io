@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Trinity social preview artwork</title>
+<link rel="stylesheet" href="../../../site/projects/trinity/assets/fonts/fonts.css">
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; width: 1200px; height: 630px; overflow: hidden; background: #f8f6f2; color: #26221f; font-family: Inter, sans-serif; }
+.card { height: 100%; padding: 44px 52px 32px; position: relative; }
+.eyebrow { display:flex; justify-content:space-between; align-items:center; font-size:25px; font-weight:650; color:#756b61; }
+.mark { display:flex; align-items:center; gap:12px; }
+.mark::before { content:""; width:12px; height:12px; background:#c76235; border-radius:50%; }
+.layout { display:grid; grid-template-columns: 600px 1fr; gap:42px; align-items:center; margin-top:25px; }
+h1 { font-size:94px; letter-spacing:-5px; line-height:1; font-weight:750; color:#b9542f; margin:0 0 23px; }
+.subtitle { font-size:40px; line-height:1.21; letter-spacing:-1.2px; font-weight:620; margin:0; }
+.phases { display:flex; gap:12px; margin-top:28px; }
+.phases span { padding:10px 16px; border-radius:8px; font-size:23px; font-weight:600; background:#efe4d5; color:#7a4c24; }
+.phases span:nth-child(2) { background:#deede7; color:#35685a; }
+.phases span:nth-child(3) { background:#e6e1f1; color:#6b5291; }
+.illustration { background:#fffdf9; border:1px solid #e3dcd3; border-radius:20px; padding:18px 14px 13px; box-shadow:0 12px 32px #7352340b; transform:translateY(12px); }
+.illustration img { width:100%; height:273px; object-fit:contain; display:block; }
+.illustration p { font-size:23px; font-weight:550; color:#71655a; margin:13px 0 0; text-align:center; }
+footer { position:absolute; left:52px; right:52px; bottom:30px; display:flex; justify-content:space-between; border-top:1px solid #ded5cb; padding-top:20px; font-size:26px; color:#756b61; font-weight:550; }
+</style>
+</head>
+<body><div class="card">
+<div class="eyebrow"><span class="mark">GENERATIVE FLOORPLANNING</span><span>arXiv:2610.04957 · 2026</span></div>
+<div class="layout"><div><h1>Trinity</h1><p class="subtitle">One Differentiable Physics<br>for Generative Floorplanners</p><div class="phases"><span>Training</span><span>Refinement</span><span>Scoring</span></div></div>
+<div class="illustration"><img src="../../../site/projects/trinity/assets/2026-trinity-floorplan.svg" alt="An actual 60-block FloorSet reference floorplan"><p>One Physics. Three Stages.</p></div></div>
+<footer><span>Wuqian Tang · NTHU</span><span>wuqian-tang.github.io/projects/trinity/</span></footer>
+</div></body></html>

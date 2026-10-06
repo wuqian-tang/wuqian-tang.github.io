@@ -1,0 +1,243 @@
+{
+  "checked_on": "2026-10-06",
+  "responsive": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "initial_requests": [
+        "/projects/trinity/",
+        "/projects/trinity/assets/project.css?v=20261006-trinity",
+        "/projects/trinity/assets/fonts/fonts.css",
+        "/projects/trinity/assets/2026-trinity-n60-poster.webp",
+        "/projects/trinity/assets/project.js?v=20261006-trinity",
+        "/projects/trinity/assets/fonts/inter-7.woff2",
+        "/projects/trinity/assets/fonts/jetbrainsmono-13.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-19.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-25.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-22.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-16.woff2",
+        "/projects/trinity/assets/fonts/inter-4.woff2",
+        "/projects/trinity/assets/fonts/jetbrainsmono-10.woff2",
+        "/projects/trinity/assets/2026-trinity-floorplan.svg",
+        "/projects/trinity/assets/2026-trinity-teaser.png",
+        "/projects/trinity/assets/2026-trinity-architecture.png",
+        "/projects/trinity/assets/fonts/inter-6.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-18.woff2",
+        "/projects/trinity/assets/2026-trinity-n60-pipeline.av1.mp4"
+      ],
+      "toy_controls": true,
+      "video_cases": [
+        30,
+        60,
+        100
+      ],
+      "citations": true,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "initial_requests": [
+        "/projects/trinity/",
+        "/projects/trinity/assets/project.css?v=20261006-trinity",
+        "/projects/trinity/assets/fonts/fonts.css",
+        "/projects/trinity/assets/2026-trinity-n60-poster.webp",
+        "/projects/trinity/assets/project.js?v=20261006-trinity",
+        "/projects/trinity/assets/fonts/inter-7.woff2",
+        "/projects/trinity/assets/fonts/jetbrainsmono-13.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-19.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-25.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-22.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-16.woff2",
+        "/projects/trinity/assets/fonts/inter-4.woff2",
+        "/projects/trinity/assets/fonts/jetbrainsmono-10.woff2",
+        "/projects/trinity/assets/2026-trinity-floorplan.svg",
+        "/projects/trinity/assets/2026-trinity-teaser.png",
+        "/projects/trinity/assets/fonts/inter-6.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-18.woff2",
+        "/projects/trinity/assets/2026-trinity-architecture.png",
+        "/projects/trinity/assets/2026-trinity-n60-pipeline.av1.mp4"
+      ],
+      "toy_controls": true,
+      "video_cases": [
+        30,
+        60,
+        100
+      ],
+      "citations": true,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "initial_requests": [
+        "/projects/trinity/",
+        "/projects/trinity/assets/project.css?v=20261006-trinity",
+        "/projects/trinity/assets/fonts/fonts.css",
+        "/projects/trinity/assets/2026-trinity-n60-poster.webp",
+        "/projects/trinity/assets/project.js?v=20261006-trinity",
+        "/projects/trinity/assets/fonts/inter-7.woff2",
+        "/projects/trinity/assets/fonts/jetbrainsmono-13.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-19.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-25.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-22.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-16.woff2",
+        "/projects/trinity/assets/fonts/inter-4.woff2",
+        "/projects/trinity/assets/fonts/jetbrainsmono-10.woff2",
+        "/projects/trinity/assets/2026-trinity-floorplan.svg",
+        "/projects/trinity/assets/2026-trinity-teaser.png",
+        "/projects/trinity/assets/fonts/inter-6.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-18.woff2"
+      ],
+      "toy_controls": true,
+      "video_cases": [
+        30,
+        60,
+        100
+      ],
+      "citations": true,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "overflow": false,
+      "initial_requests": [
+        "/projects/trinity/",
+        "/projects/trinity/assets/project.css?v=20261006-trinity",
+        "/projects/trinity/assets/fonts/fonts.css",
+        "/projects/trinity/assets/2026-trinity-n60-poster.webp",
+        "/projects/trinity/assets/project.js?v=20261006-trinity",
+        "/projects/trinity/assets/fonts/inter-7.woff2",
+        "/projects/trinity/assets/fonts/jetbrainsmono-13.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-19.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-25.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-22.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-16.woff2",
+        "/projects/trinity/assets/fonts/inter-4.woff2",
+        "/projects/trinity/assets/fonts/jetbrainsmono-10.woff2",
+        "/projects/trinity/assets/2026-trinity-floorplan.svg",
+        "/projects/trinity/assets/2026-trinity-teaser.png",
+        "/projects/trinity/assets/fonts/inter-6.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-18.woff2",
+        "/projects/trinity/assets/2026-trinity-n60-pipeline.av1.mp4"
+      ],
+      "toy_controls": true,
+      "video_cases": [
+        30,
+        60,
+        100
+      ],
+      "citations": true,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "initial_requests": [
+        "/projects/trinity/",
+        "/projects/trinity/assets/project.css?v=20261006-trinity",
+        "/projects/trinity/assets/fonts/fonts.css",
+        "/projects/trinity/assets/2026-trinity-n60-poster.webp",
+        "/projects/trinity/assets/project.js?v=20261006-trinity",
+        "/projects/trinity/assets/fonts/inter-7.woff2",
+        "/projects/trinity/assets/fonts/jetbrainsmono-13.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-19.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-25.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-22.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-16.woff2",
+        "/projects/trinity/assets/fonts/inter-4.woff2",
+        "/projects/trinity/assets/fonts/jetbrainsmono-10.woff2",
+        "/projects/trinity/assets/2026-trinity-floorplan.svg",
+        "/projects/trinity/assets/fonts/inter-6.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-18.woff2"
+      ],
+      "toy_controls": true,
+      "video_cases": [
+        30,
+        60,
+        100
+      ],
+      "citations": true,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "initial_requests": [
+        "/projects/trinity/",
+        "/projects/trinity/assets/project.css?v=20261006-trinity",
+        "/projects/trinity/assets/fonts/fonts.css",
+        "/projects/trinity/assets/2026-trinity-n60-poster.webp",
+        "/projects/trinity/assets/project.js?v=20261006-trinity",
+        "/projects/trinity/assets/fonts/inter-7.woff2",
+        "/projects/trinity/assets/fonts/jetbrainsmono-13.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-19.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-25.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-22.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-16.woff2",
+        "/projects/trinity/assets/fonts/inter-4.woff2",
+        "/projects/trinity/assets/fonts/jetbrainsmono-10.woff2",
+        "/projects/trinity/assets/2026-trinity-floorplan.svg",
+        "/projects/trinity/assets/fonts/inter-6.woff2",
+        "/projects/trinity/assets/fonts/stixtwotext-18.woff2"
+      ],
+      "toy_controls": true,
+      "video_cases": [
+        30,
+        60,
+        100
+      ],
+      "citations": true,
+      "errors": [],
+      "failed": []
+    }
+  ],
+  "interactions": [
+    "Clipboard fallback for denied/missing API",
+    "Reduced motion stops videos and recorded animation",
+    "Dark theme renders all diagrams"
+  ],
+  "accessibility": [
+    {
+      "page": "homepage publications",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "page": "homepage publications",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "page": "project dark mobile",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "page": "project light desktop",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "page": "project dark desktop",
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "no_javascript": [
+    "Project text, static figures, local paper, citation and video fallback available",
+    "Homepage preprint citation native disclosure works"
+  ],
+  "errors": []
+}

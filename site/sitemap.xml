@@ -409,4 +409,20 @@
       <image:loc>https://wuqian-tang.github.io/assets/awards/badminton-2025/2025-badminton-photo-1-preview.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://wuqian-tang.github.io/projects/trinity/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <image:image>
+      <image:loc>https://wuqian-tang.github.io/projects/trinity/assets/2026-trinity-floorplan.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://wuqian-tang.github.io/projects/trinity/assets/2026-trinity-teaser.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://wuqian-tang.github.io/projects/trinity/assets/2026-trinity-architecture.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://wuqian-tang.github.io/projects/trinity/assets/2026-trinity-social-preview.jpg</image:loc>
+    </image:image>
+  </url>
 </urlset>

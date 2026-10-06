@@ -7,7 +7,21 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 资料命名与图片搜索信息（2026-10-06，最新）
+## Trinity 预印本与项目子页（2026-10-06，最新）
+
+- 用户审核并授权加入 Trinity 新闻、预印本条目和原宣传页的完整本地副本。Recent News 最上方新增 Oct 2026，文字为 `Trinity, our new preprint on generative floorplanning, is now available on arXiv.`，句末资源为 `[Project] [arXiv] [Code]`；Project 指向本站子页，外部链接继续新分页。
+- 新子页为 `https://wuqian-tang.github.io/projects/trinity/`，保留原页配色、完整论述、十位作者顺序、机构、共同一作与通讯作者标记、图表、统计表、实际模型输出的交互示例及 30/60/100-block 视频。顶部增加 Back to Homepage，底部保留 Kohaku Lab 署名并补原页、本站托管、LICENSE 和 NOTICE。没有向聊天平台发消息或发布宣传帖。
+- 以 gh-pages 固定版本 `8ad62521a0f486a32db33e77255b5ae4d9aa3e43` 为来源，原 HTML 和逐文件摘要留在 `content/projects/trinity/`；科学图片和六个视频字节保持一致。代码 LICENSE / NOTICE 来自 main 版本 `51334c5701945fd31f7b7f6797c85f2cb7098a6a`。本站副本明确标注原始来源。
+- Publications 首位新增 `[P1]`，完整题名为 `Trinity: One Differentiable Physics for Training, Refining and Scoring Generative Floorplanners`，标注 arXiv / Preprint / 2026，arXiv:2610.04957，Submitted Oct. 4, 2026。前两位作者带共同一作星号，本人加粗。共 22 篇，6 篇 Selected、16 篇 More；J/C 编号、旧引用和原有论文/奖项归属保持稳定。
+- 官方 arXiv v1 PDF 存入 `files/papers/2026-arxiv-trinity.pdf`，共 85 页、3,395,620 bytes。原页 arXiv soon 和 citation to appear 替换成真实链接和已核对引用；不把预印本标成会议录用。项目资源为 Paper / arXiv / Code / Models / BibTeX，无下载按钮。P1 资源行最后仍为 BibTeX。
+- 预印本引用依据官方 arXiv BibTeX 和 PDF，保存为 `@misc{trinity2026,...}`，含完整作者、eprint、archivePrefix、primaryClass、url 与 arXiv preprint note。构建脚本验证其字段，并将项目模板的 `{{PROJECT_BIBTEX}}` 替换为同一份引用。项目顶部和底部可一键复制，拒绝或缺少剪贴板 API 时滚到引用并选中文本以手动复制；无 JS 仍显示引用与视频直达链接。
+- 三种视频各有真实演示帧生成的 WebP poster（17.833333 秒、宽 1400px、quality 86），保持各自实际画面比例。视频进入视口才加载，离开或后台暂停；仅加载浏览器支持的编码。733,825 bytes 的交互轨迹 JSON 接近所在栏目时才加载，离开视口停止动画；减少动态效果时视频不自动播放、交互显示最终帧。项目字体本地托管，并附 Inter / JetBrains Mono / STIX Two Text 的 SIL OFL。
+- 子页独立分享图为 1200×630，采用实际 FloorSet 布局、Trinity、大字号方法说明、Training / Refinement / Scoring、arXiv 编号与本站地址；JPEG 129,415 bytes，保留 PNG 和 `content/projects/trinity/social-preview.html` 源码。子页有独立 canonical、Open Graph / Twitter large-card 与 ScholarlyArticle JSON-LD；首页分享图和 Google 验证标签保持原值。
+- sitemap 增加项目页及 4 个研究图/分享图，现有 35 个页面 URL、95 处图片引用、92 个不同图片 URL。公开资产 manifest 共 261 条；发布仍仅限 `site/`，源页面快照、预览和本地翻译草案不发布。
+- 本轮验证记录在 `preview/trinity-browser-validation.json` 和 `preview/trinity-static-validation.json`，截图为 `preview/trinity-*.png`。六种尺寸（1440 / 1024 / 844 / 820 / 390 / 320px）无整页横向溢出，全部完成视频切换、实际播放、交互控制及复制检查；深色模式、减少动态效果、复制拒绝与无 JS 回退通过。5 次自动无障碍扫描无报告项；为本地适配提高深色说明文字、表格异常值的对比度，手机演示按钮至少 44px，宽表格可键盘聚焦滚动。静态验证确认 36 个 HTML 页、674 处本地引用、112 个外部新分页锚点及全部资产摘要。继续维护时先查看这两份报告、最新 Pages 工作流与实际线上内容。
+- 后续论文出现新 arXiv 版本或正式发表时，分别核对 arXiv / 出版方元数据、PDF、`profile.json`、`citations.json`、项目页和 manifest；预印本正式录用后再更新 venue/status，保留已有 P1 引用锚点或明确兼容，不凭日期推断录用。原宣传页有后续变更时先比较固定版本再更新本地副本，不能盲目覆盖本站适配。
+
+## 资料命名与图片搜索信息（2026-10-06，上一版）
 
 - 用户审核并授权实施：文件名不加姓名，年份在最前面。活动、比赛资料使用 `年份-活动-资料类型-序号`，例如 `2026-iwls-contest-photo-1.jpg`、`2026-iwls-contest-certificate-1.jpg`；对应 WebP 使用同一主体加 `-preview.webp`。统一小写、连字符，现有相册目录、相册页面地址和奖项锚点保持稳定。
 - 206 个文件完成重命名，逐一核对新旧 SHA-256 一致；原图、PDF、WebP 和 PDF 用于生成预览的 JPEG 都没有重新编码。完整映射及迁移时摘要记录于 `content/asset-renames.json`；引用、公开 manifest、预览编码记录和 `optimize_images.py` 的原始图片入口同步更新。
@@ -221,7 +235,7 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 5. **News**：当前只展示 2026 年，倒序排列，保持短句，右侧为 Latest Updates。句末使用方括号链接到具体图片/奖状或对应公告；媒体在首页弹窗展示，外部网页在新分页打开。不使用 TAPCO 正文跳转。助教新闻筛选正确学期，不把旧学期图片混入新新闻。
 6. **奖项**：展开控件收起为 More ＋、展开为 Less −，可访问名称与可见文字同步。右侧标注 Selected，主列表显示精选条目，其余放入 More；More 中含 2020 ICPC 银牌、所有 Honorable Mention、Student Scholar Program Award 和 Mainland China Student Scholarship，不限于较早年份。标题保持普通深色文字。一般说明采用 `机构 · 描述`；会议比赛因标题已有简称，说明仅保留完整题目或比赛内容，不重复会议名称。MLCAD / IWLS 采用本页最新确认的题名；CADathlon 为 `ACM/SIGDA CADathlon Programming Contest · Olympic Games of EDA`，无引号；Student Scholar Program Award 只保留 IEEE/ACM ICCAD 会议全名。CSIE 系友／贡献奖、Synopsys 奖学金、陆生奖学金按本页例外仅保留机构。CAD Contest Problem 独立成条，用完整官方题名；每份照片、奖状、纪念牌只归属正确的 Problem，禁止重复挂载。条目末尾同行展示 `Materials: [Certificate] [Plaques] [Trophy] [Medal] [Photos] │ Announcements: [Official] [News] [University] [College] [Department]`，只列实际存在的资源，按数量用正确单复数。同类多张合为一个链接；窄屏允许自然换行。Materials 表示可查看的奖状、奖杯、奖牌、纪念牌及活动照片；Announcements 表示与该奖项对应的官方结果、报道和公告。浅灰竖线分隔两组，不重复写 news 后缀。不同 CAD Contest Problem 已分条，使用 `[Department]` 即可；同一条目多个年份可用 `[Department (2025)]` 区分。删除 Contest Website / Program Details 类型的链接。Hobbies 只有句末的 [Medal]，不单独起一行；照片本身可点击，避免重复 [Photo]。
 7. **外部来源**：对应具体奖项与年份，确认本人姓名或队伍。优先官方结果、系所、学院、学校和政府；不把通用首页、其他团队的成绩或旧年份名单当获奖公告。全部 http/https 外部链接使用 `target="_blank" rel="noopener noreferrer"`，即使禁用 JavaScript 也保留此行为。内部锚点正常定位，邮件链接保持 mailto。
-8. **论文**：甲骨文论文 J2 放在 More 的 2025 年分组。右侧仅标注 Selected，侧栏保留 Google Scholar，不重复在栏目右侧出现。标题下说明严格为 `* denotes equal contribution.`，不加括号或 Selected work.；更多论文的原生展开按钮收起为 More ＋、展开为 Less −，不显示篇数，可访问名称应能区分论文与奖项并跟随状态。编号 J1 / J2 / C1–C19 保持稳定，作者顺序完整，本人加粗，星号表示 equal contribution。Invited paper、In Chinese 与 To appear 分别按事实使用。除 To appear 外，每篇必须有一个经过核对的 DOI。查不到 DOI 时按用户要求标为 To appear；不得使用相似题目的 DOI。
+8. **论文**：甲骨文论文 J2 放在 More 的 2025 年分组。右侧仅标注 Selected，侧栏保留 Google Scholar，不重复在栏目右侧出现。标题下说明严格为 `* denotes equal contribution.`，不加括号或 Selected work.；更多论文的原生展开按钮收起为 More ＋、展开为 Less −，不显示篇数，可访问名称应能区分论文与奖项并跟随状态。编号 J1 / J2 / C1–C19 保持稳定，预印本另用 P1。Trinity 标注 arXiv / Preprint / 2026，使用正式 arXiv ID 与官方 `@misc` 引用，不虚构会议录用或待刊状态。所有论文作者顺序完整，本人加粗，星号表示 equal contribution。Invited paper、In Chinese 与 To appear 分别按事实使用。除 To appear 和明确标注的 arXiv 预印本外，每篇必须有一个经过核对的 DOI。查不到 DOI 时按用户要求标为 To appear；不得使用相似题目的 DOI。
 9. **论文 PDF**：优先正式官方全文或作者提供的可公开最终稿；下载后核对内容，存放 `site/files/papers/`。查看链接用 `files/papers/文件名.pdf`，不得链接其他人的个人网页、远程 PDF 或临时下载 token。保留 PDF 内容，在 manifest 记录来源与 SHA-256；如用户授权修改页面方向，还需记录 normalization。
 10. **照片**：沿用真实照片，不生成或改写人物。原始照片字节保持不变；PDF 如需转正，必须得到用户明确授权，只调整页面方向而不改扫描内容，并更新公开清单中的 SHA-256。首页羽毛球照片使用 4:3、`object-position: 50% 53%` 半身裁切；弹窗使用 `crop_top: 0.25` 只裁上方窗帘。方向先遵循正确 EXIF；2022 ICCAD 源 PDF 设置 270° 页面方向并重新生成正向预览，页面不再叠加旋转。图片有准确英文 alt，惰性加载，不在首页提前请求所有奖项图片。媒体点击直接在当前页弹窗，支持电脑两侧 / 手机图下的图标翻页、左右键、双向触控滑动、右上角图标关闭、Escape、焦点返回；翻页先解码新图，再用 100ms 淡出与 180ms 淡入配合 16px 水平位移，图框高度过渡 200ms；系统开启减少动态效果时取消这些动画；保留原相册作为无 JS / Ctrl 或 Cmd 点击回退。只有 View Original 查看链接，不添加下载按钮或 download 属性。
 11. **Teaching**：每门课程包含正式英文课程名、教师、所属系所或学院和学期；教师在前，系所在后，以 · 分隔。不同学院课程不能统一写成 CS。助教奖项括号采用 `Spring 2025` / `Fall 2025` 格式，表示教学对应学期；证书学年度第 1 学期转换为该学年开始公历年的 Fall，第 2 学期转换为下一公历年的 Spring。不得把次年 2 月或暑假颁发日期当成教学学期。Awards 日期列为颁发月份，说明与相册另注明实际学期。
@@ -239,7 +253,7 @@ Hobbies 用词参考了 [Siyuan Jiang 的学术主页](https://siyuanj.github.io
 | 文件 | 用途 |
 | --- | --- |
 | `content/profile.json` | 论文、奖项、月份、官方链接、课程和经历数据 |
-| `content/citations.json` | 21 篇 BibTeX 引用、来源与核对日期；需与论文数据同步维护 |
+| `content/citations.json` | 22 篇 BibTeX 引用、来源与核对日期；需与论文数据同步维护 |
 | `content/homepage.html` | 首页结构和 About Me / Hobbies 文案 |
 | `content/award-gallery.html` | 相册模板 |
 | `content/public-assets.json` | 明确审核的公开文件路径、来源和 SHA-256 |
