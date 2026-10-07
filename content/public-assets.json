@@ -1370,7 +1370,7 @@
   {
     "path": "files/Wuqian_Tang_CV.pdf",
     "sha256": "112126b6c9e017b4cfff0b4498fb9bc26b5fe08c950fa5a734c0bc4ce926b9b4",
-    "compatibility_alias_for": "files/cv.pdf"
+    "compatibility_alias_for": "files/cv-wqtang.pdf"
   },
   {
     "path": "files/papers/C1-Reverse-Engineering.pdf",
@@ -1692,5 +1692,11 @@
     "bytes": 122957,
     "encoding": "RGB JPEG quality 95, subsampling 0 (4:4:4), optimize=True",
     "portrait": "assets/images/profile-20261007.webp"
+  },
+  {
+    "path": "files/cv-wqtang.pdf",
+    "sha256": "112126b6c9e017b4cfff0b4498fb9bc26b5fe08c950fa5a734c0bc4ce926b9b4",
+    "source": "Owner-approved public CV, renamed from files/cv.pdf without altering PDF bytes",
+    "bytes": 122437
   }
 ]

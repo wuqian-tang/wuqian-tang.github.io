@@ -7,11 +7,18 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 系所与学校英文链接（2026-10-07，最新）
+## CV 文件名与系所中文链接（2026-10-07，最新）
+
+- 用户指定将 CV 主文件名改为 `cv-wqtang.pdf`。首页链接为 `files/cv-wqtang.pdf`，不带查询参数，点开后网址为 `https://wuqian-tang.github.io/files/cv-wqtang.pdf`；继续使用新分页查看 PDF。
+- PDF 内容保持原字节，旧 `files/cv.pdf` 和 `files/Wuqian_Tang_CV.pdf` 留作兼容副本。新主文件加入公开 manifest；以后编译 CV 时同步三份 PDF 及相应摘要，不能只更新旧文件。当前公开资产清单共 265 条。
+- 按用户补充要求，左侧栏系所链接使用中文官网 `https://dcs.site.nthu.edu.tw/`；NTHU 使用英文官网 `https://nthu-en.site.nthu.edu.tw/`。两项均继续新分页打开；这条最新语言选择取代上一轮的系所英文链接。
+- 更新首页模板、生成首页和维护说明；构建一致性与公开清单检查通过后推送 master，由 Pages 发布，再核对新链接的 HTTP 状态、PDF 类型及内容摘要。其余网页内容沿用已确认版本。
+
+## 系所与学校英文链接（2026-10-07，上一版）
 
 - 左侧栏 Department of Computer Science 新增官方英文主页 `https://dcs-en.site.nthu.edu.tw/`；National Tsing Hua University 改为学校官方英文主页 `https://nthu-en.site.nthu.edu.tw/`。About Me 中的 NTHU 链接同步使用英文入口；构建统一加上新分页及 `noopener noreferrer`。
 - 两个目标均已核对官方中文站的英文入口及实际英文页面，HTTPS 访问 HTTP 200。文字、布局、头像和分享图继续沿用已确认版本；更新时间仍为当天 2026-10-07。
-- 修改 `content/homepage.html` 后重新构建，检查公开文件清单、生成一致性及链接属性；推送 master 后由 Pages 发布并核对线上首页。以后维护时保留官方英文入口，不换回学校中文首页。
+- 修改 `content/homepage.html` 后重新构建，检查公开文件清单、生成一致性及链接属性；推送 master 后由 Pages 发布并核对线上首页。学校使用官方英文入口，系所语言以本文最新记录为准。
 
 ## 新头像与个人分享图（2026-10-07，上一版）
 
