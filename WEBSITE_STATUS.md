@@ -7,7 +7,13 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 新头像与个人分享图（2026-10-07，最新）
+## 系所与学校英文链接（2026-10-07，最新）
+
+- 左侧栏 Department of Computer Science 新增官方英文主页 `https://dcs-en.site.nthu.edu.tw/`；National Tsing Hua University 改为学校官方英文主页 `https://nthu-en.site.nthu.edu.tw/`。About Me 中的 NTHU 链接同步使用英文入口；构建统一加上新分页及 `noopener noreferrer`。
+- 两个目标均已核对官方中文站的英文入口及实际英文页面，HTTPS 访问 HTTP 200。文字、布局、头像和分享图继续沿用已确认版本；更新时间仍为当天 2026-10-07。
+- 修改 `content/homepage.html` 后重新构建，检查公开文件清单、生成一致性及链接属性；推送 master 后由 Pages 发布并核对线上首页。以后维护时保留官方英文入口，不换回学校中文首页。
+
+## 新头像与个人分享图（2026-10-07，上一版）
 
 - 用户已确认采用新浅蓝衣服、白底头像，并授权直接更新和上线。来源为工作目录的 `photo.png`，1122×1402、1,918,886 bytes；原文件未修改，SHA-256 为 `a9dc63065c516797b02148886be4981a28ae51b27a0a0e8ea6bdf91149b4515b`。原 PNG 不复制到公开 `site/`。
 - 新公开头像为 `assets/images/profile-20261007.webp`，800×1000、43,832 bytes，Lanczos 缩小、WebP quality 86 / method 6；文件保留原构图。网页通过居中 `object-fit: cover` 和 `aspect-ratio: 413 / 603` 收紧两侧，约对应原图左右各 81px，不裁掉头顶或肩部。桌面 / 平板 / 手机既有宽度、圆角及右上 29px、左下 58px 浅蓝角线保持原规范；原 `assets/images/profile.jpg` 保留以兼容旧链接。
