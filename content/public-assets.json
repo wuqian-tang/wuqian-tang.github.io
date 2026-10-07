@@ -1661,5 +1661,36 @@
     "source": "content/projects/trinity/social-preview.html",
     "width": 1200,
     "height": 630
+  },
+  {
+    "path": "assets/images/profile-20261007.webp",
+    "sha256": "ed4d2149c4f87bcf8b22a336a44f4795462cc1d1f0e5203ce9aabf0033d19260",
+    "source": "Owner-supplied photo.png (local original retained)",
+    "source_sha256": "a9dc63065c516797b02148886be4981a28ae51b27a0a0e8ea6bdf91149b4515b",
+    "width": 800,
+    "height": 1000,
+    "bytes": 43832,
+    "encoding": "WebP quality 86, method 6; downsampled with Lanczos, full framing preserved",
+    "display_crop": "Centered CSS cover at 413:603 aspect ratio; retain full height"
+  },
+  {
+    "path": "assets/images/social-preview-20261007-v1.png",
+    "sha256": "44149a13961207c6c610b79fe987f547b1f82bf56b0e62cca143e8a781df1dc0",
+    "source": "content/social-preview.html, rendered in Chromium at 1200 x 630, device scale 1",
+    "width": 1200,
+    "height": 630,
+    "bytes": 157918,
+    "encoding": "RGB PNG screenshot",
+    "portrait": "assets/images/profile-20261007.webp"
+  },
+  {
+    "path": "assets/images/social-preview-20261007-v1.jpg",
+    "sha256": "2c7036fd3fb2fae3d9efbce63a8b1adbad344fe41a4d8cb2f4dc0d80bbe683d7",
+    "source": "content/social-preview.html, rendered in Chromium at 1200 x 630, device scale 1",
+    "width": 1200,
+    "height": 630,
+    "bytes": 122957,
+    "encoding": "RGB JPEG quality 95, subsampling 0 (4:4:4), optimize=True",
+    "portrait": "assets/images/profile-20261007.webp"
   }
 ]

@@ -53,7 +53,7 @@ strong { font-weight: 600; }
 .portrait-wrap { width: 174px; margin-bottom: 1.65rem; position: relative; }
 .portrait-wrap::after { content: ""; position: absolute; left: -9px; bottom: -9px; width: 58px; height: 58px; border-left: 2px solid #b5cbea; border-bottom: 2px solid #b5cbea; border-bottom-left-radius: 11px; z-index: -1; }
 .portrait-wrap::before { content: ""; position: absolute; top: -9px; right: -9px; width: 29px; height: 29px; border-top: 2px solid #b5cbea; border-right: 2px solid #b5cbea; border-top-right-radius: 11px; z-index: -1; }
-.portrait { width: 174px; border-radius: 10px; }
+.portrait { width: 174px; aspect-ratio: 413 / 603; object-fit: cover; object-position: 50% 50%; border-radius: 10px; }
 .profile h1 { font-size: 1.8rem; letter-spacing: -.04em; }
 .chinese-name { display: block; margin-top: .55rem; font-size: 1.08rem; letter-spacing: .035em; font-weight: 500; }
 .profile-role { color: var(--blue); margin-top: 1rem; font-size: .93rem; font-weight: 650; }

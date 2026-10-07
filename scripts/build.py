@@ -153,7 +153,7 @@ def image_sitemap(profile, projects):
     ET.register_namespace('', namespace)
     ET.register_namespace('image', image_namespace)
     root = ET.Element(f'{{{namespace}}}urlset')
-    homepage_images = ['assets/images/profile.jpg'] + [
+    homepage_images = ['assets/images/profile-20261007.webp'] + [
         image['preview'] for image in profile['homepage_images'].values()]
     entries = [('', homepage_images, profile['updated'])] + [
         (f'awards/{award["id"]}.html', [item['preview'] for item in award['media']], profile['updated'])

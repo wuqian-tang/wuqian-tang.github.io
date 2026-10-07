@@ -1,0 +1,236 @@
+{
+  "checked_on": "2026-10-07",
+  "base_url": "http://127.0.0.1:8770/",
+  "responsive": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "portrait": {
+        "src": "http://127.0.0.1:8770/assets/images/profile-20261007.webp",
+        "naturalWidth": 800,
+        "naturalHeight": 1000,
+        "width": 174,
+        "height": 254.046875,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "radius": "10px",
+        "aspectRatio": "413 / 603",
+        "fetchPriority": "high",
+        "corners": {
+          "topRight": "29px",
+          "bottomLeft": "58px"
+        }
+      },
+      "contacts": {
+        "email": {
+          "x": 124,
+          "y": 633.625,
+          "width": 244,
+          "height": 24.5
+        },
+        "location": {
+          "x": 124,
+          "y": 601.125,
+          "width": 244,
+          "height": 24.5
+        }
+      },
+      "profile_requests": [
+        "http://127.0.0.1:8770/assets/images/profile-20261007.webp"
+      ],
+      "horizontal_overflow": false,
+      "selected_publications": 5,
+      "more_publications": 17,
+      "errors": []
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "portrait": {
+        "src": "http://127.0.0.1:8770/assets/images/profile-20261007.webp",
+        "naturalWidth": 800,
+        "naturalHeight": 1000,
+        "width": 144,
+        "height": 210.234375,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "radius": "10px",
+        "aspectRatio": "413 / 603",
+        "fetchPriority": "high",
+        "corners": {
+          "topRight": "29px",
+          "bottomLeft": "58px"
+        }
+      },
+      "contacts": {
+        "email": {
+          "x": 200,
+          "y": 283.375,
+          "width": 592,
+          "height": 24.5
+        },
+        "location": {
+          "x": 200,
+          "y": 250.875,
+          "width": 592,
+          "height": 24.5
+        }
+      },
+      "profile_requests": [
+        "http://127.0.0.1:8770/assets/images/profile-20261007.webp"
+      ],
+      "horizontal_overflow": false,
+      "selected_publications": 5,
+      "more_publications": 17,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "portrait": {
+        "src": "http://127.0.0.1:8770/assets/images/profile-20261007.webp",
+        "naturalWidth": 800,
+        "naturalHeight": 1000,
+        "width": 100,
+        "height": 146,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "radius": "7px",
+        "aspectRatio": "413 / 603",
+        "fetchPriority": "high",
+        "corners": {
+          "topRight": "29px",
+          "bottomLeft": "58px"
+        }
+      },
+      "contacts": {
+        "email": {
+          "x": 22,
+          "y": 268.1875,
+          "width": 346,
+          "height": 24.5
+        },
+        "location": {
+          "x": 22,
+          "y": 300.6875,
+          "width": 346,
+          "height": 22.75
+        }
+      },
+      "profile_requests": [
+        "http://127.0.0.1:8770/assets/images/profile-20261007.webp"
+      ],
+      "horizontal_overflow": false,
+      "selected_publications": 5,
+      "more_publications": 17,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 650,
+      "portrait": {
+        "src": "http://127.0.0.1:8770/assets/images/profile-20261007.webp",
+        "naturalWidth": 800,
+        "naturalHeight": 1000,
+        "width": 85,
+        "height": 124.09375,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "radius": "7px",
+        "aspectRatio": "413 / 603",
+        "fetchPriority": "high",
+        "corners": {
+          "topRight": "29px",
+          "bottomLeft": "58px"
+        }
+      },
+      "contacts": {
+        "email": {
+          "x": 17,
+          "y": 284.40625,
+          "width": 286,
+          "height": 24.5
+        },
+        "location": {
+          "x": 17,
+          "y": 316.90625,
+          "width": 286,
+          "height": 22.75
+        }
+      },
+      "profile_requests": [
+        "http://127.0.0.1:8770/assets/images/profile-20261007.webp"
+      ],
+      "horizontal_overflow": false,
+      "selected_publications": 5,
+      "more_publications": 17,
+      "errors": []
+    }
+  ],
+  "no_javascript": {
+    "width": 390,
+    "portrait_visible": true,
+    "horizontal_overflow": false
+  },
+  "static": {
+    "source_dimensions": [
+      1122,
+      1402
+    ],
+    "source_sha256": "a9dc63065c516797b02148886be4981a28ae51b27a0a0e8ea6bdf91149b4515b",
+    "source_unchanged": true,
+    "previous_assets_unchanged": 261,
+    "manifest_entries": 264,
+    "assets": [
+      {
+        "path": "assets/images/profile-20261007.webp",
+        "bytes": 43832,
+        "dimensions": [
+          800,
+          1000
+        ],
+        "mode": "RGB",
+        "sha256": "ed4d2149c4f87bcf8b22a336a44f4795462cc1d1f0e5203ce9aabf0033d19260"
+      },
+      {
+        "path": "assets/images/social-preview-20261007-v1.png",
+        "bytes": 157918,
+        "dimensions": [
+          1200,
+          630
+        ],
+        "mode": "RGB",
+        "sha256": "44149a13961207c6c610b79fe987f547b1f82bf56b0e62cca143e8a781df1dc0"
+      },
+      {
+        "path": "assets/images/social-preview-20261007-v1.jpg",
+        "bytes": 122957,
+        "dimensions": [
+          1200,
+          630
+        ],
+        "mode": "RGB",
+        "sha256": "2c7036fd3fb2fae3d9efbce63a8b1adbad344fe41a4d8cb2f4dc0d80bbe683d7"
+      }
+    ],
+    "personal_pages_share_metadata": 34,
+    "trinity_page_unchanged": true,
+    "profile_content_unchanged_except_update_date": true,
+    "google_verification_retained": true,
+    "sitemap": {
+      "page_urls": 35,
+      "image_references": 95,
+      "unique_images": 92,
+      "portrait_updated": true
+    },
+    "original_png_published": false,
+    "old_public_portrait_retained": true
+  },
+  "visual_review": {
+    "desktop_1440": true,
+    "tablet_820": true,
+    "phone_320": true,
+    "share_artwork_1200x630": true,
+    "framing": "Full head, top margin and shoulders retained; horizontal crop only"
+  }
+}

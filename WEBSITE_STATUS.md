@@ -1,13 +1,23 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-10-06。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-10-07。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wuqian-tang.github.io](https://wuqian-tang.github.io/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## Trinity 移入 More 与项目页字体调整（2026-10-06，最新）
+## 新头像与个人分享图（2026-10-07，最新）
+
+- 用户已确认采用新浅蓝衣服、白底头像，并授权直接更新和上线。来源为工作目录的 `photo.png`，1122×1402、1,918,886 bytes；原文件未修改，SHA-256 为 `a9dc63065c516797b02148886be4981a28ae51b27a0a0e8ea6bdf91149b4515b`。原 PNG 不复制到公开 `site/`。
+- 新公开头像为 `assets/images/profile-20261007.webp`，800×1000、43,832 bytes，Lanczos 缩小、WebP quality 86 / method 6；文件保留原构图。网页通过居中 `object-fit: cover` 和 `aspect-ratio: 413 / 603` 收紧两侧，约对应原图左右各 81px，不裁掉头顶或肩部。桌面 / 平板 / 手机既有宽度、圆角及右上 29px、左下 58px 浅蓝角线保持原规范；原 `assets/images/profile.jpg` 保留以兼容旧链接。
+- 个人分享图换用新头像，1200×630、既有文字和布局。新增 `social-preview-20261007-v1.png`（157,918 bytes）与 RGB JPEG `social-preview-20261007-v1.jpg`（122,957 bytes，quality 95、4:4:4、optimized）。首页及全部 33 个相册的 OG / Twitter / image_src 使用同一绝对 HTTPS JPEG 地址；旧分享图继续可访问。Trinity 子页及其独立分享图保持上一版。
+- CSS 缓存版本改为 `20261007-profile`；JS 版本不变。首页及相册的更新时间为 2026-10-07，sitemap 头像地址同步；35 个页面 URL、95 处图片引用、92 个不同图片 URL 的数量不变。Google 验证标签保留。
+- 验收记录为 `preview/profile-update-validation.json`，截图为 `preview/profile-20261007-{1440,820,390,320}.png`，另有 `profile-20261007-crop.png`。实际浏览器确认新 WebP 解码、413:603 显示比例、手机邮箱 / 地点对齐、无横向溢出、无 JS 头像可见；普通浏览只请求新约 44 KB WebP，不请求原 PNG 或旧头像。人工查看电脑、平板、小手机及分享图，确认头部和肩部构图完整。
+- 当前 22 篇论文、5 篇 Selected / 17 篇 More 和全部论文、奖项内容保持既有记录。上一版 261 个 manifest 资产逐字节不变，新清单共 264 条。构建一致性、公开文件清单和 JS 语法通过；本轮随 master 推送由 GitHub Pages 发布，维护时核对最新工作流及线上首页、新头像和分享图。翻译草案 `MULTILINGUAL_NOTES.md` 仍只留本地，不纳入本轮提交。
+- 以后换头像时同步修改 `content/homepage.html`、`content/social-preview.html` 与 `scripts/build.py` 的 sitemap 头像入口，记录新派生文件参数及摘要；重新生成 PNG / JPEG 分享图，更新个人页面模板中的版本地址后运行构建。分享平台已生成的卡片可能保留缓存，本轮不声称清除其服务端缓存。
+
+## Trinity 移入 More 与项目页字体调整（2026-10-06，上一版）
 
 - 用户要求直接修改并上线。Trinity `[P1]` 移入 Publications → More 的 2026 年分组，位于该年首项；当前共 22 篇，5 篇 Selected、17 篇 More。Recent News 的 Oct 2026 新闻与 Project 链接继续作为子页入口，`#paper-p1` 直接访问会自动展开 More。
 - 项目页正文使用与主页完全相同的系统无衬线字体栈，正文 15px / 1.75 行高，简介 16px；主标题从原来的最大 48px 降为 26–32px，栏目标题与主页统一为桌面 25.6px、手机 23.2px，字重 650。作者为桌面 14px / 手机 13px，机构、图注与公式说明 13px；子标题约 16px，表格和引用代码相应缩小。保留数学字体 STIX Two Text 和数据等宽字体 JetBrains Mono，避免公式与数值阅读受影响。
@@ -120,7 +130,7 @@
 
 ## 当前完成的内容
 
-- 英文主页，姓名为 Wuqian Tang（唐梧遷）；保留原头像、LinkedIn、Google Scholar、公开版 CV。
+- 英文主页，姓名为 Wuqian Tang（唐梧遷）；使用最新确认的浅蓝衣服头像，保留 LinkedIn、Google Scholar、公开版 CV。
 - Recent News 只保留 2026 年，目前 4 条；右侧使用 Latest Updates。句末加方括号资源链接，移除 TAPCO 的正文跳转。助教新闻仅对应 Spring 2026 的奖状、奖杯与照片。
 - 删除 About Me 最后的研究标签、甲骨文研究介绍句和 Technical Skills 栏目；甲骨文论文仍保留在 Publications 中。
 - 主栏目与 Education、Work Experience 等子标题统一为 Title Case，取消子标题的 CSS 全大写转换。
