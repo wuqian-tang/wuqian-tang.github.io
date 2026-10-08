@@ -1707,5 +1707,13 @@
     "pages": 15,
     "presentation_date": "2026-09-08",
     "encoding": "Original PDF bytes preserved"
+  },
+  {
+    "path": "files/slides/2026-dac-hypas-slides.pdf",
+    "sha256": "1cd74e7fd6620481bcbf2e0c37d3d389fd6d84dca6d60cc1e232546e480ea75b",
+    "source": "Owner-provided HyPAS(1).pdf",
+    "bytes": 3123316,
+    "pages": 11,
+    "encoding": "Original PDF bytes preserved"
   }
 ]

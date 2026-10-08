@@ -320,6 +320,10 @@
         {
           "label": "PDF",
           "url": "files/papers/2026-dac-hypas.pdf"
+        },
+        {
+          "label": "Slides",
+          "url": "files/slides/2026-dac-hypas-slides.pdf"
         }
       ],
       "doi_verified_on": "2026-10-03",

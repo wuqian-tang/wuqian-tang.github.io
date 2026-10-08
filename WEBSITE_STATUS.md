@@ -7,7 +7,14 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## Recent News 待公布标记精简（2026-10-08，最新）
+## HyPAS Slides（2026-10-08，最新）
+
+- 用户授权将工作目录的 `HyPAS(1).pdf` 加入 HyPAS（C15）论文条目，并在上线核对后删除外部原文件。网站副本为 `site/files/slides/2026-dac-hypas-slides.pdf`，11 页、3,123,316 bytes，题名和作者已与论文核对；保留原始 PDF 字节，SHA-256 为 `1cd74e7fd6620481bcbf2e0c37d3d389fd6d84dca6d60cc1e232546e480ea75b`。
+- HyPAS 资源顺序为 DOI / PDF / Slides / BibTeX，与 TAPCO 一致；Slides 新分页打开，没有下载按钮或 download 属性，无 JS 时仍可查看。沿用已有构建与样式，不新增渲染逻辑。
+- 更新论文链接、公开 manifest、生成首页及维护说明。manifest 从 266 增至 267 条，只新增这一份 Slides PDF；其他论文资料、引用、照片、CV、奖项及新闻保持上一版。ICCAD 2026 Recent News 句末仍仅为单个 `[to appear]`，Awards 保留两组占位。本地翻译草案不纳入提交。
+- 构建一致性、文件清单与链接顺序通过检查后推送 master，由 Pages 发布；核对匿名首页、Slides 的 HTTP 200 / application/pdf 和原文件摘要，再删除外部 `HyPAS(1).pdf`。未来替换 slides 时同步文件及 manifest，保持年份在前的命名与本地链接。
+
+## Recent News 待公布标记精简（2026-10-08，上一版）
 
 - 按用户补充要求，最新新闻完整显示为 `Our team has been selected for an Honorable Mention in Problem A of the ICCAD 2026 CAD Contest. [to appear]`，句末仅一个浅灰纯文本占位，不显示 Materials、Announcements 或分隔符。
 - 新闻使用独立的 `resources` 项：`label: "to appear"`、`pending: true`；构建支持直接渲染方括号占位。Awards → More 继续保留 `Materials: [to appear] │ Announcements: [to appear]`，日期和 TAPCO Slides 保持上一版。
@@ -183,7 +190,7 @@
 - 所有外部链接使用新分页及 noopener/noreferrer；页面没有 download 属性或下载按钮。保留普通 CV / 论文 PDF 查看链接与 View Original。
 - 删除 My name is highlighted;，本人作者名仍加粗。
 - Publications 共 22 篇：18 篇有经过核对的 DOI，3 篇标记 To appear，另有 1 篇 arXiv Preprint。所有页面上的论文 PDF 链接都指向本仓库。
-- 已本地托管 6 篇论文 PDF：J1 CB-EVO、J2 甲骨文论文、C1 DATE 2024、C15 HyPAS、C17 TAPCO、P1 Trinity；另有 C17 的 15 页 Slides PDF。TAPCO 论文只提取了最终稿，没有公开申请目录或其他申请资料。
+- 已本地托管 6 篇论文 PDF：J1 CB-EVO、J2 甲骨文论文、C1 DATE 2024、C15 HyPAS、C17 TAPCO、P1 Trinity；另有 C17 的 15 页与 C15 的 11 页 Slides PDF。TAPCO 论文只提取了最终稿，没有公开申请目录或其他申请资料。
 
 ## 最新一轮修改（2026-10-03）
 
