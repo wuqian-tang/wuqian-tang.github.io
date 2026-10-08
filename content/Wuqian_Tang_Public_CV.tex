@@ -30,7 +30,14 @@
 % Word uses 11 bp type and tighter word spaces in the course rows.
 \newcommand{\course}[3]{\begingroup\frenchspacing\spaceskip=2.46bp
   \setbox2=\copy\strutbox\fontsize{11bp}{15.84bp}\selectfont\setbox\strutbox=\copy2
-  \row[3.888bp]{\makebox[10.92bp][l]{\textbullet}#1 \gray{(#2)}}{#3\kern-.1bp}\endgroup}
+  \setbox4=\hbox{\makebox[10.92bp][l]{\textbullet}#1 \gray{(#2)}}
+  \setbox6=\hbox{\textit{#3}\kern-.1bp}
+  \ifdim\dimexpr\wd4+\wd6+10.56bp+6bp\relax>\textwidth
+    \row[3.888bp]{\parbox[t]{\dimexpr\textwidth-10.56bp-\wd6-6bp\relax}{%
+      \raggedright\hangindent=10.92bp\noindent\makebox[10.92bp][l]{\textbullet}#1 \gray{(#2)}}}{#3\kern-.1bp}%
+  \else
+    \row[3.888bp]{\makebox[10.92bp][l]{\textbullet}#1 \gray{(#2)}}{#3\kern-.1bp}%
+  \fi\endgroup}
 % Label, authors, full title, full venue, acronym, complete publication details.
 % Justify both edges; the last line keeps natural spacing. All lines share the left edge.
 \newcommand{\publication}[6]{\par\nointerlineskip\moveright10.56bp\vbox{\hsize=\dimexpr\textwidth-10.56bp\relax
@@ -218,7 +225,7 @@
 \cvsection{Teaching Experience}
 \row{\textbf{Teaching Assistant, National Tsing Hua University}}{Hsinchu, Taiwan}
 \course{Introduction to Programming}{Prof. Yu-Guang Chen, Department of Electrical Engineering}{Fall 2026}
-\course{Hardware Security}{Prof. Yu-Guang Chen and Prof. TingTing Hwang, Department of CS}{Spring 2026}
+\course{Hardware Security}{Prof. Yu-Guang Chen and Prof. TingTing Hwang, \mbox{Institute of Information Security}}{Spring 2026}
 \course{Advanced Logic Synthesis}{Prof. TingTing Hwang, Department of Computer Science}{Spring 2025, Spring 2026}
 \course{Introduction to Integrated Circuit Design}{Prof. Yu-Guang Chen, Department of Computer Science}{Fall 2025}
 \course{Computer Architecture}{Prof. TingTing Hwang, Department of Computer Science}{Fall 2024, Fall 2025}

@@ -179,6 +179,8 @@ figcaption { font-size: .8125rem; color: var(--muted); margin-top: .65rem; line-
 .course-list li:last-child { border-bottom: none; }
 .course-name { font-size: .9375rem; font-weight: 550; }
 .course-instructors { color: var(--muted); font-size: .8125rem; margin-top: .15rem; }
+.course-evaluations { display: inline-block; white-space: nowrap; text-decoration: none; }
+.course-evaluations:hover { text-decoration: underline; }
 .course-terms { font-size: .8125rem; color: var(--muted); text-align: right; }
 .teaching-recognition { margin-top: 1.2rem; font-size: .8125rem; color: #355782; background: var(--tint); border-left: 2px solid #9cb6dc; padding: .7rem 1rem; }
 .muted { color: var(--muted); }

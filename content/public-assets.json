@@ -1369,8 +1369,9 @@
   },
   {
     "path": "files/Wuqian_Tang_CV.pdf",
-    "sha256": "112126b6c9e017b4cfff0b4498fb9bc26b5fe08c950fa5a734c0bc4ce926b9b4",
-    "compatibility_alias_for": "files/cv-wqtang.pdf"
+    "sha256": "5181ab1a45c6b7a3e739c16deb78e7589de357fd497434dfcf2ca8c63fd8d049",
+    "compatibility_alias_for": "files/cv-wqtang.pdf",
+    "bytes": 122511
   },
   {
     "path": "files/papers/C1-Reverse-Engineering.pdf",
@@ -1695,9 +1696,9 @@
   },
   {
     "path": "files/cv-wqtang.pdf",
-    "sha256": "112126b6c9e017b4cfff0b4498fb9bc26b5fe08c950fa5a734c0bc4ce926b9b4",
-    "source": "Owner-approved public CV, renamed from files/cv.pdf without altering PDF bytes",
-    "bytes": 122437
+    "sha256": "5181ab1a45c6b7a3e739c16deb78e7589de357fd497434dfcf2ca8c63fd8d049",
+    "source": "Owner-approved public CV compiled from content/Wuqian_Tang_Public_CV.tex; Hardware Security department corrected on 2026-10-08",
+    "bytes": 122511
   },
   {
     "path": "files/slides/2026-mlcad-tapco-slides.pdf",
@@ -1715,5 +1716,116 @@
     "bytes": 3123316,
     "pages": 11,
     "encoding": "Original PDF bytes preserved"
+  },
+  {
+    "path": "files/teaching/2025-2026-advanced-logic-synthesis-ta-evaluations.pdf",
+    "sha256": "d2ac9a3d2f8b5ded646c151a4511a40c3fda2a212072d5fa2c0e6ab7a40870d9",
+    "source": "Owner-approved NTHU student teaching-assistant evaluation reports",
+    "source_reports": [
+      {
+        "source": "114學年度第2學期-學生評量教學助教之統計結果表.pdf",
+        "source_sha256": "397a42abef2417558f8636f20c310702e7346b77136aa9e3c543d8ce5b67003b",
+        "pages": [
+          1
+        ],
+        "term": "Spring 2026",
+        "course_code": "11420CS613200"
+      },
+      {
+        "source": "113學年度第2學期-學生評量教學助教之統計結果表.pdf",
+        "source_sha256": "588265e444e11cbd99c388f386bd505fdcab3a3c3994ebafa4263b8ce4d4e0cd",
+        "pages": [
+          1
+        ],
+        "term": "Spring 2025",
+        "course_code": "11320CS613200"
+      }
+    ],
+    "bytes": 630299,
+    "pages": 2,
+    "encoding": "Native PDF pages extracted/combined without rasterizing; original text and page rendering preserved"
+  },
+  {
+    "path": "files/teaching/2025-spring-design-automation-i-ta-evaluation.pdf",
+    "sha256": "53ef5d960bcb5357ab27b88a04849556204246e46c95e862d8d51be2f1b6724b",
+    "source": "Owner-approved NTHU student teaching-assistant evaluation reports",
+    "source_reports": [
+      {
+        "source": "113學年度第2學期-學生評量教學助教之統計結果表.pdf",
+        "source_sha256": "588265e444e11cbd99c388f386bd505fdcab3a3c3994ebafa4263b8ce4d4e0cd",
+        "pages": [
+          2
+        ],
+        "term": "Spring 2025",
+        "course_code": "11320CSR530200"
+      }
+    ],
+    "bytes": 551524,
+    "pages": 1,
+    "encoding": "Native PDF pages extracted/combined without rasterizing; original text and page rendering preserved"
+  },
+  {
+    "path": "files/teaching/2025-fall-ic-design-ta-evaluation.pdf",
+    "sha256": "3a354dc8e49ea38f1af0033d2bb589acc9eb5f6a4afdff22c120113781157845",
+    "source": "Owner-approved NTHU student teaching-assistant evaluation reports",
+    "source_reports": [
+      {
+        "source": "114學年度第1學期-學生評量教學助教之統計結果表.pdf",
+        "source_sha256": "72192f2d59d7fcb50a664cc9a84a0becf5df6a194a6019124fc25cc34fc08e55",
+        "pages": [
+          1
+        ],
+        "term": "Fall 2025",
+        "course_code": "11410CS312000"
+      }
+    ],
+    "bytes": 542514,
+    "pages": 1,
+    "encoding": "Native PDF pages extracted/combined without rasterizing; original text and page rendering preserved"
+  },
+  {
+    "path": "files/teaching/2025-fall-computer-architecture-ta-evaluation.pdf",
+    "sha256": "9f8ca84026e34c6bd9b72a94364777f7370a8ada7de2c1a15bc15a9adea2c6e9",
+    "source": "Owner-approved NTHU student teaching-assistant evaluation reports",
+    "source_reports": [
+      {
+        "source": "114學年度第1學期-學生評量教學助教之統計結果表.pdf",
+        "source_sha256": "72192f2d59d7fcb50a664cc9a84a0becf5df6a194a6019124fc25cc34fc08e55",
+        "pages": [
+          2,
+          3
+        ],
+        "term": "Fall 2025",
+        "course_code": "11410CS410000"
+      }
+    ],
+    "bytes": 545962,
+    "pages": 2,
+    "encoding": "Native PDF pages extracted/combined without rasterizing; original text and page rendering preserved"
+  },
+  {
+    "path": "files/teaching/2026-spring-hardware-security-ta-evaluation.pdf",
+    "sha256": "58c2ebf3fa6220521025d8bd4941d219878a5e4bd14e6df458798f65a40c5895",
+    "source": "Owner-approved NTHU student teaching-assistant evaluation reports",
+    "source_reports": [
+      {
+        "source": "114學年度第2學期-學生評量教學助教之統計結果表.pdf",
+        "source_sha256": "397a42abef2417558f8636f20c310702e7346b77136aa9e3c543d8ce5b67003b",
+        "pages": [
+          2
+        ],
+        "term": "Spring 2026",
+        "course_code": "11420IIS500800"
+      }
+    ],
+    "bytes": 549445,
+    "pages": 1,
+    "encoding": "Native PDF pages extracted/combined without rasterizing; original text and page rendering preserved"
+  },
+  {
+    "path": "files/cv.pdf",
+    "sha256": "5181ab1a45c6b7a3e739c16deb78e7589de357fd497434dfcf2ca8c63fd8d049",
+    "bytes": 122511,
+    "compatibility_alias_for": "files/cv-wqtang.pdf"
   }
 ]

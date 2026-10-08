@@ -17,7 +17,6 @@ ALLOWED_FILES = {
     'assets/brand.svg', 'assets/css/main.css', 'assets/js/main.js',
     'assets/images/profile.jpg',
     'assets/images/2025-hsing-chien-photo-1.jpg', 'assets/images/2025-badminton-photo-1.jpg',
-    'files/cv.pdf',
 }
 
 def esc(value):
@@ -160,6 +159,20 @@ def timeline(item):
     detail = '<p class="timeline-detail">' + esc(item['detail']) + '</p>' if item.get('detail') else ''
     date = esc(re.sub(r'\s*–\s*', ' – ', item['date']))
     return f'<article class="timeline-item"><div class="timeline-top"><h4>{esc(item["title"])}</h4><span class="timeline-date">{date}</span></div><p class="timeline-institution">{esc(item["institution"])}</p>{detail}</article>'
+
+def course(item):
+    evaluation = item.get('student_evaluations')
+    resource = ''
+    if evaluation:
+        url = evaluation['url']
+        terms = evaluation['terms']
+        if (not re.fullmatch(r'files/teaching/[a-z0-9-]+\.pdf', url)
+                or not (SITE / url).is_file()
+                or not terms or any(term not in item['terms'].split(', ') for term in terms)):
+            raise ValueError(f'Student evaluations require a local PDF and matching course terms: {item["title"]}')
+        label = 'Student evaluations for ' + item['title'] + ' (' + ', '.join(terms) + ')'
+        resource = f' <a class="course-evaluations" href="{esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="{esc(label)}" title="{esc(", ".join(terms))}">[Student Evaluations]</a>'
+    return f'<li><div><p class="course-name">{esc(item["title"])}</p><p class="course-instructors">{esc(item["instructors"])} · <span class="course-department">{esc(item["department"])}</span>{resource}</p></div><p class="course-terms">{esc(item["terms"])}</p></li>'
 
 def image_sitemap(profile, projects):
     namespace = 'http://www.sitemaps.org/schemas/sitemap/0.9'
@@ -317,7 +330,7 @@ def render():
         SELECTED_PUBLICATIONS=''.join(publication(paper, citations[paper['id']]) for paper in selected), OTHER_PUBLICATIONS=other_html, MORE_PUBLICATIONS_COUNT=str(len(others)),
         AWARDS=''.join(award(a) for a in p['awards']), EARLIER_AWARDS=''.join(award(a) for a in p['earlier_awards']),
         EDUCATION=''.join(timeline(item) for item in p['education']), EXPERIENCE=''.join(timeline(item) for item in p['experience']),
-        COURSES=''.join(f'<li><div><p class="course-name">{esc(c["title"])}</p><p class="course-instructors">{esc(c["instructors"])} · <span class="course-department">{esc(c["department"])}</span></p></div><p class="course-terms">{esc(c["terms"])}</p></li>' for c in p['courses']),
+        COURSES=''.join(course(c) for c in p['courses']),
         BADMINTON_LINKS=media_link(p['personal_awards'][0], 'medal', 1, 'awards/badminton-2025.html#medals'),
         MEDIA_DATA=json.dumps(registry, ensure_ascii=False).replace('<', '\\u003c'),
         BADMINTON_ICON=icon('badminton'), SWIM_ICON=icon('swim'), TABLE_TENNIS_ICON=icon('tabletennis'))

@@ -698,31 +698,62 @@
       "title": "Hardware Security",
       "instructors": "Prof. Yu-Guang Chen and Prof. TingTing Hwang",
       "terms": "Spring 2026",
-      "department": "Department of Computer Science"
+      "department": "Institute of Information Security",
+      "student_evaluations": {
+        "url": "files/teaching/2026-spring-hardware-security-ta-evaluation.pdf",
+        "terms": [
+          "Spring 2026"
+        ]
+      }
     },
     {
       "title": "Advanced Logic Synthesis",
       "instructors": "Prof. TingTing Hwang",
       "terms": "Spring 2025, Spring 2026",
-      "department": "Department of Computer Science"
+      "department": "Department of Computer Science",
+      "student_evaluations": {
+        "url": "files/teaching/2025-2026-advanced-logic-synthesis-ta-evaluations.pdf",
+        "terms": [
+          "Spring 2026",
+          "Spring 2025"
+        ]
+      }
     },
     {
       "title": "Introduction to Integrated Circuit Design",
       "instructors": "Prof. Yu-Guang Chen",
       "terms": "Fall 2025",
-      "department": "Department of Computer Science"
+      "department": "Department of Computer Science",
+      "student_evaluations": {
+        "url": "files/teaching/2025-fall-ic-design-ta-evaluation.pdf",
+        "terms": [
+          "Fall 2025"
+        ]
+      }
     },
     {
       "title": "Computer Architecture",
       "instructors": "Prof. TingTing Hwang",
       "terms": "Fall 2024, Fall 2025",
-      "department": "Department of Computer Science"
+      "department": "Department of Computer Science",
+      "student_evaluations": {
+        "url": "files/teaching/2025-fall-computer-architecture-ta-evaluation.pdf",
+        "terms": [
+          "Fall 2025"
+        ]
+      }
     },
     {
       "title": "Design Automation (I)",
       "instructors": "Prof. Jeong-Tyng Li",
       "terms": "Spring 2025",
-      "department": "College of Semiconductor Research"
+      "department": "College of Semiconductor Research",
+      "student_evaluations": {
+        "url": "files/teaching/2025-spring-design-automation-i-ta-evaluation.pdf",
+        "terms": [
+          "Spring 2025"
+        ]
+      }
     }
   ],
   "awards": [
