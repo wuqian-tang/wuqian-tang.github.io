@@ -14,7 +14,8 @@
 - 严格小于 360 CSS px 时，奖项／新闻／相册的 `[Department]` 和 `[Department (2025)]` 显示为 `[Dept.]` 和 `[Dept. (2025)]`；360px 及以上保留全称。悬停标题和可访问名称保留完整来源说明。Teaching 的系所全称不简写，奖项日期仍在原来的左列，没有移动到标题上方。
 - 布局在 resize、原生 details 展开、字体加载或字体/容器尺寸变化后合并到一个动画帧重新计算；每次先恢复自然布局，再逐组决定分隔符，避免反复隐藏／恢复导致抖动。无 JS 时不显示装饰分隔符，但标签与第一个链接仍绑定，所有原生链接、More 和 BibTeX 内容可用。
 - Recent News 所有日期统一为英文三字母月份加年份：`Nov 2026`、`Oct 2026`、`Sep 2026`、`Aug 2026`、`Jun 2026`、`May 2026`。第一条 ICCAD 2026 CAD Contest 不再显示日期中的日；生成的 time 标签统一使用 `YYYY-MM`。资料中的完整日期仍保留作来源记录，新闻正文和末尾单个 `[to appear]` 保留。
-- CV、课程/奖项/论文数据、引用、图片和 PDF 均未再修改；manifest 仍为 273 条，全部已登记资产保持字节一致，618 个原有锚点的地址、属性与顺序保留。首页与全部相册 CSS / JS 缓存版本统一为 `20261008-resource-wrapping`；翻译草案仍只在本地。
+- 后续按用户补充要求，Awards → More 的 `iccad-contest-2026` 显示日期也由 `Nov 8, 2026` 改为 `Nov 2026`，与 Recent News 一致；资料中的 `datetime: 2026-11-08` 与会议日期来源仍保留。More 归属、左列日期排版和两组 `[to appear]` 沿用。
+- 前述换行调整未修改 CV、课程/奖项/论文数据、引用、图片和 PDF；manifest 仍为 273 条，全部已登记资产保持字节一致，618 个原有锚点的地址、属性与顺序保留。首页与全部相册 CSS / JS 缓存版本统一为 `20261008-resource-wrapping`；翻译草案仍只在本地。
 - 前一项已授权的私人资料整理现已完成：三份助教评量源报告按六个课程／学期归入对应的三个 `Awards_and_Honors` 获奖目录，Computer Architecture 保留两页续页，原七页完整。采用 `Evaluation_YYYY_Spring/Fall_NTHU_Course_ZH.pdf`；核对并推送 `wuqian-profile/main` 的 `2524715` 后，删除根目录三个原报告。详见私人 `Organization_Plan.md` 第 31 节。公开五份课程 PDF 和 CV 不受这次归档影响。
 - 验收记录为 `preview/resource-wrapping-validation.json`：14 种代表宽度、332 个逐像素宽度、9 次相册检查、字体变化与往返 resize、More 收合及深链接、无 JS、桌面/手机无障碍扫描均通过；79 个行内分隔符按所在行显示或隐藏，53 个资源前缀保持标签与首个资源同行，无横向溢出或脚本错误。既有照片 WebP 弹窗和 BibTeX 复制通过回归检查。截图为 `preview/resource-wrapping-{teaching,news,award}-{320,390,1440}.png`。
 - 通过 build、精确公开清单、JavaScript 语法与差异检查后发布 `master`，并核对 Pages 部署及线上首页、样式、脚本和代表相册的实际内容。
