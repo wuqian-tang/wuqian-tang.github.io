@@ -6,6 +6,7 @@ import html
 import json
 import re
 import xml.etree.ElementTree as ET
+from datetime import datetime
 from pathlib import Path
 from string import Template
 
@@ -21,6 +22,24 @@ ALLOWED_FILES = {
 
 def esc(value):
     return html.escape(str(value), quote=True)
+
+def inline_group(lead, rest='', separator=None):
+    prefix = ''
+    if separator:
+        prefix = '<br class="inline-flow-break" aria-hidden="true" hidden>'
+        lead = f'<span class="inline-flow-separator" aria-hidden="true">{separator}</span>' + lead
+    return prefix + '<span class="inline-flow-group"><span class="inline-flow-lead">' + lead + '</span>' + rest + '</span>'
+
+def inline_text(value):
+    # Bind a separator to the next word, while allowing long descriptions to wrap.
+    parts = value.split(' · ')
+    if len(parts) == 1:
+        return esc(value)
+    groups = ['<span class="inline-flow-group">' + esc(parts[0]) + '</span>']
+    for part in parts[1:]:
+        first, space, rest = part.partition(' ')
+        groups.append(inline_group(esc(first), esc(space + rest), '·'))
+    return '<span data-inline-flow>' + ' '.join(groups) + '</span>'
 
 def date_range(value):
     parts = re.split(r'\s*–\s*', value, maxsplit=1)
@@ -60,7 +79,13 @@ def media_link(a, kind, count, href, key=None, index=0):
     return f'<a href="{esc(href)}" data-media="{esc(key)}" data-media-index="{index}" aria-label="{esc(label + " for " + a["title"])}">[{label}]</a>'
 
 def announcement_link(a, link):
-    return f'<a href="{esc(link["url"])}" aria-label="{esc(link.get("description", link["label"]) + " for " + a["title"])}">[{esc(link["label"])}]</a>'
+    label = esc(link['label'])
+    title = ''
+    if re.fullmatch(r'Department(?: \(\d{4}\))?', link['label']):
+        short = esc(link['label'].replace('Department', 'Dept.', 1))
+        label = f'<span class="resource-label-full" aria-hidden="true">{label}</span><span class="resource-label-short" aria-hidden="true">{short}</span>'
+        title = f' title="{esc(link["label"])}"'
+    return f'<a href="{esc(link["url"])}" aria-label="{esc(link.get("description", link["label"]) + " for " + a["title"])}"{title}>[{label}]</a>'
 
 def icon(name):
     shapes = {
@@ -94,11 +119,11 @@ def publication(p, citation):
     return f'''<article class="publication" id="paper-{esc(p['id'])}">
       <div class="publication-meta"><span class="venue-badge">{esc(p['acronym'])} {p['year']}</span><span class="publication-label">[{esc(p['label'])}]</span>{status}</div>
       <h3>{esc(p['title'])}</h3><p class="publication-authors">{authors(p['authors'])}</p>
-      <p class="publication-venue">{esc(p['venue'])} · {esc(p['details'])}</p>
+      <p class="publication-venue">{inline_text(p['venue'] + ' · ' + p['details'])}</p>
       {('<div class="paper-links">' + links + '</div>') if links else ''}</article>'''
 
 def award(a):
-    detail = '<p class="award-detail">' + esc(a['detail']) + '</p>' if a.get('detail') else ''
+    detail = '<p class="award-detail">' + inline_text(a['detail']) + '</p>' if a.get('detail') else ''
     return f'<li id="award-{esc(a["id"])}"><span class="award-date">{date_range(a["date"])}</span><div><p class="award-title">{esc(a["title"])}</p>{detail}{award_links(a)}</div></li>'
 
 MEDIA_GROUPS = [
@@ -122,15 +147,17 @@ def award_resources(a, local_gallery=False, kinds=None, headings=True):
     placeholder = '<span class="resource-pending">[to appear]</span>'
     if not links and 'materials' in pending:
         links.append(placeholder)
-    media = ('<span class="resource-label">Materials:</span> ' if headings and links else '') + ' '.join(links)
-    news = ' '.join(announcement_link(a, link) for link in a.get('links', []))
+    news = [announcement_link(a, link) for link in a.get('links', [])]
     if not news and 'announcements' in pending:
-        news = placeholder
-    divider = '<span class="resource-divider" aria-hidden="true">│</span> ' if media and news else ''
-    if news and headings:
-        news = '<span class="resource-intro">' + divider + '<span class="resource-label">Announcements:</span></span> ' + news
-        divider = ''
-    return media + (' ' if media and news else '') + divider + news
+        news.append(placeholder)
+    groups = []
+    for label, items in [('Materials', links), ('Announcements', news)]:
+        if not items:
+            continue
+        lead = (f'<span class="resource-label">{label}:</span> ' if headings else '') + items[0]
+        rest = ' ' + ' '.join(items[1:]) if len(items) > 1 else ''
+        groups.append(inline_group(lead, rest, '│' if groups else None))
+    return '<span data-inline-flow>' + ' '.join(groups) + '</span>'
 
 def award_links(a, local_gallery=False, kinds=None, headings=True):
     return '<div class="award-links">' + award_resources(a, local_gallery, kinds, headings) + '</div>'
@@ -150,14 +177,14 @@ def gallery(a, profile):
             crop = item.get('crop_top', 0)
             cards += f'''<figure class="gallery-card"><a class="gallery-image-link" href="{esc(preview)}" data-media="{esc(a['id'] + ':' + kind)}" data-media-index="{i-1}" aria-label="View {esc(caption)} {i} for {esc(a['title'])}"><img src="{esc(preview)}" alt="{esc(item['alt'])}" data-display-rotation="{rotation}" data-display-crop="{crop}" loading="lazy" decoding="async" width="{item['width']}" height="{item['height']}"></a><figcaption><span>{esc(caption)}</span><a href="{esc(original)}" target="_blank" rel="noopener noreferrer">View Original</a></figcaption></figure>'''
         sections += f'<section class="gallery-section" id="{group}" aria-labelledby="{group}-title"><h2 id="{group}-title">{plural}<span class="gallery-count">{len(items)}</span></h2><div class="award-gallery-grid">{cards}</div></section>'
-    values = dict(NAME=esc(profile['name']), DEPARTMENT=esc(profile['department']), SITE_URL=esc(profile['site_url']), TITLE=esc(a['title']), DATE=date_range(a['date']), DETAIL=esc(a['detail']),
+    values = dict(NAME=esc(profile['name']), DEPARTMENT=esc(profile['department']), SITE_URL=esc(profile['site_url']), TITLE=esc(a['title']), DATE=date_range(a['date']), DETAIL=inline_text(a['detail']),
         CANONICAL=esc(profile['site_url'] + '/awards/' + a['id'] + '.html'),
         HOME=esc('../#award-' + a['id']), LINKS=award_links(a, local_gallery=True), SECTIONS=sections,
         MEDIA_DATA=json.dumps(media_data([a], '../'), ensure_ascii=False).replace('<', '\\u003c'))
     return Template((ROOT / 'content/award-gallery.html').read_text()).substitute(values)
 
 def timeline(item):
-    detail = '<p class="timeline-detail">' + esc(item['detail']) + '</p>' if item.get('detail') else ''
+    detail = '<p class="timeline-detail">' + inline_text(item['detail']) + '</p>' if item.get('detail') else ''
     date = esc(re.sub(r'\s*–\s*', ' – ', item['date']))
     return f'<article class="timeline-item"><div class="timeline-top"><h4>{esc(item["title"])}</h4><span class="timeline-date">{date}</span></div><p class="timeline-institution">{esc(item["institution"])}</p>{detail}</article>'
 
@@ -172,8 +199,11 @@ def course(item):
                 or not terms or any(term not in item['terms'].split(', ') for term in terms)):
             raise ValueError(f'Student evaluations require a local PDF and matching course terms: {item["title"]}')
         label = 'Student evaluations for ' + item['title'] + ' (' + ', '.join(terms) + ')'
-        resource = f' <span class="course-evaluation-resource"><span class="course-evaluation-divider" aria-hidden="true">·</span> <a class="course-evaluations" href="{esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="{esc(label)}" title="{esc(", ".join(terms))}">[Student Evaluations]</a></span>'
-    return f'<li><div><p class="course-name">{esc(item["title"])}</p><p class="course-instructors">{esc(item["instructors"])} · <span class="course-department">{esc(item["department"])}</span>{resource}</p></div><p class="course-terms">{esc(item["terms"])}</p></li>'
+        link = f'<a class="course-evaluations" href="{esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="{esc(label)}" title="{esc(", ".join(terms))}">[Student Evaluations]</a>'
+        resource = ' ' + inline_group(link, separator='·')
+    instructors = '<span class="inline-flow-group">' + esc(item['instructors']) + '</span>'
+    department = inline_group('<span class="course-department">' + esc(item['department']) + '</span>', separator='·')
+    return f'<li><div><p class="course-name">{esc(item["title"])}</p><p class="course-instructors" data-inline-flow>{instructors} {department}{resource}</p></div><p class="course-terms">{esc(item["terms"])}</p></li>'
 
 def image_sitemap(profile, projects):
     namespace = 'http://www.sitemaps.org/schemas/sitemap/0.9'
@@ -283,6 +313,9 @@ def render():
     for ni, n in enumerate(p['news']):
         if not n['datetime'].startswith('2026-'):
             raise ValueError('Recent News currently includes only 2026')
+        month = n['datetime'][:7]
+        if n['date'] != datetime.strptime(month, '%Y-%m').strftime('%b %Y'):
+            raise ValueError('Recent News dates must use the same month/year format')
         resources = []
         for ri, resource in enumerate(n.get('resources', [])):
             if resource.get('pending'):
@@ -314,7 +347,7 @@ def render():
                 raise ValueError('News must choose individual resources or a shared award resource row')
             resources.append(award_resources(awards_by_id[n['award_resources']]))
         suffix = ' <span class="news-resources">' + ' '.join(resources) + '</span>' if resources else ''
-        news += f'<li><time datetime="{esc(n["datetime"])}">{esc(n["date"])}</time><p>{esc(n["text"])}{suffix}</p></li>'
+        news += f'<li><time datetime="{esc(month)}">{esc(n["date"])}</time><p>{esc(n["text"])}{suffix}</p></li>'
     research = ''.join(f'<article class="research-item"><span class="research-number" aria-hidden="true">{i:02d}</span><div><h3>{esc(r["title"])}</h3><p>{esc(r["description"])}</p><a href="#paper-{esc(r["paper"])}">{esc(r["work"])}</a></div></article>' for i, r in enumerate(p['research'], 1))
     structured = json.dumps({'@context':'https://schema.org','@type':'Person','name':p['name'],'alternateName':p['chinese_name'],'url':p['site_url'],'jobTitle':p['role'],'affiliation':{'@type':'CollegeOrUniversity','name':p['university']},'sameAs':[link['url'] for link in p['profiles']]}, ensure_ascii=False).replace('<', '\\u003c')
     values = {key.upper(): esc(p[key]) for key in ['name','chinese_name','role','department','university','location','email','updated','site_url']}
@@ -328,6 +361,11 @@ def render():
         matching = next(item for a in all_awards for item in a['media'] if item['preview'] == image['preview'])
         values[key.upper() + '_ALT'] = esc(matching['alt'])
     values.update(STRUCTURED_DATA=structured, LOCATION_ICON=icon('location'), MAIL_ICON=icon('mail'), DOCUMENT_ICON=icon('document'), PROFILE_LINKS=profile_links, NEWS=news, RESEARCH=research,
+        TAGLINE=inline_text('AI FOR EDA · OPTIMIZATION ACROSS RTL, LOGIC SYNTHESIS, AND PHYSICAL DESIGN'),
+        TEACHING_RECOGNITION=inline_text('Excellent Teaching Assistant Award (Spring 2026) · Outstanding Teaching Assistant Award (Spring 2025, Fall 2025, Spring 2026)'),
+        HSINCHU_CAPTION=inline_text('College / University Division · Mar 2026'),
+        HSING_CHIEN_CAPTION=inline_text('National Tsing Hua University · May 2025'),
+        BADMINTON_CAPTION=inline_text('Interdepartmental Cup · Doubles champions, May 2025'),
         SELECTED_PUBLICATIONS=''.join(publication(paper, citations[paper['id']]) for paper in selected), OTHER_PUBLICATIONS=other_html, MORE_PUBLICATIONS_COUNT=str(len(others)),
         AWARDS=''.join(award(a) for a in p['awards']), EARLIER_AWARDS=''.join(award(a) for a in p['earlier_awards']),
         EDUCATION=''.join(timeline(item) for item in p['education']), EXPERIENCE=''.join(timeline(item) for item in p['experience']),

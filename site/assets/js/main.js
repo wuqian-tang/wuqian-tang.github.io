@@ -115,6 +115,67 @@
     });
   });
 
+  // Keep separators between items on the same line, never at a line edge.
+  // Reset from the unbroken layout on each pass so resizing is reversible.
+  const inlineRows = [...document.querySelectorAll('[data-inline-flow]')];
+  const fitInlineRows = () => inlineRows.forEach(row => {
+    if (!row.getClientRects().length) return;
+    row.dataset.flowReady = '';
+    const groups = [...row.children].filter(child => child.classList.contains('inline-flow-group'));
+    groups.forEach(group => {
+      const separator = group.querySelector('.inline-flow-separator');
+      if (separator) separator.hidden = false;
+      const lineBreak = group.previousElementSibling;
+      if (lineBreak?.classList.contains('inline-flow-break')) lineBreak.hidden = true;
+    });
+    groups.forEach((group, index) => {
+      const separator = group.querySelector('.inline-flow-separator');
+      if (!index || !separator) return;
+      const previousRects = groups[index - 1].getClientRects();
+      const previous = previousRects[previousRects.length - 1];
+      const lead = group.querySelector('.inline-flow-lead').getBoundingClientRect();
+      if (previous && lead.top >= previous.bottom - 1) {
+        separator.hidden = true;
+        // Preserve this break even when removing the separator makes the item
+        // narrow enough to fit above. This prevents repeated reflow/flicker.
+        group.previousElementSibling.hidden = false;
+      }
+    });
+  });
+  let inlineFramePending = false;
+  const scheduleInlineLayout = () => {
+    if (inlineFramePending) return;
+    inlineFramePending = true;
+    window.requestAnimationFrame(() => {
+      inlineFramePending = false;
+      fitInlineRows();
+    });
+  };
+  if (inlineRows.length) {
+    fitInlineRows();
+    window.addEventListener('resize', scheduleInlineLayout);
+    document.querySelectorAll('details').forEach(details => details.addEventListener('toggle', scheduleInlineLayout));
+    document.fonts?.ready.then(scheduleInlineLayout);
+    document.fonts?.addEventListener('loadingdone', scheduleInlineLayout);
+    if ('ResizeObserver' in window) {
+      const metrics = new WeakMap();
+      const inlineObserver = new ResizeObserver(entries => {
+        let changed = false;
+        entries.forEach(entry => {
+          const style = getComputedStyle(entry.target);
+          const signature = [entry.contentRect.width, style.font, style.letterSpacing].join('|');
+          if (metrics.get(entry.target) === signature) return;
+          metrics.set(entry.target, signature);
+          changed = true;
+        });
+        if (changed) scheduleInlineLayout();
+      });
+      // Observe block containers; ignore height changes made by our own breaks.
+      new Set(inlineRows.map(row => row.matches('p') ? row : row.parentElement))
+        .forEach(container => inlineObserver.observe(container));
+    }
+  }
+
   // Display adjustments preserve original files and apply after browser EXIF orientation.
   const fitImage = (image, stage, rotation, cropTop, availableHeight) => {
     const turn = Math.abs(rotation) % 180 === 90;

@@ -30,8 +30,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=20261003-small-tang">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=20261003-small-tang">
   <link rel="icon" type="image/svg+xml" sizes="any" href="assets/favicon.svg?v=20261003-small-tang">
-  <link rel="stylesheet" href="assets/css/main.css?v=20261008-inline-resources">
-  <script src="assets/js/main.js?v=20261006-asset-names" defer></script>
+  <link rel="stylesheet" href="assets/css/main.css?v=20261008-resource-wrapping">
+  <script src="assets/js/main.js?v=20261008-resource-wrapping" defer></script>
   <script type="application/ld+json">${STRUCTURED_DATA}</script>
 </head>
 <body>
@@ -66,7 +66,7 @@
 
     <main id="main" tabindex="-1">
       <section class="section about-section" id="about" aria-labelledby="about-title">
-        <p class="eyebrow">AI FOR EDA · OPTIMIZATION ACROSS RTL, LOGIC SYNTHESIS, AND PHYSICAL DESIGN</p>
+        <p class="eyebrow">${TAGLINE}</p>
         <h2 id="about-title">About Me</h2>
         <p>I am a Ph.D. candidate in Computer Science at <a href="https://nthu-en.site.nthu.edu.tw/">National Tsing Hua University</a>, advised by <a href="http://nthucad.cs.nthu.edu.tw/~wcyao/">Prof. Chun-Yao Wang</a> and <a href="https://www.cse.cuhk.edu.hk/~byu/">Prof. Bei Yu</a> at The Chinese University of Hong Kong.</p>
         <p>My research focuses on electronic design automation (EDA). I work on learning and optimization methods for circuit design, with interests in <strong>LLMs for EDA</strong>, <strong>logic synthesis and RTL recovery</strong>, and <strong>physical design automation</strong>.</p>
@@ -101,8 +101,8 @@
         <ul class="award-list">${AWARDS}</ul>
         <details class="more-details" id="more-awards"><summary><span class="details-label-more">More</span><span class="details-label-less">Less</span><span class="visually-hidden"> awards and honors</span><span class="details-plus" aria-hidden="true"></span></summary><ul class="award-list details-content">${EARLIER_AWARDS}</ul></details>
         <div class="photo-grid">
-          <figure><a class="photo-link" href="${HSINCHU_PREVIEW}" data-original="${HSINCHU_ORIGINAL}" data-photo="Hsinchu City Outstanding Youth, 2026" aria-label="View full photo: Hsinchu City Outstanding Youth"><img src="${HSINCHU_PREVIEW}" alt="${HSINCHU_ALT}" loading="lazy" decoding="async" width="${HSINCHU_WIDTH}" height="${HSINCHU_HEIGHT}"></a><figcaption><span>Hsinchu City Outstanding Youth</span><span>College / University Division · Mar 2026</span></figcaption></figure>
-          <figure><a class="photo-link" href="${HSING_CHIEN_PREVIEW}" data-original="${HSING_CHIEN_ORIGINAL}" data-photo="Presidential Hsing Chien Award, 2025" aria-label="View full photo: Presidential Hsing Chien Award"><img src="${HSING_CHIEN_PREVIEW}" alt="${HSING_CHIEN_ALT}" loading="lazy" decoding="async" width="${HSING_CHIEN_WIDTH}" height="${HSING_CHIEN_HEIGHT}"></a><figcaption><span>Presidential Hsing Chien Award</span><span>National Tsing Hua University · May 2025</span></figcaption></figure>
+          <figure><a class="photo-link" href="${HSINCHU_PREVIEW}" data-original="${HSINCHU_ORIGINAL}" data-photo="Hsinchu City Outstanding Youth, 2026" aria-label="View full photo: Hsinchu City Outstanding Youth"><img src="${HSINCHU_PREVIEW}" alt="${HSINCHU_ALT}" loading="lazy" decoding="async" width="${HSINCHU_WIDTH}" height="${HSINCHU_HEIGHT}"></a><figcaption><span>Hsinchu City Outstanding Youth</span><span>${HSINCHU_CAPTION}</span></figcaption></figure>
+          <figure><a class="photo-link" href="${HSING_CHIEN_PREVIEW}" data-original="${HSING_CHIEN_ORIGINAL}" data-photo="Presidential Hsing Chien Award, 2025" aria-label="View full photo: Presidential Hsing Chien Award"><img src="${HSING_CHIEN_PREVIEW}" alt="${HSING_CHIEN_ALT}" loading="lazy" decoding="async" width="${HSING_CHIEN_WIDTH}" height="${HSING_CHIEN_HEIGHT}"></a><figcaption><span>Presidential Hsing Chien Award</span><span>${HSING_CHIEN_CAPTION}</span></figcaption></figure>
         </div>
       </section>
 
@@ -110,13 +110,13 @@
         <div class="section-heading"><h2 id="teaching-title">Teaching</h2><span class="section-note">National Tsing Hua University</span></div>
         <p class="section-intro">Teaching assistant for courses in programming, computer architecture, logic synthesis, integrated circuit design, and hardware security.</p>
         <ul class="course-list">${COURSES}</ul>
-        <p class="teaching-recognition">Excellent Teaching Assistant Award (Spring 2026) · Outstanding Teaching Assistant Award (Spring 2025, Fall 2025, Spring 2026)</p>
+        <p class="teaching-recognition">${TEACHING_RECOGNITION}</p>
       </section>
 
       <section class="section beyond-section" id="beyond" aria-labelledby="beyond-title">
         <div class="section-heading"><h2 id="beyond-title">Hobbies</h2></div>
         <div class="hobbies-layout"><div class="beyond-copy"><p>Outside research, I enjoy <strong>badminton</strong>, <strong>swimming</strong>, and <strong>table tennis</strong>.</p><p id="award-badminton-2025">In May 2025, I won first place in badminton doubles at National Tsing Hua University's Interdepartmental Cup. ${BADMINTON_LINKS}</p><div class="hobby-list"><span>${BADMINTON_ICON}Badminton</span><span>${SWIM_ICON}Swimming</span><span>${TABLE_TENNIS_ICON}Table tennis</span></div></div>
-        <figure class="badminton-photo"><a class="photo-link" href="${BADMINTON_PREVIEW}" data-original="${BADMINTON_ORIGINAL}" data-photo="NTHU Interdepartmental Cup badminton doubles, 2025" data-crop-top="0.25" aria-label="View full badminton doubles photo"><img src="${BADMINTON_PREVIEW}" alt="${BADMINTON_ALT}" loading="lazy" decoding="async" width="${BADMINTON_WIDTH}" height="${BADMINTON_HEIGHT}"></a><figcaption>Interdepartmental Cup · Doubles champions, May 2025</figcaption></figure></div>
+        <figure class="badminton-photo"><a class="photo-link" href="${BADMINTON_PREVIEW}" data-original="${BADMINTON_ORIGINAL}" data-photo="NTHU Interdepartmental Cup badminton doubles, 2025" data-crop-top="0.25" aria-label="View full badminton doubles photo"><img src="${BADMINTON_PREVIEW}" alt="${BADMINTON_ALT}" loading="lazy" decoding="async" width="${BADMINTON_WIDTH}" height="${BADMINTON_HEIGHT}"></a><figcaption>${BADMINTON_CAPTION}</figcaption></figure></div>
       </section>
 
       <footer class="site-footer"><span>© 2026 ${NAME}</span><span>Updated <time datetime="${UPDATED}">October 2026</time></span><a href="#about">Back to Top</a></footer>

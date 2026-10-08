@@ -154,8 +154,10 @@ body.citation-open { overflow: hidden; }
 .award-links a { display: inline-block; margin-right: .22rem; white-space: nowrap; }
 .resource-label { color: var(--muted); white-space: nowrap; }
 .resource-pending { color: var(--muted); white-space: nowrap; }
-.resource-divider { color: #bbc7d6; margin: 0 .35rem; }
-.resource-intro { display: inline-block; white-space: nowrap; }
+.inline-flow-lead { display: inline-block; white-space: nowrap; }
+.inline-flow-separator { display: none; color: #bbc7d6; margin-right: .35rem; }
+[data-inline-flow][data-flow-ready] > .inline-flow-group > .inline-flow-lead > .inline-flow-separator { display: inline; }
+.resource-label-short { display: none; }
 .news-resources a { display: inline-block; margin-right: .25rem; text-decoration: none; }
 .news-resources a:hover { text-decoration: underline; }
 .date-segment { white-space: nowrap; }
@@ -164,8 +166,8 @@ body.citation-open { overflow: hidden; }
 .photo-grid img { width: 100%; aspect-ratio: 4/3; object-fit: cover; transition: transform .2s ease; }
 .photo-link:hover img { transform: scale(1.025); }
 figcaption { font-size: .8125rem; color: var(--muted); margin-top: .65rem; line-height: 1.6; }
-.photo-grid figcaption span { display: block; }
-.photo-grid figcaption span:first-child { color: var(--ink); font-weight: 550; }
+.photo-grid figcaption > span { display: block; }
+.photo-grid figcaption > span:first-child { color: var(--ink); font-weight: 550; }
 .subsection-title { font-size: .875rem; color: var(--muted); margin: 1.7rem 0 1.4rem; font-weight: 550; }
 .timeline { border-left: 1px solid #d4dfed; margin-left: 5px; padding-left: 1.45rem; }
 .timeline-item { position: relative; margin-bottom: 1.6rem; }
@@ -180,8 +182,6 @@ figcaption { font-size: .8125rem; color: var(--muted); margin-top: .65rem; line-
 .course-list li:last-child { border-bottom: none; }
 .course-name { font-size: .9375rem; font-weight: 550; }
 .course-instructors { color: var(--muted); font-size: .8125rem; margin-top: .15rem; }
-.course-evaluation-resource { display: inline-block; white-space: nowrap; }
-.course-evaluation-divider { color: #bbc7d6; }
 .course-evaluations { display: inline-block; white-space: nowrap; text-decoration: none; }
 .course-evaluations:hover { text-decoration: underline; }
 .course-terms { font-size: .8125rem; color: var(--muted); text-align: right; }
@@ -337,6 +337,8 @@ body.viewer-open { overflow: hidden; }
   .dialog-counter { position: static; min-width: 3rem; text-align: center; }
 }
 @media (max-width: 359px) {
+  .resource-label-full { display: none; }
+  .resource-label-short { display: inline; }
   .page-layout { padding-left: 17px; padding-right: 17px; }
   .profile { grid-template-columns: 85px minmax(0,1fr); column-gap: 16px; }
   .portrait-wrap, .portrait { width: 85px; }
