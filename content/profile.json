@@ -6,7 +6,7 @@
   "university": "National Tsing Hua University",
   "location": "Hsinchu, Taiwan",
   "email": "wqtang@cs.nthu.edu.tw",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "site_url": "https://wuqian-tang.github.io",
   "profiles": [
     {
@@ -58,6 +58,12 @@
     }
   ],
   "news": [
+    {
+      "date": "Nov 8, 2026",
+      "datetime": "2026-11-08",
+      "text": "Our team has been selected for an Honorable Mention in Problem A of the ICCAD 2026 CAD Contest.",
+      "award_resources": "iccad-contest-2026"
+    },
     {
       "date": "Oct 2026",
       "datetime": "2026-10-04",
@@ -260,6 +266,10 @@
         {
           "label": "PDF",
           "url": "files/papers/2026-mlcad-tapco.pdf"
+        },
+        {
+          "label": "Slides",
+          "url": "files/slides/2026-mlcad-tapco-slides.pdf"
         }
       ],
       "doi_verified_on": "2026-10-03",
@@ -1535,6 +1545,24 @@
     }
   ],
   "earlier_awards": [
+    {
+      "id": "iccad-contest-2026",
+      "date": "Nov 8, 2026",
+      "datetime": "2026-11-08",
+      "title": "Honorable Mention (Problem A), ICCAD CAD Contest",
+      "detail": "LLM-Assisted Netlist Exploration and Transformation",
+      "problem": "A",
+      "links": [],
+      "media": [],
+      "pending_resources": [
+        "materials",
+        "announcements"
+      ],
+      "recognition_source": "Owner-provided Honorable Mention notification from the contest organizers",
+      "date_source": "First day of ICCAD 2026 (November 8-12): https://iccad.com/2026",
+      "problem_source": "https://www.iccad-contest.org/2026/Problems.html",
+      "verified_on": "2026-10-08"
+    },
     {
       "id": "iccad-ssp-2025",
       "date": "Oct 2025",

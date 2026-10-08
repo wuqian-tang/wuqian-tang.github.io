@@ -1698,5 +1698,14 @@
     "sha256": "112126b6c9e017b4cfff0b4498fb9bc26b5fe08c950fa5a734c0bc4ce926b9b4",
     "source": "Owner-approved public CV, renamed from files/cv.pdf without altering PDF bytes",
     "bytes": 122437
+  },
+  {
+    "path": "files/slides/2026-mlcad-tapco-slides.pdf",
+    "sha256": "42b8279bb0ba3ee13c420d32c50b465f200fad6a8b04da3ba1980e4611c3b815",
+    "source": "Owner-provided TAPCO_MLCAD2026_Presentation.pdf",
+    "bytes": 1328288,
+    "pages": 15,
+    "presentation_date": "2026-09-08",
+    "encoding": "Original PDF bytes preserved"
   }
 ]

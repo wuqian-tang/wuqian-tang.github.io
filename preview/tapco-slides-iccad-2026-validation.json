@@ -1,0 +1,113 @@
+{
+  "checked_on": "2026-10-08",
+  "responsive": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "selected_awards": 17,
+      "more_awards": 16,
+      "award_in_more": true,
+      "news_and_award_resources_match": true,
+      "exact_conference_date": true,
+      "placeholders_not_links": true,
+      "slides_before_bibtex": true,
+      "slides_new_tab": true,
+      "citation_copy": true,
+      "deep_link": true,
+      "existing_iwls_certificate": true,
+      "horizontal_overflow": false,
+      "errors": []
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "selected_awards": 17,
+      "more_awards": 16,
+      "award_in_more": true,
+      "news_and_award_resources_match": true,
+      "exact_conference_date": true,
+      "placeholders_not_links": true,
+      "slides_before_bibtex": true,
+      "slides_new_tab": true,
+      "citation_copy": true,
+      "deep_link": true,
+      "existing_iwls_certificate": true,
+      "horizontal_overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "selected_awards": 17,
+      "more_awards": 16,
+      "award_in_more": true,
+      "news_and_award_resources_match": true,
+      "exact_conference_date": true,
+      "placeholders_not_links": true,
+      "slides_before_bibtex": true,
+      "slides_new_tab": true,
+      "citation_copy": true,
+      "deep_link": true,
+      "existing_iwls_certificate": true,
+      "horizontal_overflow": false,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 650,
+      "selected_awards": 17,
+      "more_awards": 16,
+      "award_in_more": true,
+      "news_and_award_resources_match": true,
+      "exact_conference_date": true,
+      "placeholders_not_links": true,
+      "slides_before_bibtex": true,
+      "slides_new_tab": true,
+      "citation_copy": true,
+      "deep_link": true,
+      "existing_iwls_certificate": true,
+      "horizontal_overflow": false,
+      "errors": []
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "violations": []
+    }
+  ],
+  "slides": {
+    "status": 200,
+    "mime": "application/pdf",
+    "bytes": 1328288,
+    "sha256": "42b8279bb0ba3ee13c420d32c50b465f200fad6a8b04da3ba1980e4611c3b815"
+  },
+  "no_javascript": {
+    "more_award_visible": true,
+    "slides_available": true
+  },
+  "static": {
+    "preserved_previous_assets": 265,
+    "manifest_entries": 266,
+    "only_new_asset": "files/slides/2026-mlcad-tapco-slides.pdf",
+    "source_and_public_pdf_match": true,
+    "all_citations_unchanged": true,
+    "publications": 22,
+    "selected_publications": 5,
+    "more_publications": 17,
+    "existing_award_resource_rows_unchanged": 33,
+    "resource_render_comparisons": 396,
+    "pending_groups_replaced_by_real_resources": true,
+    "unknown_pending_group_rejected": true,
+    "no_empty_award_gallery": true,
+    "galleries": 33,
+    "sitemap_pages": 35,
+    "sitemap_image_references": 95,
+    "sitemap_unique_images": 92,
+    "google_verification_retained": true
+  }
+}

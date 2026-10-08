@@ -153,6 +153,7 @@ body.citation-open { overflow: hidden; }
 .award-links { margin-top: .25rem; font-size: .8125rem; line-height: 1.95; }
 .award-links a { display: inline-block; margin-right: .22rem; white-space: nowrap; }
 .resource-label { color: var(--muted); white-space: nowrap; }
+.resource-pending { color: var(--muted); white-space: nowrap; }
 .resource-divider { color: #bbc7d6; margin: 0 .35rem; }
 .news-resources a { display: inline-block; margin-right: .25rem; text-decoration: none; }
 .news-resources a:hover { text-decoration: underline; }

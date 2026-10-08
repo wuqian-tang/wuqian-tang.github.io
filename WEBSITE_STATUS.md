@@ -1,13 +1,25 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-10-07。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-10-08。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wuqian-tang.github.io](https://wuqian-tang.github.io/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 首页 Tagline（2026-10-07，最新）
+## TAPCO Slides 与 ICCAD 2026 Honorable Mention（2026-10-08，最新）
+
+- 用户授权将工作目录中的 `TAPCO_MLCAD2026_Presentation.pdf` 加入网页，上线确认后删除外部原文件。网站副本为 `site/files/slides/2026-mlcad-tapco-slides.pdf`，15 页、1,328,288 bytes，原始字节保留；SHA-256 为 `42b8279bb0ba3ee13c420d32c50b465f200fad6a8b04da3ba1980e4611c3b815`。Slides 内容的实际报告日期为 Sep 8, 2026，与本次新增 ICCAD 奖项日期无关。
+- TAPCO（C17）资源顺序为 DOI / PDF / Slides / BibTeX，沿用统一按钮样式。Slides 用新分页与 `noopener noreferrer`，没有下载属性；无 JavaScript 时仍可查看。后续 slides 统一保存为 `files/slides/年份-会议-短题名-slides.pdf`，构建要求链接为现有的本地 PDF，并纳入公开 manifest。
+- 根据用户提供的主办方通知，新增 `Honorable Mention (Problem A), ICCAD CAD Contest`，放在 Awards → More 第一项；描述仅为官方完整题名 `LLM-Assisted Netlist Exploration and Transformation`，依据 [2026 官方题目列表](https://www.iccad-contest.org/2026/Problems.html)。不公开邮件、回复表或尚未提供的通知附件。
+- 用户指定奖项与 Recent News 的日期均用 ICCAD 会议第一天。已核对 [ICCAD 2026 官网](https://iccad.com/2026)，会议为 Nov 8–12, 2026，故记录 `Nov 8, 2026` / `2026-11-08`；在当前 Oct 8 的维护时间这是未来会议日期。新闻写 `Our team has been selected for an Honorable Mention in Problem A of the ICCAD 2026 CAD Contest.`，不声称已出席颁奖。
+- 奖项与新闻使用同一资源行 `Materials: [to appear] │ Announcements: [to appear]`。占位为浅灰纯文本，不生成失效链接；`pending_resources` 记录待公布分组，新闻的 `award_resources` 引用相同奖项数据。某组已有实际资源时自动替换该组占位，之后删除对应待公布标记。当前不加入比赛介绍页或尚未公布结果的网页。
+- 新奖项没有媒体，构建不生成空相册或对应 sitemap URL。当前 Awards 为 17 条 Selected / 16 条 More，另有 1 条爱好奖项；原有 33 个相册、87 份媒体归属不变。论文为 22 篇、5 条 Selected / 17 条 More，Recent News 共 6 条。
+- 公开 manifest 从 265 增至 266 条，仅新增 Slides PDF；此前全部资产摘要和字节保持一致。CSS 缓存参数为 `20261008-slides-award`，JS 不变。Google 验证标签、新头像、分享图、CV 与所有引用内容继续保留已确认版本。本地翻译草案 `MULTILINGUAL_NOTES.md` 不纳入本轮提交。
+- 验收记录 `preview/tapco-slides-iccad-2026-validation.json`，截图为 `preview/tapco-slides-{1440,390}.png`、`iccad-2026-news-{1440,390}.png` 和 `iccad-2026-award-{1440,390}.png`。1440 / 820 / 390 / 320px 下奖项 More 归属、完整日期、共享占位、Slides 顺序和新分页、BibTeX 实际复制、深链接、原有 IWLS 奖状弹窗与无横向溢出通过；电脑／手机针对新增内容的无障碍扫描无报告项，无 JS 展开与 Slides 通过。静态核对旧资源渲染不变、所有旧资产和引用不变、sitemap 仍为 35 页面 / 95 图片引用 / 92 唯一图片；构建一致性、JS 语法和 diff 检查通过后推送 master，由 Pages 发布。
+- 后续在官方结果、证书或照片公布时更新 `iccad-contest-2026`：核对本人团队与 Problem A，添加明确的结果／公告 URL，将 Materials 更新为已审核奖状／照片及 WebP 预览，补充 manifest 和图注后重新构建。媒体归属必须独立，不复用其他 Problem 的合照；有媒体后才自动生成相册。上线后核对主页与 Slides 的匿名 HTTP 响应、PDF 摘要，再删除工作目录中的同名原 PDF，不能删除其他资料。
+
+## 首页 Tagline（2026-10-07，上一版）
 
 - 用户指定将 About Me 上方文字改为 `AI FOR EDA · OPTIMIZATION ACROSS RTL, LOGIC SYNTHESIS, AND PHYSICAL DESIGN`。沿用原蓝色、全大写、字号与字距，在窄屏自然换行；当前说明以这句为准。1440 / 390 / 320px 浏览器检查无横向溢出，分别显示为 1 / 2 / 3 行；构建一致性与公开文件清单通过。修改首页模板并重新构建后推送 master 发布。
 
@@ -148,7 +160,7 @@
 ## 当前完成的内容
 
 - 英文主页，姓名为 Wuqian Tang（唐梧遷）；使用最新确认的浅蓝衣服头像，保留 LinkedIn、Google Scholar、公开版 CV。
-- Recent News 只保留 2026 年，目前 4 条；右侧使用 Latest Updates。句末加方括号资源链接，移除 TAPCO 的正文跳转。助教新闻仅对应 Spring 2026 的奖状、奖杯与照片。
+- Recent News 只保留 2026 年，目前 6 条；右侧使用 Latest Updates。句末加方括号资源链接，移除 TAPCO 的正文跳转。助教新闻仅对应 Spring 2026 的奖状、奖杯与照片；最新 ICCAD 2026 新闻与奖项共享待公布的资源占位。
 - 删除 About Me 最后的研究标签、甲骨文研究介绍句和 Technical Skills 栏目；甲骨文论文仍保留在 Publications 中。
 - 主栏目与 Education、Work Experience 等子标题统一为 Title Case，取消子标题的 CSS 全大写转换。
 - 爱好栏目使用 Hobbies，标题与其他栏目一致；删除 Off the Clock / Personal Interests 引导文字。包含 badminton、swimming、table tennis。
@@ -157,15 +169,15 @@
 - 王老师主页链接为 `http://nthucad.cs.nthu.edu.tw/~wcyao/`。
 - 6 门助教课程先写教师，再写 Department of Computer Science、Department of Electrical Engineering 或 College of Semiconductor Research。
 - Teaching 中的助教获奖括号写获奖对应的学期，而不是颁发月份：Excellent 为 Spring 2026；Outstanding 为 Spring 2025、Fall 2025、Spring 2026。已逐张查看奖杯及三张奖状上的学期。
-- 33 个奖项相册（32 个 Awards 条目及 1 个爱好相册），含 87 份原始奖状、照片、奖杯、奖牌及纪念牌文件，另有 24 张 PDF 奖状预览。所有原始文件按 SHA-256 校验；除用户授权转正的 2022 ICCAD PDF 外，其余原始字节保持不变，该 PDF 内嵌扫描图像也未重压缩。
+- 33 个奖项相册（32 个已有媒体的 Awards 条目及 1 个爱好相册），含 87 份原始奖状、照片、奖杯、奖牌及纪念牌文件，另有 24 张 PDF 奖状预览。新增 ICCAD 2026 Honorable Mention 暂无媒体，仅在首页展示，不生成空相册。所有原始文件按 SHA-256 校验；除用户授权转正的 2022 ICCAD PDF 外，其余原始字节保持不变，该 PDF 内嵌扫描图像也未重压缩。
 - 所有奖项均补上月份；合并条目展示时间范围，正文保留各次获奖月份。Awards 与相册的日期范围在 en dash 后固定换行；Education 和 Work Experience 的日期始终单行，电脑和平板靠右，手机（600px 及以下）放在条目上方靠左。实习经历补全起始年份。
 - 奖项标题字体、字号、字重、颜色一致。资源同行排列为 Materials: […] │ Announcements: […]，窄屏自然换行；删除比赛介绍与项目介绍，仅保留 34 处对应的公告引用（29 个不同 URL）。使用完整 Department 标签；不同 CAD Contest Problem 分开，不再需要题目字母后缀。跨年份公告仍可附年份区分。
 - Research 标题为 Research Interests，移除 Current Interests，导航仍为 Research；方向名称统一 Physical Design Automation，描述仍对应已有研究。最上方学科介绍全大写。
 - 首页奖项资源直接打开弹窗，电脑使用左右两侧圆形箭头，手机将箭头与张数放到照片下方；支持滑动淡入淡出动效、左右键、双向触控滑动、Escape 和焦点返回；右上角用圆形 × 图标关闭，没有 Previous / Next / Close 可见文字。PDF 奖状使用预览；保留相册页作为无 JavaScript 回退。2022 ICCAD 奖状的本地源 PDF、网站 PDF 和预览都已转正，删除了额外的页面旋转配置；其他图片遵循正确 EXIF 方向。
 - 所有外部链接使用新分页及 noopener/noreferrer；页面没有 download 属性或下载按钮。保留普通 CV / 论文 PDF 查看链接与 View Original。
 - 删除 My name is highlighted;，本人作者名仍加粗。
-- Publications 共 21 篇：18 篇有经过核对的 DOI，3 篇标记 To appear。所有页面上的论文 PDF 链接都指向本仓库。
-- 已本地托管 5 篇论文 PDF：J1 CB-EVO、J2 甲骨文论文、C1 DATE 2024、C15 HyPAS、C17 TAPCO。TAPCO 仅提取了最终论文 PDF，没有公开申请目录或其他申请资料。
+- Publications 共 22 篇：18 篇有经过核对的 DOI，3 篇标记 To appear，另有 1 篇 arXiv Preprint。所有页面上的论文 PDF 链接都指向本仓库。
+- 已本地托管 6 篇论文 PDF：J1 CB-EVO、J2 甲骨文论文、C1 DATE 2024、C15 HyPAS、C17 TAPCO、P1 Trinity；另有 C17 的 15 页 Slides PDF。TAPCO 论文只提取了最终稿，没有公开申请目录或其他申请资料。
 
 ## 最新一轮修改（2026-10-03）
 
@@ -252,6 +264,7 @@ PDF 来源和 SHA-256 见 `content/public-assets.json`；DOI 核对来源和日�
 | 建议时间 | 检查内容 | 完成条件 |
 | --- | --- | --- |
 | 2026-10-10 至 10-17 | HyPAS、TAPCO DOI 解析及 ACM / Crossref 元数据 | DOI 正确解析，更新进度记录中的待生效状态 |
+| 2026-11-08 起或官方提前公布时 | ICCAD 2026 Problem A Honorable Mention 的结果、证书及照片 | 核对团队与 Problem A，补 Materials / Announcements，移除对应 `[to appear]`，有媒体后生成相册 |
 | 2026-10-17 至 10-31 | QUBO LBR 正式论文记录与 DOI | 确认完整题目、作者、会议对应后补 DOI，取消 To appear |
 | 2026-11-13 之后 | ICCAD 2026 C18 | 取得正式出版记录，补 DOI 和可公开最终 PDF |
 | 2026-11-19 之后 | ICCD 2026 C19 | 取得正式出版记录，补 DOI 和可公开最终 PDF |

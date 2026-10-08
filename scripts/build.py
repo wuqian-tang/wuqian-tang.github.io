@@ -83,7 +83,10 @@ def authors(text):
     return esc(text).replace('Wuqian Tang*', '<strong>Wuqian Tang*</strong>').replace('Wuqian Tang,', '<strong>Wuqian Tang</strong>,')
 
 def publication(p, citation):
-    links = ''.join(f'<a href="{esc(link["url"])}" aria-label="{esc(link["label"])} for {esc(p["title"])}">{esc(link["label"])}</a>' for link in p['links'])
+    links = ''
+    for link in p['links']:
+        new_tab = ' target="_blank" rel="noopener noreferrer"' if link['label'] == 'Slides' else ''
+        links += f'<a href="{esc(link["url"])}" aria-label="{esc(link["label"])} for {esc(p["title"])}"{new_tab}>{esc(link["label"])}</a>'
     copy_icon = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg>'
     # A native disclosure preserves access to citations without JavaScript.
     # The browser script enhances it to a one-click copy button in the same position.
@@ -107,19 +110,30 @@ MEDIA_GROUPS = [
     ('photo', 'photos', 'Photo', 'Photos'),
 ]
 
-def award_links(a, local_gallery=False, kinds=None, headings=True):
+def award_resources(a, local_gallery=False, kinds=None, headings=True):
+    pending = set(a.get('pending_resources', []))
+    if pending - {'materials', 'announcements'}:
+        raise ValueError(f'Unknown pending resource group: {a["id"]}')
     links = []
     for kind, group, singular, plural in MEDIA_GROUPS:
         count = sum(item['kind'] == kind for item in a['media'])
         if count and (kinds is None or kind in kinds):
             href = f'#{group}' if local_gallery else f'awards/{a["id"]}.html#{group}'
             links.append(media_link(a, kind, count, href))
+    placeholder = '<span class="resource-pending">[to appear]</span>'
+    if not links and 'materials' in pending:
+        links.append(placeholder)
     media = ('<span class="resource-label">Materials:</span> ' if headings and links else '') + ' '.join(links)
     news = ' '.join(announcement_link(a, link) for link in a.get('links', []))
+    if not news and 'announcements' in pending:
+        news = placeholder
     if news and headings:
         news = '<span class="resource-label">Announcements:</span> ' + news
     divider = ' <span class="resource-divider" aria-hidden="true">│</span> ' if media and news else ''
-    return '<div class="award-links">' + media + divider + news + '</div>'
+    return media + divider + news
+
+def award_links(a, local_gallery=False, kinds=None, headings=True):
+    return '<div class="award-links">' + award_resources(a, local_gallery, kinds, headings) + '</div>'
 
 def gallery(a, profile):
     sections = ''
@@ -157,7 +171,8 @@ def image_sitemap(profile, projects):
         image['preview'] for image in profile['homepage_images'].values()]
     entries = [('', homepage_images, profile['updated'])] + [
         (f'awards/{award["id"]}.html', [item['preview'] for item in award['media']], profile['updated'])
-        for award in profile['awards'] + profile['earlier_awards'] + profile['personal_awards']]
+        for award in profile['awards'] + profile['earlier_awards'] + profile['personal_awards']
+        if award['media']]
     entries += [(project['path'], project['images'], project['updated']) for project in projects]
     for path, images, updated in entries:
         url = ET.SubElement(root, f'{{{namespace}}}url')
@@ -230,6 +245,9 @@ def render():
                 raise ValueError(f'Invalid DOI URL: {paper["id"]}')
             if link['label'] == 'PDF' and not re.fullmatch(r'files/papers/[A-Za-z0-9_-]+\.pdf', link['url']):
                 raise ValueError(f'Paper PDF must be hosted in this repository: {paper["id"]}')
+            if link['label'] == 'Slides' and (not re.fullmatch(r'files/slides/[A-Za-z0-9_-]+\.pdf', link['url'])
+                    or not (SITE / link['url']).is_file()):
+                raise ValueError(f'Slides require an existing local PDF: {paper["id"]}')
     selected = [paper for paper in papers if paper['selected']]
     others = [paper for paper in papers if not paper['selected']]
     selected.sort(key=lambda paper: ['p1','c17','c15','j1','j2','c3','c1'].index(paper['id']))
@@ -274,6 +292,10 @@ def render():
             else:
                 link = next(link for link in a['links'] if link['label'] == resource['announcement'])
                 resources.append(announcement_link(a, link))
+        if n.get('award_resources'):
+            if resources:
+                raise ValueError('News must choose individual resources or a shared award resource row')
+            resources.append(award_resources(awards_by_id[n['award_resources']]))
         suffix = ' <span class="news-resources">' + ' '.join(resources) + '</span>' if resources else ''
         news += f'<li><time datetime="{esc(n["datetime"])}">{esc(n["date"])}</time><p>{esc(n["text"])}{suffix}</p></li>'
     research = ''.join(f'<article class="research-item"><span class="research-number" aria-hidden="true">{i:02d}</span><div><h3>{esc(r["title"])}</h3><p>{esc(r["description"])}</p><a href="#paper-{esc(r["paper"])}">{esc(r["work"])}</a></div></article>' for i, r in enumerate(p['research'], 1))
@@ -305,7 +327,8 @@ def render():
     sitemap = image_sitemap(p, projects)
     pages = {'index.html':index, '404.html':not_found, '.nojekyll':'', 'robots.txt':f'User-agent: *\nAllow: /\nSitemap: {p["site_url"]}/sitemap.xml\n', 'sitemap.xml':sitemap}
     for a in p['awards'] + p['earlier_awards'] + p['personal_awards']:
-        pages[f'awards/{a["id"]}.html'] = gallery(a, p)
+        if a['media']:
+            pages[f'awards/{a["id"]}.html'] = gallery(a, p)
     for project in projects:
         if not re.fullmatch(r'projects/[a-z0-9-]+/', project['path']):
             raise ValueError('Project pages must use a reviewed projects subdirectory')
