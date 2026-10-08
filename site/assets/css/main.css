@@ -41,38 +41,38 @@
 }
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --ink: #e6edf7;
-    --muted: #a8b6c9;
+    --ink: #e8e8e8;
+    --muted: #b3b3b3;
     --blue: #8db8ff;
     --blue-dark: #b7d2ff;
-    --line: #2c3b50;
-    --tint: #172235;
-    --surface: #172235;
-    --page: #101827;
-    --strong: #e6edf7;
-    --header-background: rgba(16,24,39,.96);
+    --line: #363636;
+    --tint: #1f1f1f;
+    --surface: #1f1f1f;
+    --page: #141414;
+    --strong: #e8e8e8;
+    --header-background: rgba(31,31,31,.96);
     --link-decoration: #526f9b;
-    --file-line: #354964;
-    --badge-line: #3b4d65;
-    --button-line: #3d526f;
+    --file-line: #404040;
+    --badge-line: #404040;
+    --button-line: #454545;
     --accent-line: #5c7ca7;
     --portrait-accent: #55729b;
-    --divider: #6e839f;
-    --timeline-line: #354964;
+    --divider: #858585;
+    --timeline-line: #404040;
     --timeline-dot: #7c9fce;
     --recognition-ink: #bad2f6;
     --recognition-line: #5c7ca7;
-    --control-line: #3d526f;
+    --control-line: #454545;
     --close-hover-line: #5c7ca7;
-    --control-background: rgba(23,34,53,.94);
-    --control-hover: #223149;
-    --message-background: rgba(23,34,53,.96);
+    --control-background: rgba(31,31,31,.94);
+    --control-hover: #292929;
+    --message-background: rgba(31,31,31,.96);
     --control-shadow: rgba(0,0,0,.35);
     --control-shadow-hover: rgba(0,0,0,.48);
     --dialog-shadow: rgba(0,0,0,.45);
-    --photo-backdrop: rgba(2,6,12,.86);
-    --citation-backdrop: rgba(2,6,12,.78);
-    --skip-ink: #101827;
+    --photo-backdrop: rgba(0,0,0,.86);
+    --citation-backdrop: rgba(0,0,0,.78);
+    --skip-ink: #141414;
   }
 }
 * { box-sizing: border-box; }

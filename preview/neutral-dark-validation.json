@@ -1,0 +1,3975 @@
+{
+  "date": "2026-10-08",
+  "reference_palette": {
+    "page": "#141414",
+    "navigation_cards_dialogs": "#1F1F1F",
+    "text": "#E8E8E8",
+    "secondary_text": "#B3B3B3",
+    "links": "#8DB8FF"
+  },
+  "browser": {
+    "date": "2026-10-08",
+    "homepage": [
+      {
+        "mode": "light",
+        "width": 320,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".site-header": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".about-section strong": {
+            "color": "rgb(36, 52, 73)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 52, 73)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 52, 73)"
+          },
+          ".research-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".research-item p": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".paper-links a": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(203, 217, 237)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".venue-badge": {
+            "color": "rgb(46, 97, 180)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 229, 243)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(46, 97, 180)"
+          },
+          ".award-title": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".award-date": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".course-instructors": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(65, 98, 141)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(65, 98, 141)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(65, 98, 141)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".dialog-close": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(212, 222, 235)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".dialog-message": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          "#citation-code": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".timeline-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 88, 173)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 88, 173)"
+          }
+        },
+        "orphan": [],
+        "shown": 32,
+        "hidden": 47,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ]
+      },
+      {
+        "mode": "light",
+        "width": 359,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".site-header": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".about-section strong": {
+            "color": "rgb(36, 52, 73)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 52, 73)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 52, 73)"
+          },
+          ".research-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".research-item p": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".paper-links a": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(203, 217, 237)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".venue-badge": {
+            "color": "rgb(39, 91, 176)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 229, 243)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(39, 91, 176)"
+          },
+          ".award-title": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".award-date": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".course-instructors": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(57, 91, 134)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(57, 91, 134)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(57, 91, 134)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".dialog-close": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(212, 222, 235)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".dialog-message": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          "#citation-code": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".timeline-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 88, 173)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 88, 173)"
+          }
+        },
+        "orphan": [],
+        "shown": 44,
+        "hidden": 35,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ]
+      },
+      {
+        "mode": "light",
+        "width": 360,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".site-header": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".about-section strong": {
+            "color": "rgb(36, 52, 73)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 52, 73)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 52, 73)"
+          },
+          ".research-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".research-item p": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".paper-links a": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(203, 217, 237)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".venue-badge": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 229, 243)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".award-title": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".award-date": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".course-instructors": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(53, 87, 130)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(53, 87, 130)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(53, 87, 130)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".dialog-close": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(212, 222, 235)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".dialog-message": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          "#citation-code": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".timeline-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 88, 173)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 88, 173)"
+          }
+        },
+        "orphan": [],
+        "shown": 46,
+        "hidden": 33,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ]
+      },
+      {
+        "mode": "light",
+        "width": 390,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".site-header": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".about-section strong": {
+            "color": "rgb(36, 52, 73)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 52, 73)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 52, 73)"
+          },
+          ".research-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".research-item p": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".paper-links a": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(203, 217, 237)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".venue-badge": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 229, 243)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".award-title": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".award-date": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".course-instructors": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(53, 87, 130)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(53, 87, 130)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(53, 87, 130)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".dialog-close": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(212, 222, 235)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".dialog-message": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          "#citation-code": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".timeline-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 88, 173)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 88, 173)"
+          }
+        },
+        "orphan": [],
+        "shown": 43,
+        "hidden": 36,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ]
+      },
+      {
+        "mode": "light",
+        "width": 600,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".site-header": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".about-section strong": {
+            "color": "rgb(36, 52, 73)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 52, 73)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 52, 73)"
+          },
+          ".research-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".research-item p": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".paper-links a": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(203, 217, 237)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".venue-badge": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 229, 243)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".award-title": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".award-date": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".course-instructors": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(53, 87, 130)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(53, 87, 130)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(53, 87, 130)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".dialog-close": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(212, 222, 235)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".dialog-message": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          "#citation-code": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".timeline-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 88, 173)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 88, 173)"
+          }
+        },
+        "orphan": [],
+        "shown": 77,
+        "hidden": 2,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ]
+      },
+      {
+        "mode": "light",
+        "width": 601,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".site-header": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".about-section strong": {
+            "color": "rgb(36, 52, 73)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 52, 73)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 52, 73)"
+          },
+          ".research-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".research-item p": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".paper-links a": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(203, 217, 237)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".venue-badge": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 229, 243)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".award-title": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".award-date": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".course-instructors": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(53, 87, 130)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(53, 87, 130)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(53, 87, 130)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".dialog-close": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(255, 255, 255, 0.94)",
+            "border": "rgb(212, 222, 235)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".dialog-message": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          "#citation-code": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".timeline-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 88, 173)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 88, 173)"
+          }
+        },
+        "orphan": [],
+        "shown": 72,
+        "hidden": 7,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ]
+      },
+      {
+        "mode": "light",
+        "width": 820,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".site-header": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".about-section strong": {
+            "color": "rgb(36, 52, 73)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 52, 73)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 52, 73)"
+          },
+          ".research-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".research-item p": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".paper-links a": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(203, 217, 237)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".venue-badge": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 229, 243)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".award-title": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".award-date": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".course-instructors": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(53, 87, 130)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(53, 87, 130)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(53, 87, 130)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".dialog-close": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(255, 255, 255, 0.94)",
+            "border": "rgb(212, 222, 235)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".dialog-message": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          "#citation-code": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".timeline-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 88, 173)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 88, 173)"
+          }
+        },
+        "orphan": [],
+        "shown": 78,
+        "hidden": 1,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ]
+      },
+      {
+        "mode": "light",
+        "width": 1024,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".site-header": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".about-section strong": {
+            "color": "rgb(36, 52, 73)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 52, 73)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 52, 73)"
+          },
+          ".research-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".research-item p": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".paper-links a": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(203, 217, 237)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".venue-badge": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 229, 243)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".award-title": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".award-date": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".course-instructors": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(53, 87, 130)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(53, 87, 130)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(53, 87, 130)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".dialog-close": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(255, 255, 255, 0.94)",
+            "border": "rgb(212, 222, 235)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".dialog-message": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          "#citation-code": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".timeline-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 88, 173)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 88, 173)"
+          }
+        },
+        "orphan": [],
+        "shown": 78,
+        "hidden": 1,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ]
+      },
+      {
+        "mode": "light",
+        "width": 1440,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".site-header": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".about-section strong": {
+            "color": "rgb(36, 52, 73)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 52, 73)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 52, 73)"
+          },
+          ".research-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".research-item p": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".paper-links a": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(203, 217, 237)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".venue-badge": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 229, 243)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".award-title": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".award-date": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".course-instructors": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(82, 97, 116)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(53, 87, 130)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(53, 87, 130)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(53, 87, 130)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".dialog-close": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(255, 255, 255, 0.94)",
+            "border": "rgb(212, 222, 235)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(36, 88, 173)"
+          },
+          ".dialog-message": {
+            "color": "rgb(82, 97, 116)",
+            "background": "rgba(255, 255, 255, 0.96)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(82, 97, 116)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          "#citation-code": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgb(242, 246, 252)",
+            "border": "rgb(228, 233, 240)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".timeline-item": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(28, 40, 58)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(28, 40, 58)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(28, 40, 58)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(36, 88, 173)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(36, 88, 173)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(36, 88, 173)"
+          }
+        },
+        "orphan": [],
+        "shown": 79,
+        "hidden": 0,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ]
+      },
+      {
+        "mode": "dark",
+        "width": 320,
+        "page": "rgb(20, 20, 20)",
+        "ink": "rgb(232, 232, 232)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(20, 20, 20)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".site-header": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".about-section strong": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item p": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".paper-links a": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".venue-badge": {
+            "color": "rgb(131, 175, 248)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(64, 64, 64)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(131, 175, 248)"
+          },
+          ".award-title": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".award-date": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".course-instructors": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(174, 199, 235)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(174, 199, 235)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(174, 199, 235)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".dialog-close": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".dialog-message": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          "#citation-code": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".timeline-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(141, 184, 255)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(141, 184, 255)"
+          }
+        },
+        "orphan": [],
+        "shown": 32,
+        "hidden": 47,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ]
+      },
+      {
+        "mode": "dark",
+        "width": 359,
+        "page": "rgb(20, 20, 20)",
+        "ink": "rgb(232, 232, 232)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(20, 20, 20)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".site-header": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".about-section strong": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item p": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".paper-links a": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".venue-badge": {
+            "color": "rgb(138, 181, 252)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(64, 64, 64)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(138, 181, 252)"
+          },
+          ".award-title": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".award-date": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".course-instructors": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(182, 206, 242)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(182, 206, 242)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(182, 206, 242)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".dialog-close": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".dialog-message": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          "#citation-code": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".timeline-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(141, 184, 255)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(141, 184, 255)"
+          }
+        },
+        "orphan": [],
+        "shown": 44,
+        "hidden": 35,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ]
+      },
+      {
+        "mode": "dark",
+        "width": 360,
+        "page": "rgb(20, 20, 20)",
+        "ink": "rgb(232, 232, 232)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(20, 20, 20)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".site-header": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".about-section strong": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item p": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".paper-links a": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".venue-badge": {
+            "color": "rgb(140, 183, 254)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(64, 64, 64)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(140, 183, 254)"
+          },
+          ".award-title": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".award-date": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".course-instructors": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(185, 209, 245)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(185, 209, 245)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(185, 209, 245)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".dialog-close": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".dialog-message": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          "#citation-code": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".timeline-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(141, 184, 255)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(141, 184, 255)"
+          }
+        },
+        "orphan": [],
+        "shown": 46,
+        "hidden": 33,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ]
+      },
+      {
+        "mode": "dark",
+        "width": 390,
+        "page": "rgb(20, 20, 20)",
+        "ink": "rgb(232, 232, 232)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(20, 20, 20)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".site-header": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".about-section strong": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item p": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".paper-links a": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".venue-badge": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(64, 64, 64)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".award-title": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".award-date": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".course-instructors": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(186, 210, 246)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(186, 210, 246)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(186, 210, 246)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".dialog-close": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".dialog-message": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          "#citation-code": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".timeline-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(141, 184, 255)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(141, 184, 255)"
+          }
+        },
+        "orphan": [],
+        "shown": 43,
+        "hidden": 36,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ]
+      },
+      {
+        "mode": "dark",
+        "width": 600,
+        "page": "rgb(20, 20, 20)",
+        "ink": "rgb(232, 232, 232)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(20, 20, 20)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".site-header": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".about-section strong": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item p": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".paper-links a": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".venue-badge": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(64, 64, 64)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".award-title": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".award-date": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".course-instructors": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(186, 210, 246)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(186, 210, 246)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(186, 210, 246)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".dialog-close": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".dialog-message": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          "#citation-code": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".timeline-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(141, 184, 255)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(141, 184, 255)"
+          }
+        },
+        "orphan": [],
+        "shown": 77,
+        "hidden": 2,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ]
+      },
+      {
+        "mode": "dark",
+        "width": 601,
+        "page": "rgb(20, 20, 20)",
+        "ink": "rgb(232, 232, 232)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(20, 20, 20)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".site-header": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".about-section strong": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item p": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".paper-links a": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".venue-badge": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(64, 64, 64)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".award-title": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".award-date": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".course-instructors": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(186, 210, 246)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(186, 210, 246)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(186, 210, 246)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".dialog-close": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(31, 31, 31, 0.94)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".dialog-message": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          "#citation-code": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".timeline-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(141, 184, 255)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(141, 184, 255)"
+          }
+        },
+        "orphan": [],
+        "shown": 72,
+        "hidden": 7,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ]
+      },
+      {
+        "mode": "dark",
+        "width": 820,
+        "page": "rgb(20, 20, 20)",
+        "ink": "rgb(232, 232, 232)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(20, 20, 20)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".site-header": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".about-section strong": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item p": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".paper-links a": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".venue-badge": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(64, 64, 64)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".award-title": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".award-date": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".course-instructors": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(186, 210, 246)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(186, 210, 246)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(186, 210, 246)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".dialog-close": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(31, 31, 31, 0.94)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".dialog-message": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          "#citation-code": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".timeline-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(141, 184, 255)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(141, 184, 255)"
+          }
+        },
+        "orphan": [],
+        "shown": 78,
+        "hidden": 1,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ]
+      },
+      {
+        "mode": "dark",
+        "width": 1024,
+        "page": "rgb(20, 20, 20)",
+        "ink": "rgb(232, 232, 232)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(20, 20, 20)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".site-header": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".about-section strong": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item p": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".paper-links a": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".venue-badge": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(64, 64, 64)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".award-title": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".award-date": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".course-instructors": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(186, 210, 246)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(186, 210, 246)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(186, 210, 246)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".dialog-close": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(31, 31, 31, 0.94)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".dialog-message": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          "#citation-code": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".timeline-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(141, 184, 255)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(141, 184, 255)"
+          }
+        },
+        "orphan": [],
+        "shown": 78,
+        "hidden": 1,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ]
+      },
+      {
+        "mode": "dark",
+        "width": 1440,
+        "page": "rgb(20, 20, 20)",
+        "ink": "rgb(232, 232, 232)",
+        "colorScheme": "light dark",
+        "colors": {
+          ":root": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(20, 20, 20)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".site-header": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s, 0.26s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".about-section strong": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".research-item p": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".paper-links a": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".venue-badge": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(64, 64, 64)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".award-title": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".award-date": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".course-instructors": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(179, 179, 179)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".teaching-recognition": {
+            "color": "rgb(186, 210, 246)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(186, 210, 246)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(186, 210, 246)"
+          },
+          ".photo-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".dialog-close": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".dialog-navigation button": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(31, 31, 31, 0.94)",
+            "border": "rgb(69, 69, 69)",
+            "filter": "none",
+            "transition": "0.15s, 0.15s, 0.15s",
+            "outline": "rgb(141, 184, 255)"
+          },
+          ".dialog-message": {
+            "color": "rgb(179, 179, 179)",
+            "background": "rgba(31, 31, 31, 0.96)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(179, 179, 179)"
+          },
+          ".citation-dialog": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          "#citation-code": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgb(31, 31, 31)",
+            "border": "rgb(54, 54, 54)",
+            "filter": "none",
+            "transition": "0.18s, 0.18s, 0.18s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".timeline-item": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".profile .portrait": {
+            "color": "rgb(232, 232, 232)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(232, 232, 232)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(232, 232, 232)"
+          },
+          ".badminton-photo img": {
+            "color": "rgb(141, 184, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(141, 184, 255)",
+            "filter": "none",
+            "transition": "0s",
+            "outline": "rgb(141, 184, 255)"
+          }
+        },
+        "orphan": [],
+        "shown": 79,
+        "hidden": 0,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#141414",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ]
+      }
+    ],
+    "accessibility": [
+      {
+        "label": "home light 390",
+        "violations": [],
+        "passes": 26
+      },
+      {
+        "label": "home light 1440",
+        "violations": [],
+        "passes": 26
+      },
+      {
+        "label": "home dark 390",
+        "violations": [],
+        "passes": 26
+      },
+      {
+        "label": "home dark 1440",
+        "violations": [],
+        "passes": 26
+      },
+      {
+        "label": "photo light",
+        "violations": [],
+        "passes": 16
+      },
+      {
+        "label": "photo dark",
+        "violations": [],
+        "passes": 16
+      },
+      {
+        "label": "citation light",
+        "violations": [],
+        "passes": 19
+      },
+      {
+        "label": "citation dark",
+        "violations": [],
+        "passes": 19
+      }
+    ],
+    "galleries": [
+      {
+        "path": "teaching-outstanding-2025-2026",
+        "mode": "light",
+        "width": 320,
+        "page": "rgb(255, 255, 255)",
+        "heads": 2
+      },
+      {
+        "path": "teaching-outstanding-2025-2026",
+        "mode": "dark",
+        "width": 320,
+        "page": "rgb(20, 20, 20)",
+        "heads": 2
+      },
+      {
+        "path": "mlcad-2026",
+        "mode": "light",
+        "width": 390,
+        "page": "rgb(255, 255, 255)",
+        "heads": 2
+      },
+      {
+        "path": "mlcad-2026",
+        "mode": "dark",
+        "width": 390,
+        "page": "rgb(20, 20, 20)",
+        "heads": 2
+      },
+      {
+        "path": "iwls-2026",
+        "mode": "light",
+        "width": 1440,
+        "page": "rgb(255, 255, 255)",
+        "heads": 2
+      },
+      {
+        "path": "iwls-2026",
+        "mode": "dark",
+        "width": 1440,
+        "page": "rgb(20, 20, 20)",
+        "heads": 2
+      }
+    ],
+    "no_javascript": [
+      {
+        "path": "",
+        "dark": true
+      },
+      {
+        "path": "awards/teaching-outstanding-2025-2026.html",
+        "dark": true
+      },
+      {
+        "path": "404.html",
+        "dark": true
+      },
+      {
+        "path": "projects/trinity/",
+        "dark": true
+      }
+    ],
+    "printing": [
+      {
+        "path": "",
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "scheme": "light"
+      },
+      {
+        "path": "projects/trinity/",
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(42, 39, 36)",
+        "scheme": "light"
+      }
+    ],
+    "first_dark_paint": {
+      "background": "rgb(20, 20, 20)",
+      "scheme": "light dark"
+    },
+    "live_mode_changes": {
+      "no_reload": true,
+      "states": [
+        {
+          "page": "rgb(255, 255, 255)",
+          "ink": "rgb(28, 40, 58)"
+        },
+        {
+          "page": "rgb(20, 20, 20)",
+          "ink": "rgb(232, 232, 232)"
+        },
+        {
+          "page": "rgb(255, 255, 255)",
+          "ink": "rgb(28, 40, 58)"
+        },
+        {
+          "page": "rgb(20, 20, 20)",
+          "ink": "rgb(232, 232, 232)"
+        }
+      ]
+    },
+    "mobile_menu": true,
+    "image_viewer": {
+      "webp_preview": true,
+      "original_pdf_link": true,
+      "photo_colors_preserved": true,
+      "next_image": true
+    },
+    "bibtex_copy": true,
+    "bibtex_fallback": true,
+    "reduced_motion": true,
+    "not_found": {
+      "dark": true
+    },
+    "trinity": [
+      {
+        "mode": "light",
+        "bg": "rgb(247, 245, 242)",
+        "ink": "rgb(42, 39, 36)",
+        "scheme": "light dark",
+        "overflow": false
+      },
+      {
+        "mode": "dark",
+        "bg": "rgb(20, 20, 20)",
+        "ink": "rgb(232, 232, 232)",
+        "scheme": "light dark",
+        "overflow": false
+      }
+    ],
+    "page_errors": []
+  },
+  "links": {
+    "date": "2026-10-08",
+    "new_tabs": [
+      {
+        "width": 390,
+        "label": "publication PDF 1",
+        "path": "/files/papers/2026-mlcad-tapco.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "publication PDF 2",
+        "path": "/files/papers/2026-dac-hypas.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "publication PDF 3",
+        "path": "/files/papers/2026-todaes-cb-evo.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "publication PDF 4",
+        "path": "/files/papers/2024-date-hybrid-approach.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "publication PDF 5",
+        "path": "/files/papers/2026-arxiv-trinity.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "publication PDF 6",
+        "path": "/files/papers/2025-dadh-oracle-bone.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "Slides 1",
+        "path": "/files/slides/2026-mlcad-tapco-slides.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "Slides 2",
+        "path": "/files/slides/2026-dac-hypas-slides.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "CV",
+        "path": "/files/cv-wqtang.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "Student Evaluations",
+        "path": "/files/teaching/2026-spring-hardware-security-ta-evaluation.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "news Project",
+        "path": "/projects/trinity/",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "publication Project",
+        "path": "/projects/trinity/",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "View Original",
+        "path": "/assets/awards/iwls-2026/2026-iwls-contest-certificate-1.jpg",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "Trinity Paper",
+        "path": "/files/papers/2026-arxiv-trinity.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "Trinity License",
+        "path": "/projects/trinity/LICENSE.txt",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 390,
+        "label": "Trinity Notices",
+        "path": "/projects/trinity/NOTICE.txt",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "publication PDF 1",
+        "path": "/files/papers/2026-mlcad-tapco.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "publication PDF 2",
+        "path": "/files/papers/2026-dac-hypas.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "publication PDF 3",
+        "path": "/files/papers/2026-todaes-cb-evo.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "publication PDF 4",
+        "path": "/files/papers/2024-date-hybrid-approach.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "publication PDF 5",
+        "path": "/files/papers/2026-arxiv-trinity.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "publication PDF 6",
+        "path": "/files/papers/2025-dadh-oracle-bone.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "Slides 1",
+        "path": "/files/slides/2026-mlcad-tapco-slides.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "Slides 2",
+        "path": "/files/slides/2026-dac-hypas-slides.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "CV",
+        "path": "/files/cv-wqtang.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "Student Evaluations",
+        "path": "/files/teaching/2026-spring-hardware-security-ta-evaluation.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "news Project",
+        "path": "/projects/trinity/",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "publication Project",
+        "path": "/projects/trinity/",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "View Original",
+        "path": "/assets/awards/iwls-2026/2026-iwls-contest-certificate-1.jpg",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "Trinity Paper",
+        "path": "/files/papers/2026-arxiv-trinity.pdf",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "Trinity License",
+        "path": "/projects/trinity/LICENSE.txt",
+        "original_page_preserved": true,
+        "opener_null": true
+      },
+      {
+        "width": 1440,
+        "label": "Trinity Notices",
+        "path": "/projects/trinity/NOTICE.txt",
+        "original_page_preserved": true,
+        "opener_null": true
+      }
+    ],
+    "home_returns": [
+      {
+        "width": 390,
+        "path": "awards/iwls-2026.html",
+        "selector": ".gallery-back",
+        "same_tab": true,
+        "hash": "#award-iwls-2026"
+      },
+      {
+        "width": 390,
+        "path": "awards/iwls-2026.html",
+        "selector": ".brand",
+        "same_tab": true,
+        "hash": ""
+      },
+      {
+        "width": 390,
+        "path": "awards/iwls-2026.html",
+        "selector": ".site-footer a",
+        "same_tab": true,
+        "hash": "#award-iwls-2026"
+      },
+      {
+        "width": 390,
+        "path": "awards/icpc-2020.html",
+        "selector": ".gallery-back",
+        "same_tab": true,
+        "hash": "#award-icpc-2020"
+      },
+      {
+        "width": 390,
+        "path": "projects/trinity/",
+        "selector": ".project-back",
+        "same_tab": true,
+        "hash": ""
+      },
+      {
+        "width": 390,
+        "path": "projects/trinity/",
+        "selector": ".project-credit a[data-navigation=\"home\"]",
+        "same_tab": true,
+        "hash": ""
+      },
+      {
+        "width": 390,
+        "path": "404.html",
+        "selector": "a[data-navigation=\"home\"]",
+        "same_tab": true,
+        "hash": ""
+      },
+      {
+        "width": 1440,
+        "path": "awards/iwls-2026.html",
+        "selector": ".gallery-back",
+        "same_tab": true,
+        "hash": "#award-iwls-2026"
+      },
+      {
+        "width": 1440,
+        "path": "awards/iwls-2026.html",
+        "selector": ".brand",
+        "same_tab": true,
+        "hash": ""
+      },
+      {
+        "width": 1440,
+        "path": "awards/iwls-2026.html",
+        "selector": ".site-footer a",
+        "same_tab": true,
+        "hash": "#award-iwls-2026"
+      },
+      {
+        "width": 1440,
+        "path": "awards/icpc-2020.html",
+        "selector": ".gallery-back",
+        "same_tab": true,
+        "hash": "#award-icpc-2020"
+      },
+      {
+        "width": 1440,
+        "path": "projects/trinity/",
+        "selector": ".project-back",
+        "same_tab": true,
+        "hash": ""
+      },
+      {
+        "width": 1440,
+        "path": "projects/trinity/",
+        "selector": ".project-credit a[data-navigation=\"home\"]",
+        "same_tab": true,
+        "hash": ""
+      },
+      {
+        "width": 1440,
+        "path": "404.html",
+        "selector": "a[data-navigation=\"home\"]",
+        "same_tab": true,
+        "hash": ""
+      }
+    ],
+    "image_viewers": [
+      {
+        "width": 390,
+        "normal_click_opens_dialog": true,
+        "webp_preview": true,
+        "modified_click_opens_gallery": true
+      },
+      {
+        "width": 1440,
+        "normal_click_opens_dialog": true,
+        "webp_preview": true,
+        "modified_click_opens_gallery": true
+      }
+    ],
+    "notes": "PDF responses are intercepted with a small HTML response solely to test native new-tab navigation in headless Chromium. Actual PDF existence and byte hashes are verified separately.",
+    "no_javascript_gallery": {
+      "new_tab_fallback": true,
+      "same_tab_home_return": true
+    }
+  },
+  "static": {
+    "date": "2026-10-08",
+    "html_pages": 36,
+    "link_counts": [
+      {
+        "kind": "email",
+        "target": "current tab",
+        "count": 1
+      },
+      {
+        "kind": "home return",
+        "target": "current tab",
+        "count": 102
+      },
+      {
+        "kind": "in-page",
+        "target": "current tab",
+        "count": 105
+      },
+      {
+        "kind": "external",
+        "target": "_blank",
+        "count": 114
+      },
+      {
+        "kind": "local file",
+        "target": "_blank",
+        "count": 196
+      },
+      {
+        "kind": "local page",
+        "target": "_blank",
+        "count": 66
+      }
+    ],
+    "home_return_anchors": 102,
+    "photo_viewer_anchors": 212,
+    "local_references": 672,
+    "page_content_preserved_except_link_attributes": true,
+    "unchanged_registered_assets": 272,
+    "changed_registered_assets": [
+      "projects/trinity/assets/project.css"
+    ],
+    "profile_citations_projects_and_scripts_preserved": true,
+    "light_palette_and_component_styles_preserved": true,
+    "new_tab_destinations": {
+      "external": 114,
+      "local file": 196,
+      "local page": 66
+    },
+    "pdf_links_opening_new_tabs": {
+      "local file": 39,
+      "external": 8
+    }
+  }
+}

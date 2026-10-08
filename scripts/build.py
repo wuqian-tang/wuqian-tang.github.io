@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
 from string import Template
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'site'
@@ -47,14 +48,21 @@ def date_range(value):
         return esc(value)
     return f'<span class="date-segment">{esc(parts[0])}–</span><br><span class="date-segment">{esc(parts[1])}</span>'
 
-def external_tabs(page):
-    # Apply consistently to static template links and generated content, even without JS.
+def link_targets(page):
+    # Pages and files open new tabs, including native image-viewer fallbacks.
+    # Fragment links stay in-page; explicit home-return links keep the current tab.
     def update(match):
         anchor = match.group(0)
-        if re.search(r'\bhref="https?://', anchor):
-            anchor = re.sub(r'\s+(?:target|rel)="[^"]*"', '', anchor)
-            anchor = anchor[:-1] + ' target="_blank" rel="noopener noreferrer">'
-        return anchor
+        href = re.search(r'\s+href=(["\'])(.*?)\1', anchor)
+        if not href:
+            return anchor
+        url = html.unescape(href[2]).strip()
+        if not url or url.startswith('#') or urlsplit(url).scheme not in {'', 'http', 'https'}:
+            return anchor
+        anchor = re.sub(r'\s+(?:target|rel)=(["\']).*?\1', '', anchor)
+        if re.search(r'\bdata-navigation=(["\'])home\1', anchor):
+            return anchor
+        return anchor[:-1] + ' target="_blank" rel="noopener noreferrer">'
     return re.sub(r'<a\b[^>]*>', update, page)
 
 def media_data(awards, prefix=''):
@@ -109,8 +117,7 @@ def authors(text):
 def publication(p, citation):
     links = ''
     for link in p['links']:
-        new_tab = ' target="_blank" rel="noopener noreferrer"' if link['label'] == 'Slides' else ''
-        links += f'<a href="{esc(link["url"])}" aria-label="{esc(link["label"])} for {esc(p["title"])}"{new_tab}>{esc(link["label"])}</a>'
+        links += f'<a href="{esc(link["url"])}" aria-label="{esc(link["label"])} for {esc(p["title"])}">{esc(link["label"])}</a>'
     copy_icon = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg>'
     # A native disclosure preserves access to citations without JavaScript.
     # The browser script enhances it to a one-click copy button in the same position.
@@ -377,7 +384,7 @@ def render():
     missing = re.findall(r'\$\{\w+\}', index)
     if missing:
         raise ValueError(f'Unrendered content: {missing}')
-    not_found = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#2458ad" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#101827" media="(prefers-color-scheme: dark)"><title>Page not found | Wuqian Tang</title><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png?v=20261003-small-tang"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=20261003-small-tang"><link rel="icon" type="image/svg+xml" sizes="any" href="/assets/favicon.svg?v=20261003-small-tang"><link rel="stylesheet" href="/assets/css/main.css?v=20261008-system-theme"></head><body><main style="max-width:600px;margin:15vh auto;padding:24px"><p class="eyebrow">404</p><h1 style="margin:16px 0">Page not found</h1><p>The page may have moved. You can find my research, publications, and contact details on my homepage.</p><p style="margin-top:24px"><a href="/">Return to homepage</a></p></main></body></html>\n'
+    not_found = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#2458ad" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)"><title>Page not found | Wuqian Tang</title><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png?v=20261003-small-tang"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=20261003-small-tang"><link rel="icon" type="image/svg+xml" sizes="any" href="/assets/favicon.svg?v=20261003-small-tang"><link rel="stylesheet" href="/assets/css/main.css?v=20261008-neutral-dark"></head><body><main style="max-width:600px;margin:15vh auto;padding:24px"><p class="eyebrow">404</p><h1 style="margin:16px 0">Page not found</h1><p>The page may have moved. You can find my research, publications, and contact details on my homepage.</p><p style="margin-top:24px"><a href="/" data-navigation="home">Return to homepage</a></p></main></body></html>\n'
     not_found = not_found.replace('</head>', asset_redirect_script() + '</head>')
     sitemap = image_sitemap(p, projects)
     pages = {'index.html':index, '404.html':not_found, '.nojekyll':'', 'robots.txt':f'User-agent: *\nAllow: /\nSitemap: {p["site_url"]}/sitemap.xml\n', 'sitemap.xml':sitemap}
@@ -394,7 +401,7 @@ def render():
         if template.count('{{PROJECT_BIBTEX}}') != 1:
             raise ValueError('Project template must have one shared citation placeholder')
         pages[project['path'] + 'index.html'] = template.replace('{{PROJECT_BIBTEX}}', esc(citations[project['citation']]['bibtex']))
-    return {name: external_tabs(contents) if name.endswith('.html') else contents for name, contents in pages.items()}
+    return {name: link_targets(contents) if name.endswith('.html') else contents for name, contents in pages.items()}
 
 def audit(generated_files):
     assets = json.loads((ROOT / 'content/public-assets.json').read_text())

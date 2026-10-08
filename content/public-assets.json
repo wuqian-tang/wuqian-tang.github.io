@@ -1614,8 +1614,8 @@
   },
   {
     "path": "projects/trinity/assets/project.css",
-    "sha256": "c75e785b48b3716a5e36d8ef7df95a297446bbe5bc65bc3bf2af944ad444cdc8",
-    "source": "Adapted from pinned Trinity gh-pages stylesheet; local navigation, accessibility, media layout, native system theme and light printing"
+    "sha256": "4f5361e53edea6bcb4fddb52307cf3d2c2d03e3ab7d69ba4544db4b32163fce1",
+    "source": "Adapted from pinned Trinity gh-pages stylesheet; local navigation, accessibility, media layout, native system theme and light printing, neutral charcoal dark surfaces matching the homepage reference"
   },
   {
     "path": "projects/trinity/assets/toy-data.json",
