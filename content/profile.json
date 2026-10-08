@@ -220,8 +220,14 @@
         {
           "label": "PDF",
           "url": "files/papers/2026-todaes-cb-evo.pdf"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/sallyliu921/CB-EVO"
         }
       ],
+      "code_verified_on": "2026-10-08",
+      "code_source": "Final published paper, p. 25, footnote 1: https://github.com/sallyliu921/CB-EVO.git; public repository title matches",
       "doi_verified_on": "2026-10-03",
       "doi_source": "Crossref: exact title and Wuqian Tang author match",
       "pdf_source": "https://www.cse.cuhk.edu.hk/~byu/papers/J173-TODAES2026-CV-EVO.pdf"

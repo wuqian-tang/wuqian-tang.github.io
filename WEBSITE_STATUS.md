@@ -7,7 +7,13 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## HyPAS Slides（2026-10-08，最新）
+## CB-EVO 官方代码链接（2026-10-08，最新）
+
+- 用户授权为 CB-EVO（J1）加入 Code，放在 BibTeX 前。仓库为 `https://github.com/sallyliu921/CB-EVO`，正式论文第 25 页脚注 1 直接给出该地址，仓库说明与论文题名相符；数据记录核对来源与日期。
+- J1 资源顺序为 DOI / PDF / Code / BibTeX，Code 沿用统一资源按钮，在新分页打开并带 `noopener noreferrer`。仅更新该篇链接、生成首页及维护说明；PDF、引用、公开资产清单、Teaching、奖项与新闻保持上一版。
+- 三份新助教评量 PDF 仍在私人工作目录，仅用于讨论展示方案，未复制、拆分或加入公开网站。本轮发布不包含这些文件；评量方案等待用户审核。
+
+## HyPAS Slides（2026-10-08，上一版）
 
 - 用户授权将工作目录的 `HyPAS(1).pdf` 加入 HyPAS（C15）论文条目，并在上线核对后删除外部原文件。网站副本为 `site/files/slides/2026-dac-hypas-slides.pdf`，11 页、3,123,316 bytes，题名和作者已与论文核对；保留原始 PDF 字节，SHA-256 为 `1cd74e7fd6620481bcbf2e0c37d3d389fd6d84dca6d60cc1e232546e480ea75b`。
 - HyPAS 资源顺序为 DOI / PDF / Slides / BibTeX，与 TAPCO 一致；Slides 新分页打开，没有下载按钮或 download 属性，无 JS 时仍可查看。沿用已有构建与样式，不新增渲染逻辑。
