@@ -7,7 +7,17 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## Teaching 评量与 CV 系所更正（2026-10-08，最新）
+## 行内分隔符与 CV 单行排版（2026-10-08，最新）
+
+- 用户审核后授权：Teaching 的资源格式改为 `教师 · 系所 · [Student Evaluations]`。新增浅灰中点与评量链接作为一个行内不可拆分的整体，窄屏时一起换行；保留每门课程一个链接、原有字体、学期提示和新分页属性，没有单独的资源段落。
+- 修改前浏览器检查发现手机端若干 Awards & Honors 条目会把 `│` 留在上一行末尾，例如 320px 下的 MLCAD、ISPD、CADathlon 和待公布的 ICCAD 2026。现在将 `│` 与 `Announcements:` 标题绑定换行，后面的公开链接仍可独立折行；保持 Materials / Announcements、资源顺序、颜色及符号。共用生成函数同时修复首页奖项、More、Recent News 中相同资源行及相册页。
+- CV 的 Hardware Security 改用 `Profs. Yu-Guang Chen and TingTing Hwang, Institute of Information Security`，两位教师及系所全称均保留，课程仍为 11 bp，右侧 Spring 2026 保持单行对齐，正文结束至日期空隙约 14 pt。该课程不再需要续行，两页版下边距恢复为原来的 36 bp。完整版 / 两页版 / 公开版保持三页 / 两页 / 三页。Original Word 的该课程也移除手动换行、使用复数称谓，并恢复原下边距。
+- CV 源码、各 PDF 成品、Original Word/PDF、求职/申请副本及两份现行 ZIP 已同步。公开三个 CV 地址字节一致；主入口仍为 `files/cv-wqtang.pdf`，不加查询参数。两份邮箱等既有内容保留。
+- manifest 仍为 273 条，仅更换三个 CV 的摘要；其余 270 份资产保持原字节，包括五份课程评量 PDF。课程/奖项数据、论文、BibTeX、新闻文本、照片与分享图不变。首页及全部相册 CSS 版本为 `20261008-inline-resources`，JavaScript 保持原版本；本地翻译草案与三份原评量文件保持原状。
+- 验收见 `preview/inline-resources-validation.json`：14 种视口宽度及 320–600px、980–1030px 共 332 个逐像素宽度，逐条核对 20 个奖项分隔符和五个 Teaching 中点；无孤立行尾、无横向溢出。额外检查独立相册、无 JS、桌面/手机无障碍、CV 单行位置与字号、各副本和 ZIP、原资料摘要及全部本地链接。截图 `preview/inline-teaching-*.png`、`preview/inline-award-*.png`、`preview/inline-cv-teaching.png` 供复查。
+- 通过检查后推送私人 `wuqian-profile/main` 与公开网页 `master`，由 Pages 发布并核对线上首页、样式、三个 CV 及代表相册的实际内容。
+
+## Teaching 评量与 CV 系所更正（2026-10-08，上一版）
 
 - 用户确认 Hardware Security 的系所原来写错，现统一为 `Institute of Information Security`。依据为清华大学正式课程 `11420IIS500800`（https://eeclass.nthu.edu.tw/course/info/31565）和研究所英文官网（https://iis.site.nthu.edu.tw/?Lang=en）；两位教师及 Spring 2026 学期保留。侧栏本人 Department of Computer Science 的系所不受影响。
 - 每门已有评量的课程仅有一个 `[Student Evaluations]`，直接接在教师 · 系所的同一段落末尾；不另建资源行、不展示分数或人数。链接为本地 PDF，在新分页打开，没有下载属性；手机宽度不足时允许自然换行。可访问名称和悬停提示列出实际评量学期，不把 Fall 2025 报告暗示成 Fall 2024。
@@ -315,7 +325,7 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 8. **论文**：甲骨文论文 J2 放在 More 的 2025 年分组。右侧仅标注 Selected，侧栏保留 Google Scholar，不重复在栏目右侧出现。标题下说明严格为 `* denotes equal contribution.`，不加括号或 Selected work.；更多论文的原生展开按钮收起为 More ＋、展开为 Less −，不显示篇数，可访问名称应能区分论文与奖项并跟随状态。编号 J1 / J2 / C1–C19 保持稳定，预印本另用 P1。Trinity 放在 More 的 2026 年分组，标注 arXiv / Preprint / 2026，使用正式 arXiv ID 与官方 `@misc` 引用，不虚构会议录用或待刊状态。所有论文作者顺序完整，本人加粗，星号表示 equal contribution。Invited paper、In Chinese 与 To appear 分别按事实使用。除 To appear 和明确标注的 arXiv 预印本外，每篇必须有一个经过核对的 DOI。查不到 DOI 时按用户要求标为 To appear；不得使用相似题目的 DOI。
 9. **论文 PDF**：优先正式官方全文或作者提供的可公开最终稿；下载后核对内容，存放 `site/files/papers/`。查看链接用 `files/papers/文件名.pdf`，不得链接其他人的个人网页、远程 PDF 或临时下载 token。保留 PDF 内容，在 manifest 记录来源与 SHA-256；如用户授权修改页面方向，还需记录 normalization。
 10. **照片**：沿用真实照片，不生成或改写人物。原始照片字节保持不变；PDF 如需转正，必须得到用户明确授权，只调整页面方向而不改扫描内容，并更新公开清单中的 SHA-256。首页羽毛球照片使用 4:3、`object-position: 50% 53%` 半身裁切；弹窗使用 `crop_top: 0.25` 只裁上方窗帘。方向先遵循正确 EXIF；2022 ICCAD 源 PDF 设置 270° 页面方向并重新生成正向预览，页面不再叠加旋转。图片有准确英文 alt，惰性加载，不在首页提前请求所有奖项图片。媒体点击直接在当前页弹窗，支持电脑两侧 / 手机图下的图标翻页、左右键、双向触控滑动、右上角图标关闭、Escape、焦点返回；翻页先解码新图，再用 100ms 淡出与 180ms 淡入配合 16px 水平位移，图框高度过渡 200ms；系统开启减少动态效果时取消这些动画；保留原相册作为无 JS / Ctrl 或 Cmd 点击回退。只有 View Original 查看链接，不添加下载按钮或 download 属性。
-11. **Teaching**：每门课程包含正式英文课程名、教师、所属系所或学院和学期；教师在前，系所在后，以 · 分隔。有已授权评量时，在同一教师/系所段落末尾放一个 `[Student Evaluations]`，本地 PDF 新分页查看、不显示分数；合并多学期报告须在链接提示和来源清单写明实际学期，保留所有续页。Hardware Security 属于 Institute of Information Security。不同学院课程不能统一写成 CS。助教奖项括号采用 `Spring 2025` / `Fall 2025` 格式，表示教学对应学期；证书学年度第 1 学期转换为该学年开始公历年的 Fall，第 2 学期转换为下一公历年的 Spring。不得把次年 2 月或暑假颁发日期当成教学学期。Awards 日期列为颁发月份，说明与相册另注明实际学期。
+11. **Teaching**：每门课程包含正式英文课程名、教师、所属系所或学院和学期；教师在前，系所在后，以 · 分隔。有已授权评量时，在同一教师/系所段落末尾放 `· [Student Evaluations]`；新增中点须与链接一起换行，本地 PDF 新分页查看、不显示分数；合并多学期报告须在链接提示和来源清单写明实际学期，保留所有续页。Hardware Security 属于 Institute of Information Security。不同学院课程不能统一写成 CS。助教奖项括号采用 `Spring 2025` / `Fall 2025` 格式，表示教学对应学期；证书学年度第 1 学期转换为该学年开始公历年的 Fall，第 2 学期转换为下一公历年的 Spring。不得把次年 2 月或暑假颁发日期当成教学学期。Awards 日期列为颁发月份，说明与相册另注明实际学期。
 12. **图标**：使用经典繁方篆「唐」，字体白色、背景 `#4E7DC3`，无白色内框。页首 35px 用 `brand.svg` 原始字形；favicon 用已确认的 B 小尺寸版本，保留所有轮廓并调整至 16px 网格，同时提供 SVG 与 16×16 / 32×32 PNG。页面明确填写 sizes，修改时更新版本参数。不得放大低清截图作为正式图标；完整字体不进公开仓库，来源元数据和 SHA-256 见 `THIRD_PARTY_NOTICES.md`。
 13. **响应式与可访问性**：电脑两列，手机单列，导航可展开；320px 起无横向溢出。600px 及以下的简介区先显示邮箱，再显示下一行的 Hsinchu, Taiwan；两行横跨简介宽度，图标与正文分别左对齐。手机菜单按钮只留三横线、46px 触控区域，必须有随展开状态更新的 aria-label。菜单布局下，上滑页面（scrollY 增大）隐藏页首、下拉（scrollY 减小）显示，260ms 缓动平移、12px 累积阈值；展开菜单时始终显示，关闭才恢复；键盘焦点须能唤回页首，减少动态效果时不动画，桌面页首始终可见。修改样式或脚本交互后更新模板中的资源版本参数。保留语义标题、可见键盘焦点、跳转链接、对话框标签，以及无 JavaScript 的基本阅读和图片链接。
 14. **公开范围**：允许本次明确授权的奖状、奖杯、奖牌、照片和具体最终论文；不公开身份证件、成绩单、申请表、推荐信、录取通知、学生奖惩记录、未授权稿件或整个资料目录。用户已确认公开 CV 不含电话号码，保留学校邮箱，后接个人邮箱 mark.wqtang@gmail.com。
@@ -324,6 +334,8 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 17. **分享与导航**：导航顺序为 About / Research / Publications / Experience / Awards / Teaching / Hobbies；正文 Education & Experience 位于 Publications 之后、Awards & Honors 之前。首页和相册保留绝对 URL 的 og:image、图片宽高与 alt、Twitter summary_large_image。分享图固定 1200×630，只显示英文姓名，学校上方写系所，研究方向单行为 Electronic Design Automation · AI for EDA；文字与头像间距 84px，照片左侧起点 68px，左上 Homepage 32px，底部网址与地名 30px。当前浏览器与首页分享标题 Wuqian Tang | Homepage、摘要 CS Ph.D. Candidate at National Tsing Hua University.，不追加 Learning 或研究描述。头像、姓名、学校或研究方向改变后，从 `content/social-preview.html` 用 Chromium 按 1200×630、设备倍率 1 重渲染 PNG，等待图片和字体加载，保留 PNG，并以 JPEG RGB quality 95、4:4:4、optimized 导出分享版；更新新版本图片文件名、全部分享标签与 manifest，旧图片地址保留可访问。正式分享直接使用原网址，参数仅用于诊断缓存；各平台真实卡片效果不能由本站爬虫 UA 检查替代。ORCID 等身份链接须由正式个人记录及论文匹配核对，不能只凭同名猜测；与 Person sameAs 同步。
 
 Hobbies 用词参考了 [Siyuan Jiang 的学术主页](https://siyuanj.github.io/) 中同名栏目；它直接表达爱好，适合当前内容。网站不需要附上这条用词参考。
+
+资源换行规范：Awards 的 `│` 与后面的 `Announcements:` 标题作为不可拆分的行内整体；Teaching 新增的 `·` 与 `[Student Evaluations]` 同样一起换行。保留后续链接的独立折行能力。
 
 ## 文件与更新步骤
 

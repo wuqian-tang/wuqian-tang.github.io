@@ -126,10 +126,11 @@ def award_resources(a, local_gallery=False, kinds=None, headings=True):
     news = ' '.join(announcement_link(a, link) for link in a.get('links', []))
     if not news and 'announcements' in pending:
         news = placeholder
+    divider = '<span class="resource-divider" aria-hidden="true">│</span> ' if media and news else ''
     if news and headings:
-        news = '<span class="resource-label">Announcements:</span> ' + news
-    divider = ' <span class="resource-divider" aria-hidden="true">│</span> ' if media and news else ''
-    return media + divider + news
+        news = '<span class="resource-intro">' + divider + '<span class="resource-label">Announcements:</span></span> ' + news
+        divider = ''
+    return media + (' ' if media and news else '') + divider + news
 
 def award_links(a, local_gallery=False, kinds=None, headings=True):
     return '<div class="award-links">' + award_resources(a, local_gallery, kinds, headings) + '</div>'
@@ -171,7 +172,7 @@ def course(item):
                 or not terms or any(term not in item['terms'].split(', ') for term in terms)):
             raise ValueError(f'Student evaluations require a local PDF and matching course terms: {item["title"]}')
         label = 'Student evaluations for ' + item['title'] + ' (' + ', '.join(terms) + ')'
-        resource = f' <a class="course-evaluations" href="{esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="{esc(label)}" title="{esc(", ".join(terms))}">[Student Evaluations]</a>'
+        resource = f' <span class="course-evaluation-resource"><span class="course-evaluation-divider" aria-hidden="true">·</span> <a class="course-evaluations" href="{esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="{esc(label)}" title="{esc(", ".join(terms))}">[Student Evaluations]</a></span>'
     return f'<li><div><p class="course-name">{esc(item["title"])}</p><p class="course-instructors">{esc(item["instructors"])} · <span class="course-department">{esc(item["department"])}</span>{resource}</p></div><p class="course-terms">{esc(item["terms"])}</p></li>'
 
 def image_sitemap(profile, projects):
