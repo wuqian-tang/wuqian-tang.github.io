@@ -1,0 +1,691 @@
+{
+  "date": "2026-10-08",
+  "html_pages_with_theme_metadata": 36,
+  "manifest_entries": 273,
+  "unchanged_manifest_assets": 272,
+  "changed_registered_assets": [
+    "projects/trinity/assets/project.css"
+  ],
+  "page_bodies_content_links_preserved": true,
+  "profile_and_citations_preserved": true,
+  "photos_pdfs_brand_and_share_images_preserved": true,
+  "javascript_bytes_preserved": true,
+  "all_component_colors_use_theme_variables": true,
+  "local_references": 672,
+  "external_new_tab_anchors": 114,
+  "anchor_count": 584,
+  "browser": {
+    "date": "2026-10-08",
+    "homepage": [
+      {
+        "mode": "light",
+        "width": 320,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 32,
+        "hidden": 47,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "light",
+        "width": 359,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 44,
+        "hidden": 35,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "light",
+        "width": 360,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 46,
+        "hidden": 33,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "light",
+        "width": 390,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 43,
+        "hidden": 36,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "light",
+        "width": 600,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 77,
+        "hidden": 2,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "light",
+        "width": 601,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 72,
+        "hidden": 7,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "light",
+        "width": 820,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 78,
+        "hidden": 1,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "light",
+        "width": 1024,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 78,
+        "hidden": 1,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "light",
+        "width": 1440,
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 79,
+        "hidden": 0,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": true
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": false
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "dark",
+        "width": 320,
+        "page": "rgb(16, 24, 39)",
+        "ink": "rgb(230, 237, 247)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 32,
+        "hidden": 47,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "dark",
+        "width": 359,
+        "page": "rgb(16, 24, 39)",
+        "ink": "rgb(230, 237, 247)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 44,
+        "hidden": 35,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "dark",
+        "width": 360,
+        "page": "rgb(16, 24, 39)",
+        "ink": "rgb(230, 237, 247)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 46,
+        "hidden": 33,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "dark",
+        "width": 390,
+        "page": "rgb(16, 24, 39)",
+        "ink": "rgb(230, 237, 247)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 43,
+        "hidden": 36,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "dark",
+        "width": 600,
+        "page": "rgb(16, 24, 39)",
+        "ink": "rgb(230, 237, 247)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 77,
+        "hidden": 2,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "dark",
+        "width": 601,
+        "page": "rgb(16, 24, 39)",
+        "ink": "rgb(230, 237, 247)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 72,
+        "hidden": 7,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "dark",
+        "width": 820,
+        "page": "rgb(16, 24, 39)",
+        "ink": "rgb(230, 237, 247)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 78,
+        "hidden": 1,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "dark",
+        "width": 1024,
+        "page": "rgb(16, 24, 39)",
+        "ink": "rgb(230, 237, 247)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 78,
+        "hidden": 1,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ],
+        "all_component_colors_checked": true
+      },
+      {
+        "mode": "dark",
+        "width": 1440,
+        "page": "rgb(16, 24, 39)",
+        "ink": "rgb(230, 237, 247)",
+        "colorScheme": "light dark",
+        "orphan": [],
+        "shown": 79,
+        "hidden": 0,
+        "heads": 53,
+        "abbreviationsCorrect": true,
+        "overflow": false,
+        "scheme": "light dark",
+        "themeColors": [
+          {
+            "color": "#2458ad",
+            "media": "(prefers-color-scheme: light)",
+            "active": false
+          },
+          {
+            "color": "#101827",
+            "media": "(prefers-color-scheme: dark)",
+            "active": true
+          }
+        ],
+        "all_component_colors_checked": true
+      }
+    ],
+    "accessibility": [
+      {
+        "label": "home light 390",
+        "violations": [],
+        "passes": 26
+      },
+      {
+        "label": "home light 1440",
+        "violations": [],
+        "passes": 26
+      },
+      {
+        "label": "home dark 390",
+        "violations": [],
+        "passes": 26
+      },
+      {
+        "label": "home dark 1440",
+        "violations": [],
+        "passes": 26
+      },
+      {
+        "label": "photo light",
+        "violations": [],
+        "passes": 16
+      },
+      {
+        "label": "photo dark",
+        "violations": [],
+        "passes": 16
+      },
+      {
+        "label": "citation light",
+        "violations": [],
+        "passes": 19
+      },
+      {
+        "label": "citation dark",
+        "violations": [],
+        "passes": 19
+      }
+    ],
+    "galleries": [
+      {
+        "path": "teaching-outstanding-2025-2026",
+        "mode": "light",
+        "width": 320,
+        "page": "rgb(255, 255, 255)",
+        "heads": 2
+      },
+      {
+        "path": "teaching-outstanding-2025-2026",
+        "mode": "dark",
+        "width": 320,
+        "page": "rgb(16, 24, 39)",
+        "heads": 2
+      },
+      {
+        "path": "mlcad-2026",
+        "mode": "light",
+        "width": 390,
+        "page": "rgb(255, 255, 255)",
+        "heads": 2
+      },
+      {
+        "path": "mlcad-2026",
+        "mode": "dark",
+        "width": 390,
+        "page": "rgb(16, 24, 39)",
+        "heads": 2
+      },
+      {
+        "path": "iwls-2026",
+        "mode": "light",
+        "width": 1440,
+        "page": "rgb(255, 255, 255)",
+        "heads": 2
+      },
+      {
+        "path": "iwls-2026",
+        "mode": "dark",
+        "width": 1440,
+        "page": "rgb(16, 24, 39)",
+        "heads": 2
+      }
+    ],
+    "no_javascript": [
+      {
+        "path": "",
+        "dark": true
+      },
+      {
+        "path": "awards/teaching-outstanding-2025-2026.html",
+        "dark": true
+      },
+      {
+        "path": "404.html",
+        "dark": true
+      },
+      {
+        "path": "projects/trinity/",
+        "dark": true
+      }
+    ],
+    "printing": [
+      {
+        "path": "",
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(28, 40, 58)",
+        "scheme": "light"
+      },
+      {
+        "path": "projects/trinity/",
+        "page": "rgb(255, 255, 255)",
+        "ink": "rgb(42, 39, 36)",
+        "scheme": "light"
+      }
+    ],
+    "first_dark_paint": {
+      "background": "rgb(16, 24, 39)",
+      "scheme": "light dark"
+    },
+    "live_mode_changes": {
+      "no_reload": true,
+      "states": [
+        {
+          "page": "rgb(255, 255, 255)",
+          "ink": "rgb(28, 40, 58)"
+        },
+        {
+          "page": "rgb(16, 24, 39)",
+          "ink": "rgb(230, 237, 247)"
+        },
+        {
+          "page": "rgb(255, 255, 255)",
+          "ink": "rgb(28, 40, 58)"
+        },
+        {
+          "page": "rgb(16, 24, 39)",
+          "ink": "rgb(230, 237, 247)"
+        }
+      ]
+    },
+    "mobile_menu": true,
+    "image_viewer": {
+      "webp_preview": true,
+      "original_pdf_link": true,
+      "photo_colors_preserved": true,
+      "next_image": true
+    },
+    "bibtex_copy": true,
+    "bibtex_fallback": true,
+    "reduced_motion": true,
+    "not_found": {
+      "dark": true
+    },
+    "trinity": [
+      {
+        "mode": "light",
+        "bg": "rgb(247, 245, 242)",
+        "ink": "rgb(42, 39, 36)",
+        "scheme": "light dark",
+        "overflow": false
+      },
+      {
+        "mode": "dark",
+        "bg": "rgb(26, 24, 22)",
+        "ink": "rgb(232, 224, 216)",
+        "scheme": "light dark",
+        "overflow": false
+      }
+    ],
+    "page_errors": []
+  },
+  "light_appearance_comparison": [
+    {
+      "width": 390,
+      "unchanged_computed_styles": 32
+    },
+    {
+      "width": 1440,
+      "unchanged_computed_styles": 32
+    }
+  ]
+}
