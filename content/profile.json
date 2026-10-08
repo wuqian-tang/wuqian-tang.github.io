@@ -62,7 +62,12 @@
       "date": "Nov 8, 2026",
       "datetime": "2026-11-08",
       "text": "Our team has been selected for an Honorable Mention in Problem A of the ICCAD 2026 CAD Contest.",
-      "award_resources": "iccad-contest-2026"
+      "resources": [
+        {
+          "label": "to appear",
+          "pending": true
+        }
+      ]
     },
     {
       "date": "Oct 2026",

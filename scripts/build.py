@@ -271,6 +271,9 @@ def render():
             raise ValueError('Recent News currently includes only 2026')
         resources = []
         for ri, resource in enumerate(n.get('resources', [])):
+            if resource.get('pending'):
+                resources.append(f'<span class="resource-pending">[{esc(resource["label"])}]</span>')
+                continue
             if 'url' in resource:
                 if not (resource['url'].startswith('https://') or any(resource['url'] == project['path'] for project in projects)):
                     raise ValueError('News links must use HTTPS or a reviewed local project')

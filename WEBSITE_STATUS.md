@@ -7,7 +7,13 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## TAPCO Slides 与 ICCAD 2026 Honorable Mention（2026-10-08，最新）
+## Recent News 待公布标记精简（2026-10-08，最新）
+
+- 按用户补充要求，最新新闻完整显示为 `Our team has been selected for an Honorable Mention in Problem A of the ICCAD 2026 CAD Contest. [to appear]`，句末仅一个浅灰纯文本占位，不显示 Materials、Announcements 或分隔符。
+- 新闻使用独立的 `resources` 项：`label: "to appear"`、`pending: true`；构建支持直接渲染方括号占位。Awards → More 继续保留 `Materials: [to appear] │ Announcements: [to appear]`，日期和 TAPCO Slides 保持上一版。
+- 以后公开资源可用时，分别更新奖项分组与新闻句末链接。本轮只更新新闻数据、渲染支持、生成首页和维护说明；检查电脑／手机显示及构建一致性后推送 master，由 Pages 发布。
+
+## TAPCO Slides 与 ICCAD 2026 Honorable Mention（2026-10-08，上一版）
 
 - 用户授权将工作目录中的 `TAPCO_MLCAD2026_Presentation.pdf` 加入网页，上线确认后删除外部原文件。网站副本为 `site/files/slides/2026-mlcad-tapco-slides.pdf`，15 页、1,328,288 bytes，原始字节保留；SHA-256 为 `42b8279bb0ba3ee13c420d32c50b465f200fad6a8b04da3ba1980e4611c3b815`。Slides 内容的实际报告日期为 Sep 8, 2026，与本次新增 ICCAD 奖项日期无关。
 - TAPCO（C17）资源顺序为 DOI / PDF / Slides / BibTeX，沿用统一按钮样式。Slides 用新分页与 `noopener noreferrer`，没有下载属性；无 JavaScript 时仍可查看。后续 slides 统一保存为 `files/slides/年份-会议-短题名-slides.pdf`，构建要求链接为现有的本地 PDF，并纳入公开 manifest。
@@ -160,7 +166,7 @@
 ## 当前完成的内容
 
 - 英文主页，姓名为 Wuqian Tang（唐梧遷）；使用最新确认的浅蓝衣服头像，保留 LinkedIn、Google Scholar、公开版 CV。
-- Recent News 只保留 2026 年，目前 6 条；右侧使用 Latest Updates。句末加方括号资源链接，移除 TAPCO 的正文跳转。助教新闻仅对应 Spring 2026 的奖状、奖杯与照片；最新 ICCAD 2026 新闻与奖项共享待公布的资源占位。
+- Recent News 只保留 2026 年，目前 6 条；右侧使用 Latest Updates。句末加方括号资源链接，移除 TAPCO 的正文跳转。助教新闻仅对应 Spring 2026 的奖状、奖杯与照片；最新 ICCAD 2026 新闻句末仅显示单个 `[to appear]`。
 - 删除 About Me 最后的研究标签、甲骨文研究介绍句和 Technical Skills 栏目；甲骨文论文仍保留在 Publications 中。
 - 主栏目与 Education、Work Experience 等子标题统一为 Title Case，取消子标题的 CSS 全大写转换。
 - 爱好栏目使用 Hobbies，标题与其他栏目一致；删除 Off the Clock / Personal Interests 引导文字。包含 badminton、swimming、table tennis。
