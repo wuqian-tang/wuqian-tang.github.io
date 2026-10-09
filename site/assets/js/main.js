@@ -33,13 +33,32 @@
     smallScreen.addEventListener('change', showHeader);
     header.addEventListener('focusin', showHeader);
   }
-  if (profile && header && 'ResizeObserver' in window) {
-    const syncProfile = () => profile.classList.toggle('is-tall', profile.scrollHeight + header.offsetHeight + 40 > window.innerHeight);
-    const resizeObserver = new ResizeObserver(syncProfile);
-    resizeObserver.observe(profile);
-    resizeObserver.observe(header);
-    window.addEventListener('resize', syncProfile);
-    syncProfile();
+  const layout = document.querySelector('.page-layout');
+  if (profile && header && layout) {
+    const scroller = profile.querySelector('.profile-scroll');
+    // Match the sidebar's resting position, without changing it during scrolling.
+    const syncProfileOffset = () => {
+      const height = `${header.getBoundingClientRect().height}px`;
+      if (layout.style.getPropertyValue('--header-height') !== height) {
+        layout.style.setProperty('--header-height', height);
+      }
+      if (!scroller) return;
+      const scrollable = !smallScreen.matches && scroller.scrollHeight > scroller.clientHeight + 1;
+      if (scrollable) {
+        scroller.setAttribute('tabindex', '0');
+        scroller.setAttribute('role', 'group');
+        scroller.setAttribute('aria-label', 'Scrollable personal information');
+      } else {
+        ['tabindex', 'role', 'aria-label'].forEach(attribute => scroller.removeAttribute(attribute));
+      }
+    };
+    if ('ResizeObserver' in window) {
+      const resizeObserver = new ResizeObserver(syncProfileOffset);
+      resizeObserver.observe(header);
+      if (scroller) resizeObserver.observe(scroller);
+    }
+    window.addEventListener('resize', syncProfileOffset);
+    syncProfileOffset();
   }
 
   if (nav && toggle) {

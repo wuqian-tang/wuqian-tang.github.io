@@ -31,8 +31,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=20261003-small-tang">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=20261003-small-tang">
   <link rel="icon" type="image/svg+xml" sizes="any" href="assets/favicon.svg?v=20261003-small-tang">
-  <link rel="stylesheet" href="assets/css/main.css?v=20261008-neutral-dark">
-  <script src="assets/js/main.js?v=20261008-resource-wrapping" defer></script>
+  <link rel="stylesheet" href="assets/css/main.css?v=20261009-stable-sidebar">
+  <script src="assets/js/main.js?v=20261009-stable-sidebar" defer></script>
   <script type="application/ld+json">${STRUCTURED_DATA}</script>
 </head>
 <body>
@@ -55,14 +55,16 @@
 
   <div class="page-layout">
     <aside class="profile" aria-label="Personal information">
-      <div class="portrait-wrap"><img class="portrait" src="assets/images/profile-20261007.webp" alt="Portrait of ${NAME}" width="800" height="1000" fetchpriority="high"></div>
-      <h1>${NAME}<span class="chinese-name" lang="zh-Hant">（${CHINESE_NAME}）</span></h1>
-      <p class="profile-role">${ROLE}</p>
-      <p class="profile-affiliation"><a href="https://dcs.site.nthu.edu.tw/">${DEPARTMENT}</a><br><a href="https://nthu-en.site.nthu.edu.tw/">${UNIVERSITY}</a></p>
-      <p class="profile-location">${LOCATION_ICON}<span>${LOCATION}</span></p>
-      <a class="email-link" href="mailto:${EMAIL}">${MAIL_ICON}<span>${EMAIL}</span></a>
-      <div class="profile-links">${PROFILE_LINKS}</div>
-      <a class="cv-link" target="_blank" rel="noopener noreferrer" href="files/cv-wqtang.pdf">${DOCUMENT_ICON}<span>Curriculum Vitae</span><span class="file-type">PDF</span></a>
+      <div class="profile-scroll">
+        <div class="portrait-wrap"><img class="portrait" src="assets/images/profile-20261007.webp" alt="Portrait of ${NAME}" width="800" height="1000" fetchpriority="high"></div>
+        <h1>${NAME}<span class="chinese-name" lang="zh-Hant">（${CHINESE_NAME}）</span></h1>
+        <p class="profile-role">${ROLE}</p>
+        <p class="profile-affiliation"><a href="https://dcs.site.nthu.edu.tw/">${DEPARTMENT}</a><br><a href="https://nthu-en.site.nthu.edu.tw/">${UNIVERSITY}</a></p>
+        <p class="profile-location">${LOCATION_ICON}<span>${LOCATION}</span></p>
+        <a class="email-link" href="mailto:${EMAIL}">${MAIL_ICON}<span>${EMAIL}</span></a>
+        <div class="profile-links">${PROFILE_LINKS}</div>
+        <a class="cv-link" target="_blank" rel="noopener noreferrer" href="files/cv-wqtang.pdf">${DOCUMENT_ICON}<span>Curriculum Vitae</span><span class="file-type">PDF</span></a>
+      </div>
     </aside>
 
     <main id="main" tabindex="-1">
