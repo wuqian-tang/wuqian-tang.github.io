@@ -48,7 +48,7 @@
       "title": "Logic Synthesis & RTL Recovery",
       "description": "Developing optimization methods for logic synthesis and recovering functionally equivalent RTL representations from gate-level circuits.",
       "work": "CB-EVO · TODAES 2026; DATE 2024",
-      "paper": "j1"
+      "paper": "j2"
     },
     {
       "title": "Physical Design Automation",
@@ -202,8 +202,8 @@
       "version": "v1"
     },
     {
-      "id": "j1",
-      "label": "J1",
+      "id": "j2",
+      "label": "J2",
       "authors": "Fangzhou Liu, Wuqian Tang, Zehua Pei, Ziyang Yu, Haisheng Zheng, Zhuolun He, Mengjia Dai, Tinghuan Chen, Bei Yu",
       "title": "CB-EVO: Contextual Bandit Tuning with Evolutionary Search for Logic Synthesis",
       "venue": "ACM Transactions on Design Automation of Electronic Systems",
@@ -623,8 +623,8 @@
       "pdf_source": "https://past.date-conference.com/proceedings-archive/2024/DATA/782_pdf_upload.pdf"
     },
     {
-      "id": "j2",
-      "label": "J2",
+      "id": "j1",
+      "label": "J1",
       "authors": "Yuh-Pyng Shieh, Shao-Hang Hsu, Wuqian Tang, Wei-Ying Ke, Po-sheng Ou, Yu-wei Chang, Ming-chorng Hwang",
       "title": "The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions",
       "original_title": "甲骨卜辭定年月差演算法",

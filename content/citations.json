@@ -1,10 +1,10 @@
 {
-  "j1": {
+  "j2": {
     "bibtex": "@article{Liu2026CBEVO,\n  author = {Liu, Fangzhou and Tang, Wuqian and Pei, Zehua and Yu, Ziyang and Zheng, Haisheng and He, Zhuolun and Dai, Mengjia and Chen, Tinghuan and Yu, Bei},\n  title = {{CB-EVO: Contextual Bandit Tuning with Evolutionary Search for Logic Synthesis}},\n  journal = {ACM Transactions on Design Automation of Electronic Systems},\n  year = {2026},\n  volume = {31},\n  number = {6},\n  pages = {119:1--119:26},\n  articleno = {119},\n  numpages = {26},\n  doi = {10.1145/3779431},\n  url = {https://doi.org/10.1145/3779431},\n  publisher = {Association for Computing Machinery (ACM)}\n}\n",
     "verified_on": "2026-10-03",
     "sources": [
       "https://api.crossref.org/works/10.1145/3779431",
-      "site/files/papers/J1-CB-EVO.pdf"
+      "site/files/papers/2026-todaes-cb-evo.pdf"
     ]
   },
   "c19": {
@@ -141,11 +141,11 @@
       "https://api.crossref.org/works/10.23919/DATE58400.2024.10546559"
     ]
   },
-  "j2": {
+  "j1": {
     "bibtex": "@article{Shieh2025OracleBone,\n  author = {Shieh, Yuh-Pyng and Hsu, Shao-Hang and Tang, Wuqian and Ke, Wei-Ying and Ou, Po-sheng and Chang, Yu-wei and Hwang, Ming-chorng},\n  title = {{The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions}},\n  journal = {Journal of Digital Archives and Digital Humanities},\n  year = {2025},\n  number = {15},\n  pages = {1--35},\n  month = {April},\n  note = {In Chinese},\n  doi = {10.6853/DADH.202504_(15).0001},\n  url = {https://doi.org/10.6853/DADH.202504_(15).0001}\n}\n",
     "verified_on": "2026-10-03",
     "sources": [
-      "site/files/papers/J2-Oracle-Bone.pdf"
+      "site/files/papers/2025-dadh-oracle-bone.pdf"
     ]
   },
   "p1": {

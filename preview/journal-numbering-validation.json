@@ -1,0 +1,88 @@
+{
+  "mapping": {
+    "J1": {
+      "title": "The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions",
+      "year": 2025
+    },
+    "J2": {
+      "title": "CB-EVO: Contextual Bandit Tuning with Evolutionary Search for Logic Synthesis",
+      "year": 2026
+    }
+  },
+  "static": {
+    "profileChangesOnlyNumberingAndResearchAnchor": true,
+    "allBibtexTextUnchanged": true,
+    "homepageChangesOnlyNumbersAndMatchingIdentifiers": true,
+    "publicCvAliasesIdentical": true,
+    "assetManifestEntries": 273,
+    "other270AssetsUnchanged": true,
+    "privateCopiesAndZipMembersVerified": true,
+    "originalWordChangesOnlyJournalLabel": true
+  },
+  "cv": [
+    {
+      "version": "public",
+      "pages": 3,
+      "textChangesOnlyJournalLabels": true,
+      "pixelsOutsideLabelsUnchanged": true
+    },
+    {
+      "version": "private-full",
+      "pages": 3,
+      "textChangesOnlyJournalLabels": true,
+      "pixelsOutsideLabelsUnchanged": true
+    },
+    {
+      "version": "private-2page",
+      "pages": 2,
+      "textChangesOnlyJournalLabels": true,
+      "pixelsOutsideLabelsUnchanged": true
+    }
+  ],
+  "browser": {
+    "results": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "id": "j1",
+        "label": "[J1]",
+        "title": "The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions",
+        "bibtexMatches": true,
+        "deepLink": true,
+        "localPdfNewTab": true
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "id": "j2",
+        "label": "[J2]",
+        "title": "CB-EVO: Contextual Bandit Tuning with Evolutionary Search for Logic Synthesis",
+        "bibtexMatches": true,
+        "deepLink": true,
+        "localPdfNewTab": true
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "id": "j1",
+        "label": "[J1]",
+        "title": "The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions",
+        "bibtexMatches": true,
+        "deepLink": true,
+        "localPdfNewTab": true
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "id": "j2",
+        "label": "[J2]",
+        "title": "CB-EVO: Contextual Bandit Tuning with Evolutionary Search for Logic Synthesis",
+        "bibtexMatches": true,
+        "deepLink": true,
+        "localPdfNewTab": true
+      }
+    ],
+    "researchLink": true,
+    "noScriptCitations": true
+  }
+}

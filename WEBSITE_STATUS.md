@@ -7,7 +7,17 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 页尾导航高亮与统一识别（2026-10-09，最新）
+## 期刊论文编号与 CV 更正（2026-10-09，最新）
+
+- 用户指出 J1／J2 颠倒，并授权修正网页及 CV。编号现按首次发表先后：J1 = The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions（DADH 2025）；J2 = CB-EVO: Contextual Bandit Tuning with Evolutionary Search for Logic Synthesis（TODAES 2026）。编号与列表显示顺序／Selected／More 无关；甲骨文仍在 More，CB-EVO 仍在主列表。
+- `content/profile.json` 的 label／id、研究方向对应 paper、`content/citations.json` 的对应记录一起更正。现在 `#paper-j1` 指向甲骨文，`#paper-j2` 指向 CB-EVO；BibTeX 文本、引用键、作者、题名、年份、DOI、PDF／Code／Journal 顺序全部保留。来源字段使用现用的 year-venue-short-title PDF 路径。历史文件名 `J1-CB-EVO.pdf`／`J2-Oracle-Bone.pdf` 继续作为原论文的兼容地址，不重新分配它们的内容。
+- 公开 CV 源码及三份成品 `files/cv-wqtang.pdf`／`files/cv.pdf`／`files/Wuqian_Tang_CV.pdf` 同步修正，两篇期刊编号分别为 J2／J1，现有行顺序保留。三份成品字节一致；主链接及无查询参数格式沿用。
+- 私人 Full／2Page／Original 中现有 CB-EVO 条目改为 J2，保持各自论文取舍和联系方式；源码、PDF、Original Word、求职／现用申请副本及两个现行 ZIP 同步。私人文件仅在原私人目录与仓库维护，不加入公开网站。旧申请历史归档不改。
+- manifest 仍为 273 条，仅刷新三个 CV 的摘要／长度及主文件更正记录，其余 270 份公开资产字节不变。CSS／JS、照片、论文原文与 Slides 保持原字节，最新导航脚本仍为 `20261009-navigation`。本地翻译草案未修改或加入提交。
+- 验收见 `preview/journal-numbering-validation.json`：公开三页版、私人三页版／两页版逐页文本只改变编号，编号之外的像素一致；所有现用 CV 副本、Word 与 ZIP 校对通过。桌面／手机两篇论文的编号、标题、直接定位、More 自动展开、实际 BibTeX 复制、研究链接和无脚本引文均正确。首页字节对比只变化编号及对应片段／引用标识。
+- 经构建、公开资产检查与 diff 检查后分别推送私人资料仓库及公开网页仓库，由 Pages 发布，再核对线上首页与三个 CV 地址。后续新增期刊编号按首次发表顺序递增，不能按显示位置编号。以下历史记录中曾用的相反编号，以本节的新对应关系为准。
+
+## 页尾导航高亮与统一识别（2026-10-09，上一版）
 
 - 用户审核后授权优化自动高亮：高窗口中 Hobbies 很短，旧版 15%–40% 观察带无法覆盖它，即使滚到底仍选中 Teaching。改为单一位置计算，不依赖 IntersectionObserver 回调顺序。
 - 正常阅读的判定线放在 CSS 的 scroll-padding-top 与区块 scroll-margin-top 合计之后 24px，并位于当前实际导航底部下方；上限为视口内部。按导航对应的区块顺序选择最近经过判定线的区块。进入／退出分别预留 4px，减少微小往返移动带来的闪动，并保证矮窗口点击导航也能及时选中目标。
@@ -281,7 +291,7 @@
 - 所有外部链接使用新分页及 noopener/noreferrer；页面没有 download 属性或下载按钮。保留普通 CV / 论文 PDF 查看链接与 View Original。
 - 删除 My name is highlighted;，本人作者名仍加粗。
 - Publications 共 22 篇：18 篇有经过核对的 DOI，3 篇标记 To appear，另有 1 篇 arXiv Preprint。所有页面上的论文 PDF 链接都指向本仓库。
-- 已本地托管 6 篇论文 PDF：J1 CB-EVO、J2 甲骨文论文、C1 DATE 2024、C15 HyPAS、C17 TAPCO、P1 Trinity；另有 C17 的 15 页与 C15 的 11 页 Slides PDF。TAPCO 论文只提取了最终稿，没有公开申请目录或其他申请资料。
+- 已本地托管 6 篇论文 PDF：J2 CB-EVO、J1 甲骨文论文、C1 DATE 2024、C15 HyPAS、C17 TAPCO、P1 Trinity；另有 C17 的 15 页与 C15 的 11 页 Slides PDF。TAPCO 论文只提取了最终稿，没有公开申请目录或其他申请资料。
 
 ## 最新一轮修改（2026-10-03）
 
@@ -349,15 +359,15 @@
 
 | 条目 | 当前处理 | 后续动作 |
 | --- | --- | --- |
-| J1、C1–C14 | DOI 来自 Crossref 的完整标题与 Wuqian Tang 作者匹配 | 出版信息改变时更新卷期页码；继续找官方公开全文 |
-| J2 | DOI、英文题名和作者已核对；从 Airiti 的 OpenAccess 全文下载官方 35 页 PDF | 保留 In Chinese，公开链接仍使用本仓库 PDF |
+| J2、C1–C14 | DOI 来自 Crossref 的完整标题与 Wuqian Tang 作者匹配 | 出版信息改变时更新卷期页码；继续找官方公开全文 |
+| J1 | DOI、英文题名和作者已核对；从 Airiti 的 OpenAccess 全文下载官方 35 页 PDF | 保留 In Chinese，公开链接仍使用本仓库 PDF |
 | C15 HyPAS | 最终稿印有 `10.1145/3770743.3804137`；已托管 7 页 PDF | 2026-10-03 DOI 解析返回 404，稍后复查 |
 | C17 TAPCO | 最终稿印有 `10.1145/3831599.3840364`；已托管带 artifact badges 的 8 页最终稿 | 2026-10-03 DOI 解析返回 404，稍后复查 |
 | C16 QUBO LBR | 官方 DAC 2026 程序核实了题目与作者，但未找到 DOI；依用户要求标记 To appear | DOI 发布后补链接并去掉 To appear，不猜编号 |
 | C18 ICCAD 2026 | To appear，会议 2026-11-08 至 11-12 | 会议后核对正式 DOI、页码、最终公开 PDF |
 | C19 ICCD 2026 | To appear，会议 2026-11-16 至 11-18 | 会议后核对正式 DOI、页码、最终公开 PDF |
 
-PDF 来源和 SHA-256 见 `content/public-assets.json`；DOI 核对来源和日期见 `content/profile.json`。J1 来源为 Bei Yu 老师公开论文文件，C1 来源为 DATE 官方 proceedings，J2 为期刊官方全文，HyPAS / TAPCO 为作者提供的最终稿。页面不再链接 Fangzhou 的个人网站或其他人的 PDF 地址。
+PDF 来源和 SHA-256 见 `content/public-assets.json`；DOI 核对来源和日期见 `content/profile.json`。J2 来源为 Bei Yu 老师公开论文文件，C1 来源为 DATE 官方 proceedings，J1 为期刊官方全文，HyPAS / TAPCO 为作者提供的最终稿。页面不再链接 Fangzhou 的个人网站或其他人的 PDF 地址。
 
 其余论文的官方全文下载目前未成功，未添加空文件或失效的 PDF 按钮。IEEE 请求返回 418、ACM 请求返回 403，不能据此判定论文没有 PDF。DATE 2026 官方程序中的 C13 / C14 下载地址目前返回 404，需要以后复查。
 
@@ -387,7 +397,7 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 5. **News**：当前只展示 2026 年，倒序排列，日期统一三字母月份加年份（如 Nov 2026），不显示日；生成的 time 使用 YYYY-MM，源资料可保留精确日期。保持短句，右侧为 Latest Updates。句末使用方括号链接到具体图片/奖状或对应公告；媒体在首页弹窗展示，外部网页在新分页打开。不使用 TAPCO 正文跳转。助教新闻筛选正确学期，不把旧学期图片混入新新闻。
 6. **奖项**：展开控件收起为 More ＋、展开为 Less −，可访问名称与可见文字同步。右侧标注 Selected，主列表显示精选条目，其余放入 More；More 中含 2020 ICPC 银牌、所有 Honorable Mention、Student Scholar Program Award 和 Mainland China Student Scholarship，不限于较早年份。标题统一采用当前主题正文色 `--ink`。一般说明采用 `机构 · 描述`；会议比赛因标题已有简称，说明仅保留完整题目或比赛内容，不重复会议名称。MLCAD / IWLS 采用本页最新确认的题名；CADathlon 为 `ACM/SIGDA CADathlon Programming Contest · Olympic Games of EDA`，无引号；Student Scholar Program Award 只保留 IEEE/ACM ICCAD 会议全名。CSIE 系友／贡献奖、Synopsys 奖学金、陆生奖学金按本页例外仅保留机构。CAD Contest Problem 独立成条，用完整官方题名；每份照片、奖状、纪念牌只归属正确的 Problem，禁止重复挂载。条目末尾同行展示 `Materials: [Certificate] [Plaques] [Trophy] [Medal] [Photos] │ Announcements: [Official] [News] [University] [College] [Department]`，只列实际存在的资源，按数量用正确单复数。同类多张合为一个链接；窄屏允许自然换行。Materials / Announcements 标签必须与第一个资源同行，其余链接可独立换行；分隔符仅在两组同处一行时显示，新行前隐藏。严格小于 360px 时仅将资源链接 Department 简写为 Dept.，年份保留；360px 起用全称，悬停及可访问说明始终保留完整来源。Materials 表示可查看的奖状、奖杯、奖牌、纪念牌及活动照片；Announcements 表示与该奖项对应的官方结果、报道和公告。浅灰竖线分隔两组，不重复写 news 后缀。不同 CAD Contest Problem 已分条，使用 `[Department]` 即可；同一条目多个年份可用 `[Department (2025)]` 区分。删除 Contest Website / Program Details 类型的链接。Hobbies 只有句末的 [Medal]，不单独起一行；照片本身可点击，避免重复 [Photo]。
 7. **外部来源**：对应具体奖项与年份，确认本人姓名或队伍。优先官方结果、系所、学院、学校和政府；不把通用首页、其他团队的成绩或旧年份名单当获奖公告。全部 http/https 外部链接使用 `target="_blank" rel="noopener noreferrer"`，即使禁用 JavaScript 也保留此行为。内部锚点正常定位，邮件链接保持 mailto。
-8. **论文**：甲骨文论文 J2 放在 More 的 2025 年分组。右侧仅标注 Selected，侧栏保留 Google Scholar，不重复在栏目右侧出现。标题下说明严格为 `* denotes equal contribution.`，不加括号或 Selected work.；更多论文的原生展开按钮收起为 More ＋、展开为 Less −，不显示篇数，可访问名称应能区分论文与奖项并跟随状态。编号 J1 / J2 / C1–C19 保持稳定，预印本另用 P1。Trinity 放在 More 的 2026 年分组，标注 arXiv / Preprint / 2026，使用正式 arXiv ID 与官方 `@misc` 引用，不虚构会议录用或待刊状态。所有论文作者顺序完整，本人加粗，星号表示 equal contribution。Invited paper、In Chinese 与 To appear 分别按事实使用。除 To appear 和明确标注的 arXiv 预印本外，每篇必须有一个经过核对的 DOI。查不到 DOI 时按用户要求标为 To appear；不得使用相似题目的 DOI。
+8. **论文**：甲骨文论文 J1 放在 More 的 2025 年分组。右侧仅标注 Selected，侧栏保留 Google Scholar，不重复在栏目右侧出现。标题下说明严格为 `* denotes equal contribution.`，不加括号或 Selected work.；更多论文的原生展开按钮收起为 More ＋、展开为 Less −，不显示篇数，可访问名称应能区分论文与奖项并跟随状态。期刊按发表先后编号：J1 为 2025 年甲骨文论文，J2 为 2026 年 CB-EVO；J1 / J2 / C1–C19 在此对应关系上保持稳定，预印本另用 P1。Trinity 放在 More 的 2026 年分组，标注 arXiv / Preprint / 2026，使用正式 arXiv ID 与官方 `@misc` 引用，不虚构会议录用或待刊状态。所有论文作者顺序完整，本人加粗，星号表示 equal contribution。Invited paper、In Chinese 与 To appear 分别按事实使用。除 To appear 和明确标注的 arXiv 预印本外，每篇必须有一个经过核对的 DOI。查不到 DOI 时按用户要求标为 To appear；不得使用相似题目的 DOI。
 9. **论文 PDF**：优先正式官方全文或作者提供的可公开最终稿；下载后核对内容，存放 `site/files/papers/`。查看链接用 `files/papers/文件名.pdf`，不得链接其他人的个人网页、远程 PDF 或临时下载 token。保留 PDF 内容，在 manifest 记录来源与 SHA-256；如用户授权修改页面方向，还需记录 normalization。
 10. **照片**：沿用真实照片，不生成或改写人物。原始照片字节保持不变；PDF 如需转正，必须得到用户明确授权，只调整页面方向而不改扫描内容，并更新公开清单中的 SHA-256。首页羽毛球照片使用 4:3、`object-position: 50% 53%` 半身裁切；弹窗使用 `crop_top: 0.25` 只裁上方窗帘。方向先遵循正确 EXIF；2022 ICCAD 源 PDF 设置 270° 页面方向并重新生成正向预览，页面不再叠加旋转。图片有准确英文 alt，惰性加载，不在首页提前请求所有奖项图片。媒体点击直接在当前页弹窗，支持电脑两侧 / 手机图下的图标翻页、左右键、双向触控滑动、右上角图标关闭、Escape、焦点返回；翻页先解码新图，再用 100ms 淡出与 180ms 淡入配合 16px 水平位移，图框高度过渡 200ms；系统开启减少动态效果时取消这些动画；保留原相册作为无 JS / Ctrl 或 Cmd 点击回退。只有 View Original 查看链接，不添加下载按钮或 download 属性。
 11. **Teaching**：每门课程包含正式英文课程名、教师、所属系所或学院和学期；教师在前，系所在后，以 · 分隔。有已授权评量时，在同一教师/系所段落末尾放 `· [Student Evaluations]`；中点仅在前后信息同行时显示，链接另起一行时隐藏中点，本地 PDF 新分页查看、不显示分数；合并多学期报告须在链接提示和来源清单写明实际学期，保留所有续页。Hardware Security 属于 Institute of Information Security。不同学院课程不能统一写成 CS。助教奖项括号采用 `Spring 2025` / `Fall 2025` 格式，表示教学对应学期；证书学年度第 1 学期转换为该学年开始公历年的 Fall，第 2 学期转换为下一公历年的 Spring。不得把次年 2 月或暑假颁发日期当成教学学期。Awards 日期列为颁发月份，说明与相册另注明实际学期。

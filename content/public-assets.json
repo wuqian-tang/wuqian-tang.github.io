@@ -1369,9 +1369,9 @@
   },
   {
     "path": "files/Wuqian_Tang_CV.pdf",
-    "sha256": "ca7b51c6428e2488f4a5994727f22419841ce11c412c8f6c245278f0bf3e6b86",
+    "sha256": "bd0e383020dbe4da38b006b14cf70a04dbda0be5d7ec4bc99a9842034a27419f",
     "compatibility_alias_for": "files/cv-wqtang.pdf",
-    "bytes": 122452
+    "bytes": 122453
   },
   {
     "path": "files/papers/C1-Reverse-Engineering.pdf",
@@ -1696,9 +1696,9 @@
   },
   {
     "path": "files/cv-wqtang.pdf",
-    "sha256": "ca7b51c6428e2488f4a5994727f22419841ce11c412c8f6c245278f0bf3e6b86",
-    "source": "Owner-approved public CV compiled from content/Wuqian_Tang_Public_CV.tex; correct department and one-line Hardware Security row using Profs. on 2026-10-08",
-    "bytes": 122452
+    "sha256": "bd0e383020dbe4da38b006b14cf70a04dbda0be5d7ec4bc99a9842034a27419f",
+    "source": "Owner-approved public CV compiled from content/Wuqian_Tang_Public_CV.tex; journal numbering corrected to chronological J1 (DADH 2025) and J2 (TODAES 2026) on 2026-10-09",
+    "bytes": 122453
   },
   {
     "path": "files/slides/2026-mlcad-tapco-slides.pdf",
@@ -1824,8 +1824,8 @@
   },
   {
     "path": "files/cv.pdf",
-    "sha256": "ca7b51c6428e2488f4a5994727f22419841ce11c412c8f6c245278f0bf3e6b86",
-    "bytes": 122452,
+    "sha256": "bd0e383020dbe4da38b006b14cf70a04dbda0be5d7ec4bc99a9842034a27419f",
+    "bytes": 122453,
     "compatibility_alias_for": "files/cv-wqtang.pdf"
   }
 ]
