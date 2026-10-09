@@ -97,33 +97,66 @@
         toggle.focus();
       }
     });
-    if ('IntersectionObserver' in window) {
-      const links = [...nav.querySelectorAll('a')];
-      const sections = links.map(link => document.querySelector(link.hash)).filter(Boolean);
-      const updateCurrentSection = entries => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          links.forEach(link => {
-            if (link.hash === '#' + entry.target.id) link.setAttribute('aria-current', 'location');
-            else link.removeAttribute('aria-current');
-          });
+    const destinations = [...nav.querySelectorAll('a[href^="#"]')]
+      .map(link => ({ link, section: document.querySelector(link.hash) }))
+      .filter(destination => destination.section);
+    if (destinations.length) {
+      let navigationFramePending = false;
+      let currentIndex = -1;
+      const tolerance = 4;
+      const updateCurrentSection = () => {
+        navigationFramePending = false;
+        const viewportHeight = window.innerHeight;
+        const headerBottom = Math.max(0, header?.getBoundingClientRect().bottom || 0);
+        const anchorOffset = (parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0) +
+          (parseFloat(getComputedStyle(destinations[0].section).scrollMarginTop) || 0);
+        // Read just inside the anchored section, including both CSS scroll offsets.
+        const readingLine = Math.min(viewportHeight - 1, Math.max(headerBottom, anchorOffset) + 24);
+        const bounds = destinations.map(destination => destination.section.getBoundingClientRect());
+        let nextIndex = 0;
+        bounds.forEach((rect, index) => {
+          // A small dead band keeps tiny movements from toggling adjacent links.
+          const threshold = readingLine + (index <= currentIndex ? tolerance : -tolerance);
+          if (rect.top <= threshold) nextIndex = index;
+        });
+
+        const lastIndex = destinations.length - 1;
+        const last = bounds[lastIndex];
+        const maxScroll = Math.max(0, document.scrollingElement.scrollHeight - viewportHeight);
+        const visibilityTolerance = currentIndex === lastIndex ? tolerance : -tolerance;
+        const lastFullyVisible = last.top >= headerBottom - tolerance &&
+          last.bottom <= viewportHeight + visibilityTolerance;
+        const atPageEnd = maxScroll > tolerance && window.scrollY >= maxScroll - tolerance;
+        // A short final section can never reach the reading line in tall windows.
+        if (maxScroll > tolerance && last.top < viewportHeight && (lastFullyVisible || atPageEnd)) {
+          nextIndex = lastIndex;
+        }
+        if (nextIndex === currentIndex) return;
+        currentIndex = nextIndex;
+        destinations.forEach(({ link }, index) => {
+          if (index === currentIndex) link.setAttribute('aria-current', 'location');
+          else link.removeAttribute('aria-current');
         });
       };
-      let observer;
-      const observeSections = () => {
-        observer?.disconnect();
-        // Percentage root margins use viewport width; use height-based pixels
-        // and include the anchor offset so landscape navigation can activate.
-        const anchorOffset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) +
-          parseFloat(getComputedStyle(sections[0]).scrollMarginTop);
-        const bandEnd = Math.min(window.innerHeight, Math.max(window.innerHeight * .4, anchorOffset + 24));
-        observer = new IntersectionObserver(updateCurrentSection, {
-          rootMargin: `-${Math.round(window.innerHeight * .15)}px 0px -${Math.round(window.innerHeight - bandEnd)}px 0px`
-        });
-        sections.forEach(section => observer.observe(section));
+      const scheduleNavigation = () => {
+        if (navigationFramePending) return;
+        navigationFramePending = true;
+        window.requestAnimationFrame(updateCurrentSection);
       };
-      observeSections();
-      window.addEventListener('resize', observeSections);
+      window.addEventListener('scroll', scheduleNavigation, { passive: true });
+      window.addEventListener('resize', scheduleNavigation);
+      window.addEventListener('hashchange', scheduleNavigation);
+      window.addEventListener('pageshow', scheduleNavigation);
+      document.addEventListener('load', scheduleNavigation, true);
+      document.querySelectorAll('details').forEach(details => details.addEventListener('toggle', scheduleNavigation));
+      document.fonts?.ready.then(scheduleNavigation);
+      document.fonts?.addEventListener('loadingdone', scheduleNavigation);
+      if ('ResizeObserver' in window) {
+        const navigationObserver = new ResizeObserver(scheduleNavigation);
+        navigationObserver.observe(layout || document.body);
+        if (header) navigationObserver.observe(header);
+      }
+      scheduleNavigation();
     }
   }
 

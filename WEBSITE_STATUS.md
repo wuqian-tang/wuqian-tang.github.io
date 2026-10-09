@@ -7,7 +7,17 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## Hobbies 区块链接（2026-10-09，最新）
+## 页尾导航高亮与统一识别（2026-10-09，最新）
+
+- 用户审核后授权优化自动高亮：高窗口中 Hobbies 很短，旧版 15%–40% 观察带无法覆盖它，即使滚到底仍选中 Teaching。改为单一位置计算，不依赖 IntersectionObserver 回调顺序。
+- 正常阅读的判定线放在 CSS 的 scroll-padding-top 与区块 scroll-margin-top 合计之后 24px，并位于当前实际导航底部下方；上限为视口内部。按导航对应的区块顺序选择最近经过判定线的区块。进入／退出分别预留 4px，减少微小往返移动带来的闪动，并保证矮窗口点击导航也能及时选中目标。
+- 对实际可滚动的页面，最后一个导航区块完整进入可视区域，或距离页底不超过 4px 时，优先选中它。完整可见的进入／退出也保留小幅容差。向上离开末段后重新依据正常判定线选择，不锁定 Hobbies，不修改网址 hash。
+- 使用 passive 滚动事件与 requestAnimationFrame 合并更新，每帧至多执行一次导航计算；只有选中区块变化时才写 aria-current，始终只有一个当前栏目。resize、hashchange、pageshow、details toggle、字体就绪／加载、图片加载，以及页面布局／导航的 ResizeObserver 都调用同一个调度入口。
+- 首页及 33 个奖项图库的共享 JS 缓存版本为 `20261009-navigation`；CSS 继续为 `20261009-stable-sidebar`。左侧栏固定／内部滚动、内容、照片、文件、图标、配色、项目页及链接行为沿用。35 个 site 文件仅为主脚本及 34 份 HTML 的脚本版本变化，其余 286 个 site 文件字节不变；个人资料、引用和资产清单也不改。
+- 验收见 `preview/navigation-validation.json`：8 种桌面／平板／手机宽高，112 次区块上下定位、页底及距页底 50px、导航点击及 #hobbies 直达均通过；两次不额外滚动的窗口高度变化、两个 More 的展开／收起、10 次边界微动均正确。原生滚轮逐帧记录仅从 Teaching 切换到 Hobbies，未往返闪动。
+- 两次桌面／手机无障碍扫描无报告项；手机菜单打开后导航到 Hobbies、延迟加载图片、照片与奖牌 WebP 弹窗、无 JS 原生定位、无首页导航的奖项图库均通过。预览为 `preview/navigation-{light,dark}-desktop.png`。构建、JS 语法、diff 及公开文件清单检查后推送 master，由 Pages 发布并核对线上导航。
+
+## Hobbies 区块链接（2026-10-09，上一版）
 
 - 用户授权将爱好区块由 `#beyond` 改为 `#hobbies`，明确不保留旧片段的兼容定位。
 - 首页导航、区块 ID、标题 ID 和 `aria-labelledby` 同步更新。导航脚本按链接片段查找区块，无需修改；现有样式类名保持不变。

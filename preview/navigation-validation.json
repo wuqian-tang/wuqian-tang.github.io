@@ -1,0 +1,207 @@
+{
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "directLink": true,
+      "pageEnd": true,
+      "beforePageEnd": true,
+      "sectionsDownAndUp": 14,
+      "navigationClick": true,
+      "oneSelection": true,
+      "noHorizontalOverflow": true,
+      "noScriptErrors": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "directLink": true,
+      "pageEnd": true,
+      "beforePageEnd": true,
+      "sectionsDownAndUp": 14,
+      "navigationClick": true,
+      "oneSelection": true,
+      "noHorizontalOverflow": true,
+      "noScriptErrors": true
+    },
+    {
+      "width": 1440,
+      "height": 600,
+      "directLink": true,
+      "pageEnd": true,
+      "beforePageEnd": true,
+      "sectionsDownAndUp": 14,
+      "navigationClick": true,
+      "oneSelection": true,
+      "noHorizontalOverflow": true,
+      "noScriptErrors": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "directLink": true,
+      "pageEnd": true,
+      "beforePageEnd": true,
+      "sectionsDownAndUp": 14,
+      "navigationClick": true,
+      "oneSelection": true,
+      "noHorizontalOverflow": true,
+      "noScriptErrors": true
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "directLink": true,
+      "pageEnd": true,
+      "beforePageEnd": true,
+      "sectionsDownAndUp": 14,
+      "navigationClick": true,
+      "oneSelection": true,
+      "noHorizontalOverflow": true,
+      "noScriptErrors": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "directLink": true,
+      "pageEnd": true,
+      "beforePageEnd": true,
+      "sectionsDownAndUp": 14,
+      "navigationClick": true,
+      "oneSelection": true,
+      "noHorizontalOverflow": true,
+      "noScriptErrors": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "directLink": true,
+      "pageEnd": true,
+      "beforePageEnd": true,
+      "sectionsDownAndUp": 14,
+      "navigationClick": true,
+      "oneSelection": true,
+      "noHorizontalOverflow": true,
+      "noScriptErrors": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "directLink": true,
+      "pageEnd": true,
+      "beforePageEnd": true,
+      "sectionsDownAndUp": 14,
+      "navigationClick": true,
+      "oneSelection": true,
+      "noHorizontalOverflow": true,
+      "noScriptErrors": true
+    }
+  ],
+  "resize": [
+    {
+      "height": 1200,
+      "selected": "#hobbies"
+    },
+    {
+      "height": 1000,
+      "selected": "#teaching"
+    }
+  ],
+  "disclosure": [
+    {
+      "disclosure": "#more-awards",
+      "expandedSelection": "#awards",
+      "collapsedSelection": "#hobbies",
+      "withoutScrolling": true
+    },
+    {
+      "disclosure": "#more-publications",
+      "expandedSelection": "#publications",
+      "collapsedSelection": "#hobbies",
+      "withoutScrolling": true
+    }
+  ],
+  "boundary": [
+    {
+      "phase": "before-entry",
+      "distance": 112,
+      "selected": "#teaching"
+    },
+    {
+      "phase": "before-entry",
+      "distance": 110,
+      "selected": "#teaching"
+    },
+    {
+      "phase": "before-entry",
+      "distance": 113,
+      "selected": "#teaching"
+    },
+    {
+      "phase": "before-entry",
+      "distance": 109,
+      "selected": "#teaching"
+    },
+    {
+      "phase": "before-entry",
+      "distance": 112,
+      "selected": "#teaching"
+    },
+    {
+      "phase": "after-entry",
+      "distance": 112,
+      "selected": "#hobbies"
+    },
+    {
+      "phase": "after-entry",
+      "distance": 110,
+      "selected": "#hobbies"
+    },
+    {
+      "phase": "after-entry",
+      "distance": 113,
+      "selected": "#hobbies"
+    },
+    {
+      "phase": "after-entry",
+      "distance": 109,
+      "selected": "#hobbies"
+    },
+    {
+      "phase": "after-entry",
+      "distance": 112,
+      "selected": "#hobbies"
+    }
+  ],
+  "accessibility": [
+    {
+      "viewport": "desktop",
+      "violations": []
+    },
+    {
+      "viewport": "phone",
+      "violations": []
+    }
+  ],
+  "regressions": [
+    "Hobbies photo and medal retain WebP dialogs and the active navigation",
+    "Delayed Hobbies image loading preserves correct selection",
+    "Phone menu can navigate to Hobbies after expanding near the page end",
+    "Native Hobbies anchor still works without JavaScript",
+    "Shared script runs normally on an award gallery without homepage navigation"
+  ],
+  "nativeWheel": {
+    "frames": 30,
+    "transitions": [
+      "#teaching",
+      "#hobbies"
+    ]
+  },
+  "static": {
+    "changedSiteFiles": 35,
+    "unchangedSiteFiles": 286,
+    "htmlChangesOnlyScriptRevision": true,
+    "contentCitationsAssetManifestUnchanged": true,
+    "stylesAndMediaUnchanged": true
+  }
+}
