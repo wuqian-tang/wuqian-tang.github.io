@@ -1,0 +1,1689 @@
+{
+  "date": "2026-10-10",
+  "geometry": [
+    {
+      "width": 320,
+      "height": 568,
+      "samplesPerDirection": 239,
+      "previouslyHealthy": true,
+      "baselineDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 2035,
+          "id": "#research"
+        },
+        {
+          "y": 2840,
+          "id": "#publications"
+        },
+        {
+          "y": 4733,
+          "id": "#experience"
+        },
+        {
+          "y": 5633,
+          "id": "#awards"
+        },
+        {
+          "y": 9656,
+          "id": "#teaching"
+        },
+        {
+          "y": 10934,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 2035,
+          "id": "#research"
+        },
+        {
+          "y": 2840,
+          "id": "#publications"
+        },
+        {
+          "y": 4733,
+          "id": "#experience"
+        },
+        {
+          "y": 5633,
+          "id": "#awards"
+        },
+        {
+          "y": 9656,
+          "id": "#teaching"
+        },
+        {
+          "y": 10934,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedUp": [
+        {
+          "y": 11263,
+          "id": "#hobbies"
+        },
+        {
+          "y": 10887,
+          "id": "#teaching"
+        },
+        {
+          "y": 9561,
+          "id": "#awards"
+        },
+        {
+          "y": 5585,
+          "id": "#experience"
+        },
+        {
+          "y": 4639,
+          "id": "#publications"
+        },
+        {
+          "y": 2793,
+          "id": "#research"
+        },
+        {
+          "y": 1941,
+          "id": "#about"
+        }
+      ],
+      "identicalHealthyWindows": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "samplesPerDirection": 140,
+      "previouslyHealthy": true,
+      "baselineDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 1758,
+          "id": "#research"
+        },
+        {
+          "y": 2462,
+          "id": "#publications"
+        },
+        {
+          "y": 4150,
+          "id": "#experience"
+        },
+        {
+          "y": 5064,
+          "id": "#awards"
+        },
+        {
+          "y": 8581,
+          "id": "#teaching"
+        },
+        {
+          "y": 9636,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 1758,
+          "id": "#research"
+        },
+        {
+          "y": 2462,
+          "id": "#publications"
+        },
+        {
+          "y": 4150,
+          "id": "#experience"
+        },
+        {
+          "y": 5064,
+          "id": "#awards"
+        },
+        {
+          "y": 8581,
+          "id": "#teaching"
+        },
+        {
+          "y": 9636,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedUp": [
+        {
+          "y": 9743,
+          "id": "#hobbies"
+        },
+        {
+          "y": 9565,
+          "id": "#teaching"
+        },
+        {
+          "y": 8510,
+          "id": "#awards"
+        },
+        {
+          "y": 4994,
+          "id": "#experience"
+        },
+        {
+          "y": 4079,
+          "id": "#publications"
+        },
+        {
+          "y": 2391,
+          "id": "#research"
+        },
+        {
+          "y": 1688,
+          "id": "#about"
+        }
+      ],
+      "identicalHealthyWindows": true
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "samplesPerDirection": 82,
+      "previouslyHealthy": true,
+      "baselineDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 1280,
+          "id": "#research"
+        },
+        {
+          "y": 1920,
+          "id": "#publications"
+        },
+        {
+          "y": 3200,
+          "id": "#experience"
+        },
+        {
+          "y": 3920,
+          "id": "#awards"
+        },
+        {
+          "y": 6240,
+          "id": "#teaching"
+        },
+        {
+          "y": 6400,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 1280,
+          "id": "#research"
+        },
+        {
+          "y": 1920,
+          "id": "#publications"
+        },
+        {
+          "y": 3200,
+          "id": "#experience"
+        },
+        {
+          "y": 3920,
+          "id": "#awards"
+        },
+        {
+          "y": 6240,
+          "id": "#teaching"
+        },
+        {
+          "y": 6400,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedUp": [
+        {
+          "y": 6468,
+          "id": "#hobbies"
+        },
+        {
+          "y": 6320,
+          "id": "#teaching"
+        },
+        {
+          "y": 6160,
+          "id": "#awards"
+        },
+        {
+          "y": 3840,
+          "id": "#experience"
+        },
+        {
+          "y": 3120,
+          "id": "#publications"
+        },
+        {
+          "y": 1840,
+          "id": "#research"
+        },
+        {
+          "y": 1200,
+          "id": "#about"
+        }
+      ],
+      "identicalHealthyWindows": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "samplesPerDirection": 224,
+      "previouslyHealthy": true,
+      "baselineDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 1235,
+          "id": "#research"
+        },
+        {
+          "y": 1885,
+          "id": "#publications"
+        },
+        {
+          "y": 3185,
+          "id": "#experience"
+        },
+        {
+          "y": 3900,
+          "id": "#awards"
+        },
+        {
+          "y": 6208,
+          "id": "#teaching"
+        },
+        {
+          "y": 6988,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 1235,
+          "id": "#research"
+        },
+        {
+          "y": 1885,
+          "id": "#publications"
+        },
+        {
+          "y": 3185,
+          "id": "#experience"
+        },
+        {
+          "y": 3900,
+          "id": "#awards"
+        },
+        {
+          "y": 6208,
+          "id": "#teaching"
+        },
+        {
+          "y": 6988,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedUp": [
+        {
+          "y": 7218,
+          "id": "#hobbies"
+        },
+        {
+          "y": 6955,
+          "id": "#teaching"
+        },
+        {
+          "y": 6175,
+          "id": "#awards"
+        },
+        {
+          "y": 3868,
+          "id": "#experience"
+        },
+        {
+          "y": 3120,
+          "id": "#publications"
+        },
+        {
+          "y": 1853,
+          "id": "#research"
+        },
+        {
+          "y": 1170,
+          "id": "#about"
+        }
+      ],
+      "identicalHealthyWindows": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "samplesPerDirection": 104,
+      "previouslyHealthy": true,
+      "baselineDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 896,
+          "id": "#research"
+        },
+        {
+          "y": 1600,
+          "id": "#publications"
+        },
+        {
+          "y": 2880,
+          "id": "#experience"
+        },
+        {
+          "y": 3584,
+          "id": "#awards"
+        },
+        {
+          "y": 5952,
+          "id": "#teaching"
+        },
+        {
+          "y": 6464,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 896,
+          "id": "#research"
+        },
+        {
+          "y": 1600,
+          "id": "#publications"
+        },
+        {
+          "y": 2880,
+          "id": "#experience"
+        },
+        {
+          "y": 3584,
+          "id": "#awards"
+        },
+        {
+          "y": 5952,
+          "id": "#teaching"
+        },
+        {
+          "y": 6464,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedUp": [
+        {
+          "y": 6567,
+          "id": "#hobbies"
+        },
+        {
+          "y": 6400,
+          "id": "#teaching"
+        },
+        {
+          "y": 5824,
+          "id": "#awards"
+        },
+        {
+          "y": 3520,
+          "id": "#experience"
+        },
+        {
+          "y": 2816,
+          "id": "#publications"
+        },
+        {
+          "y": 1472,
+          "id": "#research"
+        },
+        {
+          "y": 832,
+          "id": "#about"
+        }
+      ],
+      "identicalHealthyWindows": true
+    },
+    {
+      "width": 1440,
+      "height": 600,
+      "samplesPerDirection": 131,
+      "previouslyHealthy": true,
+      "baselineDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 750,
+          "id": "#research"
+        },
+        {
+          "y": 1400,
+          "id": "#publications"
+        },
+        {
+          "y": 2650,
+          "id": "#experience"
+        },
+        {
+          "y": 3400,
+          "id": "#awards"
+        },
+        {
+          "y": 5700,
+          "id": "#teaching"
+        },
+        {
+          "y": 6400,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 750,
+          "id": "#research"
+        },
+        {
+          "y": 1400,
+          "id": "#publications"
+        },
+        {
+          "y": 2650,
+          "id": "#experience"
+        },
+        {
+          "y": 3400,
+          "id": "#awards"
+        },
+        {
+          "y": 5700,
+          "id": "#teaching"
+        },
+        {
+          "y": 6400,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedUp": [
+        {
+          "y": 6484,
+          "id": "#hobbies"
+        },
+        {
+          "y": 6350,
+          "id": "#teaching"
+        },
+        {
+          "y": 5650,
+          "id": "#awards"
+        },
+        {
+          "y": 3300,
+          "id": "#experience"
+        },
+        {
+          "y": 2600,
+          "id": "#publications"
+        },
+        {
+          "y": 1350,
+          "id": "#research"
+        },
+        {
+          "y": 700,
+          "id": "#about"
+        }
+      ],
+      "identicalHealthyWindows": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "samplesPerDirection": 78,
+      "previouslyHealthy": true,
+      "baselineDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 800,
+          "id": "#research"
+        },
+        {
+          "y": 1440,
+          "id": "#publications"
+        },
+        {
+          "y": 2640,
+          "id": "#experience"
+        },
+        {
+          "y": 3360,
+          "id": "#awards"
+        },
+        {
+          "y": 5680,
+          "id": "#teaching"
+        },
+        {
+          "y": 6000,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 800,
+          "id": "#research"
+        },
+        {
+          "y": 1440,
+          "id": "#publications"
+        },
+        {
+          "y": 2640,
+          "id": "#experience"
+        },
+        {
+          "y": 3360,
+          "id": "#awards"
+        },
+        {
+          "y": 5680,
+          "id": "#teaching"
+        },
+        {
+          "y": 6000,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedUp": [
+        {
+          "y": 6084,
+          "id": "#hobbies"
+        },
+        {
+          "y": 5920,
+          "id": "#teaching"
+        },
+        {
+          "y": 5600,
+          "id": "#awards"
+        },
+        {
+          "y": 3280,
+          "id": "#experience"
+        },
+        {
+          "y": 2560,
+          "id": "#publications"
+        },
+        {
+          "y": 1360,
+          "id": "#research"
+        },
+        {
+          "y": 720,
+          "id": "#about"
+        }
+      ],
+      "identicalHealthyWindows": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "samplesPerDirection": 77,
+      "previouslyHealthy": true,
+      "baselineDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 800,
+          "id": "#research"
+        },
+        {
+          "y": 1440,
+          "id": "#publications"
+        },
+        {
+          "y": 2640,
+          "id": "#experience"
+        },
+        {
+          "y": 3360,
+          "id": "#awards"
+        },
+        {
+          "y": 5680,
+          "id": "#teaching"
+        },
+        {
+          "y": 5920,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 800,
+          "id": "#research"
+        },
+        {
+          "y": 1440,
+          "id": "#publications"
+        },
+        {
+          "y": 2640,
+          "id": "#experience"
+        },
+        {
+          "y": 3360,
+          "id": "#awards"
+        },
+        {
+          "y": 5680,
+          "id": "#teaching"
+        },
+        {
+          "y": 5920,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedUp": [
+        {
+          "y": 6004,
+          "id": "#hobbies"
+        },
+        {
+          "y": 5840,
+          "id": "#teaching"
+        },
+        {
+          "y": 5600,
+          "id": "#awards"
+        },
+        {
+          "y": 3280,
+          "id": "#experience"
+        },
+        {
+          "y": 2560,
+          "id": "#publications"
+        },
+        {
+          "y": 1360,
+          "id": "#research"
+        },
+        {
+          "y": 720,
+          "id": "#about"
+        }
+      ],
+      "identicalHealthyWindows": true
+    },
+    {
+      "width": 2560,
+      "height": 1200,
+      "samplesPerDirection": 75,
+      "previouslyHealthy": true,
+      "baselineDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 800,
+          "id": "#research"
+        },
+        {
+          "y": 1440,
+          "id": "#publications"
+        },
+        {
+          "y": 2640,
+          "id": "#experience"
+        },
+        {
+          "y": 3360,
+          "id": "#awards"
+        },
+        {
+          "y": 5680,
+          "id": "#teaching"
+        },
+        {
+          "y": 5840,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 800,
+          "id": "#research"
+        },
+        {
+          "y": 1440,
+          "id": "#publications"
+        },
+        {
+          "y": 2640,
+          "id": "#experience"
+        },
+        {
+          "y": 3360,
+          "id": "#awards"
+        },
+        {
+          "y": 5680,
+          "id": "#teaching"
+        },
+        {
+          "y": 5840,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedUp": [
+        {
+          "y": 5884,
+          "id": "#hobbies"
+        },
+        {
+          "y": 5760,
+          "id": "#teaching"
+        },
+        {
+          "y": 5600,
+          "id": "#awards"
+        },
+        {
+          "y": 3280,
+          "id": "#experience"
+        },
+        {
+          "y": 2560,
+          "id": "#publications"
+        },
+        {
+          "y": 1360,
+          "id": "#research"
+        },
+        {
+          "y": 720,
+          "id": "#about"
+        }
+      ],
+      "identicalHealthyWindows": true
+    },
+    {
+      "width": 2560,
+      "height": 1360,
+      "samplesPerDirection": 73,
+      "previouslyHealthy": false,
+      "baselineDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 800,
+          "id": "#research"
+        },
+        {
+          "y": 1440,
+          "id": "#publications"
+        },
+        {
+          "y": 2640,
+          "id": "#experience"
+        },
+        {
+          "y": 3360,
+          "id": "#awards"
+        },
+        {
+          "y": 5680,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 800,
+          "id": "#research"
+        },
+        {
+          "y": 1440,
+          "id": "#publications"
+        },
+        {
+          "y": 2640,
+          "id": "#experience"
+        },
+        {
+          "y": 3360,
+          "id": "#awards"
+        },
+        {
+          "y": 5440,
+          "id": "#teaching"
+        },
+        {
+          "y": 5724,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedUp": [
+        {
+          "y": 5724,
+          "id": "#hobbies"
+        },
+        {
+          "y": 5680,
+          "id": "#teaching"
+        },
+        {
+          "y": 5360,
+          "id": "#awards"
+        },
+        {
+          "y": 3280,
+          "id": "#experience"
+        },
+        {
+          "y": 2560,
+          "id": "#publications"
+        },
+        {
+          "y": 1360,
+          "id": "#research"
+        },
+        {
+          "y": 720,
+          "id": "#about"
+        }
+      ],
+      "identicalHealthyWindows": false
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "samplesPerDirection": 72,
+      "previouslyHealthy": false,
+      "baselineDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 800,
+          "id": "#research"
+        },
+        {
+          "y": 1440,
+          "id": "#publications"
+        },
+        {
+          "y": 2640,
+          "id": "#experience"
+        },
+        {
+          "y": 3360,
+          "id": "#awards"
+        },
+        {
+          "y": 5600,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 800,
+          "id": "#research"
+        },
+        {
+          "y": 1440,
+          "id": "#publications"
+        },
+        {
+          "y": 2640,
+          "id": "#experience"
+        },
+        {
+          "y": 3360,
+          "id": "#awards"
+        },
+        {
+          "y": 5360,
+          "id": "#teaching"
+        },
+        {
+          "y": 5644,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedUp": [
+        {
+          "y": 5644,
+          "id": "#hobbies"
+        },
+        {
+          "y": 5600,
+          "id": "#teaching"
+        },
+        {
+          "y": 5280,
+          "id": "#awards"
+        },
+        {
+          "y": 3280,
+          "id": "#experience"
+        },
+        {
+          "y": 2560,
+          "id": "#publications"
+        },
+        {
+          "y": 1360,
+          "id": "#research"
+        },
+        {
+          "y": 720,
+          "id": "#about"
+        }
+      ],
+      "identicalHealthyWindows": false
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "samplesPerDirection": 63,
+      "previouslyHealthy": false,
+      "baselineDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 800,
+          "id": "#research"
+        },
+        {
+          "y": 1440,
+          "id": "#publications"
+        },
+        {
+          "y": 2640,
+          "id": "#experience"
+        },
+        {
+          "y": 3360,
+          "id": "#awards"
+        },
+        {
+          "y": 4880,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedDown": [
+        {
+          "y": 0,
+          "id": "#about"
+        },
+        {
+          "y": 800,
+          "id": "#research"
+        },
+        {
+          "y": 1440,
+          "id": "#publications"
+        },
+        {
+          "y": 2640,
+          "id": "#experience"
+        },
+        {
+          "y": 3360,
+          "id": "#awards"
+        },
+        {
+          "y": 4640,
+          "id": "#teaching"
+        },
+        {
+          "y": 4924,
+          "id": "#hobbies"
+        }
+      ],
+      "updatedUp": [
+        {
+          "y": 4924,
+          "id": "#hobbies"
+        },
+        {
+          "y": 4880,
+          "id": "#teaching"
+        },
+        {
+          "y": 4560,
+          "id": "#awards"
+        },
+        {
+          "y": 3280,
+          "id": "#experience"
+        },
+        {
+          "y": 2560,
+          "id": "#publications"
+        },
+        {
+          "y": 1360,
+          "id": "#research"
+        },
+        {
+          "y": 720,
+          "id": "#about"
+        }
+      ],
+      "identicalHealthyWindows": false
+    }
+  ],
+  "manual": [
+    {
+      "width": 2560,
+      "height": 1440,
+      "id": "#about",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "id": "#research",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "id": "#publications",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "id": "#experience",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "id": "#awards",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "id": "#teaching",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "id": "#hobbies",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "id": "#about",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "id": "#research",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "id": "#publications",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "id": "#experience",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "id": "#awards",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "id": "#teaching",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "id": "#hobbies",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "id": "#about",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "id": "#research",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "id": "#publications",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "id": "#experience",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "id": "#awards",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "id": "#teaching",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "id": "#hobbies",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "id": "#about",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "id": "#research",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "id": "#publications",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "id": "#experience",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "id": "#awards",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "id": "#teaching",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "id": "#hobbies",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": true
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "id": "#about",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": true
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "id": "#research",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": true
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "id": "#publications",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": true
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "id": "#experience",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": true
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "id": "#awards",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": true
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "id": "#teaching",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": true
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "id": "#hobbies",
+      "click": true,
+      "imageLoad": true,
+      "resize": true,
+      "menu": true
+    }
+  ],
+  "interaction": [
+    {
+      "width": 2560,
+      "height": 1440,
+      "directTeaching": true,
+      "wheelRelease": true,
+      "keyboardRelease": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "directTeaching": true,
+      "wheelRelease": true,
+      "keyboardRelease": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "directTeaching": true,
+      "wheelRelease": true,
+      "keyboardRelease": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "directTeaching": true,
+      "wheelRelease": true,
+      "keyboardRelease": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "directTeaching": true,
+      "wheelRelease": true,
+      "keyboardRelease": true,
+      "noHorizontalOverflow": true
+    }
+  ],
+  "accessibility": [],
+  "errors": [],
+  "interactionDetails": {
+    "smooth": [
+      {
+        "width": 2560,
+        "height": 1440,
+        "frames": 75,
+        "actualSmoothMovement": true,
+        "manualSelectionStable": true,
+        "wheelReleases": true
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "frames": 75,
+        "actualSmoothMovement": true,
+        "manualSelectionStable": true,
+        "wheelReleases": true
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "frames": 75,
+        "actualSmoothMovement": true,
+        "manualSelectionStable": true,
+        "wheelReleases": true
+      }
+    ],
+    "touch": [
+      {
+        "nativeTouchSwipe": true,
+        "from": "#hobbies",
+        "to": "#teaching",
+        "actualPageMoved": true
+      }
+    ],
+    "sidebar": [
+      {
+        "internalWheelAndKeyboardPreserveManual": true,
+        "pageDidNotMove": true
+      }
+    ],
+    "layout": [
+      {
+        "selector": "#more-awards",
+        "manualSelectionRetainedThroughExpandAndCollapse": true
+      },
+      {
+        "selector": "#more-publications",
+        "manualSelectionRetainedThroughExpandAndCollapse": true
+      },
+      {
+        "deepPaperLink": true,
+        "selected": "#publications",
+        "moreOpened": true
+      },
+      {
+        "resizeAcrossCompensationBoundaryPreservesManual": true
+      },
+      {
+        "unlockedResizeRecomputes": true
+      }
+    ],
+    "scrollbar": [
+      {
+        "nativeScrollbarDrag": true,
+        "before": 5644,
+        "after": 5167,
+        "selected": "#awards"
+      }
+    ],
+    "accessibility": [
+      {
+        "width": 2560,
+        "height": 1440,
+        "violations": 0
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "violations": 0
+      }
+    ],
+    "fallback": [
+      {
+        "noJavaScriptNativeNavigation": true
+      }
+    ],
+    "errors": []
+  },
+  "additionalLayoutChecks": {
+    "layout": [
+      {
+        "id": "#more-awards",
+        "browserScrollAnchoringEnabled": true,
+        "before": 5644,
+        "after": 7264,
+        "manualSelectionRetained": true
+      },
+      {
+        "id": "#more-publications",
+        "browserScrollAnchoringEnabled": true,
+        "before": 5643,
+        "after": 9361,
+        "manualSelectionRetained": true
+      }
+    ],
+    "font": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "textScale": "200%",
+        "sequence": [
+          "#about",
+          "#research",
+          "#publications",
+          "#experience",
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ]
+      },
+      {
+        "width": 2560,
+        "height": 1440,
+        "textScale": "200%",
+        "sequence": [
+          "#about",
+          "#research",
+          "#publications",
+          "#experience",
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ]
+      }
+    ],
+    "modifiedClicks": [
+      {
+        "ctrlClickDoesNotChangeCurrentSelection": true
+      }
+    ],
+    "zoom": [
+      {
+        "ctrlWheelRetainsManualSelection": true
+      }
+    ],
+    "boundary": [
+      {
+        "compensatedEntry": 5311,
+        "smallReverseMovesRetainSelection": true
+      }
+    ]
+  },
+  "staticScope": {
+    "deployedFiles": 321,
+    "changed": 35,
+    "unchanged": 286,
+    "changes": "Shared navigation script and cache revision in 34 pages",
+    "allPageContentIdenticalExceptScriptRevision": true,
+    "allRegisteredAssetsUnchanged": true,
+    "sidebarHeaderMediaCitationLogicOutsideNavigationUnchanged": true
+  },
+  "summary": {
+    "viewports": 12,
+    "scrollSamples": 2716,
+    "healthyWindowsWithIdenticalBaseline": 9,
+    "compensatedWindows": 3,
+    "manualSelections": 35,
+    "scriptRevision": "20261010-navigation",
+    "testEnvironment": "Headless Chromium, viewport emulation; native wheel, touch and visible-scrollbar inputs"
+  }
+}

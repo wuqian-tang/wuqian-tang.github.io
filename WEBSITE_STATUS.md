@@ -1,13 +1,25 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-10-09。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-10-10。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wuqian-tang.github.io](https://wuqian-tang.github.io/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 期刊论文编号与 CV 更正（2026-10-09，最新）
+## 高窗口导航补偿与手动导航优先（2026-10-10，最新）
+
+- 用户确认 2560×1440 最大化 Chrome 下 Awards 直接跳到 Hobbies、Teaching 被跳过；同类问题在 2560×1360 与 3840×2160 可复现。原因是旧版末段完整可见优先早于 Teaching 的正常进入位置，且高窗口的 Teaching 进入位置可能超过实际可滚动范围。用户审核后授权：根据实际布局补偿、保留正常窗口判断、所有段落手动导航优先。
+- 自动识别读取实际区块坐标／高度、导航底部、CSS anchor offsets、根字号和页面可滚动范围；阅读内偏移为根字号的 1.5 倍，现有 16px 字号仍对应 24px。没有写死目标分辨率、补偿距离或主要触发像素。仅以 4px 做微小防抖与页底容差。
+- 只在原末段进入规则会早于前段的正常进入位置时启用尾部补偿。此时暂停末段的完整可见优先，末段按正常位置或实际页底识别；前段获得其高度与可见正文高度较小值的一半作为阅读区间，必要时向前协调相邻区间。正常布局继续使用原末段完整可见／页底判断。自动上下滚动不修改 URL hash。
+- 首页所有七个栏目统一手动优先：普通同页链接点击、直接片段与历史 hash 定位立即选中其所属栏目，`#paper-*`／`#award-*` 等深层片段也定位其栏目。平滑定位、图片／字体加载、窗口调整、More 展开收起、手机菜单和导航焦点变化均保留选择；页面滚轮、单指纵向滑动、翻页键，或原生定位结束后的滚动条操作恢复自动识别。侧栏／弹窗内部滚动、多指缩放、Ctrl／Command 滚轮缩放及修改键新分页点击不会取消当前选择。
+- 使用原生锚点与浏览器平滑滚动，保留 reduced-motion；scrollend 与无该事件时的静止回退仅区分原生定位过程，不限定手动高亮的保持时间。已知布局引起的滚动锚定变化也保留手动选择。沿用 passive／requestAnimationFrame 合并更新，每次仅一个 aria-current，有变化才写入。
+- 验收见 `preview/adaptive-navigation-validation.json`：12 种窗口、2716 次连续上下滚动采样；之前正常的 9 种窗口在相同位置及方向下与旧版逐项一致，3 种高窗口均按 Awards → Teaching → Hobbies／反向顺序识别。5 种桌面／平板／手机共 35 次手动栏目点击，图片加载、尺寸调整、菜单展开收起以及直接 Teaching 链接均通过。
+- 另外验证三种桌面原生平滑滚动的 225 帧高亮稳定、真实手机触控、原生可见滚动条拖动、侧栏内部滚轮／键盘、深层论文 More 自动打开、带滚动锚定的两个 More 展开收起、补偿边界微动、跨补偿状态调整尺寸、两种窗口 200% 字号。两次无障碍扫描零报告项，无 JS 原生导航通过；所有浏览器检查无脚本异常。截图为 `preview/adaptive-navigation-2560x1440.png`。测试采用 Chromium 的视口模拟，不代替实体设备验收。
+- 共享脚本缓存版本更新为 `20261010-navigation`，首页及 33 个图库同步；CSS 仍为 `20261009-stable-sidebar`。35 个 site 文件只改变主导航脚本及 34 页缓存版本，286 个部署文件、273 条公开资产及页面内容字节保留；固定侧栏、菜单收放、媒体／引文逻辑在导航块之外不改，CV 和私人资料不改。本地翻译草案继续不修改、不提交。
+- README 更新为当前规则；经构建、JS 语法、公开资产与 diff 检查后推送 master，由 Pages 发布并核对线上首页、版本脚本、高窗口上下顺序与手动优先。以下旧导航记录中的无条件末段完整可见规则，以本节的条件补偿与手动优先规则为准。
+
+## 期刊论文编号与 CV 更正（2026-10-09，上一版）
 
 - 用户指出 J1／J2 颠倒，并授权修正网页及 CV。编号现按首次发表先后：J1 = The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions（DADH 2025）；J2 = CB-EVO: Contextual Bandit Tuning with Evolutionary Search for Logic Synthesis（TODAES 2026）。编号与列表显示顺序／Selected／More 无关；甲骨文仍在 More，CB-EVO 仍在主列表。
 - `content/profile.json` 的 label／id、研究方向对应 paper、`content/citations.json` 的对应记录一起更正。现在 `#paper-j1` 指向甲骨文，`#paper-j2` 指向 CB-EVO；BibTeX 文本、引用键、作者、题名、年份、DOI、PDF／Code／Journal 顺序全部保留。来源字段使用现用的 year-venue-short-title PDF 路径。历史文件名 `J1-CB-EVO.pdf`／`J2-Oracle-Bone.pdf` 继续作为原论文的兼容地址，不重新分配它们的内容。

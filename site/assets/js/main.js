@@ -103,60 +103,186 @@
     if (destinations.length) {
       let navigationFramePending = false;
       let currentIndex = -1;
+      let manualIndex = null;
+      let navigationScrolling = false;
+      let scrollEndTimer;
+      let layoutChanging = false;
+      let layoutRevision = 0;
       const tolerance = 4;
+      const selectSection = index => {
+        if (index === currentIndex) return;
+        currentIndex = index;
+        destinations.forEach(({ link }, destinationIndex) => {
+          if (destinationIndex === index) link.setAttribute('aria-current', 'location');
+          else link.removeAttribute('aria-current');
+        });
+      };
       const updateCurrentSection = () => {
         navigationFramePending = false;
+        if (manualIndex !== null) {
+          selectSection(manualIndex);
+          return;
+        }
         const viewportHeight = window.innerHeight;
         const headerBottom = Math.max(0, header?.getBoundingClientRect().bottom || 0);
-        const anchorOffset = (parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0) +
+        const rootStyle = getComputedStyle(document.documentElement);
+        const anchorOffset = (parseFloat(rootStyle.scrollPaddingTop) || 0) +
           (parseFloat(getComputedStyle(destinations[0].section).scrollMarginTop) || 0);
         // Read just inside the anchored section, including both CSS scroll offsets.
-        const readingLine = Math.min(viewportHeight - 1, Math.max(headerBottom, anchorOffset) + 24);
+        const readingInset = parseFloat(rootStyle.fontSize) * 1.5;
+        const readingLine = Math.min(viewportHeight - 1, Math.max(headerBottom, anchorOffset) + readingInset);
         const bounds = destinations.map(destination => destination.section.getBoundingClientRect());
-        let nextIndex = 0;
-        bounds.forEach((rect, index) => {
-          // A small dead band keeps tiny movements from toggling adjacent links.
-          const threshold = readingLine + (index <= currentIndex ? tolerance : -tolerance);
-          if (rect.top <= threshold) nextIndex = index;
-        });
-
+        const scrollPosition = Math.max(0, window.scrollY);
+        const maxScroll = Math.max(0, document.scrollingElement.scrollHeight - viewportHeight);
+        const starts = bounds.map(rect => scrollPosition + rect.top - readingLine);
         const lastIndex = destinations.length - 1;
         const last = bounds[lastIndex];
-        const maxScroll = Math.max(0, document.scrollingElement.scrollHeight - viewportHeight);
+        const visibleHeight = Math.max(0, viewportHeight - headerBottom);
+        const fullVisibilityStart = last.height <= visibleHeight ?
+          scrollPosition + last.bottom - viewportHeight + tolerance : Infinity;
+        const lastEntry = Math.min(starts[lastIndex] + tolerance, fullVisibilityStart, maxScroll - tolerance);
+        // Preserve normal layouts. Only adjust the tail if its existing rule
+        // would select the last section before the preceding one can be read.
+        const compensateTail = maxScroll > tolerance && lastIndex > 0 &&
+          starts[lastIndex - 1] + tolerance >= lastEntry;
+        if (compensateTail) {
+          starts[lastIndex] = Math.min(starts[lastIndex], maxScroll);
+          for (let index = lastIndex - 1; index > 0; index -= 1) {
+            const readingRoom = Math.min(bounds[index].height, visibleHeight) / 2;
+            starts[index] = Math.max(0, Math.min(starts[index], starts[index + 1] - readingRoom));
+          }
+        }
+        let nextIndex = 0;
+        starts.forEach((start, index) => {
+          // A small dead band keeps tiny movements from toggling adjacent links.
+          const threshold = start + (index <= currentIndex ? -tolerance : tolerance);
+          if (scrollPosition >= threshold) nextIndex = index;
+        });
+
         const visibilityTolerance = currentIndex === lastIndex ? tolerance : -tolerance;
         const lastFullyVisible = last.top >= headerBottom - tolerance &&
           last.bottom <= viewportHeight + visibilityTolerance;
-        const atPageEnd = maxScroll > tolerance && window.scrollY >= maxScroll - tolerance;
-        // A short final section can never reach the reading line in tall windows.
-        if (maxScroll > tolerance && last.top < viewportHeight && (lastFullyVisible || atPageEnd)) {
+        const atPageEnd = maxScroll > tolerance && scrollPosition >= maxScroll - tolerance;
+        if (maxScroll > tolerance && last.top < viewportHeight &&
+            ((!compensateTail && lastFullyVisible) || atPageEnd)) {
           nextIndex = lastIndex;
         }
-        if (nextIndex === currentIndex) return;
-        currentIndex = nextIndex;
-        destinations.forEach(({ link }, index) => {
-          if (index === currentIndex) link.setAttribute('aria-current', 'location');
-          else link.removeAttribute('aria-current');
-        });
+        selectSection(nextIndex);
       };
       const scheduleNavigation = () => {
         if (navigationFramePending) return;
         navigationFramePending = true;
         window.requestAnimationFrame(updateCurrentSection);
       };
-      window.addEventListener('scroll', scheduleNavigation, { passive: true });
-      window.addEventListener('resize', scheduleNavigation);
-      window.addEventListener('hashchange', scheduleNavigation);
-      window.addEventListener('pageshow', scheduleNavigation);
-      document.addEventListener('load', scheduleNavigation, true);
-      document.querySelectorAll('details').forEach(details => details.addEventListener('toggle', scheduleNavigation));
-      document.fonts?.ready.then(scheduleNavigation);
-      document.fonts?.addEventListener('loadingdone', scheduleNavigation);
+      const finishNavigationScroll = () => {
+        clearTimeout(scrollEndTimer);
+        navigationScrolling = false;
+      };
+      const waitForNavigationScroll = () => {
+        clearTimeout(scrollEndTimer);
+        // Fallback for browsers without scrollend, including anchors that do not move.
+        scrollEndTimer = setTimeout(finishNavigationScroll, 180);
+      };
+      const indexForHash = hash => {
+        let target;
+        try { target = document.getElementById(decodeURIComponent(hash.slice(1))); }
+        catch { return -1; }
+        return target ? destinations.findIndex(({ section }) => section.contains(target)) : -1;
+      };
+      const selectManualDestination = hash => {
+        const index = indexForHash(hash);
+        manualIndex = index >= 0 ? index : null;
+        navigationScrolling = manualIndex !== null;
+        if (navigationScrolling) {
+          selectSection(manualIndex);
+          waitForNavigationScroll();
+        } else finishNavigationScroll();
+        scheduleNavigation();
+      };
+      const resumeAutomaticNavigation = () => {
+        if (manualIndex === null) return;
+        manualIndex = null;
+        finishNavigationScroll();
+        scheduleNavigation();
+      };
+      const scheduleLayoutNavigation = () => {
+        layoutChanging = true;
+        const revision = ++layoutRevision;
+        scheduleNavigation();
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          if (revision === layoutRevision) layoutChanging = false;
+        }));
+      };
+      // Scrolling a sidebar or dialog must not cancel a selection on the page.
+      const scrollsInsideControl = (target, direction) => {
+        for (let node = target instanceof Element ? target : null;
+             node && node !== document.body; node = node.parentElement) {
+          const style = getComputedStyle(node);
+          if (!/(auto|scroll)/.test(style.overflowY) || node.scrollHeight <= node.clientHeight) continue;
+          if (style.overscrollBehaviorY === 'contain' || style.overscrollBehaviorY === 'none' ||
+              (direction < 0 ? node.scrollTop > 0 : node.scrollTop + node.clientHeight < node.scrollHeight)) return true;
+        }
+        return document.body.matches('.viewer-open, .citation-open');
+      };
+      document.addEventListener('click', event => {
+        if (event.target.closest('summary') || event.target.closest('.menu-toggle')) scheduleLayoutNavigation();
+        const link = event.target.closest('a[href]');
+        if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey ||
+            event.shiftKey || event.altKey || (link.target && link.target !== '_self')) return;
+        const url = new URL(link.href, location.href);
+        if (url.origin === location.origin && url.pathname === location.pathname &&
+            url.search === location.search && url.hash) selectManualDestination(url.hash);
+      });
+      window.addEventListener('wheel', event => {
+        if (manualIndex !== null && !event.ctrlKey && !event.metaKey &&
+            Math.abs(event.deltaY) > Math.abs(event.deltaX) &&
+            !scrollsInsideControl(event.target, event.deltaY)) resumeAutomaticNavigation();
+      }, { passive: true });
+      let touchPosition;
+      window.addEventListener('touchstart', event => {
+        const touch = event.touches[0];
+        touchPosition = touch && event.touches.length === 1 ? { x: touch.clientX, y: touch.clientY } : null;
+      }, { passive: true });
+      window.addEventListener('touchmove', event => {
+        const touch = event.touches[0];
+        if (manualIndex === null || !touch || !touchPosition || event.touches.length !== 1) return;
+        const direction = touchPosition.y - touch.clientY;
+        if (Math.abs(direction) > Math.abs(touchPosition.x - touch.clientX) &&
+            !scrollsInsideControl(event.target, direction)) resumeAutomaticNavigation();
+      }, { passive: true });
+      document.addEventListener('keydown', event => {
+        if (manualIndex === null || event.defaultPrevented || event.metaKey || event.ctrlKey || event.altKey ||
+            event.target.closest('input, textarea, select, [contenteditable="true"]') ||
+            (event.key === ' ' && event.target.closest('button, summary'))) return;
+        const direction = ['ArrowUp', 'PageUp', 'Home'].includes(event.key) ||
+          (event.key === ' ' && event.shiftKey) ? -1 :
+          ['ArrowDown', 'PageDown', 'End', ' '].includes(event.key) ? 1 : 0;
+        if (direction && !scrollsInsideControl(event.target, direction)) resumeAutomaticNavigation();
+      });
+      window.addEventListener('scroll', () => {
+        // After native anchor scrolling settles, otherwise unexplained scrolling
+        // includes scrollbar dragging. Known layout changes retain the selection.
+        if (manualIndex !== null && !navigationScrolling && !layoutChanging) resumeAutomaticNavigation();
+        if (navigationScrolling) waitForNavigationScroll();
+        scheduleNavigation();
+      }, { passive: true });
+      window.addEventListener('scrollend', event => {
+        if (event.target === document) finishNavigationScroll();
+      });
+      header?.addEventListener('focusin', scheduleLayoutNavigation);
+      window.addEventListener('resize', scheduleLayoutNavigation);
+      window.addEventListener('hashchange', () => selectManualDestination(location.hash));
+      window.addEventListener('pageshow', scheduleLayoutNavigation);
+      document.addEventListener('load', scheduleLayoutNavigation, true);
+      document.querySelectorAll('details').forEach(details => details.addEventListener('toggle', scheduleLayoutNavigation));
+      document.fonts?.ready.then(scheduleLayoutNavigation);
+      document.fonts?.addEventListener('loadingdone', scheduleLayoutNavigation);
       if ('ResizeObserver' in window) {
-        const navigationObserver = new ResizeObserver(scheduleNavigation);
+        const navigationObserver = new ResizeObserver(scheduleLayoutNavigation);
         navigationObserver.observe(layout || document.body);
         if (header) navigationObserver.observe(header);
       }
-      scheduleNavigation();
+      selectManualDestination(location.hash);
     }
   }
 
