@@ -7,9 +7,9 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## About 研究主线（2026-10-11，最新）
+## About 研究主线与文案精简（2026-10-11，最新）
 
-- 用户审核后确认研究段以 LLMs for EDA 为主线，强调算法发现与面向不同设计的自适应优化，以 RTL recovery、logic synthesis、physical design 的既有工作作为基础。采用的两句文案为：`My research focuses on large language models (LLMs) for electronic design automation (EDA), particularly algorithm discovery and design-adaptive optimization. Building on my work in RTL recovery, logic synthesis, and physical design, I study how LLMs can guide algorithm development and adapt optimization strategies to different circuits and design objectives.`
+- 用户审核后确认研究段以 LLMs for EDA 为主线，强调算法发现与面向不同设计的自适应优化，以 RTL recovery、logic synthesis、physical design 的既有工作作为基础。进一步确认简介直接采用缩写，并精简第二句。最新两句文案为：`My research focuses on LLMs for EDA, particularly algorithm discovery and design-adaptive optimization. Building on my work in RTL recovery, logic synthesis, and physical design, I explore LLM-guided optimization across the circuit design flow.` Research Interests 的 `LLMs for Electronic Design Automation` 标题提供 EDA 全称。
 - 保持三段结构，身份／导师和学历段沿用。Research Interests、Tagline、搜索及分享摘要、CV 不改。本次仅替换首页研究段，并同步维护记录；构建、公开资产和差异检查通过后推送 master，由 GitHub Pages 发布。
 
 ## 简介标题精简（2026-10-11）
