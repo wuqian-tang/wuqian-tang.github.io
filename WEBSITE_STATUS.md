@@ -1,13 +1,18 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-10-10。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-10-11。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wuqian-tang.github.io](https://wuqian-tang.github.io/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 高窗口导航补偿与手动导航优先（2026-10-10，最新）
+## 简介标题精简（2026-10-11，最新）
+
+- 用户确认将首页正文标题 `About Me` 改为 `About`，与已有导航文字一致。保留 `#about`、标题 id、简介文案和布局；README 与当前格式规范同步采用 About。以下历史记录中的 About Me 指同一栏目。
+- 修改首页模板并重新构建，通过构建一致性和差异检查后推送 master，由 GitHub Pages 发布。
+
+## 高窗口导航补偿与手动导航优先（2026-10-10）
 
 - 用户确认 2560×1440 最大化 Chrome 下 Awards 直接跳到 Hobbies、Teaching 被跳过；同类问题在 2560×1360 与 3840×2160 可复现。原因是旧版末段完整可见优先早于 Teaching 的正常进入位置，且高窗口的 Teaching 进入位置可能超过实际可滚动范围。用户审核后授权：根据实际布局补偿、保留正常窗口判断、所有段落手动导航优先。
 - 自动识别读取实际区块坐标／高度、导航底部、CSS anchor offsets、根字号和页面可滚动范围；阅读内偏移为根字号的 1.5 倍，现有 16px 字号仍对应 24px。没有写死目标分辨率、补偿距离或主要触发像素。仅以 4px 做微小防抖与页底容差。
@@ -403,7 +408,7 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 ## 格式规范
 
 1. **语言与姓名**：页面以英文为主，中文姓名只用繁体「唐梧遷」，置于姓名括号内。英文名统一 Wuqian Tang；引用作者名和正式机构名保持准确。
-2. **标题**：栏目与子标题采用 Title Case，例如 About Me、Recent News、Research Interests、Awards & Honors、Education & Experience、Work Experience、Hobbies。最上方 Tagline 是唯一全大写的展示文字：AI FOR EDA · OPTIMIZATION ACROSS RTL, LOGIC SYNTHESIS, AND PHYSICAL DESIGN。导航保留 Research；方向名称用 Physical Design Automation。 第二个方向为 Logic Synthesis & RTL Recovery；About Me 和搜索摘要使用 logic synthesis and RTL recovery，保留 DATE 2024 代表工作。不得用 `text-transform: uppercase` 强制转换子标题。论文题名保持出版方原文，不为统一标题样式改写正式题名。
+2. **标题**：栏目与子标题采用 Title Case，例如 About、Recent News、Research Interests、Awards & Honors、Education & Experience、Work Experience、Hobbies。最上方 Tagline 是唯一全大写的展示文字：AI FOR EDA · OPTIMIZATION ACROSS RTL, LOGIC SYNTHESIS, AND PHYSICAL DESIGN。导航保留 Research；方向名称用 Physical Design Automation。 第二个方向为 Logic Synthesis & RTL Recovery；About 和搜索摘要使用 logic synthesis and RTL recovery，保留 DATE 2024 代表工作。不得用 `text-transform: uppercase` 强制转换子标题。论文题名保持出版方原文，不为统一标题样式改写正式题名。
 3. **视觉**：跟随系统深浅模式；浅色为白色背景、深色正文、蓝色链接；深色为 #101827 页面、#172235 卡片、#E6EDF7 正文、#A8B6C9 辅助文字、#8DB8FF 链接。颜色集中于 CSS 变量，固定颜色不可散落到组件；180ms 颜色过渡尊重减少动态效果，打印固定浅色。系统字体，无远程字体依赖。奖项标题统一 `--ink`、`.9375rem`、550 字重，不按获奖等级改成蓝色。头像右上角线宽高均为 29px，左下角均为 58px；两处浅色为 `#B5CBEA`、深色为 `#55729B`，线宽均为 2px，形成非对称装饰。
 4. **日期**：页面日期用英文三字母月份加年份，如 Sep 2026、May 2025；时间范围用 en dash（–），持续状态用 Present；Awards 和相册日期在 – 后固定换行，– 留在首行，两个日期段分别 nowrap，不将月份与年份拆开；Education / Work Experience 日期在电脑和平板靠右、手机（600px 及以下）放在条目上方靠左，始终单行，横杠两侧保留空格，不插入 br。资料保存完整的起止年份，如 Jun 2025–Sep 2025；多人次合并奖项在说明中列出实际月份。以证书、官方公告或经过核对的资料为依据。
 5. **News**：当前只展示 2026 年，倒序排列，日期统一三字母月份加年份（如 Nov 2026），不显示日；生成的 time 使用 YYYY-MM，源资料可保留精确日期。保持短句，右侧为 Latest Updates。句末使用方括号链接到具体图片/奖状或对应公告；媒体在首页弹窗展示，外部网页在新分页打开。不使用 TAPCO 正文跳转。助教新闻筛选正确学期，不把旧学期图片混入新新闻。
@@ -430,7 +435,7 @@ Hobbies 用词参考了 [Siyuan Jiang 的学术主页](https://siyuanj.github.io
 | --- | --- |
 | `content/profile.json` | 论文、奖项、月份、官方链接、课程和经历数据 |
 | `content/citations.json` | 22 篇 BibTeX 引用、来源与核对日期；需与论文数据同步维护 |
-| `content/homepage.html` | 首页结构和 About Me / Hobbies 文案 |
+| `content/homepage.html` | 首页结构和 About / Hobbies 文案 |
 | `content/award-gallery.html` | 相册模板 |
 | `content/public-assets.json` | 明确审核的公开文件路径、来源和 SHA-256 |
 | `content/image-previews.json` | 87 张 WebP 的大小、来源 SHA-256、尺寸与编码记录 |
