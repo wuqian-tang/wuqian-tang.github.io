@@ -6,7 +6,7 @@
   "university": "National Tsing Hua University",
   "location": "Hsinchu, Taiwan",
   "email": "wqtang@cs.nthu.edu.tw",
-  "updated": "2026-10-08",
+  "updated": "2026-10-12",
   "site_url": "https://wuqian-tang.github.io",
   "profiles": [
     {
@@ -37,24 +37,54 @@
       "verification": "ORCID public record: Wuqian Tang; CB-EVO DOI 10.1145/3779431 and GLSVLSI DOI 10.1145/3716368.3735193 match; ACM-deposited Crossref author metadata agrees."
     }
   ],
+  "research_theme": "AI for EDA",
+  "research_intro": "I develop AI-driven algorithms for chip design, using LLMs, learning, and search to build faster, smaller, and more energy-efficient circuits.",
   "research": [
     {
-      "title": "LLMs for Electronic Design Automation",
-      "description": "Using language models and learning methods to adapt circuit optimization to different designs and objectives.",
-      "work": "TAPCO · MLCAD 2026",
-      "paper": "c17"
+      "title": "LLM-Guided Algorithm Discovery",
+      "description": "Using LLMs and circuit feedback to discover and adapt optimization algorithms.",
+      "links": [
+        {
+          "label": "TAPCO · MLCAD 2026",
+          "paper": "c17"
+        },
+        {
+          "label": "MLCAD Contest 2026",
+          "award": "mlcad-2026"
+        }
+      ]
     },
     {
       "title": "Logic Synthesis & RTL Recovery",
-      "description": "Developing optimization methods for logic synthesis and recovering functionally equivalent RTL representations from gate-level circuits.",
-      "work": "CB-EVO · TODAES 2026; DATE 2024",
-      "paper": "j2"
+      "description": "Recovering RTL from gate-level circuits and learning synthesis strategies that reduce circuit complexity.",
+      "links": [
+        {
+          "label": "CB-EVO · TODAES 2026",
+          "paper": "j2"
+        },
+        {
+          "label": "DATE 2024",
+          "paper": "c1"
+        },
+        {
+          "label": "IWLS Contest 2026",
+          "award": "iwls-2026"
+        }
+      ]
     },
     {
       "title": "Physical Design Automation",
-      "description": "Combining learning and optimization for placement, gate sizing, timing, and power under practical design constraints.",
-      "work": "HyPAS · DAC 2026",
-      "paper": "c15"
+      "description": "Combining learned models and optimization to improve placement, cell sizing, timing, and power.",
+      "links": [
+        {
+          "label": "HyPAS · DAC 2026",
+          "paper": "c15"
+        },
+        {
+          "label": "CAD Contest 2025 · Problem C",
+          "award": "iccad-contest-2025-c"
+        }
+      ]
     }
   ],
   "news": [

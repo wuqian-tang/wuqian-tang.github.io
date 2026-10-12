@@ -355,7 +355,20 @@ def render():
             resources.append(award_resources(awards_by_id[n['award_resources']]))
         suffix = ' <span class="news-resources">' + ' '.join(resources) + '</span>' if resources else ''
         news += f'<li><time datetime="{esc(month)}">{esc(n["date"])}</time><p>{esc(n["text"])}{suffix}</p></li>'
-    research = ''.join(f'<article class="research-item"><span class="research-number" aria-hidden="true">{i:02d}</span><div><h3>{esc(r["title"])}</h3><p>{esc(r["description"])}</p><a href="#paper-{esc(r["paper"])}">{esc(r["work"])}</a></div></article>' for i, r in enumerate(p['research'], 1))
+    research = ''
+    papers_by_id = {paper['id']: paper for paper in papers}
+    for i, r in enumerate(p['research'], 1):
+        links = []
+        for link in r['links']:
+            if ('paper' in link) == ('award' in link):
+                raise ValueError('Research links require exactly one paper or award reference')
+            kind = 'paper' if 'paper' in link else 'award'
+            records = papers_by_id if kind == 'paper' else awards_by_id
+            if link[kind] not in records:
+                raise ValueError(f'Unknown research {kind} reference: {link[kind]}')
+            purpose = 'publication details' if kind == 'paper' else 'award details'
+            links.append(f'<a href="#{kind}-{esc(link[kind])}" aria-label="{esc(link["label"] + ", " + purpose)}">{inline_text("[" + link["label"] + "]")}</a>')
+        research += f'<article class="research-item"><span class="research-number" aria-hidden="true">{i:02d}</span><div><h3>{esc(r["title"])}</h3><p>{esc(r["description"])}</p><div class="research-evidence">{"".join(links)}</div></div></article>'
     structured = json.dumps({'@context':'https://schema.org','@type':'Person','name':p['name'],'alternateName':p['chinese_name'],'url':p['site_url'],'jobTitle':p['role'],'affiliation':{'@type':'CollegeOrUniversity','name':p['university']},'sameAs':[link['url'] for link in p['profiles']]}, ensure_ascii=False).replace('<', '\\u003c')
     values = {key.upper(): esc(p[key]) for key in ['name','chinese_name','role','department','university','location','email','updated','site_url']}
     for key, image in p['homepage_images'].items():
@@ -368,6 +381,7 @@ def render():
         matching = next(item for a in all_awards for item in a['media'] if item['preview'] == image['preview'])
         values[key.upper() + '_ALT'] = esc(matching['alt'])
     values.update(STRUCTURED_DATA=structured, LOCATION_ICON=icon('location'), MAIL_ICON=icon('mail'), DOCUMENT_ICON=icon('document'), PROFILE_LINKS=profile_links, NEWS=news, RESEARCH=research,
+        RESEARCH_THEME=esc(p['research_theme']), RESEARCH_INTRO=esc(p['research_intro']),
         TAGLINE=inline_text('AI FOR EDA · OPTIMIZATION ACROSS RTL, LOGIC SYNTHESIS, AND PHYSICAL DESIGN'),
         TEACHING_RECOGNITION=inline_text('Excellent Teaching Assistant Award (Spring 2026) · Outstanding Teaching Assistant Award (Spring 2025, Fall 2025, Spring 2026)'),
         HSINCHU_CAPTION=inline_text('College / University Division · Mar 2026'),
@@ -384,7 +398,7 @@ def render():
     missing = re.findall(r'\$\{\w+\}', index)
     if missing:
         raise ValueError(f'Unrendered content: {missing}')
-    not_found = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#2458ad" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)"><title>Page not found | Wuqian Tang</title><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png?v=20261003-small-tang"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=20261003-small-tang"><link rel="icon" type="image/svg+xml" sizes="any" href="/assets/favicon.svg?v=20261003-small-tang"><link rel="stylesheet" href="/assets/css/main.css?v=20261009-stable-sidebar"></head><body><main style="max-width:600px;margin:15vh auto;padding:24px"><p class="eyebrow">404</p><h1 style="margin:16px 0">Page not found</h1><p>The page may have moved. You can find my research, publications, and contact details on my homepage.</p><p style="margin-top:24px"><a href="/" data-navigation="home">Return to homepage</a></p></main></body></html>\n'
+    not_found = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#2458ad" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)"><title>Page not found | Wuqian Tang</title><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png?v=20261003-small-tang"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=20261003-small-tang"><link rel="icon" type="image/svg+xml" sizes="any" href="/assets/favicon.svg?v=20261003-small-tang"><link rel="stylesheet" href="/assets/css/main.css?v=20261012-research"></head><body><main style="max-width:600px;margin:15vh auto;padding:24px"><p class="eyebrow">404</p><h1 style="margin:16px 0">Page not found</h1><p>The page may have moved. You can find my research, publications, and contact details on my homepage.</p><p style="margin-top:24px"><a href="/" data-navigation="home">Return to homepage</a></p></main></body></html>\n'
     not_found = not_found.replace('</head>', asset_redirect_script() + '</head>')
     sitemap = image_sitemap(p, projects)
     pages = {'index.html':index, '404.html':not_found, '.nojekyll':'', 'robots.txt':f'User-agent: *\nAllow: /\nSitemap: {p["site_url"]}/sitemap.xml\n', 'sitemap.xml':sitemap}

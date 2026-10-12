@@ -1,0 +1,793 @@
+{
+  "base": "http://127.0.0.1:8770/",
+  "layouts": [
+    {
+      "width": 280,
+      "height": 740,
+      "overflow": true,
+      "researchOverflow": false,
+      "links": [
+        {
+          "label": "[TAPCO ·MLCAD 2026]",
+          "width": 146.25,
+          "parentWidth": 175
+        },
+        {
+          "label": "[MLCAD Contest 2026]",
+          "width": 140.125,
+          "parentWidth": 175
+        },
+        {
+          "label": "[CB-EVO ·TODAES 2026]",
+          "width": 159.265625,
+          "parentWidth": 175
+        },
+        {
+          "label": "[DATE 2024]",
+          "width": 75.625,
+          "parentWidth": 175
+        },
+        {
+          "label": "[IWLS Contest 2026]",
+          "width": 125.6875,
+          "parentWidth": 175
+        },
+        {
+          "label": "[HyPAS ·DAC 2026]",
+          "width": 125.328125,
+          "parentWidth": 175
+        },
+        {
+          "label": "[CAD Contest 2025 Problem C]",
+          "width": 117.03125,
+          "parentWidth": 175
+        }
+      ],
+      "existingPageOverflow": "280px baseline comparison: the unchanged teaching-award Announcements group already extends the document to 290px; Research has no internal overflow."
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "overflow": false,
+      "researchOverflow": false,
+      "links": [
+        {
+          "label": "[TAPCO ·MLCAD 2026]",
+          "width": 146.25,
+          "parentWidth": 215
+        },
+        {
+          "label": "[MLCAD Contest 2026]",
+          "width": 140.125,
+          "parentWidth": 215
+        },
+        {
+          "label": "[CB-EVO ·TODAES 2026]",
+          "width": 159.265625,
+          "parentWidth": 215
+        },
+        {
+          "label": "[DATE 2024]",
+          "width": 75.625,
+          "parentWidth": 215
+        },
+        {
+          "label": "[IWLS Contest 2026]",
+          "width": 125.6875,
+          "parentWidth": 215
+        },
+        {
+          "label": "[HyPAS ·DAC 2026]",
+          "width": 125.328125,
+          "parentWidth": 215
+        },
+        {
+          "label": "[CAD Contest 2025 ·Problem C]",
+          "width": 199.953125,
+          "parentWidth": 215
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "researchOverflow": false,
+      "links": [
+        {
+          "label": "[TAPCO ·MLCAD 2026]",
+          "width": 146.25,
+          "parentWidth": 275
+        },
+        {
+          "label": "[MLCAD Contest 2026]",
+          "width": 140.125,
+          "parentWidth": 275
+        },
+        {
+          "label": "[CB-EVO ·TODAES 2026]",
+          "width": 159.265625,
+          "parentWidth": 275
+        },
+        {
+          "label": "[DATE 2024]",
+          "width": 75.625,
+          "parentWidth": 275
+        },
+        {
+          "label": "[IWLS Contest 2026]",
+          "width": 125.6875,
+          "parentWidth": 275
+        },
+        {
+          "label": "[HyPAS ·DAC 2026]",
+          "width": 125.328125,
+          "parentWidth": 275
+        },
+        {
+          "label": "[CAD Contest 2025 ·Problem C]",
+          "width": 199.953125,
+          "parentWidth": 275
+        }
+      ]
+    },
+    {
+      "width": 600,
+      "height": 900,
+      "overflow": false,
+      "researchOverflow": false,
+      "links": [
+        {
+          "label": "[TAPCO ·MLCAD 2026]",
+          "width": 146.25,
+          "parentWidth": 485
+        },
+        {
+          "label": "[MLCAD Contest 2026]",
+          "width": 140.125,
+          "parentWidth": 485
+        },
+        {
+          "label": "[CB-EVO ·TODAES 2026]",
+          "width": 159.265625,
+          "parentWidth": 485
+        },
+        {
+          "label": "[DATE 2024]",
+          "width": 75.625,
+          "parentWidth": 485
+        },
+        {
+          "label": "[IWLS Contest 2026]",
+          "width": 125.6875,
+          "parentWidth": 485
+        },
+        {
+          "label": "[HyPAS ·DAC 2026]",
+          "width": 125.328125,
+          "parentWidth": 485
+        },
+        {
+          "label": "[CAD Contest 2025 ·Problem C]",
+          "width": 199.953125,
+          "parentWidth": 485
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "researchOverflow": false,
+      "links": [
+        {
+          "label": "[TAPCO ·MLCAD 2026]",
+          "width": 146.25,
+          "parentWidth": 608
+        },
+        {
+          "label": "[MLCAD Contest 2026]",
+          "width": 140.125,
+          "parentWidth": 608
+        },
+        {
+          "label": "[CB-EVO ·TODAES 2026]",
+          "width": 159.265625,
+          "parentWidth": 608
+        },
+        {
+          "label": "[DATE 2024]",
+          "width": 75.625,
+          "parentWidth": 608
+        },
+        {
+          "label": "[IWLS Contest 2026]",
+          "width": 125.6875,
+          "parentWidth": 608
+        },
+        {
+          "label": "[HyPAS ·DAC 2026]",
+          "width": 125.328125,
+          "parentWidth": 608
+        },
+        {
+          "label": "[CAD Contest 2025 ·Problem C]",
+          "width": 199.953125,
+          "parentWidth": 608
+        }
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "overflow": false,
+      "researchOverflow": false,
+      "links": [
+        {
+          "label": "[TAPCO ·MLCAD 2026]",
+          "width": 146.25,
+          "parentWidth": 660
+        },
+        {
+          "label": "[MLCAD Contest 2026]",
+          "width": 140.125,
+          "parentWidth": 660
+        },
+        {
+          "label": "[CB-EVO ·TODAES 2026]",
+          "width": 159.265625,
+          "parentWidth": 660
+        },
+        {
+          "label": "[DATE 2024]",
+          "width": 75.625,
+          "parentWidth": 660
+        },
+        {
+          "label": "[IWLS Contest 2026]",
+          "width": 125.6875,
+          "parentWidth": 660
+        },
+        {
+          "label": "[HyPAS ·DAC 2026]",
+          "width": 125.328125,
+          "parentWidth": 660
+        },
+        {
+          "label": "[CAD Contest 2025 ·Problem C]",
+          "width": 199.953125,
+          "parentWidth": 660
+        }
+      ]
+    },
+    {
+      "width": 1000,
+      "height": 800,
+      "overflow": false,
+      "researchOverflow": false,
+      "links": [
+        {
+          "label": "[TAPCO ·MLCAD 2026]",
+          "width": 146.25,
+          "parentWidth": 567
+        },
+        {
+          "label": "[MLCAD Contest 2026]",
+          "width": 140.125,
+          "parentWidth": 567
+        },
+        {
+          "label": "[CB-EVO ·TODAES 2026]",
+          "width": 159.265625,
+          "parentWidth": 567
+        },
+        {
+          "label": "[DATE 2024]",
+          "width": 75.625,
+          "parentWidth": 567
+        },
+        {
+          "label": "[IWLS Contest 2026]",
+          "width": 125.6875,
+          "parentWidth": 567
+        },
+        {
+          "label": "[HyPAS ·DAC 2026]",
+          "width": 125.328125,
+          "parentWidth": 567
+        },
+        {
+          "label": "[CAD Contest 2025 ·Problem C]",
+          "width": 199.953125,
+          "parentWidth": 567
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "researchOverflow": false,
+      "links": [
+        {
+          "label": "[TAPCO ·MLCAD 2026]",
+          "width": 146.25,
+          "parentWidth": 758
+        },
+        {
+          "label": "[MLCAD Contest 2026]",
+          "width": 140.125,
+          "parentWidth": 758
+        },
+        {
+          "label": "[CB-EVO ·TODAES 2026]",
+          "width": 159.265625,
+          "parentWidth": 758
+        },
+        {
+          "label": "[DATE 2024]",
+          "width": 75.625,
+          "parentWidth": 758
+        },
+        {
+          "label": "[IWLS Contest 2026]",
+          "width": 125.6875,
+          "parentWidth": 758
+        },
+        {
+          "label": "[HyPAS ·DAC 2026]",
+          "width": 125.328125,
+          "parentWidth": 758
+        },
+        {
+          "label": "[CAD Contest 2025 ·Problem C]",
+          "width": 199.953125,
+          "parentWidth": 758
+        }
+      ]
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "overflow": false,
+      "researchOverflow": false,
+      "links": [
+        {
+          "label": "[TAPCO ·MLCAD 2026]",
+          "width": 146.25,
+          "parentWidth": 758
+        },
+        {
+          "label": "[MLCAD Contest 2026]",
+          "width": 140.125,
+          "parentWidth": 758
+        },
+        {
+          "label": "[CB-EVO ·TODAES 2026]",
+          "width": 159.265625,
+          "parentWidth": 758
+        },
+        {
+          "label": "[DATE 2024]",
+          "width": 75.625,
+          "parentWidth": 758
+        },
+        {
+          "label": "[IWLS Contest 2026]",
+          "width": 125.6875,
+          "parentWidth": 758
+        },
+        {
+          "label": "[HyPAS ·DAC 2026]",
+          "width": 125.328125,
+          "parentWidth": 758
+        },
+        {
+          "label": "[CAD Contest 2025 ·Problem C]",
+          "width": 199.953125,
+          "parentWidth": 758
+        }
+      ]
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "overflow": false,
+      "researchOverflow": false,
+      "links": [
+        {
+          "label": "[TAPCO ·MLCAD 2026]",
+          "width": 146.25,
+          "parentWidth": 758
+        },
+        {
+          "label": "[MLCAD Contest 2026]",
+          "width": 140.125,
+          "parentWidth": 758
+        },
+        {
+          "label": "[CB-EVO ·TODAES 2026]",
+          "width": 159.265625,
+          "parentWidth": 758
+        },
+        {
+          "label": "[DATE 2024]",
+          "width": 75.625,
+          "parentWidth": 758
+        },
+        {
+          "label": "[IWLS Contest 2026]",
+          "width": 125.6875,
+          "parentWidth": 758
+        },
+        {
+          "label": "[HyPAS ·DAC 2026]",
+          "width": 125.328125,
+          "parentWidth": 758
+        },
+        {
+          "label": "[CAD Contest 2025 ·Problem C]",
+          "width": 199.953125,
+          "parentWidth": 758
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "width": 390,
+      "height": 844,
+      "target": "#paper-c17",
+      "current": "#publications",
+      "top": 88.140625,
+      "header": -1,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "target": "#award-mlcad-2026",
+      "current": "#awards",
+      "top": 88.484375,
+      "header": -1,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "target": "#paper-j2",
+      "current": "#publications",
+      "top": 88.171875,
+      "header": -1,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "target": "#paper-c1",
+      "current": "#publications",
+      "top": 88.109375,
+      "header": -1,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "target": "#award-iwls-2026",
+      "current": "#awards",
+      "top": 87.875,
+      "header": -1,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "target": "#paper-c15",
+      "current": "#publications",
+      "top": 87.65625,
+      "header": -1,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "target": "#award-iccad-contest-2025-c",
+      "current": "#awards",
+      "top": 87.96875,
+      "header": -1,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "target": "#paper-c17",
+      "current": "#publications",
+      "top": 103.65625,
+      "header": 83,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "target": "#award-mlcad-2026",
+      "current": "#awards",
+      "top": 103.5,
+      "header": 83,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "target": "#paper-j2",
+      "current": "#publications",
+      "top": 103.75,
+      "header": 83,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "target": "#paper-c1",
+      "current": "#publications",
+      "top": 103.84375,
+      "header": 83,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "target": "#award-iwls-2026",
+      "current": "#awards",
+      "top": 104.3125,
+      "header": 83,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "target": "#paper-c15",
+      "current": "#publications",
+      "top": 104.203125,
+      "header": 83,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "target": "#award-iccad-contest-2025-c",
+      "current": "#awards",
+      "top": 104.421875,
+      "header": 83,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "target": "#paper-c17",
+      "current": "#publications",
+      "top": 103.65625,
+      "header": 83,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "target": "#award-mlcad-2026",
+      "current": "#awards",
+      "top": 103.5,
+      "header": 83,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "target": "#paper-j2",
+      "current": "#publications",
+      "top": 103.75,
+      "header": 83,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "target": "#paper-c1",
+      "current": "#publications",
+      "top": 103.84375,
+      "header": 83,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "target": "#award-iwls-2026",
+      "current": "#awards",
+      "top": 104.3125,
+      "header": 83,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "target": "#paper-c15",
+      "current": "#publications",
+      "top": 104.203125,
+      "header": 83,
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "target": "#award-iccad-contest-2025-c",
+      "current": "#awards",
+      "top": 104.421875,
+      "header": 83,
+      "heldAfterLayoutEvent": true
+    }
+  ],
+  "automatic": [
+    {
+      "width": 390,
+      "height": 844,
+      "down": {
+        "sequence": [
+          "#about",
+          "#news",
+          "#research",
+          "#publications",
+          "#experience",
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ],
+        "samples": 168
+      },
+      "up": {
+        "sequence": [
+          "#hobbies",
+          "#teaching",
+          "#awards",
+          "#experience",
+          "#publications",
+          "#research",
+          "#news",
+          "#about"
+        ],
+        "samples": 168
+      }
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "down": {
+        "sequence": [
+          "#about",
+          "#news",
+          "#research",
+          "#publications",
+          "#experience",
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ],
+        "samples": 89
+      },
+      "up": {
+        "sequence": [
+          "#hobbies",
+          "#teaching",
+          "#awards",
+          "#experience",
+          "#publications",
+          "#research",
+          "#news",
+          "#about"
+        ],
+        "samples": 89
+      }
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "down": {
+        "sequence": [
+          "#about",
+          "#news",
+          "#research",
+          "#publications",
+          "#experience",
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ],
+        "samples": 58
+      },
+      "up": {
+        "sequence": [
+          "#hobbies",
+          "#teaching",
+          "#awards",
+          "#experience",
+          "#publications",
+          "#research",
+          "#news",
+          "#about"
+        ],
+        "samples": 58
+      }
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "down": {
+        "sequence": [
+          "#about",
+          "#news",
+          "#research",
+          "#publications",
+          "#experience",
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ],
+        "samples": 51
+      },
+      "up": {
+        "sequence": [
+          "#hobbies",
+          "#teaching",
+          "#awards",
+          "#experience",
+          "#publications",
+          "#research",
+          "#news",
+          "#about"
+        ],
+        "samples": 51
+      }
+    }
+  ],
+  "textScale": [
+    {
+      "viewportWidth": 320,
+      "viewportHeight": 740,
+      "scale": "200%",
+      "researchWidth": 286,
+      "researchScrollWidth": 286
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "colorScheme": "light",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "colorScheme": "dark",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "colorScheme": "light",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "colorScheme": "dark",
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "noJavaScriptLinks": true,
+  "static": {
+    "exactTargets": 7,
+    "changedDeploymentFiles": 37,
+    "unchangedDeploymentFiles": 284,
+    "otherPagesOnlyStyleRevisionChanged": true
+  },
+  "screenshotNote": "Phone section previews use a 390px-wide, 1100px-high viewport so every link is painted in the captured section; functional checks use 390x844."
+}

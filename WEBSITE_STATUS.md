@@ -7,7 +7,17 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 首页标题与 News 导航（2026-10-12，最新）
+## AI for EDA 研究方向与成果链接（2026-10-12，最新）
+
+- 用户审核纯文字预览后确认：Research Interests 标题右侧展示 `AI for EDA`，总述为 `I develop AI-driven algorithms for chip design, using LLMs, learning, and search to build faster, smaller, and more energy-efficient circuits.` 不加入论文框架图，沿用现有浅色块、蓝色编号和纵向排列。
+- 三个方向及一句话说明：`LLM-Guided Algorithm Discovery` — `Using LLMs and circuit feedback to discover and adapt optimization algorithms.`；`Logic Synthesis & RTL Recovery` — `Recovering RTL from gate-level circuits and learning synthesis strategies that reduce circuit complexity.`；`Physical Design Automation` — `Combining learned models and optimization to improve placement, cell sizing, timing, and power.`
+- 每项下方用小字号方括号链接保留成果支撑：第一项 `[TAPCO · MLCAD 2026]`／`[MLCAD Contest 2026]`；第二项 `[CB-EVO · TODAES 2026]`／`[DATE 2024]`／`[IWLS Contest 2026]`；第三项 `[HyPAS · DAC 2026]`／`[CAD Contest 2025 · Problem C]`。用户指定在本研究链接中用 CAD Contest 替代 ICCAD Contest；Awards 正式条目名称沿用。
+- 链接通过 `paper`／`award` 类型和稳定 id 定位现有论文／奖项；渲染时验证引用类型与目标记录。DATE 2024 独立定位 `#paper-c1`，不再与 CB-EVO 共用入口。全部在当前页定位，沿用手动导航优先；已有资源链接的新分页规则沿用。Flex 换行和现有 inline-flow 保护分隔符，在极窄空间允许链接内部按词换行。
+- `content/profile.json` 用 `research_theme`、`research_intro` 和各项 `links` 维护研究内容，更新日期为 2026-10-12；首页和 sitemap 同步生成。共享 CSS 缓存版本为 `20261012-research`，首页、33 个图库和 404 同步；JS 保持 `20261010-navigation`，无研究图片资产新增。论文、CV、引用、图片原件与本地翻译草案不改。
+- 验收见 `preview/research-validation.json`：9 种 320–3840px 窗口没有横向溢出；另查 280px 下 Research 无内部溢出，页面原有教学奖 Announcements 组合仍使整体宽度达 290px，与改动前一致，本次未扩大此已有问题。320px 下 200% 字号 Research 无内部溢出。七个成果链接在桌面／高窗口／手机共 21 次实际点击中定位正确、目标不被导航遮挡，布局事件保持正确栏目；无 JS 的论文和比赛原生点击通过。
+- 四种窗口的 732 次自动上下滚动采样完整识别八个栏目，四次本栏目浅／深色无障碍扫描无报告项，所有浏览器检查无脚本异常。预览为 `preview/research-{light,dark}-{1440,390}.png`，已查看；手机完整栏目截图使用 390px 宽、1100px 高，功能检查仍为 390×844。部署文件中 37 份变化，其他 284 份字节一致；除首页新内容、CSS 和 sitemap 外，其余页面仅更新样式缓存地址。构建一致性、公开资产清单和 diff 检查通过后推送 master，由 GitHub Pages 发布。
+
+## 首页标题与 News 导航（2026-10-12）
 
 - 用户审核后确认：首页浏览器标题、Open Graph 与 Twitter 分享标题统一为 `Wuqian Tang`，移除 ` | Homepage`。分享摘要和图片沿用，子页保留各自标题。
 - 导航顺序更新为 About / News / Research / Publications / Experience / Awards / Teaching / Hobbies；News 放在 About 后，链接 `#news`，正文仍为 Recent News。现有导航从实际链接生成目标列表，News 自动接入滚动识别、直接片段与手动优先，不另加固定位置判断。
@@ -420,7 +430,7 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 ## 格式规范
 
 1. **语言与姓名**：页面以英文为主，中文姓名只用繁体「唐梧遷」，置于姓名括号内。英文名统一 Wuqian Tang；引用作者名和正式机构名保持准确。
-2. **标题**：栏目与子标题采用 Title Case，例如 About、Recent News、Research Interests、Awards & Honors、Education & Experience、Work Experience、Hobbies。最上方 Tagline 是唯一全大写的展示文字：AI FOR EDA · OPTIMIZATION ACROSS RTL, LOGIC SYNTHESIS, AND PHYSICAL DESIGN。导航保留 Research；方向名称用 Physical Design Automation。第二个方向为 Logic Synthesis & RTL Recovery，保留 DATE 2024 代表工作。About 以 LLMs for EDA 为研究主线，既有 RTL recovery、logic synthesis、physical design 工作作为基础；搜索摘要使用 logic synthesis and RTL recovery。不得用 `text-transform: uppercase` 强制转换子标题。论文题名保持出版方原文，不为统一标题样式改写正式题名。
+2. **标题**：栏目与子标题采用 Title Case，例如 About、Recent News、Research Interests、Awards & Honors、Education & Experience、Work Experience、Hobbies。最上方 Tagline 是唯一全大写的展示文字：AI FOR EDA · OPTIMIZATION ACROSS RTL, LOGIC SYNTHESIS, AND PHYSICAL DESIGN。导航保留 Research；Research Interests 侧注 AI for EDA，首项为 LLM-Guided Algorithm Discovery，方向名称用 Physical Design Automation。第二个方向为 Logic Synthesis & RTL Recovery，保留独立的 DATE 2024 代表工作链接。About 以 LLMs for EDA 为研究主线，既有 RTL recovery、logic synthesis、physical design 工作作为基础；搜索摘要使用 logic synthesis and RTL recovery。不得用 `text-transform: uppercase` 强制转换子标题。论文题名保持出版方原文，不为统一标题样式改写正式题名。
 3. **视觉**：跟随系统深浅模式；浅色为白色背景、深色正文、蓝色链接；深色为 #101827 页面、#172235 卡片、#E6EDF7 正文、#A8B6C9 辅助文字、#8DB8FF 链接。颜色集中于 CSS 变量，固定颜色不可散落到组件；180ms 颜色过渡尊重减少动态效果，打印固定浅色。系统字体，无远程字体依赖。奖项标题统一 `--ink`、`.9375rem`、550 字重，不按获奖等级改成蓝色。头像右上角线宽高均为 29px，左下角均为 58px；两处浅色为 `#B5CBEA`、深色为 `#55729B`，线宽均为 2px，形成非对称装饰。
 4. **日期**：页面日期用英文三字母月份加年份，如 Sep 2026、May 2025；时间范围用 en dash（–），持续状态用 Present；Awards 和相册日期在 – 后固定换行，– 留在首行，两个日期段分别 nowrap，不将月份与年份拆开；Education / Work Experience 日期在电脑和平板靠右、手机（600px 及以下）放在条目上方靠左，始终单行，横杠两侧保留空格，不插入 br。资料保存完整的起止年份，如 Jun 2025–Sep 2025；多人次合并奖项在说明中列出实际月份。以证书、官方公告或经过核对的资料为依据。
 5. **News**：当前只展示 2026 年，倒序排列，日期统一三字母月份加年份（如 Nov 2026），不显示日；生成的 time 使用 YYYY-MM，源资料可保留精确日期。保持短句，右侧为 Latest Updates。句末使用方括号链接到具体图片/奖状或对应公告；媒体在首页弹窗展示，外部网页在新分页打开。不使用 TAPCO 正文跳转。助教新闻筛选正确学期，不把旧学期图片混入新新闻。
