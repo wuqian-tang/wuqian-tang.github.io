@@ -597,7 +597,7 @@
       "year": 2024,
       "details": "Dresden, Germany, Sep. 16–19, 2024",
       "status": "",
-      "selected": true,
+      "selected": false,
       "links": [
         {
           "label": "DOI",
