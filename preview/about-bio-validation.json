@@ -1,0 +1,124 @@
+{
+  "updated": "2026-10-12",
+  "baseline_commit": "cba31961155dc4db54578c26dedc158f6feaa448",
+  "static": {
+    "paragraphs": [
+      "I am a Ph.D. candidate in Computer Science at National Tsing Hua University, advised by Prof. Chun-Yao Wang and Prof. Bei Yu (CUHK). I received an M.S. in Computer Science from National Tsing Hua University in 2023 and a B.S. in Computer Science and Information Engineering from Ming Chuan University in 2021.",
+      "My research focuses on LLMs for EDA, particularly algorithm discovery and design-adaptive optimization. Building on my work in RTL recovery, logic synthesis, and physical design, I explore LLM-guided optimization across the circuit design flow.",
+      "I have received more than ten awards in international EDA contests, including three first-place awards in the ICCAD CAD Contest and CADathlon. I am also a recipient of the Synopsys – Prof. Chung Laung Liu Ph.D. Scholarship."
+    ],
+    "research_paragraph": "unchanged",
+    "professor_affiliation": "CUHK applies to Bei Yu",
+    "degree_wording": "an M.S. / a B.S.",
+    "honor_links": [
+      "#awards",
+      "#award-synopsys-scholarship-2024"
+    ],
+    "site_changed": [
+      "index.html"
+    ],
+    "site_unchanged": 320,
+    "other_homepage_content": "unchanged",
+    "local_translation_draft": "unchanged"
+  },
+  "browser": {
+    "layouts": [
+      {
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "paragraphs": 3,
+        "aboutHeight": 807,
+        "overflow": false
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "paragraphs": 3,
+        "aboutHeight": 732,
+        "overflow": false
+      },
+      {
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "paragraphs": 3,
+        "aboutHeight": 466,
+        "overflow": false
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "paragraphs": 3,
+        "aboutHeight": 410,
+        "overflow": false
+      },
+      {
+        "viewport": {
+          "width": 2560,
+          "height": 1440
+        },
+        "paragraphs": 3,
+        "aboutHeight": 410,
+        "overflow": false
+      }
+    ],
+    "links": [
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "hash": "#awards",
+        "active": "#awards",
+        "top": 184.109375,
+        "headerBottom": -1
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "hash": "#award-synopsys-scholarship-2024",
+        "active": "#awards",
+        "top": 88.484375,
+        "headerBottom": -1
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "hash": "#awards",
+        "active": "#awards",
+        "top": 207.6875,
+        "headerBottom": 83
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "hash": "#award-synopsys-scholarship-2024",
+        "active": "#awards",
+        "top": 103.875,
+        "headerBottom": 83
+      }
+    ],
+    "errors": []
+  },
+  "screenshots": [
+    "about-bio-1440.png",
+    "about-bio-390.png"
+  ],
+  "phone_screenshot_viewport": {
+    "width": 390,
+    "height": 1100
+  }
+}

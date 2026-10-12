@@ -7,7 +7,16 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## Synopsys 奖学金证书修正版（2026-10-12，最新）
+## About 背景合并与代表荣誉（2026-10-12，最新）
+
+- 用户审核后确认 About 保持三段：身份／导师与既有学历合为第一段，第二段沿用 LLMs for EDA 研究主线，第三段用两句概括国际 EDA 比赛成绩与 Synopsys 奖学金。
+- 第一段导师归属写为 `Prof. Chun-Yao Wang and Prof. Bei Yu (CUHK)`，CUHK 括号紧随 Bei Yu。National Tsing Hua University 保留全名，不增加 NTHU 简称；学历用 `an M.S.` 和 `a B.S.`，不使用重复的 my。
+- 荣誉段为 `I have received more than ten awards in international EDA contests, including three first-place awards in the ICCAD CAD Contest and CADathlon. I am also a recipient of the Synopsys – Prof. Chung Laung Liu Ph.D. Scholarship.` 不加 Together with my teammates，采用 first-place awards。
+- 数量依据：CAD Contest（2022 A、2023 A、2024 A／B、2025 A／C）6 项、CADathlon（2024／2025）2 项、MLCAD／IWLS／ISPD 2026 各 1 项，共 11 项。未计尚待公布的 CAD Contest 2026，也未依赖麒麟杯或 EDAthon 的国际赛事分类。三个冠军对应 CAD Contest 2022 A、2025 C 和 CADathlon 2025。
+- `international EDA contests` 定位当前页 Awards，奖学金名称定位 `#award-synopsys-scholarship-2024`；原学校及导师链接沿用新分页规则。仅修改 About 模板、生成首页和维护文档；CSS／JS、分享与搜索摘要、CV、论文、奖项及修正版证书沿用。
+- 验收见 `preview/about-bio-validation.json`：逐段核对审核文字，研究段原样保留，CUHK 括号只接在 Bei Yu 后；首页 About 以外的内容及其余 320 份部署文件字节一致。320／390／768／1440／2560px 五种窗口无横向溢出；桌面／手机两处荣誉链接共 4 次实际点击定位正确、目标不被页首遮挡，导航选中 Awards，无脚本异常。预览为 `preview/about-bio-{1440,390}.png`；手机功能测试仍为 390×844，完整预览用 390×1100。构建一致性、公开资产清单和 diff 检查通过后推送 master，由 Pages 发布并核对线上首页。
+
+## Synopsys 奖学金证书修正版（2026-10-12）
 
 - 用户取得发行方修正版，将标题中的 Chung Luang Liu 更正为 Chung Laung Liu。公开证书 `assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1.pdf` 已原样替换，与私人归档的新原件逐字节一致；SHA-256 为 `3887994b258aa472f207dd87b32025bc30285ef4a3c9ce459c4d273590faf927`。
 - JPEG 和 WebP 证书预览已从修正版 PDF 重新生成，尺寸保持 1800×1273；公开 manifest 和预览来源记录同步更新。仅此证书增加 `asset_version=20261012`，网页与图片查看器给预览和原件链接附加版本参数，避免继续使用旧缓存。
@@ -452,7 +461,7 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 ## 格式规范
 
 1. **语言与姓名**：页面以英文为主，中文姓名只用繁体「唐梧遷」，置于姓名括号内。英文名统一 Wuqian Tang；引用作者名和正式机构名保持准确。
-2. **标题**：栏目与子标题采用 Title Case，例如 About、Recent News、Research Interests、Awards & Honors、Education & Experience、Work Experience、Hobbies。最上方 Tagline 是唯一全大写的展示文字：AI FOR EDA · OPTIMIZATION ACROSS RTL, LOGIC SYNTHESIS, AND PHYSICAL DESIGN。导航保留 Research；Research Interests 侧注 AI for EDA，首项为 LLM-Guided Algorithm Discovery，方向名称用 Physical Design Automation。第二个方向为 Logic Synthesis & RTL Recovery，保留独立的 DATE 2024 代表工作链接。About 以 LLMs for EDA 为研究主线，既有 RTL recovery、logic synthesis、physical design 工作作为基础；搜索摘要使用 logic synthesis and RTL recovery。不得用 `text-transform: uppercase` 强制转换子标题。论文题名保持出版方原文，不为统一标题样式改写正式题名。
+2. **标题**：栏目与子标题采用 Title Case，例如 About、Recent News、Research Interests、Awards & Honors、Education & Experience、Work Experience、Hobbies。最上方 Tagline 是唯一全大写的展示文字：AI FOR EDA · OPTIMIZATION ACROSS RTL, LOGIC SYNTHESIS, AND PHYSICAL DESIGN。导航保留 Research；Research Interests 侧注 AI for EDA，首项为 LLM-Guided Algorithm Discovery，方向名称用 Physical Design Automation。第二个方向为 Logic Synthesis & RTL Recovery，保留独立的 DATE 2024 代表工作链接。About 采用背景／研究／荣誉三段；背景合并身份、导师与此前学历，CUHK 括号紧随 Bei Yu，学历用 an M.S.／a B.S.，学校保留全名。研究段以 LLMs for EDA 为主线，既有 RTL recovery、logic synthesis、physical design 工作作为基础；荣誉段简述十余项国际 EDA 比赛奖项、CAD Contest／CADathlon 三个冠军及 Synopsys 奖学金，使用 first-place awards。比赛与奖学金名称定位当前页奖项；搜索摘要使用 logic synthesis and RTL recovery。不得用 `text-transform: uppercase` 强制转换子标题。论文题名保持出版方原文，不为统一标题样式改写正式题名。
 3. **视觉**：跟随系统深浅模式；浅色为白色背景、深色正文、蓝色链接；深色为 #101827 页面、#172235 卡片、#E6EDF7 正文、#A8B6C9 辅助文字、#8DB8FF 链接。颜色集中于 CSS 变量，固定颜色不可散落到组件；180ms 颜色过渡尊重减少动态效果，打印固定浅色。系统字体，无远程字体依赖。奖项标题统一 `--ink`、`.9375rem`、550 字重，不按获奖等级改成蓝色。头像右上角线宽高均为 29px，左下角均为 58px；两处浅色为 `#B5CBEA`、深色为 `#55729B`，线宽均为 2px，形成非对称装饰。
 4. **日期**：页面日期用英文三字母月份加年份，如 Sep 2026、May 2025；时间范围用 en dash（–），持续状态用 Present；Awards 和相册日期在 – 后固定换行，– 留在首行，两个日期段分别 nowrap，不将月份与年份拆开；Education / Work Experience 日期在电脑和平板靠右、手机（600px 及以下）放在条目上方靠左，始终单行，横杠两侧保留空格，不插入 br。资料保存完整的起止年份，如 Jun 2025–Sep 2025；多人次合并奖项在说明中列出实际月份。以证书、官方公告或经过核对的资料为依据。
 5. **News**：当前只展示 2026 年，倒序排列，日期统一三字母月份加年份（如 Nov 2026），不显示日；生成的 time 使用 YYYY-MM，源资料可保留精确日期。保持短句，右侧为 Latest Updates。句末使用方括号链接到具体图片/奖状或对应公告；媒体在首页弹窗展示，外部网页在新分页打开。不使用 TAPCO 正文跳转。助教新闻筛选正确学期，不把旧学期图片混入新新闻。
