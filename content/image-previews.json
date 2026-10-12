@@ -1,6 +1,6 @@
 {
-  "before_preview_bytes": 109521049,
-  "after_preview_bytes": 16000228,
+  "before_preview_bytes": 109329614,
+  "after_preview_bytes": 15954750,
   "image_count": 87,
   "images": [
     {
@@ -468,9 +468,9 @@
     {
       "path": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.webp",
       "source": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.jpg",
-      "source_sha256": "8049fd7e2c0b8404666e4a1290417013b1652d15071aa85ada6249983515d8f2",
-      "source_bytes": 454337,
-      "bytes": 147026,
+      "source_sha256": "a18b26a7ce0573c3f1a33cb2868db9d6d2f4a490d6869296e7eaf5da5c71b9e7",
+      "source_bytes": 262902,
+      "bytes": 101548,
       "width": 1800,
       "height": 1273,
       "max_edge": 1800,

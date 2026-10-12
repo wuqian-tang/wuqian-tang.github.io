@@ -65,6 +65,12 @@ def link_targets(page):
         return anchor[:-1] + ' target="_blank" rel="noopener noreferrer">'
     return re.sub(r'<a\b[^>]*>', update, page)
 
+def media_asset_url(item, key, prefix=''):
+    url = prefix + item[key]
+    if item.get('asset_version'):
+        url += '?v=' + item['asset_version']
+    return url
+
 def media_data(awards, prefix=''):
     registry = {}
     for a in awards:
@@ -72,8 +78,8 @@ def media_data(awards, prefix=''):
             items = [item for item in a['media'] if item['kind'] == kind]
             if items:
                 registry[f'{a["id"]}:{kind}'] = [dict(
-                    src=prefix + item['preview'],
-                    original=prefix + item['url'],
+                    src=media_asset_url(item, 'preview', prefix),
+                    original=media_asset_url(item, 'url', prefix),
                     caption=item['caption'] + ' · ' + a['title'],
                     alt=item['alt'],
                     rotation=item.get('rotation', 0), cropTop=item.get('crop_top', 0)
@@ -177,8 +183,8 @@ def gallery(a, profile):
             continue
         cards = ''
         for i, item in enumerate(items, 1):
-            preview = '../' + item['preview']
-            original = '../' + item['url']
+            preview = media_asset_url(item, 'preview', '../')
+            original = media_asset_url(item, 'url', '../')
             caption = item['caption']
             rotation = item.get('rotation', 0)
             crop = item.get('crop_top', 0)

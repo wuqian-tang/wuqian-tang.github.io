@@ -1114,12 +1114,13 @@
         {
           "kind": "certificate",
           "url": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1.pdf",
-          "caption": "Certificate · 2024-09-13 · English",
+          "caption": "Certificate · 2024-12-20 · English",
           "preview": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.webp",
           "width": 1800,
           "height": 1273,
           "preview_source": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.jpg",
-          "alt": "Certificate for Wuqian Tang: Synopsys – Prof. Chung Laung Liu Ph.D. Scholarship. 2024-09-13; English."
+          "alt": "Certificate for Wuqian Tang: Synopsys – Prof. Chung Laung Liu Ph.D. Scholarship. 2024-12-20; English.",
+          "asset_version": "20261012"
         },
         {
           "kind": "photo",

@@ -7,7 +7,13 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## Awards 主列表精简与倒序（2026-10-12，最新）
+## Synopsys 奖学金证书修正版（2026-10-12，最新）
+
+- 用户取得发行方修正版，将标题中的 Chung Luang Liu 更正为 Chung Laung Liu。公开证书 `assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1.pdf` 已原样替换，与私人归档的新原件逐字节一致；SHA-256 为 `3887994b258aa472f207dd87b32025bc30285ef4a3c9ce459c4d273590faf927`。
+- JPEG 和 WebP 证书预览已从修正版 PDF 重新生成，尺寸保持 1800×1273；公开 manifest 和预览来源记录同步更新。仅此证书增加 `asset_version=20261012`，网页与图片查看器给预览和原件链接附加版本参数，避免继续使用旧缓存。
+- 证书说明和 alt 采用落款日期 2024-12-20，奖学金资助期间仍为 Sep 2024–Present。照片、CV、论文、联系方式及其他公开资料保持现有内容。验证结果记录于 `preview/synopsys-certificate-validation.json`。
+
+## Awards 主列表精简与倒序（2026-10-12）
 
 - 用户审核后确认 Awards 主列表由 17 项精简为 10 项，More 由 16 项增加为 23 项。新竹市优秀青年保留在主列表，行健奖移入 More。
 - 主列表按倒序保留：MLCAD 2026 第二名、Excellent Teaching Assistant Award 2026、IWLS 2026 第二名、新竹市优秀青年 2026、ISPD 2026 第二名、CAD Contest 2025 Problem C 第一名、CADathlon 2025 第一名、Synopsys 奖学金（Sep 2024–Present）、麒麟杯 2023、CAD Contest 2022 Problem A 第一名。

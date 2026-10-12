@@ -243,12 +243,16 @@
   },
   {
     "path": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1.pdf",
-    "sha256": "2fc03eb08665f52122f330375fa16326f5af1b1c47258f1f305333fee9eb0516",
-    "source": "2024-09-13_Synopsys_Prof_Chung_Laung_Liu_PhD_Scholarship_Program/Certificate_2024_Synopsys_Prof_Chung_Laung_Liu_PhD_Scholarship_Program_EN.pdf"
+    "sha256": "3887994b258aa472f207dd87b32025bc30285ef4a3c9ce459c4d273590faf927",
+    "source": "2024-09-13_Synopsys_Prof_Chung_Laung_Liu_PhD_Scholarship_Program/Certificate_2024_Synopsys_Prof_Chung_Laung_Liu_PhD_Scholarship_Program_EN.pdf",
+    "corrected_on": "2026-10-12",
+    "correction": "Issuer-provided certificate corrects Chung Luang Liu to Chung Laung Liu; certificate date remains 2024-12-20."
   },
   {
     "path": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.jpg",
-    "sha256": "8049fd7e2c0b8404666e4a1290417013b1652d15071aa85ada6249983515d8f2"
+    "sha256": "a18b26a7ce0573c3f1a33cb2868db9d6d2f4a490d6869296e7eaf5da5c71b9e7",
+    "derived_from": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1.pdf",
+    "source_sha256": "3887994b258aa472f207dd87b32025bc30285ef4a3c9ce459c4d273590faf927"
   },
   {
     "path": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-photo-1.jpg",
@@ -936,9 +940,9 @@
   },
   {
     "path": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.webp",
-    "sha256": "5c0ef6c53c7a6387103b93f73b88b3d40d971f7fcf7bd4ba99a94a294a55113e",
+    "sha256": "19bc69838ae70939988a4e03da7879c385710d10dcde308c6a2b962c9623d18a",
     "derived_from": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.jpg",
-    "source_sha256": "8049fd7e2c0b8404666e4a1290417013b1652d15071aa85ada6249983515d8f2",
+    "source_sha256": "a18b26a7ce0573c3f1a33cb2868db9d6d2f4a490d6869296e7eaf5da5c71b9e7",
     "width": 1800,
     "height": 1273,
     "encoding": "WebP quality 90, method 6, EXIF-transposed, max edge 1800px"

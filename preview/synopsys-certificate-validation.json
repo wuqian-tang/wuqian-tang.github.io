@@ -1,0 +1,64 @@
+{
+  "checked_on": "2026-10-12",
+  "browser": "HeadlessChrome/153.0.8010.12",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "gallery": {
+        "image": "http://127.0.0.1:8874/assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.webp?v=20261012",
+        "width": 1800,
+        "height": 1273,
+        "original": "http://127.0.0.1:8874/assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1.pdf?v=20261012",
+        "overflow": false
+      },
+      "dialog": {
+        "open": true,
+        "loaded": true,
+        "image": "http://127.0.0.1:8874/assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.webp?v=20261012",
+        "original": "http://127.0.0.1:8874/assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1.pdf?v=20261012",
+        "full_certificate_visible": true
+      },
+      "homepage_media_registry_updated": true,
+      "viewer_close_passed": true,
+      "screenshot": "synopsys-certificate-1440.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "gallery": {
+        "image": "http://127.0.0.1:8874/assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.webp?v=20261012",
+        "width": 1800,
+        "height": 1273,
+        "original": "http://127.0.0.1:8874/assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1.pdf?v=20261012",
+        "overflow": false
+      },
+      "dialog": {
+        "open": true,
+        "loaded": true,
+        "image": "http://127.0.0.1:8874/assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.webp?v=20261012",
+        "original": "http://127.0.0.1:8874/assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1.pdf?v=20261012",
+        "full_certificate_visible": true
+      },
+      "homepage_media_registry_updated": true,
+      "viewer_close_passed": true,
+      "screenshot": "synopsys-certificate-390.png"
+    }
+  ],
+  "console_exceptions": [],
+  "source_pdf": {
+    "path": "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1.pdf",
+    "sha256": "3887994b258aa472f207dd87b32025bc30285ef4a3c9ce459c4d273590faf927",
+    "issuer_original_preserved": true,
+    "correction": "Chung Luang Liu -> Chung Laung Liu",
+    "certificate_date": "2024-12-20",
+    "pages": 1
+  },
+  "public_manifest_check_passed": true,
+  "changed_public_assets": [
+    "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1.pdf",
+    "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.jpg",
+    "assets/awards/synopsys-scholarship-2024/2024-synopsys-scholarship-certificate-1-preview.webp"
+  ],
+  "unrelated_public_assets_and_cvs_preserved": true
+}
