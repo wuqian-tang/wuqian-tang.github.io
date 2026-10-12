@@ -1,0 +1,326 @@
+{
+  "updated": "2026-10-12",
+  "baseline_commit": "19d0755",
+  "static": {
+    "main": 10,
+    "more": 23,
+    "orders": {
+      "awards": [
+        "mlcad-2026",
+        "teaching-excellent-2026",
+        "iwls-2026",
+        "hsinchu-youth-2026",
+        "ispd-2026",
+        "iccad-contest-2025-c",
+        "cadathlon-2025",
+        "synopsys-scholarship-2024",
+        "qilin-cup-2023",
+        "iccad-contest-2022"
+      ],
+      "earlier_awards": [
+        "iccad-contest-2026",
+        "teaching-outstanding-2025-2026",
+        "mcu-alumnus-2026",
+        "iccad-contest-2025",
+        "iccad-ssp-2025",
+        "hsing-chien-2025",
+        "iccad-contest-2024",
+        "cadathlon-2024",
+        "iccad-contest-2024-b",
+        "iccad-contest-2023",
+        "edathon-2023",
+        "nthu-scholarship-2021",
+        "mcu-contribution-2021",
+        "mcu-programming-2019-2020",
+        "central-taiwan-2020",
+        "icpc-2020",
+        "ncpc-2018-2020",
+        "topc-2020",
+        "icpc-2019",
+        "topc-2019",
+        "ncpu-2019",
+        "freshman-cup-2018",
+        "software-innovation-2018"
+      ]
+    },
+    "all_award_records": "unchanged",
+    "media_registry": "unchanged",
+    "other_homepage_sections": "unchanged",
+    "site_changed": [
+      "index.html",
+      "sitemap.xml"
+    ],
+    "site_unchanged": 319,
+    "sitemap_entries": "unchanged; URL ordering only",
+    "local_translation_draft": "unchanged"
+  },
+  "browser": {
+    "layouts": [
+      {
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "selected": 10,
+        "more": 23,
+        "mainListHeight": 1845,
+        "moreLess": "passed",
+        "overflow": false
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "selected": 10,
+        "more": 23,
+        "mainListHeight": 1554,
+        "moreLess": "passed",
+        "overflow": false
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "selected": 10,
+        "more": 23,
+        "mainListHeight": 997,
+        "moreLess": "passed",
+        "overflow": false
+      },
+      {
+        "viewport": {
+          "width": 2560,
+          "height": 1440
+        },
+        "selected": 10,
+        "more": 23,
+        "mainListHeight": 997,
+        "moreLess": "passed",
+        "overflow": false
+      }
+    ],
+    "navigation": [
+      {
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "more": "collapsed",
+        "direction": "down",
+        "sequence": [
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ],
+        "samples": 94
+      },
+      {
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "more": "collapsed",
+        "direction": "up",
+        "sequence": [
+          "#hobbies",
+          "#teaching",
+          "#awards"
+        ],
+        "samples": 94
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "more": "collapsed",
+        "direction": "down",
+        "sequence": [
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ],
+        "samples": 73
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "more": "collapsed",
+        "direction": "up",
+        "sequence": [
+          "#hobbies",
+          "#teaching",
+          "#awards"
+        ],
+        "samples": 73
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "more": "collapsed",
+        "direction": "down",
+        "sequence": [
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ],
+        "samples": 36
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "more": "collapsed",
+        "direction": "up",
+        "sequence": [
+          "#hobbies",
+          "#teaching",
+          "#awards"
+        ],
+        "samples": 36
+      },
+      {
+        "viewport": {
+          "width": 2560,
+          "height": 1440
+        },
+        "more": "expanded",
+        "direction": "down",
+        "sequence": [
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ],
+        "samples": 48
+      },
+      {
+        "viewport": {
+          "width": 2560,
+          "height": 1440
+        },
+        "more": "collapsed",
+        "direction": "down",
+        "sequence": [
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ],
+        "samples": 21
+      },
+      {
+        "viewport": {
+          "width": 2560,
+          "height": 1440
+        },
+        "more": "collapsed",
+        "direction": "up",
+        "sequence": [
+          "#hobbies",
+          "#teaching",
+          "#awards"
+        ],
+        "samples": 21
+      }
+    ],
+    "deepLinks": [
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "id": "hsing-chien-2025",
+        "top": 88.4375,
+        "headerBottom": -1,
+        "autoExpand": true,
+        "active": "#awards"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "id": "teaching-outstanding-2025-2026",
+        "top": 87.859375,
+        "headerBottom": 73,
+        "autoExpand": true,
+        "active": "#awards"
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "id": "hsing-chien-2025",
+        "top": 104.375,
+        "headerBottom": 83,
+        "autoExpand": true,
+        "active": "#awards"
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "id": "teaching-outstanding-2025-2026",
+        "top": 103.5625,
+        "headerBottom": 83,
+        "autoExpand": true,
+        "active": "#awards"
+      }
+    ],
+    "media": [
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "id": "hsing-chien-2025",
+        "preview": "WebP",
+        "originalNewTab": true,
+        "next": false
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "id": "teaching-outstanding-2025-2026",
+        "preview": "WebP",
+        "originalNewTab": true,
+        "next": true
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "id": "hsing-chien-2025",
+        "preview": "WebP",
+        "originalNewTab": true,
+        "next": false
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "id": "teaching-outstanding-2025-2026",
+        "preview": "WebP",
+        "originalNewTab": true,
+        "next": true
+      }
+    ],
+    "errors": []
+  },
+  "screenshots": [
+    "award-selection-1440.png",
+    "award-selection-390.png"
+  ]
+}
