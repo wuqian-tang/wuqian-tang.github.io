@@ -38,7 +38,7 @@
     }
   ],
   "research_theme": "AI for EDA",
-  "research_intro": "I develop AI-driven algorithms for chip design, using LLMs, learning, and search to build faster, smaller, and more energy-efficient circuits.",
+  "research_intro": "I develop AI-driven algorithms for faster, smaller, and more energy-efficient circuits.",
   "research": [
     {
       "title": "LLM-Guided Algorithm Discovery",

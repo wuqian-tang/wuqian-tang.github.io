@@ -7,7 +7,15 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## About 背景合并与代表荣誉（2026-10-12，最新）
+## Research 总述精简与 About 文字调整（2026-10-12，最新）
+
+- 用户确认将 Research Interests 总述精简为 `I develop AI-driven algorithms for faster, smaller, and more energy-efficient circuits.` 保留 AI 方法与性能、面积、能效目标，具体方法由三个研究方向展开。
+- 用户补充确认：去掉 About 中 Bei Yu 后的 `(CUHK)`，只保留导师姓名与主页链接；Education & Experience 的导师资料沿用。
+- 用户补充确认：About 的荣誉段保持纯文字，去掉 `international EDA contests` 与 Synopsys 奖学金名称的两处页内链接；原文与数字表述沿用。
+- 更新 `content/profile.json` 的 `research_intro`、About 模板并生成首页；沿用自然响应式换行，不增加 nowrap，不改字号或 CSS／JS。后续维护以本节总述和导师写法为准，以下历史记录中的长句与 CUHK 括号为旧版。
+- 验收：Chromium 实际渲染中，1280／1440／2560px 桌面宽度下 Research 总述均为一行，320／390px 手机宽度下自然换成两行，五种窗口无横向溢出或脚本异常。About 保持三段、荣誉段没有链接，原学校／导师主页链接保持新分页。与更新前逐字节核对，首页仅包含上述三项调整，其余 320 份部署文件一致。构建一致性、公开资产清单与 diff 检查通过后推送 master，由 Pages 发布并核对线上首页。
+
+## About 背景合并与代表荣誉（2026-10-12）
 
 - 用户审核后确认 About 保持三段：身份／导师与既有学历合为第一段，第二段沿用 LLMs for EDA 研究主线，第三段用两句概括国际 EDA 比赛成绩与 Synopsys 奖学金。
 - 第一段导师归属写为 `Prof. Chun-Yao Wang and Prof. Bei Yu (CUHK)`，CUHK 括号紧随 Bei Yu。National Tsing Hua University 保留全名，不增加 NTHU 简称；学历用 `an M.S.` 和 `a B.S.`，不使用重复的 my。
@@ -461,7 +469,7 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 ## 格式规范
 
 1. **语言与姓名**：页面以英文为主，中文姓名只用繁体「唐梧遷」，置于姓名括号内。英文名统一 Wuqian Tang；引用作者名和正式机构名保持准确。
-2. **标题**：栏目与子标题采用 Title Case，例如 About、Recent News、Research Interests、Awards & Honors、Education & Experience、Work Experience、Hobbies。最上方 Tagline 是唯一全大写的展示文字：AI FOR EDA · OPTIMIZATION ACROSS RTL, LOGIC SYNTHESIS, AND PHYSICAL DESIGN。导航保留 Research；Research Interests 侧注 AI for EDA，首项为 LLM-Guided Algorithm Discovery，方向名称用 Physical Design Automation。第二个方向为 Logic Synthesis & RTL Recovery，保留独立的 DATE 2024 代表工作链接。About 采用背景／研究／荣誉三段；背景合并身份、导师与此前学历，CUHK 括号紧随 Bei Yu，学历用 an M.S.／a B.S.，学校保留全名。研究段以 LLMs for EDA 为主线，既有 RTL recovery、logic synthesis、physical design 工作作为基础；荣誉段简述十余项国际 EDA 比赛奖项、CAD Contest／CADathlon 三个冠军及 Synopsys 奖学金，使用 first-place awards。比赛与奖学金名称定位当前页奖项；搜索摘要使用 logic synthesis and RTL recovery。不得用 `text-transform: uppercase` 强制转换子标题。论文题名保持出版方原文，不为统一标题样式改写正式题名。
+2. **标题**：栏目与子标题采用 Title Case，例如 About、Recent News、Research Interests、Awards & Honors、Education & Experience、Work Experience、Hobbies。最上方 Tagline 是唯一全大写的展示文字：AI FOR EDA · OPTIMIZATION ACROSS RTL, LOGIC SYNTHESIS, AND PHYSICAL DESIGN。导航保留 Research；Research Interests 侧注 AI for EDA，总述为 `I develop AI-driven algorithms for faster, smaller, and more energy-efficient circuits.`，首项为 LLM-Guided Algorithm Discovery，方向名称用 Physical Design Automation。第二个方向为 Logic Synthesis & RTL Recovery，保留独立的 DATE 2024 代表工作链接。About 采用背景／研究／荣誉三段；背景合并身份、导师与此前学历，导师保留姓名和主页链接，不另加 CUHK 括号，学历用 an M.S.／a B.S.，学校保留全名。研究段以 LLMs for EDA 为主线，既有 RTL recovery、logic synthesis、physical design 工作作为基础；荣誉段简述十余项国际 EDA 比赛奖项、CAD Contest／CADathlon 三个冠军及 Synopsys 奖学金，使用 first-place awards。荣誉段比赛与奖学金名称使用纯文字，不加链接；搜索摘要使用 logic synthesis and RTL recovery。不得用 `text-transform: uppercase` 强制转换子标题。论文题名保持出版方原文，不为统一标题样式改写正式题名。
 3. **视觉**：跟随系统深浅模式；浅色为白色背景、深色正文、蓝色链接；深色为 #101827 页面、#172235 卡片、#E6EDF7 正文、#A8B6C9 辅助文字、#8DB8FF 链接。颜色集中于 CSS 变量，固定颜色不可散落到组件；180ms 颜色过渡尊重减少动态效果，打印固定浅色。系统字体，无远程字体依赖。奖项标题统一 `--ink`、`.9375rem`、550 字重，不按获奖等级改成蓝色。头像右上角线宽高均为 29px，左下角均为 58px；两处浅色为 `#B5CBEA`、深色为 `#55729B`，线宽均为 2px，形成非对称装饰。
 4. **日期**：页面日期用英文三字母月份加年份，如 Sep 2026、May 2025；时间范围用 en dash（–），持续状态用 Present；Awards 和相册日期在 – 后固定换行，– 留在首行，两个日期段分别 nowrap，不将月份与年份拆开；Education / Work Experience 日期在电脑和平板靠右、手机（600px 及以下）放在条目上方靠左，始终单行，横杠两侧保留空格，不插入 br。资料保存完整的起止年份，如 Jun 2025–Sep 2025；多人次合并奖项在说明中列出实际月份。以证书、官方公告或经过核对的资料为依据。
 5. **News**：当前只展示 2026 年，倒序排列，日期统一三字母月份加年份（如 Nov 2026），不显示日；生成的 time 使用 YYYY-MM，源资料可保留精确日期。保持短句，右侧为 Latest Updates。句末使用方括号链接到具体图片/奖状或对应公告；媒体在首页弹窗展示，外部网页在新分页打开。不使用 TAPCO 正文跳转。助教新闻筛选正确学期，不把旧学期图片混入新新闻。
