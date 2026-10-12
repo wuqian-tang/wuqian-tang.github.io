@@ -1,13 +1,20 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-10-11。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-10-12。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wuqian-tang.github.io](https://wuqian-tang.github.io/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## About 研究主线与文案精简（2026-10-11，最新）
+## 首页标题与 News 导航（2026-10-12，最新）
+
+- 用户审核后确认：首页浏览器标题、Open Graph 与 Twitter 分享标题统一为 `Wuqian Tang`，移除 ` | Homepage`。分享摘要和图片沿用，子页保留各自标题。
+- 导航顺序更新为 About / News / Research / Publications / Experience / Awards / Teaching / Hobbies；News 放在 About 后，链接 `#news`，正文仍为 Recent News。现有导航从实际链接生成目标列表，News 自动接入滚动识别、直接片段与手动优先，不另加固定位置判断。
+- 本次修改首页模板、生成首页和维护文档；CSS／JS、公开资产、CV、论文和本地翻译草案不改。上线前核对标题标签、桌面单行排列、手机菜单、自动上下高亮及手动导航。
+- 验收记录为 `preview/news-title-validation.json`：12 种 320–3840px 窗口，桌面导航保持一行，手机／平板菜单可见且无横向溢出；5 种窗口的 964 次上下滚动采样依次识别八个栏目。桌面／高窗口／手机 24 次手动选择及布局事件保持通过，三个 `#news` 直接链接与恢复自动识别通过；无 JS 的 News 原生链接可用，所有检查无脚本异常。截图为 `preview/news-navigation-light-1440.png` 与 `preview/news-navigation-dark-390.png`，已查看。仅首页部署 HTML 有变化，其余部署文件与公开资产字节一致。
+
+## About 研究主线与文案精简（2026-10-11）
 
 - 用户审核后确认研究段以 LLMs for EDA 为主线，强调算法发现与面向不同设计的自适应优化，以 RTL recovery、logic synthesis、physical design 的既有工作作为基础。进一步确认简介直接采用缩写，并精简第二句。最新两句文案为：`My research focuses on LLMs for EDA, particularly algorithm discovery and design-adaptive optimization. Building on my work in RTL recovery, logic synthesis, and physical design, I explore LLM-guided optimization across the circuit design flow.` Research Interests 的 `LLMs for Electronic Design Automation` 标题提供 EDA 全称。
 - 保持三段结构，身份／导师和学历段沿用。Research Interests、Tagline、搜索及分享摘要、CV 不改。本次仅替换首页研究段，并同步维护记录；构建、公开资产和差异检查通过后推送 master，由 GitHub Pages 发布。
@@ -428,7 +435,7 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 14. **公开范围**：允许本次明确授权的奖状、奖杯、奖牌、照片和具体最终论文；不公开身份证件、成绩单、申请表、推荐信、录取通知、学生奖惩记录、未授权稿件或整个资料目录。用户已确认公开 CV 不含电话号码，保留学校邮箱，后接个人邮箱 mark.wqtang@gmail.com。
 15. **引用复制**：BibTeX 控件始终位于每篇论文所有其他资源之后；字号、边框与内边距采用 DOI / PDF 的公共样式，图标间距 0.2rem，不设置造成额外留白的固定最小宽度。复制成功后仅在按钮内显示勾号与 Copied 2 秒，不弹提示框或新分页，标签预留两种状态的宽度，保持按钮尺寸。失败时提供选中代码的弹窗和手动复制；无 JS 使用原生展开文本。引用来自 `content/citations.json`，记录来源，按正式元数据保存作者、题名、刊会、年份与已核实的卷期/页码/DOI；不把共同一作星号、网页粗体或页面状态当作作者名。待刊用 To appear note，不补造字段；甲骨文论文用正式英文题名、作者和 In Chinese note。
 16. **图片性能**：所有相册媒体必须有本地 WebP preview；首页活动照片复用这些预览。View Original 始终指向原 JPG / PDF，禁止把原图替换成有损预览。用 `scripts/optimize_images.py` 处理 manifest 已审核的公开图，不从私人档案批量读取；保留 `preview_source` 以便重复生成，更新 `content/image-previews.json` 与派生资产 SHA-256。新增照片后先生成预览，再 build。首页羽毛球原图只在用户点击后请求，其余奖项弹窗优先使用预览；不提前加载全部 87 张媒体。
-17. **分享与导航**：导航顺序为 About / Research / Publications / Experience / Awards / Teaching / Hobbies；正文 Education & Experience 位于 Publications 之后、Awards & Honors 之前。首页和相册保留绝对 URL 的 og:image、图片宽高与 alt、Twitter summary_large_image。分享图固定 1200×630，只显示英文姓名，学校上方写系所，研究方向单行为 Electronic Design Automation · AI for EDA；文字与头像间距 84px，照片左侧起点 68px，左上 Homepage 32px，底部网址与地名 30px。当前浏览器与首页分享标题 Wuqian Tang | Homepage、摘要 CS Ph.D. Candidate at National Tsing Hua University.，不追加 Learning 或研究描述。头像、姓名、学校或研究方向改变后，从 `content/social-preview.html` 用 Chromium 按 1200×630、设备倍率 1 重渲染 PNG，等待图片和字体加载，保留 PNG，并以 JPEG RGB quality 95、4:4:4、optimized 导出分享版；更新新版本图片文件名、全部分享标签与 manifest，旧图片地址保留可访问。正式分享直接使用原网址，参数仅用于诊断缓存；各平台真实卡片效果不能由本站爬虫 UA 检查替代。ORCID 等身份链接须由正式个人记录及论文匹配核对，不能只凭同名猜测；与 Person sameAs 同步。
+17. **分享与导航**：导航顺序为 About / News / Research / Publications / Experience / Awards / Teaching / Hobbies；正文 Education & Experience 位于 Publications 之后、Awards & Honors 之前。首页和相册保留绝对 URL 的 og:image、图片宽高与 alt、Twitter summary_large_image。分享图固定 1200×630，只显示英文姓名，学校上方写系所，研究方向单行为 Electronic Design Automation · AI for EDA；文字与头像间距 84px，照片左侧起点 68px，左上 Homepage 32px，底部网址与地名 30px。当前浏览器与首页分享标题 Wuqian Tang、摘要 CS Ph.D. Candidate at National Tsing Hua University.，不追加 Learning 或研究描述。头像、姓名、学校或研究方向改变后，从 `content/social-preview.html` 用 Chromium 按 1200×630、设备倍率 1 重渲染 PNG，等待图片和字体加载，保留 PNG，并以 JPEG RGB quality 95、4:4:4、optimized 导出分享版；更新新版本图片文件名、全部分享标签与 manifest，旧图片地址保留可访问。正式分享直接使用原网址，参数仅用于诊断缓存；各平台真实卡片效果不能由本站爬虫 UA 检查替代。ORCID 等身份链接须由正式个人记录及论文匹配核对，不能只凭同名猜测；与 Person sameAs 同步。
 
 Hobbies 用词参考了 [Siyuan Jiang 的学术主页](https://siyuanj.github.io/) 中同名栏目；它直接表达爱好，适合当前内容。网站不需要附上这条用词参考。
 

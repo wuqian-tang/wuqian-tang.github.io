@@ -1,0 +1,569 @@
+{
+  "base": "http://127.0.0.1:8770/",
+  "layout": [
+    {
+      "width": 320,
+      "height": 740,
+      "title": "Wuqian Tang",
+      "navLabels": 8,
+      "overflow": false,
+      "navTops": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "toggleHidden": false,
+      "profilePosition": "static"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "title": "Wuqian Tang",
+      "navLabels": 8,
+      "overflow": false,
+      "navTops": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "toggleHidden": false,
+      "profilePosition": "static"
+    },
+    {
+      "width": 600,
+      "height": 900,
+      "title": "Wuqian Tang",
+      "navLabels": 8,
+      "overflow": false,
+      "navTops": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "toggleHidden": false,
+      "profilePosition": "static"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "title": "Wuqian Tang",
+      "navLabels": 8,
+      "overflow": false,
+      "navTops": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "toggleHidden": false,
+      "profilePosition": "static"
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "title": "Wuqian Tang",
+      "navLabels": 8,
+      "overflow": false,
+      "navTops": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "toggleHidden": false,
+      "profilePosition": "static"
+    },
+    {
+      "width": 999,
+      "height": 800,
+      "title": "Wuqian Tang",
+      "navLabels": 8,
+      "overflow": false,
+      "navTops": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "toggleHidden": false,
+      "profilePosition": "static"
+    },
+    {
+      "width": 1000,
+      "height": 800,
+      "title": "Wuqian Tang",
+      "navLabels": 8,
+      "overflow": false,
+      "navTops": [
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75
+      ],
+      "toggleHidden": true,
+      "profilePosition": "fixed"
+    },
+    {
+      "width": 1120,
+      "height": 900,
+      "title": "Wuqian Tang",
+      "navLabels": 8,
+      "overflow": false,
+      "navTops": [
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75
+      ],
+      "toggleHidden": true,
+      "profilePosition": "fixed"
+    },
+    {
+      "width": 1121,
+      "height": 900,
+      "title": "Wuqian Tang",
+      "navLabels": 8,
+      "overflow": false,
+      "navTops": [
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75
+      ],
+      "toggleHidden": true,
+      "profilePosition": "fixed"
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "title": "Wuqian Tang",
+      "navLabels": 8,
+      "overflow": false,
+      "navTops": [
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75
+      ],
+      "toggleHidden": true,
+      "profilePosition": "fixed"
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "title": "Wuqian Tang",
+      "navLabels": 8,
+      "overflow": false,
+      "navTops": [
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75
+      ],
+      "toggleHidden": true,
+      "profilePosition": "fixed"
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "title": "Wuqian Tang",
+      "navLabels": 8,
+      "overflow": false,
+      "navTops": [
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75,
+        2.75
+      ],
+      "toggleHidden": true,
+      "profilePosition": "fixed"
+    }
+  ],
+  "automatic": [
+    {
+      "width": 390,
+      "height": 844,
+      "down": {
+        "sequence": [
+          "#about",
+          "#news",
+          "#research",
+          "#publications",
+          "#experience",
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ],
+        "samples": 166,
+        "maxScroll": 9743
+      },
+      "up": {
+        "sequence": [
+          "#hobbies",
+          "#teaching",
+          "#awards",
+          "#experience",
+          "#publications",
+          "#research",
+          "#news",
+          "#about"
+        ],
+        "samples": 166,
+        "maxScroll": 9743
+      }
+    },
+    {
+      "width": 1000,
+      "height": 800,
+      "down": {
+        "sequence": [
+          "#about",
+          "#news",
+          "#research",
+          "#publications",
+          "#experience",
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ],
+        "samples": 118,
+        "maxScroll": 6551
+      },
+      "up": {
+        "sequence": [
+          "#hobbies",
+          "#teaching",
+          "#awards",
+          "#experience",
+          "#publications",
+          "#research",
+          "#news",
+          "#about"
+        ],
+        "samples": 118,
+        "maxScroll": 6551
+      }
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "down": {
+        "sequence": [
+          "#about",
+          "#news",
+          "#research",
+          "#publications",
+          "#experience",
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ],
+        "samples": 89,
+        "maxScroll": 6112
+      },
+      "up": {
+        "sequence": [
+          "#hobbies",
+          "#teaching",
+          "#awards",
+          "#experience",
+          "#publications",
+          "#research",
+          "#news",
+          "#about"
+        ],
+        "samples": 89,
+        "maxScroll": 6112
+      }
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "down": {
+        "sequence": [
+          "#about",
+          "#news",
+          "#research",
+          "#publications",
+          "#experience",
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ],
+        "samples": 58,
+        "maxScroll": 5672
+      },
+      "up": {
+        "sequence": [
+          "#hobbies",
+          "#teaching",
+          "#awards",
+          "#experience",
+          "#publications",
+          "#research",
+          "#news",
+          "#about"
+        ],
+        "samples": 58,
+        "maxScroll": 5672
+      }
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "down": {
+        "sequence": [
+          "#about",
+          "#news",
+          "#research",
+          "#publications",
+          "#experience",
+          "#awards",
+          "#teaching",
+          "#hobbies"
+        ],
+        "samples": 51,
+        "maxScroll": 4952
+      },
+      "up": {
+        "sequence": [
+          "#hobbies",
+          "#teaching",
+          "#awards",
+          "#experience",
+          "#publications",
+          "#research",
+          "#news",
+          "#about"
+        ],
+        "samples": 51,
+        "maxScroll": 4952
+      }
+    }
+  ],
+  "manual": [
+    {
+      "width": 390,
+      "height": 844,
+      "hash": "#about",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "hash": "#news",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "hash": "#research",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "hash": "#publications",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "hash": "#experience",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "hash": "#awards",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "hash": "#teaching",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "hash": "#hobbies",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "hash": "#about",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "hash": "#news",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "hash": "#research",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "hash": "#publications",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "hash": "#experience",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "hash": "#awards",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "hash": "#teaching",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "hash": "#hobbies",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "hash": "#about",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "hash": "#news",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "hash": "#research",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "hash": "#publications",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "hash": "#experience",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "hash": "#awards",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "hash": "#teaching",
+      "heldAfterLayoutEvent": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "hash": "#hobbies",
+      "heldAfterLayoutEvent": true
+    }
+  ],
+  "incoming": [
+    {
+      "width": 390,
+      "height": 844,
+      "hash": "#news",
+      "newsTop": 184.34375,
+      "headerBottom": 73,
+      "automaticResumedOnScroll": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "hash": "#news",
+      "newsTop": 207.984375,
+      "headerBottom": 83,
+      "automaticResumedOnScroll": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "hash": "#news",
+      "newsTop": 207.984375,
+      "headerBottom": 83,
+      "automaticResumedOnScroll": true
+    }
+  ],
+  "errors": [],
+  "noJavaScriptNewsLink": true
+}
