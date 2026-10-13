@@ -1,0 +1,709 @@
+{
+  "updated": "2026-10-13",
+  "static": {
+    "baseline_commit": "6137723f5d565cffd396b203de988cf8ea762997",
+    "style_change": "Research inline-flow leads render as inline, retaining shared nowrap",
+    "html_changed": 35,
+    "html_changes": "CSS cache query only",
+    "site_changed": 36,
+    "site_unchanged": 285,
+    "profile": "unchanged",
+    "local_translation_draft": "unchanged"
+  },
+  "browser": {
+    "layouts": [
+      {
+        "width": 320,
+        "height": 740,
+        "colorScheme": "light",
+        "links": 7,
+        "geometryUnchanged": true,
+        "separatorWrappingUnchanged": true,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "colorScheme": "light",
+        "links": 7,
+        "geometryUnchanged": true,
+        "separatorWrappingUnchanged": true,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "colorScheme": "light",
+        "links": 7,
+        "geometryUnchanged": true,
+        "separatorWrappingUnchanged": true,
+        "overflow": false
+      },
+      {
+        "width": 1000,
+        "height": 800,
+        "colorScheme": "light",
+        "links": 7,
+        "geometryUnchanged": true,
+        "separatorWrappingUnchanged": true,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "colorScheme": "light",
+        "links": 7,
+        "geometryUnchanged": true,
+        "separatorWrappingUnchanged": true,
+        "overflow": false
+      },
+      {
+        "width": 2560,
+        "height": 1440,
+        "colorScheme": "light",
+        "links": 7,
+        "geometryUnchanged": true,
+        "separatorWrappingUnchanged": true,
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "height": 740,
+        "colorScheme": "dark",
+        "links": 7,
+        "geometryUnchanged": true,
+        "separatorWrappingUnchanged": true,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "colorScheme": "dark",
+        "links": 7,
+        "geometryUnchanged": true,
+        "separatorWrappingUnchanged": true,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "colorScheme": "dark",
+        "links": 7,
+        "geometryUnchanged": true,
+        "separatorWrappingUnchanged": true,
+        "overflow": false
+      },
+      {
+        "width": 1000,
+        "height": 800,
+        "colorScheme": "dark",
+        "links": 7,
+        "geometryUnchanged": true,
+        "separatorWrappingUnchanged": true,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "colorScheme": "dark",
+        "links": 7,
+        "geometryUnchanged": true,
+        "separatorWrappingUnchanged": true,
+        "overflow": false
+      },
+      {
+        "width": 2560,
+        "height": 1440,
+        "colorScheme": "dark",
+        "links": 7,
+        "geometryUnchanged": true,
+        "separatorWrappingUnchanged": true,
+        "overflow": false
+      }
+    ],
+    "hover": [
+      {
+        "width": 320,
+        "colorScheme": "light",
+        "href": "#paper-c17",
+        "underline": "active"
+      },
+      {
+        "width": 320,
+        "colorScheme": "light",
+        "href": "#award-mlcad-2026",
+        "underline": "active"
+      },
+      {
+        "width": 320,
+        "colorScheme": "light",
+        "href": "#paper-j2",
+        "underline": "active"
+      },
+      {
+        "width": 320,
+        "colorScheme": "light",
+        "href": "#paper-c1",
+        "underline": "active"
+      },
+      {
+        "width": 320,
+        "colorScheme": "light",
+        "href": "#award-iwls-2026",
+        "underline": "active"
+      },
+      {
+        "width": 320,
+        "colorScheme": "light",
+        "href": "#paper-c15",
+        "underline": "active"
+      },
+      {
+        "width": 320,
+        "colorScheme": "light",
+        "href": "#award-iccad-contest-2025-c",
+        "underline": "active"
+      },
+      {
+        "width": 390,
+        "colorScheme": "light",
+        "href": "#paper-c17",
+        "underline": "active"
+      },
+      {
+        "width": 390,
+        "colorScheme": "light",
+        "href": "#award-mlcad-2026",
+        "underline": "active"
+      },
+      {
+        "width": 390,
+        "colorScheme": "light",
+        "href": "#paper-j2",
+        "underline": "active"
+      },
+      {
+        "width": 390,
+        "colorScheme": "light",
+        "href": "#paper-c1",
+        "underline": "active"
+      },
+      {
+        "width": 390,
+        "colorScheme": "light",
+        "href": "#award-iwls-2026",
+        "underline": "active"
+      },
+      {
+        "width": 390,
+        "colorScheme": "light",
+        "href": "#paper-c15",
+        "underline": "active"
+      },
+      {
+        "width": 390,
+        "colorScheme": "light",
+        "href": "#award-iccad-contest-2025-c",
+        "underline": "active"
+      },
+      {
+        "width": 768,
+        "colorScheme": "light",
+        "href": "#paper-c17",
+        "underline": "active"
+      },
+      {
+        "width": 768,
+        "colorScheme": "light",
+        "href": "#award-mlcad-2026",
+        "underline": "active"
+      },
+      {
+        "width": 768,
+        "colorScheme": "light",
+        "href": "#paper-j2",
+        "underline": "active"
+      },
+      {
+        "width": 768,
+        "colorScheme": "light",
+        "href": "#paper-c1",
+        "underline": "active"
+      },
+      {
+        "width": 768,
+        "colorScheme": "light",
+        "href": "#award-iwls-2026",
+        "underline": "active"
+      },
+      {
+        "width": 768,
+        "colorScheme": "light",
+        "href": "#paper-c15",
+        "underline": "active"
+      },
+      {
+        "width": 768,
+        "colorScheme": "light",
+        "href": "#award-iccad-contest-2025-c",
+        "underline": "active"
+      },
+      {
+        "width": 1000,
+        "colorScheme": "light",
+        "href": "#paper-c17",
+        "underline": "active"
+      },
+      {
+        "width": 1000,
+        "colorScheme": "light",
+        "href": "#award-mlcad-2026",
+        "underline": "active"
+      },
+      {
+        "width": 1000,
+        "colorScheme": "light",
+        "href": "#paper-j2",
+        "underline": "active"
+      },
+      {
+        "width": 1000,
+        "colorScheme": "light",
+        "href": "#paper-c1",
+        "underline": "active"
+      },
+      {
+        "width": 1000,
+        "colorScheme": "light",
+        "href": "#award-iwls-2026",
+        "underline": "active"
+      },
+      {
+        "width": 1000,
+        "colorScheme": "light",
+        "href": "#paper-c15",
+        "underline": "active"
+      },
+      {
+        "width": 1000,
+        "colorScheme": "light",
+        "href": "#award-iccad-contest-2025-c",
+        "underline": "active"
+      },
+      {
+        "width": 1440,
+        "colorScheme": "light",
+        "href": "#paper-c17",
+        "underline": "active"
+      },
+      {
+        "width": 1440,
+        "colorScheme": "light",
+        "href": "#award-mlcad-2026",
+        "underline": "active"
+      },
+      {
+        "width": 1440,
+        "colorScheme": "light",
+        "href": "#paper-j2",
+        "underline": "active"
+      },
+      {
+        "width": 1440,
+        "colorScheme": "light",
+        "href": "#paper-c1",
+        "underline": "active"
+      },
+      {
+        "width": 1440,
+        "colorScheme": "light",
+        "href": "#award-iwls-2026",
+        "underline": "active"
+      },
+      {
+        "width": 1440,
+        "colorScheme": "light",
+        "href": "#paper-c15",
+        "underline": "active"
+      },
+      {
+        "width": 1440,
+        "colorScheme": "light",
+        "href": "#award-iccad-contest-2025-c",
+        "underline": "active"
+      },
+      {
+        "width": 2560,
+        "colorScheme": "light",
+        "href": "#paper-c17",
+        "underline": "active"
+      },
+      {
+        "width": 2560,
+        "colorScheme": "light",
+        "href": "#award-mlcad-2026",
+        "underline": "active"
+      },
+      {
+        "width": 2560,
+        "colorScheme": "light",
+        "href": "#paper-j2",
+        "underline": "active"
+      },
+      {
+        "width": 2560,
+        "colorScheme": "light",
+        "href": "#paper-c1",
+        "underline": "active"
+      },
+      {
+        "width": 2560,
+        "colorScheme": "light",
+        "href": "#award-iwls-2026",
+        "underline": "active"
+      },
+      {
+        "width": 2560,
+        "colorScheme": "light",
+        "href": "#paper-c15",
+        "underline": "active"
+      },
+      {
+        "width": 2560,
+        "colorScheme": "light",
+        "href": "#award-iccad-contest-2025-c",
+        "underline": "active"
+      },
+      {
+        "width": 320,
+        "colorScheme": "dark",
+        "href": "#paper-c17",
+        "underline": "active"
+      },
+      {
+        "width": 320,
+        "colorScheme": "dark",
+        "href": "#award-mlcad-2026",
+        "underline": "active"
+      },
+      {
+        "width": 320,
+        "colorScheme": "dark",
+        "href": "#paper-j2",
+        "underline": "active"
+      },
+      {
+        "width": 320,
+        "colorScheme": "dark",
+        "href": "#paper-c1",
+        "underline": "active"
+      },
+      {
+        "width": 320,
+        "colorScheme": "dark",
+        "href": "#award-iwls-2026",
+        "underline": "active"
+      },
+      {
+        "width": 320,
+        "colorScheme": "dark",
+        "href": "#paper-c15",
+        "underline": "active"
+      },
+      {
+        "width": 320,
+        "colorScheme": "dark",
+        "href": "#award-iccad-contest-2025-c",
+        "underline": "active"
+      },
+      {
+        "width": 390,
+        "colorScheme": "dark",
+        "href": "#paper-c17",
+        "underline": "active"
+      },
+      {
+        "width": 390,
+        "colorScheme": "dark",
+        "href": "#award-mlcad-2026",
+        "underline": "active"
+      },
+      {
+        "width": 390,
+        "colorScheme": "dark",
+        "href": "#paper-j2",
+        "underline": "active"
+      },
+      {
+        "width": 390,
+        "colorScheme": "dark",
+        "href": "#paper-c1",
+        "underline": "active"
+      },
+      {
+        "width": 390,
+        "colorScheme": "dark",
+        "href": "#award-iwls-2026",
+        "underline": "active"
+      },
+      {
+        "width": 390,
+        "colorScheme": "dark",
+        "href": "#paper-c15",
+        "underline": "active"
+      },
+      {
+        "width": 390,
+        "colorScheme": "dark",
+        "href": "#award-iccad-contest-2025-c",
+        "underline": "active"
+      },
+      {
+        "width": 768,
+        "colorScheme": "dark",
+        "href": "#paper-c17",
+        "underline": "active"
+      },
+      {
+        "width": 768,
+        "colorScheme": "dark",
+        "href": "#award-mlcad-2026",
+        "underline": "active"
+      },
+      {
+        "width": 768,
+        "colorScheme": "dark",
+        "href": "#paper-j2",
+        "underline": "active"
+      },
+      {
+        "width": 768,
+        "colorScheme": "dark",
+        "href": "#paper-c1",
+        "underline": "active"
+      },
+      {
+        "width": 768,
+        "colorScheme": "dark",
+        "href": "#award-iwls-2026",
+        "underline": "active"
+      },
+      {
+        "width": 768,
+        "colorScheme": "dark",
+        "href": "#paper-c15",
+        "underline": "active"
+      },
+      {
+        "width": 768,
+        "colorScheme": "dark",
+        "href": "#award-iccad-contest-2025-c",
+        "underline": "active"
+      },
+      {
+        "width": 1000,
+        "colorScheme": "dark",
+        "href": "#paper-c17",
+        "underline": "active"
+      },
+      {
+        "width": 1000,
+        "colorScheme": "dark",
+        "href": "#award-mlcad-2026",
+        "underline": "active"
+      },
+      {
+        "width": 1000,
+        "colorScheme": "dark",
+        "href": "#paper-j2",
+        "underline": "active"
+      },
+      {
+        "width": 1000,
+        "colorScheme": "dark",
+        "href": "#paper-c1",
+        "underline": "active"
+      },
+      {
+        "width": 1000,
+        "colorScheme": "dark",
+        "href": "#award-iwls-2026",
+        "underline": "active"
+      },
+      {
+        "width": 1000,
+        "colorScheme": "dark",
+        "href": "#paper-c15",
+        "underline": "active"
+      },
+      {
+        "width": 1000,
+        "colorScheme": "dark",
+        "href": "#award-iccad-contest-2025-c",
+        "underline": "active"
+      },
+      {
+        "width": 1440,
+        "colorScheme": "dark",
+        "href": "#paper-c17",
+        "underline": "active"
+      },
+      {
+        "width": 1440,
+        "colorScheme": "dark",
+        "href": "#award-mlcad-2026",
+        "underline": "active"
+      },
+      {
+        "width": 1440,
+        "colorScheme": "dark",
+        "href": "#paper-j2",
+        "underline": "active"
+      },
+      {
+        "width": 1440,
+        "colorScheme": "dark",
+        "href": "#paper-c1",
+        "underline": "active"
+      },
+      {
+        "width": 1440,
+        "colorScheme": "dark",
+        "href": "#award-iwls-2026",
+        "underline": "active"
+      },
+      {
+        "width": 1440,
+        "colorScheme": "dark",
+        "href": "#paper-c15",
+        "underline": "active"
+      },
+      {
+        "width": 1440,
+        "colorScheme": "dark",
+        "href": "#award-iccad-contest-2025-c",
+        "underline": "active"
+      },
+      {
+        "width": 2560,
+        "colorScheme": "dark",
+        "href": "#paper-c17",
+        "underline": "active"
+      },
+      {
+        "width": 2560,
+        "colorScheme": "dark",
+        "href": "#award-mlcad-2026",
+        "underline": "active"
+      },
+      {
+        "width": 2560,
+        "colorScheme": "dark",
+        "href": "#paper-j2",
+        "underline": "active"
+      },
+      {
+        "width": 2560,
+        "colorScheme": "dark",
+        "href": "#paper-c1",
+        "underline": "active"
+      },
+      {
+        "width": 2560,
+        "colorScheme": "dark",
+        "href": "#award-iwls-2026",
+        "underline": "active"
+      },
+      {
+        "width": 2560,
+        "colorScheme": "dark",
+        "href": "#paper-c15",
+        "underline": "active"
+      },
+      {
+        "width": 2560,
+        "colorScheme": "dark",
+        "href": "#award-iccad-contest-2025-c",
+        "underline": "active"
+      }
+    ],
+    "links": [
+      {
+        "width": 390,
+        "href": "#paper-c17",
+        "active": "#publications"
+      },
+      {
+        "width": 390,
+        "href": "#award-mlcad-2026",
+        "active": "#awards"
+      },
+      {
+        "width": 390,
+        "href": "#paper-j2",
+        "active": "#publications"
+      },
+      {
+        "width": 390,
+        "href": "#paper-c1",
+        "active": "#publications"
+      },
+      {
+        "width": 390,
+        "href": "#award-iwls-2026",
+        "active": "#awards"
+      },
+      {
+        "width": 390,
+        "href": "#paper-c15",
+        "active": "#publications"
+      },
+      {
+        "width": 390,
+        "href": "#award-iccad-contest-2025-c",
+        "active": "#awards"
+      },
+      {
+        "width": 1440,
+        "href": "#paper-c17",
+        "active": "#publications"
+      },
+      {
+        "width": 1440,
+        "href": "#award-mlcad-2026",
+        "active": "#awards"
+      },
+      {
+        "width": 1440,
+        "href": "#paper-j2",
+        "active": "#publications"
+      },
+      {
+        "width": 1440,
+        "href": "#paper-c1",
+        "active": "#publications"
+      },
+      {
+        "width": 1440,
+        "href": "#award-iwls-2026",
+        "active": "#awards"
+      },
+      {
+        "width": 1440,
+        "href": "#paper-c15",
+        "active": "#publications"
+      },
+      {
+        "width": 1440,
+        "href": "#award-iccad-contest-2025-c",
+        "active": "#awards"
+      }
+    ],
+    "errors": []
+  },
+  "screenshots": [
+    "research-underline-before.png",
+    "research-underline-light.png",
+    "research-underline-dark.png"
+  ]
+}

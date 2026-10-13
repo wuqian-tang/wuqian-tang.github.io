@@ -165,6 +165,8 @@ main { min-width: 0; }
 .research-item a { font-size: .8125rem; font-weight: 550; }
 .research-evidence { display: flex; flex-wrap: wrap; gap: .25rem .85rem; margin-top: .65rem; }
 .research-evidence a { max-width: 100%; }
+/* Inline text keeps hover underlines continuous; the shared nowrap still binds separators. */
+.research-evidence .inline-flow-lead { display: inline; }
 .section-intro { font-size: .875rem; color: var(--muted); margin: -.45rem 0 1.3rem; }
 .publication { padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
 .publication:first-child { padding-top: 0; }

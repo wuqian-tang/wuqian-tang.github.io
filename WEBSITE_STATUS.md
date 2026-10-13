@@ -7,7 +7,15 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## ISPD Contest 移入 More（2026-10-13，最新）
+## Research 链接悬停下划线（2026-10-13，最新）
+
+- 用户确认修复 Research Interests 中带 `·` 的四条链接：TAPCO／CB-EVO／HyPAS／CAD Contest。此前 `.inline-flow-lead` 为 inline-block，父链接下划线不能覆盖 MLCAD／TODAES／DAC／Problem 等被包裹的词，形成明显缺段。
+- 仅在 `.research-evidence` 内将 `.inline-flow-lead` 改为 inline，保留共用 white-space: nowrap 与分隔符隐藏／换行处理；其他栏目继续使用原来的 inline-block。链接文字、定位目标、间距、字号、颜色和交互沿用，不改变页面内容或 JS。
+- 共享 CSS 缓存版本更新为 `20261013-research-underline`，首页、33 个奖项图库和 404 同步；JS 仍为 `20261010-navigation`。论文、CV、奖状、图片及资料内容沿用。
+- 验收见 `preview/research-underline-validation.json`：320／390／768／1000／1440／2560px 六种窗口分别检查深浅色，共 12 组；7 条链接共 84 次悬停下划线生效，四条受影响链接的截图确认此前缺失的词下方恢复下划线。改动前后各链接宽高和分隔符显示／换行状态一致，无横向溢出或脚本异常；桌面／手机共 14 次实际点击定位和导航栏目正确。其他栏目 inline-flow-lead 仍为 inline-block。
+- 修改前后示例为 `preview/research-underline-{before,light,dark}.png`。35 份 HTML 仅更新 CSS 缓存参数，CSS 仅增加局部覆盖与说明；其余 285 份部署文件、个人资料和本地翻译草案字节一致。构建一致性、公开资产清单与 diff 检查通过后推送 master，由 Pages 发布并核对线上首页及样式。
+
+## ISPD Contest 移入 More（2026-10-13）
 
 - 按用户要求，将 `Second Place, ISPD Contest`（Mar 2026，`ispd-2026`）由 Awards 主列表移入 More；主列表现为 9 项，More 内为 24 项，共 33 项。More 中按时间倒序放在 Jun 2026 的系友奖之后、Oct 2025 的条目之前。
 - 奖项日期、说明、稳定 id、证书与系所公告链接沿用；两组继续按确认的获奖时间规则倒序排列。`#award-ispd-2026` 沿用自动展开 More 的直接定位行为。About 的获奖统计、CV、论文与公开文件保持原内容。
