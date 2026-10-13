@@ -1,13 +1,20 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-10-12。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-10-13。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wuqian-tang.github.io](https://wuqian-tang.github.io/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## Research 总述精简与 About 文字调整（2026-10-12，最新）
+## ISPD Contest 移入 More（2026-10-13，最新）
+
+- 按用户要求，将 `Second Place, ISPD Contest`（Mar 2026，`ispd-2026`）由 Awards 主列表移入 More；主列表现为 9 项，More 内为 24 项，共 33 项。More 中按时间倒序放在 Jun 2026 的系友奖之后、Oct 2025 的条目之前。
+- 奖项日期、说明、稳定 id、证书与系所公告链接沿用；两组继续按确认的获奖时间规则倒序排列。`#award-ispd-2026` 沿用自动展开 More 的直接定位行为。About 的获奖统计、CV、论文与公开文件保持原内容。
+- 资料更新日期为 2026-10-13，重新生成首页、页脚日期及 sitemap；不调整 CSS／JS。
+- 验收：33 项奖项的原始记录、生成条目与媒体注册内容逐项一致，More 内排序位置正确。390×844、1440×1000、2560×1440 三种窗口的 More／Less 与 `#award-ispd-2026` 自动展开定位通过，导航选中 Awards、目标不被页首遮挡，无横向溢出或脚本异常。除首页和 sitemap 外，其余 319 份部署文件字节一致；首页其他栏目仅页脚 datetime 更新。构建一致性、公开资产清单与 diff 检查通过后推送 master，由 Pages 发布并核对线上版本。
+
+## Research 总述精简与 About 文字调整（2026-10-12）
 
 - 用户确认将 Research Interests 总述精简为 `I develop AI-driven algorithms for faster, smaller, and more energy-efficient circuits.` 保留 AI 方法与性能、面积、能效目标，具体方法由三个研究方向展开。
 - 用户补充确认：去掉 About 中 Bei Yu 后的 `(CUHK)`，只保留导师姓名与主页链接；Education & Experience 的导师资料沿用。
@@ -473,7 +480,7 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 3. **视觉**：跟随系统深浅模式；浅色为白色背景、深色正文、蓝色链接；深色为 #101827 页面、#172235 卡片、#E6EDF7 正文、#A8B6C9 辅助文字、#8DB8FF 链接。颜色集中于 CSS 变量，固定颜色不可散落到组件；180ms 颜色过渡尊重减少动态效果，打印固定浅色。系统字体，无远程字体依赖。奖项标题统一 `--ink`、`.9375rem`、550 字重，不按获奖等级改成蓝色。头像右上角线宽高均为 29px，左下角均为 58px；两处浅色为 `#B5CBEA`、深色为 `#55729B`，线宽均为 2px，形成非对称装饰。
 4. **日期**：页面日期用英文三字母月份加年份，如 Sep 2026、May 2025；时间范围用 en dash（–），持续状态用 Present；Awards 和相册日期在 – 后固定换行，– 留在首行，两个日期段分别 nowrap，不将月份与年份拆开；Education / Work Experience 日期在电脑和平板靠右、手机（600px 及以下）放在条目上方靠左，始终单行，横杠两侧保留空格，不插入 br。资料保存完整的起止年份，如 Jun 2025–Sep 2025；多人次合并奖项在说明中列出实际月份。以证书、官方公告或经过核对的资料为依据。
 5. **News**：当前只展示 2026 年，倒序排列，日期统一三字母月份加年份（如 Nov 2026），不显示日；生成的 time 使用 YYYY-MM，源资料可保留精确日期。保持短句，右侧为 Latest Updates。句末使用方括号链接到具体图片/奖状或对应公告；媒体在首页弹窗展示，外部网页在新分页打开。不使用 TAPCO 正文跳转。助教新闻筛选正确学期，不把旧学期图片混入新新闻。
-6. **奖项**：展开控件收起为 More ＋、展开为 Less −，可访问名称与可见文字同步。右侧标注 Selected，主列表显示 10 项，其余 23 项放入 More；新竹市优秀青年保留在主列表，行健奖及本页最新记录中列出的另外六项移入 More。两组分别按时间倒序：单次按获奖年月，多次合并按最近一次获奖年月，持续奖学金按开始年月；同月保留原相对顺序。More 中含 2020 ICPC 银牌、所有 Honorable Mention、Student Scholar Program Award 和 Mainland China Student Scholarship，不限于较早年份。标题统一采用当前主题正文色 `--ink`。一般说明采用 `机构 · 描述`；会议比赛因标题已有简称，说明仅保留完整题目或比赛内容，不重复会议名称。MLCAD / IWLS 采用本页最新确认的题名；CADathlon 为 `ACM/SIGDA CADathlon Programming Contest · Olympic Games of EDA`，无引号；Student Scholar Program Award 只保留 IEEE/ACM ICCAD 会议全名。CSIE 系友／贡献奖、Synopsys 奖学金、陆生奖学金按本页例外仅保留机构。CAD Contest Problem 独立成条，用完整官方题名；每份照片、奖状、纪念牌只归属正确的 Problem，禁止重复挂载。条目末尾同行展示 `Materials: [Certificate] [Plaques] [Trophy] [Medal] [Photos] │ Announcements: [Official] [News] [University] [College] [Department]`，只列实际存在的资源，按数量用正确单复数。同类多张合为一个链接；窄屏允许自然换行。Materials / Announcements 标签必须与第一个资源同行，其余链接可独立换行；分隔符仅在两组同处一行时显示，新行前隐藏。严格小于 360px 时仅将资源链接 Department 简写为 Dept.，年份保留；360px 起用全称，悬停及可访问说明始终保留完整来源。Materials 表示可查看的奖状、奖杯、奖牌、纪念牌及活动照片；Announcements 表示与该奖项对应的官方结果、报道和公告。浅灰竖线分隔两组，不重复写 news 后缀。不同 CAD Contest Problem 已分条，使用 `[Department]` 即可；同一条目多个年份可用 `[Department (2025)]` 区分。删除 Contest Website / Program Details 类型的链接。Hobbies 只有句末的 [Medal]，不单独起一行；照片本身可点击，避免重复 [Photo]。
+6. **奖项**：展开控件收起为 More ＋、展开为 Less −，可访问名称与可见文字同步。右侧标注 Selected，主列表显示 9 项，其余 24 项放入 More；新竹市优秀青年保留在主列表，行健奖、ISPD Contest 及其余非主列表奖项放入 More。两组分别按时间倒序：单次按获奖年月，多次合并按最近一次获奖年月，持续奖学金按开始年月；同月保留原相对顺序。More 中含 2020 ICPC 银牌、所有 Honorable Mention、Student Scholar Program Award 和 Mainland China Student Scholarship，不限于较早年份。标题统一采用当前主题正文色 `--ink`。一般说明采用 `机构 · 描述`；会议比赛因标题已有简称，说明仅保留完整题目或比赛内容，不重复会议名称。MLCAD / IWLS 采用本页最新确认的题名；CADathlon 为 `ACM/SIGDA CADathlon Programming Contest · Olympic Games of EDA`，无引号；Student Scholar Program Award 只保留 IEEE/ACM ICCAD 会议全名。CSIE 系友／贡献奖、Synopsys 奖学金、陆生奖学金按本页例外仅保留机构。CAD Contest Problem 独立成条，用完整官方题名；每份照片、奖状、纪念牌只归属正确的 Problem，禁止重复挂载。条目末尾同行展示 `Materials: [Certificate] [Plaques] [Trophy] [Medal] [Photos] │ Announcements: [Official] [News] [University] [College] [Department]`，只列实际存在的资源，按数量用正确单复数。同类多张合为一个链接；窄屏允许自然换行。Materials / Announcements 标签必须与第一个资源同行，其余链接可独立换行；分隔符仅在两组同处一行时显示，新行前隐藏。严格小于 360px 时仅将资源链接 Department 简写为 Dept.，年份保留；360px 起用全称，悬停及可访问说明始终保留完整来源。Materials 表示可查看的奖状、奖杯、奖牌、纪念牌及活动照片；Announcements 表示与该奖项对应的官方结果、报道和公告。浅灰竖线分隔两组，不重复写 news 后缀。不同 CAD Contest Problem 已分条，使用 `[Department]` 即可；同一条目多个年份可用 `[Department (2025)]` 区分。删除 Contest Website / Program Details 类型的链接。Hobbies 只有句末的 [Medal]，不单独起一行；照片本身可点击，避免重复 [Photo]。
 7. **外部来源**：对应具体奖项与年份，确认本人姓名或队伍。优先官方结果、系所、学院、学校和政府；不把通用首页、其他团队的成绩或旧年份名单当获奖公告。全部 http/https 外部链接使用 `target="_blank" rel="noopener noreferrer"`，即使禁用 JavaScript 也保留此行为。内部锚点正常定位，邮件链接保持 mailto。
 8. **论文**：甲骨文论文 J1 放在 More 的 2025 年分组。 C3（SOCC 2024）放在 More 的 2024 年分组。右侧仅标注 Selected，侧栏保留 Google Scholar，不重复在栏目右侧出现。标题下说明严格为 `* denotes equal contribution.`，不加括号或 Selected work.；更多论文的原生展开按钮收起为 More ＋、展开为 Less −，不显示篇数，可访问名称应能区分论文与奖项并跟随状态。期刊按发表先后编号：J1 为 2025 年甲骨文论文，J2 为 2026 年 CB-EVO；J1 / J2 / C1–C19 在此对应关系上保持稳定，预印本另用 P1。Trinity 放在 More 的 2026 年分组，标注 arXiv / Preprint / 2026，使用正式 arXiv ID 与官方 `@misc` 引用，不虚构会议录用或待刊状态。所有论文作者顺序完整，本人加粗，星号表示 equal contribution。Invited paper、In Chinese 与 To appear 分别按事实使用。除 To appear 和明确标注的 arXiv 预印本外，每篇必须有一个经过核对的 DOI。查不到 DOI 时按用户要求标为 To appear；不得使用相似题目的 DOI。
 9. **论文 PDF**：优先正式官方全文或作者提供的可公开最终稿；下载后核对内容，存放 `site/files/papers/`。查看链接用 `files/papers/文件名.pdf`，不得链接其他人的个人网页、远程 PDF 或临时下载 token。保留 PDF 内容，在 manifest 记录来源与 SHA-256；如用户授权修改页面方向，还需记录 normalization。

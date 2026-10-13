@@ -6,7 +6,7 @@
   "university": "National Tsing Hua University",
   "location": "Hsinchu, Taiwan",
   "email": "wqtang@cs.nthu.edu.tw",
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "site_url": "https://wuqian-tang.github.io",
   "profiles": [
     {
@@ -960,32 +960,6 @@
       "date_source": "Reviewed original award file dates"
     },
     {
-      "id": "ispd-2026",
-      "date": "Mar 2026",
-      "title": "Second Place, ISPD Contest",
-      "detail": "Post-placement buffering and sizing",
-      "links": [
-        {
-          "label": "Department",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-305101,r109.php",
-          "description": "Department of Computer Science announcement"
-        }
-      ],
-      "media": [
-        {
-          "kind": "certificate",
-          "url": "assets/awards/ispd-2026/2026-ispd-contest-certificate-1.pdf",
-          "caption": "Certificate · 2026-03-18 · English",
-          "preview": "assets/awards/ispd-2026/2026-ispd-contest-certificate-1-preview.webp",
-          "width": 1800,
-          "height": 1273,
-          "preview_source": "assets/awards/ispd-2026/2026-ispd-contest-certificate-1-preview.jpg",
-          "alt": "Certificate for Wuqian Tang: Second Place, ISPD Contest. 2026-03-18; English."
-        }
-      ],
-      "date_source": "Reviewed original award file dates"
-    },
-    {
       "date": "Oct 2025",
       "title": "First Place (Problem C), ICCAD CAD Contest",
       "detail": "Incremental Placement Optimization Beyond Detailed Placement: Simultaneous Gate Sizing, Buffering, and Cell Relocation",
@@ -1385,6 +1359,32 @@
           "preview_source": "assets/awards/mcu-alumnus-2026/2026-mcu-alumnus-certificate-2.jpg",
           "preview": "assets/awards/mcu-alumnus-2026/2026-mcu-alumnus-certificate-2-preview.webp",
           "alt": "Certificate for Wuqian Tang: Distinguished Alumnus Award. 2026-06-18; Chinese."
+        }
+      ],
+      "date_source": "Reviewed original award file dates"
+    },
+    {
+      "id": "ispd-2026",
+      "date": "Mar 2026",
+      "title": "Second Place, ISPD Contest",
+      "detail": "Post-placement buffering and sizing",
+      "links": [
+        {
+          "label": "Department",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-305101,r109.php",
+          "description": "Department of Computer Science announcement"
+        }
+      ],
+      "media": [
+        {
+          "kind": "certificate",
+          "url": "assets/awards/ispd-2026/2026-ispd-contest-certificate-1.pdf",
+          "caption": "Certificate · 2026-03-18 · English",
+          "preview": "assets/awards/ispd-2026/2026-ispd-contest-certificate-1-preview.webp",
+          "width": 1800,
+          "height": 1273,
+          "preview_source": "assets/awards/ispd-2026/2026-ispd-contest-certificate-1-preview.jpg",
+          "alt": "Certificate for Wuqian Tang: Second Place, ISPD Contest. 2026-03-18; English."
         }
       ],
       "date_source": "Reviewed original award file dates"
