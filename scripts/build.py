@@ -202,6 +202,13 @@ def timeline(item):
     return f'<article class="timeline-item"><div class="timeline-top"><h4>{esc(item["title"])}</h4><span class="timeline-date">{date}</span></div><p class="timeline-institution">{esc(item["institution"])}</p>{detail}</article>'
 
 def course(item):
+    website = ''
+    if item.get('website_url'):
+        url = item['website_url']
+        if urlsplit(url).scheme != 'https' or not urlsplit(url).netloc:
+            raise ValueError(f'Course website requires an absolute HTTPS URL: {item["title"]}')
+        label = 'Course website for ' + item['title']
+        website = f' <a class="course-website" href="{esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="{esc(label)}">[Course Website]</a>'
     evaluation = item.get('student_evaluations')
     resource = ''
     if evaluation:
@@ -216,7 +223,7 @@ def course(item):
         resource = ' ' + inline_group(link, separator='·')
     instructors = '<span class="inline-flow-group">' + esc(item['instructors']) + '</span>'
     department = inline_group('<span class="course-department">' + esc(item['department']) + '</span>', separator='·')
-    return f'<li><div><p class="course-name">{esc(item["title"])}</p><p class="course-instructors" data-inline-flow>{instructors} {department}{resource}</p></div><p class="course-terms">{esc(item["terms"])}</p></li>'
+    return f'<li><div><p class="course-name">{esc(item["title"])}{website}</p><p class="course-instructors" data-inline-flow>{instructors} {department}{resource}</p></div><p class="course-terms">{esc(item["terms"])}</p></li>'
 
 def image_sitemap(profile, projects):
     namespace = 'http://www.sitemaps.org/schemas/sitemap/0.9'
@@ -404,7 +411,7 @@ def render():
     missing = re.findall(r'\$\{\w+\}', index)
     if missing:
         raise ValueError(f'Unrendered content: {missing}')
-    not_found = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#2458ad" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)"><title>Page not found | Wuqian Tang</title><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png?v=20261003-small-tang"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=20261003-small-tang"><link rel="icon" type="image/svg+xml" sizes="any" href="/assets/favicon.svg?v=20261003-small-tang"><link rel="stylesheet" href="/assets/css/main.css?v=20261013-research-underline"></head><body><main style="max-width:600px;margin:15vh auto;padding:24px"><p class="eyebrow">404</p><h1 style="margin:16px 0">Page not found</h1><p>The page may have moved. You can find my research, publications, and contact details on my homepage.</p><p style="margin-top:24px"><a href="/" data-navigation="home">Return to homepage</a></p></main></body></html>\n'
+    not_found = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#2458ad" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)"><title>Page not found | Wuqian Tang</title><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png?v=20261003-small-tang"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=20261003-small-tang"><link rel="icon" type="image/svg+xml" sizes="any" href="/assets/favicon.svg?v=20261003-small-tang"><link rel="stylesheet" href="/assets/css/main.css?v=20261023-course-website"></head><body><main style="max-width:600px;margin:15vh auto;padding:24px"><p class="eyebrow">404</p><h1 style="margin:16px 0">Page not found</h1><p>The page may have moved. You can find my research, publications, and contact details on my homepage.</p><p style="margin-top:24px"><a href="/" data-navigation="home">Return to homepage</a></p></main></body></html>\n'
     not_found = not_found.replace('</head>', asset_redirect_script() + '</head>')
     sitemap = image_sitemap(p, projects)
     pages = {'index.html':index, '404.html':not_found, '.nojekyll':'', 'robots.txt':f'User-agent: *\nAllow: /\nSitemap: {p["site_url"]}/sitemap.xml\n', 'sitemap.xml':sitemap}

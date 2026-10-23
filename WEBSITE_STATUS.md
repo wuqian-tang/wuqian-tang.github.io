@@ -7,7 +7,15 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## QUBO 正式 DOI 与发表信息（2026-10-23，最新）
+## 课程网站链接与自定义域名方案（2026-10-23，最新）
+
+- 用户确认在 Teaching 的 Introduction to Programming 课程名称后面增加 `[Course Website]`，指向 `https://itp.wqtang.com/`。链接采用现有蓝色资源样式、13px 常规字重，保持方括号整体换行，以新分页打开，并带 `noopener noreferrer` 和包含课程名称的可访问说明。
+- 在课程数据中增加可选的 `website_url`，构建时校验为完整 HTTPS 地址；其余五门课程的评量链接、教师、系所和学期不变。共享 CSS 缓存版本为 `20261023-course-website`，首页、33 个相册和 404 同步，JS 版本沿用。
+- 验收见 `preview/course-website-validation.json`：320／390／768／1440px 四种宽度分别检查深浅色，共八组，无横向溢出或脚本异常；仍有六门课程、五个 Student Evaluations 链接。课程链接与评量链接字号一致，方括号不拆开；桌面实际点击在新分页打开 ITP Demo Portal 的公共登录页，未登录。321 份部署文件中，首页新增一处课程链接、CSS 增加该链接样式，其余 34 份 HTML 仅更新样式缓存参数，另外 285 份文件逐字节一致。
+- 用户选定未来正式域名 `wqtang.com`，`www.wqtang.com` 跳转根域名；当前任务要求教授绑定步骤，没有代为更改 GitHub Pages 设置或 DNS。核对到 DNS 由 Cloudflare 管理，根域名暂无 A 记录、www 暂未配置；GitHub Pages 当前为 GitHub Actions 发布、custom domain 为空，正式地址仍是 `https://wuqian-tang.github.io/`。不要误用 `wqtang.github.io`。
+- 待用户按指导完成 GitHub Pages Custom domain、Cloudflare 的四条根域名 A 记录和 www CNAME、HTTPS 后，再核对三个入口、文件和项目页的路径跳转，更新 `site_url`、canonical、Open Graph／Twitter URL、Person JSON-LD、robots、sitemap，以及维护文档中的正式访问地址，并指导新域名的 Search Console 配置。现阶段保留原 canonical 与全部绝对地址，避免指向尚未启用的域名。当前部署使用自定义 Actions workflow，不需要添加 CNAME 文件；域名在仓库 Pages 设置中配置。
+
+## QUBO 正式 DOI 与发表信息（2026-10-23）
 
 - 用户审核后授权更新 C16 `Late Breaking Results: QUBO Approaches to Logic Equivalence Checking and Testing`。DOI 为 `10.1145/3770743.3807713`；Crossref 记录的题名、八位作者顺序与 DAC 2026 会议均匹配，正式页码为 1–2，在线发表日期为 2026-10-22。
 - 去掉网页 To appear，Conference 入口替换为 DOI，仍在 More 的 2026 年分组，编号、作者与原题名沿用。会议信息保留 Long Beach／Jul. 26–29, 2026，并补充 pp. 1–2；2026-10-22 为在线发表日期，不替换会议日期。

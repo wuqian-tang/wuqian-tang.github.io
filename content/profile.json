@@ -723,7 +723,8 @@
       "title": "Introduction to Programming",
       "instructors": "Prof. Yu-Guang Chen",
       "terms": "Fall 2026",
-      "department": "Department of Electrical Engineering"
+      "department": "Department of Electrical Engineering",
+      "website_url": "https://itp.wqtang.com/"
     },
     {
       "title": "Hardware Security",
