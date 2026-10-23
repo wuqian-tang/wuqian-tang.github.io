@@ -208,7 +208,8 @@ def course(item):
         if urlsplit(url).scheme != 'https' or not urlsplit(url).netloc:
             raise ValueError(f'Course website requires an absolute HTTPS URL: {item["title"]}')
         label = 'Course website for ' + item['title']
-        website = f' <a class="course-website" href="{esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="{esc(label)}">[Course Website]</a>'
+        link = f'<a class="course-website" href="{esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="{esc(label)}">[Course Website]</a>'
+        website = ' ' + inline_group(link, separator='·')
     evaluation = item.get('student_evaluations')
     resource = ''
     if evaluation:
@@ -223,7 +224,7 @@ def course(item):
         resource = ' ' + inline_group(link, separator='·')
     instructors = '<span class="inline-flow-group">' + esc(item['instructors']) + '</span>'
     department = inline_group('<span class="course-department">' + esc(item['department']) + '</span>', separator='·')
-    return f'<li><div><p class="course-name">{esc(item["title"])}{website}</p><p class="course-instructors" data-inline-flow>{instructors} {department}{resource}</p></div><p class="course-terms">{esc(item["terms"])}</p></li>'
+    return f'<li><div><p class="course-name">{esc(item["title"])}</p><p class="course-instructors" data-inline-flow>{instructors} {department}{website}{resource}</p></div><p class="course-terms">{esc(item["terms"])}</p></li>'
 
 def image_sitemap(profile, projects):
     namespace = 'http://www.sitemaps.org/schemas/sitemap/0.9'
