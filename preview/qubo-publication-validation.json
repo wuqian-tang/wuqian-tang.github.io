@@ -1,0 +1,85 @@
+{
+  "updated": "2026-10-23",
+  "baseline_commit": "4fd4e5837e27c276f9b679119e65f099f8c89295",
+  "metadata_source": "https://api.crossref.org/works/10.1145/3770743.3807713",
+  "static": {
+    "DOI": "10.1145/3770743.3807713",
+    "title": "Late Breaking Results: QUBO Approaches to Logic Equivalence Checking and Testing",
+    "authors_unchanged": true,
+    "citation_key": "Huang2026QUBO",
+    "group": "More / 2026",
+    "pages": "1–2",
+    "links": [
+      "DOI",
+      "BibTeX"
+    ],
+    "to_appear_removed": true,
+    "other_publications_and_citations": "unchanged",
+    "site_changed": [
+      "index.html",
+      "sitemap.xml"
+    ],
+    "site_unchanged": 319,
+    "CV_and_other_assets": "byte-identical",
+    "local_translation_draft": "unchanged"
+  },
+  "browser": [
+    {
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "moreAutoExpanded": true,
+      "DOINewTab": true,
+      "copiedBibTeX": "matches updated citation",
+      "top": 88.15625,
+      "headerBottom": -1,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "moreAutoExpanded": true,
+      "DOINewTab": true,
+      "copiedBibTeX": "matches updated citation",
+      "top": 87.703125,
+      "headerBottom": -1,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "moreAutoExpanded": true,
+      "DOINewTab": true,
+      "copiedBibTeX": "matches updated citation",
+      "top": 104.171875,
+      "headerBottom": 83,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 2560,
+        "height": 1440
+      },
+      "moreAutoExpanded": true,
+      "DOINewTab": true,
+      "copiedBibTeX": "matches updated citation",
+      "top": 104.171875,
+      "headerBottom": 83,
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "official_pdf_access": {
+    "url": "https://dl.acm.org/doi/pdf/10.1145/3770743.3807713",
+    "checked_on": "2026-10-23",
+    "http_status": 403
+  }
+}

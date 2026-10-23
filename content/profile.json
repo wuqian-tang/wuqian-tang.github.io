@@ -6,7 +6,7 @@
   "university": "National Tsing Hua University",
   "location": "Hsinchu, Taiwan",
   "email": "wqtang@cs.nthu.edu.tw",
-  "updated": "2026-10-13",
+  "updated": "2026-10-23",
   "site_url": "https://wuqian-tang.github.io",
   "profiles": [
     {
@@ -326,16 +326,17 @@
       "venue": "ACM/IEEE Design Automation Conference",
       "acronym": "DAC",
       "year": 2026,
-      "details": "Long Beach, California, USA, Jul. 26–29, 2026",
-      "status": "To appear",
+      "details": "Long Beach, California, USA, Jul. 26–29, 2026 · pp. 1–2",
+      "status": "",
       "selected": false,
       "links": [
         {
-          "label": "Conference",
-          "url": "https://63dac.conference-program.com/presentation/?id=LBR082&sess=sess306"
+          "label": "DOI",
+          "url": "https://doi.org/10.1145/3770743.3807713"
         }
       ],
-      "doi_note": "DOI not found on 2026-10-03; marked To appear at the author’s request"
+      "doi_verified_on": "2026-10-23",
+      "doi_source": "https://api.crossref.org/works/10.1145/3770743.3807713"
     },
     {
       "id": "c15",

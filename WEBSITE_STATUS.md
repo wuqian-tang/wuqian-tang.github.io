@@ -1,13 +1,22 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-10-13。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-10-23。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wuqian-tang.github.io](https://wuqian-tang.github.io/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## Research 链接悬停下划线（2026-10-13，最新）
+## QUBO 正式 DOI 与发表信息（2026-10-23，最新）
+
+- 用户审核后授权更新 C16 `Late Breaking Results: QUBO Approaches to Logic Equivalence Checking and Testing`。DOI 为 `10.1145/3770743.3807713`；Crossref 记录的题名、八位作者顺序与 DAC 2026 会议均匹配，正式页码为 1–2，在线发表日期为 2026-10-22。
+- 去掉网页 To appear，Conference 入口替换为 DOI，仍在 More 的 2026 年分组，编号、作者与原题名沿用。会议信息保留 Long Beach／Jul. 26–29, 2026，并补充 pp. 1–2；2026-10-22 为在线发表日期，不替换会议日期。
+- BibTeX 保留引用键 `Huang2026QUBO`，论文集采用 `Proceedings of the 63rd ACM/IEEE Design Automation Conference`，补页码、篇幅、ACM 出版方、DOI 和 URL，删除 To appear note；核实日期与来源同步更新。资源顺序为 DOI／BibTeX，BibTeX 继续一键复制。
+- 官方 PDF 地址 `https://dl.acm.org/doi/pdf/10.1145/3770743.3807713` 本次仍返回 HTTP 403，尚未取得可核对的文件，因此不显示空 PDF 入口。后续取得官方 PDF 后核对题名、八位作者和 2 页篇幅，以 `2026-dac-qubo.pdf` 本地托管，再加入 PDF 入口和公开资产清单。
+- 本次仅更新 QUBO；HyPAS、DAC 2025、其他论文与 CV 沿用。网页 CV 的 C16 已没有 To appear，原统一排版继续使用。维护记录中的 QUBO DOI 待办已完成，PDF 保留待补；资料更新日期改为 2026-10-23，并同步生成首页、页脚日期和 sitemap。
+- 验收见 `preview/qubo-publication-validation.json`：320×740、390×844、1440×1000、2560×1440 四种窗口的 `#paper-c16` 均自动展开 More 并定位，导航选中 Publications、目标不被页首遮挡，无横向溢出或脚本异常。四次 BibTeX 实际复制均与更新后的引用逐字节一致，Copied 状态正常；DOI 的新分页属性正确。其他论文、引用、CV 与全部资产不变；除首页和 sitemap 外，其余 319 份部署文件字节一致，首页其他栏目仅页脚 datetime 更新。构建一致性、公开资产清单与 diff 检查通过后推送 master，由 Pages 发布并核对线上条目。
+
+## Research 链接悬停下划线（2026-10-13）
 
 - 用户确认修复 Research Interests 中带 `·` 的四条链接：TAPCO／CB-EVO／HyPAS／CAD Contest。此前 `.inline-flow-lead` 为 inline-block，父链接下划线不能覆盖 MLCAD／TODAES／DAC／Problem 等被包裹的词，形成明显缺段。
 - 仅在 `.research-evidence` 内将 `.inline-flow-lead` 改为 inline，保留共用 white-space: nowrap 与分隔符隐藏／换行处理；其他栏目继续使用原来的 inline-block。链接文字、定位目标、间距、字号、颜色和交互沿用，不改变页面内容或 JS。
@@ -456,7 +465,7 @@
 | J1 | DOI、英文题名和作者已核对；从 Airiti 的 OpenAccess 全文下载官方 35 页 PDF | 保留 In Chinese，公开链接仍使用本仓库 PDF |
 | C15 HyPAS | 最终稿印有 `10.1145/3770743.3804137`；已托管 7 页 PDF | 2026-10-03 DOI 解析返回 404，稍后复查 |
 | C17 TAPCO | 最终稿印有 `10.1145/3831599.3840364`；已托管带 artifact badges 的 8 页最终稿 | 2026-10-03 DOI 解析返回 404，稍后复查 |
-| C16 QUBO LBR | 官方 DAC 2026 程序核实了题目与作者，但未找到 DOI；依用户要求标记 To appear | DOI 发布后补链接并去掉 To appear，不猜编号 |
+| C16 QUBO LBR | 2026-10-23 已核对正式 DOI `10.1145/3770743.3807713`，去掉 To appear 并同步 BibTeX；页码 1–2 | 官方 PDF 下载返回 403，取得可核对的 2 页官方文件后托管为 `2026-dac-qubo.pdf` |
 | C18 ICCAD 2026 | To appear，会议 2026-11-08 至 11-12 | 会议后核对正式 DOI、页码、最终公开 PDF |
 | C19 ICCD 2026 | To appear，会议 2026-11-16 至 11-18 | 会议后核对正式 DOI、页码、最终公开 PDF |
 
@@ -472,7 +481,7 @@ PDF 来源和 SHA-256 见 `content/public-assets.json`；DOI 核对来源和日�
 | --- | --- | --- |
 | 2026-10-10 至 10-17 | HyPAS、TAPCO DOI 解析及 ACM / Crossref 元数据 | DOI 正确解析，更新进度记录中的待生效状态 |
 | 2026-11-08 起或官方提前公布时 | ICCAD 2026 Problem A Honorable Mention 的结果、证书及照片 | 核对团队与 Problem A，补 Materials / Announcements，移除对应 `[to appear]`，有媒体后生成相册 |
-| 2026-10-17 至 10-31 | QUBO LBR 正式论文记录与 DOI | 确认完整题目、作者、会议对应后补 DOI，取消 To appear |
+| 官方 PDF 可取得时 | QUBO LBR 正式全文 | DOI 与正式记录已于 2026-10-23 补齐；核对官方 2 页 PDF 后下载至仓库并添加入口 |
 | 2026-11-13 之后 | ICCAD 2026 C18 | 取得正式出版记录，补 DOI 和可公开最终 PDF |
 | 2026-11-19 之后 | ICCD 2026 C19 | 取得正式出版记录，补 DOI 和可公开最终 PDF |
 | 下次更新论文时 | C2–C14 尚缺的官方公开 PDF、特别是 DATE 2026 C13 / C14 | 下载真实论文并核对标题、作者、页数，托管到本仓库 |

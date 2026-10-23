@@ -29,11 +29,11 @@
     ]
   },
   "c16": {
-    "bibtex": "@inproceedings{Huang2026QUBO,\n  author = {Huang, Tao-Chun and Tsai, Hao-Yu and Lin, You-Cheng and Li, Yi-Ting and Tang, Wuqian and Chen, Yung-Chih and Yang, Jian-Meng and Wang, Chun-Yao},\n  title = {{Late Breaking Results: QUBO Approaches to Logic Equivalence Checking and Testing}},\n  booktitle = {ACM/IEEE Design Automation Conference},\n  year = {2026},\n  note = {To appear}\n}\n",
-    "verified_on": "2026-10-03",
+    "bibtex": "@inproceedings{Huang2026QUBO,\n  author = {Huang, Tao-Chun and Tsai, Hao-Yu and Lin, You-Cheng and Li, Yi-Ting and Tang, Wuqian and Chen, Yung-Chih and Yang, Jian-Meng and Wang, Chun-Yao},\n  title = {{Late Breaking Results: QUBO Approaches to Logic Equivalence Checking and Testing}},\n  booktitle = {Proceedings of the 63rd ACM/IEEE Design Automation Conference},\n  year = {2026},\n  pages = {1--2},\n  numpages = {2},\n  publisher = {Association for Computing Machinery},\n  doi = {10.1145/3770743.3807713},\n  url = {https://doi.org/10.1145/3770743.3807713}\n}\n",
+    "verified_on": "2026-10-23",
     "sources": [
-      "Author-reviewed publication record in content/profile.json: c16",
-      "https://63dac.conference-program.com/presentation/?id=LBR082&sess=sess306"
+      "https://api.crossref.org/works/10.1145/3770743.3807713",
+      "https://63dac.conference-program.com/presentation/?id=LBR082&sess=sess308"
     ]
   },
   "c15": {
