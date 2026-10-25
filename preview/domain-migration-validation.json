@@ -1,0 +1,434 @@
+{
+  "updated": "2026-10-25",
+  "origin": "https://wqtang.com",
+  "cause": "The new hostname declared the former github.io hostname as canonical, contrary to the existing 301 redirects.",
+  "static": {
+    "sitemap_pages": 35,
+    "sitemap_image_references": 95,
+    "checked_metadata": [
+      {
+        "path": "index.html",
+        "canonical": "https://wqtang.com/",
+        "og_url": "https://wqtang.com/",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/mlcad-2026.html",
+        "canonical": "https://wqtang.com/awards/mlcad-2026.html",
+        "og_url": "https://wqtang.com/awards/mlcad-2026.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/teaching-excellent-2026.html",
+        "canonical": "https://wqtang.com/awards/teaching-excellent-2026.html",
+        "og_url": "https://wqtang.com/awards/teaching-excellent-2026.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/iwls-2026.html",
+        "canonical": "https://wqtang.com/awards/iwls-2026.html",
+        "og_url": "https://wqtang.com/awards/iwls-2026.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/hsinchu-youth-2026.html",
+        "canonical": "https://wqtang.com/awards/hsinchu-youth-2026.html",
+        "og_url": "https://wqtang.com/awards/hsinchu-youth-2026.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/iccad-contest-2025-c.html",
+        "canonical": "https://wqtang.com/awards/iccad-contest-2025-c.html",
+        "og_url": "https://wqtang.com/awards/iccad-contest-2025-c.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/cadathlon-2025.html",
+        "canonical": "https://wqtang.com/awards/cadathlon-2025.html",
+        "og_url": "https://wqtang.com/awards/cadathlon-2025.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/synopsys-scholarship-2024.html",
+        "canonical": "https://wqtang.com/awards/synopsys-scholarship-2024.html",
+        "og_url": "https://wqtang.com/awards/synopsys-scholarship-2024.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/qilin-cup-2023.html",
+        "canonical": "https://wqtang.com/awards/qilin-cup-2023.html",
+        "og_url": "https://wqtang.com/awards/qilin-cup-2023.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/iccad-contest-2022.html",
+        "canonical": "https://wqtang.com/awards/iccad-contest-2022.html",
+        "og_url": "https://wqtang.com/awards/iccad-contest-2022.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/teaching-outstanding-2025-2026.html",
+        "canonical": "https://wqtang.com/awards/teaching-outstanding-2025-2026.html",
+        "og_url": "https://wqtang.com/awards/teaching-outstanding-2025-2026.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/mcu-alumnus-2026.html",
+        "canonical": "https://wqtang.com/awards/mcu-alumnus-2026.html",
+        "og_url": "https://wqtang.com/awards/mcu-alumnus-2026.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/ispd-2026.html",
+        "canonical": "https://wqtang.com/awards/ispd-2026.html",
+        "og_url": "https://wqtang.com/awards/ispd-2026.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/iccad-contest-2025.html",
+        "canonical": "https://wqtang.com/awards/iccad-contest-2025.html",
+        "og_url": "https://wqtang.com/awards/iccad-contest-2025.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/iccad-ssp-2025.html",
+        "canonical": "https://wqtang.com/awards/iccad-ssp-2025.html",
+        "og_url": "https://wqtang.com/awards/iccad-ssp-2025.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/hsing-chien-2025.html",
+        "canonical": "https://wqtang.com/awards/hsing-chien-2025.html",
+        "og_url": "https://wqtang.com/awards/hsing-chien-2025.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/iccad-contest-2024.html",
+        "canonical": "https://wqtang.com/awards/iccad-contest-2024.html",
+        "og_url": "https://wqtang.com/awards/iccad-contest-2024.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/cadathlon-2024.html",
+        "canonical": "https://wqtang.com/awards/cadathlon-2024.html",
+        "og_url": "https://wqtang.com/awards/cadathlon-2024.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/iccad-contest-2024-b.html",
+        "canonical": "https://wqtang.com/awards/iccad-contest-2024-b.html",
+        "og_url": "https://wqtang.com/awards/iccad-contest-2024-b.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/iccad-contest-2023.html",
+        "canonical": "https://wqtang.com/awards/iccad-contest-2023.html",
+        "og_url": "https://wqtang.com/awards/iccad-contest-2023.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/edathon-2023.html",
+        "canonical": "https://wqtang.com/awards/edathon-2023.html",
+        "og_url": "https://wqtang.com/awards/edathon-2023.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/nthu-scholarship-2021.html",
+        "canonical": "https://wqtang.com/awards/nthu-scholarship-2021.html",
+        "og_url": "https://wqtang.com/awards/nthu-scholarship-2021.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/mcu-contribution-2021.html",
+        "canonical": "https://wqtang.com/awards/mcu-contribution-2021.html",
+        "og_url": "https://wqtang.com/awards/mcu-contribution-2021.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/mcu-programming-2019-2020.html",
+        "canonical": "https://wqtang.com/awards/mcu-programming-2019-2020.html",
+        "og_url": "https://wqtang.com/awards/mcu-programming-2019-2020.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/central-taiwan-2020.html",
+        "canonical": "https://wqtang.com/awards/central-taiwan-2020.html",
+        "og_url": "https://wqtang.com/awards/central-taiwan-2020.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/icpc-2020.html",
+        "canonical": "https://wqtang.com/awards/icpc-2020.html",
+        "og_url": "https://wqtang.com/awards/icpc-2020.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/ncpc-2018-2020.html",
+        "canonical": "https://wqtang.com/awards/ncpc-2018-2020.html",
+        "og_url": "https://wqtang.com/awards/ncpc-2018-2020.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/topc-2020.html",
+        "canonical": "https://wqtang.com/awards/topc-2020.html",
+        "og_url": "https://wqtang.com/awards/topc-2020.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/icpc-2019.html",
+        "canonical": "https://wqtang.com/awards/icpc-2019.html",
+        "og_url": "https://wqtang.com/awards/icpc-2019.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/topc-2019.html",
+        "canonical": "https://wqtang.com/awards/topc-2019.html",
+        "og_url": "https://wqtang.com/awards/topc-2019.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/ncpu-2019.html",
+        "canonical": "https://wqtang.com/awards/ncpu-2019.html",
+        "og_url": "https://wqtang.com/awards/ncpu-2019.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/freshman-cup-2018.html",
+        "canonical": "https://wqtang.com/awards/freshman-cup-2018.html",
+        "og_url": "https://wqtang.com/awards/freshman-cup-2018.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/software-innovation-2018.html",
+        "canonical": "https://wqtang.com/awards/software-innovation-2018.html",
+        "og_url": "https://wqtang.com/awards/software-innovation-2018.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "awards/badminton-2025.html",
+        "canonical": "https://wqtang.com/awards/badminton-2025.html",
+        "og_url": "https://wqtang.com/awards/badminton-2025.html",
+        "share_image": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg"
+      },
+      {
+        "path": "projects/trinity/index.html",
+        "canonical": "https://wqtang.com/projects/trinity/",
+        "og_url": "https://wqtang.com/projects/trinity/",
+        "share_image": "https://wqtang.com/projects/trinity/assets/2026-trinity-social-preview-20261025.jpg"
+      }
+    ],
+    "build_guard_negative_checks": [
+      {
+        "path": "index.html",
+        "old_canonical_rejected": true
+      },
+      {
+        "path": "projects/trinity/index.html",
+        "old_canonical_rejected": true
+      }
+    ],
+    "google_verification_preserved": true,
+    "existing_assets_preserved": 273,
+    "current_manifest_assets": 277,
+    "existing_published_files": 321,
+    "unchanged_existing_files": 284,
+    "changed_existing_files": [
+      "robots.txt",
+      "index.html",
+      "sitemap.xml",
+      "projects/trinity/index.html",
+      "awards/qilin-cup-2023.html",
+      "awards/mcu-contribution-2021.html",
+      "awards/hsing-chien-2025.html",
+      "awards/ncpu-2019.html",
+      "awards/iccad-contest-2025-c.html",
+      "awards/teaching-outstanding-2025-2026.html",
+      "awards/iccad-contest-2023.html",
+      "awards/teaching-excellent-2026.html",
+      "awards/iccad-contest-2022.html",
+      "awards/synopsys-scholarship-2024.html",
+      "awards/edathon-2023.html",
+      "awards/iccad-ssp-2025.html",
+      "awards/mcu-programming-2019-2020.html",
+      "awards/mlcad-2026.html",
+      "awards/badminton-2025.html",
+      "awards/nthu-scholarship-2021.html",
+      "awards/cadathlon-2024.html",
+      "awards/iccad-contest-2024.html",
+      "awards/ispd-2026.html",
+      "awards/icpc-2019.html",
+      "awards/iccad-contest-2024-b.html",
+      "awards/ncpc-2018-2020.html",
+      "awards/central-taiwan-2020.html",
+      "awards/mcu-alumnus-2026.html",
+      "awards/iwls-2026.html",
+      "awards/icpc-2020.html",
+      "awards/freshman-cup-2018.html",
+      "awards/topc-2020.html",
+      "awards/software-innovation-2018.html",
+      "awards/hsinchu-youth-2026.html",
+      "awards/cadathlon-2025.html",
+      "awards/topc-2019.html",
+      "awards/iccad-contest-2025.html"
+    ],
+    "new_assets": [
+      "assets/images/social-preview-20261025-v1.jpg",
+      "assets/images/social-preview-20261025-v1.png",
+      "projects/trinity/assets/2026-trinity-social-preview-20261025.png",
+      "projects/trinity/assets/2026-trinity-social-preview-20261025.jpg"
+    ],
+    "visible_content_changes": "homepage updated datetime only; share artwork footer uses the new hostname",
+    "publication_records_and_citations_unchanged": true
+  },
+  "social_artwork": [
+    {
+      "source": "content/social-preview.html",
+      "output": "site/assets/images/social-preview-20261025-v1.png",
+      "expected": "wqtang.com",
+      "text": "Homepage\nWuqian Tang\n\nPh.D. Candidate\n\nDepartment of Computer Science\n\nNational Tsing Hua University (NTHU)\n\nElectronic Design Automation · AI for EDA\n\nwqtang.com\nHsinchu, Taiwan",
+      "width": 1200,
+      "height": 630,
+      "loadedImages": true,
+      "errors": []
+    },
+    {
+      "source": "content/projects/trinity/social-preview.html",
+      "output": "site/projects/trinity/assets/2026-trinity-social-preview-20261025.png",
+      "expected": "wqtang.com/projects/trinity/",
+      "text": "GENERATIVE FLOORPLANNING\narXiv:2610.04957 · 2026\nTrinity\n\nOne Differentiable Physics\nfor Generative Floorplanners\n\nTraining\nRefinement\nScoring\n\nOne Physics. Three Stages.\n\nWuqian Tang · NTHU\nwqtang.com/projects/trinity/",
+      "width": 1200,
+      "height": 630,
+      "loadedImages": true,
+      "errors": []
+    }
+  ],
+  "search_console": "Owner must submit the new sitemap, test the live homepage and request indexing; submit Change of Address from the old verified property. Indexing is not asserted by these checks.",
+  "browser": [
+    {
+      "path": "",
+      "width": 1440,
+      "height": 1000,
+      "colorScheme": "light",
+      "status": 200,
+      "canonical": "https://wqtang.com/",
+      "ogURL": "https://wqtang.com/",
+      "twitterImage": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg",
+      "shareImage": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg",
+      "shareImageSize": [
+        1200,
+        630
+      ],
+      "overflow": false,
+      "heading": "Wuqian Tang（唐梧遷）",
+      "courseWebsiteRow": "course-instructors",
+      "courseWebsiteTarget": "_blank",
+      "homeReturnsUseCurrentTab": true,
+      "errors": []
+    },
+    {
+      "path": "awards/teaching-excellent-2026.html",
+      "width": 1440,
+      "height": 1000,
+      "colorScheme": "light",
+      "status": 200,
+      "canonical": "https://wqtang.com/awards/teaching-excellent-2026.html",
+      "ogURL": "https://wqtang.com/awards/teaching-excellent-2026.html",
+      "twitterImage": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg",
+      "shareImage": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg",
+      "shareImageSize": [
+        1200,
+        630
+      ],
+      "overflow": false,
+      "heading": "Excellent Teaching Assistant Award",
+      "courseWebsiteRow": null,
+      "courseWebsiteTarget": null,
+      "homeReturnsUseCurrentTab": true,
+      "errors": []
+    },
+    {
+      "path": "projects/trinity/",
+      "width": 1440,
+      "height": 1000,
+      "colorScheme": "light",
+      "status": 200,
+      "canonical": "https://wqtang.com/projects/trinity/",
+      "ogURL": "https://wqtang.com/projects/trinity/",
+      "twitterImage": "https://wqtang.com/projects/trinity/assets/2026-trinity-social-preview-20261025.jpg",
+      "shareImage": "https://wqtang.com/projects/trinity/assets/2026-trinity-social-preview-20261025.jpg",
+      "shareImageSize": [
+        1200,
+        630
+      ],
+      "overflow": false,
+      "heading": "Trinity: One Differentiable Physics for Training, Refining and Scoring Generative Floorplanners",
+      "courseWebsiteRow": null,
+      "courseWebsiteTarget": null,
+      "homeReturnsUseCurrentTab": true,
+      "errors": []
+    },
+    {
+      "path": "",
+      "width": 390,
+      "height": 844,
+      "colorScheme": "dark",
+      "status": 200,
+      "canonical": "https://wqtang.com/",
+      "ogURL": "https://wqtang.com/",
+      "twitterImage": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg",
+      "shareImage": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg",
+      "shareImageSize": [
+        1200,
+        630
+      ],
+      "overflow": false,
+      "heading": "Wuqian Tang（唐梧遷）",
+      "courseWebsiteRow": "course-instructors",
+      "courseWebsiteTarget": "_blank",
+      "homeReturnsUseCurrentTab": true,
+      "errors": []
+    },
+    {
+      "path": "awards/teaching-excellent-2026.html",
+      "width": 390,
+      "height": 844,
+      "colorScheme": "dark",
+      "status": 200,
+      "canonical": "https://wqtang.com/awards/teaching-excellent-2026.html",
+      "ogURL": "https://wqtang.com/awards/teaching-excellent-2026.html",
+      "twitterImage": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg",
+      "shareImage": "https://wqtang.com/assets/images/social-preview-20261025-v1.jpg",
+      "shareImageSize": [
+        1200,
+        630
+      ],
+      "overflow": false,
+      "heading": "Excellent Teaching Assistant Award",
+      "courseWebsiteRow": null,
+      "courseWebsiteTarget": null,
+      "homeReturnsUseCurrentTab": true,
+      "errors": []
+    },
+    {
+      "path": "projects/trinity/",
+      "width": 390,
+      "height": 844,
+      "colorScheme": "dark",
+      "status": 200,
+      "canonical": "https://wqtang.com/projects/trinity/",
+      "ogURL": "https://wqtang.com/projects/trinity/",
+      "twitterImage": "https://wqtang.com/projects/trinity/assets/2026-trinity-social-preview-20261025.jpg",
+      "shareImage": "https://wqtang.com/projects/trinity/assets/2026-trinity-social-preview-20261025.jpg",
+      "shareImageSize": [
+        1200,
+        630
+      ],
+      "overflow": false,
+      "heading": "Trinity: One Differentiable Physics for Training, Refining and Scoring Generative Floorplanners",
+      "courseWebsiteRow": null,
+      "courseWebsiteTarget": null,
+      "homeReturnsUseCurrentTab": true,
+      "errors": []
+    }
+  ]
+}

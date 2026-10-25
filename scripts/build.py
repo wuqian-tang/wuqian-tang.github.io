@@ -7,6 +7,7 @@ import json
 import re
 import xml.etree.ElementTree as ET
 from datetime import datetime
+from html.parser import HTMLParser
 from pathlib import Path
 from string import Template
 from urllib.parse import urlsplit
@@ -258,6 +259,38 @@ def asset_redirect_script():
     data = json.dumps(targets, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
     return '<script>const movedAssets=' + data + ';let oldAsset;try{oldAsset=decodeURIComponent(location.pathname.slice(1))}catch{}const newAsset=movedAssets[oldAsset];if(typeof newAsset==="string")location.replace("/"+newAsset+location.search+location.hash);</script>'
 
+class PageIdentity(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.canonicals = []
+        self.share_urls = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == 'link' and 'canonical' in attrs.get('rel', '').split():
+            self.canonicals.append(attrs.get('href'))
+        if tag == 'meta' and attrs.get('property') == 'og:url':
+            self.share_urls.append(attrs.get('content'))
+
+def audit_page_identity(pages, site_url):
+    origin = urlsplit(site_url)
+    if origin.scheme != 'https' or not origin.netloc or origin.path or origin.query or origin.fragment:
+        raise ValueError('The site URL must be an HTTPS origin without a trailing slash')
+    # Sitemap, canonical and social identity must agree after a domain change.
+    root = ET.fromstring(pages['sitemap.xml'])
+    namespace = '{http://www.sitemaps.org/schemas/sitemap/0.9}'
+    for node in root.findall(f'{namespace}url/{namespace}loc'):
+        url = node.text
+        if not url or not url.startswith(site_url + '/'):
+            raise ValueError('Sitemap page is outside the configured site URL')
+        path = url[len(site_url) + 1:]
+        if not path or path.endswith('/'):
+            path += 'index.html'
+        identity = PageIdentity()
+        identity.feed(pages[path])
+        if identity.canonicals != [url] or identity.share_urls != [url]:
+            raise ValueError(f'Canonical and Open Graph URL must match the sitemap: {path}')
+
 def render():
     p = json.loads((ROOT / 'content/profile.json').read_text())
     if p['chinese_name'] != '唐梧遷':
@@ -428,8 +461,12 @@ def render():
         template = (ROOT / template_path).read_text()
         if template.count('{{PROJECT_BIBTEX}}') != 1:
             raise ValueError('Project template must have one shared citation placeholder')
-        pages[project['path'] + 'index.html'] = template.replace('{{PROJECT_BIBTEX}}', esc(citations[project['citation']]['bibtex']))
-    return {name: link_targets(contents) if name.endswith('.html') else contents for name, contents in pages.items()}
+        if '{{SITE_URL}}' not in template:
+            raise ValueError('Project metadata must use the shared site URL')
+        pages[project['path'] + 'index.html'] = template.replace('{{SITE_URL}}', esc(p['site_url'])).replace('{{PROJECT_BIBTEX}}', esc(citations[project['citation']]['bibtex']))
+    pages = {name: link_targets(contents) if name.endswith('.html') else contents for name, contents in pages.items()}
+    audit_page_identity(pages, p['site_url'])
+    return pages
 
 def audit(generated_files):
     assets = json.loads((ROOT / 'content/public-assets.json').read_text())

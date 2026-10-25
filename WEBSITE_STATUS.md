@@ -1,13 +1,23 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-10-23。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-10-25。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
-- 网站：[wuqian-tang.github.io](https://wuqian-tang.github.io/)
+- 网站：[wqtang.com](https://wqtang.com/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 课程网站链接移至教师与系所行（2026-10-23，最新）
+## 正式域名、canonical 与 Google 收录修复（2026-10-25，最新）
+
+- 用户已选定 `wqtang.com` 为正式主页，并自行完成 GitHub Pages Custom domain 与 Cloudflare DNS；HTTPS 证书覆盖根域名及 www，Enforce HTTPS 已开启。旧 `wuqian-tang.github.io`、www 与 HTTP 入口均以 301 跳转到 HTTPS 根域名，相册、Trinity 与 CV 等文件保留对应路径，不把所有旧地址重定向到首页。本次未更改 DNS、托管设置或仓库名称。
+- Search Console 的 2026-10-24 抓取报告显示新域名为 Alternate page with proper canonical tag，用户声明及 Google 选择的 canonical 均为旧 `https://wuqian-tang.github.io/`。原因是域名绑定后的站内迁移尚未完成，旧 canonical 与新域名的 301 信号冲突；不是 robots 禁止抓取或 noindex。报告还显示 sitemap Temporary processing error，不能仅凭这一条确定是网络问题或旧地址造成。
+- `content/profile.json` 的 `site_url` 改为 `https://wqtang.com`、更新日期为 2026-10-25。首页和 33 个相册的 canonical、og:url、分享图片绝对地址及首页 Person JSON-LD 统一使用新域名。Trinity 改为 `{{SITE_URL}}` 占位符，构建器从同一配置替换其 canonical、分享地址、ScholarlyArticle.url 和论文 contentUrl；预印本的原始发表日期保持 2026-10-04。
+- sitemap 的全部 35 个页面和 95 个图片引用、robots.txt 的 Sitemap 地址同步切换。每个页面的 canonical 指向该页面的新地址，相册及项目页不能统一指向主页。新增构建校验，要求 site_url 为完整 HTTPS origin，并逐项确认 sitemap 页面与其 canonical、og:url 一致，防止后续换域名遗漏硬编码项目页。Google 原验证标签完整保留，未添加 noindex 或阻止旧域名抓取。
+- 分享图只替换底部网址，保留原照片、文字、字号与版式。首页新增 `social-preview-20261025-v1.png/jpg`，Trinity 新增 `2026-trinity-social-preview-20261025.png/jpg`；均为 1200×630，PNG 保留，JPEG RGB quality 95／4:4:4。34 个个人页面使用新首页分享图片，Trinity 使用独立新图片；273 份既有资产字节与清单条目全部保留，manifest 增至 277 份。旧分享图保留供历史链接访问。
+- 验收记于 `preview/domain-migration-validation.json`：核对 35 页 metadata、sitemap、结构化资料、验证标签和已有资源；321 份原部署文件中仅 37 份 HTML／robots／sitemap 更新，另外 284 份原样保留，新增四份分享图。正文只更新资料日期，课程、论文、引用、照片、CV、CSS／JS 和旧资源保持原样；桌面／手机检查见报告，上线后还需核对线上标签与跳转。`MULTILINGUAL_NOTES.md` 仍是用户本地草案，不提交。
+- 上线后用户在新域名的 Search Console 资源提交 `https://wqtang.com/sitemap.xml`；检查 `https://wqtang.com/`，先 Test live URL 确认新 canonical，再 Request indexing。确认同一账号拥有新旧资源后，在旧资源 Settings → Change of address 选择新域名并提交迁移。不要用 Removals 删除旧站，也不要反复改回旧 canonical。报告可能继续展示上次抓取结果，只有 Google 重新抓取处理后才会改变；本站部署成功不代表新域名已被 Google 收录。
+
+## 课程网站链接移至教师与系所行（2026-10-23）
 
 - 用户补充要求 `[Course Website]` 放到课程名称下面，与 `[Student Evaluations]` 同样处理。现改为教师／系所段落末尾的 `· [Course Website]`，课程名称单独保留原文；使用相同的 `inline_group` 和行内分隔符处理，链接换到新行时隐藏前导中点，方括号保持整体。
 - 目标地址、新分页行为、字号、教师、系所、学期及五个评量链接沿用；不调整 CSS／JS 或缓存版本。更新构建器、生成首页、README 和现有课程链接验收记录，其余 320 份部署文件字节一致。

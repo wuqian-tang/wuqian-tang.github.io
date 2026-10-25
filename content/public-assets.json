@@ -1831,5 +1831,45 @@
     "sha256": "bd0e383020dbe4da38b006b14cf70a04dbda0be5d7ec4bc99a9842034a27419f",
     "bytes": 122453,
     "compatibility_alias_for": "files/cv-wqtang.pdf"
+  },
+  {
+    "path": "assets/images/social-preview-20261025-v1.png",
+    "sha256": "7bfc62c6929276bf5e4b7e8291407d0640aca95aba189ee687cfc6b08ddc9a91",
+    "source": "content/social-preview.html, rendered in Chromium at 1200 x 630, device scale 1",
+    "width": 1200,
+    "height": 630,
+    "bytes": 156674,
+    "encoding": "RGB PNG screenshot",
+    "revision": "2026-10-25: replace the displayed github.io address with wqtang.com; retain the existing design"
+  },
+  {
+    "path": "assets/images/social-preview-20261025-v1.jpg",
+    "sha256": "d15f3cc7cc8eb5ca3b5da10313745d10f4cb5cbe499ffa0c9ddc4ff9bc72ad77",
+    "source": "content/social-preview.html, rendered in Chromium at 1200 x 630, device scale 1",
+    "width": 1200,
+    "height": 630,
+    "bytes": 118206,
+    "encoding": "RGB JPEG quality 95, subsampling 0 (4:4:4), optimize=True",
+    "revision": "2026-10-25: replace the displayed github.io address with wqtang.com; retain the existing design"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-social-preview-20261025.png",
+    "sha256": "a4142aa6bcc0ecf3edad502c7226485b2240b44e1e9b56f24168b34ae39ee6ef",
+    "source": "content/projects/trinity/social-preview.html, rendered in Chromium at 1200 x 630, device scale 1",
+    "width": 1200,
+    "height": 630,
+    "bytes": 114031,
+    "encoding": "RGB PNG screenshot",
+    "revision": "2026-10-25: replace the displayed github.io address with wqtang.com; retain the existing design"
+  },
+  {
+    "path": "projects/trinity/assets/2026-trinity-social-preview-20261025.jpg",
+    "sha256": "ac8a04f5e7cb209cc3927b82950563b6be5eac43124fe4e0368f8cec0d1da492",
+    "source": "content/projects/trinity/social-preview.html, rendered in Chromium at 1200 x 630, device scale 1",
+    "width": 1200,
+    "height": 630,
+    "bytes": 126887,
+    "encoding": "RGB JPEG quality 95, subsampling 0 (4:4:4), optimize=True",
+    "revision": "2026-10-25: replace the displayed github.io address with wqtang.com; retain the existing design"
   }
 ]
