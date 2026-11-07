@@ -1,0 +1,87 @@
+{
+  "verified_on": "2026-11-07",
+  "scope": "Remove stale To appear statuses for HyPAS and QUBO in current CV editions; preserve existing correct public CV files.",
+  "doi_records": [
+    {
+      "paper": "HyPAS",
+      "doi": "10.1145/3770743.3804137",
+      "source": "https://api.crossref.org/works/10.1145/3770743.3804137",
+      "http_status": 200,
+      "pages": "1–7",
+      "registered_on": "2026-11-06"
+    },
+    {
+      "paper": "QUBO LBR",
+      "doi": "10.1145/3770743.3807713",
+      "source": "https://api.crossref.org/works/10.1145/3770743.3807713",
+      "http_status": 200,
+      "pages": "1–2",
+      "registered_on": "2026-10-22"
+    }
+  ],
+  "public_cv": [
+    {
+      "path": "files/cv-wqtang.pdf",
+      "pages": 3,
+      "bytes": 122453,
+      "sha256": "bd0e383020dbe4da38b006b14cf70a04dbda0be5d7ec4bc99a9842034a27419f",
+      "dac_to_appear_absent": true
+    },
+    {
+      "path": "files/cv.pdf",
+      "pages": 3,
+      "bytes": 122453,
+      "sha256": "bd0e383020dbe4da38b006b14cf70a04dbda0be5d7ec4bc99a9842034a27419f",
+      "dac_to_appear_absent": true
+    },
+    {
+      "path": "files/Wuqian_Tang_CV.pdf",
+      "pages": 3,
+      "bytes": 122453,
+      "sha256": "bd0e383020dbe4da38b006b14cf70a04dbda0be5d7ec4bc99a9842034a27419f",
+      "dac_to_appear_absent": true
+    }
+  ],
+  "private_full_cv": {
+    "pages": 3,
+    "changed_entries": [
+      "C16",
+      "C15"
+    ],
+    "to_appear_before": 6,
+    "to_appear_after": 4,
+    "render_comparison": [
+      {
+        "page": 1,
+        "different_pixels": 0,
+        "difference_bounds_at_scale_1_5": null
+      },
+      {
+        "page": 2,
+        "different_pixels": 914,
+        "difference_bounds_at_scale_1_5": [
+          731,
+          920,
+          812,
+          1015
+        ]
+      },
+      {
+        "page": 3,
+        "different_pixels": 0,
+        "difference_bounds_at_scale_1_5": null
+      }
+    ]
+  },
+  "private_distribution_full_copies_identical": 3,
+  "two_page_render_and_text_unchanged": true,
+  "original_word_and_pdf_unchanged": true,
+  "latex_bundle_matches_current_source_and_pdfs": true,
+  "website_preview_cv_matches_current_public_cv": true,
+  "public_deployment_files_unchanged": 325,
+  "public_asset_manifest_unchanged": true,
+  "public_source_unchanged": true,
+  "pending_marker_format": "2026 (to appear).",
+  "unrelated_user_edits_preserved": true,
+  "private_contact_information_published": false
+}

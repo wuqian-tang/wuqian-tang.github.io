@@ -1,13 +1,22 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-10-25。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-11-07。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wqtang.com](https://wqtang.com/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 正式域名、canonical 与 Google 收录修复（2026-10-25，最新）
+## DAC 2026 CV 待刊状态核对（2026-11-07，最新）
+
+- 用户要求删除 HyPAS（C15）与 QUBO LBR（C16）在 CV 中的 To appear，分别同步网页及私人资料仓库。Crossref 本次两条查询均 HTTP 200，题名与作者一致：HyPAS DOI `10.1145/3770743.3804137`（1–7 页，登记日期 2026-11-06），QUBO DOI `10.1145/3770743.3807713`（1–2 页，登记日期 2026-10-22）。核对来源为各 DOI 的 `https://api.crossref.org/works/` 记录。
+- 网页公开 CV 的两篇论文原本已没有 To appear，三个地址 `files/cv-wqtang.pdf`、`files/cv.pdf`、`files/Wuqian_Tang_CV.pdf` 在线均 HTTP 200，且与本地公开 PDF 逐字节一致；继续保留正确的三页文件、公开源文件与 manifest。三个地址 SHA-256 均为 `bd0e383020dbe4da38b006b14cf70a04dbda0be5d7ec4bc99a9842034a27419f`。现用网站预览 ZIP 内的 CV 也已与此文件一致。
+- 私人完整版源文件删除 C16 的 `\forthcoming` 和 C15 的 `\ifallpapers\forthcoming\fi`，重新编译后仍为三页，并同步求职完整版附件、现用申请 CV 及 LaTeX ZIP。本地两页版重新编译确认逐页文字与渲染一致；它和 Original Word／PDF 原本就没有这两项待刊标记，保留原正确文件。旧申请历史归档沿用。
+- 待刊标记属于条目正文，置于句号前，示例为 `2026 (to appear).`；现有 publication 宏原本符合这一顺序，无需额外调整。其他论文、共同贡献标记、作者、编号、会议时间、字体、章节间距及两种 CV 的联系方式保持原内容；私人联系方式不复制到公开版。
+- 验收记录为 `preview/cv-dac-status-validation.json`：私人完整版除 C15／C16 的两个 `(to appear)` 外，全部文字一致，待刊标记总数从 6 变为 4；第 1、3 页渲染逐像素相同，第 2 页差异仅在两个被删除标记处。私人三个现用 Full 副本逐字节一致，LaTeX ZIP 共享源文件与 PDF 一致；公开全部 325 份部署文件及 277 份 manifest 资产保持原样。网站仓库仅更新维护文档与核验记录，私人仓库仅提交 CV 源文件、完整版 PDF 及说明。
+- 原有用户修改、私人未跟踪资料及本地翻译草案均未纳入本次提交。两个仓库分别推送，公开 Pages 部署后复核三个 CV 地址。
+
+## 正式域名、canonical 与 Google 收录修复（2026-10-25）
 
 - 用户已选定 `wqtang.com` 为正式主页，并自行完成 GitHub Pages Custom domain 与 Cloudflare DNS；HTTPS 证书覆盖根域名及 www，Enforce HTTPS 已开启。旧 `wuqian-tang.github.io`、www 与 HTTP 入口均以 301 跳转到 HTTPS 根域名，相册、Trinity 与 CV 等文件保留对应路径，不把所有旧地址重定向到首页。本次未更改 DNS、托管设置或仓库名称。
 - Search Console 的 2026-10-24 抓取报告显示新域名为 Alternate page with proper canonical tag，用户声明及 Google 选择的 canonical 均为旧 `https://wuqian-tang.github.io/`。原因是域名绑定后的站内迁移尚未完成，旧 canonical 与新域名的 301 信号冲突；不是 robots 禁止抓取或 noindex。报告还显示 sitemap Temporary processing error，不能仅凭这一条确定是网络问题或旧地址造成。
