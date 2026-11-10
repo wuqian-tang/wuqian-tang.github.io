@@ -1,0 +1,252 @@
+{
+  "checked_on": "2026-11-10",
+  "paper_url": "https://arxiv.org/abs/2611.10798",
+  "code_url": "https://github.com/wuqian-tang/RTLREX",
+  "static": {
+    "checked_on": "2026-11-10",
+    "publications": 23,
+    "selected": [
+      "p2",
+      "c17",
+      "c15",
+      "j2"
+    ],
+    "more_count": 19,
+    "news_count": 7,
+    "existing_publications_preserved_except_c1_selection": true,
+    "previous_manifest_entries_unchanged": 277,
+    "manifest_count": 278,
+    "deployment_files": 326,
+    "changed_existing_files": [
+      "index.html",
+      "sitemap.xml"
+    ],
+    "added_files": [
+      "files/papers/2026-arxiv-rtlrex.pdf"
+    ],
+    "all_other_existing_file_bytes_preserved": 323,
+    "sitemap_pages": 35,
+    "pdf": {
+      "pages": 14,
+      "bytes": 7270367,
+      "sha256": "4c0821906f9908108d1744749f25f0eac52ab5228cde3236abf5ec7c2e6f17b0"
+    }
+  },
+  "browser": {
+    "checked_on": "2026-11-10",
+    "cases": [
+      {
+        "width": 320,
+        "height": 844,
+        "theme": "light",
+        "selected": [
+          "paper-p2",
+          "paper-c17",
+          "paper-c15",
+          "paper-j2"
+        ],
+        "more_count": 19,
+        "clipboard": "passed",
+        "research_anchor": "passed",
+        "more_c1": "passed",
+        "horizontal_overflow": false
+      },
+      {
+        "width": 320,
+        "height": 844,
+        "theme": "dark",
+        "selected": [
+          "paper-p2",
+          "paper-c17",
+          "paper-c15",
+          "paper-j2"
+        ],
+        "more_count": 19,
+        "clipboard": "passed",
+        "research_anchor": "passed",
+        "more_c1": "passed",
+        "horizontal_overflow": false
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "theme": "light",
+        "selected": [
+          "paper-p2",
+          "paper-c17",
+          "paper-c15",
+          "paper-j2"
+        ],
+        "more_count": 19,
+        "clipboard": "passed",
+        "research_anchor": "passed",
+        "more_c1": "passed",
+        "horizontal_overflow": false
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "theme": "dark",
+        "selected": [
+          "paper-p2",
+          "paper-c17",
+          "paper-c15",
+          "paper-j2"
+        ],
+        "more_count": 19,
+        "clipboard": "passed",
+        "research_anchor": "passed",
+        "more_c1": "passed",
+        "horizontal_overflow": false
+      },
+      {
+        "width": 768,
+        "height": 844,
+        "theme": "light",
+        "selected": [
+          "paper-p2",
+          "paper-c17",
+          "paper-c15",
+          "paper-j2"
+        ],
+        "more_count": 19,
+        "clipboard": "passed",
+        "research_anchor": "passed",
+        "more_c1": "passed",
+        "horizontal_overflow": false
+      },
+      {
+        "width": 768,
+        "height": 844,
+        "theme": "dark",
+        "selected": [
+          "paper-p2",
+          "paper-c17",
+          "paper-c15",
+          "paper-j2"
+        ],
+        "more_count": 19,
+        "clipboard": "passed",
+        "research_anchor": "passed",
+        "more_c1": "passed",
+        "horizontal_overflow": false
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "theme": "light",
+        "selected": [
+          "paper-p2",
+          "paper-c17",
+          "paper-c15",
+          "paper-j2"
+        ],
+        "more_count": 19,
+        "clipboard": "passed",
+        "research_anchor": "passed",
+        "more_c1": "passed",
+        "horizontal_overflow": false
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "theme": "dark",
+        "selected": [
+          "paper-p2",
+          "paper-c17",
+          "paper-c15",
+          "paper-j2"
+        ],
+        "more_count": 19,
+        "clipboard": "passed",
+        "research_anchor": "passed",
+        "more_c1": "passed",
+        "horizontal_overflow": false
+      },
+      {
+        "width": 2560,
+        "height": 1440,
+        "theme": "light",
+        "selected": [
+          "paper-p2",
+          "paper-c17",
+          "paper-c15",
+          "paper-j2"
+        ],
+        "more_count": 19,
+        "clipboard": "passed",
+        "research_anchor": "passed",
+        "more_c1": "passed",
+        "horizontal_overflow": false
+      },
+      {
+        "width": 2560,
+        "height": 1440,
+        "theme": "dark",
+        "selected": [
+          "paper-p2",
+          "paper-c17",
+          "paper-c15",
+          "paper-j2"
+        ],
+        "more_count": 19,
+        "clipboard": "passed",
+        "research_anchor": "passed",
+        "more_c1": "passed",
+        "horizontal_overflow": false
+      }
+    ],
+    "screenshots": [
+      "preview/rtlrex-publication-light-390.png",
+      "preview/rtlrex-news-390.png",
+      "preview/rtlrex-publication-dark-390.png",
+      "preview/rtlrex-publication-light-1440.png",
+      "preview/rtlrex-news-1440.png",
+      "preview/rtlrex-publication-dark-1440.png"
+    ],
+    "errors": [],
+    "actual_new_tabs": [
+      "PDF",
+      "Code"
+    ],
+    "c1_direct_deep_link": "passed",
+    "no_javascript": {
+      "citation": "passed",
+      "more_c1": "passed",
+      "interaction": "native keyboard"
+    },
+    "local_pdf": {
+      "status": 200,
+      "bytes": 7270367,
+      "sha256": "4c0821906f9908108d1744749f25f0eac52ab5228cde3236abf5ec7c2e6f17b0"
+    }
+  },
+  "code_citation": {
+    "checked_on": "2026-11-10",
+    "cff_schema": "https://raw.githubusercontent.com/citation-file-format/citation-file-format/1.2.0/schema.json",
+    "schema_validation": "passed",
+    "official_authors_match": true,
+    "software_metadata_preserved": true,
+    "bibtex_matches_homepage": true,
+    "changed_files": [
+      "README.md",
+      "CITATION.cff"
+    ]
+  },
+  "verified_commands": [
+    "python3 scripts/build.py --check",
+    "node --check site/assets/js/main.js",
+    "node --check site/projects/trinity/assets/project.js",
+    "git diff --check"
+  ],
+  "visually_reviewed": [
+    "preview/rtlrex-publication-light-1440.png",
+    "preview/rtlrex-publication-dark-390.png",
+    "preview/rtlrex-news-390.png"
+  ],
+  "automation_notes": [
+    "Headless PDF new-tab check observes the popup and HTTP 200 PDF response, because this browser does not commit a standard PDF document URL. The original page remains open.",
+    "No-JavaScript citation and More disclosures are exercised with native keyboard activation."
+  ],
+  "code_commit": "1f167a5b57e0d6c111f31ea0dfa5d0ebe40729ce"
+}

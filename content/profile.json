@@ -6,7 +6,7 @@
   "university": "National Tsing Hua University",
   "location": "Hsinchu, Taiwan",
   "email": "wqtang@cs.nthu.edu.tw",
-  "updated": "2026-10-25",
+  "updated": "2026-11-10",
   "site_url": "https://wqtang.com",
   "profiles": [
     {
@@ -63,8 +63,8 @@
           "paper": "j2"
         },
         {
-          "label": "DATE 2024",
-          "paper": "c1"
+          "label": "RTLREX · arXiv 2026",
+          "paper": "p2"
         },
         {
           "label": "IWLS Contest 2026",
@@ -96,6 +96,21 @@
         {
           "label": "to appear",
           "pending": true
+        }
+      ]
+    },
+    {
+      "date": "Nov 2026",
+      "datetime": "2026-11-07",
+      "text": "RTLREX, our new preprint on LLM-guided RTL recovery, is now available on arXiv with open-source code.",
+      "resources": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.10798"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/wuqian-tang/RTLREX"
         }
       ]
     },
@@ -197,6 +212,38 @@
     }
   ],
   "publications": [
+    {
+      "id": "p2",
+      "label": "P2",
+      "type": "preprint",
+      "authors": "Wuqian Tang, Fangzhou Liu, Ruijie Wang, TingTing Hwang, Bei Yu, Chun-Yao Wang",
+      "title": "RTLREX: LLM-Guided Framework for Exact High-Level RTL Recovery",
+      "venue": "arXiv",
+      "acronym": "arXiv",
+      "year": 2026,
+      "details": "arXiv:2611.10798 · Submitted Nov. 7, 2026",
+      "status": "Preprint",
+      "selected": true,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.10798"
+        },
+        {
+          "label": "PDF",
+          "url": "files/papers/2026-arxiv-rtlrex.pdf"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/wuqian-tang/RTLREX"
+        }
+      ],
+      "pdf_source": "https://arxiv.org/pdf/2611.10798v1",
+      "arxiv_id": "2611.10798",
+      "version": "v1",
+      "code_verified_on": "2026-11-10",
+      "code_source": "Official arXiv v1 paper, software companion statement: https://github.com/wuqian-tang/RTLREX; public README matches the paper title."
+    },
     {
       "id": "p1",
       "label": "P1",
@@ -638,7 +685,7 @@
       "year": 2024,
       "details": "Valencia, Spain, Mar. 25–27, 2024",
       "status": "",
-      "selected": true,
+      "selected": false,
       "links": [
         {
           "label": "DOI",

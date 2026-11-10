@@ -1,13 +1,23 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-11-07。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-11-10。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wqtang.com](https://wqtang.com/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## DAC 2026 CV 待刊状态核对（2026-11-07，最新）
+## RTLREX 预印本与公开代码（2026-11-10，最新）
+
+- 用户审核后授权更新网页，并补齐 GitHub 论文链接。新增 P2：`RTLREX: LLM-Guided Framework for Exact High-Level RTL Recovery`，arXiv `2611.10798`，v1 首次提交 2026-11-07，14 页。作者顺序为 Wuqian Tang、Fangzhou Liu、Ruijie Wang、TingTing Hwang、Bei Yu、Chun-Yao Wang；本人为第一作者与通讯作者，网页仅按既有方式加粗姓名，不添加共同一作星号。
+- 状态为 arXiv / Preprint / 2026，不虚构正式会议或待刊状态。默认 Selected 仍为四篇，顺序为 RTLREX、TAPCO、HyPAS、CB-EVO；C1（DATE 2024）移入 More，原编号、DOI、PDF 和深链接保持。论文总数为 23，More 为 19；P1（Trinity）仍在 More。
+- Recent News 新增经审核的文案：`RTLREX, our new preprint on LLM-guided RTL recovery, is now available on arXiv with open-source code.`，句末为 `[arXiv] [Code]`。日期只显示 Nov 2026；内部按提交日 2026-11-07 排在现有 2026-11-08 CAD Contest 之后。Research 的 Logic Synthesis & RTL Recovery 以 `[RTLREX · arXiv 2026]` 替换原 DATE 2024 引用，说明文字与另外两项证据保持。
+- 论文资源顺序为 arXiv / PDF / Code / BibTeX。正式代码为 `https://github.com/wuqian-tang/RTLREX`；官方 PDF 原样存入 `files/papers/2026-arxiv-rtlrex.pdf`，7,270,367 bytes，SHA-256 `4c0821906f9908108d1744749f25f0eac52ab5228cde3236abf5ec7c2e6f17b0`。manifest 增至 278 条，其余 277 条资产记录与文件字节保留。BibTeX 为 `Tang2026RTLREX` / `@misc`，包括完整六位作者、arXiv ID、cs.AR 类别与 preprint note。
+- RTLREX 仓库 README 顶部与引用段落补上 arXiv 链接及一致的 BibTeX；`CITATION.cff` 增加 preferred-citation，保留原软件作者、版本与 MIT 许可，并按官方 CFF 1.2.0 schema 校验。项目介绍继续使用 GitHub README。
+- 当前改动不涉及 CV、照片、获奖资料、About、CSS／JS、域名与 Google 验证标签。本地翻译草案保留。实施方案为 `docs/superpowers/plans/2026-11-10-rtlrex-publication.md`，验收报告为 `preview/rtlrex-publication-validation.json`。320／390／768／1440／2560px 深浅色共十组通过，BibTeX 实际复制、PDF／Code 新分页、C1 深链接、More 与无 JS 原生键盘展开通过，无横向溢出或脚本异常；CFF 官方 schema 校验通过。推送后核对 Pages、正式首页、PDF 与 GitHub 两份引用文件。
+- 后续如有 arXiv 修订版，先核对版本与作者，再同步本地 PDF、manifest、版本记录及引用；正式录用或 DOI 可用后，按正式书目信息更新，保持 P2 深链接可访问。
+
+## DAC 2026 CV 待刊状态核对（2026-11-07）
 
 - 用户要求删除 HyPAS（C15）与 QUBO LBR（C16）在 CV 中的 To appear，分别同步网页及私人资料仓库。Crossref 本次两条查询均 HTTP 200，题名与作者一致：HyPAS DOI `10.1145/3770743.3804137`（1–7 页，登记日期 2026-11-06），QUBO DOI `10.1145/3770743.3807713`（1–2 页，登记日期 2026-10-22）。核对来源为各 DOI 的 `https://api.crossref.org/works/` 记录。
 - 网页公开 CV 的两篇论文原本已没有 To appear，三个地址 `files/cv-wqtang.pdf`、`files/cv.pdf`、`files/Wuqian_Tang_CV.pdf` 在线均 HTTP 200，且与本地公开 PDF 逐字节一致；继续保留正确的三页文件、公开源文件与 manifest。三个地址 SHA-256 均为 `bd0e383020dbe4da38b006b14cf70a04dbda0be5d7ec4bc99a9842034a27419f`。现用网站预览 ZIP 内的 CV 也已与此文件一致。
@@ -526,13 +536,13 @@ ISPD 2026 通用比赛页的当前获奖名单与本人证书不一致，因此�
 ## 格式规范
 
 1. **语言与姓名**：页面以英文为主，中文姓名只用繁体「唐梧遷」，置于姓名括号内。英文名统一 Wuqian Tang；引用作者名和正式机构名保持准确。
-2. **标题**：栏目与子标题采用 Title Case，例如 About、Recent News、Research Interests、Awards & Honors、Education & Experience、Work Experience、Hobbies。最上方 Tagline 是唯一全大写的展示文字：AI FOR EDA · OPTIMIZATION ACROSS RTL, LOGIC SYNTHESIS, AND PHYSICAL DESIGN。导航保留 Research；Research Interests 侧注 AI for EDA，总述为 `I develop AI-driven algorithms for faster, smaller, and more energy-efficient circuits.`，首项为 LLM-Guided Algorithm Discovery，方向名称用 Physical Design Automation。第二个方向为 Logic Synthesis & RTL Recovery，保留独立的 DATE 2024 代表工作链接。About 采用背景／研究／荣誉三段；背景合并身份、导师与此前学历，导师保留姓名和主页链接，不另加 CUHK 括号，学历用 an M.S.／a B.S.，学校保留全名。研究段以 LLMs for EDA 为主线，既有 RTL recovery、logic synthesis、physical design 工作作为基础；荣誉段简述十余项国际 EDA 比赛奖项、CAD Contest／CADathlon 三个冠军及 Synopsys 奖学金，使用 first-place awards。荣誉段比赛与奖学金名称使用纯文字，不加链接；搜索摘要使用 logic synthesis and RTL recovery。不得用 `text-transform: uppercase` 强制转换子标题。论文题名保持出版方原文，不为统一标题样式改写正式题名。
+2. **标题**：栏目与子标题采用 Title Case，例如 About、Recent News、Research Interests、Awards & Honors、Education & Experience、Work Experience、Hobbies。最上方 Tagline 是唯一全大写的展示文字：AI FOR EDA · OPTIMIZATION ACROSS RTL, LOGIC SYNTHESIS, AND PHYSICAL DESIGN。导航保留 Research；Research Interests 侧注 AI for EDA，总述为 `I develop AI-driven algorithms for faster, smaller, and more energy-efficient circuits.`，首项为 LLM-Guided Algorithm Discovery，方向名称用 Physical Design Automation。第二个方向为 Logic Synthesis & RTL Recovery，代表作链接为 CB-EVO、RTLREX 与 IWLS Contest 2026。About 采用背景／研究／荣誉三段；背景合并身份、导师与此前学历，导师保留姓名和主页链接，不另加 CUHK 括号，学历用 an M.S.／a B.S.，学校保留全名。研究段以 LLMs for EDA 为主线，既有 RTL recovery、logic synthesis、physical design 工作作为基础；荣誉段简述十余项国际 EDA 比赛奖项、CAD Contest／CADathlon 三个冠军及 Synopsys 奖学金，使用 first-place awards。荣誉段比赛与奖学金名称使用纯文字，不加链接；搜索摘要使用 logic synthesis and RTL recovery。不得用 `text-transform: uppercase` 强制转换子标题。论文题名保持出版方原文，不为统一标题样式改写正式题名。
 3. **视觉**：跟随系统深浅模式；浅色为白色背景、深色正文、蓝色链接；深色为 #101827 页面、#172235 卡片、#E6EDF7 正文、#A8B6C9 辅助文字、#8DB8FF 链接。颜色集中于 CSS 变量，固定颜色不可散落到组件；180ms 颜色过渡尊重减少动态效果，打印固定浅色。系统字体，无远程字体依赖。奖项标题统一 `--ink`、`.9375rem`、550 字重，不按获奖等级改成蓝色。头像右上角线宽高均为 29px，左下角均为 58px；两处浅色为 `#B5CBEA`、深色为 `#55729B`，线宽均为 2px，形成非对称装饰。
 4. **日期**：页面日期用英文三字母月份加年份，如 Sep 2026、May 2025；时间范围用 en dash（–），持续状态用 Present；Awards 和相册日期在 – 后固定换行，– 留在首行，两个日期段分别 nowrap，不将月份与年份拆开；Education / Work Experience 日期在电脑和平板靠右、手机（600px 及以下）放在条目上方靠左，始终单行，横杠两侧保留空格，不插入 br。资料保存完整的起止年份，如 Jun 2025–Sep 2025；多人次合并奖项在说明中列出实际月份。以证书、官方公告或经过核对的资料为依据。
 5. **News**：当前只展示 2026 年，倒序排列，日期统一三字母月份加年份（如 Nov 2026），不显示日；生成的 time 使用 YYYY-MM，源资料可保留精确日期。保持短句，右侧为 Latest Updates。句末使用方括号链接到具体图片/奖状或对应公告；媒体在首页弹窗展示，外部网页在新分页打开。不使用 TAPCO 正文跳转。助教新闻筛选正确学期，不把旧学期图片混入新新闻。
 6. **奖项**：展开控件收起为 More ＋、展开为 Less −，可访问名称与可见文字同步。右侧标注 Selected，主列表显示 9 项，其余 24 项放入 More；新竹市优秀青年保留在主列表，行健奖、ISPD Contest 及其余非主列表奖项放入 More。两组分别按时间倒序：单次按获奖年月，多次合并按最近一次获奖年月，持续奖学金按开始年月；同月保留原相对顺序。More 中含 2020 ICPC 银牌、所有 Honorable Mention、Student Scholar Program Award 和 Mainland China Student Scholarship，不限于较早年份。标题统一采用当前主题正文色 `--ink`。一般说明采用 `机构 · 描述`；会议比赛因标题已有简称，说明仅保留完整题目或比赛内容，不重复会议名称。MLCAD / IWLS 采用本页最新确认的题名；CADathlon 为 `ACM/SIGDA CADathlon Programming Contest · Olympic Games of EDA`，无引号；Student Scholar Program Award 只保留 IEEE/ACM ICCAD 会议全名。CSIE 系友／贡献奖、Synopsys 奖学金、陆生奖学金按本页例外仅保留机构。CAD Contest Problem 独立成条，用完整官方题名；每份照片、奖状、纪念牌只归属正确的 Problem，禁止重复挂载。条目末尾同行展示 `Materials: [Certificate] [Plaques] [Trophy] [Medal] [Photos] │ Announcements: [Official] [News] [University] [College] [Department]`，只列实际存在的资源，按数量用正确单复数。同类多张合为一个链接；窄屏允许自然换行。Materials / Announcements 标签必须与第一个资源同行，其余链接可独立换行；分隔符仅在两组同处一行时显示，新行前隐藏。严格小于 360px 时仅将资源链接 Department 简写为 Dept.，年份保留；360px 起用全称，悬停及可访问说明始终保留完整来源。Materials 表示可查看的奖状、奖杯、奖牌、纪念牌及活动照片；Announcements 表示与该奖项对应的官方结果、报道和公告。浅灰竖线分隔两组，不重复写 news 后缀。不同 CAD Contest Problem 已分条，使用 `[Department]` 即可；同一条目多个年份可用 `[Department (2025)]` 区分。删除 Contest Website / Program Details 类型的链接。Hobbies 只有句末的 [Medal]，不单独起一行；照片本身可点击，避免重复 [Photo]。
 7. **外部来源**：对应具体奖项与年份，确认本人姓名或队伍。优先官方结果、系所、学院、学校和政府；不把通用首页、其他团队的成绩或旧年份名单当获奖公告。全部 http/https 外部链接使用 `target="_blank" rel="noopener noreferrer"`，即使禁用 JavaScript 也保留此行为。内部锚点正常定位，邮件链接保持 mailto。
-8. **论文**：甲骨文论文 J1 放在 More 的 2025 年分组。 C3（SOCC 2024）放在 More 的 2024 年分组。右侧仅标注 Selected，侧栏保留 Google Scholar，不重复在栏目右侧出现。标题下说明严格为 `* denotes equal contribution.`，不加括号或 Selected work.；更多论文的原生展开按钮收起为 More ＋、展开为 Less −，不显示篇数，可访问名称应能区分论文与奖项并跟随状态。期刊按发表先后编号：J1 为 2025 年甲骨文论文，J2 为 2026 年 CB-EVO；J1 / J2 / C1–C19 在此对应关系上保持稳定，预印本另用 P1。Trinity 放在 More 的 2026 年分组，标注 arXiv / Preprint / 2026，使用正式 arXiv ID 与官方 `@misc` 引用，不虚构会议录用或待刊状态。所有论文作者顺序完整，本人加粗，星号表示 equal contribution。Invited paper、In Chinese 与 To appear 分别按事实使用。除 To appear 和明确标注的 arXiv 预印本外，每篇必须有一个经过核对的 DOI。查不到 DOI 时按用户要求标为 To appear；不得使用相似题目的 DOI。
+8. **论文**：甲骨文论文 J1 放在 More 的 2025 年分组。 C3（SOCC 2024）放在 More 的 2024 年分组。右侧仅标注 Selected，侧栏保留 Google Scholar，不重复在栏目右侧出现。标题下说明严格为 `* denotes equal contribution.`，不加括号或 Selected work.；更多论文的原生展开按钮收起为 More ＋、展开为 Less −，不显示篇数，可访问名称应能区分论文与奖项并跟随状态。期刊按发表先后编号：J1 为 2025 年甲骨文论文，J2 为 2026 年 CB-EVO；J1 / J2 / C1–C19 在此对应关系上保持稳定，预印本独立编号为 P1、P2；P2（RTLREX）位于 Selected 首位，C1（DATE 2024）放在 More 的 2024 年分组。Trinity 放在 More 的 2026 年分组，标注 arXiv / Preprint / 2026，使用正式 arXiv ID 与官方 `@misc` 引用，不虚构会议录用或待刊状态。所有论文作者顺序完整，本人加粗，星号表示 equal contribution。Invited paper、In Chinese 与 To appear 分别按事实使用。除 To appear 和明确标注的 arXiv 预印本外，每篇必须有一个经过核对的 DOI。查不到 DOI 时按用户要求标为 To appear；不得使用相似题目的 DOI。
 9. **论文 PDF**：优先正式官方全文或作者提供的可公开最终稿；下载后核对内容，存放 `site/files/papers/`。查看链接用 `files/papers/文件名.pdf`，不得链接其他人的个人网页、远程 PDF 或临时下载 token。保留 PDF 内容，在 manifest 记录来源与 SHA-256；如用户授权修改页面方向，还需记录 normalization。
 10. **照片**：沿用真实照片，不生成或改写人物。原始照片字节保持不变；PDF 如需转正，必须得到用户明确授权，只调整页面方向而不改扫描内容，并更新公开清单中的 SHA-256。首页羽毛球照片使用 4:3、`object-position: 50% 53%` 半身裁切；弹窗使用 `crop_top: 0.25` 只裁上方窗帘。方向先遵循正确 EXIF；2022 ICCAD 源 PDF 设置 270° 页面方向并重新生成正向预览，页面不再叠加旋转。图片有准确英文 alt，惰性加载，不在首页提前请求所有奖项图片。媒体点击直接在当前页弹窗，支持电脑两侧 / 手机图下的图标翻页、左右键、双向触控滑动、右上角图标关闭、Escape、焦点返回；翻页先解码新图，再用 100ms 淡出与 180ms 淡入配合 16px 水平位移，图框高度过渡 200ms；系统开启减少动态效果时取消这些动画；保留原相册作为无 JS / Ctrl 或 Cmd 点击回退。只有 View Original 查看链接，不添加下载按钮或 download 属性。
 11. **Teaching**：每门课程包含正式英文课程名、教师、所属系所或学院和学期；教师在前，系所在后，以 · 分隔。有已授权评量时，在同一教师/系所段落末尾放 `· [Student Evaluations]`；中点仅在前后信息同行时显示，链接另起一行时隐藏中点，本地 PDF 新分页查看、不显示分数；合并多学期报告须在链接提示和来源清单写明实际学期，保留所有续页。Hardware Security 属于 Institute of Information Security。不同学院课程不能统一写成 CS。助教奖项括号采用 `Spring 2025` / `Fall 2025` 格式，表示教学对应学期；证书学年度第 1 学期转换为该学年开始公历年的 Fall，第 2 学期转换为下一公历年的 Spring。不得把次年 2 月或暑假颁发日期当成教学学期。Awards 日期列为颁发月份，说明与相册另注明实际学期。
@@ -552,7 +562,7 @@ Hobbies 用词参考了 [Siyuan Jiang 的学术主页](https://siyuanj.github.io
 | 文件 | 用途 |
 | --- | --- |
 | `content/profile.json` | 论文、奖项、月份、官方链接、课程和经历数据 |
-| `content/citations.json` | 22 篇 BibTeX 引用、来源与核对日期；需与论文数据同步维护 |
+| `content/citations.json` | 23 篇 BibTeX 引用、来源与核对日期；需与论文数据同步维护 |
 | `content/homepage.html` | 首页结构和 About / Hobbies 文案 |
 | `content/award-gallery.html` | 相册模板 |
 | `content/public-assets.json` | 明确审核的公开文件路径、来源和 SHA-256 |

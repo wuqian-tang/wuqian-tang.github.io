@@ -348,7 +348,7 @@ def render():
                 raise ValueError(f'Slides require an existing local PDF: {paper["id"]}')
     selected = [paper for paper in papers if paper['selected']]
     others = [paper for paper in papers if not paper['selected']]
-    selected.sort(key=lambda paper: ['p1','c17','c15','j1','j2','c3','c1'].index(paper['id']))
+    selected.sort(key=lambda paper: ['p2','p1','c17','c15','j1','j2','c3','c1'].index(paper['id']))
     other_html = ''
     for year in sorted({paper['year'] for paper in others}, reverse=True):
         other_html += f'<h3 class="publication-year">{year}</h3>'

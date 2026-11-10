@@ -1871,5 +1871,10 @@
     "bytes": 126887,
     "encoding": "RGB JPEG quality 95, subsampling 0 (4:4:4), optimize=True",
     "revision": "2026-10-25: replace the displayed github.io address with wqtang.com; retain the existing design"
+  },
+  {
+    "path": "files/papers/2026-arxiv-rtlrex.pdf",
+    "sha256": "4c0821906f9908108d1744749f25f0eac52ab5228cde3236abf5ec7c2e6f17b0",
+    "source": "https://arxiv.org/pdf/2611.10798v1"
   }
 ]
