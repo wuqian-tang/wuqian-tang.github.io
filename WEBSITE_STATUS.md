@@ -14,7 +14,7 @@
 - 通过官方 Pages API 原样重新保存 `build_type=workflow`，核对域名 `wqtang.com`、HTTPS 强制、证书及访问地址均未变化；没有切换到分支根目录发布。
 - `.github/workflows/pages.yml` 为 push／pull_request 增加相同路径筛选：`content/**`、`site/**`、`scripts/**`、`.github/workflows/pages.yml`。论文、网页、图片／PDF、构建脚本及发布配置仍触发检查与上线；README、维护记录、预览报告及方案文档不再触发重复部署。保留 workflow_dispatch 手动发布，沿用原 master 分支、权限、并发设置与 build／deploy 步骤。
 - 重新保存设置后的新 run `42790511080` 仍停在同步相同文件的阶段，已先通过 Pages API 取消该发布再替换验证包，避免叠加队列。首页模板增加不可见 HTML 注释 `Homepage release: 2026-11-10-pages-recovery`，使新包有可验证的实际文件变化；正文、链接和所有可见页面内容逐字保持，其余 325 个公开文件 SHA-256 一致。该验证用于区分重复包同步问题与普遍发布故障。
-- 验收报告为 `preview/pages-deploy-fix-validation.json`。YAML 解析、真实 c78e7ac 文档差异与正反触发样例、构建一致性、JS 语法及 diff 检查通过；除该不可见标记外，公开目录保持。将用新提交和新发布包验证 build 与 deploy 均成功，再核对正式首页及 RTLREX PDF；最终部署记录可单独提交，不再触发重复上线。
+- 验收报告为 `preview/pages-deploy-fix-validation.json`。YAML 解析、真实 c78e7ac 文档差异与正反触发样例、构建一致性、JS 语法及 diff 检查通过；除该不可见标记外，公开目录保持。实际结果：提交 `eee197e`、run `42791047608` 的 build 用时 17 秒、deploy 用时 20 秒，均 success，Pages API 为 succeed；线上首页带新标记，首页、RTLREX PDF、CV 和 sitemap 均 HTTP 200 且与本地逐字节一致。域名、HTTPS、证书与原翻译草案再次核对未变。此结果说明带实际内容变化的新包已恢复发布，不能据此断定 GitHub 内部卡顿的具体实现原因。最终部署记录单独提交，用真实 push 验证路径筛选不会重复上线。
 
 ## RTLREX 预印本与公开代码（2026-11-10）
 

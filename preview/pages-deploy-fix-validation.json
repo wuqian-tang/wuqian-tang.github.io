@@ -51,5 +51,57 @@
     ],
     "all_visible_page_content_preserved": true,
     "other_public_files_unchanged": 325
-  }
+  },
+  "successful_deployment": {
+    "run": 42791047608,
+    "url": "https://github.com/wuqian-tang/wuqian-tang.github.io/actions/runs/42791047608",
+    "commit": "eee197e13b710487513663af478514ea4fef895f",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "build",
+        "conclusion": "success",
+        "started_at": "2026-11-10T09:28:51Z",
+        "completed_at": "2026-11-10T09:29:08Z"
+      },
+      {
+        "name": "deploy",
+        "conclusion": "success",
+        "started_at": "2026-11-10T09:29:13Z",
+        "completed_at": "2026-11-10T09:29:33Z"
+      }
+    ],
+    "pages_status": "succeed",
+    "live_checks": [
+      {
+        "path": "/",
+        "status": 200,
+        "bytes": 171725,
+        "sha256": "c73bd6e1778239e13888588b1ef095e6e67b55c1f380668f206c02c2df00ab1f",
+        "matches_local": true
+      },
+      {
+        "path": "/files/papers/2026-arxiv-rtlrex.pdf",
+        "status": 200,
+        "bytes": 7270367,
+        "sha256": "4c0821906f9908108d1744749f25f0eac52ab5228cde3236abf5ec7c2e6f17b0",
+        "matches_local": true
+      },
+      {
+        "path": "/files/cv-wqtang.pdf",
+        "status": 200,
+        "bytes": 122453,
+        "sha256": "bd0e383020dbe4da38b006b14cf70a04dbda0be5d7ec4bc99a9842034a27419f",
+        "matches_local": true
+      },
+      {
+        "path": "/sitemap.xml",
+        "status": 200,
+        "bytes": 19151,
+        "sha256": "23b84f9009a4a58aca012503d6184e67eaf375af45420a0835599481a553e116",
+        "matches_local": true
+      }
+    ]
+  },
+  "local_translation_draft_preserved": true
 }
