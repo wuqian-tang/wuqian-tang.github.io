@@ -39,5 +39,17 @@
   "build_deploy_jobs_permissions_concurrency_unchanged": true,
   "unchanged_public_files": 326,
   "pages_settings_reapplied": "workflow",
-  "domain_https_certificate_preserved": true
+  "domain_https_certificate_preserved": true,
+  "reapplied_settings_trial": {
+    "run": 42790511080,
+    "observation": "The fresh request with identical public files remained in syncing_files; cancelled before replacing the test payload."
+  },
+  "changed_payload_trial": {
+    "marker": "<!-- Homepage release: 2026-11-10-pages-recovery -->",
+    "changed_public_files": [
+      "index.html"
+    ],
+    "all_visible_page_content_preserved": true,
+    "other_public_files_unchanged": 325
+  }
 }
