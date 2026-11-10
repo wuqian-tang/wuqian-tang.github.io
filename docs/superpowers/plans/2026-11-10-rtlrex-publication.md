@@ -51,8 +51,8 @@
 
 - [x] Exercise desktop/phone, light/dark, BibTeX clipboard, More/C1 deep links and new-tab PDF/Code links; inspect screenshots.
 - [x] Record results and follow-up rules, review both repository diffs, and commit only the reviewed files.
-- [ ] Push both repositories, wait for Pages success, then verify live homepage, PDF, README and citation bytes.
-- [ ] Fast-forward the original website checkout and preserve all preexisting local files.
+- [x] Push both repositories, wait for Pages success, then verify live homepage, PDF, README and citation bytes.
+- [x] Fast-forward the original website checkout and preserve all preexisting local files.
 
 ## Execution Record
 
@@ -63,3 +63,5 @@
 
 - Local verification: 10 responsive/theme cases, clipboard, new tabs, C1 deep links, native no-JavaScript disclosures, and official CFF schema validation passed.
 - RTLREX README/CFF pushed at `1f167a5b57e0d6c111f31ea0dfa5d0ebe40729ce`.
+- Published homepage content at `b1c45eec905868b874232aa0be32eb015861baac`; Pages run `42782879901` succeeded. Live homepage, PDF and sitemap match local bytes, and both live code-repository citation files match their committed copies.
+- Original website checkout fast-forwarded successfully; the preexisting translation draft remains unchanged.

@@ -248,5 +248,59 @@
     "Headless PDF new-tab check observes the popup and HTTP 200 PDF response, because this browser does not commit a standard PDF document URL. The original page remains open.",
     "No-JavaScript citation and More disclosures are exercised with native keyboard activation."
   ],
-  "code_commit": "1f167a5b57e0d6c111f31ea0dfa5d0ebe40729ce"
+  "code_commit": "1f167a5b57e0d6c111f31ea0dfa5d0ebe40729ce",
+  "deployment": {
+    "checked_on": "2026-11-10",
+    "website_commit": "b1c45eec905868b874232aa0be32eb015861baac",
+    "pages_run": 42782879901,
+    "pages_conclusion": "success",
+    "checks": [
+      {
+        "url": "https://wqtang.com/",
+        "status": 200,
+        "final_url": "https://wqtang.com/",
+        "bytes": 171672,
+        "sha256": "2d87dcfa96194df15d2ea37bde3a1f78c7f53fbfc10dc802506018f85e89c37e",
+        "content_type": "text/html; charset=utf-8",
+        "matches_local": true
+      },
+      {
+        "url": "https://wqtang.com/files/papers/2026-arxiv-rtlrex.pdf",
+        "status": 200,
+        "final_url": "https://wqtang.com/files/papers/2026-arxiv-rtlrex.pdf",
+        "bytes": 7270367,
+        "sha256": "4c0821906f9908108d1744749f25f0eac52ab5228cde3236abf5ec7c2e6f17b0",
+        "content_type": "application/pdf",
+        "matches_local": true
+      },
+      {
+        "url": "https://wqtang.com/sitemap.xml",
+        "status": 200,
+        "final_url": "https://wqtang.com/sitemap.xml",
+        "bytes": 19151,
+        "sha256": "23b84f9009a4a58aca012503d6184e67eaf375af45420a0835599481a553e116",
+        "content_type": "application/xml",
+        "matches_local": true
+      }
+    ],
+    "code": {
+      "commit": "1f167a5b57e0d6c111f31ea0dfa5d0ebe40729ce",
+      "checks": [
+        {
+          "path": "README.md",
+          "bytes": 6774,
+          "sha256": "2d6316180e1b6ae82128b98853398522db41b7780b1efd093fd1399b8a6c2a40",
+          "matches_local": true
+        },
+        {
+          "path": "CITATION.cff",
+          "bytes": 1210,
+          "sha256": "424d7dd23b9fd04a2baa0b53891cc16f8ca12ac1214e0d7df62e7df84c07eb1f",
+          "matches_local": true
+        }
+      ]
+    }
+  },
+  "local_checkout_synced": true,
+  "preexisting_translation_draft_preserved": true
 }

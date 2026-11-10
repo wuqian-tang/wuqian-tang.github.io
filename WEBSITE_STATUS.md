@@ -14,7 +14,7 @@
 - Recent News 新增经审核的文案：`RTLREX, our new preprint on LLM-guided RTL recovery, is now available on arXiv with open-source code.`，句末为 `[arXiv] [Code]`。日期只显示 Nov 2026；内部按提交日 2026-11-07 排在现有 2026-11-08 CAD Contest 之后。Research 的 Logic Synthesis & RTL Recovery 以 `[RTLREX · arXiv 2026]` 替换原 DATE 2024 引用，说明文字与另外两项证据保持。
 - 论文资源顺序为 arXiv / PDF / Code / BibTeX。正式代码为 `https://github.com/wuqian-tang/RTLREX`；官方 PDF 原样存入 `files/papers/2026-arxiv-rtlrex.pdf`，7,270,367 bytes，SHA-256 `4c0821906f9908108d1744749f25f0eac52ab5228cde3236abf5ec7c2e6f17b0`。manifest 增至 278 条，其余 277 条资产记录与文件字节保留。BibTeX 为 `Tang2026RTLREX` / `@misc`，包括完整六位作者、arXiv ID、cs.AR 类别与 preprint note。
 - RTLREX 仓库 README 顶部与引用段落补上 arXiv 链接及一致的 BibTeX；`CITATION.cff` 增加 preferred-citation，保留原软件作者、版本与 MIT 许可，并按官方 CFF 1.2.0 schema 校验。项目介绍继续使用 GitHub README。
-- 当前改动不涉及 CV、照片、获奖资料、About、CSS／JS、域名与 Google 验证标签。本地翻译草案保留。实施方案为 `docs/superpowers/plans/2026-11-10-rtlrex-publication.md`，验收报告为 `preview/rtlrex-publication-validation.json`。320／390／768／1440／2560px 深浅色共十组通过，BibTeX 实际复制、PDF／Code 新分页、C1 深链接、More 与无 JS 原生键盘展开通过，无横向溢出或脚本异常；CFF 官方 schema 校验通过。推送后核对 Pages、正式首页、PDF 与 GitHub 两份引用文件。
+- 当前改动不涉及 CV、照片、获奖资料、About、CSS／JS、域名与 Google 验证标签。本地翻译草案保留。实施方案为 `docs/superpowers/plans/2026-11-10-rtlrex-publication.md`，验收报告为 `preview/rtlrex-publication-validation.json`。320／390／768／1440／2560px 深浅色共十组通过，BibTeX 实际复制、PDF／Code 新分页、C1 深链接、More 与无 JS 原生键盘展开通过，无横向溢出或脚本异常；CFF 官方 schema 校验通过。网页内容提交 `b1c45ee`、代码仓库提交 `1f167a5` 已分别推送；Pages run `42782879901` 成功，正式首页、PDF、sitemap 均 HTTP 200 且与本地逐字节一致，GitHub README／CFF 也已核对一致。本地网站 master 已同步，原翻译草案 SHA-256 保持。
 - 后续如有 arXiv 修订版，先核对版本与作者，再同步本地 PDF、manifest、版本记录及引用；正式录用或 DOI 可用后，按正式书目信息更新，保持 P2 深链接可访问。
 
 ## DAC 2026 CV 待刊状态核对（2026-11-07）
