@@ -7,7 +7,15 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## RTLREX 预印本与公开代码（2026-11-10，最新）
+## GitHub Pages 重复部署超时修复（2026-11-10，最新）
+
+- 用户反馈 build 成功、deploy 十分钟后失败。run `42783141218` 两次尝试均已结束：第一次一直停留 `syncing_files`；第二次到 `finished_file_sync` 后停滞，最终由 `actions/deploy-pages@v5` 在 600000ms 超时并取消。Pages API 现为 `deployment_cancelled`，两条环境记录均为 failure，无仍在进行中的旧发布。
+- 成功的 `b1c45ee` 与失败的 `c78e7ac` 在 `site/` 中没有任何文件变化；后者只更新维护文档和验收记录。两个发布包均约 203MB，上传成功。现有 326 份公开文件与此前成功上线版本 SHA-256 相同，故故障发生在 GitHub Pages 发布阶段，未发现页面构建或资源内容错误。官方 v5 源码将 timeout 限制为最多 600000ms，单纯增大参数无法解决。
+- 通过官方 Pages API 原样重新保存 `build_type=workflow`，核对域名 `wqtang.com`、HTTPS 强制、证书及访问地址均未变化；没有切换到分支根目录发布。
+- `.github/workflows/pages.yml` 为 push／pull_request 增加相同路径筛选：`content/**`、`site/**`、`scripts/**`、`.github/workflows/pages.yml`。论文、网页、图片／PDF、构建脚本及发布配置仍触发检查与上线；README、维护记录、预览报告及方案文档不再触发重复部署。保留 workflow_dispatch 手动发布，沿用原 master 分支、权限、并发设置与 build／deploy 步骤。
+- 验收报告为 `preview/pages-deploy-fix-validation.json`。YAML 解析、真实 c78e7ac 文档差异与正反触发样例、构建一致性、JS 语法及 diff 检查通过；公开目录所有文件保持。将用新提交和新发布包验证 build 与 deploy 均成功，再核对正式首页及 RTLREX PDF；最终部署记录可单独提交，不再触发重复上线。
+
+## RTLREX 预印本与公开代码（2026-11-10）
 
 - 用户审核后授权更新网页，并补齐 GitHub 论文链接。新增 P2：`RTLREX: LLM-Guided Framework for Exact High-Level RTL Recovery`，arXiv `2611.10798`，v1 首次提交 2026-11-07，14 页。作者顺序为 Wuqian Tang、Fangzhou Liu、Ruijie Wang、TingTing Hwang、Bei Yu、Chun-Yao Wang；本人为第一作者与通讯作者，网页仅按既有方式加粗姓名，不添加共同一作星号。
 - 状态为 arXiv / Preprint / 2026，不虚构正式会议或待刊状态。默认 Selected 仍为四篇，顺序为 RTLREX、TAPCO、HyPAS、CB-EVO；C1（DATE 2024）移入 More，原编号、DOI、PDF 和深链接保持。论文总数为 23，More 为 19；P1（Trinity）仍在 More。

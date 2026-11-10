@@ -3,8 +3,18 @@ name: Build and deploy academic homepage
 on:
   push:
     branches: [master]
+    paths:
+      - 'content/**'
+      - 'site/**'
+      - 'scripts/**'
+      - '.github/workflows/pages.yml'
   pull_request:
     branches: [master]
+    paths:
+      - 'content/**'
+      - 'site/**'
+      - 'scripts/**'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:

@@ -1,0 +1,43 @@
+{
+  "checked_on": "2026-11-10",
+  "failed_run": 42783141218,
+  "failed_attempts": 2,
+  "observed_stages": [
+    "syncing_files",
+    "finished_file_sync"
+  ],
+  "failure": "Timeout reached after 600000 ms while waiting for GitHub Pages",
+  "build_and_upload": "passed",
+  "public_content_difference_from_successful_commit": [],
+  "workflow_path_filters": [
+    "content/**",
+    "site/**",
+    "scripts/**",
+    ".github/workflows/pages.yml"
+  ],
+  "actual_docs_only_commit_avoids_deployment": [
+    "WEBSITE_STATUS.md",
+    "docs/superpowers/plans/2026-11-10-rtlrex-publication.md",
+    "preview/rtlrex-publication-validation.json"
+  ],
+  "publication_change_paths_trigger": [
+    "content/profile.json",
+    "content/projects/trinity/index.html",
+    "site/index.html",
+    "site/files/papers/2026-arxiv-rtlrex.pdf",
+    "site/assets/css/main.css",
+    "scripts/build.py",
+    ".github/workflows/pages.yml"
+  ],
+  "maintenance_only_paths_excluded": [
+    "README.md",
+    "WEBSITE_STATUS.md",
+    "preview/rtlrex-publication-validation.json",
+    "docs/superpowers/plans/2026-11-10-rtlrex-publication.md"
+  ],
+  "manual_dispatch_preserved": true,
+  "build_deploy_jobs_permissions_concurrency_unchanged": true,
+  "unchanged_public_files": 326,
+  "pages_settings_reapplied": "workflow",
+  "domain_https_certificate_preserved": true
+}
