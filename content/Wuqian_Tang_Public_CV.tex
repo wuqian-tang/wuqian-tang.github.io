@@ -1,8 +1,9 @@
-% LuaLaTeX. Full CV; the 2Page wrapper reproduces the original CV with normal-size labels.
+% LuaLaTeX. Full and selected two-page CVs share grouped C/J/P publications.
 \documentclass[11pt]{article}
 \usepackage[paperwidth=595.32bp,paperheight=841.92bp,left=36bp,right=36bp,
             top=42.55bp,bottom=36bp]{geometry}
 \usepackage{fontspec,xcolor}
+\usepackage[hidelinks,unicode]{hyperref}
 \defaultfontfeatures{Renderer=HarfBuzz,RawFeature=-liga}
 \IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{TeX Gyre Termes}}
 \definecolor{heading}{HTML}{0070C0}
@@ -40,13 +41,19 @@
   \fi\endgroup}
 % Label, authors, full title, full venue, acronym, complete publication details.
 % Justify both edges; the last line keeps natural spacing. All lines share the left edge.
-\newcommand{\publication}[6]{\par\nointerlineskip\moveright10.56bp\vbox{\hsize=\dimexpr\textwidth-10.56bp\relax
+\newcommand{\publicationblock}[1]{\par\nointerlineskip\moveright10.56bp\vbox{\hsize=\dimexpr\textwidth-10.56bp\relax
   \ifallpapers\fontsize{11.04bp}{14.8bp}\selectfont\fi
   \leftskip=0pt\rightskip=0pt\parfillskip=0pt plus1fil
   \spaceskip=2.76bp plus3bp minus1.5bp\hyphenpenalty=10000
   \ifallpapers\frenchspacing\emergencystretch=20bp\tolerance=3000\fi
-  \noindent\strut[#1]\ #2, “#3”, \textit{#4 (\textbf{#5})}, #6.\strut\par}
+  \noindent\strut#1\strut\par}
   \vskip\ifallpapers5bp\else7.68bp\fi}
+
+\newcommand{\publication}[6]{\publicationblock{[#1]\ #2, “#3”, \textit{#4 (\textbf{#5})}, #6.}}
+\newcommand{\preprint}[5]{\publicationblock{[#1]\ #2, “#3”, \textit{arXiv preprint} \href{https://arxiv.org/abs/#4}{arXiv:#4}, #5.}}
+% Keep each group heading with its first indivisible publication block.
+\newcommand{\publicationsubsection}[1]{\par\addpenalty{-200}\vskip4bp\nointerlineskip
+  \hbox{\hskip10.56bp\strut\textbf{#1}}\nobreak\vskip4bp\nobreak}
 
 \begin{document}
 \fontsize{11.04bp}{15.84bp}\selectfont
@@ -89,25 +96,12 @@
 \award{National Tsing Hua University Mainland China Student Scholarship}{Sep. 2021 – Present}
 \award{Silver Award in International Collegiate Programming Contest (ICPC Regional)}{Nov. 2020}
 
-% The full bibliography moves to the end; 2Page keeps the original order.
+% Full bibliography follows experience; the two-page version keeps its section position.
 \newcommand{\publicationsection}{%
 \cvsection[7.44bp]{\ifallpapers Publications\else Selected Publications\fi}\vskip-3.1bp
 \row{\gray{An asterisk (*) indicates equal contribution.}}{}
-\vskip7.68bp
-\publication{J2}
-  {Fangzhou Liu, \me, Zehua Pei, Ziyang Yu, Haisheng Zheng, Zhuolun He, Mengjia Dai, Tinghuan Chen, \br Bei Yu}
-  {CB-EVO: Contextual Bandit Tuning with Evolutionary Search for Logic Synthesis}
-  {ACM Transactions on \br Design Automation of Electronic Systems}{TODAES}
-  {vol. 31, no. 6, pp. 119:1–119:26, 2026}
-
-\publication{J1}
-  {Yuh-Pyng Shieh, Shao-Hang Hsu, \me, Wei-Ying Ke, Po-sheng Ou, Yu-wei Chang, Ming-chorng Hwang}
-  {The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions}
-  {Journal of Digital Archives and Digital Humanities}{DADH}
-  {vol. 15, pp. 1–35, Apr. 2025 (in Chinese)}
-
-% The 2Page version preserves the original page break.
-\ifallpapers\else\newpage\fi
+\vskip3.68bp
+\publicationsubsection{Conference Papers}
 \ifallpapers
 \publication{C19}
   {Yu-Cheng He, Han-Wen Tsao, Yung-Chih Chen, Yi-Ting Li, \me, Jian-Meng Yang, Chun-Yao Wang}
@@ -137,6 +131,7 @@
   {\smalltitle{HyPAS: A Hybrid Optimization Framework for Placement and Sizing Co-Optimization}}
   {ACM/IEEE \br Design Automation Conference}{DAC}
   {Long Beach, California, USA, Jul. 26–29, 2026}
+\ifallpapers
 \publication{C\ifallpapers14\else5\fi}
   {Chi-Wei Chen, Yi-Ting Li, \me, Yung-Chih Chen, Jian-Meng Yang, Chun-Yao Wang}
   {Learning to \br Approximate: Circuit Learning and Deep Reinforcement Learning for Approximate Logic Synthesis with an Error \br Rate Guarantee}
@@ -147,6 +142,7 @@
   {A \br Mathematical Exploration to Equivalence Checking of Quantum Circuits}
   {IEEE/ACM Design, Automation and Test \br in Europe}{DATE}
   {Verona, Italy, Apr. 20–22, 2026}
+\fi
 \ifallpapers
 \publication{C12}
   {Zi-Wei Huang, Yi-Ting Li, \me, Liang-Chia Cheng, Yung-Chih Chen, Chun-Yao Wang}
@@ -179,11 +175,13 @@
   {ACM Great Lakes Symposium on VLSI}{GLSVLSI}
   {New Orleans, Louisiana, USA, Jun. 30 – Jul. 2, 2025}
 \fi
+\ifallpapers
 \publication{C\ifallpapers6\else3\fi}
   {Yu-Che Lee, Yu-Hsuan Chen, Yu-Chen Cheng, Yong-Fong Chang, Jia Wei Lin, Hsun-Wei Pao, Yung-Chih Chen, \br Yi-Ting Li, \me, Shih-Chieh Chang, Chun-Yao Wang}
   {Real-Time Dynamic IR-drop Prediction for IR \br ECO}
   {ACM/IEEE Design Automation Conference}{DAC}
   {San Francisco, \ifallpapers California, \fi USA, Jun. 22–25, 2025}
+\fi
 \ifallpapers
 \publication{C5}
   {Kai-Po Hsu, Tsung-Han Lai, Yi-Ting Li, \me, Yun-Ju Lee, Yung-Chih Chen, Wen-Hsin Chiu, Chun-Yao Wang}
@@ -213,6 +211,35 @@
   {A Hybrid Approach to Reverse \br Engineering on Combinational Circuits}
   {IEEE/ACM Design, Automation and Test in Europe}{DATE}
   {Valencia, \br Spain, Mar. 25–27, 2024}
+
+\publicationsubsection{Journal Papers}
+\publication{J2}
+  {Fangzhou Liu, \me, Zehua Pei, Ziyang Yu, Haisheng Zheng, Zhuolun He, Mengjia Dai, Tinghuan Chen, \br Bei Yu}
+  {CB-EVO: Contextual Bandit Tuning with Evolutionary Search for Logic Synthesis}
+  {ACM Transactions on \br Design Automation of Electronic Systems}{TODAES}
+  {vol. 31, no. 6, pp. 119:1–119:26, 2026}
+
+\publication{J1}
+  {Yuh-Pyng Shieh, Shao-Hang Hsu, \me, Wei-Ying Ke, Po-sheng Ou, Yu-wei Chang, Ming-chorng Hwang}
+  {The Lunar-Month-Interval Algorithm for Dating Oracle Bone Inscriptions}
+  {Journal of Digital Archives and Digital Humanities}{DADH}
+  {vol. 15, pp. 1–35, Apr. 2025 (in Chinese)}
+
+\publicationsubsection{Preprints}
+\preprint{P3}
+  {\me, Zixiao Wang, Che-Chien Lin, Fong-Hua Fu, Laura Angelica Shion-Korsak, Xinyun Zhang, Bei Yu, Chun-Yao Wang}
+  {TAPCO-G: LLM-Guided Design-Adaptive Timing and Power Co-Optimization with Graph-Based Physical Priors}
+  {2611.13931}{2026}
+\preprint{P2}
+  {\me, Fangzhou Liu, Ruijie Wang, TingTing Hwang, Bei Yu, Chun-Yao Wang}
+  {RTLREX: LLM-Guided Framework for Exact High-Level RTL Recovery}
+  {2611.10798}{2026}
+\ifallpapers
+\preprint{P1}
+  {Shih-Ying Yeh*, Tzu-Sian Wang*, Xuehai Wang, Jia-Hua Lee, Daniel Z. Kaplan, Ming-Qi Xu, \me, Chun-Yao Wang, Shang-Hong Lai, Chun-Yi Lee}
+  {Trinity: One Differentiable Physics for Training, Refining and Scoring Generative Floorplanners}
+  {2610.04957}{2026}
+\fi
 }
 \ifallpapers\else\publicationsection\fi
 

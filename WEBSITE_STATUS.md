@@ -1,13 +1,26 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-11-10。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-11-11。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wqtang.com](https://wqtang.com/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## GitHub Pages 重复部署超时修复（2026-11-10，最新）
+## Research 重分组、TAPCO-G 与 CV 同步（2026-11-11，最新）
+
+- 用户已审核并授权执行、同步本地 CV 和推送两个仓库。Research 保留 AI for EDA 总主线及原有三条编号卡片，改为 ML for Physical Design、ML for Logic Synthesis、LLM-Guided RTL Recovery。每组仍为一句英文说明，不增加科研图片或改变全站样式。
+- 01 将原算法发现和物理设计合并，独立链接 TAPCO（C17）、TAPCO-G（P3）、HyPAS（C15），不放比赛。02 链接 CB-EVO（J2）、IWLS 2026、CAD Contest 2024 Problem A（Reinforcement Logic Optimization for a General Cost Function）。03 链接 RTLREX（P2）、DATE 2024（C1）、CAD Contest 2022 Problem A（Learning Arithmetic Operations from Gate-Level Circuit）。引用继续使用稳定页内锚点，More 内目标自动展开。
+- 新增 P3：TAPCO-G: LLM-Guided Design-Adaptive Timing and Power Co-Optimization with Graph-Based Physical Priors；arXiv 2611.13931，v1 首次提交 2026-11-10，27 页。八位作者顺序按官方 arXiv HTML 和 PDF 核对，新稿未标共同一作，不继承 TAPCO 会议版星号；人名采用完整英文写法，Laura Angelica 为原稿带重音名字的 ASCII 转写。
+- P3 状态为 Preprint，独立放入 More / 2026，不替换会议版，不宣称期刊录用。资源为 arXiv / PDF / BibTeX；没有经核实的独立代码链接，不补空链接。PDF 原样本地托管为 files/papers/2026-arxiv-tapco-g.pdf，905,764 bytes；引文为 Tang2026TAPCOG / @misc，包含 arXiv ID、cs.AR 类别与 preprint note。官方原稿和网页元数据分别核验，不因 API 收录延迟而捏造出版记录。
+- Selected 仍为 RTLREX、TAPCO、HyPAS、CB-EVO 四篇；论文共 24 篇，More 为 20。Recent News 首条为 TAPCO-G arXiv 上线消息，日期显示 Nov 2026，内部日期为 2026-11-10，位于 CAD Contest 与 RTLREX 消息之前。
+- CV 分为 Conference Papers → Journal Papers → Preprints，组内倒序，编号沿用。公开完整 CV 为 19C + 2J + 3P，私人 Full 为 19C + 1J + 3P；私人版原来未收录甲骨文期刊，继续保持该范围。预印本为 P3/TAPCO-G、P2/RTLREX、P1/Trinity，arXiv 编号可点击，未录用稿不写 to appear。两份完整 CV 自然延展至四页，不缩字号。
+- 本地两页版保留六篇代表作：TAPCO、HyPAS、DATE 2024、CB-EVO、TAPCO-G、RTLREX。删去的旧精选仍完整保存在 Full。保留旧版 C7/C6/C1 与 J2 编号，不按显示位置重编号；新预印本使用稳定 P3/P2。旧手动断行改为自然换行；两页版的 Selected Publications 与 Full 一样放在经历／技能之后，避免标题孤立在前一页。保留原字号与两页成品。Original Word/PDF 和历史申请归档不改写。
+- 公开 CV 保留两邮箱且无电话；私人 CV 保持原有联系方式。公开三个地址 cv-wqtang.pdf、cv.pdf、Wuqian_Tang_CV.pdf 内容相同。同步本地 CV 源文件/Full/2Page、说明、当前求职和申请副本及现用 ZIP。公开部署只含公开版 CV，私人 CV 不进入网站。
+- 实施方案为 docs/superpowers/plans/2026-11-11-research-cv.md；验收记录为 preview/research-cv-validation.json。发布结果在本节后续补齐。
+- 后续：TAPCO-G 如有新版本、录用或独立代码，再核对作者、共同贡献、版本、PDF 和正式出处后更新；维持 P3 与已有 C17 记录独立。公开图片/文件清单必须同步 SHA-256；不因新增预印本移除已发表论文的 DOI。
+
+## GitHub Pages 重复部署超时修复（2026-11-10）
 
 - 用户反馈 build 成功、deploy 十分钟后失败。run `42783141218` 两次尝试均已结束：第一次一直停留 `syncing_files`；第二次到 `finished_file_sync` 后停滞，最终由 `actions/deploy-pages@v5` 在 600000ms 超时并取消。Pages API 现为 `deployment_cancelled`，两条环境记录均为 failure，无仍在进行中的旧发布。
 - 成功的 `b1c45ee` 与失败的 `c78e7ac` 在 `site/` 中没有任何文件变化；后者只更新维护文档和验收记录。两个发布包均约 203MB，上传成功。现有 326 份公开文件与此前成功上线版本 SHA-256 相同，故故障发生在 GitHub Pages 发布阶段，未发现页面构建或资源内容错误。官方 v5 源码将 timeout 限制为最多 600000ms，单纯增大参数无法解决。

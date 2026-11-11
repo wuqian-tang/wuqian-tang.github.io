@@ -6,7 +6,7 @@
   "university": "National Tsing Hua University",
   "location": "Hsinchu, Taiwan",
   "email": "wqtang@cs.nthu.edu.tw",
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "site_url": "https://wqtang.com",
   "profiles": [
     {
@@ -41,53 +41,72 @@
   "research_intro": "I develop AI-driven algorithms for faster, smaller, and more energy-efficient circuits.",
   "research": [
     {
-      "title": "LLM-Guided Algorithm Discovery",
-      "description": "Using LLMs and circuit feedback to discover and adapt optimization algorithms.",
+      "title": "ML for Physical Design",
+      "description": "Combining LLM-guided algorithm discovery and learned models to optimize timing, power, placement, and cell sizing.",
       "links": [
         {
           "label": "TAPCO · MLCAD 2026",
           "paper": "c17"
         },
         {
-          "label": "MLCAD Contest 2026",
-          "award": "mlcad-2026"
+          "label": "TAPCO-G · arXiv 2026",
+          "paper": "p3"
+        },
+        {
+          "label": "HyPAS · DAC 2026",
+          "paper": "c15"
         }
       ]
     },
     {
-      "title": "Logic Synthesis & RTL Recovery",
-      "description": "Recovering RTL from gate-level circuits and learning synthesis strategies that reduce circuit complexity.",
+      "title": "ML for Logic Synthesis",
+      "description": "Combining online learning and evolutionary search to discover synthesis strategies that produce smaller, faster circuits.",
       "links": [
         {
           "label": "CB-EVO · TODAES 2026",
           "paper": "j2"
         },
         {
-          "label": "RTLREX · arXiv 2026",
-          "paper": "p2"
-        },
-        {
           "label": "IWLS Contest 2026",
           "award": "iwls-2026"
+        },
+        {
+          "label": "CAD Contest 2024 · Problem A",
+          "award": "iccad-contest-2024"
         }
       ]
     },
     {
-      "title": "Physical Design Automation",
-      "description": "Combining learned models and optimization to improve placement, cell sizing, timing, and power.",
+      "title": "LLM-Guided RTL Recovery",
+      "description": "Recovering compact, functionally equivalent RTL from gate-level circuits with LLMs and formal verification.",
       "links": [
         {
-          "label": "HyPAS · DAC 2026",
-          "paper": "c15"
+          "label": "RTLREX · arXiv 2026",
+          "paper": "p2"
         },
         {
-          "label": "CAD Contest 2025 · Problem C",
-          "award": "iccad-contest-2025-c"
+          "label": "DATE 2024",
+          "paper": "c1"
+        },
+        {
+          "label": "CAD Contest 2022 · Problem A",
+          "award": "iccad-contest-2022"
         }
       ]
     }
   ],
   "news": [
+    {
+      "date": "Nov 2026",
+      "datetime": "2026-11-10",
+      "text": "TAPCO-G, our new preprint on LLM-guided timing and power co-optimization, is now available on arXiv.",
+      "resources": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.13931"
+        }
+      ]
+    },
     {
       "date": "Nov 2026",
       "datetime": "2026-11-08",
@@ -212,6 +231,32 @@
     }
   ],
   "publications": [
+    {
+      "id": "p3",
+      "label": "P3",
+      "type": "preprint",
+      "authors": "Wuqian Tang, Zixiao Wang, Che-Chien Lin, Fong-Hua Fu, Laura Angelica Shion-Korsak, Xinyun Zhang, Bei Yu, Chun-Yao Wang",
+      "title": "TAPCO-G: LLM-Guided Design-Adaptive Timing and Power Co-Optimization with Graph-Based Physical Priors",
+      "venue": "arXiv",
+      "acronym": "arXiv",
+      "year": 2026,
+      "details": "arXiv:2611.13931 · Submitted Nov. 10, 2026",
+      "status": "Preprint",
+      "selected": false,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.13931"
+        },
+        {
+          "label": "PDF",
+          "url": "files/papers/2026-arxiv-tapco-g.pdf"
+        }
+      ],
+      "pdf_source": "https://arxiv.org/pdf/2611.13931v1",
+      "arxiv_id": "2611.13931",
+      "version": "v1"
+    },
     {
       "id": "p2",
       "label": "P2",

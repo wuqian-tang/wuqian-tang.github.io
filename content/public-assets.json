@@ -1373,9 +1373,10 @@
   },
   {
     "path": "files/Wuqian_Tang_CV.pdf",
-    "sha256": "bd0e383020dbe4da38b006b14cf70a04dbda0be5d7ec4bc99a9842034a27419f",
+    "sha256": "f18c85c66d6cf295c46d816f8a44651bee4fa2d9245e88ef744a4ed7eb6e8350",
     "compatibility_alias_for": "files/cv-wqtang.pdf",
-    "bytes": 122453
+    "bytes": 124764,
+    "source": "Public CV source content/Wuqian_Tang_Public_CV.tex; C/J/P groups and arXiv preprints synchronized 2026-11-11; two public email addresses, no telephone."
   },
   {
     "path": "files/papers/C1-Reverse-Engineering.pdf",
@@ -1700,9 +1701,9 @@
   },
   {
     "path": "files/cv-wqtang.pdf",
-    "sha256": "bd0e383020dbe4da38b006b14cf70a04dbda0be5d7ec4bc99a9842034a27419f",
-    "source": "Owner-approved public CV compiled from content/Wuqian_Tang_Public_CV.tex; journal numbering corrected to chronological J1 (DADH 2025) and J2 (TODAES 2026) on 2026-10-09",
-    "bytes": 122453
+    "sha256": "f18c85c66d6cf295c46d816f8a44651bee4fa2d9245e88ef744a4ed7eb6e8350",
+    "source": "Public CV source content/Wuqian_Tang_Public_CV.tex; C/J/P groups and arXiv preprints synchronized 2026-11-11; two public email addresses, no telephone.",
+    "bytes": 124764
   },
   {
     "path": "files/slides/2026-mlcad-tapco-slides.pdf",
@@ -1828,9 +1829,10 @@
   },
   {
     "path": "files/cv.pdf",
-    "sha256": "bd0e383020dbe4da38b006b14cf70a04dbda0be5d7ec4bc99a9842034a27419f",
-    "bytes": 122453,
-    "compatibility_alias_for": "files/cv-wqtang.pdf"
+    "sha256": "f18c85c66d6cf295c46d816f8a44651bee4fa2d9245e88ef744a4ed7eb6e8350",
+    "bytes": 124764,
+    "compatibility_alias_for": "files/cv-wqtang.pdf",
+    "source": "Public CV source content/Wuqian_Tang_Public_CV.tex; C/J/P groups and arXiv preprints synchronized 2026-11-11; two public email addresses, no telephone."
   },
   {
     "path": "assets/images/social-preview-20261025-v1.png",
@@ -1876,5 +1878,11 @@
     "path": "files/papers/2026-arxiv-rtlrex.pdf",
     "sha256": "4c0821906f9908108d1744749f25f0eac52ab5228cde3236abf5ec7c2e6f17b0",
     "source": "https://arxiv.org/pdf/2611.10798v1"
+  },
+  {
+    "path": "files/papers/2026-arxiv-tapco-g.pdf",
+    "sha256": "ca4f99248505e24685f72d83cf92ef3ca4053bc69d2e2109934579e3c387fd7c",
+    "source": "Official arXiv v1 author manuscript: https://arxiv.org/pdf/2611.13931v1 (TAPCO-G, 27 pages; verified 2026-11-11)",
+    "bytes": 905764
   }
 ]

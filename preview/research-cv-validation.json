@@ -1,0 +1,381 @@
+{
+  "date": "2026-11-11",
+  "scope": "Approved research regrouping, TAPCO-G and grouped public/local CVs",
+  "publication_count": 24,
+  "selected": [
+    "p2",
+    "j2",
+    "c17",
+    "c15"
+  ],
+  "more_count": 20,
+  "news_count": 8,
+  "reviewed_asset_count": 279,
+  "deployment_file_count": 327,
+  "research": [
+    {
+      "title": "ML for Physical Design",
+      "description": "Combining LLM-guided algorithm discovery and learned models to optimize timing, power, placement, and cell sizing.",
+      "links": [
+        {
+          "label": "TAPCO · MLCAD 2026",
+          "paper": "c17"
+        },
+        {
+          "label": "TAPCO-G · arXiv 2026",
+          "paper": "p3"
+        },
+        {
+          "label": "HyPAS · DAC 2026",
+          "paper": "c15"
+        }
+      ]
+    },
+    {
+      "title": "ML for Logic Synthesis",
+      "description": "Combining online learning and evolutionary search to discover synthesis strategies that produce smaller, faster circuits.",
+      "links": [
+        {
+          "label": "CB-EVO · TODAES 2026",
+          "paper": "j2"
+        },
+        {
+          "label": "IWLS Contest 2026",
+          "award": "iwls-2026"
+        },
+        {
+          "label": "CAD Contest 2024 · Problem A",
+          "award": "iccad-contest-2024"
+        }
+      ]
+    },
+    {
+      "title": "LLM-Guided RTL Recovery",
+      "description": "Recovering compact, functionally equivalent RTL from gate-level circuits with LLMs and formal verification.",
+      "links": [
+        {
+          "label": "RTLREX · arXiv 2026",
+          "paper": "p2"
+        },
+        {
+          "label": "DATE 2024",
+          "paper": "c1"
+        },
+        {
+          "label": "CAD Contest 2022 · Problem A",
+          "award": "iccad-contest-2022"
+        }
+      ]
+    }
+  ],
+  "browser": {
+    "viewports": [
+      {
+        "width": 320,
+        "colorScheme": "light",
+        "researchLinks": 9,
+        "noOverflow": true,
+        "noScriptErrors": true,
+        "newTabAttributes": true
+      },
+      {
+        "width": 320,
+        "colorScheme": "dark",
+        "researchLinks": 9,
+        "noOverflow": true,
+        "noScriptErrors": true,
+        "newTabAttributes": true
+      },
+      {
+        "width": 390,
+        "colorScheme": "light",
+        "researchLinks": 9,
+        "noOverflow": true,
+        "noScriptErrors": true,
+        "newTabAttributes": true
+      },
+      {
+        "width": 390,
+        "colorScheme": "dark",
+        "researchLinks": 9,
+        "noOverflow": true,
+        "noScriptErrors": true,
+        "newTabAttributes": true
+      },
+      {
+        "width": 768,
+        "colorScheme": "light",
+        "researchLinks": 9,
+        "noOverflow": true,
+        "noScriptErrors": true,
+        "newTabAttributes": true
+      },
+      {
+        "width": 768,
+        "colorScheme": "dark",
+        "researchLinks": 9,
+        "noOverflow": true,
+        "noScriptErrors": true,
+        "newTabAttributes": true
+      },
+      {
+        "width": 1440,
+        "colorScheme": "light",
+        "researchLinks": 9,
+        "noOverflow": true,
+        "noScriptErrors": true,
+        "newTabAttributes": true
+      },
+      {
+        "width": 1440,
+        "colorScheme": "dark",
+        "researchLinks": 9,
+        "noOverflow": true,
+        "noScriptErrors": true,
+        "newTabAttributes": true
+      },
+      {
+        "width": 2560,
+        "colorScheme": "light",
+        "researchLinks": 9,
+        "noOverflow": true,
+        "noScriptErrors": true,
+        "newTabAttributes": true
+      },
+      {
+        "width": 2560,
+        "colorScheme": "dark",
+        "researchLinks": 9,
+        "noOverflow": true,
+        "noScriptErrors": true,
+        "newTabAttributes": true
+      }
+    ],
+    "copies": [
+      {
+        "width": 390,
+        "paper": "p3",
+        "exact": true
+      },
+      {
+        "width": 1440,
+        "paper": "p3",
+        "exact": true
+      }
+    ],
+    "navigation": [
+      {
+        "width": 390,
+        "target": "#paper-p3",
+        "visible": true
+      },
+      {
+        "width": 390,
+        "target": "#paper-c1",
+        "visible": true
+      },
+      {
+        "width": 390,
+        "target": "#award-iccad-contest-2022",
+        "visible": true
+      },
+      {
+        "width": 1440,
+        "target": "#paper-p3",
+        "visible": true
+      },
+      {
+        "width": 1440,
+        "target": "#paper-c1",
+        "visible": true
+      },
+      {
+        "width": 1440,
+        "target": "#award-iccad-contest-2022",
+        "visible": true
+      }
+    ],
+    "newTab": true,
+    "noJs": true
+  },
+  "cv": {
+    "public": {
+      "pages": 4,
+      "bytes": 124764,
+      "sha256": "f18c85c66d6cf295c46d816f8a44651bee4fa2d9245e88ef744a4ed7eb6e8350",
+      "labels": [
+        "[C19]",
+        "[C18]",
+        "[C17]",
+        "[C16]",
+        "[C15]",
+        "[C14]",
+        "[C13]",
+        "[C12]",
+        "[C11]",
+        "[C10]",
+        "[C9]",
+        "[C8]",
+        "[C7]",
+        "[C6]",
+        "[C5]",
+        "[C4]",
+        "[C3]",
+        "[C2]",
+        "[C1]",
+        "[J2]",
+        "[J1]",
+        "[P3]",
+        "[P2]",
+        "[P1]"
+      ],
+      "arxiv_links": [
+        "https://arxiv.org/abs/2611.13931",
+        "https://arxiv.org/abs/2611.10798",
+        "https://arxiv.org/abs/2610.04957"
+      ],
+      "bounds": [
+        [
+          36.0,
+          45.95,
+          559.34,
+          799.17
+        ],
+        [
+          36.0,
+          44.95,
+          559.64,
+          772.35
+        ],
+        [
+          46.35,
+          44.49,
+          559.39,
+          805.42
+        ],
+        [
+          46.56,
+          45.18,
+          559.38,
+          189.56
+        ]
+      ],
+      "warnings": []
+    },
+    "private-full": {
+      "pages": 4,
+      "bytes": 124103,
+      "sha256": "69c1307eb961eccbc9813331a419d8fa4a481f6960f0159acd43425f2c2fe0bd",
+      "labels": [
+        "[C19]",
+        "[C18]",
+        "[C17]",
+        "[C16]",
+        "[C15]",
+        "[C14]",
+        "[C13]",
+        "[C12]",
+        "[C11]",
+        "[C10]",
+        "[C9]",
+        "[C8]",
+        "[C7]",
+        "[C6]",
+        "[C5]",
+        "[C4]",
+        "[C3]",
+        "[C2]",
+        "[C1]",
+        "[J2]",
+        "[P3]",
+        "[P2]",
+        "[P1]"
+      ],
+      "arxiv_links": [
+        "https://arxiv.org/abs/2611.13931",
+        "https://arxiv.org/abs/2611.10798",
+        "https://arxiv.org/abs/2610.04957"
+      ],
+      "bounds": [
+        [
+          36.0,
+          45.95,
+          559.34,
+          799.17
+        ],
+        [
+          36.0,
+          44.95,
+          559.64,
+          804.32
+        ],
+        [
+          46.35,
+          44.5,
+          559.39,
+          733.3
+        ],
+        [
+          46.56,
+          45.18,
+          559.38,
+          276.21
+        ]
+      ],
+      "warnings": []
+    },
+    "private-short": {
+      "pages": 2,
+      "bytes": 114968,
+      "sha256": "810e1741e8ebf6855c3a0792328f4f9c91d7059ea806d4bf48a8269e9ba5a3b6",
+      "labels": [
+        "[C7]",
+        "[C6]",
+        "[C1]",
+        "[J2]",
+        "[P3]",
+        "[P2]"
+      ],
+      "arxiv_links": [
+        "https://arxiv.org/abs/2611.13931",
+        "https://arxiv.org/abs/2611.10798"
+      ],
+      "bounds": [
+        [
+          36.0,
+          45.95,
+          559.34,
+          799.24
+        ],
+        [
+          36.0,
+          44.95,
+          559.43,
+          737.47
+        ]
+      ],
+      "warnings": []
+    }
+  },
+  "preservation": {
+    "existing_publications_unchanged": true,
+    "existing_news_unchanged": true,
+    "non_cv_registered_assets_unchanged": true,
+    "asset_byte_counts_checked": true,
+    "canonical_and_google_verification_retained": true,
+    "sitemap_dates_valid": true,
+    "existing_css_js_and_workflow_unchanged": true
+  },
+  "review": {
+    "independent": true,
+    "critical": 0,
+    "important": 0,
+    "fixed": [
+      "Refresh CV manifest byte counts",
+      "Keep short CV publication heading with its first entry by matching Full section order"
+    ]
+  },
+  "deployment": {
+    "status": "pending push and live verification"
+  }
+}
