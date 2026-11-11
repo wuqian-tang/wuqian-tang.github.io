@@ -7,7 +7,13 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## Research 总述使用动词开头（2026-11-11，最新）
+## TAPCO-G 作者姓名重音更正（2026-11-11，最新）
+
+- 用户指出 TAPCO-G 的 Laura Angelica 漏了 e 上的重音。网页作者与公开／本地 CV 统一更正为 Laura Angélica Shion-Korsak，与 TAPCO 和原稿一致；不再移除人名重音。
+- BibTeX 使用与 TAPCO 相同的 LaTeX 重音写法；复制结果保留重音命令，避免引用姓名丢失符号。作者顺序、共同贡献标记及其余论文数据保持。
+- 重新编译公开 CV、私人 Full/2Page，并同步公开三个 CV 地址、现用求职／申请副本、两份 ZIP 和 manifest。验收记录为 preview/tapcog-author-accent-validation.json：四组手机／桌面深浅色显示与实际 BibTeX 复制通过，三套 PDF 编译无警告，逐字核对除 é 外内容和页数一致；其他 323 个部署文件保持。现用 CV 副本与 ZIP 同步，私人联系方式保留在私人版。
+
+## Research 总述使用动词开头（2026-11-11）
 
 - 用户确认将 Research Interests 总述改为 `Developing AI-driven algorithms for faster, smaller, and more energy-efficient circuits.`，以 Developing 开头；前两个方向刚完成的说明精简保持。
 - 数据源、生成首页、README 与现行格式规范同步。标题、顺序、九个证据链接、论文和 CV 沿用；只替换这句总述。验收记录为 preview/research-intro-validation.json：320／390／768／1440／2560px 深浅色共十组通过，桌面端保持单行，手机端自然换行，无溢出或脚本错误。构建与 diff 检查通过，其余 326 份公开文件保持原字节。提交 573bbf6 已推送；Pages run 42966423951 的 build 20 秒、deploy 17 秒，均 success。正式首页 HTTP 200，已显示新总述，且逐字节等于本地生成文件。
@@ -28,7 +34,7 @@
 
 - 用户已审核并授权执行、同步本地 CV 和推送两个仓库。Research 保留 AI for EDA 总主线及原有三条编号卡片，改为 ML for Physical Design、ML for Logic Synthesis、LLM-Guided RTL Recovery。每组仍为一句英文说明，不增加科研图片或改变全站样式。
 - 01 将原算法发现和物理设计合并，独立链接 TAPCO（C17）、TAPCO-G（P3）、HyPAS（C15），不放比赛。02 链接 CB-EVO（J2）、IWLS 2026、CAD Contest 2024 Problem A（Reinforcement Logic Optimization for a General Cost Function）。03 链接 RTLREX（P2）、DATE 2024（C1）、CAD Contest 2022 Problem A（Learning Arithmetic Operations from Gate-Level Circuit）。引用继续使用稳定页内锚点，More 内目标自动展开。
-- 新增 P3：TAPCO-G: LLM-Guided Design-Adaptive Timing and Power Co-Optimization with Graph-Based Physical Priors；arXiv 2611.13931，v1 首次提交 2026-11-10，27 页。八位作者顺序按官方 arXiv HTML 和 PDF 核对，新稿未标共同一作，不继承 TAPCO 会议版星号；人名采用完整英文写法，Laura Angelica 为原稿带重音名字的 ASCII 转写。
+- 新增 P3：TAPCO-G: LLM-Guided Design-Adaptive Timing and Power Co-Optimization with Graph-Based Physical Priors；arXiv 2611.13931，v1 首次提交 2026-11-10，27 页。八位作者顺序按官方 arXiv HTML 和 PDF 核对，新稿未标共同一作，不继承 TAPCO 会议版星号；人名采用完整原文写法，Laura Angélica Shion-Korsak 保留 é；此前 ASCII 转写已按用户要求更正。
 - P3 状态为 Preprint，独立放入 More / 2026，不替换会议版，不宣称期刊录用。资源为 arXiv / PDF / BibTeX；没有经核实的独立代码链接，不补空链接。PDF 原样本地托管为 files/papers/2026-arxiv-tapco-g.pdf，905,764 bytes；引文为 Tang2026TAPCOG / @misc，包含 arXiv ID、cs.AR 类别与 preprint note。官方原稿和网页元数据分别核验，不因 API 收录延迟而捏造出版记录。
 - Selected 仍为 RTLREX、TAPCO、HyPAS、CB-EVO 四篇；论文共 24 篇，More 为 20。Recent News 首条为 TAPCO-G arXiv 上线消息，日期显示 Nov 2026，内部日期为 2026-11-10，位于 CAD Contest 与 RTLREX 消息之前。
 - CV 分为 Conference Papers → Journal Papers → Preprints，组内倒序，编号沿用。公开完整 CV 为 19C + 2J + 3P，私人 Full 为 19C + 1J + 3P；私人版原来未收录甲骨文期刊，继续保持该范围。预印本为 P3/TAPCO-G、P2/RTLREX、P1/Trinity，arXiv 编号可点击，未录用稿不写 to appear。两份完整 CV 自然延展至四页，不缩字号。

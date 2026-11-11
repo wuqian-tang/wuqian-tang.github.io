@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-11",
+  "correct_author": "Laura Angélica Shion-Korsak",
+  "bibtex_author": "Shion-Korsak, Laura Ang{\\'e}lica",
+  "cv": {
+    "public": {
+      "pages": 4,
+      "bytes": 124764,
+      "sha256": "a973beb66c68eb1a88a1162104bed3a45fe4131b51ea61bb5a9eda78ccf5154e",
+      "only_author_accent_changed": true,
+      "accent_in_both_TAPCO_records": true,
+      "no_compile_warnings_or_clipping": true
+    },
+    "private-full": {
+      "pages": 4,
+      "bytes": 124103,
+      "sha256": "99b384fc902be4d114dd18cd7bc080b403627506f54876073280e9ae0703f807",
+      "only_author_accent_changed": true,
+      "accent_in_both_TAPCO_records": true,
+      "no_compile_warnings_or_clipping": true
+    },
+    "private-short": {
+      "pages": 2,
+      "bytes": 114964,
+      "sha256": "893d5200527b77e61a629b62f325369117b93ba4858211387993b2426a0431c3",
+      "only_author_accent_changed": true,
+      "accent_in_both_TAPCO_records": true,
+      "no_compile_warnings_or_clipping": true
+    }
+  },
+  "browser": [
+    {
+      "width": 390,
+      "colorScheme": "light",
+      "author_accent": true,
+      "bibtex_exact_copy": true,
+      "no_overflow_or_script_errors": true
+    },
+    {
+      "width": 390,
+      "colorScheme": "dark",
+      "author_accent": true,
+      "bibtex_exact_copy": true,
+      "no_overflow_or_script_errors": true
+    },
+    {
+      "width": 1440,
+      "colorScheme": "light",
+      "author_accent": true,
+      "bibtex_exact_copy": true,
+      "no_overflow_or_script_errors": true
+    },
+    {
+      "width": 1440,
+      "colorScheme": "dark",
+      "author_accent": true,
+      "bibtex_exact_copy": true,
+      "no_overflow_or_script_errors": true
+    }
+  ],
+  "checks": {
+    "P3_only_author_correction": true,
+    "TAPCO_record_unchanged": true,
+    "existing_contribution_markers_preserved": true,
+    "only_accent_changes_in_pdf_text": true,
+    "pages_and_fonts_preserved": true,
+    "public_cv_aliases_identical": true,
+    "private_contacts_not_published": true,
+    "other_323_deployed_files_unchanged": true,
+    "current_mirrors_and_both_zips_synchronized": true,
+    "user_files_and_historical_originals_preserved": true
+  },
+  "deployment": {
+    "status": "pending"
+  }
+}

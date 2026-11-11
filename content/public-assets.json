@@ -1373,7 +1373,7 @@
   },
   {
     "path": "files/Wuqian_Tang_CV.pdf",
-    "sha256": "f18c85c66d6cf295c46d816f8a44651bee4fa2d9245e88ef744a4ed7eb6e8350",
+    "sha256": "a973beb66c68eb1a88a1162104bed3a45fe4131b51ea61bb5a9eda78ccf5154e",
     "compatibility_alias_for": "files/cv-wqtang.pdf",
     "bytes": 124764,
     "source": "Public CV source content/Wuqian_Tang_Public_CV.tex; C/J/P groups and arXiv preprints synchronized 2026-11-11; two public email addresses, no telephone."
@@ -1701,7 +1701,7 @@
   },
   {
     "path": "files/cv-wqtang.pdf",
-    "sha256": "f18c85c66d6cf295c46d816f8a44651bee4fa2d9245e88ef744a4ed7eb6e8350",
+    "sha256": "a973beb66c68eb1a88a1162104bed3a45fe4131b51ea61bb5a9eda78ccf5154e",
     "source": "Public CV source content/Wuqian_Tang_Public_CV.tex; C/J/P groups and arXiv preprints synchronized 2026-11-11; two public email addresses, no telephone.",
     "bytes": 124764
   },
@@ -1829,7 +1829,7 @@
   },
   {
     "path": "files/cv.pdf",
-    "sha256": "f18c85c66d6cf295c46d816f8a44651bee4fa2d9245e88ef744a4ed7eb6e8350",
+    "sha256": "a973beb66c68eb1a88a1162104bed3a45fe4131b51ea61bb5a9eda78ccf5154e",
     "bytes": 124764,
     "compatibility_alias_for": "files/cv-wqtang.pdf",
     "source": "Public CV source content/Wuqian_Tang_Public_CV.tex; C/J/P groups and arXiv preprints synchronized 2026-11-11; two public email addresses, no telephone."

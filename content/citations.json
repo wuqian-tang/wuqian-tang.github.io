@@ -1,6 +1,6 @@
 {
   "p3": {
-    "bibtex": "@misc{Tang2026TAPCOG,\n  author = {Tang, Wuqian and Wang, Zixiao and Lin, Che-Chien and Fu, Fong-Hua and Shion-Korsak, Laura Angelica and Zhang, Xinyun and Yu, Bei and Wang, Chun-Yao},\n  title = {{TAPCO-G: LLM-Guided Design-Adaptive Timing and Power Co-Optimization with Graph-Based Physical Priors}},\n  year = {2026},\n  eprint = {2611.13931},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.AR},\n  url = {https://arxiv.org/abs/2611.13931},\n  note = {arXiv preprint}\n}\n",
+    "bibtex": "@misc{Tang2026TAPCOG,\n  author = {Tang, Wuqian and Wang, Zixiao and Lin, Che-Chien and Fu, Fong-Hua and Shion-Korsak, Laura Ang{\\'e}lica and Zhang, Xinyun and Yu, Bei and Wang, Chun-Yao},\n  title = {{TAPCO-G: LLM-Guided Design-Adaptive Timing and Power Co-Optimization with Graph-Based Physical Priors}},\n  year = {2026},\n  eprint = {2611.13931},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.AR},\n  url = {https://arxiv.org/abs/2611.13931},\n  note = {arXiv preprint}\n}\n",
     "verified_on": "2026-11-11",
     "sources": [
       "https://arxiv.org/abs/2611.13931",
