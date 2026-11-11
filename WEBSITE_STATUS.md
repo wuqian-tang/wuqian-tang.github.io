@@ -7,7 +7,15 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## CAD Contest 2026 官方结果与 CV 同步（2026-11-11，最新）
+## Full CV 章节重排与两页版冻结（2026-11-11，最新）
+
+- 用户已确认章节顺序：Education → Work Experience → Teaching Experience → Technical Skills → Selected Awards and Honors → Publications。整节奖项后移，技能放在两个长列表之前；网页和本地现用 CV 只维护 Full。
+- 两套 Full 源码移除短版条件分支，保留各自全部内容、字号、章节间距及联系信息设置。Work Experience 作为短区块整体分页，机构和职位均完整留在第一页；各级标题与首条内容同页，奖项可在条目之间自然分页。
+- 用户追加要求保留两页版作归档、之后不更新。私人 CV/Archive/2026-11-11_2Page 保存最后两页 PDF、包装源码和当时配套的 Full 源码，原字节冻结；CV 根目录不再保留短版或其编译产物，现行 LaTeX ZIP 只含 Full 源码、Full PDF、说明三项。Original 与历史申请归档保持原样。
+- 用户另已明确要求删除弃用求职资料夹，已在私人工作目录清理；不维护或发送其中的求职草稿。现用申请 Full 和本地预览包中的公开 CV 同步，三个公开 CV 地址仍逐字节一致，manifest 同步 SHA-256 与字节数。
+- 逐节抽取文字并忽略排版空白比较，全部内容与重排前一致：公开 24 篇、本地私人 23 篇、各 19 条奖项；C/J/P 分组、原编号、作者重音、共同贡献及待刊状态保持。两套均为 4 页，工作／教学／技能均在第一页。验收记录为 preview/full-only-cv-validation.json。两页归档经独立编译，逐页文字及渲染像素与存档 PDF 一致；全部现用 Full 副本／压缩包匹配，原字体与 PDF 外链保持。构建、清单和 diff 检查通过；公开目录只变更三个 CV 文件，其余 324 份文件逐字节保持，包括首页与全部 HTML。已查看四页公开版截图；发布后补充线上结果。
+
+## CAD Contest 2026 官方结果与 CV 同步（2026-11-11）
 
 - 用户已审核并授权执行。官网 Winners 确认 Problem A 的 Honorable Mention：cada1020 队，包含 Wuqian Tang；官方 News 公告日期为 2026-11-11。采用固定年份链接 https://www.iccad-contest.org/2026/Winners.html，避免之后随新一届比赛覆盖。
 - Awards → More 的既有条目保持题名、题目全称与顺序；资源改为 `Materials: [to appear] │ Announcements: [Official]`。没有经核对的新奖状、照片或院系新闻，暂不补文件、不建空图库、不公开私人通知邮件。

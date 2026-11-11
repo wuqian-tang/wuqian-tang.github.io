@@ -1373,10 +1373,10 @@
   },
   {
     "path": "files/Wuqian_Tang_CV.pdf",
-    "sha256": "e5b9b401e3139624074aa8b7678c9a721923c85548375d5c318d67d3321f02cc",
+    "sha256": "2457eb8f50c7cc6c5a8aaee605d49187142fcfe0599db70be196164ca93a9216",
     "compatibility_alias_for": "files/cv-wqtang.pdf",
-    "bytes": 124807,
-    "source": "Public CV source content/Wuqian_Tang_Public_CV.tex; C/J/P groups, arXiv preprints and official ICCAD 2026 Problem A Honorable Mention synchronized 2026-11-11; two public email addresses, no telephone."
+    "bytes": 124847,
+    "source": "Public full CV from content/Wuqian_Tang_Public_CV.tex; approved section order synchronized 2026-11-11; complete publications and 19 award descriptions; two public email addresses, no telephone."
   },
   {
     "path": "files/papers/C1-Reverse-Engineering.pdf",
@@ -1701,9 +1701,9 @@
   },
   {
     "path": "files/cv-wqtang.pdf",
-    "sha256": "e5b9b401e3139624074aa8b7678c9a721923c85548375d5c318d67d3321f02cc",
-    "source": "Public CV source content/Wuqian_Tang_Public_CV.tex; C/J/P groups, arXiv preprints and official ICCAD 2026 Problem A Honorable Mention synchronized 2026-11-11; two public email addresses, no telephone.",
-    "bytes": 124807
+    "sha256": "2457eb8f50c7cc6c5a8aaee605d49187142fcfe0599db70be196164ca93a9216",
+    "source": "Public full CV from content/Wuqian_Tang_Public_CV.tex; approved section order synchronized 2026-11-11; complete publications and 19 award descriptions; two public email addresses, no telephone.",
+    "bytes": 124847
   },
   {
     "path": "files/slides/2026-mlcad-tapco-slides.pdf",
@@ -1829,10 +1829,10 @@
   },
   {
     "path": "files/cv.pdf",
-    "sha256": "e5b9b401e3139624074aa8b7678c9a721923c85548375d5c318d67d3321f02cc",
-    "bytes": 124807,
+    "sha256": "2457eb8f50c7cc6c5a8aaee605d49187142fcfe0599db70be196164ca93a9216",
+    "bytes": 124847,
     "compatibility_alias_for": "files/cv-wqtang.pdf",
-    "source": "Public CV source content/Wuqian_Tang_Public_CV.tex; C/J/P groups, arXiv preprints and official ICCAD 2026 Problem A Honorable Mention synchronized 2026-11-11; two public email addresses, no telephone."
+    "source": "Public full CV from content/Wuqian_Tang_Public_CV.tex; approved section order synchronized 2026-11-11; complete publications and 19 award descriptions; two public email addresses, no telephone."
   },
   {
     "path": "assets/images/social-preview-20261025-v1.png",

@@ -1,0 +1,173 @@
+{
+  "date": "2026-11-11",
+  "section_order": [
+    "Education",
+    "Work Experience",
+    "Teaching Experience",
+    "Technical Skills",
+    "Selected Awards and Honors",
+    "Publications"
+  ],
+  "cv": {
+    "public": {
+      "pages": 4,
+      "all_section_text_preserved": true,
+      "work_experience_on_first_page": true,
+      "page_layout": [
+        {
+          "page": 1,
+          "bounds": [
+            36.0,
+            45.95,
+            559.43,
+            787.78
+          ],
+          "headings": [
+            "Education",
+            "Work Experience",
+            "Teaching Experience",
+            "Technical Skills",
+            "Selected Awards and Honors"
+          ]
+        },
+        {
+          "page": 2,
+          "bounds": [
+            36.0,
+            45.09,
+            559.64,
+            807.97
+          ],
+          "headings": [
+            "Publications"
+          ]
+        },
+        {
+          "page": 3,
+          "bounds": [
+            46.35,
+            44.49,
+            559.39,
+            805.42
+          ],
+          "headings": []
+        },
+        {
+          "page": 4,
+          "bounds": [
+            46.56,
+            45.18,
+            559.38,
+            189.56
+          ],
+          "headings": []
+        }
+      ],
+      "compile_passes": 2,
+      "warnings": [],
+      "sha256": "2457eb8f50c7cc6c5a8aaee605d49187142fcfe0599db70be196164ca93a9216",
+      "bytes": 124847
+    },
+    "private": {
+      "pages": 4,
+      "all_section_text_preserved": true,
+      "work_experience_on_first_page": true,
+      "page_layout": [
+        {
+          "page": 1,
+          "bounds": [
+            36.0,
+            45.95,
+            559.43,
+            787.78
+          ],
+          "headings": [
+            "Education",
+            "Work Experience",
+            "Teaching Experience",
+            "Technical Skills",
+            "Selected Awards and Honors"
+          ]
+        },
+        {
+          "page": 2,
+          "bounds": [
+            36.0,
+            45.09,
+            559.64,
+            786.42
+          ],
+          "headings": [
+            "Publications"
+          ]
+        },
+        {
+          "page": 3,
+          "bounds": [
+            46.35,
+            44.5,
+            559.39,
+            786.82
+          ],
+          "headings": []
+        },
+        {
+          "page": 4,
+          "bounds": [
+            46.56,
+            45.18,
+            559.38,
+            276.21
+          ],
+          "headings": []
+        }
+      ],
+      "compile_passes": 2,
+      "warnings": [],
+      "sha256": "fed637a940929fdaeab18783663c9fbbc17eba8d9b67c14e2c47e90beb091bcf",
+      "bytes": 124139
+    }
+  },
+  "archive": {
+    "location": "CV/Archive/2026-11-11_2Page",
+    "frozen": true,
+    "original_pdf_wrapper_and_companion_source_byte_identical": true,
+    "active_two_page_files_removed": true,
+    "current_latex_zip_entries": 3,
+    "independently_recompiled_two_pages_match_text_and_pixels": true
+  },
+  "job_search_folder_deleted": true,
+  "deployment": {
+    "status": "pending"
+  },
+  "static": {
+    "public_file_count": 327,
+    "public_asset_count": 279,
+    "changed_deployed_files": [
+      "files/Wuqian_Tang_CV.pdf",
+      "files/cv.pdf",
+      "files/cv-wqtang.pdf"
+    ],
+    "other_deployed_files_byte_identical": 324,
+    "all_html_and_homepage_byte_identical": true,
+    "font_size_and_family_sets_preserved": true,
+    "all_pdf_external_link_uris_preserved": true,
+    "public_cv_new_tab_link_preserved": true,
+    "build_allowlist_check": "passed",
+    "all_current_full_copies_and_zips_match": true,
+    "original_archives_and_user_changes_unchanged": true
+  },
+  "independent_review": {
+    "status": "no material findings",
+    "scope": "CV layouts, section text, frozen archive, current copies, ZIP CV entries and public manifest"
+  },
+  "visual_review": {
+    "public_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "private_layout_reviewed": true
+  }
+}
