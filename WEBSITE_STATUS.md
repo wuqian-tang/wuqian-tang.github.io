@@ -11,7 +11,7 @@
 
 - 用户确认将 01 改为 Machine Learning for Physical Design，02 改为 Learning-Guided Logic Synthesis；03 保持 LLM-Guided RTL Recovery，顺序仍为物理设计、逻辑综合、RTL 恢复。
 - 三组说明与九个论文／比赛链接沿用；只修改前两个标题。手机端沿用自然换行，不压缩字号；CV 与其他栏目沿用已上线版本。
-- 数据源、生成首页与 README 同步更新。验收为 preview/research-titles-validation.json：320／390／768／1440／2560px 深浅色共十组通过，标题自然换行，无文字重叠、横向溢出或脚本异常。仅首页两处标题改变，其余 326 份公开文件及全部 CV 字节保持；上线后复核正式地址。
+- 数据源、生成首页与 README 同步更新。验收为 preview/research-titles-validation.json：320／390／768／1440／2560px 深浅色共十组通过，标题自然换行，无文字重叠、横向溢出或脚本异常。仅首页两处标题改变，其余 326 份公开文件及全部 CV 字节保持。提交 715f76c 已推送；Pages run 42961755487 的 build 29 秒、deploy 12 秒，均 success。正式首页 HTTP 200、三个标题正确，且逐字节等于本地生成文件。
 
 ## Research 重分组、TAPCO-G 与 CV 同步（2026-11-11）
 
