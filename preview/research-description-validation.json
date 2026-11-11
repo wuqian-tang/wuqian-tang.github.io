@@ -1,0 +1,278 @@
+{
+  "date": "2026-11-11",
+  "descriptions": [
+    "Optimizing timing, power, placement, and sizing with LLM-guided algorithm discovery and learned models.",
+    "Using online learning and evolutionary search to find synthesis strategies for smaller, faster circuits.",
+    "Recovering compact, functionally equivalent RTL from gate-level circuits with LLMs and formal verification."
+  ],
+  "character_counts": [
+    103,
+    104,
+    107
+  ],
+  "browser": [
+    {
+      "width": 320,
+      "colorScheme": "light",
+      "overflow": false,
+      "cards": [
+        {
+          "text": "Optimizing timing, power, placement, and sizing with LLM-guided algorithm discovery and learned models.",
+          "height": 92.375,
+          "lineHeight": 23.1,
+          "contained": true
+        },
+        {
+          "text": "Using online learning and evolutionary search to find synthesis strategies for smaller, faster circuits.",
+          "height": 92.375,
+          "lineHeight": 23.1,
+          "contained": true
+        },
+        {
+          "text": "Recovering compact, functionally equivalent RTL from gate-level circuits with LLMs and formal verification.",
+          "height": 92.375,
+          "lineHeight": 23.1,
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "colorScheme": "dark",
+      "overflow": false,
+      "cards": [
+        {
+          "text": "Optimizing timing, power, placement, and sizing with LLM-guided algorithm discovery and learned models.",
+          "height": 92.375,
+          "lineHeight": 23.1,
+          "contained": true
+        },
+        {
+          "text": "Using online learning and evolutionary search to find synthesis strategies for smaller, faster circuits.",
+          "height": 92.375,
+          "lineHeight": 23.1,
+          "contained": true
+        },
+        {
+          "text": "Recovering compact, functionally equivalent RTL from gate-level circuits with LLMs and formal verification.",
+          "height": 92.375,
+          "lineHeight": 23.1,
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "colorScheme": "light",
+      "overflow": false,
+      "cards": [
+        {
+          "text": "Optimizing timing, power, placement, and sizing with LLM-guided algorithm discovery and learned models.",
+          "height": 69.28125,
+          "lineHeight": 23.1,
+          "contained": true
+        },
+        {
+          "text": "Using online learning and evolutionary search to find synthesis strategies for smaller, faster circuits.",
+          "height": 69.28125,
+          "lineHeight": 23.1,
+          "contained": true
+        },
+        {
+          "text": "Recovering compact, functionally equivalent RTL from gate-level circuits with LLMs and formal verification.",
+          "height": 69.28125,
+          "lineHeight": 23.1,
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "colorScheme": "dark",
+      "overflow": false,
+      "cards": [
+        {
+          "text": "Optimizing timing, power, placement, and sizing with LLM-guided algorithm discovery and learned models.",
+          "height": 69.28125,
+          "lineHeight": 23.1,
+          "contained": true
+        },
+        {
+          "text": "Using online learning and evolutionary search to find synthesis strategies for smaller, faster circuits.",
+          "height": 69.28125,
+          "lineHeight": 23.1,
+          "contained": true
+        },
+        {
+          "text": "Recovering compact, functionally equivalent RTL from gate-level circuits with LLMs and formal verification.",
+          "height": 69.28125,
+          "lineHeight": 23.1,
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "colorScheme": "light",
+      "overflow": false,
+      "cards": [
+        {
+          "text": "Optimizing timing, power, placement, and sizing with LLM-guided algorithm discovery and learned models.",
+          "height": 49.5,
+          "lineHeight": 24.75,
+          "contained": true
+        },
+        {
+          "text": "Using online learning and evolutionary search to find synthesis strategies for smaller, faster circuits.",
+          "height": 49.5,
+          "lineHeight": 24.75,
+          "contained": true
+        },
+        {
+          "text": "Recovering compact, functionally equivalent RTL from gate-level circuits with LLMs and formal verification.",
+          "height": 49.5,
+          "lineHeight": 24.75,
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "colorScheme": "dark",
+      "overflow": false,
+      "cards": [
+        {
+          "text": "Optimizing timing, power, placement, and sizing with LLM-guided algorithm discovery and learned models.",
+          "height": 49.5,
+          "lineHeight": 24.75,
+          "contained": true
+        },
+        {
+          "text": "Using online learning and evolutionary search to find synthesis strategies for smaller, faster circuits.",
+          "height": 49.5,
+          "lineHeight": 24.75,
+          "contained": true
+        },
+        {
+          "text": "Recovering compact, functionally equivalent RTL from gate-level circuits with LLMs and formal verification.",
+          "height": 49.5,
+          "lineHeight": 24.75,
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "colorScheme": "light",
+      "overflow": false,
+      "cards": [
+        {
+          "text": "Optimizing timing, power, placement, and sizing with LLM-guided algorithm discovery and learned models.",
+          "height": 24.75,
+          "lineHeight": 24.75,
+          "contained": true
+        },
+        {
+          "text": "Using online learning and evolutionary search to find synthesis strategies for smaller, faster circuits.",
+          "height": 24.75,
+          "lineHeight": 24.75,
+          "contained": true
+        },
+        {
+          "text": "Recovering compact, functionally equivalent RTL from gate-level circuits with LLMs and formal verification.",
+          "height": 24.75,
+          "lineHeight": 24.75,
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "colorScheme": "dark",
+      "overflow": false,
+      "cards": [
+        {
+          "text": "Optimizing timing, power, placement, and sizing with LLM-guided algorithm discovery and learned models.",
+          "height": 24.75,
+          "lineHeight": 24.75,
+          "contained": true
+        },
+        {
+          "text": "Using online learning and evolutionary search to find synthesis strategies for smaller, faster circuits.",
+          "height": 24.75,
+          "lineHeight": 24.75,
+          "contained": true
+        },
+        {
+          "text": "Recovering compact, functionally equivalent RTL from gate-level circuits with LLMs and formal verification.",
+          "height": 24.75,
+          "lineHeight": 24.75,
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 2560,
+      "colorScheme": "light",
+      "overflow": false,
+      "cards": [
+        {
+          "text": "Optimizing timing, power, placement, and sizing with LLM-guided algorithm discovery and learned models.",
+          "height": 24.75,
+          "lineHeight": 24.75,
+          "contained": true
+        },
+        {
+          "text": "Using online learning and evolutionary search to find synthesis strategies for smaller, faster circuits.",
+          "height": 24.75,
+          "lineHeight": 24.75,
+          "contained": true
+        },
+        {
+          "text": "Recovering compact, functionally equivalent RTL from gate-level circuits with LLMs and formal verification.",
+          "height": 24.75,
+          "lineHeight": 24.75,
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 2560,
+      "colorScheme": "dark",
+      "overflow": false,
+      "cards": [
+        {
+          "text": "Optimizing timing, power, placement, and sizing with LLM-guided algorithm discovery and learned models.",
+          "height": 24.75,
+          "lineHeight": 24.75,
+          "contained": true
+        },
+        {
+          "text": "Using online learning and evolutionary search to find synthesis strategies for smaller, faster circuits.",
+          "height": 24.75,
+          "lineHeight": 24.75,
+          "contained": true
+        },
+        {
+          "text": "Recovering compact, functionally equivalent RTL from gate-level circuits with LLMs and formal verification.",
+          "height": 24.75,
+          "lineHeight": 24.75,
+          "contained": true
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "ten_viewport_theme_cases": true,
+    "equal_desktop_line_counts": true,
+    "only_two_descriptions_changed": true,
+    "other_326_public_files_preserved": true,
+    "research_titles_order_and_links_preserved": true,
+    "cv_files_preserved": true,
+    "translation_draft_preserved": true,
+    "build_allowlist_and_diff_checks_passed": true
+  },
+  "deployment": {
+    "status": "pending"
+  }
+}

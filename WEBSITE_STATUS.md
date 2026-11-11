@@ -7,7 +7,13 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## Research 标题精简与全称（2026-11-11，最新）
+## Research 说明微调（2026-11-11，最新）
+
+- 用户要求将 01、02 的说明稍微精简，长度接近 03。01 改为 `Optimizing timing, power, placement, and sizing with LLM-guided algorithm discovery and learned models.`；02 改为 `Using online learning and evolutionary search to find synthesis strategies for smaller, faster circuits.`。
+- 两句分别为 103 和 104 个字符，03 原文为 107 个字符。标题、三组顺序及九个论文／比赛链接沿用；只改这两段说明与生成首页，不修改 CV 或其他公开资源。
+- 验收记录为 preview/research-description-validation.json。320／390／768／1440／2560px 深浅色共十组通过，桌面端三条说明行数相同，手机端自然换行，无重叠或横向溢出。构建、公开清单与 diff 检查通过；其余 326 个公开文件保持原字节。推送后核对线上内容。
+
+## Research 标题精简与全称（2026-11-11）
 
 - 用户确认将 01 改为 Machine Learning for Physical Design，02 改为 Learning-Guided Logic Synthesis；03 保持 LLM-Guided RTL Recovery，顺序仍为物理设计、逻辑综合、RTL 恢复。
 - 三组说明与九个论文／比赛链接沿用；只修改前两个标题。手机端沿用自然换行，不压缩字号；CV 与其他栏目沿用已上线版本。

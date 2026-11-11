@@ -42,7 +42,7 @@
   "research": [
     {
       "title": "Machine Learning for Physical Design",
-      "description": "Combining LLM-guided algorithm discovery and learned models to optimize timing, power, placement, and cell sizing.",
+      "description": "Optimizing timing, power, placement, and sizing with LLM-guided algorithm discovery and learned models.",
       "links": [
         {
           "label": "TAPCO · MLCAD 2026",
@@ -60,7 +60,7 @@
     },
     {
       "title": "Learning-Guided Logic Synthesis",
-      "description": "Combining online learning and evolutionary search to discover synthesis strategies that produce smaller, faster circuits.",
+      "description": "Using online learning and evolutionary search to find synthesis strategies for smaller, faster circuits.",
       "links": [
         {
           "label": "CB-EVO · TODAES 2026",
