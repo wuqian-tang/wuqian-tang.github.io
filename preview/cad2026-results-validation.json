@@ -1,0 +1,243 @@
+{
+  "verified_on": "2026-11-11",
+  "official_results": "https://www.iccad-contest.org/2026/Winners.html",
+  "team_id": "cada1020",
+  "award": "Honorable Mention, Problem A",
+  "results_announced_on": "2026-11-11",
+  "display_date": "Nov 2026",
+  "original_internal_date": "2026-11-08",
+  "cv": {
+    "public": {
+      "pages": 4,
+      "semantic_change": "one new award only",
+      "bounds": [
+        [
+          36.0,
+          45.95,
+          559.34,
+          782.49
+        ],
+        [
+          36.0,
+          45.09,
+          559.64,
+          763.02
+        ],
+        [
+          46.35,
+          44.49,
+          559.39,
+          805.42
+        ],
+        [
+          46.56,
+          44.49,
+          559.38,
+          242.37
+        ]
+      ],
+      "sha256": "e5b9b401e3139624074aa8b7678c9a721923c85548375d5c318d67d3321f02cc",
+      "bytes": 124807,
+      "compile_passes": 2,
+      "warnings": [],
+      "employer_and_role_on_same_page": true
+    },
+    "full": {
+      "pages": 4,
+      "semantic_change": "one new award only",
+      "bounds": [
+        [
+          36.0,
+          45.95,
+          559.34,
+          782.49
+        ],
+        [
+          36.0,
+          45.09,
+          559.64,
+          790.87
+        ],
+        [
+          46.35,
+          44.5,
+          559.39,
+          786.82
+        ],
+        [
+          46.56,
+          45.18,
+          559.38,
+          276.21
+        ]
+      ],
+      "sha256": "6bca4f1293b982da3223945c792fcf827f04317acab1aadefe10373d2ced38bd",
+      "bytes": 124116,
+      "compile_passes": 2,
+      "warnings": [],
+      "employer_and_role_on_same_page": true
+    },
+    "short": {
+      "pages": 2,
+      "semantic_change": "one new award only",
+      "bounds": [
+        [
+          36.0,
+          45.95,
+          559.34,
+          783.02
+        ],
+        [
+          36.0,
+          45.09,
+          559.43,
+          777.54
+        ]
+      ],
+      "sha256": "1820c4232fd2265ea334693dbbfc3bd1a422f0d540932c5e9f44ac83eed2dbb9",
+      "bytes": 115006,
+      "compile_passes": 2,
+      "warnings": [],
+      "employer_and_role_on_same_page": true
+    }
+  },
+  "local_sync": {
+    "current_use_pdf_mirrors_verified": 3,
+    "latex_zip_entries": 5,
+    "legacy_preview_zip_cv_entry_updated": true,
+    "other_archive_entries_unchanged": true,
+    "original_word_pdf_unchanged": true,
+    "user_uncommitted_files_unchanged": true
+  },
+  "static": {
+    "public_files": 327,
+    "asset_count": 279,
+    "changed_deployed_files": [
+      "index.html",
+      "files/Wuqian_Tang_CV.pdf",
+      "files/cv.pdf",
+      "files/cv-wqtang.pdf"
+    ],
+    "other_deployed_files_byte_identical": 323,
+    "profile_changes_only_existing_award_and_news": true,
+    "no_empty_gallery": true,
+    "official_results_http": 200,
+    "official_results_team_and_name_verified": true,
+    "build_and_allowlist_check": "passed",
+    "git_diff_check": "passed"
+  },
+  "browser": {
+    "layouts": [
+      {
+        "width": 320,
+        "colorScheme": "light",
+        "moreOpen": true,
+        "pendingMaterialsOnly": true,
+        "officialNewTab": true,
+        "uniqueUpdatedNews": true,
+        "noHorizontalOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 320,
+        "colorScheme": "dark",
+        "moreOpen": true,
+        "pendingMaterialsOnly": true,
+        "officialNewTab": true,
+        "uniqueUpdatedNews": true,
+        "noHorizontalOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 390,
+        "colorScheme": "light",
+        "moreOpen": true,
+        "pendingMaterialsOnly": true,
+        "officialNewTab": true,
+        "uniqueUpdatedNews": true,
+        "noHorizontalOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 390,
+        "colorScheme": "dark",
+        "moreOpen": true,
+        "pendingMaterialsOnly": true,
+        "officialNewTab": true,
+        "uniqueUpdatedNews": true,
+        "noHorizontalOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 768,
+        "colorScheme": "light",
+        "moreOpen": true,
+        "pendingMaterialsOnly": true,
+        "officialNewTab": true,
+        "uniqueUpdatedNews": true,
+        "noHorizontalOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 768,
+        "colorScheme": "dark",
+        "moreOpen": true,
+        "pendingMaterialsOnly": true,
+        "officialNewTab": true,
+        "uniqueUpdatedNews": true,
+        "noHorizontalOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 1440,
+        "colorScheme": "light",
+        "moreOpen": true,
+        "pendingMaterialsOnly": true,
+        "officialNewTab": true,
+        "uniqueUpdatedNews": true,
+        "noHorizontalOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 1440,
+        "colorScheme": "dark",
+        "moreOpen": true,
+        "pendingMaterialsOnly": true,
+        "officialNewTab": true,
+        "uniqueUpdatedNews": true,
+        "noHorizontalOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 2560,
+        "colorScheme": "light",
+        "moreOpen": true,
+        "pendingMaterialsOnly": true,
+        "officialNewTab": true,
+        "uniqueUpdatedNews": true,
+        "noHorizontalOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 2560,
+        "colorScheme": "dark",
+        "moreOpen": true,
+        "pendingMaterialsOnly": true,
+        "officialNewTab": true,
+        "uniqueUpdatedNews": true,
+        "noHorizontalOverflow": true,
+        "pageErrors": []
+      }
+    ],
+    "noJavaScriptOfficial": true
+  },
+  "visual_review": {
+    "public_cv_page1": "reviewed",
+    "short_cv_page2": "reviewed",
+    "award_desktop_light": "reviewed",
+    "award_phone_dark": "reviewed"
+  },
+  "deployment": {
+    "status": "pending push and verification"
+  }
+}

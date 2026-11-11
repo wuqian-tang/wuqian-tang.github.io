@@ -7,7 +7,16 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 页脚更新月份自动同步（2026-11-11，最新）
+## CAD Contest 2026 官方结果与 CV 同步（2026-11-11，最新）
+
+- 用户已审核并授权执行。官网 Winners 确认 Problem A 的 Honorable Mention：cada1020 队，包含 Wuqian Tang；官方 News 公告日期为 2026-11-11。采用固定年份链接 https://www.iccad-contest.org/2026/Winners.html，避免之后随新一届比赛覆盖。
+- Awards → More 的既有条目保持题名、题目全称与顺序；资源改为 `Materials: [to appear] │ Announcements: [Official]`。没有经核对的新奖状、照片或院系新闻，暂不补文件、不建空图库、不公开私人通知邮件。
+- 替换原 Recent News，不新增重复消息：`Our team received an Honorable Mention in Problem A of the ICCAD 2026 CAD Contest. [Official]`。日期继续只显示 Nov 2026，内部维持用户指定的会议首日 2026-11-08；核实日期与结果公告日另存来源字段。
+- 公开 CV、本地 Full 和 2Page 的 Selected Awards and Honors 顶部加入 `Honorable Mention (Prob. A) in ICCAD 2026 CAD Contest` / `Nov. 2026`，其余条目、论文分组与联系方式各自沿用。公开三个 CV 地址、现用求职／申请副本及 ZIP 同步；Original 与历史申请归档不改写。
+- 已核实国际赛事奖项数从 11 增至 12，About 的 more than ten awards 和三个冠军仍准确，无需改写。Research 不变。
+- 验收记录为 `preview/cad2026-results-validation.json`：三套 CV 各编译两次，无溢出或缺字警告；除一项新增奖项外，抽取文字归一化后与旧版完全一致，页数保持 4／4／2。新增条目导致深圳研究院机构与职位可能跨页，以 nobreak 将两行留在同页，保留字号和原章节间距。十组 320／390／768／1440／2560px 深浅色检查通过，资源与 More 深链接、无 JS 官方链接正常；无页面溢出或脚本错误。构建／清单及 diff 检查通过；部署仅首页与三个 CV 改变，其余 323 个文件保持原字节。已查看公开第一页、短版第二页及手机／桌面奖项截图；推送后补充线上结果。
+
+## 页脚更新月份自动同步（2026-11-11）
 
 - 用户指出页脚仍显示 Updated October 2026。复现确认 profile.updated 已为 2026-11-11，但模板可见文字固定写着 October；仅 datetime 属性随数据更新。
 - 模板改用 UPDATED_LABEL，构建器从同一个 updated 日期生成英文月份与年份，当前显示 Updated November 2026。日期数据、研究内容、作者重音、全部 CV 和其余资源沿用。

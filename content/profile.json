@@ -110,11 +110,11 @@
     {
       "date": "Nov 2026",
       "datetime": "2026-11-08",
-      "text": "Our team has been selected for an Honorable Mention in Problem A of the ICCAD 2026 CAD Contest.",
+      "text": "Our team received an Honorable Mention in Problem A of the ICCAD 2026 CAD Contest.",
       "resources": [
         {
-          "label": "to appear",
-          "pending": true
+          "label": "Official",
+          "url": "https://www.iccad-contest.org/2026/Winners.html"
         }
       ]
     },
@@ -1329,16 +1329,23 @@
       "title": "Honorable Mention (Problem A), ICCAD CAD Contest",
       "detail": "LLM-Assisted Netlist Exploration and Transformation",
       "problem": "A",
-      "links": [],
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://www.iccad-contest.org/2026/Winners.html",
+          "description": "Official 2026 CAD Contest results"
+        }
+      ],
       "media": [],
       "pending_resources": [
-        "materials",
-        "announcements"
+        "materials"
       ],
-      "recognition_source": "Owner-provided Honorable Mention notification from the contest organizers",
+      "recognition_source": "https://www.iccad-contest.org/2026/Winners.html",
       "date_source": "First day of ICCAD 2026 (November 8-12): https://iccad.com/2026",
       "problem_source": "https://www.iccad-contest.org/2026/Problems.html",
-      "verified_on": "2026-10-08"
+      "verified_on": "2026-11-11",
+      "team_id": "cada1020",
+      "results_announced_on": "2026-11-11"
     },
     {
       "date": "Aug 2025–Aug 2026",
