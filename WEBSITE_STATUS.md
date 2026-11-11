@@ -14,7 +14,7 @@
 - 替换原 Recent News，不新增重复消息：`Our team received an Honorable Mention in Problem A of the ICCAD 2026 CAD Contest. [Official]`。日期继续只显示 Nov 2026，内部维持用户指定的会议首日 2026-11-08；核实日期与结果公告日另存来源字段。
 - 公开 CV、本地 Full 和 2Page 的 Selected Awards and Honors 顶部加入 `Honorable Mention (Prob. A) in ICCAD 2026 CAD Contest` / `Nov. 2026`，其余条目、论文分组与联系方式各自沿用。公开三个 CV 地址、现用求职／申请副本及 ZIP 同步；Original 与历史申请归档不改写。
 - 已核实国际赛事奖项数从 11 增至 12，About 的 more than ten awards 和三个冠军仍准确，无需改写。Research 不变。
-- 验收记录为 `preview/cad2026-results-validation.json`：三套 CV 各编译两次，无溢出或缺字警告；除一项新增奖项外，抽取文字归一化后与旧版完全一致，页数保持 4／4／2。新增条目导致深圳研究院机构与职位可能跨页，以 nobreak 将两行留在同页，保留字号和原章节间距。十组 320／390／768／1440／2560px 深浅色检查通过，资源与 More 深链接、无 JS 官方链接正常；无页面溢出或脚本错误。构建／清单及 diff 检查通过；部署仅首页与三个 CV 改变，其余 323 个文件保持原字节。已查看公开第一页、短版第二页及手机／桌面奖项截图；推送后补充线上结果。
+- 验收记录为 `preview/cad2026-results-validation.json`：三套 CV 各编译两次，无溢出或缺字警告；除一项新增奖项外，抽取文字归一化后与旧版完全一致，页数保持 4／4／2。新增条目导致深圳研究院机构与职位可能跨页，以 nobreak 将两行留在同页，保留字号和原章节间距。十组 320／390／768／1440／2560px 深浅色检查通过，资源与 More 深链接、无 JS 官方链接正常；无页面溢出或脚本错误。构建／清单及 diff 检查通过；部署仅首页与三个 CV 改变，其余 323 个文件保持原字节。已查看公开第一页、短版第二页及手机／桌面奖项截图。网页提交 68c17c5、私人 CV 提交 0546490 已分别推送；Pages run 43041907831 的 build 16 秒、deploy 13 秒，均 success。正式首页及三个公开 CV 均 HTTP 200、逐字节等于本地；线上新闻／Official／Materials 占位和新增 CV 奖项均核对正确。
 
 ## 页脚更新月份自动同步（2026-11-11）
 

@@ -238,6 +238,45 @@
     "award_phone_dark": "reviewed"
   },
   "deployment": {
-    "status": "pending push and verification"
+    "status": "success",
+    "public_commit": "68c17c5fcbc0a9823c9eac221174a24ed21c803d",
+    "private_commit": "0546490",
+    "pages_run_id": 43041907831,
+    "pages_run_url": "https://github.com/wuqian-tang/wuqian-tang.github.io/actions/runs/43041907831",
+    "build_seconds": 16,
+    "deploy_seconds": 13,
+    "live": [
+      {
+        "url": "https://wqtang.com/",
+        "http": 200,
+        "sha256": "c44ecce7b75188f3e708c5813fabc4fa203616bff1e7f972613b23f5adc70692",
+        "equals_local": true,
+        "news_and_award_verified": true
+      },
+      {
+        "url": "https://wqtang.com/files/cv-wqtang.pdf",
+        "http": 200,
+        "sha256": "e5b9b401e3139624074aa8b7678c9a721923c85548375d5c318d67d3321f02cc",
+        "equals_local": true,
+        "pages": 4,
+        "new_award_verified": true
+      },
+      {
+        "url": "https://wqtang.com/files/cv.pdf",
+        "http": 200,
+        "sha256": "e5b9b401e3139624074aa8b7678c9a721923c85548375d5c318d67d3321f02cc",
+        "equals_local": true,
+        "pages": 4,
+        "new_award_verified": true
+      },
+      {
+        "url": "https://wqtang.com/files/Wuqian_Tang_CV.pdf",
+        "http": 200,
+        "sha256": "e5b9b401e3139624074aa8b7678c9a721923c85548375d5c318d67d3321f02cc",
+        "equals_local": true,
+        "pages": 4,
+        "new_award_verified": true
+      }
+    ]
   }
 }
