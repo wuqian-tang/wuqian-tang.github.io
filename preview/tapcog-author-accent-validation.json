@@ -71,6 +71,40 @@
     "user_files_and_historical_originals_preserved": true
   },
   "deployment": {
-    "status": "pending"
+    "status": "success",
+    "site_commit": "e8affd811b4595cef7612e0d1e57783b03eaec52",
+    "private_cv_commit": "ae07c5fdbe3287a22bc0bed6785114d7c61fe01b",
+    "run_id": 42978964788,
+    "run_url": "https://github.com/wuqian-tang/wuqian-tang.github.io/actions/runs/42978964788",
+    "live_files": [
+      {
+        "url": "https://wqtang.com/",
+        "status": 200,
+        "sha256": "7035dc3f041cc8f6bf90f0403c9ebb2b56cad7c71da8d0c820f7b96def4f792a",
+        "matches_local": true,
+        "correct_accent_verified": true
+      },
+      {
+        "url": "https://wqtang.com/files/cv-wqtang.pdf",
+        "status": 200,
+        "sha256": "a973beb66c68eb1a88a1162104bed3a45fe4131b51ea61bb5a9eda78ccf5154e",
+        "matches_local": true,
+        "correct_accent_verified": true
+      },
+      {
+        "url": "https://wqtang.com/files/cv.pdf",
+        "status": 200,
+        "sha256": "a973beb66c68eb1a88a1162104bed3a45fe4131b51ea61bb5a9eda78ccf5154e",
+        "matches_local": true,
+        "correct_accent_verified": true
+      },
+      {
+        "url": "https://wqtang.com/files/Wuqian_Tang_CV.pdf",
+        "status": 200,
+        "sha256": "a973beb66c68eb1a88a1162104bed3a45fe4131b51ea61bb5a9eda78ccf5154e",
+        "matches_local": true,
+        "correct_accent_verified": true
+      }
+    ]
   }
 }

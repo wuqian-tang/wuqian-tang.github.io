@@ -11,7 +11,7 @@
 
 - 用户指出 TAPCO-G 的 Laura Angelica 漏了 e 上的重音。网页作者与公开／本地 CV 统一更正为 Laura Angélica Shion-Korsak，与 TAPCO 和原稿一致；不再移除人名重音。
 - BibTeX 使用与 TAPCO 相同的 LaTeX 重音写法；复制结果保留重音命令，避免引用姓名丢失符号。作者顺序、共同贡献标记及其余论文数据保持。
-- 重新编译公开 CV、私人 Full/2Page，并同步公开三个 CV 地址、现用求职／申请副本、两份 ZIP 和 manifest。验收记录为 preview/tapcog-author-accent-validation.json：四组手机／桌面深浅色显示与实际 BibTeX 复制通过，三套 PDF 编译无警告，逐字核对除 é 外内容和页数一致；其他 323 个部署文件保持。现用 CV 副本与 ZIP 同步，私人联系方式保留在私人版。
+- 重新编译公开 CV、私人 Full/2Page，并同步公开三个 CV 地址、现用求职／申请副本、两份 ZIP 和 manifest。验收记录为 preview/tapcog-author-accent-validation.json：四组手机／桌面深浅色显示与实际 BibTeX 复制通过，三套 PDF 编译无警告，逐字核对除 é 外内容和页数一致；其他 323 个部署文件保持。现用 CV 副本与 ZIP 同步，私人联系方式保留在私人版。 网页提交 e8affd8、私人 CV 提交 ae07c5f 已分别推送；Pages run 42978964788 成功，正式首页及三个公开 CV 均 HTTP 200、字节等于本地，线上 PDF 的 TAPCO 和 TAPCO-G 作者均含 é。
 
 ## Research 总述使用动词开头（2026-11-11）
 
