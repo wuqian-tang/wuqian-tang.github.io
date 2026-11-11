@@ -11,7 +11,7 @@
 
 - 用户指出页脚仍显示 Updated October 2026。复现确认 profile.updated 已为 2026-11-11，但模板可见文字固定写着 October；仅 datetime 属性随数据更新。
 - 模板改用 UPDATED_LABEL，构建器从同一个 updated 日期生成英文月份与年份，当前显示 Updated November 2026。日期数据、研究内容、作者重音、全部 CV 和其余资源沿用。
-- 以实际 render() 核对当前十一月、十二月和跨年至次年一月，分别生成 November 2026、December 2026、January 2027；临时验证数据不写入文件。公开目录只有首页这一处月份标签改变，其余 326 份文件字节一致。构建和 diff 检查通过，验收记录为 preview/footer-month-validation.json。
+- 以实际 render() 核对当前十一月、十二月和跨年至次年一月，分别生成 November 2026、December 2026、January 2027；临时验证数据不写入文件。公开目录只有首页这一处月份标签改变，其余 326 份文件字节一致。构建和 diff 检查通过，验收记录为 preview/footer-month-validation.json。提交 fb34ace 已推送；Pages run 42979513741 的 build 28 秒、deploy 17 秒，均 success。正式首页 HTTP 200、页脚为 Updated November 2026，逐字节等于本地；TAPCO-G 网页及公开 CV 的 Angélica 重音继续正确。
 
 ## TAPCO-G 作者姓名重音更正（2026-11-11）
 

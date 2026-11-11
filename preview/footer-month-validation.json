@@ -26,6 +26,16 @@
   "other_326_public_files_preserved": true,
   "user_translation_draft_preserved": true,
   "deployment": {
-    "status": "pending"
+    "status": "success",
+    "site_commit": "fb34ace824fd9960ce8b66f9d8fc6e6ef8d81dda",
+    "run_id": 42979513741,
+    "run_url": "https://github.com/wuqian-tang/wuqian-tang.github.io/actions/runs/42979513741",
+    "build_seconds": 28,
+    "deploy_seconds": 17,
+    "live_status": 200,
+    "live_sha256": "e29ea4c67455128be2ea63e74654deb72a033bbf692cb739f649ea0a9986c2e8",
+    "live_matches_local": true,
+    "live_footer": "Updated November 2026",
+    "corrected_author_and_cv_retained": true
   }
 }
