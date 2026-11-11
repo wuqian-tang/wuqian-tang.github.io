@@ -114,6 +114,14 @@
     "build_and_diff_passed": true
   },
   "deployment": {
-    "status": "pending"
+    "status": "success",
+    "site_commit": "573bbf67a1b59fd8215b06645b474186f75dc005",
+    "run_id": 42966423951,
+    "run_url": "https://github.com/wuqian-tang/wuqian-tang.github.io/actions/runs/42966423951",
+    "build_seconds": 20,
+    "deploy_seconds": 17,
+    "live_status": 200,
+    "live_sha256": "36254a76f83bf3c965422014d2b8b1b3ee11bdbd9080f65f24a43559bf9d1029",
+    "live_matches_local": true
   }
 }

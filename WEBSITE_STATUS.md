@@ -10,7 +10,7 @@
 ## Research 总述使用动词开头（2026-11-11，最新）
 
 - 用户确认将 Research Interests 总述改为 `Developing AI-driven algorithms for faster, smaller, and more energy-efficient circuits.`，以 Developing 开头；前两个方向刚完成的说明精简保持。
-- 数据源、生成首页、README 与现行格式规范同步。标题、顺序、九个证据链接、论文和 CV 沿用；只替换这句总述。验收记录为 preview/research-intro-validation.json：320／390／768／1440／2560px 深浅色共十组通过，桌面端保持单行，手机端自然换行，无溢出或脚本错误。构建与 diff 检查通过，其余 326 份公开文件保持原字节；推送后核对正式首页。
+- 数据源、生成首页、README 与现行格式规范同步。标题、顺序、九个证据链接、论文和 CV 沿用；只替换这句总述。验收记录为 preview/research-intro-validation.json：320／390／768／1440／2560px 深浅色共十组通过，桌面端保持单行，手机端自然换行，无溢出或脚本错误。构建与 diff 检查通过，其余 326 份公开文件保持原字节。提交 573bbf6 已推送；Pages run 42966423951 的 build 20 秒、deploy 17 秒，均 success。正式首页 HTTP 200，已显示新总述，且逐字节等于本地生成文件。
 
 ## Research 说明微调（2026-11-11）
 
