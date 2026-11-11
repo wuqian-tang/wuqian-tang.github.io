@@ -1,0 +1,289 @@
+{
+  "date": "2026-11-11",
+  "titles": [
+    "Machine Learning for Physical Design",
+    "Learning-Guided Logic Synthesis",
+    "LLM-Guided RTL Recovery"
+  ],
+  "browser": [
+    {
+      "width": 320,
+      "colorScheme": "light",
+      "titles": [
+        "Machine Learning for Physical Design",
+        "Learning-Guided Logic Synthesis",
+        "LLM-Guided RTL Recovery"
+      ],
+      "overflow": false,
+      "cards": [
+        {
+          "headingHeight": 41.59375,
+          "fontSize": "16px",
+          "contained": true
+        },
+        {
+          "headingHeight": 41.59375,
+          "fontSize": "16px",
+          "contained": true
+        },
+        {
+          "headingHeight": 20.796875,
+          "fontSize": "16px",
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "colorScheme": "dark",
+      "titles": [
+        "Machine Learning for Physical Design",
+        "Learning-Guided Logic Synthesis",
+        "LLM-Guided RTL Recovery"
+      ],
+      "overflow": false,
+      "cards": [
+        {
+          "headingHeight": 41.59375,
+          "fontSize": "16px",
+          "contained": true
+        },
+        {
+          "headingHeight": 41.59375,
+          "fontSize": "16px",
+          "contained": true
+        },
+        {
+          "headingHeight": 20.796875,
+          "fontSize": "16px",
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "colorScheme": "light",
+      "titles": [
+        "Machine Learning for Physical Design",
+        "Learning-Guided Logic Synthesis",
+        "LLM-Guided RTL Recovery"
+      ],
+      "overflow": false,
+      "cards": [
+        {
+          "headingHeight": 41.59375,
+          "fontSize": "16px",
+          "contained": true
+        },
+        {
+          "headingHeight": 20.796875,
+          "fontSize": "16px",
+          "contained": true
+        },
+        {
+          "headingHeight": 20.796875,
+          "fontSize": "16px",
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "colorScheme": "dark",
+      "titles": [
+        "Machine Learning for Physical Design",
+        "Learning-Guided Logic Synthesis",
+        "LLM-Guided RTL Recovery"
+      ],
+      "overflow": false,
+      "cards": [
+        {
+          "headingHeight": 41.59375,
+          "fontSize": "16px",
+          "contained": true
+        },
+        {
+          "headingHeight": 20.796875,
+          "fontSize": "16px",
+          "contained": true
+        },
+        {
+          "headingHeight": 20.796875,
+          "fontSize": "16px",
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "colorScheme": "light",
+      "titles": [
+        "Machine Learning for Physical Design",
+        "Learning-Guided Logic Synthesis",
+        "LLM-Guided RTL Recovery"
+      ],
+      "overflow": false,
+      "cards": [
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        },
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        },
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "colorScheme": "dark",
+      "titles": [
+        "Machine Learning for Physical Design",
+        "Learning-Guided Logic Synthesis",
+        "LLM-Guided RTL Recovery"
+      ],
+      "overflow": false,
+      "cards": [
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        },
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        },
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "colorScheme": "light",
+      "titles": [
+        "Machine Learning for Physical Design",
+        "Learning-Guided Logic Synthesis",
+        "LLM-Guided RTL Recovery"
+      ],
+      "overflow": false,
+      "cards": [
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        },
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        },
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "colorScheme": "dark",
+      "titles": [
+        "Machine Learning for Physical Design",
+        "Learning-Guided Logic Synthesis",
+        "LLM-Guided RTL Recovery"
+      ],
+      "overflow": false,
+      "cards": [
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        },
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        },
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 2560,
+      "colorScheme": "light",
+      "titles": [
+        "Machine Learning for Physical Design",
+        "Learning-Guided Logic Synthesis",
+        "LLM-Guided RTL Recovery"
+      ],
+      "overflow": false,
+      "cards": [
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        },
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        },
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 2560,
+      "colorScheme": "dark",
+      "titles": [
+        "Machine Learning for Physical Design",
+        "Learning-Guided Logic Synthesis",
+        "LLM-Guided RTL Recovery"
+      ],
+      "overflow": false,
+      "cards": [
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        },
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        },
+        {
+          "headingHeight": 21.828125,
+          "fontSize": "16.8px",
+          "contained": true
+        }
+      ]
+    }
+  ],
+  "preservation": {
+    "only_two_profile_title_values_changed": true,
+    "other_326_public_files_unchanged": true,
+    "descriptions_links_order_and_cv_unchanged": true,
+    "local_translation_draft_preserved": true
+  },
+  "deployment": {
+    "status": "pending"
+  }
+}

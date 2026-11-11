@@ -7,7 +7,13 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## Research 重分组、TAPCO-G 与 CV 同步（2026-11-11，最新）
+## Research 标题精简与全称（2026-11-11，最新）
+
+- 用户确认将 01 改为 Machine Learning for Physical Design，02 改为 Learning-Guided Logic Synthesis；03 保持 LLM-Guided RTL Recovery，顺序仍为物理设计、逻辑综合、RTL 恢复。
+- 三组说明与九个论文／比赛链接沿用；只修改前两个标题。手机端沿用自然换行，不压缩字号；CV 与其他栏目沿用已上线版本。
+- 数据源、生成首页与 README 同步更新。验收为 preview/research-titles-validation.json：320／390／768／1440／2560px 深浅色共十组通过，标题自然换行，无文字重叠、横向溢出或脚本异常。仅首页两处标题改变，其余 326 份公开文件及全部 CV 字节保持；上线后复核正式地址。
+
+## Research 重分组、TAPCO-G 与 CV 同步（2026-11-11）
 
 - 用户已审核并授权执行、同步本地 CV 和推送两个仓库。Research 保留 AI for EDA 总主线及原有三条编号卡片，改为 ML for Physical Design、ML for Logic Synthesis、LLM-Guided RTL Recovery。每组仍为一句英文说明，不增加科研图片或改变全站样式。
 - 01 将原算法发现和物理设计合并，独立链接 TAPCO（C17）、TAPCO-G（P3）、HyPAS（C15），不放比赛。02 链接 CB-EVO（J2）、IWLS 2026、CAD Contest 2024 Problem A（Reinforcement Logic Optimization for a General Cost Function）。03 链接 RTLREX（P2）、DATE 2024（C1）、CAD Contest 2022 Problem A（Learning Arithmetic Operations from Gate-Level Circuit）。引用继续使用稳定页内锚点，More 内目标自动展开。

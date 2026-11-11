@@ -41,7 +41,7 @@
   "research_intro": "I develop AI-driven algorithms for faster, smaller, and more energy-efficient circuits.",
   "research": [
     {
-      "title": "ML for Physical Design",
+      "title": "Machine Learning for Physical Design",
       "description": "Combining LLM-guided algorithm discovery and learned models to optimize timing, power, placement, and cell sizing.",
       "links": [
         {
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "title": "ML for Logic Synthesis",
+      "title": "Learning-Guided Logic Synthesis",
       "description": "Combining online learning and evolutionary search to discover synthesis strategies that produce smaller, faster circuits.",
       "links": [
         {
