@@ -11,7 +11,7 @@
 
 - 用户要求将 01、02 的说明稍微精简，长度接近 03。01 改为 `Optimizing timing, power, placement, and sizing with LLM-guided algorithm discovery and learned models.`；02 改为 `Using online learning and evolutionary search to find synthesis strategies for smaller, faster circuits.`。
 - 两句分别为 103 和 104 个字符，03 原文为 107 个字符。标题、三组顺序及九个论文／比赛链接沿用；只改这两段说明与生成首页，不修改 CV 或其他公开资源。
-- 验收记录为 preview/research-description-validation.json。320／390／768／1440／2560px 深浅色共十组通过，桌面端三条说明行数相同，手机端自然换行，无重叠或横向溢出。构建、公开清单与 diff 检查通过；其余 326 个公开文件保持原字节。推送后核对线上内容。
+- 验收记录为 preview/research-description-validation.json。320／390／768／1440／2560px 深浅色共十组通过，桌面端三条说明行数相同，手机端自然换行，无重叠或横向溢出。构建、公开清单与 diff 检查通过；其余 326 个公开文件保持原字节。提交 36ab1b7 已推送；Pages run 42965746503 的 build 20 秒、deploy 21 秒，均 success。正式首页 HTTP 200 且逐字节等于本地生成文件。
 
 ## Research 标题精简与全称（2026-11-11）
 
