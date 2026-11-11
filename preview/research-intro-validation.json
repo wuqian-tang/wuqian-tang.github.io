@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-11",
+  "introduction": "Developing AI-driven algorithms for faster, smaller, and more energy-efficient circuits.",
+  "browser": [
+    {
+      "width": 320,
+      "colorScheme": "light",
+      "text": "Developing AI-driven algorithms for faster, smaller, and more energy-efficient circuits.",
+      "overflow": false,
+      "contained": true,
+      "height": 49.5,
+      "lineHeight": 24.75,
+      "fontSize": "15px"
+    },
+    {
+      "width": 320,
+      "colorScheme": "dark",
+      "text": "Developing AI-driven algorithms for faster, smaller, and more energy-efficient circuits.",
+      "overflow": false,
+      "contained": true,
+      "height": 49.5,
+      "lineHeight": 24.75,
+      "fontSize": "15px"
+    },
+    {
+      "width": 390,
+      "colorScheme": "light",
+      "text": "Developing AI-driven algorithms for faster, smaller, and more energy-efficient circuits.",
+      "overflow": false,
+      "contained": true,
+      "height": 49.5,
+      "lineHeight": 24.75,
+      "fontSize": "15px"
+    },
+    {
+      "width": 390,
+      "colorScheme": "dark",
+      "text": "Developing AI-driven algorithms for faster, smaller, and more energy-efficient circuits.",
+      "overflow": false,
+      "contained": true,
+      "height": 49.5,
+      "lineHeight": 24.75,
+      "fontSize": "15px"
+    },
+    {
+      "width": 768,
+      "colorScheme": "light",
+      "text": "Developing AI-driven algorithms for faster, smaller, and more energy-efficient circuits.",
+      "overflow": false,
+      "contained": true,
+      "height": 24.75,
+      "lineHeight": 24.75,
+      "fontSize": "15px"
+    },
+    {
+      "width": 768,
+      "colorScheme": "dark",
+      "text": "Developing AI-driven algorithms for faster, smaller, and more energy-efficient circuits.",
+      "overflow": false,
+      "contained": true,
+      "height": 24.75,
+      "lineHeight": 24.75,
+      "fontSize": "15px"
+    },
+    {
+      "width": 1440,
+      "colorScheme": "light",
+      "text": "Developing AI-driven algorithms for faster, smaller, and more energy-efficient circuits.",
+      "overflow": false,
+      "contained": true,
+      "height": 24.75,
+      "lineHeight": 24.75,
+      "fontSize": "15px"
+    },
+    {
+      "width": 1440,
+      "colorScheme": "dark",
+      "text": "Developing AI-driven algorithms for faster, smaller, and more energy-efficient circuits.",
+      "overflow": false,
+      "contained": true,
+      "height": 24.75,
+      "lineHeight": 24.75,
+      "fontSize": "15px"
+    },
+    {
+      "width": 2560,
+      "colorScheme": "light",
+      "text": "Developing AI-driven algorithms for faster, smaller, and more energy-efficient circuits.",
+      "overflow": false,
+      "contained": true,
+      "height": 24.75,
+      "lineHeight": 24.75,
+      "fontSize": "15px"
+    },
+    {
+      "width": 2560,
+      "colorScheme": "dark",
+      "text": "Developing AI-driven algorithms for faster, smaller, and more energy-efficient circuits.",
+      "overflow": false,
+      "contained": true,
+      "height": 24.75,
+      "lineHeight": 24.75,
+      "fontSize": "15px"
+    }
+  ],
+  "checks": {
+    "ten_viewport_theme_cases": true,
+    "desktop_single_line": true,
+    "no_horizontal_overflow": true,
+    "only_research_introduction_changed": true,
+    "other_326_public_files_preserved": true,
+    "cv_and_research_cards_preserved": true,
+    "translation_draft_preserved": true,
+    "build_and_diff_passed": true
+  },
+  "deployment": {
+    "status": "pending"
+  }
+}
