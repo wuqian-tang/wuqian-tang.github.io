@@ -7,7 +7,13 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## TAPCO-G 作者姓名重音更正（2026-11-11，最新）
+## 页脚更新月份自动同步（2026-11-11，最新）
+
+- 用户指出页脚仍显示 Updated October 2026。复现确认 profile.updated 已为 2026-11-11，但模板可见文字固定写着 October；仅 datetime 属性随数据更新。
+- 模板改用 UPDATED_LABEL，构建器从同一个 updated 日期生成英文月份与年份，当前显示 Updated November 2026。日期数据、研究内容、作者重音、全部 CV 和其余资源沿用。
+- 以实际 render() 核对当前十一月、十二月和跨年至次年一月，分别生成 November 2026、December 2026、January 2027；临时验证数据不写入文件。公开目录只有首页这一处月份标签改变，其余 326 份文件字节一致。构建和 diff 检查通过，验收记录为 preview/footer-month-validation.json。
+
+## TAPCO-G 作者姓名重音更正（2026-11-11）
 
 - 用户指出 TAPCO-G 的 Laura Angelica 漏了 e 上的重音。网页作者与公开／本地 CV 统一更正为 Laura Angélica Shion-Korsak，与 TAPCO 和原稿一致；不再移除人名重音。
 - BibTeX 使用与 TAPCO 相同的 LaTeX 重音写法；复制结果保留重音命令，避免引用姓名丢失符号。作者顺序、共同贡献标记及其余论文数据保持。

@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-11",
+  "reported_label": "Updated October 2026",
+  "correct_label": "Updated November 2026",
+  "cause": "Visible template month was fixed while the datetime attribute already used updated data.",
+  "regression_reproduced_before_fix": true,
+  "render_cases": [
+    {
+      "updated": "2026-11-11",
+      "visible_label": "November 2026",
+      "passed": true
+    },
+    {
+      "updated": "2026-12-01",
+      "visible_label": "December 2026",
+      "passed": true
+    },
+    {
+      "updated": "2027-01-01",
+      "visible_label": "January 2027",
+      "passed": true
+    }
+  ],
+  "profile_data_preserved": true,
+  "only_homepage_month_label_changed": true,
+  "other_326_public_files_preserved": true,
+  "user_translation_draft_preserved": true,
+  "deployment": {
+    "status": "pending"
+  }
+}

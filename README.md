@@ -54,7 +54,7 @@ Original browser and static verification are recorded in `preview/trinity-browse
 
 ## Update content
 
-Edit `content/profile.json` for publications, awards, links, and experience. Edit `content/homepage.html` for the page structure or introduction. Styles and interactions are in `site/assets/`.
+Edit `content/profile.json` for publications, awards, links, and experience. Its `updated` field uses `YYYY-MM-DD`; the footer derives its visible English month and year from that same date. Edit `content/homepage.html` for the page structure or introduction. Styles and interactions are in `site/assets/`.
 
 Automatic push and pull-request runs watch `content/**`, `site/**`, `scripts/**`, and `.github/workflows/pages.yml`. Documentation and preview-only commits do not republish identical files. Manual publishing remains available through workflow_dispatch. Build validation and deployment permissions are unchanged; the November 10 deployment investigation and trigger checks are recorded in `preview/pages-deploy-fix-validation.json`.
 

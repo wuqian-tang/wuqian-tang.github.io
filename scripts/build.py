@@ -418,6 +418,7 @@ def render():
         research += f'<article class="research-item"><span class="research-number" aria-hidden="true">{i:02d}</span><div><h3>{esc(r["title"])}</h3><p>{esc(r["description"])}</p><div class="research-evidence">{"".join(links)}</div></div></article>'
     structured = json.dumps({'@context':'https://schema.org','@type':'Person','name':p['name'],'alternateName':p['chinese_name'],'url':p['site_url'],'jobTitle':p['role'],'affiliation':{'@type':'CollegeOrUniversity','name':p['university']},'sameAs':[link['url'] for link in p['profiles']]}, ensure_ascii=False).replace('<', '\\u003c')
     values = {key.upper(): esc(p[key]) for key in ['name','chinese_name','role','department','university','location','email','updated','site_url']}
+    values['UPDATED_LABEL'] = datetime.strptime(p['updated'], '%Y-%m-%d').strftime('%B %Y')
     for key, image in p['homepage_images'].items():
         if not image['preview'].endswith('.webp'):
             raise ValueError(f'Homepage photograph requires a WebP preview: {key}')
