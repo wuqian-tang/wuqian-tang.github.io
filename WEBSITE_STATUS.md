@@ -17,7 +17,7 @@
 - CV 分为 Conference Papers → Journal Papers → Preprints，组内倒序，编号沿用。公开完整 CV 为 19C + 2J + 3P，私人 Full 为 19C + 1J + 3P；私人版原来未收录甲骨文期刊，继续保持该范围。预印本为 P3/TAPCO-G、P2/RTLREX、P1/Trinity，arXiv 编号可点击，未录用稿不写 to appear。两份完整 CV 自然延展至四页，不缩字号。
 - 本地两页版保留六篇代表作：TAPCO、HyPAS、DATE 2024、CB-EVO、TAPCO-G、RTLREX。删去的旧精选仍完整保存在 Full。保留旧版 C7/C6/C1 与 J2 编号，不按显示位置重编号；新预印本使用稳定 P3/P2。旧手动断行改为自然换行；两页版的 Selected Publications 与 Full 一样放在经历／技能之后，避免标题孤立在前一页。保留原字号与两页成品。Original Word/PDF 和历史申请归档不改写。
 - 公开 CV 保留两邮箱且无电话；私人 CV 保持原有联系方式。公开三个地址 cv-wqtang.pdf、cv.pdf、Wuqian_Tang_CV.pdf 内容相同。同步本地 CV 源文件/Full/2Page、说明、当前求职和申请副本及现用 ZIP。公开部署只含公开版 CV，私人 CV 不进入网站。
-- 实施方案为 docs/superpowers/plans/2026-11-11-research-cv.md；验收记录为 preview/research-cv-validation.json。发布结果在本节后续补齐。
+- 实施方案为 docs/superpowers/plans/2026-11-11-research-cv.md；验收记录为 preview/research-cv-validation.json。网页提交 b0dc165、私人 CV 提交 5741f93 已分别推送；Pages run 42960742047 的 build 19 秒、deploy 18 秒，均 success。线上首页、新论文 PDF、三个 CV 地址与 sitemap 均 HTTP 200 且逐字节等于本地。320／390／768／1440／2560px 深浅色共十组、九个 Research 链接、六次 More 深链接定位、两次实际 BibTeX 复制、PDF 新分页和无 JS 引文展开通过；独立审阅发现的清单字节数和短版孤立标题已修正。完整／短版 PDF 编译无警告，文字在页面范围内。求职／申请副本、两份现用 ZIP 及申请清单已同步，原 Word／PDF、历史归档及用户未提交内容保留。
 - 后续：TAPCO-G 如有新版本、录用或独立代码，再核对作者、共同贡献、版本、PDF 和正式出处后更新；维持 P3 与已有 C17 记录独立。公开图片/文件清单必须同步 SHA-256；不因新增预印本移除已发表论文的 DOI。
 
 ## GitHub Pages 重复部署超时修复（2026-11-10）

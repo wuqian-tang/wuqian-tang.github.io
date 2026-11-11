@@ -45,7 +45,7 @@
 
 - [x] Add lightweight publication subheadings and a linked arXiv preprint format; order C, J, P in both sources.
 - [x] Add all three preprints to full CVs and the two first-author preprints to the short CV; select representative formal papers to preserve two pages.
-- [ ] Compile with LuaLaTeX, inspect text and rendered pages, update aliases/manifest/current-use mirrors/ZIPs.
+- [x] Compile with LuaLaTeX, inspect text and rendered pages, update aliases/manifest/current-use mirrors/ZIPs.
   Expected: all full-paper records preserved, correct group order and IDs, no clipping, short CV two pages, public aliases identical and private telephone absent from public files.
 
 ### Task 3: Review, publish, and synchronize
@@ -56,6 +56,6 @@
 
 - [x] Run existing build audit, syntax/diff checks, and focused browser verification at mobile/tablet/desktop widths and both themes; verify hidden-paper navigation, BibTeX, new-tab PDFs, and no overflow.
 - [x] Have one fresh reviewer inspect the complete change; resolve material findings and verify again only as needed.
-- [ ] Commit/push scoped changes to the public master and private main; verify deployment and live hashes.
-- [ ] Fast-forward original checkouts, synchronize current-use ignored outputs, confirm unrelated work unchanged, and remove task worktrees.
+- [x] Commit/push scoped changes to the public master and private main; verify deployment and live hashes.
+- [x] Fast-forward original checkouts, synchronize current-use ignored outputs, confirm unrelated work unchanged, and remove task worktrees.
   Expected: both remote heads match intended commits; GitHub Pages succeeds; live homepage, P3 PDF and CV match local outputs.

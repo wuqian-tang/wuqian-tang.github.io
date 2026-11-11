@@ -376,6 +376,80 @@
     ]
   },
   "deployment": {
-    "status": "pending push and live verification"
+    "status": "success",
+    "site_commit": "b0dc1652cecc1abd25b2ad41bd97b9f5f5ae5c70",
+    "private_cv_commit": "5741f93008c7929cb21adcc7a491ba18ede8160e",
+    "run_id": 42960742047,
+    "run_url": "https://github.com/wuqian-tang/wuqian-tang.github.io/actions/runs/42960742047",
+    "build_seconds": 19,
+    "deploy_seconds": 18,
+    "live_files": [
+      {
+        "path": "index.html",
+        "url": "https://wqtang.com/",
+        "final_url": "https://wqtang.com/",
+        "status": 200,
+        "bytes": 175327,
+        "sha256": "7ca91bccc27821af8eea5563db2200691c359a186613c1870a786f3561cd44a6",
+        "matches_local": true
+      },
+      {
+        "path": "files/cv-wqtang.pdf",
+        "url": "https://wqtang.com/files/cv-wqtang.pdf",
+        "final_url": "https://wqtang.com/files/cv-wqtang.pdf",
+        "status": 200,
+        "bytes": 124764,
+        "sha256": "f18c85c66d6cf295c46d816f8a44651bee4fa2d9245e88ef744a4ed7eb6e8350",
+        "matches_local": true
+      },
+      {
+        "path": "files/cv.pdf",
+        "url": "https://wqtang.com/files/cv.pdf",
+        "final_url": "https://wqtang.com/files/cv.pdf",
+        "status": 200,
+        "bytes": 124764,
+        "sha256": "f18c85c66d6cf295c46d816f8a44651bee4fa2d9245e88ef744a4ed7eb6e8350",
+        "matches_local": true
+      },
+      {
+        "path": "files/Wuqian_Tang_CV.pdf",
+        "url": "https://wqtang.com/files/Wuqian_Tang_CV.pdf",
+        "final_url": "https://wqtang.com/files/Wuqian_Tang_CV.pdf",
+        "status": 200,
+        "bytes": 124764,
+        "sha256": "f18c85c66d6cf295c46d816f8a44651bee4fa2d9245e88ef744a4ed7eb6e8350",
+        "matches_local": true
+      },
+      {
+        "path": "files/papers/2026-arxiv-tapco-g.pdf",
+        "url": "https://wqtang.com/files/papers/2026-arxiv-tapco-g.pdf",
+        "final_url": "https://wqtang.com/files/papers/2026-arxiv-tapco-g.pdf",
+        "status": 200,
+        "bytes": 905764,
+        "sha256": "ca4f99248505e24685f72d83cf92ef3ca4053bc69d2e2109934579e3c387fd7c",
+        "matches_local": true
+      },
+      {
+        "path": "sitemap.xml",
+        "url": "https://wqtang.com/sitemap.xml",
+        "final_url": "https://wqtang.com/sitemap.xml",
+        "status": 200,
+        "bytes": 19151,
+        "sha256": "3c985d7ee8b1cec734eaad26b2bd506a4cfa1f75e826f77d13602eb45df78024",
+        "matches_local": true
+      }
+    ]
+  },
+  "local_synchronization": {
+    "current_pdf_mirrors": {
+      "Job_Search/Attachments/Wuqian_Tang_CV_Full.pdf": "69c1307eb961eccbc9813331a419d8fa4a481f6960f0159acd43425f2c2fe0bd",
+      "Job_Search/Attachments/Wuqian_Tang_CV_2Page.pdf": "810e1741e8ebf6855c3a0792328f4f9c91d7059ea806d4bf48a8269e9ba5a3b6",
+      "CUHK_CSE_PhD_Application/Others/Wuqian_Tang_CV_Full.pdf": "69c1307eb961eccbc9813331a419d8fa4a481f6960f0159acd43425f2c2fe0bd"
+    },
+    "cv_bundle_entries_verified": 5,
+    "website_preview_public_cv_verified": true,
+    "application_manifest_updated": true,
+    "original_word_pdf_unchanged": true,
+    "user_work_unchanged": true
   }
 }
