@@ -23,7 +23,7 @@
 - [x] Remove current 2Page files/references, retain historical records as history, and update current instructions.
 - [x] Synchronize private application Full mirror/LaTeX ZIP and public three identical CV aliases/legacy preview ZIP; refresh asset hashes and sizes.
 - [x] Run build --check, check only three deployed CV files changed, verify all current references and protected hashes.
-- [ ] Obtain one whole-change review, resolve material findings, commit/push both repositories, verify Pages and live PDF bytes, record completion.
+- [x] Obtain one whole-change review, resolve material findings, commit/push both repositories, verify Pages and live PDF bytes, record completion.
 
 ## Execution notes
 
@@ -32,3 +32,5 @@
 - Work Experience is fully on page 1; fonts and per-section text are preserved, both full PDFs remain four pages.
 - Frozen short-version sources independently produce two pages matching the archived PDF text and rendered pixels.
 - The legacy Website_Preview.zip retains its historical 13-entry structure; only its existing public CV entry changes. This is not a newly rebuilt complete site bundle.
+
+- Completed: private f5fcbd1, public 28afe9c; Pages run 43045289828 succeeded. Live homepage and all three CV aliases match local bytes; CV order and first-page work section verified.

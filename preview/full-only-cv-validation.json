@@ -138,7 +138,48 @@
   },
   "job_search_folder_deleted": true,
   "deployment": {
-    "status": "pending"
+    "status": "success",
+    "public_commit": "28afe9c3500c7291179387232a590ecbcdce8283",
+    "private_commit": "f5fcbd1042b8761339e4451fd02430b4a4b1713d",
+    "pages_run_id": 43045289828,
+    "pages_run_url": "https://github.com/wuqian-tang/wuqian-tang.github.io/actions/runs/43045289828",
+    "build_seconds": 20,
+    "deploy_seconds": 20,
+    "live": [
+      {
+        "url": "https://wqtang.com/",
+        "http": 200,
+        "sha256": "c44ecce7b75188f3e708c5813fabc4fa203616bff1e7f972613b23f5adc70692",
+        "equals_local": true
+      },
+      {
+        "url": "https://wqtang.com/files/cv-wqtang.pdf",
+        "http": 200,
+        "sha256": "2457eb8f50c7cc6c5a8aaee605d49187142fcfe0599db70be196164ca93a9216",
+        "equals_local": true,
+        "pages": 4,
+        "approved_section_order": true,
+        "whole_work_experience_on_page_1": true
+      },
+      {
+        "url": "https://wqtang.com/files/cv.pdf",
+        "http": 200,
+        "sha256": "2457eb8f50c7cc6c5a8aaee605d49187142fcfe0599db70be196164ca93a9216",
+        "equals_local": true,
+        "pages": 4,
+        "approved_section_order": true,
+        "whole_work_experience_on_page_1": true
+      },
+      {
+        "url": "https://wqtang.com/files/Wuqian_Tang_CV.pdf",
+        "http": 200,
+        "sha256": "2457eb8f50c7cc6c5a8aaee605d49187142fcfe0599db70be196164ca93a9216",
+        "equals_local": true,
+        "pages": 4,
+        "approved_section_order": true,
+        "whole_work_experience_on_page_1": true
+      }
+    ]
   },
   "static": {
     "public_file_count": 327,
