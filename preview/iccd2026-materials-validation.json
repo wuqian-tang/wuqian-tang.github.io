@@ -1,0 +1,266 @@
+{
+  "verified_on": "2026-11-16",
+  "publication_id": "c19",
+  "source_files": {
+    "ICCD26_Observability_Aware_Pattern_Generation_for_Hardware_Trojan_Detection_camera_ready_v1.pdf": {
+      "sha256": "de7a6d9e2df51fd6eab50bcb2327c5378e5de5f590b92a039662c4323a10d202",
+      "bytes": 698903,
+      "superseded": true
+    },
+    "ICCD2026_Paper195_Talk.pdf": {
+      "sha256": "44be34b1e3363d16690b6d2bdd061391ea899c09b4273c3eb5b19521f1692874",
+      "bytes": 1438919
+    },
+    "ICCD2026_Paper195_Poster_A0.pdf": {
+      "sha256": "b57b1916ab714266b250d47860263f531e36e31000f66d71e84ffabe7027e1b1",
+      "bytes": 175885
+    },
+    "ICCD2026_Paper195_Final.pdf": {
+      "sha256": "7428a51c07666bea32a300ae1fc95fadcfa54999af9f27038d21a7792c820d90",
+      "bytes": 397739
+    }
+  },
+  "assets": [
+    {
+      "path": "files/papers/2026-iccd-hardware-trojan-detection.pdf",
+      "sha256": "7428a51c07666bea32a300ae1fc95fadcfa54999af9f27038d21a7792c820d90",
+      "source": "Owner-provided ICCD2026_Paper195_Final.pdf; designated authoritative final version on 2026-11-16",
+      "source_sha256": "7428a51c07666bea32a300ae1fc95fadcfa54999af9f27038d21a7792c820d90",
+      "bytes": 397739,
+      "pages": 4,
+      "verified_on": "2026-11-16",
+      "publication_id": "c19",
+      "encoding": "Original PDF bytes preserved",
+      "affiliation": "Arculus System Co., Ltd., USA (as printed in the owner-designated final PDF)"
+    },
+    {
+      "path": "files/slides/2026-iccd-hardware-trojan-detection-slides.pdf",
+      "sha256": "44be34b1e3363d16690b6d2bdd061391ea899c09b4273c3eb5b19521f1692874",
+      "source": "Owner-provided ICCD2026_Paper195_Talk.pdf",
+      "bytes": 1438919,
+      "pages": 10,
+      "verified_on": "2026-11-16",
+      "publication_id": "c19",
+      "encoding": "Original PDF bytes preserved"
+    },
+    {
+      "path": "files/posters/2026-iccd-hardware-trojan-detection-poster.pdf",
+      "sha256": "b57b1916ab714266b250d47860263f531e36e31000f66d71e84ffabe7027e1b1",
+      "source": "Owner-provided ICCD2026_Paper195_Poster_A0.pdf",
+      "bytes": 175885,
+      "pages": 1,
+      "verified_on": "2026-11-16",
+      "publication_id": "c19",
+      "encoding": "Original PDF bytes preserved",
+      "page_size": "A0 portrait, 841 × 1189 mm"
+    }
+  ],
+  "slides_and_poster_original_bytes_preserved": true,
+  "root_inputs_cleanup": "pending verified deployment",
+  "static": {
+    "public_files": 330,
+    "reviewed_assets": 282,
+    "new_deployed_files": [
+      "files/papers/2026-iccd-hardware-trojan-detection.pdf",
+      "files/posters/2026-iccd-hardware-trojan-detection-poster.pdf",
+      "files/slides/2026-iccd-hardware-trojan-detection-slides.pdf"
+    ],
+    "changed_existing_files": [
+      "index.html",
+      "sitemap.xml"
+    ],
+    "other_existing_files_byte_identical": 325,
+    "all_old_public_assets_preserved": true,
+    "cv_and_protected_user_changes_unchanged": true,
+    "publication_changes_only_c19_resources": true,
+    "poster_validation": "valid existing local PDF accepted; external, missing, wrong-directory and traversal URLs rejected",
+    "build_and_allowlist_check": "passed",
+    "git_diff_check": "passed",
+    "latest_final_pdf_byte_identical_to_owner_source": true,
+    "all_four_sources_match_private_archives": true
+  },
+  "paper_source": {
+    "filename": "ICCD2026_Paper195_Final.pdf",
+    "authoritative_final_version": true,
+    "original_bytes_preserved": true,
+    "arculus_affiliation_printed_as_usa": true,
+    "page_count": 4,
+    "sha256": "7428a51c07666bea32a300ae1fc95fadcfa54999af9f27038d21a7792c820d90"
+  },
+  "superseded_camera_ready_privately_archived": true,
+  "browser": {
+    "layouts": [
+      {
+        "width": 320,
+        "colorScheme": "light",
+        "resources": [
+          "PDF",
+          "Slides",
+          "Poster"
+        ],
+        "bibtexLast": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "popupCount": 0,
+        "citationCopied": false,
+        "pageErrors": []
+      },
+      {
+        "width": 320,
+        "colorScheme": "dark",
+        "resources": [
+          "PDF",
+          "Slides",
+          "Poster"
+        ],
+        "bibtexLast": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "popupCount": 0,
+        "citationCopied": false,
+        "pageErrors": []
+      },
+      {
+        "width": 390,
+        "colorScheme": "light",
+        "resources": [
+          "PDF",
+          "Slides",
+          "Poster"
+        ],
+        "bibtexLast": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "popupCount": 0,
+        "citationCopied": false,
+        "pageErrors": []
+      },
+      {
+        "width": 390,
+        "colorScheme": "dark",
+        "resources": [
+          "PDF",
+          "Slides",
+          "Poster"
+        ],
+        "bibtexLast": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "popupCount": 3,
+        "citationCopied": true,
+        "pageErrors": []
+      },
+      {
+        "width": 768,
+        "colorScheme": "light",
+        "resources": [
+          "PDF",
+          "Slides",
+          "Poster"
+        ],
+        "bibtexLast": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "popupCount": 0,
+        "citationCopied": false,
+        "pageErrors": []
+      },
+      {
+        "width": 768,
+        "colorScheme": "dark",
+        "resources": [
+          "PDF",
+          "Slides",
+          "Poster"
+        ],
+        "bibtexLast": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "popupCount": 0,
+        "citationCopied": false,
+        "pageErrors": []
+      },
+      {
+        "width": 1440,
+        "colorScheme": "light",
+        "resources": [
+          "PDF",
+          "Slides",
+          "Poster"
+        ],
+        "bibtexLast": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "popupCount": 3,
+        "citationCopied": true,
+        "pageErrors": []
+      },
+      {
+        "width": 1440,
+        "colorScheme": "dark",
+        "resources": [
+          "PDF",
+          "Slides",
+          "Poster"
+        ],
+        "bibtexLast": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "popupCount": 0,
+        "citationCopied": false,
+        "pageErrors": []
+      },
+      {
+        "width": 2560,
+        "colorScheme": "light",
+        "resources": [
+          "PDF",
+          "Slides",
+          "Poster"
+        ],
+        "bibtexLast": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "popupCount": 0,
+        "citationCopied": false,
+        "pageErrors": []
+      },
+      {
+        "width": 2560,
+        "colorScheme": "dark",
+        "resources": [
+          "PDF",
+          "Slides",
+          "Poster"
+        ],
+        "bibtexLast": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "popupCount": 0,
+        "citationCopied": false,
+        "pageErrors": []
+      }
+    ],
+    "noJavaScriptLinksAndCitation": true
+  },
+  "visual_review": {
+    "final_paper_page_1": true,
+    "slides_title": true,
+    "a0_poster": true,
+    "c19_desktop_light": true,
+    "c19_mobile_dark": true
+  },
+  "archive_source_mapping": {
+    "ICCD2026_Paper195_Final.pdf": "Papers/2026-iccd-hardware-trojan-detection.pdf",
+    "ICCD2026_Paper195_Talk.pdf": "Slides/2026-iccd-hardware-trojan-detection-slides.pdf",
+    "ICCD2026_Paper195_Poster_A0.pdf": "Posters/2026-iccd-hardware-trojan-detection-poster.pdf",
+    "ICCD26_Observability_Aware_Pattern_Generation_for_Hardware_Trojan_Detection_camera_ready_v1.pdf": "Originals/2026-iccd-hardware-trojan-detection-camera-ready-v1.pdf"
+  },
+  "deployment": {
+    "status": "pending push and verification"
+  },
+  "independent_review": {
+    "status": "no material findings",
+    "scope": "source hashes, authoritative Final version, public/private copies, manifest, C19 resources, Poster validation, preserved assets and responsive screenshots"
+  }
+}

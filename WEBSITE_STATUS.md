@@ -1,13 +1,22 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-11-11。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-11-16。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wqtang.com](https://wqtang.com/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## Full CV 章节重排与两页版冻结（2026-11-11，最新）
+## ICCD 2026 论文、Slides 与 Poster（2026-11-16，最新）
+
+- 用户已审核三份材料归档及网页方案，并指定 Arculus 地区以 USA 为准；随后提供 ICCD2026_Paper195_Final.pdf，明确以该 Final 为准。当前论文为该文件原始字节，4 页、397,739 bytes，机构已为 USA；没有对 Final 做编辑、压缩或重新导出。
+- C19 / Observability-Aware Pattern Generation for Hardware Trojan Detection 继续在 Publications → More。资源行新增 PDF / Slides / Poster，BibTeX 保持最后；三个文件分别为 files/papers/2026-iccd-hardware-trojan-detection.pdf、files/slides/2026-iccd-hardware-trojan-detection-slides.pdf、files/posters/2026-iccd-hardware-trojan-detection-poster.pdf。
+- Slides 为原 Talk 文件，10 页、1,438,919 bytes；Poster 为原 A0 文件，1 页、175,885 bytes。两者均保留原始字节，海报机构同为 USA。公开清单记录三个文件的来源、SHA-256、页数和字节数；Poster 与 Slides 一样只允许已存在的本地 PDF 路径，全部资源均新分页打开且无 download 属性。
+- 私人 Publications/Papers、Slides、Posters 保存三份现用材料；更早的 camera-ready v1 原字节存入 Originals，仅作私人历史归档。当前方案和资料说明以 Final 为唯一现用论文版本。四个根目录来源文件在两个仓库推送和线上核验后清理。
+- 论文未标 DOI；C19 既有 To appear、作者／题名、引用、More 归属和所有 CV 继续保持。Recent News 无新增重复消息。资料更新日为 2026-11-16，页脚月份仍为 Updated November 2026。
+- 验收记录为 preview/iccd2026-materials-validation.json：十组 320／390／768／1440／2560px 深浅色布局、六次真实 PDF 新分页打开和文件 HTTP／SHA 校验、两次实际 BibTeX 复制、无 JS 的资源与引文展开均通过；无溢出或脚本异常。Final、Slides、Poster 与源文件逐字节一致，四份来源均有私人原字节归档。原有 279 份公开资产保持，现有 282 份；公开文件由 327 增至 330，旧文件仅首页和 sitemap 更新，其他 325 份保持原字节。已查看 Final 首页、讲稿封面、A0 海报及手机／桌面条目截图。Poster 外部、缺失、错误目录与穿越路径负例均被拒绝；构建、公开清单及 diff 检查通过。推送后补充实际部署及根目录清理结果。
+
+## Full CV 章节重排与两页版冻结（2026-11-11）
 
 - 用户已确认章节顺序：Education → Work Experience → Teaching Experience → Technical Skills → Selected Awards and Honors → Publications。整节奖项后移，技能放在两个长列表之前；网页和本地现用 CV 只维护 Full。
 - 两套 Full 源码移除短版条件分支，保留各自全部内容、字号、章节间距及联系信息设置。Work Experience 作为短区块整体分页，机构和职位均完整留在第一页；各级标题与首条内容同页，奖项可在条目之间自然分页。

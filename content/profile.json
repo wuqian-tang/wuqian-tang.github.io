@@ -6,7 +6,7 @@
   "university": "National Tsing Hua University",
   "location": "Hsinchu, Taiwan",
   "email": "wqtang@cs.nthu.edu.tw",
-  "updated": "2026-11-11",
+  "updated": "2026-11-16",
   "site_url": "https://wqtang.com",
   "profiles": [
     {
@@ -365,7 +365,22 @@
       "details": "Hong Kong SAR, China, Nov. 16–18, 2026",
       "status": "To appear",
       "selected": false,
-      "links": []
+      "links": [
+        {
+          "label": "PDF",
+          "url": "files/papers/2026-iccd-hardware-trojan-detection.pdf"
+        },
+        {
+          "label": "Slides",
+          "url": "files/slides/2026-iccd-hardware-trojan-detection-slides.pdf"
+        },
+        {
+          "label": "Poster",
+          "url": "files/posters/2026-iccd-hardware-trojan-detection-poster.pdf"
+        }
+      ],
+      "pdf_source": "Owner-designated final paper: ICCD2026_Paper195_Final.pdf; original PDF bytes preserved",
+      "materials_verified_on": "2026-11-16"
     },
     {
       "id": "c18",

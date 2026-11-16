@@ -1884,5 +1884,38 @@
     "sha256": "ca4f99248505e24685f72d83cf92ef3ca4053bc69d2e2109934579e3c387fd7c",
     "source": "Official arXiv v1 author manuscript: https://arxiv.org/pdf/2611.13931v1 (TAPCO-G, 27 pages; verified 2026-11-11)",
     "bytes": 905764
+  },
+  {
+    "path": "files/papers/2026-iccd-hardware-trojan-detection.pdf",
+    "sha256": "7428a51c07666bea32a300ae1fc95fadcfa54999af9f27038d21a7792c820d90",
+    "source": "Owner-provided ICCD2026_Paper195_Final.pdf; designated authoritative final version on 2026-11-16",
+    "source_sha256": "7428a51c07666bea32a300ae1fc95fadcfa54999af9f27038d21a7792c820d90",
+    "bytes": 397739,
+    "pages": 4,
+    "verified_on": "2026-11-16",
+    "publication_id": "c19",
+    "encoding": "Original PDF bytes preserved",
+    "affiliation": "Arculus System Co., Ltd., USA (as printed in the owner-designated final PDF)"
+  },
+  {
+    "path": "files/slides/2026-iccd-hardware-trojan-detection-slides.pdf",
+    "sha256": "44be34b1e3363d16690b6d2bdd061391ea899c09b4273c3eb5b19521f1692874",
+    "source": "Owner-provided ICCD2026_Paper195_Talk.pdf",
+    "bytes": 1438919,
+    "pages": 10,
+    "verified_on": "2026-11-16",
+    "publication_id": "c19",
+    "encoding": "Original PDF bytes preserved"
+  },
+  {
+    "path": "files/posters/2026-iccd-hardware-trojan-detection-poster.pdf",
+    "sha256": "b57b1916ab714266b250d47860263f531e36e31000f66d71e84ffabe7027e1b1",
+    "source": "Owner-provided ICCD2026_Paper195_Poster_A0.pdf",
+    "bytes": 175885,
+    "pages": 1,
+    "verified_on": "2026-11-16",
+    "publication_id": "c19",
+    "encoding": "Original PDF bytes preserved",
+    "page_size": "A0 portrait, 841 × 1189 mm"
   }
 ]

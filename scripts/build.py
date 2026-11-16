@@ -346,6 +346,9 @@ def render():
             if link['label'] == 'Slides' and (not re.fullmatch(r'files/slides/[A-Za-z0-9_-]+\.pdf', link['url'])
                     or not (SITE / link['url']).is_file()):
                 raise ValueError(f'Slides require an existing local PDF: {paper["id"]}')
+            if link['label'] == 'Poster' and (not re.fullmatch(r'files/posters/[A-Za-z0-9_-]+\.pdf', link['url'])
+                    or not (SITE / link['url']).is_file()):
+                raise ValueError(f'Poster requires an existing local PDF: {paper["id"]}')
     selected = [paper for paper in papers if paper['selected']]
     others = [paper for paper in papers if not paper['selected']]
     selected.sort(key=lambda paper: ['p2','p1','c17','c15','j1','j2','c3','c1'].index(paper['id']))
