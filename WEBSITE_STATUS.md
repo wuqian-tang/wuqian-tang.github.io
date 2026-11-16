@@ -14,7 +14,7 @@
 - Slides 为原 Talk 文件，10 页、1,438,919 bytes；Poster 为原 A0 文件，1 页、175,885 bytes。两者均保留原始字节，海报机构同为 USA。公开清单记录三个文件的来源、SHA-256、页数和字节数；Poster 与 Slides 一样只允许已存在的本地 PDF 路径，全部资源均新分页打开且无 download 属性。
 - 私人 Publications/Papers、Slides、Posters 保存三份现用材料；更早的 camera-ready v1 原字节存入 Originals，仅作私人历史归档。当前方案和资料说明以 Final 为唯一现用论文版本。四个根目录来源文件在两个仓库推送和线上核验后清理。
 - 论文未标 DOI；C19 既有 To appear、作者／题名、引用、More 归属和所有 CV 继续保持。Recent News 无新增重复消息。资料更新日为 2026-11-16，页脚月份仍为 Updated November 2026。
-- 验收记录为 preview/iccd2026-materials-validation.json：十组 320／390／768／1440／2560px 深浅色布局、六次真实 PDF 新分页打开和文件 HTTP／SHA 校验、两次实际 BibTeX 复制、无 JS 的资源与引文展开均通过；无溢出或脚本异常。Final、Slides、Poster 与源文件逐字节一致，四份来源均有私人原字节归档。原有 279 份公开资产保持，现有 282 份；公开文件由 327 增至 330，旧文件仅首页和 sitemap 更新，其他 325 份保持原字节。已查看 Final 首页、讲稿封面、A0 海报及手机／桌面条目截图。Poster 外部、缺失、错误目录与穿越路径负例均被拒绝；构建、公开清单及 diff 检查通过。推送后补充实际部署及根目录清理结果。
+- 验收记录为 preview/iccd2026-materials-validation.json：十组 320／390／768／1440／2560px 深浅色布局、六次真实 PDF 新分页打开和文件 HTTP／SHA 校验、两次实际 BibTeX 复制、无 JS 的资源与引文展开均通过；无溢出或脚本异常。Final、Slides、Poster 与源文件逐字节一致，四份来源均有私人原字节归档。原有 279 份公开资产保持，现有 282 份；公开文件由 327 增至 330，旧文件仅首页和 sitemap 更新，其他 325 份保持原字节。已查看 Final 首页、讲稿封面、A0 海报及手机／桌面条目截图。Poster 外部、缺失、错误目录与穿越路径负例均被拒绝；构建、公开清单及 diff 检查通过。独立复核无实质问题。私人归档提交 4570531、网页提交 01f6d26 已分别推送；Pages run 43797542221 的 build 20 秒、deploy 14 秒，均 success。正式首页、sitemap 和三个 PDF 均 HTTP 200、逐字节等于本地，线上论文 SHA-256 为 7428a51c…20d90，与用户指定 Final 原件一致。确认私人提交中的四份归档与来源原字节一致后，已清理四个根目录来源文件；现用 Final、Slides、Poster 与旧 camera-ready 私人历史副本全部保留。
 
 ## Full CV 章节重排与两页版冻结（2026-11-11）
 

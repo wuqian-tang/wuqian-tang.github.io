@@ -56,7 +56,17 @@
     }
   ],
   "slides_and_poster_original_bytes_preserved": true,
-  "root_inputs_cleanup": "pending verified deployment",
+  "root_inputs_cleanup": {
+    "status": "complete",
+    "removed_root_files": [
+      "ICCD2026_Paper195_Final.pdf",
+      "ICCD2026_Paper195_Talk.pdf",
+      "ICCD2026_Paper195_Poster_A0.pdf",
+      "ICCD26_Observability_Aware_Pattern_Generation_for_Hardware_Trojan_Detection_camera_ready_v1.pdf"
+    ],
+    "all_inputs_preserved_in_committed_private_archives": true,
+    "performed_after_live_hash_verification": true
+  },
   "static": {
     "public_files": 330,
     "reviewed_assets": 282,
@@ -257,7 +267,55 @@
     "ICCD26_Observability_Aware_Pattern_Generation_for_Hardware_Trojan_Detection_camera_ready_v1.pdf": "Originals/2026-iccd-hardware-trojan-detection-camera-ready-v1.pdf"
   },
   "deployment": {
-    "status": "pending push and verification"
+    "status": "success",
+    "public_commit": "01f6d2692edde32b454ce0ff6ec2690a3cc85029",
+    "private_commit": "45705313623e3cbf794002926733337f638cab7b",
+    "pages_run_id": 43797542221,
+    "pages_run_url": "https://github.com/wuqian-tang/wuqian-tang.github.io/actions/runs/43797542221",
+    "live": [
+      {
+        "url": "https://wqtang.com/",
+        "http": 200,
+        "sha256": "85a3c26bb7381f6766564d00ab59665d7836d94044841939c0b3c29cd1933b91",
+        "equals_local": true,
+        "bytes": 176206,
+        "c19_resource_order_and_new_tabs_verified": true
+      },
+      {
+        "url": "https://wqtang.com/sitemap.xml",
+        "http": 200,
+        "sha256": "277244862bd75b1977da2b2343c8f61135fc6c913cdbf4281c39462d3ab24887",
+        "equals_local": true,
+        "bytes": 19151
+      },
+      {
+        "url": "https://wqtang.com/files/papers/2026-iccd-hardware-trojan-detection.pdf",
+        "http": 200,
+        "sha256": "7428a51c07666bea32a300ae1fc95fadcfa54999af9f27038d21a7792c820d90",
+        "equals_local": true,
+        "bytes": 397739,
+        "pages": 4,
+        "authoritative_final_source_verified": true
+      },
+      {
+        "url": "https://wqtang.com/files/slides/2026-iccd-hardware-trojan-detection-slides.pdf",
+        "http": 200,
+        "sha256": "44be34b1e3363d16690b6d2bdd061391ea899c09b4273c3eb5b19521f1692874",
+        "equals_local": true,
+        "bytes": 1438919,
+        "pages": 10
+      },
+      {
+        "url": "https://wqtang.com/files/posters/2026-iccd-hardware-trojan-detection-poster.pdf",
+        "http": 200,
+        "sha256": "b57b1916ab714266b250d47860263f531e36e31000f66d71e84ffabe7027e1b1",
+        "equals_local": true,
+        "bytes": 175885,
+        "pages": 1
+      }
+    ],
+    "build_seconds": 20,
+    "deploy_seconds": 14
   },
   "independent_review": {
     "status": "no material findings",

@@ -21,4 +21,6 @@
 - [x] Archive the current Final PDF, slides and poster byte-for-byte; privately retain the earlier camera-ready; verify the final PDF already prints USA.
 - [x] Add C19 PDF/Slides/Poster resources, manifest provenance and local-Poster validation; render/audit the site.
 - [x] Verify positive/negative Poster paths and new-tab links, mobile/desktop layouts, PDF files and preserved existing assets; obtain one final read-only review.
-- [ ] Commit/push private and public changes, verify Pages success and live file hashes, then remove the four root inputs and record completion.
+- [x] Commit/push private and public changes, verify Pages success and live file hashes, then remove the four root inputs and record completion.
+
+Completed: private 4570531 and public 01f6d26 pushed; Pages run 43797542221 succeeded. Live homepage, sitemap and all three PDFs match local bytes. Final PDF exactly matches the owner-designated source. Four root duplicate inputs were removed only after committed private copies and live hashes were verified.
