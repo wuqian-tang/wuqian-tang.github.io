@@ -19,7 +19,27 @@
     "internal_award_date": "2026-11-08"
   },
   "deployment": {
-    "status": "pending"
+    "status": "success",
+    "commit": "3368af341f2a86dd9dcfa97bf435ca8feeb6255d",
+    "pages_run_id": 44255108099,
+    "pages_run_url": "https://github.com/wuqian-tang/wuqian-tang.github.io/actions/runs/44255108099",
+    "live": [
+      {
+        "url": "https://wqtang.com/",
+        "http": 200,
+        "equals_local": true,
+        "sha256": "43e34773bcd3c5288f0804c22a02927392feebc5db8584540738073972273f67",
+        "award_and_news_department_links": true,
+        "new_tab_attributes": true,
+        "pending_materials_preserved": true
+      },
+      {
+        "url": "https://wqtang.com/sitemap.xml",
+        "http": 200,
+        "equals_local": true,
+        "sha256": "d33d8f5e8b32b971aaddd207df5dac75acbf3092664ad64319d21d18af2e9945"
+      }
+    ]
   },
   "static": {
     "existing_award_and_news_only": true,

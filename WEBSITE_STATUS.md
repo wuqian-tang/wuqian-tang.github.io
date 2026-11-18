@@ -12,7 +12,7 @@
 - 用户已审核并授权新增清大资工系公告：https://dcs.site.nthu.edu.tw/p/406-1174-318534,r109.php 。原网址 HTTP 200，标题明确列有唐梧遷与 CAD Contest@ICCAD 2026 定题组入选，内容为系所贺图。
 - Awards → More 的 iccad-contest-2026 在 Official 后新增 Department；当前资源行为 `Materials: [to appear] │ Announcements: [Official] [Department]`。贺图通过 Department 原公告查看，Materials 继续等待正式证书／现场照片。
 - 同一条 Recent News 句末资源为 `[Official] [Department]`；消息正文、显示 Nov 2026 和内部 2026-11-08 日期沿用，不另发重复消息。新链接沿用新分页、noopener noreferrer 及现有响应式标签格式。
-- profile.updated 与核验日期为 2026-11-18。核对仅修改既有获奖／新闻的链接和维护日期；所有论文、PDF、CV、照片、奖项归属与条目数量保持。公开目录只变更首页与 sitemap，其余 328 份文件字节一致。验收记录为 preview/cad2026-department-announcement-validation.json：320／390／768／1440／2560px 深浅色共十组、More 深链接与无 JS 链接检查通过；Official / Department 顺序、新分页属性、单个 Materials 占位和月份格式均正确，无溢出或脚本错误。已查看桌面浅色与手机深色截图；构建／清单及 diff 检查通过。推送后补充线上结果。
+- profile.updated 与核验日期为 2026-11-18。核对仅修改既有获奖／新闻的链接和维护日期；所有论文、PDF、CV、照片、奖项归属与条目数量保持。公开目录只变更首页与 sitemap，其余 328 份文件字节一致。验收记录为 preview/cad2026-department-announcement-validation.json：320／390／768／1440／2560px 深浅色共十组、More 深链接与无 JS 链接检查通过；Official / Department 顺序、新分页属性、单个 Materials 占位和月份格式均正确，无溢出或脚本错误。已查看桌面浅色与手机深色截图；构建／清单及 diff 检查通过。提交 3368af3 已推送，Pages run 44255108099 成功；正式首页与 sitemap 均 HTTP 200、逐字节等于本地，线上奖项及 News 各有一个正确的 Department 新分页链接，Materials 占位保留。
 
 ## ICCD 2026 论文、Slides 与 Poster（2026-11-16）
 
