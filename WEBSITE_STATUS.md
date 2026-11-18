@@ -1,13 +1,20 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-11-16。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-11-18。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wqtang.com](https://wqtang.com/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## ICCD 2026 论文、Slides 与 Poster（2026-11-16，最新）
+## CAD Contest 2026 系所公告（2026-11-18，最新）
+
+- 用户已审核并授权新增清大资工系公告：https://dcs.site.nthu.edu.tw/p/406-1174-318534,r109.php 。原网址 HTTP 200，标题明确列有唐梧遷与 CAD Contest@ICCAD 2026 定题组入选，内容为系所贺图。
+- Awards → More 的 iccad-contest-2026 在 Official 后新增 Department；当前资源行为 `Materials: [to appear] │ Announcements: [Official] [Department]`。贺图通过 Department 原公告查看，Materials 继续等待正式证书／现场照片。
+- 同一条 Recent News 句末资源为 `[Official] [Department]`；消息正文、显示 Nov 2026 和内部 2026-11-08 日期沿用，不另发重复消息。新链接沿用新分页、noopener noreferrer 及现有响应式标签格式。
+- profile.updated 与核验日期为 2026-11-18。核对仅修改既有获奖／新闻的链接和维护日期；所有论文、PDF、CV、照片、奖项归属与条目数量保持。公开目录只变更首页与 sitemap，其余 328 份文件字节一致。验收记录为 preview/cad2026-department-announcement-validation.json：320／390／768／1440／2560px 深浅色共十组、More 深链接与无 JS 链接检查通过；Official / Department 顺序、新分页属性、单个 Materials 占位和月份格式均正确，无溢出或脚本错误。已查看桌面浅色与手机深色截图；构建／清单及 diff 检查通过。推送后补充线上结果。
+
+## ICCD 2026 论文、Slides 与 Poster（2026-11-16）
 
 - 用户已审核三份材料归档及网页方案，并指定 Arculus 地区以 USA 为准；随后提供 ICCD2026_Paper195_Final.pdf，明确以该 Final 为准。当前论文为该文件原始字节，4 页、397,739 bytes，机构已为 USA；没有对 Final 做编辑、压缩或重新导出。
 - C19 / Observability-Aware Pattern Generation for Hardware Trojan Detection 继续在 Publications → More。资源行新增 PDF / Slides / Poster，BibTeX 保持最后；三个文件分别为 files/papers/2026-iccd-hardware-trojan-detection.pdf、files/slides/2026-iccd-hardware-trojan-detection-slides.pdf、files/posters/2026-iccd-hardware-trojan-detection-poster.pdf。

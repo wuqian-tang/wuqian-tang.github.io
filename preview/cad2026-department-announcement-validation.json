@@ -1,0 +1,169 @@
+{
+  "verified_on": "2026-11-18",
+  "source": {
+    "url": "https://dcs.site.nthu.edu.tw/p/406-1174-318534,r109.php",
+    "http": 200,
+    "title": "賀!資工系師生團隊榮獲CAD Contest@ICCAD 2026定題組 入選_沈安婕 唐梧遷 鍾承恩(指導教授：王俊堯教授、陳勇志教授(台科大電機系))"
+  },
+  "approved_change": {
+    "award": "iccad-contest-2026",
+    "news": "existing CAD Contest 2026 message",
+    "announcement_order": [
+      "Official",
+      "Department"
+    ],
+    "pending_resources": [
+      "materials"
+    ],
+    "display_date": "Nov 2026",
+    "internal_award_date": "2026-11-08"
+  },
+  "deployment": {
+    "status": "pending"
+  },
+  "static": {
+    "existing_award_and_news_only": true,
+    "award_date_and_news_prose_preserved": true,
+    "selected_and_more_placement_preserved": true,
+    "no_new_media_or_gallery": true,
+    "public_files": 330,
+    "changed_deployed_files": [
+      "index.html",
+      "sitemap.xml"
+    ],
+    "other_deployed_files_byte_identical": 328,
+    "all_pdfs_and_assets_byte_identical": true,
+    "unrelated_multilingual_notes_unchanged": true,
+    "build_and_exact_allowlist_check": "passed",
+    "diff_check": "passed"
+  },
+  "browser": {
+    "layouts": [
+      {
+        "width": 320,
+        "colorScheme": "light",
+        "awardAndNewsDepartmentLinks": true,
+        "officialFirst": true,
+        "newTabAttributes": true,
+        "onePendingMaterials": true,
+        "dateMonthOnly": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 320,
+        "colorScheme": "dark",
+        "awardAndNewsDepartmentLinks": true,
+        "officialFirst": true,
+        "newTabAttributes": true,
+        "onePendingMaterials": true,
+        "dateMonthOnly": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 390,
+        "colorScheme": "light",
+        "awardAndNewsDepartmentLinks": true,
+        "officialFirst": true,
+        "newTabAttributes": true,
+        "onePendingMaterials": true,
+        "dateMonthOnly": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 390,
+        "colorScheme": "dark",
+        "awardAndNewsDepartmentLinks": true,
+        "officialFirst": true,
+        "newTabAttributes": true,
+        "onePendingMaterials": true,
+        "dateMonthOnly": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 768,
+        "colorScheme": "light",
+        "awardAndNewsDepartmentLinks": true,
+        "officialFirst": true,
+        "newTabAttributes": true,
+        "onePendingMaterials": true,
+        "dateMonthOnly": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 768,
+        "colorScheme": "dark",
+        "awardAndNewsDepartmentLinks": true,
+        "officialFirst": true,
+        "newTabAttributes": true,
+        "onePendingMaterials": true,
+        "dateMonthOnly": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 1440,
+        "colorScheme": "light",
+        "awardAndNewsDepartmentLinks": true,
+        "officialFirst": true,
+        "newTabAttributes": true,
+        "onePendingMaterials": true,
+        "dateMonthOnly": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 1440,
+        "colorScheme": "dark",
+        "awardAndNewsDepartmentLinks": true,
+        "officialFirst": true,
+        "newTabAttributes": true,
+        "onePendingMaterials": true,
+        "dateMonthOnly": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 2560,
+        "colorScheme": "light",
+        "awardAndNewsDepartmentLinks": true,
+        "officialFirst": true,
+        "newTabAttributes": true,
+        "onePendingMaterials": true,
+        "dateMonthOnly": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "width": 2560,
+        "colorScheme": "dark",
+        "awardAndNewsDepartmentLinks": true,
+        "officialFirst": true,
+        "newTabAttributes": true,
+        "onePendingMaterials": true,
+        "dateMonthOnly": true,
+        "moreDeepLink": true,
+        "noOverflow": true,
+        "pageErrors": []
+      }
+    ],
+    "noJavaScriptDepartmentLink": true
+  },
+  "visual_review": [
+    "desktop light award resources",
+    "phone dark award resources"
+  ]
+}

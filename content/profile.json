@@ -6,7 +6,7 @@
   "university": "National Tsing Hua University",
   "location": "Hsinchu, Taiwan",
   "email": "wqtang@cs.nthu.edu.tw",
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "site_url": "https://wqtang.com",
   "profiles": [
     {
@@ -115,6 +115,10 @@
         {
           "label": "Official",
           "url": "https://www.iccad-contest.org/2026/Winners.html"
+        },
+        {
+          "label": "Department",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-318534,r109.php"
         }
       ]
     },
@@ -1349,6 +1353,11 @@
           "label": "Official",
           "url": "https://www.iccad-contest.org/2026/Winners.html",
           "description": "Official 2026 CAD Contest results"
+        },
+        {
+          "label": "Department",
+          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-318534,r109.php",
+          "description": "Department of Computer Science, National Tsing Hua University announcement"
         }
       ],
       "media": [],
@@ -1358,7 +1367,7 @@
       "recognition_source": "https://www.iccad-contest.org/2026/Winners.html",
       "date_source": "First day of ICCAD 2026 (November 8-12): https://iccad.com/2026",
       "problem_source": "https://www.iccad-contest.org/2026/Problems.html",
-      "verified_on": "2026-11-11",
+      "verified_on": "2026-11-18",
       "team_id": "cada1020",
       "results_announced_on": "2026-11-11"
     },
