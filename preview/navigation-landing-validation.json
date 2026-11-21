@@ -1,0 +1,520 @@
+{
+  "date": "2026-11-21",
+  "browser": "Playwright Chromium viewport/touch emulation; no physical-device or other-engine claim",
+  "base_commit": "2338615840ae4671ca06729e955f175c700e68f2",
+  "viewport_matrix": [
+    [
+      320,
+      740
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      844,
+      390
+    ],
+    [
+      999,
+      768
+    ],
+    [
+      1000,
+      768
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      2560,
+      1440
+    ]
+  ],
+  "checks_passed": 100,
+  "checks_failed": 0,
+  "results": [
+    {
+      "name": "320x740 click research",
+      "status": "passed"
+    },
+    {
+      "name": "320x740 click publications",
+      "status": "passed"
+    },
+    {
+      "name": "320x740 click experience",
+      "status": "passed"
+    },
+    {
+      "name": "320x740 click awards",
+      "status": "passed"
+    },
+    {
+      "name": "320x740 click teaching",
+      "status": "passed"
+    },
+    {
+      "name": "320x740 click hobbies",
+      "status": "passed"
+    },
+    {
+      "name": "320x740 click news",
+      "status": "passed"
+    },
+    {
+      "name": "320x740 click about",
+      "status": "passed"
+    },
+    {
+      "name": "320x740 script errors",
+      "status": "passed"
+    },
+    {
+      "name": "390x844 click research",
+      "status": "passed"
+    },
+    {
+      "name": "390x844 click publications",
+      "status": "passed"
+    },
+    {
+      "name": "390x844 click experience",
+      "status": "passed"
+    },
+    {
+      "name": "390x844 click awards",
+      "status": "passed"
+    },
+    {
+      "name": "390x844 click teaching",
+      "status": "passed"
+    },
+    {
+      "name": "390x844 click hobbies",
+      "status": "passed"
+    },
+    {
+      "name": "390x844 click news",
+      "status": "passed"
+    },
+    {
+      "name": "390x844 click about",
+      "status": "passed"
+    },
+    {
+      "name": "390x844 script errors",
+      "status": "passed"
+    },
+    {
+      "name": "768x1024 click research",
+      "status": "passed"
+    },
+    {
+      "name": "768x1024 click publications",
+      "status": "passed"
+    },
+    {
+      "name": "768x1024 click experience",
+      "status": "passed"
+    },
+    {
+      "name": "768x1024 click awards",
+      "status": "passed"
+    },
+    {
+      "name": "768x1024 click teaching",
+      "status": "passed"
+    },
+    {
+      "name": "768x1024 click hobbies",
+      "status": "passed"
+    },
+    {
+      "name": "768x1024 click news",
+      "status": "passed"
+    },
+    {
+      "name": "768x1024 click about",
+      "status": "passed"
+    },
+    {
+      "name": "768x1024 script errors",
+      "status": "passed"
+    },
+    {
+      "name": "844x390 click research",
+      "status": "passed"
+    },
+    {
+      "name": "844x390 click publications",
+      "status": "passed"
+    },
+    {
+      "name": "844x390 click experience",
+      "status": "passed"
+    },
+    {
+      "name": "844x390 click awards",
+      "status": "passed"
+    },
+    {
+      "name": "844x390 click teaching",
+      "status": "passed"
+    },
+    {
+      "name": "844x390 click hobbies",
+      "status": "passed"
+    },
+    {
+      "name": "844x390 click news",
+      "status": "passed"
+    },
+    {
+      "name": "844x390 click about",
+      "status": "passed"
+    },
+    {
+      "name": "844x390 script errors",
+      "status": "passed"
+    },
+    {
+      "name": "999x768 click research",
+      "status": "passed"
+    },
+    {
+      "name": "999x768 click publications",
+      "status": "passed"
+    },
+    {
+      "name": "999x768 click experience",
+      "status": "passed"
+    },
+    {
+      "name": "999x768 click awards",
+      "status": "passed"
+    },
+    {
+      "name": "999x768 click teaching",
+      "status": "passed"
+    },
+    {
+      "name": "999x768 click hobbies",
+      "status": "passed"
+    },
+    {
+      "name": "999x768 click news",
+      "status": "passed"
+    },
+    {
+      "name": "999x768 click about",
+      "status": "passed"
+    },
+    {
+      "name": "999x768 script errors",
+      "status": "passed"
+    },
+    {
+      "name": "1000x768 click research",
+      "status": "passed"
+    },
+    {
+      "name": "1000x768 click publications",
+      "status": "passed"
+    },
+    {
+      "name": "1000x768 click experience",
+      "status": "passed"
+    },
+    {
+      "name": "1000x768 click awards",
+      "status": "passed"
+    },
+    {
+      "name": "1000x768 click teaching",
+      "status": "passed"
+    },
+    {
+      "name": "1000x768 click hobbies",
+      "status": "passed"
+    },
+    {
+      "name": "1000x768 click news",
+      "status": "passed"
+    },
+    {
+      "name": "1000x768 click about",
+      "status": "passed"
+    },
+    {
+      "name": "1000x768 script errors",
+      "status": "passed"
+    },
+    {
+      "name": "1024x768 click research",
+      "status": "passed"
+    },
+    {
+      "name": "1024x768 click publications",
+      "status": "passed"
+    },
+    {
+      "name": "1024x768 click experience",
+      "status": "passed"
+    },
+    {
+      "name": "1024x768 click awards",
+      "status": "passed"
+    },
+    {
+      "name": "1024x768 click teaching",
+      "status": "passed"
+    },
+    {
+      "name": "1024x768 click hobbies",
+      "status": "passed"
+    },
+    {
+      "name": "1024x768 click news",
+      "status": "passed"
+    },
+    {
+      "name": "1024x768 click about",
+      "status": "passed"
+    },
+    {
+      "name": "1024x768 script errors",
+      "status": "passed"
+    },
+    {
+      "name": "1440x900 click research",
+      "status": "passed"
+    },
+    {
+      "name": "1440x900 click publications",
+      "status": "passed"
+    },
+    {
+      "name": "1440x900 click experience",
+      "status": "passed"
+    },
+    {
+      "name": "1440x900 click awards",
+      "status": "passed"
+    },
+    {
+      "name": "1440x900 click teaching",
+      "status": "passed"
+    },
+    {
+      "name": "1440x900 click hobbies",
+      "status": "passed"
+    },
+    {
+      "name": "1440x900 click news",
+      "status": "passed"
+    },
+    {
+      "name": "1440x900 click about",
+      "status": "passed"
+    },
+    {
+      "name": "1440x900 script errors",
+      "status": "passed"
+    },
+    {
+      "name": "2560x1440 click research",
+      "status": "passed"
+    },
+    {
+      "name": "2560x1440 click publications",
+      "status": "passed"
+    },
+    {
+      "name": "2560x1440 click experience",
+      "status": "passed"
+    },
+    {
+      "name": "2560x1440 click awards",
+      "status": "passed"
+    },
+    {
+      "name": "2560x1440 click teaching",
+      "status": "passed"
+    },
+    {
+      "name": "2560x1440 click hobbies",
+      "status": "passed"
+    },
+    {
+      "name": "2560x1440 click news",
+      "status": "passed"
+    },
+    {
+      "name": "2560x1440 click about",
+      "status": "passed"
+    },
+    {
+      "name": "2560x1440 script errors",
+      "status": "passed"
+    },
+    {
+      "name": "mobile direct fragment and repeated click",
+      "status": "passed"
+    },
+    {
+      "name": "mobile deep More paper uses the same offset",
+      "status": "passed"
+    },
+    {
+      "name": "mobile direct More award uses the same offset",
+      "status": "passed"
+    },
+    {
+      "name": "mobile actual touch resumes header hiding",
+      "status": "passed"
+    },
+    {
+      "name": "open mobile menu remains visible during scrolling",
+      "status": "passed"
+    },
+    {
+      "name": "browser Back and Forward retain correct landing",
+      "status": "passed"
+    },
+    {
+      "name": "resize to desktop and enlarged font remeasure header",
+      "status": "passed"
+    },
+    {
+      "name": "1440 automatic down/up section order",
+      "status": "passed"
+    },
+    {
+      "name": "1440 manual selection survives More/layout changes",
+      "status": "passed"
+    },
+    {
+      "name": "2560 automatic down/up section order",
+      "status": "passed"
+    },
+    {
+      "name": "2560 manual selection survives More/layout changes",
+      "status": "passed"
+    },
+    {
+      "name": "page-limit wheel and keys preserve manual priority",
+      "status": "passed"
+    },
+    {
+      "name": "initial mobile offset is correct before resize observers run",
+      "status": "passed"
+    },
+    {
+      "name": "page-limit touch preserves manual priority",
+      "status": "passed"
+    },
+    {
+      "name": "dark mobile reduce direct fragment",
+      "status": "passed"
+    },
+    {
+      "name": "dark mobile no-preference direct fragment",
+      "status": "passed"
+    },
+    {
+      "name": "390 no-JavaScript native destination is visible",
+      "status": "passed"
+    },
+    {
+      "name": "1440 no-JavaScript native destination is visible",
+      "status": "passed"
+    },
+    {
+      "name": "gallery home return and media still work",
+      "status": "passed"
+    }
+  ],
+  "initial_reproduction": {
+    "phone_390": {
+      "target_top": 184.47,
+      "header_height": 73,
+      "header_hidden": true
+    },
+    "desktop_1440": {
+      "target_top": 207.78,
+      "header_height": 83
+    }
+  },
+  "landing_rule": "measured collapsed header height + 1rem, capped by natural page scroll limits",
+  "red_green": [
+    "Original phone header-hidden and desktop 124.78px gap checks failed, then passed.",
+    "Initial #teaching without resize callbacks landed at 272.92px; synchronous menu measurement fixed it.",
+    "At 2560x1440 wheel intent without movement switched Teaching to Hobbies; actual-scroll release fixed it.",
+    "After More changes a stale scrollend ended repeated Teaching navigation at y=4041; destination-aware scrollend preserves Teaching through landing at y=4769."
+  ],
+  "review": "One read-only whole-change review; material finding reproduced and fixed, plus complete regression suite. No deferred material findings.",
+  "preservation": {
+    "changed_public_files": [
+      "site/404.html",
+      "site/assets/css/main.css",
+      "site/assets/js/main.js",
+      "site/awards/badminton-2025.html",
+      "site/awards/cadathlon-2024.html",
+      "site/awards/cadathlon-2025.html",
+      "site/awards/central-taiwan-2020.html",
+      "site/awards/edathon-2023.html",
+      "site/awards/freshman-cup-2018.html",
+      "site/awards/hsinchu-youth-2026.html",
+      "site/awards/hsing-chien-2025.html",
+      "site/awards/iccad-contest-2022.html",
+      "site/awards/iccad-contest-2023.html",
+      "site/awards/iccad-contest-2024-b.html",
+      "site/awards/iccad-contest-2024.html",
+      "site/awards/iccad-contest-2025-c.html",
+      "site/awards/iccad-contest-2025.html",
+      "site/awards/iccad-ssp-2025.html",
+      "site/awards/icpc-2019.html",
+      "site/awards/icpc-2020.html",
+      "site/awards/ispd-2026.html",
+      "site/awards/iwls-2026.html",
+      "site/awards/mcu-alumnus-2026.html",
+      "site/awards/mcu-contribution-2021.html",
+      "site/awards/mcu-programming-2019-2020.html",
+      "site/awards/mlcad-2026.html",
+      "site/awards/ncpc-2018-2020.html",
+      "site/awards/ncpu-2019.html",
+      "site/awards/nthu-scholarship-2021.html",
+      "site/awards/qilin-cup-2023.html",
+      "site/awards/software-innovation-2018.html",
+      "site/awards/synopsys-scholarship-2024.html",
+      "site/awards/teaching-excellent-2026.html",
+      "site/awards/teaching-outstanding-2025-2026.html",
+      "site/awards/topc-2019.html",
+      "site/awards/topc-2020.html",
+      "site/index.html"
+    ],
+    "all_other_tracked_site_files_identical": true,
+    "html_changes_only_cache_versions": true
+  },
+  "public_asset_manifest_sha256": "8a2e3609f9a567a4da38f8ecd37377680e29242ac9ed67c6db92aa9a047e716d",
+  "source_sha256": {
+    "site/assets/css/main.css": "f5df8570ee1200684b3fae0a187933f42ec60f84c7ca8bc77f687e7f81632dd2",
+    "site/assets/js/main.js": "513cd163a4d90ee74ca7feaa7f6ebf35423c494a726e47093c018e176ed5be41",
+    "scripts/check_navigation.cjs": "fe15ada1f5bfb73a5850c69338ea2e7b39b8214adc6be29e2a87cb423e0e33f3"
+  },
+  "screenshots": [
+    "navigation-landing-mobile.png",
+    "navigation-landing-desktop.png",
+    "navigation-landing-2560x1440.png"
+  ]
+}

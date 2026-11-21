@@ -1,13 +1,23 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-11-18。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-11-21。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wqtang.com](https://wqtang.com/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## CAD Contest 2026 系所公告（2026-11-18，最新）
+## 导航落点与手机顶栏协调（2026-11-21，最新）
+
+- 用户先审核方案后授权实施。线上复现确认：桌面 root scroll-padding 与 section scroll-margin 相加，标题停在约 208px，而顶栏高约 83px；390px 手机合计约 184px，自动跳转还触发顶栏隐藏。深层论文只有 root 留白，因此与栏目落点不同。
+- 首页统一只使用 root scroll-padding：实际收起状态的顶栏高度加 1rem；删除首页 section／target heading 的额外 margin。顶栏 ResizeObserver 和窗口 resize 维护实际高度，收起菜单和初始菜单同步必须同步测量，不能等之后的观察器回调再更新，避免直接锚点尤其减少动态效果下偶发使用展开菜单高度。
+- 手机点击同页栏目、论文、奖项及姓名返回链接时，先收起菜单、更新尺寸，再保留原生片段和平滑滚动。手动导航期间保持顶栏可见，直到真实正文滚动恢复自动识别；滚轮、单指触控和翻页键输入只结束原生定位保护，页面实际移动后才清除手动选择；到达页底无法继续滚动时仍保持手动选择。继续保留滚动条的识别，侧栏／弹窗滚动不取消手动选择。每个栏目均有同样的手动优先级。原生 scrollend 还须核对当前目标的实际落点（包含页底限位），避免旧焦点／布局滚动的结束事件提前解除后一次平滑导航保护。
+- 自动识别读取同一份 computed scroll-padding，保留按实际视口和区块高度计算的尾部补偿，不写死分辨率。Teaching／Hobbies 因页底限制无法正常贴顶时保持自然落点，手动点击仍高亮该栏目。About 从包含 tagline 的区块起点定位。
+- 没有 JS 的手机首页菜单仍完整显示；顶栏跟随文档滚走，原生锚点保留 1rem 留白，避免展开的菜单遮住目标。图库的头部、媒体弹窗与新分页规则沿用。
+- 缓存版本统一为 20261121-navigation-landing：首页、33 个相册与 404 的 CSS，以及首页／相册的 JS。论文、奖项、日期、正文、CV、图片／PDF、引文和公开资产 manifest 均保持原字节；本地翻译草稿不改。
+- 可重复浏览器检查位于 scripts/check_navigation.cjs，支持 --smoke；完整检查覆盖九种 320–2560px 窗口、八个栏目、More、实际派发的触控事件、双向自动高亮、手动优先、历史、字体放大、减少动态效果、无 JS 与图库回主页／照片弹窗。等待滚动和顶栏实际稳定后判断，避免对长距离平滑滚动用固定短延时验收。全部 100 项通过；构建、清单与语法检查通过。验证记录为 preview/navigation-landing-validation.json；采用 Chromium 模拟，不代替实体设备检查。
+
+## CAD Contest 2026 系所公告（2026-11-18）
 
 - 用户已审核并授权新增清大资工系公告：https://dcs.site.nthu.edu.tw/p/406-1174-318534,r109.php 。原网址 HTTP 200，标题明确列有唐梧遷与 CAD Contest@ICCAD 2026 定题组入选，内容为系所贺图。
 - Awards → More 的 iccad-contest-2026 在 Official 后新增 Department；当前资源行为 `Materials: [to appear] │ Announcements: [Official] [Department]`。贺图通过 Department 原公告查看，Materials 继续等待正式证书／现场照片。

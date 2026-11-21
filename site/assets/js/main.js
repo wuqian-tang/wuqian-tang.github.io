@@ -6,6 +6,22 @@
 
   const profile = document.querySelector('.profile');
   const header = document.querySelector('.site-header');
+  let navigationHeaderHeld = false;
+  // Native fragments and reading-line detection share one measured offset.
+  // An expanded mobile menu is temporary and must not enter that measurement.
+  const syncAnchorOffset = () => {
+    if (!header || nav?.classList.contains('is-open')) return;
+    const height = `${header.getBoundingClientRect().height}px`;
+    const root = document.documentElement;
+    if (root.style.getPropertyValue('--anchor-header-height') !== height) {
+      root.style.setProperty('--anchor-header-height', height);
+    }
+  };
+  syncAnchorOffset();
+  if (header && 'ResizeObserver' in window) {
+    new ResizeObserver(syncAnchorOffset).observe(header);
+  }
+  window.addEventListener('resize', syncAnchorOffset);
   let scrollAnchor = Math.max(0, window.scrollY);
   const showHeader = () => {
     header?.classList.remove('is-hidden');
@@ -16,7 +32,7 @@
     const updateHeader = () => {
       scrollFramePending = false;
       const currentY = Math.max(0, window.scrollY);
-      if (!smallScreen.matches || nav?.classList.contains('is-open') || currentY <= header.offsetHeight + 24) {
+      if (!smallScreen.matches || navigationHeaderHeld || nav?.classList.contains('is-open') || currentY <= header.offsetHeight + 24) {
         showHeader();
         return;
       }
@@ -68,10 +84,13 @@
       toggle.setAttribute('aria-expanded', 'false');
       toggle.setAttribute('aria-label', 'Open navigation menu');
       showHeader();
+      // Update synchronously, before the click's native fragment scrolling.
+      syncAnchorOffset();
     };
     const syncMenu = () => {
       toggle.hidden = !smallScreen.matches;
       if (!smallScreen.matches) closeMenu();
+      else syncAnchorOffset();
     };
     syncMenu();
     smallScreen.addEventListener('change', syncMenu);
@@ -126,9 +145,8 @@
         const viewportHeight = window.innerHeight;
         const headerBottom = Math.max(0, header?.getBoundingClientRect().bottom || 0);
         const rootStyle = getComputedStyle(document.documentElement);
-        const anchorOffset = (parseFloat(rootStyle.scrollPaddingTop) || 0) +
-          (parseFloat(getComputedStyle(destinations[0].section).scrollMarginTop) || 0);
-        // Read just inside the anchored section, including both CSS scroll offsets.
+        const anchorOffset = parseFloat(rootStyle.scrollPaddingTop) || 0;
+        // Read just inside the section using the same offset as native scrolling.
         const readingInset = parseFloat(rootStyle.fontSize) * 1.5;
         const readingLine = Math.min(viewportHeight - 1, Math.max(headerBottom, anchorOffset) + readingInset);
         const bounds = destinations.map(destination => destination.section.getBoundingClientRect());
@@ -192,6 +210,8 @@
       const selectManualDestination = hash => {
         const index = indexForHash(hash);
         manualIndex = index >= 0 ? index : null;
+        navigationHeaderHeld = manualIndex !== null;
+        if (navigationHeaderHeld) showHeader();
         navigationScrolling = manualIndex !== null;
         if (navigationScrolling) {
           selectSection(manualIndex);
@@ -202,6 +222,7 @@
       const resumeAutomaticNavigation = () => {
         if (manualIndex === null) return;
         manualIndex = null;
+        navigationHeaderHeld = false;
         finishNavigationScroll();
         scheduleNavigation();
       };
@@ -231,12 +252,18 @@
             event.shiftKey || event.altKey || (link.target && link.target !== '_self')) return;
         const url = new URL(link.href, location.href);
         if (url.origin === location.origin && url.pathname === location.pathname &&
-            url.search === location.search && url.hash) selectManualDestination(url.hash);
+            url.search === location.search && url.hash) {
+          if (nav.classList.contains('is-open')) closeMenu();
+          syncAnchorOffset();
+          selectManualDestination(url.hash);
+        }
       });
+      // Input ends the native-scroll guard, not the manual selection. Release
+      // that selection only on an actual page scroll, including at page limits.
       window.addEventListener('wheel', event => {
         if (manualIndex !== null && !event.ctrlKey && !event.metaKey &&
             Math.abs(event.deltaY) > Math.abs(event.deltaX) &&
-            !scrollsInsideControl(event.target, event.deltaY)) resumeAutomaticNavigation();
+            !scrollsInsideControl(event.target, event.deltaY)) finishNavigationScroll();
       }, { passive: true });
       let touchPosition;
       window.addEventListener('touchstart', event => {
@@ -248,7 +275,7 @@
         if (manualIndex === null || !touch || !touchPosition || event.touches.length !== 1) return;
         const direction = touchPosition.y - touch.clientY;
         if (Math.abs(direction) > Math.abs(touchPosition.x - touch.clientX) &&
-            !scrollsInsideControl(event.target, direction)) resumeAutomaticNavigation();
+            !scrollsInsideControl(event.target, direction)) finishNavigationScroll();
       }, { passive: true });
       document.addEventListener('keydown', event => {
         if (manualIndex === null || event.defaultPrevented || event.metaKey || event.ctrlKey || event.altKey ||
@@ -257,7 +284,7 @@
         const direction = ['ArrowUp', 'PageUp', 'Home'].includes(event.key) ||
           (event.key === ' ' && event.shiftKey) ? -1 :
           ['ArrowDown', 'PageDown', 'End', ' '].includes(event.key) ? 1 : 0;
-        if (direction && !scrollsInsideControl(event.target, direction)) resumeAutomaticNavigation();
+        if (direction && !scrollsInsideControl(event.target, direction)) finishNavigationScroll();
       });
       window.addEventListener('scroll', () => {
         // After native anchor scrolling settles, otherwise unexplained scrolling
@@ -267,7 +294,17 @@
         scheduleNavigation();
       }, { passive: true });
       window.addEventListener('scrollend', event => {
-        if (event.target === document) finishNavigationScroll();
+        if (event.target !== document || manualIndex === null) return;
+        let target;
+        try { target = document.getElementById(decodeURIComponent(location.hash.slice(1))); }
+        catch { return; }
+        if (!target) return;
+        const offset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+        const maxScroll = Math.max(0, document.scrollingElement.scrollHeight - window.innerHeight);
+        const destination = Math.max(0, Math.min(maxScroll, window.scrollY + target.getBoundingClientRect().top - offset));
+        // A previous focus/layout scroll can end after a new fragment starts.
+        // Only its actual landing may finish that new navigation's guard.
+        if (Math.abs(window.scrollY - destination) <= tolerance) finishNavigationScroll();
       });
       header?.addEventListener('focusin', scheduleLayoutNavigation);
       window.addEventListener('resize', scheduleLayoutNavigation);

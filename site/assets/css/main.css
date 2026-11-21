@@ -76,7 +76,7 @@
   }
 }
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 6.5rem; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--anchor-header-height, 5.25rem) + 1rem); }
 body { margin: 0; line-height: 1.75; }
 a { color: var(--blue); text-decoration: none; text-underline-offset: .2em; }
 a:hover { color: var(--blue-dark); text-decoration: underline; }
@@ -85,7 +85,6 @@ button, summary { -webkit-tap-highlight-color: transparent; }
 button { font: inherit; color: inherit; cursor: pointer; }
 button, a, summary { touch-action: manipulation; }
 button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; border-radius: 4px; }
-section:target h2 { scroll-margin-top: 6.5rem; }
 svg { width: 1.2rem; height: 1.2rem; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.65; stroke-linecap: round; stroke-linejoin: round; }
 img { display: block; max-width: 100%; height: auto; }
 h1, h2, h3, p, figure { margin: 0; }
@@ -140,7 +139,7 @@ strong { font-weight: 600; }
 .cv-link { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .55rem; max-width: 100%; min-height: 36px; font-size: .875rem; }
 .file-type { padding-left: .5rem; margin-left: .2rem; border-left: 1px solid var(--file-line); font-size: .75rem; color: var(--muted); }
 main { min-width: 0; }
-.section { padding: 0 0 3rem; margin-bottom: 3rem; border-bottom: 1px solid var(--line); scroll-margin-top: 6.5rem; }
+.section { padding: 0 0 3rem; margin-bottom: 3rem; border-bottom: 1px solid var(--line); }
 .section h2 { font-size: 1.6rem; letter-spacing: -.035em; }
 .section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 1.5rem; }
 .section-note, .section-link { font-size: .875rem; color: var(--muted); }
@@ -335,6 +334,8 @@ body.viewer-open { overflow: hidden; }
   .hobbies-layout { gap: 1.75rem; grid-template-columns: minmax(0,1fr) 210px; }
 }
 @media (max-width: 999px) {
+  html:not(.js):has(.site-nav) { scroll-padding-top: 1rem; }
+  html:not(.js) .site-header:has(.site-nav) { position: static; }
   .site-header { transition: transform 260ms cubic-bezier(.22,1,.36,1); }
   .site-header.is-hidden { transform: translateY(calc(-100% - 1px)); pointer-events: none; }
   .header-inner { min-height: 70px; flex-wrap: wrap; gap: 0; padding: 16px 28px; }
@@ -353,10 +354,8 @@ body.viewer-open { overflow: hidden; }
   .profile-location { margin-top: .6rem; }
   .profile-links { display: flex; flex-wrap: wrap; gap: 0 1.2rem; margin: .6rem 0; }
   .cv-link { justify-self: start; }
-  .section { scroll-margin-top: 6rem; }
 }
 @media (max-width: 600px) {
-  html { scroll-padding-top: 5.5rem; }
   .header-inner { padding: 13px 20px; min-height: 66px; }
   .brand { font-size: .875rem; gap: .65rem; }
   .site-nav { gap: 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); padding: 12px 0 2px; }

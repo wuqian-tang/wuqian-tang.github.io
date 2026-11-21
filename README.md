@@ -24,6 +24,18 @@ Then open `http://127.0.0.1:8765/`. Use HTTP serving for the Trinity project pag
 - [Full desktop page](preview/desktop-full.png)
 - [Full phone page](preview/mobile-full.png)
 
+## Navigation landing checks
+
+Homepage fragments use a single root scroll offset: the measured collapsed header height plus one rem. Section and heading margins do not add a second offset. Mobile menus collapse before the native fragment scroll; navigation keeps the header visible until real page scrolling resumes. Manual selection continues to take priority across layout changes, and short final sections keep their natural scroll limit. The automatic reading line uses the same computed offset, including the existing adaptive high-window tail handling.
+
+A repeatable Chromium regression check covers all eight destinations, More fragments, mobile touch/header behavior, history, responsive font changes, desktop section order, reduced motion, no-JavaScript fallback, and media/home-return behavior. With `site/` served locally and Playwright installed:
+
+```sh
+NAVIGATION_BASE_URL=http://127.0.0.1:8765/ node scripts/check_navigation.cjs
+```
+
+Use `--smoke` for the two original phone/desktop reproductions. `PLAYWRIGHT_MODULE` may point to an existing Playwright installation; `NAVIGATION_OUTPUT` selects the directory for screenshots and JSON results (default `/tmp/wuqian-navigation-check`). These browser checks use viewport/touch emulation and do not substitute for physical-device testing. Current verification is recorded in `preview/navigation-landing-validation.json`.
+
 ## TAPCO-G, research directions and CVs
 
 [TAPCO-G](https://arxiv.org/abs/2611.13931) is P3, an independent arXiv preprint submitted November 10, 2026. Its official v1 PDF is hosted at `site/files/papers/2026-arxiv-tapco-g.pdf` (27 pages), with an arXiv `@misc` citation and verification provenance. It has eight full author names and no equal-contribution stars; the conference TAPCO record keeps its own title, DOI, slides, citation and contribution markers. P3 is under More, while the four Selected papers remain RTLREX, TAPCO, HyPAS and CB-EVO. November news links to the new preprint.
