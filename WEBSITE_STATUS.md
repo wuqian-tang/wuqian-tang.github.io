@@ -17,6 +17,8 @@
 - 缓存版本统一为 20261121-navigation-landing：首页、33 个相册与 404 的 CSS，以及首页／相册的 JS。论文、奖项、日期、正文、CV、图片／PDF、引文和公开资产 manifest 均保持原字节；本地翻译草稿不改。
 - 可重复浏览器检查位于 scripts/check_navigation.cjs，支持 --smoke；完整检查覆盖九种 320–2560px 窗口、八个栏目、More、实际派发的触控事件、双向自动高亮、手动优先、历史、字体放大、减少动态效果、无 JS 与图库回主页／照片弹窗。等待滚动和顶栏实际稳定后判断，避免对长距离平滑滚动用固定短延时验收。全部 100 项通过；构建、清单与语法检查通过。验证记录为 preview/navigation-landing-validation.json；采用 Chromium 模拟，不代替实体设备检查。
 
+- 网页提交 84a64ac 已推送，Pages run 44873019960 的 build／deploy 均 success。线上首页、CSS 和 JS 与本地逐字节一致；390px 手机／1440px 桌面复测 4/4，2560×1440 的 More 开合后重复 Teaching 导航、页底滚轮与翻页键不移动时保持手动高亮也通过。以上仍是浏览器模拟测试。
+
 ## CAD Contest 2026 系所公告（2026-11-18）
 
 - 用户已审核并授权新增清大资工系公告：https://dcs.site.nthu.edu.tw/p/406-1174-318534,r109.php 。原网址 HTTP 200，标题明确列有唐梧遷与 CAD Contest@ICCAD 2026 定题组入选，内容为系所贺图。

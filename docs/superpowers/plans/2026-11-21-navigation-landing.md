@@ -32,4 +32,6 @@
 - [x] Check all eight destinations, mobile/desktop/tablet sizes including 2560x1440, actual touch scrolling, More links, repeated links, history, resizing/font size, reduced motion, no-JS fallback and gallery regression.
 - [x] Update shared CSS/JS cache versions and maintenance documentation; render and verify the exact public-file allowlist and unchanged protected assets.
 - [x] Obtain one read-only whole-change review, address material findings with reproducing checks, and run final verification.
-- [ ] Commit, fast-forward the main checkout, push master, verify Pages success and the live files and navigation, then record deployment.
+- [x] Commit, fast-forward the main checkout, push master, verify Pages success and the live files and navigation, then record deployment.
+
+Completed: 84a64ac pushed to master; Pages run 44873019960 succeeded. Live homepage/CSS/JS match local bytes; the original phone/desktop checks and 2560x1440 More/repeated/bounded-input behavior passed online.

@@ -516,5 +516,65 @@
     "navigation-landing-mobile.png",
     "navigation-landing-desktop.png",
     "navigation-landing-2560x1440.png"
-  ]
+  ],
+  "deployment": {
+    "commit": "84a64ac3f3bc6f813b02419e3cbd6f2b3abaa61c",
+    "run": 44873019960,
+    "url": "https://github.com/wuqian-tang/wuqian-tang.github.io/actions/runs/44873019960",
+    "status": "success",
+    "live_files": [
+      {
+        "file": "index.html",
+        "matches_local": true,
+        "bytes": 176778,
+        "sha256": "a3e7b8d088faafbb979330165d33e0719609f14558e44479eacd35c0eed6446c"
+      },
+      {
+        "file": "assets/css/main.css",
+        "matches_local": true,
+        "bytes": 32597,
+        "sha256": "f5df8570ee1200684b3fae0a187933f42ec60f84c7ca8bc77f687e7f81632dd2"
+      },
+      {
+        "file": "assets/js/main.js",
+        "matches_local": true,
+        "bytes": 35592,
+        "sha256": "513cd163a4d90ee74ca7feaa7f6ebf35423c494a726e47093c018e176ed5be41"
+      }
+    ],
+    "live_smoke": [
+      {
+        "name": "390x844 click publications",
+        "status": "passed"
+      },
+      {
+        "name": "390x844 script errors",
+        "status": "passed"
+      },
+      {
+        "name": "1440x900 click publications",
+        "status": "passed"
+      },
+      {
+        "name": "1440x900 script errors",
+        "status": "passed"
+      }
+    ],
+    "live_high_window": {
+      "viewport": [
+        2560,
+        1440
+      ],
+      "more_repeat_preserves_teaching": true,
+      "bound_wheel_and_key_preserve_selection": true,
+      "before": {
+        "y": 4769,
+        "active": "#teaching"
+      },
+      "after": {
+        "y": 4769,
+        "active": "#teaching"
+      }
+    }
+  }
 }
