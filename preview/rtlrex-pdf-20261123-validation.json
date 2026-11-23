@@ -1,0 +1,68 @@
+{
+  "base_commit": "777b2c5611cdd7592a1dfed1e77e63014e2b4d10",
+  "source": "2026_TCAD_Reverse_Engineering/paper_preparation/arxiv_20261123/RTLREX-arxiv-preview.pdf",
+  "sha256": "a51eb6eb986a399cabaf14fe635f23b8e826b2540cb1822dc84dac4781c81476",
+  "bytes": 7900517,
+  "pages": 14,
+  "clean_no_annotations": true,
+  "correct_orcid": "https://orcid.org/0000-0002-4536-214X",
+  "superseded_incorrect_orcid": "https://orcid.org/0000-0003-4850-8332",
+  "source_independent_build_comparisons": [
+    {
+      "file": "verification/TCAD-RTLREX.pdf",
+      "bytes_identical": true,
+      "all_pages_text_identical": true,
+      "all_pages_render_identical": true
+    },
+    {
+      "file": "build_latest/TCAD-RTLREX-v1/TCAD-RTLREX.pdf",
+      "bytes_identical": false,
+      "all_pages_text_identical": true,
+      "all_pages_render_identical": true
+    }
+  ],
+  "old_pdf_sha256": "4c0821906f9908108d1744749f25f0eac52ab5228cde3236abf5ec7c2e6f17b0",
+  "date": "2026-11-23",
+  "publication_id": "p2",
+  "public_path": "files/papers/2026-arxiv-rtlrex.pdf",
+  "changed_site_files": [
+    "files/papers/2026-arxiv-rtlrex.pdf",
+    "index.html",
+    "sitemap.xml"
+  ],
+  "unchanged_site_files": 327,
+  "public_asset_count": 282,
+  "only_manifest_asset_changed": [
+    "files/papers/2026-arxiv-rtlrex.pdf"
+  ],
+  "citation_and_publication_metadata_preserved": true,
+  "cv_css_js_and_all_other_assets_unchanged": true,
+  "local_browser": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "new_tab": true,
+      "pdf_status": 200,
+      "pdf_bytes": 7900517,
+      "pdf_sha256": "a51eb6eb986a399cabaf14fe635f23b8e826b2540cb1822dc84dac4781c81476",
+      "current": "#publications",
+      "script_errors": []
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "new_tab": true,
+      "pdf_status": 200,
+      "pdf_bytes": 7900517,
+      "pdf_sha256": "a51eb6eb986a399cabaf14fe635f23b8e826b2540cb1822dc84dac4781c81476",
+      "current": "#publications",
+      "script_errors": []
+    }
+  ],
+  "browser_pdf_checks": "Real PDF link click creates a new browsing context and receives application/pdf HTTP 200; independent HTTP fetch validates exact bytes. Page visuals rendered separately using PyMuPDF. No claim of native PDF viewer UI validation.",
+  "arxiv_public_version_observed": "v1 on 2026-11-23; author replacement copy supplied directly, no unverified v2 claim"
+}

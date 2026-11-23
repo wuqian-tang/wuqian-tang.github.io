@@ -1,13 +1,21 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-11-21。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-11-23。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wqtang.com](https://wqtang.com/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## 导航落点与手机顶栏协调（2026-11-21，最新）
+## RTLREX 最新作者稿与 ORCID 更正（2026-11-23，最新）
+
+- 用户已重新提交 arXiv，并授权从 2026_TCAD_Reverse_Engineering 目录取最新 PDF 更新网站。采用 paper_preparation/arxiv_20261123/RTLREX-arxiv-preview.pdf：14 页、7,900,517 bytes、SHA-256 a51eb6eb986a399cabaf14fe635f23b8e826b2540cb1822dc84dac4781c81476。干净版无批注，题名与六位作者顺序保持；独立 verification PDF 原字节相同，latest build 的全部页面文字和渲染一致。
+- 已直接验证 PDF 首页 Chun-Yao Wang 的 ORCID 链接为 https://orcid.org/0000-0002-4536-214X，旧误链 0000-0003-4850-8332 已不存在。该文件还包括最新正文与图表修改，整份按作者原字节替换，不在网页维护中改写／重编译论文。
+- 稳定地址继续为 https://wqtang.com/files/papers/2026-arxiv-rtlrex.pdf；P2 的资源顺序仍为 arXiv / PDF / Code / BibTeX，新分页行为保留。编号、Selected、初次提交日期、引文、CV、About、样式和导航均沿用。原版可从 Git 历史取得，原论文项目只读，不改其文件或推送其仓库。
+- profile 的 PDF 来源更新为 2026-11-23 作者替换稿，并同步公开资产清单的摘要、大小、页数与核验日，不再把该本地文件标为旧 v1。核验时 arXiv 公开记录仍列 v1；网站先提供作者确认的最新文件，不自行推定公开修订号。待新版本公开后可再核对 arXiv 的实际版本。
+- 资料更新日为 2026-11-23，页脚仍为 Updated November 2026，sitemap 同步。公开目录共 330 份，只有 RTLREX PDF、首页不可见更新日期和 sitemap 改变，其余 327 份逐字节保持；manifest 仍为 282 项，仅这一份 PDF 的记录更新。维护记录及手机／桌面真实 PDF 新分页、HTTP MIME 和 SHA-256 验证见 preview/rtlrex-pdf-20261123-validation.json。PDF 页面已用 PyMuPDF 检查；浏览器验证新分页和 PDF 响应，不将无界面 Chromium 的内置 PDF 阅读器行为概括为实机验收。
+
+## 导航落点与手机顶栏协调（2026-11-21）
 
 - 用户先审核方案后授权实施。线上复现确认：桌面 root scroll-padding 与 section scroll-margin 相加，标题停在约 208px，而顶栏高约 83px；390px 手机合计约 184px，自动跳转还触发顶栏隐藏。深层论文只有 root 留白，因此与栏目落点不同。
 - 首页统一只使用 root scroll-padding：实际收起状态的顶栏高度加 1rem；删除首页 section／target heading 的额外 margin。顶栏 ResizeObserver 和窗口 resize 维护实际高度，收起菜单和初始菜单同步必须同步测量，不能等之后的观察器回调再更新，避免直接锚点尤其减少动态效果下偶发使用展开菜单高度。

@@ -1876,8 +1876,12 @@
   },
   {
     "path": "files/papers/2026-arxiv-rtlrex.pdf",
-    "sha256": "4c0821906f9908108d1744749f25f0eac52ab5228cde3236abf5ec7c2e6f17b0",
-    "source": "https://arxiv.org/pdf/2611.10798v1"
+    "sha256": "a51eb6eb986a399cabaf14fe635f23b8e826b2540cb1822dc84dac4781c81476",
+    "source": "Author-provided arXiv replacement manuscript, 2026-11-23: 2026_TCAD_Reverse_Engineering/paper_preparation/arxiv_20261123/RTLREX-arxiv-preview.pdf; arXiv record: https://arxiv.org/abs/2611.10798",
+    "bytes": 7900517,
+    "pages": 14,
+    "revision": "2026-11-23: latest clean author submission, including corrected Chun-Yao Wang ORCID 0000-0002-4536-214X and manuscript revisions; preserve source PDF bytes",
+    "verified_on": "2026-11-23"
   },
   {
     "path": "files/papers/2026-arxiv-tapco-g.pdf",

@@ -6,7 +6,7 @@
   "university": "National Tsing Hua University",
   "location": "Hsinchu, Taiwan",
   "email": "wqtang@cs.nthu.edu.tw",
-  "updated": "2026-11-18",
+  "updated": "2026-11-23",
   "site_url": "https://wqtang.com",
   "profiles": [
     {
@@ -287,11 +287,12 @@
           "url": "https://github.com/wuqian-tang/RTLREX"
         }
       ],
-      "pdf_source": "https://arxiv.org/pdf/2611.10798v1",
+      "pdf_source": "Author-provided arXiv replacement manuscript, 2026-11-23: RTLREX-arxiv-preview.pdf; https://arxiv.org/abs/2611.10798",
       "arxiv_id": "2611.10798",
-      "version": "v1",
+      "version": "author revision dated 2026-11-23",
       "code_verified_on": "2026-11-10",
-      "code_source": "Official arXiv v1 paper, software companion statement: https://github.com/wuqian-tang/RTLREX; public README matches the paper title."
+      "code_source": "Official arXiv v1 paper, software companion statement: https://github.com/wuqian-tang/RTLREX; public README matches the paper title.",
+      "pdf_verified_on": "2026-11-23"
     },
     {
       "id": "p1",
