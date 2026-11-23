@@ -15,6 +15,8 @@
 - profile 的 PDF 来源更新为 2026-11-23 作者替换稿，并同步公开资产清单的摘要、大小、页数与核验日，不再把该本地文件标为旧 v1。核验时 arXiv 公开记录仍列 v1；网站先提供作者确认的最新文件，不自行推定公开修订号。待新版本公开后可再核对 arXiv 的实际版本。
 - 资料更新日为 2026-11-23，页脚仍为 Updated November 2026，sitemap 同步。公开目录共 330 份，只有 RTLREX PDF、首页不可见更新日期和 sitemap 改变，其余 327 份逐字节保持；manifest 仍为 282 项，仅这一份 PDF 的记录更新。维护记录及手机／桌面真实 PDF 新分页、HTTP MIME 和 SHA-256 验证见 preview/rtlrex-pdf-20261123-validation.json。PDF 页面已用 PyMuPDF 检查；浏览器验证新分页和 PDF 响应，不将无界面 Chromium 的内置 PDF 阅读器行为概括为实机验收。
 
+- 网页提交 eb5dcb9 已推送，Pages run 45144996792 的 build 25 秒、deploy 25 秒，均 success。线上首页、sitemap 与 PDF 均 HTTP 200 且逐字节等于本地；已从线上 PDF 再次核对 14 页、正确 ORCID 存在和旧误链不存在。手机／桌面实际新分页与 PDF 完整性复测通过。
+
 ## 导航落点与手机顶栏协调（2026-11-21）
 
 - 用户先审核方案后授权实施。线上复现确认：桌面 root scroll-padding 与 section scroll-margin 相加，标题停在约 208px，而顶栏高约 83px；390px 手机合计约 184px，自动跳转还触发顶栏隐藏。深层论文只有 root 留白，因此与栏目落点不同。

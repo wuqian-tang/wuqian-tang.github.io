@@ -64,5 +64,69 @@
     }
   ],
   "browser_pdf_checks": "Real PDF link click creates a new browsing context and receives application/pdf HTTP 200; independent HTTP fetch validates exact bytes. Page visuals rendered separately using PyMuPDF. No claim of native PDF viewer UI validation.",
-  "arxiv_public_version_observed": "v1 on 2026-11-23; author replacement copy supplied directly, no unverified v2 claim"
+  "arxiv_public_version_observed": "v1 on 2026-11-23; author replacement copy supplied directly, no unverified v2 claim",
+  "deployment": {
+    "commit": "eb5dcb9e581786f843f1d85c18c19d75afdd807d",
+    "run": 45144996792,
+    "status": "success",
+    "url": "https://github.com/wuqian-tang/wuqian-tang.github.io/actions/runs/45144996792",
+    "live_files": [
+      {
+        "path": "index.html",
+        "url": "https://wqtang.com/",
+        "status": 200,
+        "mime": "text/html",
+        "bytes": 176778,
+        "sha256": "3ce4de6d06acf550fbbc040dd4bd45eceb87e95ac38b6cc070e880b9fea2b5cf",
+        "matches_local": true
+      },
+      {
+        "path": "sitemap.xml",
+        "url": "https://wqtang.com/sitemap.xml",
+        "status": 200,
+        "mime": "application/xml",
+        "bytes": 19151,
+        "sha256": "fea74e816b9e8bf2023605c3cbb506be4e4292218421051a5532122717110ca4",
+        "matches_local": true
+      },
+      {
+        "path": "files/papers/2026-arxiv-rtlrex.pdf",
+        "url": "https://wqtang.com/files/papers/2026-arxiv-rtlrex.pdf",
+        "status": 200,
+        "mime": "application/pdf",
+        "bytes": 7900517,
+        "sha256": "a51eb6eb986a399cabaf14fe635f23b8e826b2540cb1822dc84dac4781c81476",
+        "matches_local": true,
+        "pages": 14,
+        "corrected_orcid_present": true,
+        "incorrect_orcid_absent": true
+      }
+    ],
+    "live_browser": [
+      {
+        "viewport": [
+          390,
+          844
+        ],
+        "new_tab": true,
+        "pdf_status": 200,
+        "pdf_bytes": 7900517,
+        "pdf_sha256": "a51eb6eb986a399cabaf14fe635f23b8e826b2540cb1822dc84dac4781c81476",
+        "current": "#publications",
+        "script_errors": []
+      },
+      {
+        "viewport": [
+          1440,
+          900
+        ],
+        "new_tab": true,
+        "pdf_status": 200,
+        "pdf_bytes": 7900517,
+        "pdf_sha256": "a51eb6eb986a399cabaf14fe635f23b8e826b2540cb1822dc84dac4781c81476",
+        "current": "#publications",
+        "script_errors": []
+      }
+    ]
+  }
 }
