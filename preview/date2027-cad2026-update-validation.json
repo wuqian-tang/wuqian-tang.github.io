@@ -1,0 +1,288 @@
+{
+  "date": "2026-11-24",
+  "publication": {
+    "id": "C20",
+    "placement": "More / 2027",
+    "status": "To appear",
+    "extra_type_annotation": false,
+    "existing_publications_unchanged": true,
+    "bibtex_note": "To appear",
+    "anonymous_draft_published": false
+  },
+  "news": {
+    "count": 8,
+    "new_date_news": false,
+    "existing_contest_resources": [
+      "Certificate",
+      "Official",
+      "Department"
+    ]
+  },
+  "certificate": {
+    "path": "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1.pdf",
+    "sha256": "ea253e7470ab3105f2c6c9feb71de1b1d830b9da702eaf199b18846d73bddeff",
+    "source_bytes_preserved": true,
+    "preview": "WebP, 1800 x 1391, 151390 bytes"
+  },
+  "cv": {
+    "private": {
+      "pages": 4,
+      "conference_papers": 20,
+      "journal_papers": 1,
+      "preprints": 3,
+      "existing_text_unchanged": true,
+      "work_experience_on_first_page": true,
+      "c20_pages": [
+        2
+      ],
+      "sha256": "0def76fc7d804db7feb009f51369a819a5e02a0c44a22ff6e18cbe088b456339",
+      "bytes": 124589,
+      "page_bounds": [
+        [
+          36.0,
+          45.95,
+          559.43,
+          787.78
+        ],
+        [
+          36.0,
+          45.09,
+          559.4,
+          786.42
+        ],
+        [
+          46.35,
+          44.5,
+          559.64,
+          771.03
+        ],
+        [
+          46.35,
+          44.5,
+          559.38,
+          348.98
+        ]
+      ],
+      "warnings": []
+    },
+    "public": {
+      "pages": 4,
+      "conference_papers": 20,
+      "journal_papers": 2,
+      "preprints": 3,
+      "existing_text_unchanged": true,
+      "work_experience_on_first_page": true,
+      "c20_pages": [
+        2
+      ],
+      "sha256": "31ffea3501eca918d8fed331df85cb834311a271c628b277c228e91618757894",
+      "bytes": 125144,
+      "page_bounds": [
+        [
+          36.0,
+          45.95,
+          559.43,
+          787.78
+        ],
+        [
+          36.0,
+          45.09,
+          559.64,
+          807.97
+        ],
+        [
+          46.35,
+          44.49,
+          559.39,
+          805.42
+        ],
+        [
+          46.56,
+          44.49,
+          559.38,
+          242.37
+        ]
+      ],
+      "warnings": []
+    }
+  },
+  "mirrors": {
+    "public_aliases_identical": true,
+    "private_application_copy_identical": true,
+    "both_local_zip_bundles_synchronized": true,
+    "historical_archives_unchanged": true
+  },
+  "public_files": {
+    "before": 330,
+    "after": 334,
+    "changed": [
+      "files/Wuqian_Tang_CV.pdf",
+      "files/cv-wqtang.pdf",
+      "files/cv.pdf",
+      "index.html",
+      "sitemap.xml"
+    ],
+    "added": [
+      "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1-preview.jpg",
+      "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1-preview.webp",
+      "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1.pdf",
+      "awards/iccad-contest-2026.html"
+    ],
+    "unchanged_existing": 325,
+    "manifest_before": 282,
+    "manifest_after": 285,
+    "unrelated_assets_and_code_preserved": true
+  },
+  "browser": {
+    "base": "http://127.0.0.1:8891/",
+    "layouts": [
+      {
+        "width": 320,
+        "colorScheme": "light",
+        "publicationDeepLink": true,
+        "year2027First": true,
+        "bibtexCopied": false,
+        "existingNewsUpdated": true,
+        "certificatePreviewIsWebP": true,
+        "noOriginalPdfUntilRequested": true,
+        "awardDeepLink": true,
+        "noOverflow": true,
+        "popups": 0,
+        "errors": []
+      },
+      {
+        "width": 320,
+        "colorScheme": "dark",
+        "publicationDeepLink": true,
+        "year2027First": true,
+        "bibtexCopied": false,
+        "existingNewsUpdated": true,
+        "certificatePreviewIsWebP": true,
+        "noOriginalPdfUntilRequested": true,
+        "awardDeepLink": true,
+        "noOverflow": true,
+        "popups": 0,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "colorScheme": "light",
+        "publicationDeepLink": true,
+        "year2027First": true,
+        "bibtexCopied": false,
+        "existingNewsUpdated": true,
+        "certificatePreviewIsWebP": true,
+        "noOriginalPdfUntilRequested": true,
+        "awardDeepLink": true,
+        "noOverflow": true,
+        "popups": 0,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "colorScheme": "dark",
+        "publicationDeepLink": true,
+        "year2027First": true,
+        "bibtexCopied": true,
+        "existingNewsUpdated": true,
+        "certificatePreviewIsWebP": true,
+        "noOriginalPdfUntilRequested": true,
+        "awardDeepLink": true,
+        "noOverflow": true,
+        "popups": 2,
+        "errors": []
+      },
+      {
+        "width": 768,
+        "colorScheme": "light",
+        "publicationDeepLink": true,
+        "year2027First": true,
+        "bibtexCopied": false,
+        "existingNewsUpdated": true,
+        "certificatePreviewIsWebP": true,
+        "noOriginalPdfUntilRequested": true,
+        "awardDeepLink": true,
+        "noOverflow": true,
+        "popups": 0,
+        "errors": []
+      },
+      {
+        "width": 768,
+        "colorScheme": "dark",
+        "publicationDeepLink": true,
+        "year2027First": true,
+        "bibtexCopied": false,
+        "existingNewsUpdated": true,
+        "certificatePreviewIsWebP": true,
+        "noOriginalPdfUntilRequested": true,
+        "awardDeepLink": true,
+        "noOverflow": true,
+        "popups": 0,
+        "errors": []
+      },
+      {
+        "width": 1440,
+        "colorScheme": "light",
+        "publicationDeepLink": true,
+        "year2027First": true,
+        "bibtexCopied": true,
+        "existingNewsUpdated": true,
+        "certificatePreviewIsWebP": true,
+        "noOriginalPdfUntilRequested": true,
+        "awardDeepLink": true,
+        "noOverflow": true,
+        "popups": 2,
+        "errors": []
+      },
+      {
+        "width": 1440,
+        "colorScheme": "dark",
+        "publicationDeepLink": true,
+        "year2027First": true,
+        "bibtexCopied": false,
+        "existingNewsUpdated": true,
+        "certificatePreviewIsWebP": true,
+        "noOriginalPdfUntilRequested": true,
+        "awardDeepLink": true,
+        "noOverflow": true,
+        "popups": 0,
+        "errors": []
+      },
+      {
+        "width": 2560,
+        "colorScheme": "light",
+        "publicationDeepLink": true,
+        "year2027First": true,
+        "bibtexCopied": false,
+        "existingNewsUpdated": true,
+        "certificatePreviewIsWebP": true,
+        "noOriginalPdfUntilRequested": true,
+        "awardDeepLink": true,
+        "noOverflow": true,
+        "popups": 0,
+        "errors": []
+      },
+      {
+        "width": 2560,
+        "colorScheme": "dark",
+        "publicationDeepLink": true,
+        "year2027First": true,
+        "bibtexCopied": false,
+        "existingNewsUpdated": true,
+        "certificatePreviewIsWebP": true,
+        "noOriginalPdfUntilRequested": true,
+        "awardDeepLink": true,
+        "noOverflow": true,
+        "popups": 0,
+        "errors": []
+      }
+    ],
+    "newGallery": true,
+    "noJavaScriptCitationAndGalleryFallback": true
+  },
+  "build_and_asset_audit": true,
+  "private_email_and_source_excluded": true,
+  "deployment": {
+    "status": "pending"
+  }
+}

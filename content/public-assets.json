@@ -1373,10 +1373,10 @@
   },
   {
     "path": "files/Wuqian_Tang_CV.pdf",
-    "sha256": "2457eb8f50c7cc6c5a8aaee605d49187142fcfe0599db70be196164ca93a9216",
+    "sha256": "31ffea3501eca918d8fed331df85cb834311a271c628b277c228e91618757894",
     "compatibility_alias_for": "files/cv-wqtang.pdf",
-    "bytes": 124847,
-    "source": "Public full CV from content/Wuqian_Tang_Public_CV.tex; approved section order synchronized 2026-11-11; complete publications and 19 award descriptions; two public email addresses, no telephone."
+    "bytes": 125144,
+    "source": "Public full CV from content/Wuqian_Tang_Public_CV.tex; author-reviewed C20/DATE 2027 added 2026-11-24; 25 publications and 19 award descriptions; two public email addresses, no telephone."
   },
   {
     "path": "files/papers/C1-Reverse-Engineering.pdf",
@@ -1701,9 +1701,9 @@
   },
   {
     "path": "files/cv-wqtang.pdf",
-    "sha256": "2457eb8f50c7cc6c5a8aaee605d49187142fcfe0599db70be196164ca93a9216",
-    "source": "Public full CV from content/Wuqian_Tang_Public_CV.tex; approved section order synchronized 2026-11-11; complete publications and 19 award descriptions; two public email addresses, no telephone.",
-    "bytes": 124847
+    "sha256": "31ffea3501eca918d8fed331df85cb834311a271c628b277c228e91618757894",
+    "source": "Public full CV from content/Wuqian_Tang_Public_CV.tex; author-reviewed C20/DATE 2027 added 2026-11-24; 25 publications and 19 award descriptions; two public email addresses, no telephone.",
+    "bytes": 125144
   },
   {
     "path": "files/slides/2026-mlcad-tapco-slides.pdf",
@@ -1829,10 +1829,10 @@
   },
   {
     "path": "files/cv.pdf",
-    "sha256": "2457eb8f50c7cc6c5a8aaee605d49187142fcfe0599db70be196164ca93a9216",
-    "bytes": 124847,
+    "sha256": "31ffea3501eca918d8fed331df85cb834311a271c628b277c228e91618757894",
+    "bytes": 125144,
     "compatibility_alias_for": "files/cv-wqtang.pdf",
-    "source": "Public full CV from content/Wuqian_Tang_Public_CV.tex; approved section order synchronized 2026-11-11; complete publications and 19 award descriptions; two public email addresses, no telephone."
+    "source": "Public full CV from content/Wuqian_Tang_Public_CV.tex; author-reviewed C20/DATE 2027 added 2026-11-24; 25 publications and 19 award descriptions; two public email addresses, no telephone."
   },
   {
     "path": "assets/images/social-preview-20261025-v1.png",
@@ -1921,5 +1921,33 @@
     "publication_id": "c19",
     "encoding": "Original PDF bytes preserved",
     "page_size": "A0 portrait, 841 × 1189 mm"
+  },
+  {
+    "path": "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1.pdf",
+    "sha256": "ea253e7470ab3105f2c6c9feb71de1b1d830b9da702eaf199b18846d73bddeff",
+    "source": "Awards_and_Honors/2026-11-08_ICCAD_CAD_Contest_Problem_A_Honorable_Mention/Certificate_2026_ICCAD_CAD_Contest_Problem_A_Honorable_Mention_EN.pdf",
+    "bytes": 322866,
+    "pages": 1,
+    "verified_on": "2026-11-24"
+  },
+  {
+    "path": "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1-preview.jpg",
+    "sha256": "6b5d9bf0b3a56d47f7996618f37428aa8f6125bdea2fcd8ab9fd494a31359d27",
+    "derived_from": "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1.pdf",
+    "source_sha256": "ea253e7470ab3105f2c6c9feb71de1b1d830b9da702eaf199b18846d73bddeff",
+    "bytes": 345832,
+    "width": 1800,
+    "height": 1391,
+    "encoding": "Original PDF page 1 rasterized at 1800px width, JPEG quality 94; source PDF unchanged"
+  },
+  {
+    "path": "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1-preview.webp",
+    "sha256": "1d30d923a298e02ab215dd976c512670ea18acfb3dca44e6cf4f3a84493330ac",
+    "derived_from": "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1-preview.jpg",
+    "source_sha256": "6b5d9bf0b3a56d47f7996618f37428aa8f6125bdea2fcd8ab9fd494a31359d27",
+    "bytes": 151390,
+    "width": 1800,
+    "height": 1391,
+    "encoding": "WebP quality 90, method 6, max edge 1800px"
   }
 ]

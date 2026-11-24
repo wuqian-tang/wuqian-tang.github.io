@@ -1,4 +1,13 @@
 {
+  "c20": {
+    "bibtex": "@inproceedings{Zheng2027BeyondEquivalence,\n  author = {Zheng, Ming-Yang and Li, Yi-Ting and Tang, Wuqian and Chen, Yung-Chih and Wang, Chun-Yao},\n  title = {{Beyond Equivalence: Checking Task Completion in LLM-Based Netlist Analysis, Editing, and Optimization}},\n  booktitle = {Design, Automation and Test in Europe Conference (DATE)},\n  year = {2027},\n  address = {Dresden, Germany},\n  note = {To appear}\n}\n",
+    "verified_on": "2026-11-24",
+    "sources": [
+      "Owner-reviewed DATE 2027 submission 1656 decision, November 24, 2026",
+      "https://www.date-conference.com/author-notification-d-t-and-e-tracks",
+      "https://www.date-conference.com/"
+    ]
+  },
   "p3": {
     "bibtex": "@misc{Tang2026TAPCOG,\n  author = {Tang, Wuqian and Wang, Zixiao and Lin, Che-Chien and Fu, Fong-Hua and Shion-Korsak, Laura Ang{\\'e}lica and Zhang, Xinyun and Yu, Bei and Wang, Chun-Yao},\n  title = {{TAPCO-G: LLM-Guided Design-Adaptive Timing and Power Co-Optimization with Graph-Based Physical Priors}},\n  year = {2026},\n  eprint = {2611.13931},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.AR},\n  url = {https://arxiv.org/abs/2611.13931},\n  note = {arXiv preprint}\n}\n",
     "verified_on": "2026-11-11",

@@ -1,12 +1,18 @@
 # Wuqian Tang's academic homepage
 
-A responsive academic homepage that follows the system’s light or dark preference for Wuqian Tang (唐梧遷), with research interests, 24 publications, academic and teaching awards, education, experience, and personal interests.
+A responsive academic homepage that follows the system’s light or dark preference for Wuqian Tang (唐梧遷), with research interests, 25 publications, academic and teaching awards, education, experience, and personal interests.
 
 **Live website: [wqtang.com](https://wqtang.com/)**
 
 Read [WEBSITE_STATUS.md](WEBSITE_STATUS.md) before continuing maintenance. It records the latest changes, formatting rules, publication status, and dated follow-up checks.
 
 The website is in **`site/`**. It is plain HTML, CSS, and JavaScript; visitors do not need a framework runtime or third-party fonts. The older Academic Pages template remains in this repository for reference, but is excluded from the deployment artifact.
+
+## DATE 2027 and CAD Contest certificate — November 24, 2026
+
+C20, “Beyond Equivalence: Checking Task Completion in LLM-Based Netlist Analysis, Editing, and Optimization”, appears under More / 2027 with five full author names, DATE in Dresden on March 22–24, 2027, and To appear. The author-approved record supplies BibTeX; the private decision email and anonymous seven-page submission draft are not public assets. At the owner's request, C1 and C20 have no extra publication-type annotation and no new DATE news item is added. Existing identifiers and the four Selected papers remain unchanged.
+
+The existing ICCAD 2026 Problem A Honorable Mention now has Certificate before Official / Department in Awards and the same existing news item. A 1800 × 1391 WebP preview opens in the media dialog; View Original opens the unchanged PDF in a new tab. A matching gallery page is generated. Dates remain Nov 2026. Public and private Full CVs include C20 and remain four pages, with existing typography, contact settings and C/J/P groups. The three public aliases, current local application copy and local distribution bundles are synchronized. Verification is recorded in `preview/date2027-cad2026-update-validation.json`.
 
 ## Preview
 
@@ -42,7 +48,7 @@ Use `--smoke` for the two original phone/desktop reproductions. `PLAYWRIGHT_MODU
 
 Research uses Machine Learning for Physical Design, Learning-Guided Logic Synthesis, and LLM-Guided RTL Recovery. The physical-design card links to TAPCO, TAPCO-G and HyPAS separately, with no contests. Logic synthesis links to CB-EVO, IWLS 2026 and CAD Contest 2024 Problem A. RTL recovery links to RTLREX, DATE 2024 and CAD Contest 2022 Problem A. All evidence targets stable paper/award anchors, including records inside More.
 
-The public and local editable CVs now maintain full versions only, in the owner-approved order: Education → Work Experience → Teaching Experience → Technical Skills → Selected Awards and Honors → Publications. The entire short Work Experience section stays on one page; section headings remain with their first content, while long award lists can break between entries. Font sizes and existing spacing are retained. Both full CVs remain four pages: the public version has 19 conference papers, two journal papers and three preprints; the private Full keeps its existing one-journal coverage. Conference Papers → Journal Papers → Preprints and all original labels are retained. The last two-page edition is a frozen private archive with its exact companion source and is excluded from current distribution bundles; do not regenerate it. The three public PDF aliases remain identical and use only two email addresses without a telephone number. Current verification is recorded in `preview/full-only-cv-validation.json`.
+The public and local editable CVs now maintain full versions only, in the owner-approved order: Education → Work Experience → Teaching Experience → Technical Skills → Selected Awards and Honors → Publications. The entire short Work Experience section stays on one page; section headings remain with their first content, while long award lists can break between entries. Font sizes and existing spacing are retained. Both full CVs remain four pages: the public version has 20 conference papers, two journal papers and three preprints; the private Full keeps its existing one-journal coverage. Conference Papers → Journal Papers → Preprints and all original labels are retained. The last two-page edition is a frozen private archive with its exact companion source and is excluded from current distribution bundles; do not regenerate it. The three public PDF aliases remain identical and use only two email addresses without a telephone number. The section-order verification is recorded in `preview/full-only-cv-validation.json`; the latest publication addition is checked in `preview/date2027-cad2026-update-validation.json`.
 
 ## RTLREX preprint
 

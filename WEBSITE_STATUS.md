@@ -1,13 +1,23 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-11-23。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-11-24。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wqtang.com](https://wqtang.com/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## RTLREX 最新作者稿与 ORCID 更正（2026-11-23，最新）
+## DATE 2027、Full CV 与 CAD Contest 证书（2026-11-24，最新）
+
+- 用户已审核并授权全部更新。新增 C20 / Beyond Equivalence: Checking Task Completion in LLM-Based Netlist Analysis, Editing, and Optimization，作者顺序为 Ming-Yang Zheng、Yi-Ting Li、Wuqian Tang、Yung-Chih Chen、Chun-Yao Wang，无共同贡献星号。DATE 2027，Dresden, Germany，Mar. 22–24, 2027；列于 More / 2027，显示 To appear，BibTeX note 仅为 To appear。按用户决定，C1 和 C20 不额外加类型标注，C1 原记录及所有既有编号、四篇 Selected 均保持。
+- 不新增 DATE News。现有八条消息保留，只在 ICCAD 2026 CAD Contest 获奖 News 的 Official / Department 前加 Certificate；正文和 Nov 2026 日期沿用。Awards → More 同一奖项移除 Materials 占位，改为 Materials: [Certificate] │ Announcements: [Official] [Department]，不增加重复奖项。
+- 证书为用户提供的单页英文原 PDF，横向正确，原字节 SHA-256 ea253e7470ab3105f2c6c9feb71de1b1d830b9da702eaf199b18846d73bddeff。五位学生、三位指导老师与官方 Problem A / cada1020 一致。公开地址为 assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1.pdf；1800 × 1391 WebP 预览为 151,390 bytes。弹窗仅加载 WebP，View Original 新分页打开原 PDF；补建 awards/iccad-contest-2026.html，保留无 JS 查看路径。JPEG 仅作现有图像维护流程的来源，网页展示使用 WebP。
+- 本地与公开 Full CV 的 Conference Papers 顶部均加入 C20，只加粗本人姓名，to appear 仍位于末尾句号前。两版均保持四页；公开 25 篇（C20/J2/P3），私人 24 篇（C20/J1/P3）。除新 C20 外，逐节归一化文字与更新前相同；字号、间距、联系方式各自沿用，工作经历完整在第一页，无溢出或缺字警告。三个公开 CV 地址原字节相同，现用申请副本、Full LaTeX ZIP 和预览 ZIP 的 CV 同步；两页归档与历史文件保持原字节。
+- 原始决策邮件、匿名七页编译稿及 Overleaf 源码仅在本地 Publications 归档，继续被私人仓库的现有规则排除。在线 Overleaf 克隆需认证；编译来源是本机同一项目的干净副本 bf50e1c，未推断在线最新版，也未编辑原论文。公开资产不含邮件、匿名稿或 Overleaf 源码。新获奖证书加入私人 Awards_and_Honors 年月日目录并随本次私人资料更新推送。
+- 资料更新日为 2026-11-24，页脚仍为 Updated November 2026。公开文件 330 → 334：新增证书 PDF、JPEG 来源、WebP 预览与图库页；旧文件仅首页、sitemap 和三份 CV 改变，其余 325 份原字节保持。公开 manifest 282 → 285，只增加三份证书资产并更新三份 CV 的摘要。样式、脚本、Research、About、Teaching 及其他论文与奖项数据保持。
+- 验收记录为 preview/date2027-cad2026-update-validation.json：320／390／768／1440／2560px 深浅色十组、C20 与获奖 More 深链接、两次实际 BibTeX 复制、News／Awards WebP 弹窗、原 PDF 与 CV 新分页、图库和无 JS 后备路径均通过，无页面溢出或脚本错误。已查看公开 CV、桌面论文条目、手机深色奖项与证书弹窗。构建、公开清单、JS 语法与 diff 检查通过。浏览器使用 Chromium 模拟，不代替实体设备验收。部署核验结果待推送后补记。
+
+## RTLREX 最新作者稿与 ORCID 更正（2026-11-23）
 
 - 用户已重新提交 arXiv，并授权从 2026_TCAD_Reverse_Engineering 目录取最新 PDF 更新网站。采用 paper_preparation/arxiv_20261123/RTLREX-arxiv-preview.pdf：14 页、7,900,517 bytes、SHA-256 a51eb6eb986a399cabaf14fe635f23b8e826b2540cb1822dc84dac4781c81476。干净版无批注，题名与六位作者顺序保持；独立 verification PDF 原字节相同，latest build 的全部页面文字和渲染一致。
 - 已直接验证 PDF 首页 Chun-Yao Wang 的 ORCID 链接为 https://orcid.org/0000-0002-4536-214X，旧误链 0000-0003-4850-8332 已不存在。该文件还包括最新正文与图表修改，整份按作者原字节替换，不在网页维护中改写／重编译论文。

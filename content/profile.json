@@ -6,7 +6,7 @@
   "university": "National Tsing Hua University",
   "location": "Hsinchu, Taiwan",
   "email": "wqtang@cs.nthu.edu.tw",
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "site_url": "https://wqtang.com",
   "profiles": [
     {
@@ -112,6 +112,10 @@
       "datetime": "2026-11-08",
       "text": "Our team received an Honorable Mention in Problem A of the ICCAD 2026 CAD Contest.",
       "resources": [
+        {
+          "award": "iccad-contest-2026",
+          "kind": "certificate"
+        },
         {
           "label": "Official",
           "url": "https://www.iccad-contest.org/2026/Winners.html"
@@ -235,6 +239,22 @@
     }
   ],
   "publications": [
+    {
+      "id": "c20",
+      "label": "C20",
+      "authors": "Ming-Yang Zheng, Yi-Ting Li, Wuqian Tang, Yung-Chih Chen, Chun-Yao Wang",
+      "title": "Beyond Equivalence: Checking Task Completion in LLM-Based Netlist Analysis, Editing, and Optimization",
+      "venue": "Design, Automation and Test in Europe Conference",
+      "acronym": "DATE",
+      "year": 2027,
+      "details": "Dresden, Germany, Mar. 22–24, 2027",
+      "status": "To appear",
+      "selected": false,
+      "links": [],
+      "verified_on": "2026-11-24",
+      "publication_source": "Author-reviewed DATE 2027 submission 1656 decision, November 24, 2026; https://www.date-conference.com/author-notification-d-t-and-e-tracks",
+      "date_source": "https://www.date-conference.com/"
+    },
     {
       "id": "p3",
       "label": "P3",
@@ -1361,16 +1381,25 @@
           "description": "Department of Computer Science, National Tsing Hua University announcement"
         }
       ],
-      "media": [],
-      "pending_resources": [
-        "materials"
+      "media": [
+        {
+          "kind": "certificate",
+          "url": "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1.pdf",
+          "caption": "Certificate · Nov 2026 · Problem A · English",
+          "preview": "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1-preview.webp",
+          "width": 1800,
+          "height": 1391,
+          "preview_source": "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1-preview.jpg",
+          "alt": "Certificate for Wuqian Tang and team cada1020: Honorable Mention in Problem A, LLM-Assisted Netlist Exploration and Transformation, IEEE/ACM CAD Contest 2026, November 8–12, 2026."
+        }
       ],
       "recognition_source": "https://www.iccad-contest.org/2026/Winners.html",
       "date_source": "First day of ICCAD 2026 (November 8-12): https://iccad.com/2026",
       "problem_source": "https://www.iccad-contest.org/2026/Problems.html",
-      "verified_on": "2026-11-18",
+      "verified_on": "2026-11-24",
       "team_id": "cada1020",
-      "results_announced_on": "2026-11-11"
+      "results_announced_on": "2026-11-11",
+      "certificate_source": "Owner-provided original certificate; names and advisors match official Problem A team cada1020."
     },
     {
       "date": "Aug 2025–Aug 2026",
