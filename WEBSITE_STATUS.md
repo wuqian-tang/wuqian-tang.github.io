@@ -11,7 +11,7 @@
 
 - 用户确认去掉 Publications → More 中重复的年份小标题。渲染器只移除 2027、2026、2025、2024 四个标题，继续按年份倒序及原有组内顺序输出论文；每篇 venue badge 仍显示会议／期刊与年份。
 - 已核对首页恰好等于旧首页删去四个 h3.publication-year 后的结果。25 篇论文的文章内容与次序、四篇 Selected、21 篇 More、编号、BibTeX、CV、图片／PDF、样式及脚本均沿用；334 份公开文件中只有 index.html 改变，其余 333 份原字节保持。README 同步说明不再显示年份分组标题。
-- 构建、公开资产清单与 diff 检查通过。390px 手机与 1440px 桌面验证 More 深链接、展开／收起、Less 标签、C20 实际 BibTeX 复制及无横向溢出，无脚本错误。属于 Chromium 视口模拟。部署状态可通过对应提交的 GitHub Pages 检查查看。
+- 构建、公开资产清单与 diff 检查通过。390px 手机与 1440px 桌面验证 More 深链接、展开／收起、Less 标签、C20 实际 BibTeX 复制及无横向溢出，无脚本错误。属于 Chromium 视口模拟。提交 6e926ad 已推送；Pages run 45344253345 的 build 26 秒、deploy 17 秒，均 success。正式首页 HTTP 200、逐字节等于本地，确认不再输出年份小标题。
 
 ## DATE 2027、Full CV 与 CAD Contest 证书（2026-11-24）
 
