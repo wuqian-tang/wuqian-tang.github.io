@@ -354,7 +354,6 @@ def render():
     selected.sort(key=lambda paper: ['p2','p1','c17','c15','j1','j2','c3','c1'].index(paper['id']))
     other_html = ''
     for year in sorted({paper['year'] for paper in others}, reverse=True):
-        other_html += f'<h3 class="publication-year">{year}</h3>'
         other_html += ''.join(publication(paper, citations[paper['id']]) for paper in others if paper['year'] == year)
     profile_links = ''.join(f'<a href="{esc(link["url"])}">{icon(link["icon"])}<span>{esc(link["label"])}</span></a>' for link in p['profiles'])
     all_awards = p['awards'] + p['earlier_awards'] + p['personal_awards']

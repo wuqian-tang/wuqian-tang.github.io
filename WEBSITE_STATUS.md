@@ -7,7 +7,13 @@
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## DATE 2027、Full CV 与 CAD Contest 证书（2026-11-24，最新）
+## Publications 移除年份小标题（2026-11-24，最新）
+
+- 用户确认去掉 Publications → More 中重复的年份小标题。渲染器只移除 2027、2026、2025、2024 四个标题，继续按年份倒序及原有组内顺序输出论文；每篇 venue badge 仍显示会议／期刊与年份。
+- 已核对首页恰好等于旧首页删去四个 h3.publication-year 后的结果。25 篇论文的文章内容与次序、四篇 Selected、21 篇 More、编号、BibTeX、CV、图片／PDF、样式及脚本均沿用；334 份公开文件中只有 index.html 改变，其余 333 份原字节保持。README 同步说明不再显示年份分组标题。
+- 构建、公开资产清单与 diff 检查通过。390px 手机与 1440px 桌面验证 More 深链接、展开／收起、Less 标签、C20 实际 BibTeX 复制及无横向溢出，无脚本错误。属于 Chromium 视口模拟。部署状态可通过对应提交的 GitHub Pages 检查查看。
+
+## DATE 2027、Full CV 与 CAD Contest 证书（2026-11-24）
 
 - 用户已审核并授权全部更新。新增 C20 / Beyond Equivalence: Checking Task Completion in LLM-Based Netlist Analysis, Editing, and Optimization，作者顺序为 Ming-Yang Zheng、Yi-Ting Li、Wuqian Tang、Yung-Chih Chen、Chun-Yao Wang，无共同贡献星号。DATE 2027，Dresden, Germany，Mar. 22–24, 2027；列于 More / 2027，显示 To appear，BibTeX note 仅为 To appear。按用户决定，C1 和 C20 不额外加类型标注，C1 原记录及所有既有编号、四篇 Selected 均保持。
 - 不新增 DATE News。现有八条消息保留，只在 ICCAD 2026 CAD Contest 获奖 News 的 Official / Department 前加 Certificate；正文和 Nov 2026 日期沿用。Awards → More 同一奖项移除 Materials 占位，改为 Materials: [Certificate] │ Announcements: [Official] [Department]，不增加重复奖项。
