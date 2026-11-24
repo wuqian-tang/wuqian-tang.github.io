@@ -15,7 +15,7 @@
 - 本地与公开 Full CV 的 Conference Papers 顶部均加入 C20，只加粗本人姓名，to appear 仍位于末尾句号前。两版均保持四页；公开 25 篇（C20/J2/P3），私人 24 篇（C20/J1/P3）。除新 C20 外，逐节归一化文字与更新前相同；字号、间距、联系方式各自沿用，工作经历完整在第一页，无溢出或缺字警告。三个公开 CV 地址原字节相同，现用申请副本、Full LaTeX ZIP 和预览 ZIP 的 CV 同步；两页归档与历史文件保持原字节。
 - 原始决策邮件、匿名七页编译稿及 Overleaf 源码仅在本地 Publications 归档，继续被私人仓库的现有规则排除。在线 Overleaf 克隆需认证；编译来源是本机同一项目的干净副本 bf50e1c，未推断在线最新版，也未编辑原论文。公开资产不含邮件、匿名稿或 Overleaf 源码。新获奖证书加入私人 Awards_and_Honors 年月日目录并随本次私人资料更新推送。
 - 资料更新日为 2026-11-24，页脚仍为 Updated November 2026。公开文件 330 → 334：新增证书 PDF、JPEG 来源、WebP 预览与图库页；旧文件仅首页、sitemap 和三份 CV 改变，其余 325 份原字节保持。公开 manifest 282 → 285，只增加三份证书资产并更新三份 CV 的摘要。样式、脚本、Research、About、Teaching 及其他论文与奖项数据保持。
-- 验收记录为 preview/date2027-cad2026-update-validation.json：320／390／768／1440／2560px 深浅色十组、C20 与获奖 More 深链接、两次实际 BibTeX 复制、News／Awards WebP 弹窗、原 PDF 与 CV 新分页、图库和无 JS 后备路径均通过，无页面溢出或脚本错误。已查看公开 CV、桌面论文条目、手机深色奖项与证书弹窗。构建、公开清单、JS 语法与 diff 检查通过。浏览器使用 Chromium 模拟，不代替实体设备验收。部署核验结果待推送后补记。
+- 验收记录为 preview/date2027-cad2026-update-validation.json：320／390／768／1440／2560px 深浅色十组、C20 与获奖 More 深链接、两次实际 BibTeX 复制、News／Awards WebP 弹窗、原 PDF 与 CV 新分页、图库和无 JS 后备路径均通过，无页面溢出或脚本错误。已查看公开 CV、桌面论文条目、手机深色奖项与证书弹窗。构建、公开清单、JS 语法与 diff 检查通过。浏览器使用 Chromium 模拟，不代替实体设备验收。私人提交 50bf55d、网页提交 6103a5f 已分别推送；Pages run 45340860952 的 build 17 秒、deploy 16 秒，均 success。正式首页、sitemap、三个 CV、证书 PDF／JPEG／WebP 和新图库页共九份均 HTTP 200、逐字节等于本地；线上 390px 手机深色与 1440px 桌面浅色的实际复制、弹窗、新分页、图库及无 JS 后备路径复测通过。
 
 ## RTLREX 最新作者稿与 ORCID 更正（2026-11-23）
 

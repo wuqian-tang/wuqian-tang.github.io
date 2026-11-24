@@ -283,6 +283,142 @@
   "build_and_asset_audit": true,
   "private_email_and_source_excluded": true,
   "deployment": {
-    "status": "pending"
+    "status": "success",
+    "website_commit": "6103a5f879608902a8807e03c81f9fbdd3880612",
+    "private_commit": "50bf55d",
+    "pages_run": 45340860952,
+    "url": "https://github.com/wuqian-tang/wuqian-tang.github.io/actions/runs/45340860952",
+    "jobs": [
+      {
+        "name": "build",
+        "conclusion": "success",
+        "started_at": "2026-11-24T06:29:47Z",
+        "completed_at": "2026-11-24T06:30:04Z"
+      },
+      {
+        "name": "deploy",
+        "conclusion": "success",
+        "started_at": "2026-11-24T06:30:09Z",
+        "completed_at": "2026-11-24T06:30:25Z"
+      }
+    ],
+    "live_files": [
+      {
+        "path": "index.html",
+        "url": "https://wqtang.com/",
+        "status": 200,
+        "mime": "text/html",
+        "bytes": 179645,
+        "sha256": "9e08170933e83100028881ed6b67419bb58629fd6dbbd1f5de4219f501c3b0ff",
+        "matches_local": true
+      },
+      {
+        "path": "sitemap.xml",
+        "url": "https://wqtang.com/sitemap.xml",
+        "status": 200,
+        "mime": "application/xml",
+        "bytes": 19431,
+        "sha256": "aacb37e49c439623ec33f008fce9625402857b6e52b775c379178d3a7cc78946",
+        "matches_local": true
+      },
+      {
+        "path": "files/cv-wqtang.pdf",
+        "url": "https://wqtang.com/files/cv-wqtang.pdf",
+        "status": 200,
+        "mime": "application/pdf",
+        "bytes": 125144,
+        "sha256": "31ffea3501eca918d8fed331df85cb834311a271c628b277c228e91618757894",
+        "matches_local": true
+      },
+      {
+        "path": "files/cv.pdf",
+        "url": "https://wqtang.com/files/cv.pdf",
+        "status": 200,
+        "mime": "application/pdf",
+        "bytes": 125144,
+        "sha256": "31ffea3501eca918d8fed331df85cb834311a271c628b277c228e91618757894",
+        "matches_local": true
+      },
+      {
+        "path": "files/Wuqian_Tang_CV.pdf",
+        "url": "https://wqtang.com/files/Wuqian_Tang_CV.pdf",
+        "status": 200,
+        "mime": "application/pdf",
+        "bytes": 125144,
+        "sha256": "31ffea3501eca918d8fed331df85cb834311a271c628b277c228e91618757894",
+        "matches_local": true
+      },
+      {
+        "path": "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1.pdf",
+        "url": "https://wqtang.com/assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1.pdf",
+        "status": 200,
+        "mime": "application/pdf",
+        "bytes": 322866,
+        "sha256": "ea253e7470ab3105f2c6c9feb71de1b1d830b9da702eaf199b18846d73bddeff",
+        "matches_local": true
+      },
+      {
+        "path": "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1-preview.webp",
+        "url": "https://wqtang.com/assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1-preview.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "bytes": 151390,
+        "sha256": "1d30d923a298e02ab215dd976c512670ea18acfb3dca44e6cf4f3a84493330ac",
+        "matches_local": true
+      },
+      {
+        "path": "assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1-preview.jpg",
+        "url": "https://wqtang.com/assets/awards/iccad-contest-2026/2026-iccad-contest-certificate-1-preview.jpg",
+        "status": 200,
+        "mime": "image/jpeg",
+        "bytes": 345832,
+        "sha256": "6b5d9bf0b3a56d47f7996618f37428aa8f6125bdea2fcd8ab9fd494a31359d27",
+        "matches_local": true
+      },
+      {
+        "path": "awards/iccad-contest-2026.html",
+        "url": "https://wqtang.com/awards/iccad-contest-2026.html",
+        "status": 200,
+        "mime": "text/html",
+        "bytes": 7949,
+        "sha256": "6e6585e368e27e2e49533c031608b8d4581dab6db103525da22aea3de37c2f95",
+        "matches_local": true
+      }
+    ],
+    "live_browser": {
+      "base": "https://wqtang.com/",
+      "layouts": [
+        {
+          "width": 390,
+          "colorScheme": "dark",
+          "publicationDeepLink": true,
+          "year2027First": true,
+          "bibtexCopied": true,
+          "existingNewsUpdated": true,
+          "certificatePreviewIsWebP": true,
+          "noOriginalPdfUntilRequested": true,
+          "awardDeepLink": true,
+          "noOverflow": true,
+          "popups": 2,
+          "errors": []
+        },
+        {
+          "width": 1440,
+          "colorScheme": "light",
+          "publicationDeepLink": true,
+          "year2027First": true,
+          "bibtexCopied": true,
+          "existingNewsUpdated": true,
+          "certificatePreviewIsWebP": true,
+          "noOriginalPdfUntilRequested": true,
+          "awardDeepLink": true,
+          "noOverflow": true,
+          "popups": 2,
+          "errors": []
+        }
+      ],
+      "newGallery": true,
+      "noJavaScriptCitationAndGalleryFallback": true
+    }
   }
 }
