@@ -10,7 +10,7 @@
 ## Recent News 精简 CAD Contest 资源（2026-11-25，最新）
 
 - 用户要求仅移除现有 ICCAD 2026 CAD Contest 获奖 News 的 Department，资源为 [Certificate] [Official]。正文、Nov 2026 日期与八条 News 的顺序保持；Awards → More 与独立图库仍提供 Department。
-- profile.updated 与 sitemap 更新为 2026-11-25，页脚仍为 Updated November 2026。所有论文、CV、证书、样式及脚本沿用。构建和公开清单检查通过；主页资源与来源数据核对一致。
+- profile.updated 与 sitemap 更新为 2026-11-25，页脚仍为 Updated November 2026。所有论文、CV、证书、样式及脚本沿用。构建和公开清单检查通过；主页资源与来源数据核对一致。 提交 c8b9be4 已推送，Pages run 45535865037 的 build 17 秒、deploy 20 秒，均 success。正式首页和 sitemap 均 HTTP 200、逐字节等于本地，线上该条 News 仅有 Certificate / Official。
 
 ## Publications 移除年份小标题（2026-11-24）
 
