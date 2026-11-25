@@ -1,13 +1,18 @@
 # 个人主页进度与维护规范
 
-更新日期：2026-11-24。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
+更新日期：2026-11-25。本文用于继续维护当前网站；以后开始更新前，先阅读本文，再检查实际仓库和线上内容。
 
 - 网站：[wqtang.com](https://wqtang.com/)
 - 公开仓库：[wuqian-tang/wuqian-tang.github.io](https://github.com/wuqian-tang/wuqian-tang.github.io)
 - 发布分支：`master`；GitHub Actions 只发布 `site/`。
 - 用户已授权上线、公开网页仓库和继续修改当前网站。原始个人资料仓库保持 private。
 
-## Publications 移除年份小标题（2026-11-24，最新）
+## Recent News 精简 CAD Contest 资源（2026-11-25，最新）
+
+- 用户要求仅移除现有 ICCAD 2026 CAD Contest 获奖 News 的 Department，资源为 [Certificate] [Official]。正文、Nov 2026 日期与八条 News 的顺序保持；Awards → More 与独立图库仍提供 Department。
+- profile.updated 与 sitemap 更新为 2026-11-25，页脚仍为 Updated November 2026。所有论文、CV、证书、样式及脚本沿用。构建和公开清单检查通过；主页资源与来源数据核对一致。
+
+## Publications 移除年份小标题（2026-11-24）
 
 - 用户确认去掉 Publications → More 中重复的年份小标题。渲染器只移除 2027、2026、2025、2024 四个标题，继续按年份倒序及原有组内顺序输出论文；每篇 venue badge 仍显示会议／期刊与年份。
 - 已核对首页恰好等于旧首页删去四个 h3.publication-year 后的结果。25 篇论文的文章内容与次序、四篇 Selected、21 篇 More、编号、BibTeX、CV、图片／PDF、样式及脚本均沿用；334 份公开文件中只有 index.html 改变，其余 333 份原字节保持。README 同步说明不再显示年份分组标题。

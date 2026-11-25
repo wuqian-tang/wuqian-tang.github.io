@@ -6,7 +6,7 @@
   "university": "National Tsing Hua University",
   "location": "Hsinchu, Taiwan",
   "email": "wqtang@cs.nthu.edu.tw",
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "site_url": "https://wqtang.com",
   "profiles": [
     {
@@ -119,10 +119,6 @@
         {
           "label": "Official",
           "url": "https://www.iccad-contest.org/2026/Winners.html"
-        },
-        {
-          "label": "Department",
-          "url": "https://dcs.site.nthu.edu.tw/p/406-1174-318534,r109.php"
         }
       ]
     },
